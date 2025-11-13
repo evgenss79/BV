@@ -1,0 +1,5 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f6f1ec"/>
+  <circle cx="300" cy="200" r="140" fill="#d8c5b6"/>
+  <text x="300" y="210" font-size="30" font-family="'Playfair Display', serif" fill="#3c2f2f" text-anchor="middle">Soft Glow</text>
+</svg>

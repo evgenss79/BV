@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.candlesTitle">NicheHome.ch – Duftkerzen</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="candles">
+  <!-- HEADER: Update contact info, brand name and navigation labels via translations.common.* and translations.nav.* -->
+  <header class="header" id="siteHeader">
+    <div class="top-bar">
+      <div class="top-bar__contacts">
+        <a href="tel:+41440000000" data-i18n="common.phone">Tel.: +41 (0)44 000 00 00</a>
+        <a href="mailto:hello@nichehome.ch" data-i18n="common.email">E-Mail: hello@nichehome.ch</a>
+      </div>
+      <div class="top-bar__social">
+        <span data-i18n="common.follow">Folgen Sie uns:</span>
+        <a href="#" aria-label="Instagram" data-i18n="common.social.instagram">Instagram</a>
+        <a href="#" aria-label="WhatsApp" data-i18n="common.social.whatsapp">WhatsApp</a>
+        <a href="#" aria-label="Pinterest" data-i18n="common.social.pinterest">Pinterest</a>
+      </div>
+    </div>
+    <div class="header__inner">
+      <!-- LOGO WORDMARK: edit via common.brand in assets/js/script.js -->
+      <a href="index.html" class="header__logo" data-i18n="common.brand">NicheHome.ch</a>
+      <button class="header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü umschalten">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- NAVIGATION: manage link labels through translations.nav.* and adjust href targets as needed -->
+      <nav class="nav" aria-label="Hauptmenü">
+        <ul class="nav__list">
+          <li><a data-page-target="catalog" href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+          <li><a data-page-target="diffusers" href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+          <li><a data-page-target="candles" href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
+          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
+          <li><a href="catalog.html#room" data-i18n="nav.room">Raumduft</a></li>
+          <li><a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a></li>
+          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+          <li><a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a></li>
+          <li><a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a></li>
+          <li><a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a></li>
+          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
+          <li><a data-page-target="about" href="about.html" data-i18n="nav.about">Über uns</a></li>
+          <li><a data-page-target="corporate" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
+          <li><a data-page-target="contacts" href="contacts.html" data-i18n="nav.contacts">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <span class="header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
+        <span class="header__icon" data-i18n="common.account">👤 Konto</span>
+        <button class="header__icon header__cart" type="button">
+          <span data-i18n="common.cart">🛒 Warenkorb</span>
+          <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
+        </button>
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button type="button" data-lang="de" class="lang-switcher__btn is-active">DE</button>
+          <button type="button" data-lang="fr" class="lang-switcher__btn">FR</button>
+          <button type="button" data-lang="it" class="lang-switcher__btn">IT</button>
+          <button type="button" data-lang="en" class="lang-switcher__btn">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- CATEGORY HERO (categoryCandles.hero.* translations) -->
+    <section class="page-hero page-hero--split">
+      <div class="page-hero__text">
+        <p class="page-hero__label" data-i18n="categoryCandles.hero.label">Ceremonial Edition</p>
+        <h1 data-i18n="categoryCandles.hero.title">Duftkerzen mit architektonischen Gefäßen</h1>
+        <p data-i18n="categoryCandles.hero.subtitle">Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.</p>
+        <p data-i18n="categoryCandles.hero.text">Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contacts.html" data-i18n="categoryCandles.hero.button">Showroom-Besuch buchen</a>
+          <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCandles.hero.secondary">Weitere Kategorien</a>
+        </div>
+      </div>
+      <div class="page-hero__media">
+        <img src="assets/img/placeholder-4.svg" alt="Kerzen Stillleben" loading="lazy">
+      </div>
+    </section>
+
+    <!-- COMPOSITION HIGHLIGHTS (categoryCandles.highlights.* translations) -->
+    <section class="highlights">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="categoryCandles.highlights.label">Komposition</p>
+        <h2 data-i18n="categoryCandles.highlights.title">Sensorische und visuelle Harmonie</h2>
+      </div>
+      <div class="info-panels__grid">
+        <article>
+          <h3 data-i18n="categoryCandles.highlights.item1.title">Europäische Wachse</h3>
+          <p data-i18n="categoryCandles.highlights.item1.description">Raps, Soja und Kokosnuss werden für ein cremiges Finish kombiniert und garantieren sauberes Brennen.</p>
+        </article>
+        <article>
+          <h3 data-i18n="categoryCandles.highlights.item2.title">Keramikgefäße</h3>
+          <p data-i18n="categoryCandles.highlights.item2.description">Gefertigt in Valencia mit naturbelassenen Pigmenten, die zu hellen und dunklen Interieurs passen.</p>
+        </article>
+        <article>
+          <h3 data-i18n="categoryCandles.highlights.item3.title">Signature Deckel</h3>
+          <p data-i18n="categoryCandles.highlights.item3.description">Der massive Deckel dient als Untersetzer und schützt Kerzen vor Staub.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRODUCT GRID (categoryCandles.products.* translations) -->
+    <section class="products">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="categoryCandles.products.label">Edition</p>
+        <h2 data-i18n="categoryCandles.products.title">Handgegossene Highlights</h2>
+      </div>
+      <div class="products__grid">
+        <article class="product-card">
+          <img src="assets/img/placeholder-5.svg" alt="Sable Nuit" loading="lazy">
+          <h3 data-i18n="categoryCandles.products.card1.name">Kerze "Sable Nuit"</h3>
+          <p data-i18n="categoryCandles.products.card1.description">Amber, Tonka und Labdanum schaffen ein warmes, samtiges Ambiente.</p>
+          <span class="product-card__price" data-i18n="categoryCandles.products.card1.price">CHF 69.90</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-6.svg" alt="linen cloud" loading="lazy">
+          <h3 data-i18n="categoryCandles.products.card2.name">Kerze "Linen Cloud"</h3>
+          <p data-i18n="categoryCandles.products.card2.description">Baumwollblüte, Cashmere und weisser Moschus für Schlafzimmer und Spas.</p>
+          <span class="product-card__price" data-i18n="categoryCandles.products.card2.price">CHF 64.00</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-1.svg" alt="fig aura" loading="lazy">
+          <h3 data-i18n="categoryCandles.products.card3.name">Kerze "Fig Aura"</h3>
+          <p data-i18n="categoryCandles.products.card3.description">Feigenblatt, grüner Tee und Tonkabohne – beliebt in Concept Stores.</p>
+          <span class="product-card__price" data-i18n="categoryCandles.products.card3.price">CHF 72.00</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-2.svg" alt="Noir cacao" loading="lazy">
+          <h3 data-i18n="categoryCandles.products.card4.name">Kerze "Noir Cacao"</h3>
+          <p data-i18n="categoryCandles.products.card4.description">Dunkle Schokolade, Zedernholz und Rum. Perfekt für Lounges und Bars.</p>
+          <span class="product-card__price" data-i18n="categoryCandles.products.card4.price">CHF 78.00</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA (categoryCandles.cta.* translations) -->
+    <section class="cta-banner">
+      <div class="cta-banner__content">
+        <h2 data-i18n="categoryCandles.cta.title">Refill & Gravur-Service</h2>
+        <p data-i18n="categoryCandles.cta.text">Kerzengefäße können neu befüllt oder personalisiert werden. Ideal für Corporate Gifts.</p>
+      </div>
+      <a class="btn btn--ghost" href="contacts.html" data-i18n="categoryCandles.cta.button">Kontakt aufnehmen</a>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER (footer.* translations) -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <h4 data-i18n="footer.catalogTitle">Katalog</h4>
+        <ul>
+          <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+          <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+          <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
+          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
+          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.infoTitle">Informationen</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="footer.about">Über die Marke</a></li>
+          <li><a href="catalog.html#news" data-i18n="footer.journal">Journal</a></li>
+          <li><a href="corporate.html" data-i18n="footer.corporate">Corporate Services</a></li>
+          <li><a href="catalog.html#shipping" data-i18n="footer.shipping">Versand & Rückgabe</a></li>
+          <li><a href="catalog.html#faq" data-i18n="footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legalTitle">Rechtliches</h4>
+        <ul>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a></li>
+          <li><a href="terms.html" data-i18n="footer.terms">AGB</a></li>
+          <li><a href="privacy.html" data-i18n="footer.cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contactTitle">Kontakt</h4>
+        <p data-i18n="footer.address">Showroom, Musterstrasse 12, 8000 Zürich</p>
+        <p data-i18n="footer.phone">Tel.: +41 (0)44 000 00 00</p>
+        <p data-i18n="footer.email">E-Mail: hello@nichehome.ch</p>
+      </div>
+    </div>
+    <div class="footer__payments">
+      <span data-i18n="footer.paymentTitle">Wir akzeptieren Visa, Mastercard, TWINT</span>
+    </div>
+    <p class="footer__copy" data-i18n="footer.copyright">© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva</p>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

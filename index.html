@@ -1,382 +1,324 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NicheHome — интерьерное бюро</title>
-    <meta
-      name="description"
-      content="NicheHome — интерьерное бюро полного цикла. Концепции, дизайн-проекты, авторское сопровождение и комплектация для частных и коммерческих пространств."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Manrope:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <header class="site-header" id="top">
-      <div class="container header-grid">
-        <div class="logo">NicheHome</div>
-        <nav class="main-nav" aria-label="Главное меню">
-          <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">
-            <span></span><span></span><span></span>
-          </button>
-          <ul>
-            <li><a href="#about">О бюро</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#process">Процесс</a></li>
-            <li><a href="#testimonials">Отзывы</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="header-cta" href="#contact">Связаться</a>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.indexTitle">NicheHome.ch – Premium Raumdüfte</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="index">
+  <!-- HEADER: Update contact info, brand name and navigation labels via translations.common.* and translations.nav.* -->
+  <header class="header" id="siteHeader">
+    <div class="top-bar">
+      <div class="top-bar__contacts">
+        <a href="tel:+41440000000" data-i18n="common.phone">Tel.: +41 (0)44 000 00 00</a>
+        <a href="mailto:hello@nichehome.ch" data-i18n="common.email">E-Mail: hello@nichehome.ch</a>
       </div>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-content">
-          <div class="hero-text">
-            <p class="eyebrow">Интерьерное бюро полного цикла</p>
-            <h1 id="hero-title">Создаём нишевые пространства, в которых хочется жить</h1>
-            <p>
-              Команда NicheHome проектирует современные интерьеры с продуманной
-              архитектурой, функциональной мебелью и уникальными акцентами. Мы сопровождаем
-              каждый этап — от первой идеи до финального декора.
-            </p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#portfolio">Портфолио</a>
-              <a class="btn secondary" href="#services">Услуги</a>
-            </div>
-          </div>
-          <div class="hero-media">
-            <div class="hero-card">
-              <p>12 лет в профессии</p>
-              <p class="card-highlight">160+ проектов</p>
-              <span>жилая и коммерческая недвижимость</span>
-            </div>
-            <div class="hero-visual" role="img" aria-label="Современная гостиная"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="partners" aria-label="Партнёры NicheHome">
-        <div class="container partner-grid">
-          <p>Нам доверяют ведущие девелоперы и бренды</p>
-          <div class="partner-marquee">
-            <span>InteriorPoint</span>
-            <span>NordicBuild</span>
-            <span>CasaLuxe</span>
-            <span>StudioForma</span>
-            <span>UrbanVista</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="split-section">
-        <div class="container split-grid">
-          <div>
-            <p class="eyebrow">О бюро</p>
-            <h2>Премиальный сервис и архитектурный подход</h2>
-            <p>
-              Мы работаем с нишевыми объектами: пентхаусы, квартиры с нестандартной
-              геометрией, бутик-отели и камерные шоурумы. В каждом проекте совмещаем
-              функциональные сценарии, материалы высшего класса и выразительные детали.
-            </p>
-            <div class="stat-grid">
-              <div>
-                <strong>04</strong>
-                <span>континента географии проектов</span>
-              </div>
-              <div>
-                <strong>87%</strong>
-                <span>клиентов приходят по рекомендациям</span>
-              </div>
-              <div>
-                <strong>3</strong>
-                <span>недели до готовой концепции</span>
-              </div>
-            </div>
-          </div>
-          <div class="about-panel">
-            <p class="quote">
-              «Мы создаём интерьеры, которые работают как точные инструменты: продуманное
-              зонирование, мягкая тактильность и визуальное спокойствие.»
-            </p>
-            <p class="quote-author">— Варвара Велчева, креативный директор NicheHome</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="services">
-        <div class="container">
-          <p class="eyebrow">Что мы делаем</p>
-          <h2>Услуги NicheHome</h2>
-          <div class="service-grid">
-            <article>
-              <h3>Концепция и визуальный код</h3>
-              <p>
-                Исследуем объект и заказчика, формируем мудборды, палитру материалов и
-                уникальные архитектурные приёмы.
-              </p>
-              <ul>
-                <li>архитектурное исследование</li>
-                <li>колористика и освещение</li>
-                <li>цифровые коллажи и 3D-сцены</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Дизайн‑проект</h3>
-              <p>
-                Создаём рабочую документацию для реализации: планировочные решения, узлы,
-                спецификации и ведомости материалов.
-              </p>
-              <ul>
-                <li>BIM‑моделирование</li>
-                <li>инженерная координация</li>
-                <li>VR-презентации</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Реализация и комплектация</h3>
-              <p>
-                Ведём авторский надзор, контролируем сроки и качество, организуем поставки
-                мебели, света и декора от партнёрских брендов.
-              </p>
-              <ul>
-                <li>тендеры и бюджетирование</li>
-                <li>логистика и склад</li>
-                <li>стилистика финального декора</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="portfolio">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Портфолио</p>
-              <h2>Нишевые интерьеры с характером</h2>
-            </div>
-            <a class="link-arrow" href="#contact">Запросить презентацию</a>
-          </div>
-          <div class="portfolio-grid">
-            <figure>
-              <img src="assets/gallery-1.svg" alt="Минималистичная гостиная" />
-              <figcaption>Панорамный пентхаус, Барселона</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/gallery-2.svg" alt="Зона отдыха с мрамором" />
-              <figcaption>Бутик-отель Casa Madera, Мадрид</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/gallery-3.svg" alt="Кухня с островом" />
-              <figcaption>Резиденция Calm Lines, Валенсия</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/gallery-4.svg" alt="Торговое пространство" />
-              <figcaption>Шоурум Skandi Atelier, Лиссабон</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/gallery-5.svg" alt="Кабинет" />
-              <figcaption>Кабинет коллекционера, Дубай</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/gallery-6.svg" alt="Спальня" />
-              <figcaption>Вилла Solana, Пальма-де-Майорка</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section id="process" class="process">
-        <div class="container">
-          <p class="eyebrow">Как мы работаем</p>
-          <h2>Прозрачный процесс в четыре шага</h2>
-          <ol class="process-list">
-            <li>
-              <span>01</span>
-              <div>
-                <h3>Диагностика</h3>
-                <p>Интервью, анализ объекта, составление технического задания и бюджета.</p>
-              </div>
-            </li>
-            <li>
-              <span>02</span>
-              <div>
-                <h3>Концепция</h3>
-                <p>Мудборды, 3D-эскизы, подбор материалов и предварительный график.</p>
-              </div>
-            </li>
-            <li>
-              <span>03</span>
-              <div>
-                <h3>Проектирование</h3>
-                <p>Полный комплект чертежей, инженерные решения, спецификации поставок.</p>
-              </div>
-            </li>
-            <li>
-              <span>04</span>
-              <div>
-                <h3>Реализация</h3>
-                <p>Авторский надзор, комплектация, финальный декор и передача объекта.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="testimonials" class="testimonials">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Отзывы</p>
-              <h2>Клиенты о сотрудничестве</h2>
-            </div>
-            <div class="testimonial-controls" role="group" aria-label="Переключение отзывов">
-              <button class="prev" aria-label="Предыдущий отзыв">←</button>
-              <button class="next" aria-label="Следующий отзыв">→</button>
-            </div>
-          </div>
-          <div class="testimonial-track" role="list">
-            <article class="testimonial" role="listitem">
-              <p>
-                «NicheHome предложили смелые решения, которых мы ждали от премиального бюро.
-                Каждая зона апартаментов работает идеально, а подбор мебели превзошёл ожидания.»
-              </p>
-              <h3>Алексей и Ирина</h3>
-              <span>Апартаменты Riverlight, Москва</span>
-            </article>
-            <article class="testimonial" role="listitem">
-              <p>
-                «Команда полностью сняла с нас заботы по реализации бутика. Чёткий график,
-                контроль подрядчиков и высокий стандарт сервиса.»
-              </p>
-              <h3>Мария Хименес</h3>
-              <span>Casa Madera Hospitality</span>
-            </article>
-            <article class="testimonial" role="listitem">
-              <p>
-                «Студия создала интерьер, отражающий ДНК нашего бренда. Минимализм без
-                холода, теплая палитра и тщательно подобранный свет.»
-              </p>
-              <h3>Дмитрий Поляков</h3>
-              <span>Основатель Skandi Atelier</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="news" aria-label="Свежие публикации">
-        <div class="container">
-          <div class="section-header">
-            <div>
-              <p class="eyebrow">Журнал</p>
-              <h2>Исследуем нишевые подходы к интерьеру</h2>
-            </div>
-            <a class="link-arrow" href="mailto:hello@nichehome.com?subject=Запрос на медиа-кит">Получить медиа-кит</a>
-          </div>
-          <div class="news-grid">
-            <article>
-              <p class="eyebrow">Тренды</p>
-              <h3>Свет как инструмент зонирования</h3>
-              <p>
-                Как использовать многоуровневое освещение, чтобы выделить сценарии жизни и
-                задать настроение.
-              </p>
-              <span>12 сентября 2025</span>
-            </article>
-            <article>
-              <p class="eyebrow">Исследования</p>
-              <h3>Новые тактильные материалы</h3>
-              <p>
-                Выбор гипоаллергенных покрытий, инновационный текстиль и устойчивая
-                отделка премиум-класса.
-              </p>
-              <span>02 сентября 2025</span>
-            </article>
-            <article>
-              <p class="eyebrow">Проекты</p>
-              <h3>За кулисами виллы Solana</h3>
-              <p>
-                Рассказываем, как мы превратили горную резиденцию в уединённый курорт с
-                видом на Средиземное море.
-              </p>
-              <span>18 августа 2025</span>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="container contact-grid">
-          <div>
-            <p class="eyebrow">Контакты</p>
-            <h2>Расскажите нам о своём пространстве</h2>
-            <p>
-              Заполните форму или напишите напрямую на <a href="mailto:hello@nichehome.com">hello@nichehome.com</a>. Мы ответим в течение одного
-              рабочего дня и назначим первую консультацию.
-            </p>
-            <ul class="contact-list">
-              <li><strong>Телефон:</strong> +34 93 123 45 67</li>
-              <li><strong>Адрес:</strong> C/ de Pau Claris, 138, Барселона</li>
-              <li><strong>График:</strong> пн–пт, 10:00–19:00</li>
-            </ul>
-          </div>
-          <form class="contact-form" action="https://formspree.io/f/moqzjvde" method="POST">
-            <label>
-              Имя
-              <input type="text" name="name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
-            <label>
-              Телефон
-              <input type="tel" name="phone" />
-            </label>
-            <label>
-              Сообщение
-              <textarea name="message" rows="4" required></textarea>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" required />
-              <span>Я согласен(на) с политикой обработки персональных данных</span>
-            </label>
-            <button type="submit" class="btn primary">Отправить</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <div class="logo">NicheHome</div>
-          <p>Интерьеры, где точность встречается с поэзией формы.</p>
-        </div>
-        <nav aria-label="Быстрые ссылки">
-          <ul>
-            <li><a href="#top">Наверх</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#portfolio">Проекты</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="footer-meta">
-          <a href="mailto:hello@nichehome.com">hello@nichehome.com</a>
-          <span>© 2025 NicheHome</span>
+      <div class="top-bar__social">
+        <span data-i18n="common.follow">Folgen Sie uns:</span>
+        <a href="#" aria-label="Instagram" data-i18n="common.social.instagram">Instagram</a>
+        <a href="#" aria-label="WhatsApp" data-i18n="common.social.whatsapp">WhatsApp</a>
+        <a href="#" aria-label="Pinterest" data-i18n="common.social.pinterest">Pinterest</a>
+      </div>
+    </div>
+    <div class="header__inner">
+      <!-- LOGO WORDMARK: edit via common.brand in assets/js/script.js -->
+      <a href="index.html" class="header__logo" data-i18n="common.brand">NicheHome.ch</a>
+      <button class="header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü umschalten">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- NAVIGATION: manage link labels through translations.nav.* and adjust href targets as needed -->
+      <nav class="nav" aria-label="Hauptmenü">
+        <ul class="nav__list">
+          <li><a data-page-target="catalog" href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+          <li><a data-page-target="diffusers" href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+          <li><a data-page-target="candles" href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
+          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
+          <li><a href="catalog.html#room" data-i18n="nav.room">Raumduft</a></li>
+          <li><a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a></li>
+          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+          <li><a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a></li>
+          <li><a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a></li>
+          <li><a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a></li>
+          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
+          <li><a data-page-target="about" href="about.html" data-i18n="nav.about">Über uns</a></li>
+          <li><a data-page-target="corporate" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
+          <li><a data-page-target="contacts" href="contacts.html" data-i18n="nav.contacts">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <span class="header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
+        <span class="header__icon" data-i18n="common.account">👤 Konto</span>
+        <button class="header__icon header__cart" type="button">
+          <span data-i18n="common.cart">🛒 Warenkorb</span>
+          <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
+        </button>
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button type="button" data-lang="de" class="lang-switcher__btn is-active">DE</button>
+          <button type="button" data-lang="fr" class="lang-switcher__btn">FR</button>
+          <button type="button" data-lang="it" class="lang-switcher__btn">IT</button>
+          <button type="button" data-lang="en" class="lang-switcher__btn">EN</button>
         </div>
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <script src="scripts/main.js" defer></script>
-  </body>
+  <main>
+    <!-- HERO SECTION (index.hero.* translations) -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__label" data-i18n="index.hero.label">Schweizer Exklusivvertretung</p>
+        <h1 class="hero__title" data-i18n="index.hero.title">Nische-Raumdüfte für Ihr Zuhause und Ihr Business</h1>
+        <p class="hero__subtitle" data-i18n="index.hero.subtitle">Kuratiertes Duftportfolio für Räume, die Haltung zeigen. Samtige Akkorde, modern komponiert und sofort lieferbar innerhalb der Schweiz.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" data-scroll-target="#catalog" data-i18n="index.hero.primary">Zum Katalog</button>
+          <button class="btn btn--ghost" data-scroll-target="#story" data-i18n="index.hero.secondary">Über die Marke</button>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="assets/img/placeholder-1.svg" alt="Abstrakte Duftvisualisierung" loading="lazy">
+      </div>
+    </section>
+
+    <!-- BRAND STORY (index.story.* translations) -->
+    <section class="story" id="story">
+      <div class="story__media">
+        <img src="assets/img/placeholder-2.svg" alt="Studio Szene" loading="lazy">
+      </div>
+      <div class="story__content">
+        <h2 data-i18n="index.story.title">Über NicheHome.ch</h2>
+        <p data-i18n="index.story.paragraph1">NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für außergewöhnliche Akkorde und langlebige Performance.</p>
+        <p data-i18n="index.story.paragraph2">Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, maßgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.</p>
+        <a class="btn btn--link" href="about.html" data-i18n="index.story.link">Mehr über die Philosophie</a>
+      </div>
+    </section>
+
+    <!-- CATEGORY GRID (index.categories.* translations). Duplicate .category-card blocks and add new keys to translations.index.categories -->
+    <section class="categories" id="catalog">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="index.categories.label">Kollektion entdecken</p>
+        <h2 data-i18n="index.categories.title">Kategorien & Duftwelten</h2>
+      </div>
+      <div class="categories__grid">
+        <article class="category-card">
+          <img src="assets/img/placeholder-3.svg" alt="Aroma-Diffusoren" loading="lazy">
+          <h3 data-i18n="index.categories.card1.title">Aroma-Diffusoren</h3>
+          <p data-i18n="index.categories.card1.description">Satinierte Glasflakons mit Naturfasern, die Räume bis zu 60 m² konstant beduften.</p>
+          <a class="btn btn--text" href="category-diffusers.html" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-4.svg" alt="Duftkerzen" loading="lazy">
+          <h3 data-i18n="index.categories.card2.title">Duftkerzen</h3>
+          <p data-i18n="index.categories.card2.description">Handgegossene Wachsblends mit drei Dochten und eleganten Keramikgefäßen.</p>
+          <a class="btn btn--text" href="category-candles.html" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-5.svg" alt="Limitierte Kollektion" loading="lazy">
+          <h3 data-i18n="index.categories.card3.title">Limitierte Kollektion</h3>
+          <p data-i18n="index.categories.card3.description">Saisonale Editionen mit kunstvollen Labels, nummeriert und nur auf Anfrage.</p>
+          <a class="btn btn--text" href="catalog.html#limited" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-6.svg" alt="Raumduft" loading="lazy">
+          <h3 data-i18n="index.categories.card4.title">Raumduft</h3>
+          <p data-i18n="index.categories.card4.description">Fein zerstäubte Raum- und Kissensprays mit sofortiger Wirkung.</p>
+          <a class="btn btn--text" href="catalog.html#room" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-1.svg" alt="Textilspray" loading="lazy">
+          <h3 data-i18n="index.categories.card5.title">Textilspray</h3>
+          <p data-i18n="index.categories.card5.description">Pflegende Kompositionen für Vorhänge, Teppiche und Bettwäsche.</p>
+          <a class="btn btn--text" href="catalog.html#textile" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-2.svg" alt="Geschenksets" loading="lazy">
+          <h3 data-i18n="index.categories.card6.title">Geschenksets</h3>
+          <p data-i18n="index.categories.card6.description">Kurierte Boxen mit abgestimmten Düften für besondere Momente.</p>
+          <a class="btn btn--text" href="catalog.html#gift" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-3.svg" alt="Accessoires" loading="lazy">
+          <h3 data-i18n="index.categories.card7.title">Accessoires</h3>
+          <p data-i18n="index.categories.card7.description">Trichter, Messbecher und Duftplatten für professionelle Präsentationen.</p>
+          <a class="btn btn--text" href="catalog.html#accessories" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-6.svg" alt="Meditation" loading="lazy">
+          <h3 data-i18n="index.categories.card8.title">Meditation</h3>
+          <p data-i18n="index.categories.card8.description">Ritualkits mit Räucherstäbchen, Duftölen und Keramikhaltern.</p>
+          <a class="btn btn--text" href="catalog.html#meditation" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-4.svg" alt="Autoparfum" loading="lazy">
+          <h3 data-i18n="index.categories.card9.title">Autoparfum</h3>
+          <p data-i18n="index.categories.card9.description">Magnetische Clips mit austauschbaren Duftkapseln für jede Fahrt.</p>
+          <a class="btn btn--text" href="catalog.html#car" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+        <article class="category-card">
+          <img src="assets/img/placeholder-5.svg" alt="Aromageräte" loading="lazy">
+          <h3 data-i18n="index.categories.card10.title">Aromageräte</h3>
+          <p data-i18n="index.categories.card10.description">Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Größen.</p>
+          <a class="btn btn--text" href="catalog.html#devices" data-i18n="index.categories.button">Produkte ansehen</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS (index.products.* translations) -->
+    <section class="products">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="index.products.label">Aktuelle Favoriten</p>
+        <h2 data-i18n="index.products.title">Beliebte Kompositionen</h2>
+      </div>
+      <div class="products__grid">
+        <article class="product-card">
+          <img src="assets/img/placeholder-6.svg" alt="Urban Calm" loading="lazy">
+          <h3 data-i18n="index.products.card1.name">Reeddiffusor "Urban Calm"</h3>
+          <p data-i18n="index.products.card1.description">Vetiver, Bergamotte und gerösteter Kakao sorgen für Ruhe in modernen Lofts.</p>
+          <span class="product-card__price" data-i18n="index.products.card1.price">CHF 59.90</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-1.svg" alt="Alpine Mist" loading="lazy">
+          <h3 data-i18n="index.products.card2.name">Raumspray "Alpine Mist"</h3>
+          <p data-i18n="index.products.card2.description">Eukalyptus, Silberfichte und Baumwollblüte für klare, frische Interieurs.</p>
+          <span class="product-card__price" data-i18n="index.products.card2.price">CHF 39.90</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-2.svg" alt="Sable Nuit" loading="lazy">
+          <h3 data-i18n="index.products.card3.name">Duftkerze "Sable Nuit"</h3>
+          <p data-i18n="index.products.card3.description">Sandelholz, Amber und Tonkabohne in mattem Steinzeug.</p>
+          <span class="product-card__price" data-i18n="index.products.card3.price">CHF 69.90</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-3.svg" alt="Cedar Atlas" loading="lazy">
+          <h3 data-i18n="index.products.card4.name">Gift Set "Cedar Atlas"</h3>
+          <p data-i18n="index.products.card4.description">Diffusor, Spray und Kerze in abgestimmten Holznoten.</p>
+          <span class="product-card__price" data-i18n="index.products.card4.price">CHF 149.00</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-4.svg" alt="Velvet Studio" loading="lazy">
+          <h3 data-i18n="index.products.card5.name">Textilspray "Velvet Studio"</h3>
+          <p data-i18n="index.products.card5.description">Cashmere, Osmanthus und weiße Teeblätter für Soft-Furnishings.</p>
+          <span class="product-card__price" data-i18n="index.products.card5.price">CHF 34.00</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-5.svg" alt="Nomad Drive" loading="lazy">
+          <h3 data-i18n="index.products.card6.name">Autoparfum "Nomad Drive"</h3>
+          <p data-i18n="index.products.card6.description">Zedernholz, Grapefruit und Leder für jede Fahrt.</p>
+          <span class="product-card__price" data-i18n="index.products.card6.price">CHF 29.50</span>
+          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- BENEFITS / USP (index.benefits.* translations) -->
+    <section class="benefits">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="index.benefits.label">Warum NicheHome.ch</p>
+        <h2 data-i18n="index.benefits.title">Premium Service für feine Düfte</h2>
+      </div>
+      <div class="benefits__grid">
+        <article class="benefit-card">
+          <h3 data-i18n="index.benefits.item1.title">Sichere Verpackung</h3>
+          <p data-i18n="index.benefits.item1.description">Spezielle Schaumstoff- und Kartoninlays schützen empfindliche Glasware auf jedem Transportweg.</p>
+        </article>
+        <article class="benefit-card">
+          <h3 data-i18n="index.benefits.item2.title">Kostenloser Versand</h3>
+          <p data-i18n="index.benefits.item2.description">Lieferungen ab CHF 80 sind innerhalb der Schweiz inklusive Versicherung kostenfrei.</p>
+        </article>
+        <article class="benefit-card">
+          <h3 data-i18n="index.benefits.item3.title">Kuratiert & getestet</h3>
+          <p data-i18n="index.benefits.item3.description">Jede Komposition wird im Showroom getestet, bevor sie in das Sortiment aufgenommen wird.</p>
+        </article>
+        <article class="benefit-card">
+          <h3 data-i18n="index.benefits.item4.title">Geschenkverpackung</h3>
+          <p data-i18n="index.benefits.item4.description">Auf Wunsch erhalten Sie satinierte Bänder, Karten und maßgefertigte Boxen.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEWS / JOURNAL (index.news.* translations) -->
+    <section class="news">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="index.news.label">Journal</p>
+        <h2 data-i18n="index.news.title">Neuigkeiten & Duftwissen</h2>
+      </div>
+      <div class="news__grid">
+        <article class="news-card">
+          <span class="news-card__tag" data-i18n="index.news.card1.tag">Dufttipps</span>
+          <h3 data-i18n="index.news.card1.title">Layering-Ideen für Boutique-Hotels</h3>
+          <p data-i18n="index.news.card1.excerpt">Wie mehrere Duftquellen zusammenspielen, um Lounges und Suiten differenziert wirken zu lassen.</p>
+          <a href="catalog.html#news" class="btn btn--link" data-i18n="index.news.readMore">Mehr lesen</a>
+        </article>
+        <article class="news-card">
+          <span class="news-card__tag" data-i18n="index.news.card2.tag">Insights</span>
+          <h3 data-i18n="index.news.card2.title">Nachfüllservices für Retail-Partner</h3>
+          <p data-i18n="index.news.card2.excerpt">Flexible Mengen, neutrale Verpackung und private Label-Optionen für Shop-in-Shop-Konzepte.</p>
+          <a href="corporate.html" class="btn btn--link" data-i18n="index.news.readMore">Mehr lesen</a>
+        </article>
+        <article class="news-card">
+          <span class="news-card__tag" data-i18n="index.news.card3.tag">Events</span>
+          <h3 data-i18n="index.news.card3.title">Scent Styling für Sommerterrassen</h3>
+          <p data-i18n="index.news.card3.excerpt">Mit mobilen Diffusoren und Textilsprays schaffen wir frische Kulissen für Pop-up-Formate.</p>
+          <a href="contacts.html" class="btn btn--link" data-i18n="index.news.readMore">Mehr lesen</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER (footer.* translations) -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <h4 data-i18n="footer.catalogTitle">Katalog</h4>
+        <ul>
+          <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+          <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+          <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
+          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
+          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.infoTitle">Informationen</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="footer.about">Über die Marke</a></li>
+          <li><a href="catalog.html#news" data-i18n="footer.journal">Journal</a></li>
+          <li><a href="corporate.html" data-i18n="footer.corporate">Corporate Services</a></li>
+          <li><a href="catalog.html#shipping" data-i18n="footer.shipping">Versand & Rückgabe</a></li>
+          <li><a href="catalog.html#faq" data-i18n="footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legalTitle">Rechtliches</h4>
+        <ul>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a></li>
+          <li><a href="terms.html" data-i18n="footer.terms">AGB</a></li>
+          <li><a href="privacy.html" data-i18n="footer.cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contactTitle">Kontakt</h4>
+        <p data-i18n="footer.address">Showroom, Musterstrasse 12, 8000 Zürich</p>
+        <p data-i18n="footer.phone">Tel.: +41 (0)44 000 00 00</p>
+        <p data-i18n="footer.email">E-Mail: hello@nichehome.ch</p>
+      </div>
+    </div>
+    <div class="footer__payments">
+      <span data-i18n="footer.paymentTitle">Wir akzeptieren Visa, Mastercard, TWINT</span>
+    </div>
+    <p class="footer__copy" data-i18n="footer.copyright">© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva</p>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
 </html>
