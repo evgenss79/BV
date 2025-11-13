@@ -1,0 +1,1474 @@
+// CHANGE YOUR REAL TEXTS HERE. The official brand representative will paste their own content.
+// Duplicate this translations object structure to add more languages. Keys correspond to data-i18n attributes across the HTML files.
+const translations = {
+  de: {
+    meta: {
+      indexTitle: 'NicheHome.ch – Premium Raumdüfte',
+      catalogTitle: 'NicheHome.ch – Gesamtkatalog',
+      diffusersTitle: 'NicheHome.ch – Aroma-Diffusoren',
+      candlesTitle: 'NicheHome.ch – Duftkerzen',
+      aboutTitle: 'NicheHome.ch – Über die Marke',
+      corporateTitle: 'NicheHome.ch – Corporate Services',
+      contactsTitle: 'NicheHome.ch – Kontakt',
+      privacyTitle: 'NicheHome.ch – Datenschutz',
+      termsTitle: 'NicheHome.ch – Allgemeine Geschäftsbedingungen'
+    },
+    common: {
+      brand: 'NicheHome.ch',
+      phone: 'Tel.: +41 (0)44 000 00 00',
+      email: 'E-Mail: hello@nichehome.ch',
+      follow: 'Folgen Sie uns:',
+      social: {
+        instagram: 'Instagram',
+        whatsapp: 'WhatsApp',
+        pinterest: 'Pinterest'
+      },
+      wishlist: '♡ Merkliste',
+      account: '👤 Konto',
+      cart: '🛒 Warenkorb',
+      cartItems: 'Artikel',
+      burger: 'Menü öffnen oder schließen'
+    },
+    nav: {
+      catalog: 'Katalog',
+      diffusers: 'Aroma-Diffusoren',
+      candles: 'Duftkerzen',
+      limited: 'Limitierte Kollektion',
+      room: 'Raumduft',
+      textile: 'Textilspray',
+      gift: 'Geschenksets',
+      accessories: 'Accessoires',
+      meditation: 'Meditation',
+      car: 'Autoparfum',
+      devices: 'Aromageräte',
+      about: 'Über uns',
+      corporate: 'Corporate',
+      contacts: 'Kontakt'
+    },
+    footer: {
+      catalogTitle: 'Katalog',
+      infoTitle: 'Informationen',
+      legalTitle: 'Rechtliches',
+      contactTitle: 'Kontakt',
+      about: 'Über die Marke',
+      journal: 'Journal',
+      corporate: 'Corporate Services',
+      shipping: 'Versand & Rückgabe',
+      faq: 'FAQ',
+      privacy: 'Datenschutz',
+      terms: 'AGB',
+      cookies: 'Cookies',
+      address: 'Showroom, Musterstrasse 12, 8000 Zürich',
+      phone: 'Tel.: +41 (0)44 000 00 00',
+      email: 'E-Mail: hello@nichehome.ch',
+      paymentTitle: 'Wir akzeptieren Visa, Mastercard, TWINT',
+      copyright: '© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva'
+    },
+    index: {
+      hero: {
+        label: 'Schweizer Exklusivvertretung',
+        title: 'Nische-Raumdüfte für Ihr Zuhause und Ihr Business',
+        subtitle: 'Kuratiertes Duftportfolio für Räume, die Haltung zeigen. Samtige Akkorde, modern komponiert und sofort lieferbar innerhalb der Schweiz.',
+        primary: 'Zum Katalog',
+        secondary: 'Über die Marke'
+      },
+      story: {
+        title: 'Über NicheHome.ch',
+        paragraph1: 'NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für außergewöhnliche Akkorde und langlebige Performance.',
+        paragraph2: 'Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, maßgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.',
+        link: 'Mehr über die Philosophie'
+      },
+      categories: {
+        label: 'Kollektion entdecken',
+        title: 'Kategorien & Duftwelten',
+        button: 'Produkte ansehen',
+        card1: { title: 'Aroma-Diffusoren', description: 'Satinierte Glasflakons mit Naturfasern, die Räume bis zu 60 m² konstant beduften.' },
+        card2: { title: 'Duftkerzen', description: 'Handgegossene Wachsblends mit drei Dochten und eleganten Keramikgefäßen.' },
+        card3: { title: 'Limitierte Kollektion', description: 'Saisonale Editionen mit kunstvollen Labels, nummeriert und nur auf Anfrage.' },
+        card4: { title: 'Raumduft', description: 'Fein zerstäubte Raum- und Kissensprays mit sofortiger Wirkung.' },
+        card5: { title: 'Textilspray', description: 'Pflegende Kompositionen für Vorhänge, Teppiche und Bettwäsche.' },
+        card6: { title: 'Geschenksets', description: 'Kurierte Boxen mit abgestimmten Düften für besondere Momente.' },
+        card7: { title: 'Accessoires', description: 'Trichter, Messbecher und Duftplatten für professionelle Präsentationen.' },
+        card8: { title: 'Meditation', description: 'Ritualkits mit Räucherstäbchen, Duftölen und Keramikhaltern.' },
+        card9: { title: 'Autoparfum', description: 'Magnetische Clips mit austauschbaren Duftkapseln für jede Fahrt.' },
+        card10: { title: 'Aromageräte', description: 'Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Größen.' }
+      },
+      products: {
+        label: 'Aktuelle Favoriten',
+        title: 'Beliebte Kompositionen',
+        button: 'In den Warenkorb',
+        card1: { name: 'Reeddiffusor "Urban Calm"', description: 'Vetiver, Bergamotte und gerösteter Kakao sorgen für Ruhe in modernen Lofts.', price: 'CHF 59.90' },
+        card2: { name: 'Raumspray "Alpine Mist"', description: 'Eukalyptus, Silberfichte und Baumwollblüte für klare, frische Interieurs.', price: 'CHF 39.90' },
+        card3: { name: 'Duftkerze "Sable Nuit"', description: 'Sandelholz, Amber und Tonkabohne in mattem Steinzeug.', price: 'CHF 69.90' },
+        card4: { name: 'Gift Set "Cedar Atlas"', description: 'Diffusor, Spray und Kerze in abgestimmten Holznoten.', price: 'CHF 149.00' },
+        card5: { name: 'Textilspray "Velvet Studio"', description: 'Cashmere, Osmanthus und weiße Teeblätter für Soft-Furnishings.', price: 'CHF 34.00' },
+        card6: { name: 'Autoparfum "Nomad Drive"', description: 'Zedernholz, Grapefruit und Leder für jede Fahrt.', price: 'CHF 29.50' }
+      },
+      benefits: {
+        label: 'Warum NicheHome.ch',
+        title: 'Premium Service für feine Düfte',
+        item1: { title: 'Sichere Verpackung', description: 'Spezielle Schaumstoff- und Kartoninlays schützen empfindliche Glasware auf jedem Transportweg.' },
+        item2: { title: 'Kostenloser Versand', description: 'Lieferungen ab CHF 80 sind innerhalb der Schweiz inklusive Versicherung kostenfrei.' },
+        item3: { title: 'Kuratiert & getestet', description: 'Jede Komposition wird im Showroom getestet, bevor sie in das Sortiment aufgenommen wird.' },
+        item4: { title: 'Geschenkverpackung', description: 'Auf Wunsch erhalten Sie satinierte Bänder, Karten und maßgefertigte Boxen.' }
+      },
+      news: {
+        label: 'Journal',
+        title: 'Neuigkeiten & Duftwissen',
+        readMore: 'Mehr lesen',
+        card1: { tag: 'Dufttipps', title: 'Layering-Ideen für Boutique-Hotels', excerpt: 'Wie mehrere Duftquellen zusammenspielen, um Lounges und Suiten differenziert wirken zu lassen.' },
+        card2: { tag: 'Insights', title: 'Nachfüllservices für Retail-Partner', excerpt: 'Flexible Mengen, neutrale Verpackung und private Label-Optionen für Shop-in-Shop-Konzepte.' },
+        card3: { tag: 'Events', title: 'Scent Styling für Sommerterrassen', excerpt: 'Mit mobilen Diffusoren und Textilsprays schaffen wir frische Kulissen für Pop-up-Formate.' }
+      }
+    },
+    catalog: {
+      hero: {
+        label: 'Kuratiertes Sortiment',
+        title: 'Der vollständige NicheHome.ch Katalog',
+        subtitle: 'Alle Kollektionen und Sondereditionen in einer strukturierten Übersicht für Privatkunden, Retail-Partner und Interior-Studios.',
+        note: 'Bestellungen werden innerhalb von 24 Stunden bestätigt. Express-Optionen auf Anfrage.',
+        button: 'Jetzt stöbern'
+      },
+      grid: { label: 'Segmentierung', title: 'Kollektionen im Überblick' },
+      info: {
+        label: 'Service Level',
+        title: 'Logistik & Unterstützung',
+        item1: { title: 'Muster & Tester', description: 'Komplette Sampling-Sets inklusive Duftkarten, um das Sortiment leicht zu präsentieren.' },
+        item2: { title: 'Flexible Mengen', description: 'Abnahme pro 6er- oder 12er-Karton sowie Mischkartons für kleinere Projekte.' },
+        item3: { title: 'Nachhaltige Verpackung', description: 'Recycelbare Materialien, neutrale Kartons und wiederverwendbare Füllstoffe.' }
+      },
+      faq: {
+        label: 'FAQ',
+        title: 'Häufig gestellte Fragen',
+        item1: { question: 'Wie lange dauert die Produktion?', answer: 'Lagerartikel sind sofort lieferbar, Sondergrößen benötigen zwischen 10 und 15 Arbeitstagen.' },
+        item2: { question: 'Bieten Sie private Labels an?', answer: 'Ja, ab 100 Einheiten pro Duft erstellen wir neutrale Labels oder co-branded Editionen.' },
+        item3: { question: 'Gibt es Duftberatung?', answer: 'Unser Team unterstützt per Video-Call oder vor Ort bei der Auswahl nach Raumgröße und Markenwelt.' }
+      },
+      news: {
+        label: 'Aktuelles',
+        title: 'Kollektions-Updates',
+        card1: { tag: 'Launch', title: 'Neue "Atelier" Linie', excerpt: 'Vier Reeddiffusoren mit mineralischen Noten und Keramikkappen in Naturfarben.' },
+        card2: { tag: 'Partnerschaft', title: 'Pop-up im Tessin', excerpt: 'Temporärer Dufttisch mit limitierter Kollektion und Live-Blending.' },
+        card3: { tag: 'Service', title: 'Recyclingprogramm', excerpt: 'Leere Gefäße können zurückgegeben werden und werden in Showroom-Installationen genutzt.' }
+      },
+      cta: {
+        title: 'Limitierte Editionen reservieren',
+        text: 'Sichern Sie sich kleine Auflagen, bevor die offiziellen Kampagnen starten. Wir informieren Sie persönlich über verfügbare Mengen.',
+        button: 'Beratung buchen'
+      }
+    },
+    categoryDiffusers: {
+      hero: {
+        label: 'Signature Linie',
+        title: 'Aroma-Diffusoren für charaktervolle Räume',
+        subtitle: 'Von kompakten 100-ml-Größen bis zu monumentalen Hotelgefäßen – jede Variante liefert konstante Duftabgabe.',
+        text: 'Alle Flakons werden in Italien gefertigt und mit Pflanzenfasern kombiniert, die die Duftöle gleichmäßig aufnehmen.',
+        button: 'Projekt anfragen',
+        secondary: 'Zur Übersicht'
+      },
+      highlights: {
+        label: 'Materialien',
+        title: 'Details, die den Unterschied machen',
+        item1: { title: 'Handpoliertes Glas', description: 'Jede Vase erhält eine satinierte Oberfläche, die sich in jede Interior-Palette einfügt.' },
+        item2: { title: 'Naturfasern', description: 'Rattan- und Baumwollstäbchen werden vor dem Versand kalibriert, um einen gleichmäßigen Duftfluss zu garantieren.' },
+        item3: { title: 'Nachfüllsystem', description: 'Refills werden in Aluminiumflaschen geliefert und lassen sich mit beiliegenden Trichtern bequem nachfüllen.' }
+      },
+      products: {
+        label: 'Kollektion',
+        title: 'Kurze Lieferzeiten, lange Wirkung',
+        card1: { name: 'Reeddiffusor "Urban Calm" 200 ml', description: 'Vetiver, Bergamotte und Kakao. Ideal für Lobbys und Private Spas.', price: 'CHF 59.90' },
+        card2: { name: 'Diffusor "Atlas Cedar" 500 ml', description: 'Zedernholz, Weihrauch und schwarze Johannisbeere für Statement-Suiten.', price: 'CHF 98.00' },
+        card3: { name: 'Diffusor "Lumen" 1L', description: 'Orangenblüte, Neroli und weißer Moschus für großflächige Showrooms.', price: 'CHF 149.00' },
+        card4: { name: 'Diffusor "Monumental" 2.5L', description: 'Patchouli, Amber und Zeder in übergroßen Gefäßen für Hotel-Lobbys.', price: 'CHF 249.00' }
+      },
+      cta: {
+        title: 'Installationsservice verfügbar',
+        text: 'Wir unterstützen Hotels, Boutiquen und Offices bei der Platzierung und dem Austausch der Diffusoren.',
+        button: 'Termin vereinbaren'
+      }
+    },
+    categoryCandles: {
+      hero: {
+        label: 'Ceremonial Edition',
+        title: 'Duftkerzen mit architektonischen Gefäßen',
+        subtitle: 'Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.',
+        text: 'Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.',
+        button: 'Showroom-Besuch buchen',
+        secondary: 'Weitere Kategorien'
+      },
+      highlights: {
+        label: 'Komposition',
+        title: 'Sensorische und visuelle Harmonie',
+        item1: { title: 'Europäische Wachse', description: 'Raps, Soja und Kokosnuss werden für ein cremiges Finish kombiniert und garantieren sauberes Brennen.' },
+        item2: { title: 'Keramikgefäße', description: 'Gefertigt in Valencia mit naturbelassenen Pigmenten, die zu hellen und dunklen Interieurs passen.' },
+        item3: { title: 'Signature Deckel', description: 'Der massive Deckel dient als Untersetzer und schützt Kerzen vor Staub.' }
+      },
+      products: {
+        label: 'Edition',
+        title: 'Handgegossene Highlights',
+        card1: { name: 'Kerze "Sable Nuit"', description: 'Amber, Tonka und Labdanum schaffen ein warmes, samtiges Ambiente.', price: 'CHF 69.90' },
+        card2: { name: 'Kerze "Linen Cloud"', description: 'Baumwollblüte, Cashmere und weisser Moschus für Schlafzimmer und Spas.', price: 'CHF 64.00' },
+        card3: { name: 'Kerze "Fig Aura"', description: 'Feigenblatt, grüner Tee und Tonkabohne – beliebt in Concept Stores.', price: 'CHF 72.00' },
+        card4: { name: 'Kerze "Noir Cacao"', description: 'Dunkle Schokolade, Zedernholz und Rum. Perfekt für Lounges und Bars.', price: 'CHF 78.00' }
+      },
+      cta: {
+        title: 'Refill & Gravur-Service',
+        text: 'Kerzengefäße können neu befüllt oder personalisiert werden. Ideal für Corporate Gifts.',
+        button: 'Kontakt aufnehmen'
+      }
+    },
+    about: {
+      hero: {
+        label: 'Markengeschichte',
+        title: 'Scent Curation aus Zürich für die Schweiz',
+        subtitle: 'NicheHome.ch repräsentiert By Velcheva mit maßgeschneiderten Services für Privatkunden und Projekte.'
+      },
+      story: {
+        title: 'Duftkompetenz mit Boutique-Charakter',
+        paragraph1: 'Was als persönliches Sourcing für Interior-Projekte begann, entwickelte sich zu einem Netzwerk von Parfümeuren und Manufakturen in Spanien, Italien und der Schweiz.',
+        paragraph2: 'Wir begleiten Architekt*innen und Brands von der Auswahl einzelner Düfte bis zu kompletten Duftstrategien für Showrooms, Retail und Hospitality.',
+        paragraph3: 'Jede Kollektion wird in Zürich getestet, dokumentiert und mit Leitfäden für optimale Anwendung geliefert.'
+      },
+      values: {
+        label: 'Werte',
+        title: 'Wofür wir stehen',
+        item1: { title: 'Kuratiertes Sortiment', description: 'Maximal 40 SKUs, damit jede Komposition die Aufmerksamkeit erhält, die sie verdient.' },
+        item2: { title: 'Transparente Herstellung', description: 'Wir kommunizieren Rohstoffe, Herkunftsländer und Nachhaltigkeitsstandards offen.' },
+        item3: { title: 'Persönliche Betreuung', description: 'Vom Moodboard bis zur Installation stehen feste Ansprechpartner zur Verfügung.' }
+      },
+      timeline: {
+        label: 'Timeline',
+        title: 'Stationen unserer Reise',
+        step1: { year: '2017', text: 'Erste Duftkollaboration mit einem Zürcher Interior-Studio.' },
+        step2: { year: '2020', text: 'Exklusivvertrag für die Schweiz mit By Velcheva.' },
+        step3: { year: '2023', text: 'Eröffnung des Showrooms inklusive Duftlabor und Beratungslounge.' }
+      },
+      cta: {
+        title: 'Besuchen Sie den Showroom',
+        text: 'Individuelle Termine ermöglichen Dufttests, Nachfüllservices und die Planung maßgeschneiderter Projekte.',
+        button: 'Termin buchen'
+      }
+    },
+    corporate: {
+      hero: {
+        label: 'B2B Services',
+        title: 'Signature-Duftprogramme für Marken & Hospitality',
+        subtitle: 'Von maßgeschneiderten Kollektionen bis zu White-Label-Produkten inklusive Verpackung und POS-Materialien.',
+        button: 'Projekt starten'
+      },
+      benefits: {
+        label: 'Leistungen',
+        title: 'Skalierbare Duftservices',
+        item1: { title: 'Individuelle Rezepturen', description: 'Zusammenarbeit mit europäischen Parfümeuren für gebrandete Kompositionen.' },
+        item2: { title: 'Flexible Produktion', description: 'Staffelpreise ab 100 Einheiten, Express-Produktionen für Events.' },
+        item3: { title: 'POS & Training', description: 'Merchandising-Kits, Schulungen und digitale Assets für Verkaufsteams.' }
+      },
+      steps: {
+        label: 'Ablauf',
+        title: 'So arbeiten wir zusammen',
+        item1: { title: 'Briefing & Moodboard', description: 'Wir analysieren Brand Values, Zielgruppen und Raumgrößen.' },
+        item2: { title: 'Sampling & Freigabe', description: 'Innerhalb von zwei Wochen erhalten Sie Muster inklusive Kostenübersicht.' },
+        item3: { title: 'Produktion & Roll-out', description: 'Produktion, Qualitätskontrolle und Logistik werden von Zürich aus koordiniert.' }
+      },
+      clients: {
+        label: 'Referenzen',
+        title: 'Vertrauensvolle Partnerschaften',
+        text: 'Wir betreuen Boutique-Hotels, Concept Stores und Immobilienentwickler in Zürich, Genf und Lugano.'
+      },
+      cta: {
+        title: 'Corporate Kit anfordern',
+        text: 'Wir senden Duftkarten, Gefäßmuster und ein detailliertes Angebot innerhalb von 48 Stunden.',
+        button: 'Kontakt aufnehmen'
+      }
+    },
+    contacts: {
+      hero: {
+        label: 'Kontakt',
+        title: 'Showroom & Beratung',
+        subtitle: 'Vereinbaren Sie Termine, fragen Sie Muster an oder koordinieren Sie Corporate-Projekte.'
+      },
+      info: {
+        title: 'Kontaktinformationen',
+        paragraph: 'Unser Team antwortet werktags innerhalb von 24 Stunden.',
+        hoursTitle: 'Öffnungszeiten',
+        hours: 'Montag–Freitag 10:00–18:00 Uhr, Samstag nach Vereinbarung.',
+        channelsTitle: 'Kanäle',
+        channels: 'WhatsApp, Instagram Direct oder klassisch per E-Mail.'
+      },
+      details: {
+        addressLabel: 'Adresse:',
+        phoneLabel: 'Telefon:',
+        emailLabel: 'E-Mail:'
+      },
+      form: {
+        label: 'Anfrage',
+        title: 'Schreiben Sie uns',
+        name: 'Name*',
+        email: 'E-Mail*',
+        phone: 'Telefon',
+        country: 'Land',
+        message: 'Nachricht*',
+        submit: 'Nachricht senden',
+        success: 'Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze.',
+        countryOptions: { ch: 'Schweiz', de: 'Deutschland', fr: 'Frankreich', it: 'Italien' }
+      }
+    },
+    privacy: {
+      hero: {
+        label: 'Datenschutz',
+        title: 'Transparenter Umgang mit Daten',
+        subtitle: 'Dieses Dokument beschreibt, wie NicheHome.ch personenbezogene Informationen erfasst, nutzt und schützt.'
+      },
+      section1: { title: '1. Verantwortliche Stelle & Hosting', paragraph: 'Die NicheHome GmbH, Musterstrasse 12, 8000 Zürich, ist verantwortlich für die Verarbeitung. Unsere Website wird auf Servern in der EU betrieben, die ISO-zertifizierte Sicherheitsstandards einhalten.' },
+      section2: { title: '2. Erhobene Daten', paragraph: 'Wir speichern Kontaktangaben aus Formularen, Bestellinformationen, anonymisierte Analytics-Daten sowie Korrespondenz. Cookies dienen ausschließlich funktionalen und statistischen Zwecken.' },
+      section3: { title: '3. Nutzung & Weitergabe', paragraph: 'Daten werden nur zur Erfüllung von Bestellungen, zur Kundenbetreuung und zur Optimierung unserer Services verwendet. Eine Weitergabe an Dritte erfolgt ausschließlich an Logistik- oder Zahlungsdienstleister mit Sitz in der Schweiz oder EU.' },
+      section4: { title: '4. Rechte & Kontakt', paragraph: 'Sie können jederzeit Auskunft, Berichtigung oder Löschung beantragen. Kontaktieren Sie uns per E-Mail an hello@nichehome.ch. Wir beantworten Anfragen innerhalb von 30 Tagen.' }
+    },
+    terms: {
+      hero: {
+        label: 'AGB',
+        title: 'Allgemeine Geschäftsbedingungen',
+        subtitle: 'Die folgenden Bestimmungen regeln sämtliche Bestellungen und Services von NicheHome.ch.'
+      },
+      section1: { title: '1. Vertragsabschluss', paragraph: 'Bestellungen gelten als Angebot. Eine verbindliche Bestätigung erfolgt per E-Mail. Wir behalten uns vor, Aufträge ohne Angabe von Gründen abzulehnen.' },
+      section2: { title: '2. Preise & Zahlung', paragraph: 'Alle Preise sind in CHF inklusive Mehrwertsteuer angegeben. Zahlungen erfolgen via Kreditkarte, TWINT oder Banküberweisung innerhalb von 10 Tagen.' },
+      section3: { title: '3. Lieferung & Gefahrübergang', paragraph: 'Lieferungen erfolgen per Post oder Kurier innerhalb der Schweiz. Die Gefahr geht mit Übergabe an den Transportdienstleister auf den Kunden über.' },
+      section4: { title: '4. Rückgabe & Reklamation', paragraph: 'Ungeöffnete Produkte können innerhalb von 14 Tagen retourniert werden. Beschädigte Artikel sind innerhalb von 48 Stunden nach Erhalt zu melden.' },
+      section5: { title: '5. Haftung & Gerichtsstand', paragraph: 'Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.' }
+    }
+  },
+  fr: {
+    meta: {
+      indexTitle: 'NicheHome.ch – Parfums d’intérieur premium',
+      catalogTitle: 'NicheHome.ch – Catalogue complet',
+      diffusersTitle: 'NicheHome.ch – Diffuseurs d’arômes',
+      candlesTitle: 'NicheHome.ch – Bougies parfumées',
+      aboutTitle: 'NicheHome.ch – À propos de la marque',
+      corporateTitle: 'NicheHome.ch – Services corporate',
+      contactsTitle: 'NicheHome.ch – Contact',
+      privacyTitle: 'NicheHome.ch – Politique de confidentialité',
+      termsTitle: 'NicheHome.ch – Conditions générales'
+    },
+    common: {
+      brand: 'NicheHome.ch',
+      phone: 'Tél. : +41 (0)44 000 00 00',
+      email: 'E-mail : hello@nichehome.ch',
+      follow: 'Suivez-nous :',
+      social: {
+        instagram: 'Instagram',
+        whatsapp: 'WhatsApp',
+        pinterest: 'Pinterest'
+      },
+      wishlist: '♡ Liste de souhaits',
+      account: '👤 Compte',
+      cart: '🛒 Panier',
+      cartItems: 'articles',
+      burger: 'Ouvrir ou fermer le menu'
+    },
+    nav: {
+      catalog: 'Catalogue',
+      diffusers: 'Diffuseurs d’arômes',
+      candles: 'Bougies parfumées',
+      limited: 'Collection limitée',
+      room: 'Parfums d’ambiance',
+      textile: 'Spray textile',
+      gift: 'Coffrets cadeaux',
+      accessories: 'Accessoires',
+      meditation: 'Méditation',
+      car: 'Parfum auto',
+      devices: 'Appareils aroma',
+      about: 'À propos',
+      corporate: 'Corporate',
+      contacts: 'Contact'
+    },
+    footer: {
+      catalogTitle: 'Catalogue',
+      infoTitle: 'Informations',
+      legalTitle: 'Mentions légales',
+      contactTitle: 'Contact',
+      about: 'À propos de la marque',
+      journal: 'Journal',
+      corporate: 'Services corporate',
+      shipping: 'Livraison & retours',
+      faq: 'FAQ',
+      privacy: 'Confidentialité',
+      terms: 'Conditions',
+      cookies: 'Cookies',
+      address: 'Showroom, Rue Exemple 12, 8000 Zurich',
+      phone: 'Tél. : +41 (0)44 000 00 00',
+      email: 'E-mail : hello@nichehome.ch',
+      paymentTitle: 'Paiements acceptés : Visa, Mastercard, TWINT',
+      copyright: '© NicheHome.ch – Représentant officiel suisse de By Velcheva'
+    },
+    index: {
+      hero: {
+        label: 'Représentation exclusive en Suisse',
+        title: 'Parfums d’intérieur de niche pour maisons et entreprises',
+        subtitle: 'Un portefeuille olfactif soigné pour des espaces affirmés. Harmonies veloutées, contemporaines et livrées rapidement en Suisse.',
+        primary: 'Voir le catalogue',
+        secondary: 'À propos de la marque'
+      },
+      story: {
+        title: 'À propos de NicheHome.ch',
+        paragraph1: 'NicheHome.ch sélectionne des parfums d’intérieur destinés aux résidences exigeantes et aux concepts hôteliers. Chaque création naît d’une passion pour les accords rares et la tenue longue durée.',
+        paragraph2: 'Nous livrons designers, boutiques et clients privés dans toute la Suisse avec des conditions flexibles et un accompagnement personnalisé.',
+        link: 'Découvrir notre philosophie'
+      },
+      categories: {
+        label: 'Découvrir la collection',
+        title: 'Univers olfactifs',
+        button: 'Voir les produits',
+        card1: { title: 'Diffuseurs d’arômes', description: 'Flacons satinés avec fibres naturelles pour parfumer jusqu’à 60 m².' },
+        card2: { title: 'Bougies parfumées', description: 'Cires coulées à la main avec trois mèches et contenants en céramique.' },
+        card3: { title: 'Collection limitée', description: 'Éditions saisonnières numérotées, disponibles uniquement sur demande.' },
+        card4: { title: 'Parfums d’ambiance', description: 'Sprays pour l’air ou le linge avec effet immédiat.' },
+        card5: { title: 'Spray textile', description: 'Compositions douces pour rideaux, tapis et linge de lit.' },
+        card6: { title: 'Coffrets cadeaux', description: 'Boîtes assorties pour moments exceptionnels.' },
+        card7: { title: 'Accessoires', description: 'Entonnoirs, doseurs et plaques parfumées pour présentations professionnelles.' },
+        card8: { title: 'Méditation', description: 'Ensembles rituels avec encens, huiles parfumées et supports céramique.' },
+        card9: { title: 'Parfum auto', description: 'Clips magnétiques avec capsules interchangeables pour la route.' },
+        card10: { title: 'Appareils aroma', description: 'Diffuseurs ultrasoniques avec minuterie pour tous les volumes.' }
+      },
+      products: {
+        label: 'Favoris du moment',
+        title: 'Compositions appréciées',
+        button: 'Ajouter au panier',
+        card1: { name: 'Diffuseur "Urban Calm"', description: 'Vétiver, bergamote et cacao torréfié pour des lofts apaisés.', price: 'CHF 59.90' },
+        card2: { name: 'Spray "Alpine Mist"', description: 'Eucalyptus, sapin argenté et fleur de coton pour des intérieurs frais.', price: 'CHF 39.90' },
+        card3: { name: 'Bougie "Sable Nuit"', description: 'Bois de santal, ambre et fève tonka dans un grès mat.', price: 'CHF 69.90' },
+        card4: { name: 'Coffret "Cedar Atlas"', description: 'Diffuseur, spray et bougie autour de notes boisées.', price: 'CHF 149.00' },
+        card5: { name: 'Spray textile "Velvet Studio"', description: 'Cashmere, osmanthus et thé blanc pour les textiles.', price: 'CHF 34.00' },
+        card6: { name: 'Parfum auto "Nomad Drive"', description: 'Cèdre, pamplemousse et cuir pour chaque trajet.', price: 'CHF 29.50' }
+      },
+      benefits: {
+        label: 'Pourquoi NicheHome.ch',
+        title: 'Services premium',
+        item1: { title: 'Emballage sûr', description: 'Inserts en mousse et carton protègent les flacons délicats.' },
+        item2: { title: 'Livraison offerte', description: 'Envoi gratuit dès CHF 80 en Suisse, assurance incluse.' },
+        item3: { title: 'Sélection testée', description: 'Chaque parfum est testé au showroom avant intégration.' },
+        item4: { title: 'Emballage cadeau', description: 'Rubans satinés, cartes et boîtes sur demande.' }
+      },
+      news: {
+        label: 'Journal',
+        title: 'Actualités & expertise',
+        readMore: 'En savoir plus',
+        card1: { tag: 'Conseils', title: 'Layering pour boutique-hôtels', excerpt: 'Composer plusieurs sources olfactives pour différencier lounges et suites.' },
+        card2: { tag: 'Insights', title: 'Services de recharge retail', excerpt: 'Volumes flexibles, packaging neutre et options marque blanche.' },
+        card3: { tag: 'Événements', title: 'Scénographie olfactive estivale', excerpt: 'Diffuseurs mobiles et sprays textiles pour terrasses pop-up.' }
+      }
+    },
+    catalog: {
+      hero: {
+        label: 'Sélection',
+        title: 'Le catalogue complet NicheHome.ch',
+        subtitle: 'Toutes les collections et éditions spéciales pour particuliers, détaillants et studios.',
+        note: 'Confirmation sous 24 h. Options express sur demande.',
+        button: 'Explorer maintenant'
+      },
+      grid: { label: 'Segmentation', title: 'Vue d’ensemble des collections' },
+      info: {
+        label: 'Services',
+        title: 'Logistique & support',
+        item1: { title: 'Kits d’échantillons', description: 'Pochettes complètes avec cartes parfumées pour présenter facilement.' },
+        item2: { title: 'Quantités flexibles', description: 'Cartons de 6 ou 12 pièces et assortiments mixtes pour les projets.' },
+        item3: { title: 'Packaging durable', description: 'Matériaux recyclables, cartons neutres et calages réutilisables.' }
+      },
+      faq: {
+        label: 'FAQ',
+        title: 'Questions fréquentes',
+        item1: { question: 'Délais de production ?', answer: 'Stock expédié immédiatement, formats spéciaux en 10–15 jours ouvrables.' },
+        item2: { question: 'Label privé disponible ?', answer: 'Oui, dès 100 pièces par parfum avec étiquettes neutres ou co-brandées.' },
+        item3: { question: 'Conseil olfactif ?', answer: 'Accompagnement vidéo ou sur site selon la taille du lieu et l’univers de marque.' }
+      },
+      news: {
+        label: 'Actualités',
+        title: 'Mises à jour de collection',
+        card1: { tag: 'Lancement', title: 'Nouvelle ligne "Atelier"', excerpt: 'Quatre diffuseurs minéraux avec capuchons céramiques naturels.' },
+        card2: { tag: 'Partenariat', title: 'Pop-up au Tessin', excerpt: 'Table de parfum éphémère avec collection limitée et blending en direct.' },
+        card3: { tag: 'Service', title: 'Programme recyclage', excerpt: 'Les contenants retournés rejoignent nos installations showroom.' }
+      },
+      cta: {
+        title: 'Réserver les éditions limitées',
+        text: 'Assurez-vous des petites séries avant le lancement officiel. Nous informons sur les quantités disponibles.',
+        button: 'Demander un conseil'
+      }
+    },
+    categoryDiffusers: {
+      hero: {
+        label: 'Ligne signature',
+        title: 'Diffuseurs pour espaces de caractère',
+        subtitle: 'De 100 ml compacts à des formats monumentaux pour l’hôtellerie.',
+        text: 'Flacons italiens associés à des fibres végétales pour une diffusion régulière.',
+        button: 'Demander un projet',
+        secondary: 'Retour au catalogue'
+      },
+      highlights: {
+        label: 'Matériaux',
+        title: 'Détails qui comptent',
+        item1: { title: 'Verre satiné', description: 'Chaque vase est poli à la main pour s’harmoniser à tout intérieur.' },
+        item2: { title: 'Fibres naturelles', description: 'Bâtonnets calibrés avant envoi pour garantir un flux olfactif constant.' },
+        item3: { title: 'Système de recharge', description: 'Recharges en aluminium avec entonnoirs fournis pour un remplissage facile.' }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Livraison rapide, impact durable',
+        card1: { name: 'Diffuseur "Urban Calm" 200 ml', description: 'Vétiver, bergamote et cacao pour spas privés et lobbys.', price: 'CHF 59.90' },
+        card2: { name: 'Diffuseur "Atlas Cedar" 500 ml', description: 'Bois de cèdre, encens et cassis pour suites signature.', price: 'CHF 98.00' },
+        card3: { name: 'Diffuseur "Lumen" 1L', description: 'Fleur d’oranger, néroli et musc blanc pour grands showrooms.', price: 'CHF 149.00' },
+        card4: { name: 'Diffuseur "Monumental" 2.5L', description: 'Patchouli, ambre et cèdre pour halls d’hôtel.', price: 'CHF 249.00' }
+      },
+      cta: {
+        title: 'Service d’installation',
+        text: 'Assistance pour la mise en place et l’entretien dans hôtels, boutiques et bureaux.',
+        button: 'Planifier une visite'
+      }
+    },
+    categoryCandles: {
+      hero: {
+        label: 'Édition cérémonielle',
+        title: 'Bougies aux contenants architecturaux',
+        subtitle: 'Coulées, polies et numérotées à la main – objets décoratifs durables.',
+        text: 'Triple mèches coton ou bois pour une combustion homogène jusqu’à 80 h.',
+        button: 'Réserver le showroom',
+        secondary: 'Autres catégories'
+      },
+      highlights: {
+        label: 'Composition',
+        title: 'Harmonie sensorielle',
+        item1: { title: 'Cires européennes', description: 'Colza, soja et coco pour une texture crémeuse et propre.' },
+        item2: { title: 'Contenants en céramique', description: 'Fabriqués à Valence avec pigments naturels adaptés à tout décor.' },
+        item3: { title: 'Couvercle signature', description: 'Lourd couvercle servant de socle et protégeant la bougie.' }
+      },
+      products: {
+        label: 'Édition',
+        title: 'Pièces coulées à la main',
+        card1: { name: 'Bougie "Sable Nuit"', description: 'Ambre, tonka et labdanum pour une atmosphère enveloppante.', price: 'CHF 69.90' },
+        card2: { name: 'Bougie "Linen Cloud"', description: 'Fleur de coton, cashmere et musc blanc pour chambres et spas.', price: 'CHF 64.00' },
+        card3: { name: 'Bougie "Fig Aura"', description: 'Feuille de figuier, thé vert et tonka, appréciée en concept stores.', price: 'CHF 72.00' },
+        card4: { name: 'Bougie "Noir Cacao"', description: 'Chocolat noir, cèdre et rhum pour lounges et bars.', price: 'CHF 78.00' }
+      },
+      cta: {
+        title: 'Service recharge & gravure',
+        text: 'Les contenants peuvent être rechargés ou personnalisés pour des cadeaux corporate.',
+        button: 'Nous contacter'
+      }
+    },
+    about: {
+      hero: {
+        label: 'Histoire de la marque',
+        title: 'Curations olfactives depuis Zurich',
+        subtitle: 'Représentant officiel By Velcheva avec services sur mesure.'
+      },
+      story: {
+        title: 'Savoir-faire boutique',
+        paragraph1: 'Né d’un sourcing personnel pour projets intérieurs, devenu réseau de parfumeurs en Espagne, Italie et Suisse.',
+        paragraph2: 'Nous accompagnons architectes et marques des tests individuels aux stratégies olfactives complètes.',
+        paragraph3: 'Chaque collection est testée et livrée avec guides d’application à Zurich.'
+      },
+      values: {
+        label: 'Valeurs',
+        title: 'Notre engagement',
+        item1: { title: 'Sélection réduite', description: 'Maximum 40 références pour préserver la qualité.' },
+        item2: { title: 'Transparence', description: 'Origines, matières et durabilité communiquées clairement.' },
+        item3: { title: 'Accompagnement', description: 'Un interlocuteur dédié du moodboard à l’installation.' }
+      },
+      timeline: {
+        label: 'Chronologie',
+        title: 'Étapes clés',
+        step1: { year: '2017', text: 'Première collaboration parfum avec un studio zurichois.' },
+        step2: { year: '2020', text: 'Accord d’exclusivité suisse avec By Velcheva.' },
+        step3: { year: '2023', text: 'Ouverture du showroom avec laboratoire olfactif.' }
+      },
+      cta: {
+        title: 'Visitez le showroom',
+        text: 'Tests, recharges et planification de projets sur rendez-vous.',
+        button: 'Prendre rendez-vous'
+      }
+    },
+    corporate: {
+      hero: {
+        label: 'Services B2B',
+        title: 'Programmes olfactifs pour marques et hôtels',
+        subtitle: 'Collections sur mesure ou marque blanche avec packaging et supports POS.',
+        button: 'Lancer un projet'
+      },
+      benefits: {
+        label: 'Prestations',
+        title: 'Services évolutifs',
+        item1: { title: 'Formules personnalisées', description: 'Co-création avec parfumeurs européens pour signatures olfactives.' },
+        item2: { title: 'Production flexible', description: 'Paliers dès 100 pièces, options express pour événements.' },
+        item3: { title: 'POS & formation', description: 'Kits merchandising, formations et assets digitaux.' }
+      },
+      steps: {
+        label: 'Processus',
+        title: 'Notre méthode',
+        item1: { title: 'Brief & moodboard', description: 'Analyse des valeurs de marque, publics et surfaces.' },
+        item2: { title: 'Échantillons & validation', description: 'En deux semaines, réception des tests et devis.' },
+        item3: { title: 'Production & déploiement', description: 'Contrôle qualité et logistique coordonnés depuis Zurich.' }
+      },
+      clients: {
+        label: 'Références',
+        title: 'Partenariats de confiance',
+        text: 'Nous accompagnons hôtels-boutiques, concept stores et promoteurs à Zurich, Genève et Lugano.'
+      },
+      cta: {
+        title: 'Demander un kit corporate',
+        text: 'Cartes parfumées, échantillons de contenants et offre détaillée sous 48 h.',
+        button: 'Nous contacter'
+      }
+    },
+    contacts: {
+      hero: {
+        label: 'Contact',
+        title: 'Showroom & conseils',
+        subtitle: 'Prenez rendez-vous, demandez des échantillons ou coordonnez un projet corporate.'
+      },
+      info: {
+        title: 'Informations de contact',
+        paragraph: 'Nous répondons sous 24 h (jours ouvrables).',
+        hoursTitle: 'Horaires',
+        hours: 'Lundi–vendredi 10h–18h, samedi sur rendez-vous.',
+        channelsTitle: 'Canaux',
+        channels: 'WhatsApp, Instagram Direct ou e-mail classique.'
+      },
+      details: {
+        addressLabel: 'Adresse :',
+        phoneLabel: 'Téléphone :',
+        emailLabel: 'E-mail :'
+      },
+      form: {
+        label: 'Demande',
+        title: 'Écrivez-nous',
+        name: 'Nom*',
+        email: 'E-mail*',
+        phone: 'Téléphone',
+        country: 'Pays',
+        message: 'Message*',
+        submit: 'Envoyer',
+        success: 'Merci pour votre message. Nous reviendrons vers vous rapidement.',
+        countryOptions: { ch: 'Suisse', de: 'Allemagne', fr: 'France', it: 'Italie' }
+      }
+    },
+    privacy: {
+      hero: {
+        label: 'Confidentialité',
+        title: 'Gestion transparente des données',
+        subtitle: 'Cette page explique comment NicheHome.ch collecte, utilise et protège vos informations.'
+      },
+      section1: { title: '1. Responsable & hébergement', paragraph: 'NicheHome GmbH, Rue Exemple 12, 8000 Zurich, est responsable du traitement. Hébergement dans l’UE avec standards de sécurité certifiés.' },
+      section2: { title: '2. Données collectées', paragraph: 'Nous conservons les coordonnées des formulaires, informations de commande, données analytiques anonymisées et correspondances. Les cookies servent uniquement à des fins fonctionnelles ou statistiques.' },
+      section3: { title: '3. Utilisation & partage', paragraph: 'Les données servent à traiter les commandes, assister les clients et améliorer nos services. Transmission uniquement aux partenaires logistiques ou de paiement basés en Suisse ou dans l’UE.' },
+      section4: { title: '4. Droits & contact', paragraph: 'Demandez à tout moment accès, rectification ou suppression via hello@nichehome.ch. Réponse sous 30 jours.' }
+    },
+    terms: {
+      hero: {
+        label: 'Conditions',
+        title: 'Conditions générales de vente',
+        subtitle: 'Ces dispositions s’appliquent à toutes les commandes et prestations de NicheHome.ch.'
+      },
+      section1: { title: '1. Conclusion du contrat', paragraph: 'Les commandes constituent une offre. Confirmation par e-mail. Nous pouvons refuser une commande sans justification.' },
+      section2: { title: '2. Prix et paiement', paragraph: 'Prix en CHF TTC. Paiement par carte, TWINT ou virement sous 10 jours.' },
+      section3: { title: '3. Livraison & transfert des risques', paragraph: 'Livraison par poste ou coursier en Suisse. Les risques sont transférés au transporteur lors de la remise.' },
+      section4: { title: '4. Retour & réclamation', paragraph: 'Produits non ouverts retournables sous 14 jours. Dommages à signaler dans les 48 h.' },
+      section5: { title: '5. Responsabilité & for', paragraph: 'Responsabilité limitée aux fautes graves. Droit suisse, for juridique Zurich.' }
+    }
+  },
+  it: {
+    meta: {
+      indexTitle: 'NicheHome.ch – Profumi per ambienti premium',
+      catalogTitle: 'NicheHome.ch – Catalogo completo',
+      diffusersTitle: 'NicheHome.ch – Diffusori d’aroma',
+      candlesTitle: 'NicheHome.ch – Candele profumate',
+      aboutTitle: 'NicheHome.ch – Informazioni sul brand',
+      corporateTitle: 'NicheHome.ch – Servizi corporate',
+      contactsTitle: 'NicheHome.ch – Contatti',
+      privacyTitle: 'NicheHome.ch – Privacy',
+      termsTitle: 'NicheHome.ch – Condizioni generali'
+    },
+    common: {
+      brand: 'NicheHome.ch',
+      phone: 'Tel.: +41 (0)44 000 00 00',
+      email: 'E-mail: hello@nichehome.ch',
+      follow: 'Seguici:',
+      social: {
+        instagram: 'Instagram',
+        whatsapp: 'WhatsApp',
+        pinterest: 'Pinterest'
+      },
+      wishlist: '♡ Lista desideri',
+      account: '👤 Account',
+      cart: '🛒 Carrello',
+      cartItems: 'articoli',
+      burger: 'Apri o chiudi il menu'
+    },
+    nav: {
+      catalog: 'Catalogo',
+      diffusers: 'Diffusori d’aroma',
+      candles: 'Candele profumate',
+      limited: 'Collezione limitata',
+      room: 'Profumi ambiente',
+      textile: 'Spray tessile',
+      gift: 'Cofanetti regalo',
+      accessories: 'Accessori',
+      meditation: 'Meditazione',
+      car: 'Profumo auto',
+      devices: 'Dispositivi aroma',
+      about: 'Chi siamo',
+      corporate: 'Corporate',
+      contacts: 'Contatti'
+    },
+    footer: {
+      catalogTitle: 'Catalogo',
+      infoTitle: 'Informazioni',
+      legalTitle: 'Note legali',
+      contactTitle: 'Contatto',
+      about: 'Il brand',
+      journal: 'Journal',
+      corporate: 'Servizi corporate',
+      shipping: 'Spedizione & resi',
+      faq: 'FAQ',
+      privacy: 'Privacy',
+      terms: 'Condizioni',
+      cookies: 'Cookie',
+      address: 'Showroom, Via Esempio 12, 8000 Zurigo',
+      phone: 'Tel.: +41 (0)44 000 00 00',
+      email: 'E-mail: hello@nichehome.ch',
+      paymentTitle: 'Accettiamo Visa, Mastercard, TWINT',
+      copyright: '© NicheHome.ch – Rappresentante svizzero ufficiale di By Velcheva'
+    },
+    index: {
+      hero: {
+        label: 'Rappresentanza esclusiva in Svizzera',
+        title: 'Profumi d’ambiente di nicchia per casa e business',
+        subtitle: 'Un portfolio curato per ambienti con carattere. Accordi vellutati, moderni e consegnati rapidamente in Svizzera.',
+        primary: 'Vai al catalogo',
+        secondary: 'Sulla marca'
+      },
+      story: {
+        title: 'Su NicheHome.ch',
+        paragraph1: 'NicheHome.ch presenta una selezione curata di profumi d’ambiente per residenze esigenti e concept hospitality. Ogni creazione nasce dalla passione per accordi unici e performance duratura.',
+        paragraph2: 'Forniamo designer, boutique e privati in tutta la Svizzera con condizioni flessibili e consulenza personalizzata.',
+        link: 'Scopri la filosofia'
+      },
+      categories: {
+        label: 'Esplora la collezione',
+        title: 'Categorie & mondi olfattivi',
+        button: 'Vedi prodotti',
+        card1: { title: 'Diffusori d’aroma', description: 'Flaconi satinati con fibre naturali per profumare fino a 60 m².' },
+        card2: { title: 'Candele profumate', description: 'Blend di cere colati a mano con tre stoppini e ceramiche eleganti.' },
+        card3: { title: 'Collezione limitata', description: 'Edizioni stagionali numerate e disponibili solo su richiesta.' },
+        card4: { title: 'Profumi ambiente', description: 'Spray per stanze e tessuti con effetto immediato.' },
+        card5: { title: 'Spray tessile', description: 'Composizioni delicate per tende, tappeti e biancheria.' },
+        card6: { title: 'Cofanetti regalo', description: 'Box curati con profumi coordinati per momenti speciali.' },
+        card7: { title: 'Accessori', description: 'Imbuti, misurini e piattini profumati per presentazioni professionali.' },
+        card8: { title: 'Meditazione', description: 'Kit rituali con incensi, oli profumati e supporti in ceramica.' },
+        card9: { title: 'Profumo auto', description: 'Clip magnetiche con capsule sostituibili per ogni viaggio.' },
+        card10: { title: 'Dispositivi aroma', description: 'Diffusori a ultrasuoni con timer per progetti di ogni dimensione.' }
+      },
+      products: {
+        label: 'Preferiti attuali',
+        title: 'Composizioni amate',
+        button: 'Aggiungi al carrello',
+        card1: { name: 'Diffusore "Urban Calm"', description: 'Vetiver, bergamotto e cacao tostato per loft rilassati.', price: 'CHF 59.90' },
+        card2: { name: 'Spray "Alpine Mist"', description: 'Eucalipto, abete argentato e fiore di cotone per interni freschi.', price: 'CHF 39.90' },
+        card3: { name: 'Candela "Sable Nuit"', description: 'Sandalo, ambra e fava tonka in gres opaco.', price: 'CHF 69.90' },
+        card4: { name: 'Cofanetto "Cedar Atlas"', description: 'Diffusore, spray e candela con note legnose armonizzate.', price: 'CHF 149.00' },
+        card5: { name: 'Spray tessile "Velvet Studio"', description: 'Cashmere, osmanto e tè bianco per tessili morbidi.', price: 'CHF 34.00' },
+        card6: { name: 'Profumo auto "Nomad Drive"', description: 'Cedro, pompelmo e pelle per ogni tragitto.', price: 'CHF 29.50' }
+      },
+      benefits: {
+        label: 'Perché NicheHome.ch',
+        title: 'Servizio premium',
+        item1: { title: 'Imballaggio sicuro', description: 'Inserti in schiuma e cartone proteggono il vetro delicato.' },
+        item2: { title: 'Spedizione gratuita', description: 'Consegne in Svizzera gratuite da CHF 80 con assicurazione.' },
+        item3: { title: 'Selezione testata', description: 'Ogni composizione è testata in showroom prima dell’inserimento.' },
+        item4: { title: 'Confezione regalo', description: 'Nastri satinati, cartoline e box su richiesta.' }
+      },
+      news: {
+        label: 'Journal',
+        title: 'Novità & know-how',
+        readMore: 'Leggi tutto',
+        card1: { tag: 'Consigli', title: 'Layering per boutique hotel', excerpt: 'Come combinare più fonti olfattive per lounge e suite distintive.' },
+        card2: { tag: 'Insights', title: 'Servizi refill per retail', excerpt: 'Quantità flessibili, packaging neutro e opzioni private label.' },
+        card3: { tag: 'Eventi', title: 'Scent styling estivo', excerpt: 'Diffusori mobili e spray tessili per terrazze pop-up.' }
+      }
+    },
+    catalog: {
+      hero: {
+        label: 'Selezione curata',
+        title: 'Catalogo completo NicheHome.ch',
+        subtitle: 'Tutte le collezioni e speciali per clienti privati, retail e studi interior.',
+        note: 'Ordini confermati entro 24 ore. Opzioni express su richiesta.',
+        button: 'Inizia ora'
+      },
+      grid: { label: 'Segmenti', title: 'Panoramica collezioni' },
+      info: {
+        label: 'Servizi',
+        title: 'Logistica & supporto',
+        item1: { title: 'Kit campioni', description: 'Set completi con cartoline olfattive per presentare facilmente.' },
+        item2: { title: 'Quantità flessibili', description: 'Cartoni da 6 o 12 pezzi e assortiti per progetti ridotti.' },
+        item3: { title: 'Packaging sostenibile', description: 'Materiali riciclabili, scatole neutre e riempimenti riutilizzabili.' }
+      },
+      faq: {
+        label: 'FAQ',
+        title: 'Domande frequenti',
+        item1: { question: 'Tempistiche produttive?', answer: 'Articoli a stock spediti subito, formati speciali in 10–15 giorni lavorativi.' },
+        item2: { question: 'Private label disponibile?', answer: 'Sì, da 100 pezzi per profumo con etichette neutre o co-brand.' },
+        item3: { question: 'Consulenza olfattiva?', answer: 'Supporto video o on-site secondo metratura e identità del brand.' }
+      },
+      news: {
+        label: 'Novità',
+        title: 'Aggiornamenti collezione',
+        card1: { tag: 'Lancio', title: 'Nuova linea "Atelier"', excerpt: 'Quattro diffusori minerali con cappucci in ceramica naturale.' },
+        card2: { tag: 'Partnership', title: 'Pop-up in Ticino', excerpt: 'Tavolo olfattivo temporaneo con blending live.' },
+        card3: { tag: 'Servizio', title: 'Programma riciclo', excerpt: 'Contenitori vuoti riutilizzati nelle installazioni showroom.' }
+      },
+      cta: {
+        title: 'Prenota le edizioni limitate',
+        text: 'Blocca piccole tirature prima delle campagne ufficiali. Ti informiamo sulle quantità disponibili.',
+        button: 'Richiedi consulenza'
+      }
+    },
+    categoryDiffusers: {
+      hero: {
+        label: 'Linea signature',
+        title: 'Diffusori per ambienti di carattere',
+        subtitle: 'Da 100 ml compatti a formati monumentali per l’hotellerie.',
+        text: 'Flaconi italiani e fibre vegetali per una diffusione uniforme.',
+        button: 'Richiedi progetto',
+        secondary: 'Torna al catalogo'
+      },
+      highlights: {
+        label: 'Materiali',
+        title: 'Dettagli che fanno la differenza',
+        item1: { title: 'Vetro satinato', description: 'Ogni vaso è levigato per integrarsi in qualsiasi palette.' },
+        item2: { title: 'Fibre naturali', description: 'Bastoncini calibrati prima della spedizione per un flusso costante.' },
+        item3: { title: 'Sistema refill', description: 'Ricariche in alluminio con imbuti inclusi per riempire facilmente.' }
+      },
+      products: {
+        label: 'Collezione',
+        title: 'Consegna rapida, effetto duraturo',
+        card1: { name: 'Diffusore "Urban Calm" 200 ml', description: 'Vetiver, bergamotto e cacao per spa private e lobby.', price: 'CHF 59.90' },
+        card2: { name: 'Diffusore "Atlas Cedar" 500 ml', description: 'Cedro, incenso e ribes nero per suite iconiche.', price: 'CHF 98.00' },
+        card3: { name: 'Diffusore "Lumen" 1L', description: 'Fior d’arancio, neroli e muschio bianco per showroom ampi.', price: 'CHF 149.00' },
+        card4: { name: 'Diffusore "Monumental" 2.5L', description: 'Patchouli, ambra e cedro per hall d’albergo.', price: 'CHF 249.00' }
+      },
+      cta: {
+        title: 'Disponibile servizio installazione',
+        text: 'Supportiamo hotel, boutique e uffici nel posizionamento e nel cambio dei diffusori.',
+        button: 'Prenota un incontro'
+      }
+    },
+    categoryCandles: {
+      hero: {
+        label: 'Edizione cerimoniale',
+        title: 'Candele con contenitori architettonici',
+        subtitle: 'Colate, lucidate e numerate a mano: oggetti decorativi permanenti.',
+        text: 'Tripli stoppini in cotone o legno per una combustione uniforme fino a 80 ore.',
+        button: 'Prenota showroom',
+        secondary: 'Altre categorie'
+      },
+      highlights: {
+        label: 'Composizione',
+        title: 'Armonia sensoriale e visiva',
+        item1: { title: 'Cere europee', description: 'Colza, soia e cocco per una texture cremosa e pulita.' },
+        item2: { title: 'Vasi in ceramica', description: 'Prodotti a Valencia con pigmenti naturali per interni chiari o scuri.' },
+        item3: { title: 'Coperchio signature', description: 'Coperchio massiccio che funge da base e protegge dalla polvere.' }
+      },
+      products: {
+        label: 'Edizione',
+        title: 'Pezzi colati a mano',
+        card1: { name: 'Candela "Sable Nuit"', description: 'Ambra, tonka e labdano per un’atmosfera avvolgente.', price: 'CHF 69.90' },
+        card2: { name: 'Candela "Linen Cloud"', description: 'Fiore di cotone, cashmere e muschio bianco per camere e spa.', price: 'CHF 64.00' },
+        card3: { name: 'Candela "Fig Aura"', description: 'Foglia di fico, tè verde e tonka, amata nei concept store.', price: 'CHF 72.00' },
+        card4: { name: 'Candela "Noir Cacao"', description: 'Cioccolato fondente, cedro e rum per lounge e bar.', price: 'CHF 78.00' }
+      },
+      cta: {
+        title: 'Servizio refill & incisione',
+        text: 'I contenitori possono essere ricaricati o personalizzati, perfetti per regali aziendali.',
+        button: 'Contattaci'
+      }
+    },
+    about: {
+      hero: {
+        label: 'Storia del brand',
+        title: 'Curazioni olfattive da Zurigo',
+        subtitle: 'Rappresentante ufficiale By Velcheva con servizi su misura.'
+      },
+      story: {
+        title: 'Competenza boutique',
+        paragraph1: 'Nato come sourcing personale per progetti interior, divenuto rete di profumieri in Spagna, Italia e Svizzera.',
+        paragraph2: 'Affianchiamo architetti e brand dalla scelta delle singole fragranze alle strategie complete.',
+        paragraph3: 'Ogni collezione viene testata e consegnata con guide applicative a Zurigo.'
+      },
+      values: {
+        label: 'Valori',
+        title: 'Il nostro impegno',
+        item1: { title: 'Gamma curata', description: 'Massimo 40 referenze per preservare l’attenzione a ogni profumo.' },
+        item2: { title: 'Trasparenza', description: 'Materie prime, origini e sostenibilità condivise apertamente.' },
+        item3: { title: 'Assistenza personale', description: 'Un referente dedicato dal moodboard all’installazione.' }
+      },
+      timeline: {
+        label: 'Timeline',
+        title: 'Tappe principali',
+        step1: { year: '2017', text: 'Prima collaborazione olfattiva con uno studio di Zurigo.' },
+        step2: { year: '2020', text: 'Accordo di esclusiva svizzera con By Velcheva.' },
+        step3: { year: '2023', text: 'Apertura dello showroom con laboratorio olfattivo.' }
+      },
+      cta: {
+        title: 'Visita lo showroom',
+        text: 'Test sensoriali, refill e pianificazione di progetti su appuntamento.',
+        button: 'Prenota ora'
+      }
+    },
+    corporate: {
+      hero: {
+        label: 'Servizi B2B',
+        title: 'Programmi olfattivi per brand e hospitality',
+        subtitle: 'Collezioni su misura o private label con packaging e materiali POS.',
+        button: 'Avvia un progetto'
+      },
+      benefits: {
+        label: 'Servizi',
+        title: 'Soluzioni scalabili',
+        item1: { title: 'Formule personalizzate', description: 'Collaborazione con profumieri europei per firme olfattive.' },
+        item2: { title: 'Produzione flessibile', description: 'Lotti da 100 pezzi con opzioni express per eventi.' },
+        item3: { title: 'POS & training', description: 'Kit merchandising, formazione e asset digitali per il team di vendita.' }
+      },
+      steps: {
+        label: 'Processo',
+        title: 'Il nostro metodo',
+        item1: { title: 'Brief & moodboard', description: 'Analizziamo valori di brand, target e metrature.' },
+        item2: { title: 'Campioni & approvazione', description: 'Entro due settimane inviamo test e dettaglio costi.' },
+        item3: { title: 'Produzione & roll-out', description: 'Controllo qualità e logistica coordinati da Zurigo.' }
+      },
+      clients: {
+        label: 'Referenze',
+        title: 'Partnership di fiducia',
+        text: 'Supportiamo boutique hotel, concept store e sviluppatori a Zurigo, Ginevra e Lugano.'
+      },
+      cta: {
+        title: 'Richiedi il kit corporate',
+        text: 'Carte profumate, campioni di vasi e offerta dettagliata entro 48 ore.',
+        button: 'Contattaci'
+      }
+    },
+    contacts: {
+      hero: {
+        label: 'Contatti',
+        title: 'Showroom & consulenze',
+        subtitle: 'Prenota un appuntamento, richiedi campioni o coordina un progetto corporate.'
+      },
+      info: {
+        title: 'Informazioni di contatto',
+        paragraph: 'Rispondiamo entro 24 ore (giorni lavorativi).',
+        hoursTitle: 'Orari',
+        hours: 'Lunedì–venerdì 10:00–18:00, sabato su appuntamento.',
+        channelsTitle: 'Canali',
+        channels: 'WhatsApp, Instagram Direct o e-mail.'
+      },
+      details: {
+        addressLabel: 'Indirizzo:',
+        phoneLabel: 'Telefono:',
+        emailLabel: 'E-mail:'
+      },
+      form: {
+        label: 'Richiesta',
+        title: 'Scrivici',
+        name: 'Nome*',
+        email: 'E-mail*',
+        phone: 'Telefono',
+        country: 'Paese',
+        message: 'Messaggio*',
+        submit: 'Invia',
+        success: 'Grazie per il messaggio. Ti ricontatteremo a breve.',
+        countryOptions: { ch: 'Svizzera', de: 'Germania', fr: 'Francia', it: 'Italia' }
+      }
+    },
+    privacy: {
+      hero: {
+        label: 'Privacy',
+        title: 'Gestione trasparente dei dati',
+        subtitle: 'Spieghiamo come NicheHome.ch raccoglie, utilizza e protegge le informazioni.'
+      },
+      section1: { title: '1. Titolare & hosting', paragraph: 'NicheHome GmbH, Via Esempio 12, 8000 Zurigo, è responsabile del trattamento. Hosting in UE con standard di sicurezza certificati.' },
+      section2: { title: '2. Dati raccolti', paragraph: 'Conserviamo contatti dei moduli, dati ordine, analytics anonimizzati e corrispondenza. I cookie sono solo funzionali o statistici.' },
+      section3: { title: '3. Uso & condivisione', paragraph: 'I dati servono per ordini, assistenza clienti e ottimizzazione dei servizi. Condivisione solo con logistica o pagamenti in Svizzera/UE.' },
+      section4: { title: '4. Diritti & contatto', paragraph: 'Puoi richiedere accesso, rettifica o cancellazione scrivendo a hello@nichehome.ch. Rispondiamo entro 30 giorni.' }
+    },
+    terms: {
+      hero: {
+        label: 'Condizioni',
+        title: 'Condizioni generali di vendita',
+        subtitle: 'Valgono per tutti gli ordini e i servizi forniti da NicheHome.ch.'
+      },
+      section1: { title: '1. Conclusione del contratto', paragraph: 'Gli ordini costituiscono un’offerta. Conferma vincolante via e-mail. Ci riserviamo di rifiutare senza motivo.' },
+      section2: { title: '2. Prezzi e pagamenti', paragraph: 'Prezzi in CHF IVA inclusa. Pagamento con carta, TWINT o bonifico entro 10 giorni.' },
+      section3: { title: '3. Consegna & rischio', paragraph: 'Spedizione con posta o corriere in Svizzera. Il rischio passa al cliente al momento della consegna al vettore.' },
+      section4: { title: '4. Resi & reclami', paragraph: 'Prodotti sigillati restituiti entro 14 giorni. Danni da segnalare entro 48 ore.' },
+      section5: { title: '5. Responsabilità & foro', paragraph: 'Responsabilità limitata a dolo o colpa grave. Foro competente Zurigo, diritto svizzero.' }
+    }
+  },
+  en: {
+    meta: {
+      indexTitle: 'NicheHome.ch – Premium home fragrances',
+      catalogTitle: 'NicheHome.ch – Full catalog',
+      diffusersTitle: 'NicheHome.ch – Reed diffusers',
+      candlesTitle: 'NicheHome.ch – Scented candles',
+      aboutTitle: 'NicheHome.ch – About the brand',
+      corporateTitle: 'NicheHome.ch – Corporate services',
+      contactsTitle: 'NicheHome.ch – Contact',
+      privacyTitle: 'NicheHome.ch – Privacy policy',
+      termsTitle: 'NicheHome.ch – Terms & conditions'
+    },
+    common: {
+      brand: 'NicheHome.ch',
+      phone: 'Tel.: +41 (0)44 000 00 00',
+      email: 'Email: hello@nichehome.ch',
+      follow: 'Follow us:',
+      social: {
+        instagram: 'Instagram',
+        whatsapp: 'WhatsApp',
+        pinterest: 'Pinterest'
+      },
+      wishlist: '♡ Wishlist',
+      account: '👤 Account',
+      cart: '🛒 Cart',
+      cartItems: 'items',
+      burger: 'Toggle main menu'
+    },
+    nav: {
+      catalog: 'Catalog',
+      diffusers: 'Aroma diffusers',
+      candles: 'Scented candles',
+      limited: 'Limited collection',
+      room: 'Room spray',
+      textile: 'Textile spray',
+      gift: 'Gift sets',
+      accessories: 'Accessories',
+      meditation: 'Meditation',
+      car: 'Car perfume',
+      devices: 'Aroma devices',
+      about: 'About',
+      corporate: 'Corporate',
+      contacts: 'Contact'
+    },
+    footer: {
+      catalogTitle: 'Catalog',
+      infoTitle: 'Information',
+      legalTitle: 'Legal',
+      contactTitle: 'Contact',
+      about: 'About the brand',
+      journal: 'Journal',
+      corporate: 'Corporate services',
+      shipping: 'Shipping & returns',
+      faq: 'FAQ',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      cookies: 'Cookies',
+      address: 'Showroom, Sample Street 12, 8000 Zurich',
+      phone: 'Tel.: +41 (0)44 000 00 00',
+      email: 'Email: hello@nichehome.ch',
+      paymentTitle: 'We accept Visa, Mastercard, TWINT',
+      copyright: '© NicheHome.ch – Official Swiss representative of By Velcheva'
+    },
+    index: {
+      hero: {
+        label: 'Exclusive representation in Switzerland',
+        title: 'Niche home fragrances for living and business spaces',
+        subtitle: 'A curated fragrance portfolio for spaces with character. Velvet accords, contemporary blends, delivered quickly across Switzerland.',
+        primary: 'View catalog',
+        secondary: 'About the brand'
+      },
+      story: {
+        title: 'About NicheHome.ch',
+        paragraph1: 'NicheHome.ch selects interior fragrances crafted for discerning residences and hospitality concepts. Each creation is driven by a passion for remarkable accords and long-lasting performance.',
+        paragraph2: 'We supply interior designers, boutiques and private clients throughout Switzerland with flexible terms and tailored consulting.',
+        link: 'Discover our philosophy'
+      },
+      categories: {
+        label: 'Explore the collection',
+        title: 'Categories & scent worlds',
+        button: 'View products',
+        card1: { title: 'Aroma diffusers', description: 'Frosted glass vessels with natural reeds to scent up to 60 m².' },
+        card2: { title: 'Scented candles', description: 'Hand-poured wax blends with three wicks and elegant ceramic jars.' },
+        card3: { title: 'Limited collection', description: 'Seasonal editions with artful labels, numbered and on request only.' },
+        card4: { title: 'Room spray', description: 'Fine mist room and pillow sprays with instant effect.' },
+        card5: { title: 'Textile spray', description: 'Caring compositions for drapery, rugs and bedding.' },
+        card6: { title: 'Gift sets', description: 'Curated boxes with harmonised fragrances for special moments.' },
+        card7: { title: 'Accessories', description: 'Funnels, beakers and scent plates for professional presentations.' },
+        card8: { title: 'Meditation', description: 'Ritual kits with incense sticks, fragrance oils and ceramic holders.' },
+        card9: { title: 'Car perfume', description: 'Magnetic clips with replaceable scent capsules for every drive.' },
+        card10: { title: 'Aroma devices', description: 'Ultrasonic diffusers with timers for projects of any scale.' }
+      },
+      products: {
+        label: 'Current favourites',
+        title: 'Popular compositions',
+        button: 'Add to cart',
+        card1: { name: 'Reed diffuser "Urban Calm"', description: 'Vetiver, bergamot and roasted cacao to calm modern lofts.', price: 'CHF 59.90' },
+        card2: { name: 'Room spray "Alpine Mist"', description: 'Eucalyptus, silver fir and cotton blossom for crisp interiors.', price: 'CHF 39.90' },
+        card3: { name: 'Candle "Sable Nuit"', description: 'Sandalwood, amber and tonka bean in matte stoneware.', price: 'CHF 69.90' },
+        card4: { name: 'Gift set "Cedar Atlas"', description: 'Diffuser, spray and candle in matching wood tones.', price: 'CHF 149.00' },
+        card5: { name: 'Textile spray "Velvet Studio"', description: 'Cashmere, osmanthus and white tea leaves for soft furnishings.', price: 'CHF 34.00' },
+        card6: { name: 'Car perfume "Nomad Drive"', description: 'Cedarwood, grapefruit and leather for every commute.', price: 'CHF 29.50' }
+      },
+      benefits: {
+        label: 'Why NicheHome.ch',
+        title: 'Premium service for fine scents',
+        item1: { title: 'Secure packaging', description: 'Foam and cardboard inserts protect delicate glassware during transit.' },
+        item2: { title: 'Free shipping', description: 'Swiss deliveries above CHF 80 are insured and free of charge.' },
+        item3: { title: 'Curated & tested', description: 'Every composition is tested in the showroom before joining the range.' },
+        item4: { title: 'Gift wrapping', description: 'Satin ribbons, cards and custom boxes available on request.' }
+      },
+      news: {
+        label: 'Journal',
+        title: 'News & scent knowledge',
+        readMore: 'Read more',
+        card1: { tag: 'Tips', title: 'Layering ideas for boutique hotels', excerpt: 'How multiple scent sources interact to differentiate lounges and suites.' },
+        card2: { tag: 'Insights', title: 'Refill services for retail partners', excerpt: 'Flexible volumes, neutral packaging and white-label options.' },
+        card3: { tag: 'Events', title: 'Scent styling for summer terraces', excerpt: 'Mobile diffusers and textile sprays for fresh pop-up atmospheres.' }
+      }
+    },
+    catalog: {
+      hero: {
+        label: 'Curated selection',
+        title: 'The complete NicheHome.ch catalog',
+        subtitle: 'All collections and limited editions for private clients, retailers and interior studios.',
+        note: 'Orders confirmed within 24 hours. Express options available on request.',
+        button: 'Start exploring'
+      },
+      grid: { label: 'Segments', title: 'Collection overview' },
+      info: {
+        label: 'Service level',
+        title: 'Logistics & support',
+        item1: { title: 'Sample kits', description: 'Complete sets with scent cards for easy presentation.' },
+        item2: { title: 'Flexible quantities', description: 'Cases of 6 or 12 pieces plus mixed assortments for smaller projects.' },
+        item3: { title: 'Sustainable packing', description: 'Recyclable materials, neutral cartons and reusable fillers.' }
+      },
+      faq: {
+        label: 'FAQ',
+        title: 'Frequently asked questions',
+        item1: { question: 'Production timing?', answer: 'Stock ships immediately, special sizes require 10–15 business days.' },
+        item2: { question: 'Private label options?', answer: 'Yes, from 100 units per scent with neutral or co-branded labels.' },
+        item3: { question: 'Do you offer scent consulting?', answer: 'Video or on-site guidance based on room size and brand world.' }
+      },
+      news: {
+        label: 'Updates',
+        title: 'Collection highlights',
+        card1: { tag: 'Launch', title: 'New "Atelier" line', excerpt: 'Four mineral diffusers with natural ceramic caps.' },
+        card2: { tag: 'Partnership', title: 'Pop-up in Ticino', excerpt: 'Temporary scent bar with limited editions and live blending.' },
+        card3: { tag: 'Service', title: 'Recycling program', excerpt: 'Returned vessels are reused in showroom installations.' }
+      },
+      cta: {
+        title: 'Reserve limited editions',
+        text: 'Secure small batches before official campaigns launch. We notify you about available quantities.',
+        button: 'Book a consultation'
+      }
+    },
+    categoryDiffusers: {
+      hero: {
+        label: 'Signature line',
+        title: 'Diffusers for characterful spaces',
+        subtitle: 'From compact 100 ml to monumental hotel vessels – consistent scent throw.',
+        text: 'Italian-made glass paired with plant fibres for even diffusion.',
+        button: 'Request a project',
+        secondary: 'Back to overview'
+      },
+      highlights: {
+        label: 'Materials',
+        title: 'Details that matter',
+        item1: { title: 'Hand-polished glass', description: 'Each vase receives a satin finish that blends with any palette.' },
+        item2: { title: 'Natural reeds', description: 'Rattan and cotton sticks are calibrated before shipping for steady diffusion.' },
+        item3: { title: 'Refill system', description: 'Aluminium refill bottles with included funnels for easy topping-up.' }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Quick delivery, lasting impact',
+        card1: { name: 'Diffuser "Urban Calm" 200 ml', description: 'Vetiver, bergamot and cacao for spas and lobbies.', price: 'CHF 59.90' },
+        card2: { name: 'Diffuser "Atlas Cedar" 500 ml', description: 'Cedarwood, frankincense and blackcurrant for signature suites.', price: 'CHF 98.00' },
+        card3: { name: 'Diffuser "Lumen" 1L', description: 'Orange blossom, neroli and white musk for expansive showrooms.', price: 'CHF 149.00' },
+        card4: { name: 'Diffuser "Monumental" 2.5L', description: 'Patchouli, amber and cedar for hotel lobbies.', price: 'CHF 249.00' }
+      },
+      cta: {
+        title: 'Installation service available',
+        text: 'We assist hotels, boutiques and offices with placement and maintenance.',
+        button: 'Schedule a visit'
+      }
+    },
+    categoryCandles: {
+      hero: {
+        label: 'Ceremonial edition',
+        title: 'Candles with architectural vessels',
+        subtitle: 'Hand-poured, polished and numbered – sculptural objects that remain.',
+        text: 'Triple cotton or wooden wicks ensure an even melt pool for up to 80 hours.',
+        button: 'Book a showroom visit',
+        secondary: 'More categories'
+      },
+      highlights: {
+        label: 'Composition',
+        title: 'Sensory and visual harmony',
+        item1: { title: 'European waxes', description: 'Rapeseed, soy and coconut waxes blended for a creamy, clean burn.' },
+        item2: { title: 'Ceramic vessels', description: 'Crafted in Valencia with natural pigments to match light and dark interiors.' },
+        item3: { title: 'Signature lid', description: 'A weighty lid doubles as base and keeps dust away.' }
+      },
+      products: {
+        label: 'Edition',
+        title: 'Hand-poured highlights',
+        card1: { name: 'Candle "Sable Nuit"', description: 'Amber, tonka and labdanum for a warm, velvety ambience.', price: 'CHF 69.90' },
+        card2: { name: 'Candle "Linen Cloud"', description: 'Cotton blossom, cashmere and white musk for bedrooms and spas.', price: 'CHF 64.00' },
+        card3: { name: 'Candle "Fig Aura"', description: 'Fig leaf, green tea and tonka – a concept-store favourite.', price: 'CHF 72.00' },
+        card4: { name: 'Candle "Noir Cacao"', description: 'Dark chocolate, cedar and rum for lounges and bars.', price: 'CHF 78.00' }
+      },
+      cta: {
+        title: 'Refill & engraving service',
+        text: 'Vessels can be refilled or personalised – ideal for corporate gifting.',
+        button: 'Get in touch'
+      }
+    },
+    about: {
+      hero: {
+        label: 'Brand story',
+        title: 'Scent curation from Zurich',
+        subtitle: 'Official By Velcheva representative with tailored services.'
+      },
+      story: {
+        title: 'Boutique-level expertise',
+        paragraph1: 'Born as personal sourcing for interior projects, evolving into a network of perfumers in Spain, Italy and Switzerland.',
+        paragraph2: 'We guide architects and brands from single scent tests to full fragrance strategies.',
+        paragraph3: 'Every collection is tested in Zurich and supplied with usage guides.'
+      },
+      values: {
+        label: 'Values',
+        title: 'What we stand for',
+        item1: { title: 'Curated range', description: 'Maximum 40 SKUs so each composition receives attention.' },
+        item2: { title: 'Transparency', description: 'Raw materials, origins and sustainability standards openly shared.' },
+        item3: { title: 'Personal support', description: 'Dedicated contacts from moodboard to installation.' }
+      },
+      timeline: {
+        label: 'Timeline',
+        title: 'Milestones',
+        step1: { year: '2017', text: 'First scent collaboration with a Zurich interior studio.' },
+        step2: { year: '2020', text: 'Swiss exclusivity agreement with By Velcheva.' },
+        step3: { year: '2023', text: 'Opening of the showroom with scent lab and consultation lounge.' }
+      },
+      cta: {
+        title: 'Visit the showroom',
+        text: 'Private appointments for testing, refills and project planning.',
+        button: 'Book an appointment'
+      }
+    },
+    corporate: {
+      hero: {
+        label: 'B2B services',
+        title: 'Signature scent programs for brands & hospitality',
+        subtitle: 'Bespoke collections or white-label products including packaging and POS assets.',
+        button: 'Start a project'
+      },
+      benefits: {
+        label: 'Services',
+        title: 'Scalable fragrance support',
+        item1: { title: 'Custom formulas', description: 'Co-create branded compositions with European perfumers.' },
+        item2: { title: 'Flexible production', description: 'Tiered pricing from 100 units with express options for events.' },
+        item3: { title: 'POS & training', description: 'Merch kits, training sessions and digital assets for sales teams.' }
+      },
+      steps: {
+        label: 'Process',
+        title: 'How we collaborate',
+        item1: { title: 'Brief & moodboard', description: 'We analyse brand values, audience and floor plans.' },
+        item2: { title: 'Sampling & approval', description: 'Receive samples within two weeks alongside detailed costs.' },
+        item3: { title: 'Production & roll-out', description: 'Production, QA and logistics coordinated from Zurich.' }
+      },
+      clients: {
+        label: 'References',
+        title: 'Trusted partnerships',
+        text: 'We support boutique hotels, concept stores and developers in Zurich, Geneva and Lugano.'
+      },
+      cta: {
+        title: 'Request the corporate kit',
+        text: 'We send scent cards, vessel samples and a detailed proposal within 48 hours.',
+        button: 'Contact us'
+      }
+    },
+    contacts: {
+      hero: {
+        label: 'Contact',
+        title: 'Showroom & advisory',
+        subtitle: 'Book appointments, request samples or coordinate corporate projects.'
+      },
+      info: {
+        title: 'Contact information',
+        paragraph: 'We reply within 24 hours on business days.',
+        hoursTitle: 'Opening hours',
+        hours: 'Monday–Friday 10:00–18:00, Saturday by appointment.',
+        channelsTitle: 'Channels',
+        channels: 'WhatsApp, Instagram Direct or classic email.'
+      },
+      details: {
+        addressLabel: 'Address:',
+        phoneLabel: 'Phone:',
+        emailLabel: 'Email:'
+      },
+      form: {
+        label: 'Inquiry',
+        title: 'Write to us',
+        name: 'Name*',
+        email: 'Email*',
+        phone: 'Phone',
+        country: 'Country',
+        message: 'Message*',
+        submit: 'Send message',
+        success: 'Thank you for your message. We will be in touch shortly.',
+        countryOptions: { ch: 'Switzerland', de: 'Germany', fr: 'France', it: 'Italy' }
+      }
+    },
+    privacy: {
+      hero: {
+        label: 'Privacy',
+        title: 'Transparent data handling',
+        subtitle: 'Learn how NicheHome.ch collects, uses and protects personal information.'
+      },
+      section1: { title: '1. Controller & hosting', paragraph: 'NicheHome GmbH, Sample Street 12, 8000 Zurich, is responsible for processing. Hosting takes place on EU servers with certified security standards.' },
+      section2: { title: '2. Data collected', paragraph: 'We store contact details from forms, order information, anonymised analytics and correspondence. Cookies are limited to functional and statistical purposes.' },
+      section3: { title: '3. Use & sharing', paragraph: 'Data is used to fulfil orders, support clients and improve services. Sharing occurs only with logistics or payment partners based in Switzerland or the EU.' },
+      section4: { title: '4. Rights & contact', paragraph: 'Request access, correction or deletion any time via hello@nichehome.ch. We respond within 30 days.' }
+    },
+    terms: {
+      hero: {
+        label: 'Terms',
+        title: 'General terms & conditions',
+        subtitle: 'These provisions govern all orders and services provided by NicheHome.ch.'
+      },
+      section1: { title: '1. Contract', paragraph: 'Orders are considered offers. Confirmation via email makes them binding. We reserve the right to refuse orders without reason.' },
+      section2: { title: '2. Prices & payment', paragraph: 'Prices in CHF incl. VAT. Payment via credit card, TWINT or bank transfer within 10 days.' },
+      section3: { title: '3. Delivery & risk', paragraph: 'Deliveries ship via post or courier within Switzerland. Risk transfers to the client when handed to the carrier.' },
+      section4: { title: '4. Returns & claims', paragraph: 'Unopened products may be returned within 14 days. Damages must be reported within 48 hours of receipt.' },
+      section5: { title: '5. Liability & jurisdiction', paragraph: 'Liability is limited to gross negligence. Swiss law applies, venue Zurich.' }
+    }
+  }
+};
+
+const htmlElement = document.documentElement;
+let currentLang = localStorage.getItem('nichehome-lang') || 'de';
+
+const resolveTranslation = (lang, key) => {
+  return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
+};
+
+const applyTranslations = () => {
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach((el) => {
+    const key = el.getAttribute('data-i18n');
+    const targetAttr = el.getAttribute('data-i18n-target');
+    const translation = resolveTranslation(currentLang, key);
+    if (translation === undefined) return;
+    if (targetAttr) {
+      el.setAttribute(targetAttr, translation);
+    } else {
+      el.innerHTML = translation;
+    }
+  });
+  htmlElement.lang = currentLang;
+  localStorage.setItem('nichehome-lang', currentLang);
+};
+
+const setActiveLangButton = () => {
+  document.querySelectorAll('[data-lang]').forEach((btn) => {
+    btn.classList.toggle('is-active', btn.dataset.lang === currentLang);
+  });
+};
+
+const initLanguageSwitcher = () => {
+  document.querySelectorAll('[data-lang]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      currentLang = btn.dataset.lang;
+      applyTranslations();
+      setActiveLangButton();
+    });
+  });
+  setActiveLangButton();
+};
+
+const initScrollButtons = () => {
+  document.querySelectorAll('[data-scroll-target]').forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      const target = btn.getAttribute('data-scroll-target');
+      const el = target ? document.querySelector(target) : null;
+      if (el) {
+        event.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+};
+
+const initHeader = () => {
+  const header = document.getElementById('siteHeader');
+  const burger = document.querySelector('.header__burger');
+  const navLinks = document.querySelectorAll('.nav__list a');
+  if (!header || !burger) return;
+  const toggleMenu = () => header.classList.toggle('header--open');
+  burger.addEventListener('click', toggleMenu);
+  navLinks.forEach((link) => link.addEventListener('click', () => header.classList.remove('header--open')));
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('header--scrolled', window.scrollY > 30);
+  });
+};
+
+const initCart = () => {
+  let cartCount = 0;
+  const counterEl = document.querySelector('[data-cart-count]');
+  document.querySelectorAll('[data-add-to-cart]').forEach((button) => {
+    button.addEventListener('click', () => {
+      cartCount += 1;
+      if (counterEl) counterEl.textContent = cartCount.toString();
+      button.classList.add('is-added');
+      setTimeout(() => button.classList.remove('is-added'), 800);
+    });
+  });
+};
+
+const initContactForm = () => {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const successEl = form.querySelector('.form-success');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const requiredFields = form.querySelectorAll('[required]');
+    let valid = true;
+    requiredFields.forEach((field) => {
+      if (!field.value.trim()) {
+        valid = false;
+        field.classList.add('is-invalid');
+      } else {
+        field.classList.remove('is-invalid');
+      }
+    });
+    if (!valid) return;
+    // Integrate your backend form submission or email service here.
+    if (successEl) {
+      successEl.classList.add('is-visible');
+      form.reset();
+    }
+  });
+};
+
+const initTitles = () => {
+  const titleEl = document.querySelector('title[data-i18n]');
+  if (titleEl) {
+    const key = titleEl.getAttribute('data-i18n');
+    const translation = resolveTranslation(currentLang, key);
+    if (translation) {
+      titleEl.textContent = translation;
+    }
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyTranslations();
+  initTitles();
+  initLanguageSwitcher();
+  initScrollButtons();
+  initHeader();
+  initCart();
+  initContactForm();
+});
