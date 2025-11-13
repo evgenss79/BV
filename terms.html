@@ -10,51 +10,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body data-page="terms">
-  <!-- HEADER: Update contact info, brand name and navigation labels via translations.common.* and translations.nav.* -->
-  <header class="header" id="siteHeader">
-    <div class="top-bar">
-      <div class="top-bar__contacts">
-        <a href="tel:+41440000000" data-i18n="common.phone">Tel.: +41 (0)44 000 00 00</a>
-        <a href="mailto:hello@nichehome.ch" data-i18n="common.email">E-Mail: hello@nichehome.ch</a>
-      </div>
-      <div class="top-bar__social">
-        <span data-i18n="common.follow">Folgen Sie uns:</span>
-        <a href="#" aria-label="Instagram" data-i18n="common.social.instagram">Instagram</a>
-        <a href="#" aria-label="WhatsApp" data-i18n="common.social.whatsapp">WhatsApp</a>
-        <a href="#" aria-label="Pinterest" data-i18n="common.social.pinterest">Pinterest</a>
-      </div>
+  <header class="site-header" id="siteHeader">
+    <div class="utility-bar">
+      <p class="utility-bar__item" data-i18n="common.utilityShipping">Gratis Versand ab CHF 80</p>
+      <p class="utility-bar__item" data-i18n="common.utilityDelivery">Lieferung innerhalb von 1–3 Werktagen</p>
     </div>
-    <div class="header__inner">
-      <!-- LOGO WORDMARK: edit via common.brand in assets/js/script.js -->
-      <a href="index.html" class="header__logo" data-i18n="common.brand">NicheHome.ch</a>
-      <button class="header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü umschalten">
+    <div class="site-header__main">
+      <button class="site-header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü öffnen oder schließen">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <!-- NAVIGATION: manage link labels through translations.nav.* and adjust href targets as needed -->
-      <nav class="nav" aria-label="Hauptmenü">
-        <ul class="nav__list">
-          <li><a data-page-target="catalog" href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
-          <li><a data-page-target="diffusers" href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
-          <li><a data-page-target="candles" href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
-          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
-          <li><a href="catalog.html#room" data-i18n="nav.room">Raumduft</a></li>
-          <li><a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a></li>
-          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
-          <li><a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a></li>
-          <li><a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a></li>
-          <li><a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a></li>
-          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
-          <li><a data-page-target="about" href="about.html" data-i18n="nav.about">Über uns</a></li>
-          <li><a data-page-target="corporate" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
-          <li><a data-page-target="contacts" href="contacts.html" data-i18n="nav.contacts">Kontakt</a></li>
+      <a href="index.html" class="site-header__logo" data-i18n="common.brand">NicheHome.ch</a>
+      <nav class="primary-nav" aria-label="Hauptmenü">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item primary-nav__item--mega">
+            <button class="primary-nav__link" type="button" data-i18n="nav.catalog" data-mega-toggle aria-expanded="false">Katalog</button>
+            <div class="mega-panel" data-mega-panel>
+              <div class="mega-panel__column">
+                <a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a>
+                <a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a>
+                <a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a>
+              </div>
+              <div class="mega-panel__column">
+                <a href="catalog.html#room" data-i18n="nav.room">Raumduft</a>
+                <a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a>
+                <a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a>
+                <a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a>
+              </div>
+              <div class="mega-panel__column">
+                <a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a>
+                <a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a>
+                <a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a>
+              </div>
+            </div>
+          </li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="category-diffusers.html" data-page-target="diffusers" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="category-candles.html" data-page-target="candles" data-i18n="nav.candles">Duftkerzen</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#room" data-i18n="nav.room">Raumduft</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#car" data-i18n="nav.car">Autoparfum</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="about.html" data-page-target="about" data-i18n="nav.about">Über uns</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="corporate.html" data-page-target="corporate" data-i18n="nav.corporate">Corporate</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="contacts.html" data-page-target="contacts" data-i18n="nav.contacts">Kontakt</a></li>
         </ul>
       </nav>
-      <div class="header__actions">
-        <span class="header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
-        <span class="header__icon" data-i18n="common.account">👤 Konto</span>
-        <button class="header__icon header__cart" type="button">
+      <div class="site-header__actions">
+        <button class="site-header__icon" type="button" aria-label="Search" data-i18n="common.search">Suchen</button>
+        <span class="site-header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
+        <span class="site-header__icon" data-i18n="common.account">👤 Konto</span>
+        <button class="site-header__icon site-header__cart" type="button">
           <span data-i18n="common.cart">🛒 Warenkorb</span>
           <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
         </button>
@@ -69,8 +78,7 @@
   </header>
 
   <main>
-    <!-- TERMS HERO (terms.hero.* translations) -->
-    <section class="page-hero">
+    <section class="page-hero page-hero--legal">
       <div class="page-hero__text">
         <p class="page-hero__label" data-i18n="terms.hero.label">AGB</p>
         <h1 data-i18n="terms.hero.title">Allgemeine Geschäftsbedingungen</h1>
@@ -78,51 +86,43 @@
       </div>
     </section>
 
-    <!-- TERMS SECTION 1 (terms.section1.* translations) -->
-    <section class="legal-section">
-      <h2 data-i18n="terms.section1.title">1. Vertragsabschluss</h2>
-      <p data-i18n="terms.section1.paragraph">Bestellungen gelten als Angebot. Eine verbindliche Bestätigung erfolgt per E-Mail. Wir behalten uns vor, Aufträge ohne Angabe von Gründen abzulehnen.</p>
-    </section>
-
-    <!-- TERMS SECTION 2 (terms.section2.* translations) -->
-    <section class="legal-section">
-      <h2 data-i18n="terms.section2.title">2. Preise & Zahlung</h2>
-      <p data-i18n="terms.section2.paragraph">Alle Preise sind in CHF inklusive Mehrwertsteuer angegeben. Zahlungen erfolgen via Kreditkarte, TWINT oder Banküberweisung innerhalb von 10 Tagen.</p>
-    </section>
-
-    <!-- TERMS SECTION 3 (terms.section3.* translations) -->
-    <section class="legal-section">
-      <h2 data-i18n="terms.section3.title">3. Lieferung & Gefahrübergang</h2>
-      <p data-i18n="terms.section3.paragraph">Lieferungen erfolgen per Post oder Kurier innerhalb der Schweiz. Die Gefahr geht mit Übergabe an den Transportdienstleister auf den Kunden über.</p>
-    </section>
-
-    <!-- TERMS SECTION 4 (terms.section4.* translations) -->
-    <section class="legal-section">
-      <h2 data-i18n="terms.section4.title">4. Rückgabe & Reklamation</h2>
-      <p data-i18n="terms.section4.paragraph">Ungeöffnete Produkte können innerhalb von 14 Tagen retourniert werden. Beschädigte Artikel sind innerhalb von 48 Stunden nach Erhalt zu melden.</p>
-    </section>
-
-    <!-- TERMS SECTION 5 (terms.section5.* translations) -->
-    <section class="legal-section">
-      <h2 data-i18n="terms.section5.title">5. Haftung & Gerichtsstand</h2>
-      <p data-i18n="terms.section5.paragraph">Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.</p>
+    <section class="legal">
+      <article>
+        <h2 data-i18n="terms.section1.title">1. Vertragsabschluss</h2>
+        <p data-i18n="terms.section1.paragraph">Bestellungen gelten als Angebot. Eine verbindliche Bestätigung erfolgt per E-Mail. Wir behalten uns vor, Aufträge ohne Angabe von Gründen abzulehnen.</p>
+      </article>
+      <article>
+        <h2 data-i18n="terms.section2.title">2. Preise & Zahlung</h2>
+        <p data-i18n="terms.section2.paragraph">Alle Preise sind in CHF inklusive Mehrwertsteuer angegeben. Zahlungen erfolgen via Kreditkarte, TWINT oder Banküberweisung innerhalb von 10 Tagen.</p>
+      </article>
+      <article>
+        <h2 data-i18n="terms.section3.title">3. Lieferung & Gefahrübergang</h2>
+        <p data-i18n="terms.section3.paragraph">Lieferungen erfolgen per Post oder Kurier innerhalb der Schweiz. Die Gefahr geht mit Übergabe an den Transportdienstleister auf den Kunden über.</p>
+      </article>
+      <article>
+        <h2 data-i18n="terms.section4.title">4. Rückgabe & Reklamation</h2>
+        <p data-i18n="terms.section4.paragraph">Ungeöffnete Produkte können innerhalb von 14 Tagen retourniert werden. Beschädigte Artikel sind innerhalb von 48 Stunden nach Erhalt zu melden.</p>
+      </article>
+      <article>
+        <h2 data-i18n="terms.section5.title">5. Haftung & Gerichtsstand</h2>
+        <p data-i18n="terms.section5.paragraph">Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.</p>
+      </article>
     </section>
   </main>
 
-  <!-- GLOBAL FOOTER (footer.* translations) -->
-  <footer class="footer">
-    <div class="footer__grid">
-      <div>
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__column">
         <h4 data-i18n="footer.catalogTitle">Katalog</h4>
         <ul>
           <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
           <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
           <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
-          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
           <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
         </ul>
       </div>
-      <div>
+      <div class="site-footer__column">
         <h4 data-i18n="footer.infoTitle">Informationen</h4>
         <ul>
           <li><a href="about.html" data-i18n="footer.about">Über die Marke</a></li>
@@ -132,7 +132,7 @@
           <li><a href="catalog.html#faq" data-i18n="footer.faq">FAQ</a></li>
         </ul>
       </div>
-      <div>
+      <div class="site-footer__column">
         <h4 data-i18n="footer.legalTitle">Rechtliches</h4>
         <ul>
           <li><a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a></li>
@@ -140,17 +140,25 @@
           <li><a href="privacy.html" data-i18n="footer.cookies">Cookies</a></li>
         </ul>
       </div>
-      <div>
-        <h4 data-i18n="footer.contactTitle">Kontakt</h4>
-        <p data-i18n="footer.address">Showroom, Musterstrasse 12, 8000 Zürich</p>
-        <p data-i18n="footer.phone">Tel.: +41 (0)44 000 00 00</p>
-        <p data-i18n="footer.email">E-Mail: hello@nichehome.ch</p>
+      <div class="site-footer__column site-footer__column--newsletter">
+        <h4 data-i18n="footer.newsletterTitle">Newsletter</h4>
+        <p data-i18n="footer.newsletterText">Exklusive Launches, Tipps zur Platzierung und Einladungen zu Scent Sessions.</p>
+        <form class="newsletter-form">
+          <input type="email" name="newsletter" data-i18n="footer.newsletterPlaceholder" data-i18n-target="placeholder" placeholder="Ihre E-Mail">
+          <button type="button" class="btn btn--gold" data-i18n="footer.newsletterButton">Anmelden</button>
+        </form>
+        <p class="site-footer__social" data-i18n="footer.socialLabel">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="#" data-i18n="common.social.instagram">Instagram</a>
+          <a href="#" data-i18n="common.social.whatsapp">WhatsApp</a>
+          <a href="#" data-i18n="common.social.pinterest">Pinterest</a>
+        </div>
       </div>
     </div>
-    <div class="footer__payments">
+    <div class="site-footer__bottom">
       <span data-i18n="footer.paymentTitle">Wir akzeptieren Visa, Mastercard, TWINT</span>
+      <p data-i18n="footer.copyright">© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva</p>
     </div>
-    <p class="footer__copy" data-i18n="footer.copyright">© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva</p>
   </footer>
 
   <script src="assets/js/script.js" defer></script>

@@ -10,51 +10,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body data-page="index">
-  <!-- HEADER: Update contact info, brand name and navigation labels via translations.common.* and translations.nav.* -->
-  <header class="header" id="siteHeader">
-    <div class="top-bar">
-      <div class="top-bar__contacts">
-        <a href="tel:+41440000000" data-i18n="common.phone">Tel.: +41 (0)44 000 00 00</a>
-        <a href="mailto:hello@nichehome.ch" data-i18n="common.email">E-Mail: hello@nichehome.ch</a>
-      </div>
-      <div class="top-bar__social">
-        <span data-i18n="common.follow">Folgen Sie uns:</span>
-        <a href="#" aria-label="Instagram" data-i18n="common.social.instagram">Instagram</a>
-        <a href="#" aria-label="WhatsApp" data-i18n="common.social.whatsapp">WhatsApp</a>
-        <a href="#" aria-label="Pinterest" data-i18n="common.social.pinterest">Pinterest</a>
-      </div>
+  <header class="site-header" id="siteHeader">
+    <div class="utility-bar">
+      <p class="utility-bar__item" data-i18n="common.utilityShipping">Gratis Versand ab CHF 80</p>
+      <p class="utility-bar__item" data-i18n="common.utilityDelivery">Lieferung innerhalb von 1–3 Werktagen</p>
     </div>
-    <div class="header__inner">
-      <!-- LOGO WORDMARK: edit via common.brand in assets/js/script.js -->
-      <a href="index.html" class="header__logo" data-i18n="common.brand">NicheHome.ch</a>
-      <button class="header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü umschalten">
+    <div class="site-header__main">
+      <button class="site-header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü öffnen oder schließen">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <!-- NAVIGATION: manage link labels through translations.nav.* and adjust href targets as needed -->
-      <nav class="nav" aria-label="Hauptmenü">
-        <ul class="nav__list">
-          <li><a data-page-target="catalog" href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
-          <li><a data-page-target="diffusers" href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
-          <li><a data-page-target="candles" href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
-          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
-          <li><a href="catalog.html#room" data-i18n="nav.room">Raumduft</a></li>
-          <li><a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a></li>
-          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
-          <li><a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a></li>
-          <li><a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a></li>
-          <li><a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a></li>
-          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
-          <li><a data-page-target="about" href="about.html" data-i18n="nav.about">Über uns</a></li>
-          <li><a data-page-target="corporate" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
-          <li><a data-page-target="contacts" href="contacts.html" data-i18n="nav.contacts">Kontakt</a></li>
+      <a href="index.html" class="site-header__logo" data-i18n="common.brand">NicheHome.ch</a>
+      <nav class="primary-nav" aria-label="Hauptmenü">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item primary-nav__item--mega">
+            <button class="primary-nav__link" type="button" data-i18n="nav.catalog" data-mega-toggle aria-expanded="false">Katalog</button>
+            <div class="mega-panel" data-mega-panel>
+              <div class="mega-panel__column">
+                <a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a>
+                <a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a>
+                <a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a>
+              </div>
+              <div class="mega-panel__column">
+                <a href="catalog.html#room" data-i18n="nav.room">Raumduft</a>
+                <a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a>
+                <a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a>
+                <a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a>
+              </div>
+              <div class="mega-panel__column">
+                <a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a>
+                <a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a>
+                <a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a>
+              </div>
+            </div>
+          </li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="category-diffusers.html" data-page-target="diffusers" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="category-candles.html" data-page-target="candles" data-i18n="nav.candles">Duftkerzen</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#room" data-i18n="nav.room">Raumduft</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#car" data-i18n="nav.car">Autoparfum</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="about.html" data-page-target="about" data-i18n="nav.about">Über uns</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="corporate.html" data-page-target="corporate" data-i18n="nav.corporate">Corporate</a></li>
+          <li class="primary-nav__item"><a class="primary-nav__link" href="contacts.html" data-page-target="contacts" data-i18n="nav.contacts">Kontakt</a></li>
         </ul>
       </nav>
-      <div class="header__actions">
-        <span class="header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
-        <span class="header__icon" data-i18n="common.account">👤 Konto</span>
-        <button class="header__icon header__cart" type="button">
+      <div class="site-header__actions">
+        <button class="site-header__icon" type="button" aria-label="Search" data-i18n="common.search">Suchen</button>
+        <span class="site-header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
+        <span class="site-header__icon" data-i18n="common.account">👤 Konto</span>
+        <button class="site-header__icon site-header__cart" type="button">
           <span data-i18n="common.cart">🛒 Warenkorb</span>
           <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
         </button>
@@ -69,14 +78,13 @@
   </header>
 
   <main>
-    <!-- HERO SECTION (index.hero.* translations) -->
-    <section class="hero" id="hero">
+    <section class="hero hero--immersive" id="hero">
       <div class="hero__content">
         <p class="hero__label" data-i18n="index.hero.label">Schweizer Exklusivvertretung</p>
         <h1 class="hero__title" data-i18n="index.hero.title">Nische-Raumdüfte für Ihr Zuhause und Ihr Business</h1>
         <p class="hero__subtitle" data-i18n="index.hero.subtitle">Kuratiertes Duftportfolio für Räume, die Haltung zeigen. Samtige Akkorde, modern komponiert und sofort lieferbar innerhalb der Schweiz.</p>
         <div class="hero__actions">
-          <button class="btn btn--primary" data-scroll-target="#catalog" data-i18n="index.hero.primary">Zum Katalog</button>
+          <button class="btn btn--gold" data-scroll-target="#catalog" data-i18n="index.hero.primary">Zum Katalog</button>
           <button class="btn btn--ghost" data-scroll-target="#story" data-i18n="index.hero.secondary">Über die Marke</button>
         </div>
       </div>
@@ -85,20 +93,33 @@
       </div>
     </section>
 
-    <!-- BRAND STORY (index.story.* translations) -->
-    <section class="story" id="story">
-      <div class="story__media">
-        <img src="assets/img/placeholder-2.svg" alt="Studio Szene" loading="lazy">
+    <section class="promo" id="promo">
+      <div class="section-heading section-heading--center">
+        <p class="section-heading__label" data-i18n="index.promos.label">Signatur Editionen</p>
+        <h2 data-i18n="index.promos.title">Saisonal kuratierte Duftwelten</h2>
       </div>
-      <div class="story__content">
-        <h2 data-i18n="index.story.title">Über NicheHome.ch</h2>
-        <p data-i18n="index.story.paragraph1">NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für außergewöhnliche Akkorde und langlebige Performance.</p>
-        <p data-i18n="index.story.paragraph2">Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, maßgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.</p>
-        <a class="btn btn--link" href="about.html" data-i18n="index.story.link">Mehr über die Philosophie</a>
+      <div class="promo__grid">
+        <article class="promo-card promo-card--1">
+          <p class="promo-card__eyebrow" data-i18n="index.promos.tile1.eyebrow">Neu</p>
+          <h3 data-i18n="index.promos.tile1.title">Atelier Linie</h3>
+          <p data-i18n="index.promos.tile1.text">Monochrome Diffusoren mit architektonischen Details für Showrooms und Penthouses.</p>
+          <a class="btn btn--ghost" href="category-diffusers.html" data-i18n="index.promos.tile1.button">Jetzt entdecken</a>
+        </article>
+        <article class="promo-card promo-card--2">
+          <p class="promo-card__eyebrow" data-i18n="index.promos.tile2.eyebrow">Highlight</p>
+          <h3 data-i18n="index.promos.tile2.title">Ceremonial Candles</h3>
+          <p data-i18n="index.promos.tile2.text">Steinzeuggefäße mit dreifachen Dochten – entwickelt für Boutique-Hotels.</p>
+          <a class="btn btn--ghost" href="category-candles.html" data-i18n="index.promos.tile2.button">Kollektion ansehen</a>
+        </article>
+        <article class="promo-card promo-card--3">
+          <p class="promo-card__eyebrow" data-i18n="index.promos.tile3.eyebrow">Corporate</p>
+          <h3 data-i18n="index.promos.tile3.title">Raumduft für Projekte</h3>
+          <p data-i18n="index.promos.tile3.text">Skalierbare Sets für Retail, Hospitality und Offices inklusive Installation.</p>
+          <a class="btn btn--ghost" href="corporate.html" data-i18n="index.promos.tile3.button">Service entdecken</a>
+        </article>
       </div>
     </section>
 
-    <!-- CATEGORY GRID (index.categories.* translations). Duplicate .category-card blocks and add new keys to translations.index.categories -->
     <section class="categories" id="catalog">
       <div class="section-heading">
         <p class="section-heading__label" data-i18n="index.categories.label">Kollektion entdecken</p>
@@ -107,68 +128,87 @@
       <div class="categories__grid">
         <article class="category-card">
           <img src="assets/img/placeholder-3.svg" alt="Aroma-Diffusoren" loading="lazy">
-          <h3 data-i18n="index.categories.card1.title">Aroma-Diffusoren</h3>
-          <p data-i18n="index.categories.card1.description">Satinierte Glasflakons mit Naturfasern, die Räume bis zu 60 m² konstant beduften.</p>
-          <a class="btn btn--text" href="category-diffusers.html" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card1.title">Aroma-Diffusoren</h3>
+            <p data-i18n="index.categories.card1.description">Satinierte Glasflakons mit Naturfasern, die Räume bis zu 60 m² konstant beduften.</p>
+            <a class="btn btn--text" href="category-diffusers.html" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-4.svg" alt="Duftkerzen" loading="lazy">
-          <h3 data-i18n="index.categories.card2.title">Duftkerzen</h3>
-          <p data-i18n="index.categories.card2.description">Handgegossene Wachsblends mit drei Dochten und eleganten Keramikgefäßen.</p>
-          <a class="btn btn--text" href="category-candles.html" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card2.title">Duftkerzen</h3>
+            <p data-i18n="index.categories.card2.description">Handgegossene Wachsblends mit drei Dochten und eleganten Keramikgefäßen.</p>
+            <a class="btn btn--text" href="category-candles.html" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-5.svg" alt="Limitierte Kollektion" loading="lazy">
-          <h3 data-i18n="index.categories.card3.title">Limitierte Kollektion</h3>
-          <p data-i18n="index.categories.card3.description">Saisonale Editionen mit kunstvollen Labels, nummeriert und nur auf Anfrage.</p>
-          <a class="btn btn--text" href="catalog.html#limited" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card3.title">Limitierte Kollektion</h3>
+            <p data-i18n="index.categories.card3.description">Saisonale Editionen mit kunstvollen Labels, nummeriert und nur auf Anfrage.</p>
+            <a class="btn btn--text" href="catalog.html#limited" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-6.svg" alt="Raumduft" loading="lazy">
-          <h3 data-i18n="index.categories.card4.title">Raumduft</h3>
-          <p data-i18n="index.categories.card4.description">Fein zerstäubte Raum- und Kissensprays mit sofortiger Wirkung.</p>
-          <a class="btn btn--text" href="catalog.html#room" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card4.title">Raumduft</h3>
+            <p data-i18n="index.categories.card4.description">Fein zerstäubte Raum- und Kissensprays mit sofortiger Wirkung.</p>
+            <a class="btn btn--text" href="catalog.html#room" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-1.svg" alt="Textilspray" loading="lazy">
-          <h3 data-i18n="index.categories.card5.title">Textilspray</h3>
-          <p data-i18n="index.categories.card5.description">Pflegende Kompositionen für Vorhänge, Teppiche und Bettwäsche.</p>
-          <a class="btn btn--text" href="catalog.html#textile" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card5.title">Textilspray</h3>
+            <p data-i18n="index.categories.card5.description">Pflegende Kompositionen für Vorhänge, Teppiche und Bettwäsche.</p>
+            <a class="btn btn--text" href="catalog.html#textile" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-2.svg" alt="Geschenksets" loading="lazy">
-          <h3 data-i18n="index.categories.card6.title">Geschenksets</h3>
-          <p data-i18n="index.categories.card6.description">Kurierte Boxen mit abgestimmten Düften für besondere Momente.</p>
-          <a class="btn btn--text" href="catalog.html#gift" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card6.title">Geschenksets</h3>
+            <p data-i18n="index.categories.card6.description">Kurierte Boxen mit abgestimmten Düften für besondere Momente.</p>
+            <a class="btn btn--text" href="catalog.html#gift" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-3.svg" alt="Accessoires" loading="lazy">
-          <h3 data-i18n="index.categories.card7.title">Accessoires</h3>
-          <p data-i18n="index.categories.card7.description">Trichter, Messbecher und Duftplatten für professionelle Präsentationen.</p>
-          <a class="btn btn--text" href="catalog.html#accessories" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card7.title">Accessoires</h3>
+            <p data-i18n="index.categories.card7.description">Trichter, Messbecher und Duftplatten für professionelle Präsentationen.</p>
+            <a class="btn btn--text" href="catalog.html#accessories" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-6.svg" alt="Meditation" loading="lazy">
-          <h3 data-i18n="index.categories.card8.title">Meditation</h3>
-          <p data-i18n="index.categories.card8.description">Ritualkits mit Räucherstäbchen, Duftölen und Keramikhaltern.</p>
-          <a class="btn btn--text" href="catalog.html#meditation" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card8.title">Meditation</h3>
+            <p data-i18n="index.categories.card8.description">Ritualkits mit Räucherstäbchen, Duftölen und Keramikhaltern.</p>
+            <a class="btn btn--text" href="catalog.html#meditation" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-4.svg" alt="Autoparfum" loading="lazy">
-          <h3 data-i18n="index.categories.card9.title">Autoparfum</h3>
-          <p data-i18n="index.categories.card9.description">Magnetische Clips mit austauschbaren Duftkapseln für jede Fahrt.</p>
-          <a class="btn btn--text" href="catalog.html#car" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card9.title">Autoparfum</h3>
+            <p data-i18n="index.categories.card9.description">Magnetische Clips mit austauschbaren Duftkapseln für jede Fahrt.</p>
+            <a class="btn btn--text" href="catalog.html#car" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
         <article class="category-card">
           <img src="assets/img/placeholder-5.svg" alt="Aromageräte" loading="lazy">
-          <h3 data-i18n="index.categories.card10.title">Aromageräte</h3>
-          <p data-i18n="index.categories.card10.description">Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Größen.</p>
-          <a class="btn btn--text" href="catalog.html#devices" data-i18n="index.categories.button">Produkte ansehen</a>
+          <div>
+            <h3 data-i18n="index.categories.card10.title">Aromageräte</h3>
+            <p data-i18n="index.categories.card10.description">Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Größen.</p>
+            <a class="btn btn--text" href="catalog.html#devices" data-i18n="index.categories.button">Produkte ansehen</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- FEATURED PRODUCTS (index.products.* translations) -->
     <section class="products">
       <div class="section-heading">
         <p class="section-heading__label" data-i18n="index.products.label">Aktuelle Favoriten</p>
@@ -180,115 +220,128 @@
           <h3 data-i18n="index.products.card1.name">Reeddiffusor "Urban Calm"</h3>
           <p data-i18n="index.products.card1.description">Vetiver, Bergamotte und gerösteter Kakao sorgen für Ruhe in modernen Lofts.</p>
           <span class="product-card__price" data-i18n="index.products.card1.price">CHF 59.90</span>
-          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
         <article class="product-card">
           <img src="assets/img/placeholder-1.svg" alt="Alpine Mist" loading="lazy">
           <h3 data-i18n="index.products.card2.name">Raumspray "Alpine Mist"</h3>
           <p data-i18n="index.products.card2.description">Eukalyptus, Silberfichte und Baumwollblüte für klare, frische Interieurs.</p>
           <span class="product-card__price" data-i18n="index.products.card2.price">CHF 39.90</span>
-          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
         <article class="product-card">
           <img src="assets/img/placeholder-2.svg" alt="Sable Nuit" loading="lazy">
           <h3 data-i18n="index.products.card3.name">Duftkerze "Sable Nuit"</h3>
           <p data-i18n="index.products.card3.description">Sandelholz, Amber und Tonkabohne in mattem Steinzeug.</p>
           <span class="product-card__price" data-i18n="index.products.card3.price">CHF 69.90</span>
-          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
         <article class="product-card">
           <img src="assets/img/placeholder-3.svg" alt="Cedar Atlas" loading="lazy">
           <h3 data-i18n="index.products.card4.name">Gift Set "Cedar Atlas"</h3>
           <p data-i18n="index.products.card4.description">Diffusor, Spray und Kerze in abgestimmten Holznoten.</p>
           <span class="product-card__price" data-i18n="index.products.card4.price">CHF 149.00</span>
-          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
         <article class="product-card">
           <img src="assets/img/placeholder-4.svg" alt="Velvet Studio" loading="lazy">
           <h3 data-i18n="index.products.card5.name">Textilspray "Velvet Studio"</h3>
           <p data-i18n="index.products.card5.description">Cashmere, Osmanthus und weiße Teeblätter für Soft-Furnishings.</p>
           <span class="product-card__price" data-i18n="index.products.card5.price">CHF 34.00</span>
-          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
         <article class="product-card">
           <img src="assets/img/placeholder-5.svg" alt="Nomad Drive" loading="lazy">
           <h3 data-i18n="index.products.card6.name">Autoparfum "Nomad Drive"</h3>
           <p data-i18n="index.products.card6.description">Zedernholz, Grapefruit und Leder für jede Fahrt.</p>
           <span class="product-card__price" data-i18n="index.products.card6.price">CHF 29.50</span>
-          <button class="btn btn--primary" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
       </div>
     </section>
 
-    <!-- BENEFITS / USP (index.benefits.* translations) -->
+    <section class="story" id="story">
+      <div class="story__media">
+        <img src="assets/img/placeholder-2.svg" alt="Studio Szene" loading="lazy">
+      </div>
+      <div class="story__content">
+        <p class="section-heading__label" data-i18n="index.story.title">Über NicheHome.ch</p>
+        <p data-i18n="index.story.paragraph1">NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für außergewöhnliche Akkorde und langlebige Performance.</p>
+        <p data-i18n="index.story.paragraph2">Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, maßgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.</p>
+        <a class="btn btn--ghost" href="about.html" data-i18n="index.story.link">Mehr über die Philosophie</a>
+      </div>
+    </section>
+
     <section class="benefits">
-      <div class="section-heading">
+      <div class="section-heading section-heading--center">
         <p class="section-heading__label" data-i18n="index.benefits.label">Warum NicheHome.ch</p>
         <h2 data-i18n="index.benefits.title">Premium Service für feine Düfte</h2>
       </div>
       <div class="benefits__grid">
         <article class="benefit-card">
+          <span class="benefit-card__icon"></span>
           <h3 data-i18n="index.benefits.item1.title">Sichere Verpackung</h3>
           <p data-i18n="index.benefits.item1.description">Spezielle Schaumstoff- und Kartoninlays schützen empfindliche Glasware auf jedem Transportweg.</p>
         </article>
         <article class="benefit-card">
+          <span class="benefit-card__icon"></span>
           <h3 data-i18n="index.benefits.item2.title">Kostenloser Versand</h3>
           <p data-i18n="index.benefits.item2.description">Lieferungen ab CHF 80 sind innerhalb der Schweiz inklusive Versicherung kostenfrei.</p>
         </article>
         <article class="benefit-card">
+          <span class="benefit-card__icon"></span>
           <h3 data-i18n="index.benefits.item3.title">Kuratiert & getestet</h3>
           <p data-i18n="index.benefits.item3.description">Jede Komposition wird im Showroom getestet, bevor sie in das Sortiment aufgenommen wird.</p>
         </article>
         <article class="benefit-card">
+          <span class="benefit-card__icon"></span>
           <h3 data-i18n="index.benefits.item4.title">Geschenkverpackung</h3>
           <p data-i18n="index.benefits.item4.description">Auf Wunsch erhalten Sie satinierte Bänder, Karten und maßgefertigte Boxen.</p>
         </article>
       </div>
     </section>
 
-    <!-- NEWS / JOURNAL (index.news.* translations) -->
-    <section class="news">
+    <section class="news" id="news">
       <div class="section-heading">
         <p class="section-heading__label" data-i18n="index.news.label">Journal</p>
         <h2 data-i18n="index.news.title">Neuigkeiten & Duftwissen</h2>
       </div>
       <div class="news__grid">
         <article class="news-card">
-          <span class="news-card__tag" data-i18n="index.news.card1.tag">Dufttipps</span>
+          <p class="news-card__tag" data-i18n="index.news.card1.tag">Dufttipps</p>
           <h3 data-i18n="index.news.card1.title">Layering-Ideen für Boutique-Hotels</h3>
           <p data-i18n="index.news.card1.excerpt">Wie mehrere Duftquellen zusammenspielen, um Lounges und Suiten differenziert wirken zu lassen.</p>
-          <a href="catalog.html#news" class="btn btn--link" data-i18n="index.news.readMore">Mehr lesen</a>
+          <a class="btn btn--text" href="catalog.html#news" data-i18n="index.news.readMore">Mehr lesen</a>
         </article>
         <article class="news-card">
-          <span class="news-card__tag" data-i18n="index.news.card2.tag">Insights</span>
+          <p class="news-card__tag" data-i18n="index.news.card2.tag">Insights</p>
           <h3 data-i18n="index.news.card2.title">Nachfüllservices für Retail-Partner</h3>
           <p data-i18n="index.news.card2.excerpt">Flexible Mengen, neutrale Verpackung und private Label-Optionen für Shop-in-Shop-Konzepte.</p>
-          <a href="corporate.html" class="btn btn--link" data-i18n="index.news.readMore">Mehr lesen</a>
+          <a class="btn btn--text" href="catalog.html#news" data-i18n="index.news.readMore">Mehr lesen</a>
         </article>
         <article class="news-card">
-          <span class="news-card__tag" data-i18n="index.news.card3.tag">Events</span>
+          <p class="news-card__tag" data-i18n="index.news.card3.tag">Events</p>
           <h3 data-i18n="index.news.card3.title">Scent Styling für Sommerterrassen</h3>
           <p data-i18n="index.news.card3.excerpt">Mit mobilen Diffusoren und Textilsprays schaffen wir frische Kulissen für Pop-up-Formate.</p>
-          <a href="contacts.html" class="btn btn--link" data-i18n="index.news.readMore">Mehr lesen</a>
+          <a class="btn btn--text" href="catalog.html#news" data-i18n="index.news.readMore">Mehr lesen</a>
         </article>
       </div>
     </section>
   </main>
 
-  <!-- GLOBAL FOOTER (footer.* translations) -->
-  <footer class="footer">
-    <div class="footer__grid">
-      <div>
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <div class="site-footer__column">
         <h4 data-i18n="footer.catalogTitle">Katalog</h4>
         <ul>
           <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
           <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
           <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
-          <li><a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a></li>
           <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
+          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
         </ul>
       </div>
-      <div>
+      <div class="site-footer__column">
         <h4 data-i18n="footer.infoTitle">Informationen</h4>
         <ul>
           <li><a href="about.html" data-i18n="footer.about">Über die Marke</a></li>
@@ -298,7 +351,7 @@
           <li><a href="catalog.html#faq" data-i18n="footer.faq">FAQ</a></li>
         </ul>
       </div>
-      <div>
+      <div class="site-footer__column">
         <h4 data-i18n="footer.legalTitle">Rechtliches</h4>
         <ul>
           <li><a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a></li>
@@ -306,17 +359,25 @@
           <li><a href="privacy.html" data-i18n="footer.cookies">Cookies</a></li>
         </ul>
       </div>
-      <div>
-        <h4 data-i18n="footer.contactTitle">Kontakt</h4>
-        <p data-i18n="footer.address">Showroom, Musterstrasse 12, 8000 Zürich</p>
-        <p data-i18n="footer.phone">Tel.: +41 (0)44 000 00 00</p>
-        <p data-i18n="footer.email">E-Mail: hello@nichehome.ch</p>
+      <div class="site-footer__column site-footer__column--newsletter">
+        <h4 data-i18n="footer.newsletterTitle">Newsletter</h4>
+        <p data-i18n="footer.newsletterText">Exklusive Launches, Tipps zur Platzierung und Einladungen zu Scent Sessions.</p>
+        <form class="newsletter-form">
+          <input type="email" name="newsletter" data-i18n="footer.newsletterPlaceholder" data-i18n-target="placeholder" placeholder="Ihre E-Mail">
+          <button type="button" class="btn btn--gold" data-i18n="footer.newsletterButton">Anmelden</button>
+        </form>
+        <p class="site-footer__social" data-i18n="footer.socialLabel">Folgen Sie uns</p>
+        <div class="footer-social">
+          <a href="#" data-i18n="common.social.instagram">Instagram</a>
+          <a href="#" data-i18n="common.social.whatsapp">WhatsApp</a>
+          <a href="#" data-i18n="common.social.pinterest">Pinterest</a>
+        </div>
       </div>
     </div>
-    <div class="footer__payments">
+    <div class="site-footer__bottom">
       <span data-i18n="footer.paymentTitle">Wir akzeptieren Visa, Mastercard, TWINT</span>
+      <p data-i18n="footer.copyright">© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva</p>
     </div>
-    <p class="footer__copy" data-i18n="footer.copyright">© NicheHome.ch – Offizieller Schweizer Vertreter von By Velcheva</p>
   </footer>
 
   <script src="assets/js/script.js" defer></script>

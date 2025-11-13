@@ -27,7 +27,10 @@ const translations = {
       account: '👤 Konto',
       cart: '🛒 Warenkorb',
       cartItems: 'Artikel',
-      burger: 'Menü öffnen oder schließen'
+      burger: 'Menü öffnen oder schließen',
+      utilityShipping: 'Gratis Versand ab CHF 80',
+      utilityDelivery: 'Lieferung innerhalb von 1–3 Werktagen',
+      search: 'Suchen'
     },
     nav: {
       catalog: 'Katalog',
@@ -50,6 +53,11 @@ const translations = {
       infoTitle: 'Informationen',
       legalTitle: 'Rechtliches',
       contactTitle: 'Kontakt',
+      newsletterTitle: 'Newsletter',
+      newsletterText: 'Exklusive Launches, Tipps zur Platzierung und Einladungen zu Scent Sessions.',
+      newsletterPlaceholder: 'Ihre E-Mail',
+      newsletterButton: 'Anmelden',
+      socialLabel: 'Folgen Sie uns',
       about: 'Über die Marke',
       journal: 'Journal',
       corporate: 'Corporate Services',
@@ -77,6 +85,28 @@ const translations = {
         paragraph1: 'NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für außergewöhnliche Akkorde und langlebige Performance.',
         paragraph2: 'Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, maßgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.',
         link: 'Mehr über die Philosophie'
+      },
+      promos: {
+        label: 'Signatur Editionen',
+        title: 'Saisonal kuratierte Duftwelten',
+        tile1: {
+          eyebrow: 'Neu',
+          title: 'Atelier Linie',
+          text: 'Monochrome Diffusoren mit architektonischen Details für Showrooms und Penthouses.',
+          button: 'Jetzt entdecken'
+        },
+        tile2: {
+          eyebrow: 'Highlight',
+          title: 'Ceremonial Candles',
+          text: 'Steinzeuggefäße mit dreifachen Dochten – entwickelt für Boutique-Hotels.',
+          button: 'Kollektion ansehen'
+        },
+        tile3: {
+          eyebrow: 'Corporate',
+          title: 'Raumduft für Projekte',
+          text: 'Skalierbare Sets für Retail, Hospitality und Offices inklusive Installation.',
+          button: 'Service entdecken'
+        }
       },
       categories: {
         label: 'Kollektion entdecken',
@@ -363,7 +393,10 @@ const translations = {
       account: '👤 Compte',
       cart: '🛒 Panier',
       cartItems: 'articles',
-      burger: 'Ouvrir ou fermer le menu'
+      burger: 'Ouvrir ou fermer le menu',
+      utilityShipping: 'Livraison offerte dès CHF 80',
+      utilityDelivery: 'Expédition en 1–3 jours ouvrables',
+      search: 'Rechercher'
     },
     nav: {
       catalog: 'Catalogue',
@@ -386,6 +419,11 @@ const translations = {
       infoTitle: 'Informations',
       legalTitle: 'Mentions légales',
       contactTitle: 'Contact',
+      newsletterTitle: 'Newsletter',
+      newsletterText: 'Lancements exclusifs, conseils de mise en scène et invitations à nos sessions parfumées.',
+      newsletterPlaceholder: 'Votre e-mail',
+      newsletterButton: 'S’inscrire',
+      socialLabel: 'Suivez-nous',
       about: 'À propos de la marque',
       journal: 'Journal',
       corporate: 'Services corporate',
@@ -413,6 +451,28 @@ const translations = {
         paragraph1: 'NicheHome.ch sélectionne des parfums d’intérieur destinés aux résidences exigeantes et aux concepts hôteliers. Chaque création naît d’une passion pour les accords rares et la tenue longue durée.',
         paragraph2: 'Nous livrons designers, boutiques et clients privés dans toute la Suisse avec des conditions flexibles et un accompagnement personnalisé.',
         link: 'Découvrir notre philosophie'
+      },
+      promos: {
+        label: 'Éditions signature',
+        title: 'Univers parfumés saisonniers',
+        tile1: {
+          eyebrow: 'Nouveau',
+          title: 'Ligne Atelier',
+          text: 'Diffuseurs monochromes aux détails architecturaux pour showrooms et penthouses.',
+          button: 'Découvrir'
+        },
+        tile2: {
+          eyebrow: 'À l’honneur',
+          title: 'Ceremonial Candles',
+          text: 'Contenants en grès à triple mèche, pensés pour les hôtels boutiques.',
+          button: 'Voir la collection'
+        },
+        tile3: {
+          eyebrow: 'Corporate',
+          title: 'Parfums pour projets',
+          text: 'Kits évolutifs pour retail, hospitality et bureaux avec installation incluse.',
+          button: 'Découvrir le service'
+        }
       },
       categories: {
         label: 'Découvrir la collection',
@@ -699,7 +759,10 @@ const translations = {
       account: '👤 Account',
       cart: '🛒 Carrello',
       cartItems: 'articoli',
-      burger: 'Apri o chiudi il menu'
+      burger: 'Apri o chiudi il menu',
+      utilityShipping: 'Spedizione gratuita da CHF 80',
+      utilityDelivery: 'Consegna in 1–3 giorni lavorativi',
+      search: 'Cerca'
     },
     nav: {
       catalog: 'Catalogo',
@@ -722,6 +785,11 @@ const translations = {
       infoTitle: 'Informazioni',
       legalTitle: 'Note legali',
       contactTitle: 'Contatto',
+      newsletterTitle: 'Newsletter',
+      newsletterText: 'Lanci esclusivi, consigli di styling olfattivo e inviti ai nostri incontri.',
+      newsletterPlaceholder: 'La tua e-mail',
+      newsletterButton: 'Iscriviti',
+      socialLabel: 'Seguici',
       about: 'Il brand',
       journal: 'Journal',
       corporate: 'Servizi corporate',
@@ -749,6 +817,28 @@ const translations = {
         paragraph1: 'NicheHome.ch presenta una selezione curata di profumi d’ambiente per residenze esigenti e concept hospitality. Ogni creazione nasce dalla passione per accordi unici e performance duratura.',
         paragraph2: 'Forniamo designer, boutique e privati in tutta la Svizzera con condizioni flessibili e consulenza personalizzata.',
         link: 'Scopri la filosofia'
+      },
+      promos: {
+        label: 'Edizioni signature',
+        title: 'Universi olfattivi stagionali',
+        tile1: {
+          eyebrow: 'Novità',
+          title: 'Linea Atelier',
+          text: 'Diffusori monocromatici con dettagli architettonici per showroom e attici.',
+          button: 'Scopri ora'
+        },
+        tile2: {
+          eyebrow: 'In evidenza',
+          title: 'Ceremonial Candles',
+          text: 'Contenitori in gres a tre stoppini, pensati per boutique hotel.',
+          button: 'Vedi la collezione'
+        },
+        tile3: {
+          eyebrow: 'Corporate',
+          title: 'Profumi per progetti',
+          text: 'Set scalabili per retail, hospitality e uffici con installazione inclusa.',
+          button: 'Scopri il servizio'
+        }
       },
       categories: {
         label: 'Esplora la collezione',
@@ -1035,7 +1125,10 @@ const translations = {
       account: '👤 Account',
       cart: '🛒 Cart',
       cartItems: 'items',
-      burger: 'Toggle main menu'
+      burger: 'Toggle main menu',
+      utilityShipping: 'Free shipping from CHF 80',
+      utilityDelivery: 'Delivery within 1–3 business days',
+      search: 'Search'
     },
     nav: {
       catalog: 'Catalog',
@@ -1058,6 +1151,11 @@ const translations = {
       infoTitle: 'Information',
       legalTitle: 'Legal',
       contactTitle: 'Contact',
+      newsletterTitle: 'Newsletter',
+      newsletterText: 'Exclusive launches, scent styling tips, and invitations to immersive sessions.',
+      newsletterPlaceholder: 'Your email',
+      newsletterButton: 'Subscribe',
+      socialLabel: 'Follow us',
       about: 'About the brand',
       journal: 'Journal',
       corporate: 'Corporate services',
@@ -1085,6 +1183,28 @@ const translations = {
         paragraph1: 'NicheHome.ch selects interior fragrances crafted for discerning residences and hospitality concepts. Each creation is driven by a passion for remarkable accords and long-lasting performance.',
         paragraph2: 'We supply interior designers, boutiques and private clients throughout Switzerland with flexible terms and tailored consulting.',
         link: 'Discover our philosophy'
+      },
+      promos: {
+        label: 'Signature editions',
+        title: 'Seasonally curated scent worlds',
+        tile1: {
+          eyebrow: 'New',
+          title: 'Atelier Line',
+          text: 'Monochrome diffusers with architectural detailing for showrooms and penthouses.',
+          button: 'Explore now'
+        },
+        tile2: {
+          eyebrow: 'Highlight',
+          title: 'Ceremonial Candles',
+          text: 'Stoneware vessels with triple wicks, crafted for boutique hotels.',
+          button: 'View collection'
+        },
+        tile3: {
+          eyebrow: 'Corporate',
+          title: 'Fragrance for projects',
+          text: 'Scalable sets for retail, hospitality and offices with on-site installation.',
+          button: 'Discover service'
+        }
       },
       categories: {
         label: 'Explore the collection',
@@ -1403,15 +1523,50 @@ const initScrollButtons = () => {
 
 const initHeader = () => {
   const header = document.getElementById('siteHeader');
-  const burger = document.querySelector('.header__burger');
-  const navLinks = document.querySelectorAll('.nav__list a');
-  if (!header || !burger) return;
-  const toggleMenu = () => header.classList.toggle('header--open');
-  burger.addEventListener('click', toggleMenu);
-  navLinks.forEach((link) => link.addEventListener('click', () => header.classList.remove('header--open')));
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('header--scrolled', window.scrollY > 30);
+  if (!header) return;
+  const burger = header.querySelector('.site-header__burger');
+  const navLinks = header.querySelectorAll('.primary-nav__link[href]');
+  const megaToggles = header.querySelectorAll('[data-mega-toggle]');
+  const closeMega = () => {
+    megaToggles.forEach((btn) => {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.closest('.primary-nav__item')?.classList.remove('is-open');
+    });
+  };
+  const closeMenu = () => {
+    header.classList.remove('site-header--open');
+    closeMega();
+  };
+  burger?.addEventListener('click', () => {
+    const willOpen = !header.classList.contains('site-header--open');
+    if (willOpen) {
+      header.classList.add('site-header--open');
+    } else {
+      closeMenu();
+    }
   });
+  navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+  megaToggles.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      event.preventDefault();
+      const item = btn.closest('.primary-nav__item');
+      const isOpen = item?.classList.contains('is-open');
+      closeMega();
+      if (!isOpen) {
+        item?.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.primary-nav__item--mega')) {
+      closeMega();
+    }
+  });
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('site-header--scrolled', window.scrollY > 30);
+  });
+  header.classList.toggle('site-header--scrolled', window.scrollY > 30);
 };
 
 const initCart = () => {
