@@ -220,39 +220,53 @@ main {
   position: relative;
 }
 
-.mega-panel { 
+.mega-panel {
   position: absolute;
-  inset: calc(100% + 0.5rem) auto auto 0;
+  top: 100%;
+  left: 0;
   background: #fff;
   color: var(--color-text);
-  padding: 1.5rem 2rem;
-  display: none;
-  gap: 2rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 14px;
   box-shadow: var(--shadow-soft);
+  min-width: 240px;
+  display: none;
+  z-index: 60;
 }
 
-.mega-panel__title {
-  text-transform: uppercase;
-  letter-spacing: 0.3em;
-  font-size: 0.7rem;
-  color: var(--color-muted);
-  margin-bottom: 0.35rem;
-}
-
-.primary-nav__item--mega.is-open .mega-panel {
+.mega-panel__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 0.5rem;
 }
 
 .mega-panel a {
   display: block;
-  padding: 0.35rem 0;
+  padding: 0.25rem 0;
   color: var(--color-charcoal);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .mega-panel a:hover {
   color: var(--color-gold);
+}
+
+.primary-nav__item--mega.is-open .mega-panel {
+  display: block;
+}
+
+@media (hover: hover) {
+  .primary-nav__item--mega:hover .mega-panel {
+    display: block;
+  }
+}
+
+.primary-nav__item--mega:focus-within .mega-panel {
+  display: block;
 }
 
 .site-header__actions {
@@ -277,23 +291,69 @@ main {
   color: #fff;
 }
 
-.lang-switcher {
-  display: flex;
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
   gap: 0.4rem;
-}
-
-.lang-switcher__btn {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.7);
-  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.35rem 0.9rem;
   border-radius: 999px;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
-.lang-switcher__btn.is-active {
+.lang-dropdown__chevron {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.lang-dropdown.is-open .lang-dropdown__chevron {
+  transform: rotate(-135deg);
+}
+
+.lang-dropdown__list {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
   background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  padding: 0.35rem 0;
+  list-style: none;
+  margin: 0;
+  min-width: 160px;
+  display: none;
+  z-index: 20;
+}
+
+.lang-dropdown.is-open .lang-dropdown__list {
+  display: block;
+}
+
+.lang-dropdown__option {
+  width: 100%;
+  padding: 0.45rem 1rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--color-charcoal);
+}
+
+.lang-dropdown__option.is-active,
+.lang-dropdown__option:hover {
+  background: var(--color-sand);
   color: var(--color-charcoal);
 }
 
@@ -419,6 +479,7 @@ main {
   gap: 1.5rem;
 }
 
+
 .category-card {
   display: flex;
   gap: 1rem;
@@ -427,6 +488,8 @@ main {
   background: var(--color-cream);
   border: 1px solid var(--color-line);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: var(--color-charcoal);
 }
 
 .category-card:hover {
@@ -434,11 +497,38 @@ main {
   transform: translateY(-4px);
 }
 
+.category-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+
 .category-card img {
   width: 96px;
   height: 96px;
   border-radius: 12px;
   background: #fff;
+}
+
+.catalog-section {
+  padding: 4rem clamp(1.5rem, 4vw, 6rem);
+  border-top: 1px solid var(--color-line);
+  background: var(--color-cream);
+}
+
+.catalog-section--tint {
+  background: var(--color-sand);
+}
+
+.catalog-section__header {
+  margin-bottom: 2rem;
+  max-width: 620px;
+}
+
+.catalog-section__description {
+  color: var(--color-muted);
+  margin-top: 0.75rem;
 }
 
 /* Programs grid inspired by Rituals editorial cards */
@@ -890,7 +980,18 @@ main {
 
   .mega-panel {
     position: static;
-    display: none !important;
+    display: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0.5rem 0 0;
+  }
+
+  .primary-nav__item--mega.is-open .mega-panel {
+    display: block;
+  }
+
+  .mega-panel a {
+    color: rgba(255, 255, 255, 0.85);
   }
 
   .primary-nav__item--mega.is-open .primary-nav__link::after {

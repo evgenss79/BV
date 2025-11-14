@@ -10,70 +10,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body data-page="index">
+
     <header class="site-header" id="siteHeader">
-    <div class="utility-bar">
-      <p class="utility-bar__item" data-i18n="common.utilityShipping">Gratis Versand ab CHF 80</p>
-      <p class="utility-bar__item" data-i18n="common.utilityDelivery">Lieferung innerhalb von 1–3 Werktagen</p>
-    </div>
-    <div class="site-header__main">
-      <button class="site-header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü öffnen oder schließen">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <a href="index.html" class="site-header__logo" data-i18n="common.brand">NicheHome.ch</a>
-      <nav class="primary-nav" aria-label="Hauptmenü">
-        <ul class="primary-nav__list">
-          <li class="primary-nav__item primary-nav__item--mega">
-            <button class="primary-nav__link" type="button" data-i18n="nav.catalog" data-mega-toggle aria-expanded="false">Katalog</button>
-            <div class="mega-panel" data-mega-panel>
-              <div class="mega-panel__column">
-                <p class="mega-panel__title" data-i18n="navGroups.collections">Kollektionen</p>
-                <a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a>
-                <a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a>
-                <a href="catalog.html#limited" data-i18n="nav.limited">Limitierte Kollektion</a>
-              </div>
-              <div class="mega-panel__column">
-                <p class="mega-panel__title" data-i18n="navGroups.sprays">Sprays & Pflege</p>
-                <a href="catalog.html#room" data-i18n="nav.room">Raumduft</a>
-                <a href="catalog.html#textile" data-i18n="nav.textile">Textilspray</a>
-                <a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a>
-              </div>
-              <div class="mega-panel__column">
-                <p class="mega-panel__title" data-i18n="navGroups.lifestyle">Accessoires & Geräte</p>
-                <a href="catalog.html#accessories" data-i18n="nav.accessories">Accessoires</a>
-                <a href="catalog.html#meditation" data-i18n="nav.meditation">Meditation</a>
-                <a href="catalog.html#car" data-i18n="nav.car">Autoparfum</a>
-                <a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a>
-              </div>
-            </div>
-          </li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="about.html" data-i18n="nav.about">Über uns</a></li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html#news" data-i18n="nav.journal">Journal</a></li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
-          <li class="primary-nav__item"><a class="primary-nav__link" href="contacts.html" data-i18n="nav.contacts">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="site-header__actions">
-        <button class="site-header__icon" type="button" aria-label="Search" data-i18n="common.search">Suchen</button>
-        <span class="site-header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
-        <span class="site-header__icon" data-i18n="common.account">👤 Konto</span>
-        <button class="site-header__icon site-header__cart" type="button">
-          <span data-i18n="common.cart">🛒 Warenkorb</span>
-          <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
+      <div class="utility-bar">
+        <p class="utility-bar__item" data-i18n="common.utilityShipping">Gratis Versand ab CHF 80</p>
+        <p class="utility-bar__item" data-i18n="common.utilityDelivery">Lieferung innerhalb von 1–3 Werktagen</p>
+      </div>
+      <div class="site-header__main">
+        <button class="site-header__burger" data-i18n="common.burger" data-i18n-target="aria-label" aria-label="Menü öffnen oder schließen">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="lang-switcher" role="group" aria-label="Language switcher">
-          <button type="button" data-lang="de" class="lang-switcher__btn is-active">DE</button>
-          <button type="button" data-lang="fr" class="lang-switcher__btn">FR</button>
-          <button type="button" data-lang="it" class="lang-switcher__btn">IT</button>
-          <button type="button" data-lang="en" class="lang-switcher__btn">EN</button>
+        <a href="index.html" class="site-header__logo" data-i18n="common.brand">NicheHome.ch</a>
+        <nav class="primary-nav" aria-label="Hauptmenü">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item primary-nav__item--mega">
+              <a class="primary-nav__link" href="catalog.html" data-i18n="nav.catalog" data-mega-toggle aria-haspopup="true" aria-expanded="false">Katalog</a>
+              <div class="mega-panel mega-panel--catalog">
+                <ul class="mega-panel__list">
+                  <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+                  <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
+                  <li><a href="category-limited.html" data-i18n="nav.limited">Limitierte Kollektion</a></li>
+                  <li><a href="category-room.html" data-i18n="nav.room">Raumduft</a></li>
+                  <li><a href="category-textile.html" data-i18n="nav.textile">Textilspray</a></li>
+                  <li><a href="category-gift.html" data-i18n="nav.gift">Geschenksets</a></li>
+                  <li><a href="category-accessories.html" data-i18n="nav.accessories">Accessoires</a></li>
+                  <li><a href="category-meditation.html" data-i18n="nav.meditation">Meditation</a></li>
+                  <li><a href="category-car.html" data-i18n="nav.car">Autoparfum</a></li>
+                  <li><a href="category-devices.html" data-i18n="nav.devices">Aromageräte</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="category-gift.html" data-i18n="nav.gift">Geschenksets</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="index.html#news" data-i18n="nav.journal">Journal</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="about.html" data-i18n="nav.about">Über uns</a></li>
+            <li class="primary-nav__item"><a class="primary-nav__link" href="contacts.html" data-i18n="nav.contacts">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button class="site-header__icon" type="button" aria-label="Search" data-i18n="common.search">Suchen</button>
+          <span class="site-header__icon" data-i18n="common.wishlist">♡ Merkliste</span>
+          <span class="site-header__icon" data-i18n="common.account">👤 Konto</span>
+          <button class="site-header__icon site-header__cart" type="button">
+            <span data-i18n="common.cart">🛒 Warenkorb</span>
+            <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
+          </button>
+          <div class="lang-dropdown" data-lang-dropdown>
+            <button type="button" class="lang-dropdown__toggle" data-lang-toggle aria-haspopup="listbox" aria-expanded="false">
+              <span data-current-lang-label>DE</span>
+              <span class="lang-dropdown__chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="lang-dropdown__list" role="listbox">
+              <li><button type="button" data-lang="fr" class="lang-dropdown__option">FR</button></li>
+              <li><button type="button" data-lang="de" class="lang-dropdown__option is-active">DE</button></li>
+              <li><button type="button" data-lang="it" class="lang-dropdown__option">IT</button></li>
+              <li><button type="button" data-lang="en" class="lang-dropdown__option">EN</button></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+
 
   <main>
     <section class="hero hero--immersive" id="hero">
@@ -132,7 +131,7 @@
             <p class="experience-card__tag" data-i18n="index.showcase.residential.tag">Residence</p>
             <h3 data-i18n="index.showcase.residential.title">Kuratiertes Home Fragrance</h3>
             <p data-i18n="index.showcase.residential.text">Signature-Kombinationen für Apartments, Villen und Penthouses inklusive Styling-Guides und Nachfüllservice.</p>
-            <a class="btn btn--ghost" href="catalog.html#room" data-i18n="index.showcase.residential.link">Kollektion entdecken</a>
+            <a class="btn btn--ghost" href="category-room.html" data-i18n="index.showcase.residential.link">Kollektion entdecken</a>
           </div>
         </article>
         <article class="experience-card">
@@ -176,7 +175,7 @@
           <div>
             <h3 data-i18n="index.categories.card3.title">Limitierte Kollektion</h3>
             <p data-i18n="index.categories.card3.description">Saisonale Editionen mit kunstvollen Labels, nummeriert und nur auf Anfrage.</p>
-            <a class="btn btn--text" href="catalog.html#limited" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-limited.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -184,7 +183,7 @@
           <div>
             <h3 data-i18n="index.categories.card4.title">Raumduft</h3>
             <p data-i18n="index.categories.card4.description">Fein zerstäubte Raum- und Kissensprays mit sofortiger Wirkung.</p>
-            <a class="btn btn--text" href="catalog.html#room" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-room.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -192,7 +191,7 @@
           <div>
             <h3 data-i18n="index.categories.card5.title">Textilspray</h3>
             <p data-i18n="index.categories.card5.description">Pflegende Kompositionen für Vorhänge, Teppiche und Bettwäsche.</p>
-            <a class="btn btn--text" href="catalog.html#textile" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-textile.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -200,7 +199,7 @@
           <div>
             <h3 data-i18n="index.categories.card6.title">Geschenksets</h3>
             <p data-i18n="index.categories.card6.description">Kurierte Boxen mit abgestimmten Düften für besondere Momente.</p>
-            <a class="btn btn--text" href="catalog.html#gift" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-gift.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -208,7 +207,7 @@
           <div>
             <h3 data-i18n="index.categories.card7.title">Accessoires</h3>
             <p data-i18n="index.categories.card7.description">Trichter, Messbecher und Duftplatten für professionelle Präsentationen.</p>
-            <a class="btn btn--text" href="catalog.html#accessories" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-accessories.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -216,7 +215,7 @@
           <div>
             <h3 data-i18n="index.categories.card8.title">Meditation</h3>
             <p data-i18n="index.categories.card8.description">Ritualkits mit Räucherstäbchen, Duftölen und Keramikhaltern.</p>
-            <a class="btn btn--text" href="catalog.html#meditation" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-meditation.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -224,7 +223,7 @@
           <div>
             <h3 data-i18n="index.categories.card9.title">Autoparfum</h3>
             <p data-i18n="index.categories.card9.description">Magnetische Clips mit austauschbaren Duftkapseln für jede Fahrt.</p>
-            <a class="btn btn--text" href="catalog.html#car" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-car.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
         <article class="category-card">
@@ -232,7 +231,7 @@
           <div>
             <h3 data-i18n="index.categories.card10.title">Aromageräte</h3>
             <p data-i18n="index.categories.card10.description">Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Größen.</p>
-            <a class="btn btn--text" href="catalog.html#devices" data-i18n="index.categories.button">Produkte ansehen</a>
+            <a class="btn btn--text" href="category-devices.html" data-i18n="index.categories.button">Produkte ansehen</a>
           </div>
         </article>
       </div>
@@ -340,19 +339,19 @@
           <p class="news-card__tag" data-i18n="index.news.card1.tag">Dufttipps</p>
           <h3 data-i18n="index.news.card1.title">Layering-Ideen für Boutique-Hotels</h3>
           <p data-i18n="index.news.card1.excerpt">Wie mehrere Duftquellen zusammenspielen, um Lounges und Suiten differenziert wirken zu lassen.</p>
-          <a class="btn btn--text" href="catalog.html#news" data-i18n="index.news.readMore">Mehr lesen</a>
+          <a class="btn btn--text" href="#news" data-i18n="index.news.readMore">Mehr lesen</a>
         </article>
         <article class="news-card">
           <p class="news-card__tag" data-i18n="index.news.card2.tag">Insights</p>
           <h3 data-i18n="index.news.card2.title">Nachfüllservices für Retail-Partner</h3>
           <p data-i18n="index.news.card2.excerpt">Flexible Mengen, neutrale Verpackung und private Label-Optionen für Shop-in-Shop-Konzepte.</p>
-          <a class="btn btn--text" href="catalog.html#news" data-i18n="index.news.readMore">Mehr lesen</a>
+          <a class="btn btn--text" href="#news" data-i18n="index.news.readMore">Mehr lesen</a>
         </article>
         <article class="news-card">
           <p class="news-card__tag" data-i18n="index.news.card3.tag">Events</p>
           <h3 data-i18n="index.news.card3.title">Scent Styling für Sommerterrassen</h3>
           <p data-i18n="index.news.card3.excerpt">Mit mobilen Diffusoren und Textilsprays schaffen wir frische Kulissen für Pop-up-Formate.</p>
-          <a class="btn btn--text" href="catalog.html#news" data-i18n="index.news.readMore">Mehr lesen</a>
+          <a class="btn btn--text" href="#news" data-i18n="index.news.readMore">Mehr lesen</a>
         </article>
       </div>
     </section>
@@ -366,18 +365,18 @@
           <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
           <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
           <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
-          <li><a href="catalog.html#gift" data-i18n="nav.gift">Geschenksets</a></li>
-          <li><a href="catalog.html#devices" data-i18n="nav.devices">Aromageräte</a></li>
+          <li><a href="category-gift.html" data-i18n="nav.gift">Geschenksets</a></li>
+          <li><a href="category-devices.html" data-i18n="nav.devices">Aromageräte</a></li>
         </ul>
       </div>
       <div class="site-footer__column">
         <h4 data-i18n="footer.infoTitle">Informationen</h4>
         <ul>
           <li><a href="about.html" data-i18n="footer.about">Über die Marke</a></li>
-          <li><a href="catalog.html#news" data-i18n="footer.journal">Journal</a></li>
+          <li><a href="index.html#news" data-i18n="footer.journal">Journal</a></li>
           <li><a href="corporate.html" data-i18n="footer.corporate">Corporate Services</a></li>
-          <li><a href="catalog.html#shipping" data-i18n="footer.shipping">Versand & Rückgabe</a></li>
-          <li><a href="catalog.html#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="terms.html" data-i18n="footer.shipping">Versand & Rückgabe</a></li>
+          <li><a href="contacts.html" data-i18n="footer.faq">FAQ</a></li>
         </ul>
       </div>
       <div class="site-footer__column">
