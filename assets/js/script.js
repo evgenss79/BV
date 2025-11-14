@@ -182,6 +182,229 @@ const translations = {
         button: 'Jetzt stöbern'
       },
       grid: { label: 'Segmentierung', title: 'Kollektionen im Überblick' },
+      sections: {
+        diffusers: {
+          label: 'Aroma-Diffusoren',
+          title: 'Duftskulpturen für jede Raumgröße',
+          description:
+            'Von kompakten 100-ml-Flakons bis zu monumentalen 2,5-Liter-Gefäßen – jede Variante sorgt für konstante Duftabgabe.',
+          cards: {
+            card1: {
+              name: 'Reeddiffusor "Urban Calm" 200 ml',
+              description: 'Vetiver, Bergamotte und Kakao. Ideal für Lobbys und private Spas.',
+              price: 'CHF 59.90'
+            },
+            card2: {
+              name: 'Diffusor "Atlas Cedar" 500 ml',
+              description: 'Zedernholz, Weihrauch und schwarze Johannisbeere für Statement-Suiten.',
+              price: 'CHF 98.00'
+            },
+            card3: {
+              name: 'Diffusor "Lumen" 1L',
+              description: 'Orangenblüte, Neroli und weißer Moschus für großflächige Showrooms.',
+              price: 'CHF 149.00'
+            }
+          }
+        },
+        candles: {
+          label: 'Duftkerzen',
+          title: 'Handgegossene Keramikkerzen',
+          description: 'Mineralische Gefäße, dreifache Dochte und cremige Wachsblends für bis zu 80 Stunden Brenndauer.',
+          cards: {
+            card1: {
+              name: 'Kerze "Sable Nuit"',
+              description: 'Amber, Tonka und Labdanum schaffen ein warmes, samtiges Ambiente.',
+              price: 'CHF 69.90'
+            },
+            card2: {
+              name: 'Kerze "Linen Cloud"',
+              description: 'Baumwollblüte, Cashmere und weißer Moschus für Schlafräume und Spas.',
+              price: 'CHF 64.00'
+            },
+            card3: {
+              name: 'Kerze "Fig Aura"',
+              description: 'Feigenblatt, grüner Tee und Tonkabohne – beliebt in Concept Stores.',
+              price: 'CHF 72.00'
+            }
+          }
+        },
+        limited: {
+          label: 'Limitierte Kollektion',
+          title: 'Nummerierte Editionen',
+          description: 'Saisonale Kleinauflagen mit von Künstlern gestalteten Etiketten. Jede Charge ist nur wenige Wochen verfügbar.',
+          cards: {
+            card1: {
+              name: 'Set "Amber Atelier"',
+              description: 'Diffusor und Kerze mit Amber, Safran und Birne in nummerierter Box.',
+              price: 'CHF 189.00'
+            },
+            card2: {
+              name: 'Kerze "Marble Dust"',
+              description: 'Steinzeuggefäß mit Gräsern, Vetiver und weißem Rauch.',
+              price: 'CHF 84.00'
+            },
+            card3: {
+              name: 'Diffusor "Orchard Sketch"',
+              description: 'Birnenblüte, Magnolie und Eichenmoos, limitiert auf 300 Stück.',
+              price: 'CHF 139.00'
+            }
+          }
+        },
+        room: {
+          label: 'Raumduft',
+          title: 'Interior Perfume Sprays',
+          description: 'Feinnebel-Sprays mit kosmetischer Qualität, ideal für spontane Duftwechsel in Hospitality- und Wohnräumen.',
+          cards: {
+            card1: {
+              name: 'Raumspray "Alpine Mist"',
+              description: 'Eukalyptus, Silberfichte und Baumwollblüte klären die Luft.',
+              price: 'CHF 39.90'
+            },
+            card2: {
+              name: 'Interior Parfum "Velvet Hours"',
+              description: 'Pfingstrose, Birne und Cashmere für Lounges und Suiten.',
+              price: 'CHF 42.00'
+            },
+            card3: {
+              name: 'Raumspray "Citrus Column"',
+              description: 'Grapefruit, Minze und Moschus beleben Retailflächen sofort.',
+              price: 'CHF 36.00'
+            }
+          }
+        },
+        textile: {
+          label: 'Textilspray',
+          title: 'Pflege für Stoffe & Accessoires',
+          description: 'Sanfte Formulierungen mit antistatischer Wirkung für Vorhänge, Teppiche und Bettwäsche.',
+          cards: {
+            card1: {
+              name: 'Textilspray "Velvet Studio"',
+              description: 'Cashmere, Osmanthus und weiße Teeblätter für Soft-Furnishings.',
+              price: 'CHF 34.00'
+            },
+            card2: {
+              name: 'Spray "Cashmere Dawn"',
+              description: 'Zarte Aldehyde, Iris und Holznoten pflegen schwere Stoffe.',
+              price: 'CHF 32.00'
+            },
+            card3: {
+              name: 'Spray "Linen Ritual"',
+              description: 'Lavendel, Angelika und weiße Hölzer für Bettwäsche und Gardinen.',
+              price: 'CHF 30.00'
+            }
+          }
+        },
+        gift: {
+          label: 'Geschenksets',
+          title: 'Kurierte Duftboxen',
+          description: 'Mix & Match-Kombinationen mit Diffusoren, Kerzen und Sprays inklusive Grußkarten.',
+          cards: {
+            card1: {
+              name: 'Gift Set "Cedar Atlas"',
+              description: 'Diffusor, Spray und Kerze in abgestimmten Holznoten.',
+              price: 'CHF 149.00'
+            },
+            card2: {
+              name: 'Box "Soft Architecture"',
+              description: 'Kerze, Textilspray und Duftkarte für Interior-Liebhaber.',
+              price: 'CHF 119.00'
+            },
+            card3: {
+              name: 'Set "Nomad Gift"',
+              description: 'Autoparfum, Mini-Diffusor und Reisebeutel für unterwegs.',
+              price: 'CHF 89.00'
+            }
+          }
+        },
+        accessories: {
+          label: 'Accessoires',
+          title: 'Tools & Displays',
+          description: 'Perfekt abgestimmte Accessoires für Präsentation, Nachfüllung und Pflege der Kollektionen.',
+          cards: {
+            card1: {
+              name: 'Messbecher & Trichter',
+              description: 'Edelstahl-Tools zum sicheren Nachfüllen großer Diffusoren.',
+              price: 'CHF 29.00'
+            },
+            card2: {
+              name: 'Duftfächer "Studio"',
+              description: 'Fächer aus Baumwollpapier zur Duftpräsentation bei Terminen.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Travel Case "Nomad"',
+              description: 'Gepolsterte Box mit Platz für vier 100-ml-Flakons.',
+              price: 'CHF 54.00'
+            }
+          }
+        },
+        meditation: {
+          label: 'Meditation',
+          title: 'Rituale für bewusste Pausen',
+          description: 'Sets mit Räucherstäbchen, Keramikhaltern und Ölen unterstützen achtsame Rituale.',
+          cards: {
+            card1: {
+              name: 'Meditationsset "Still Moon"',
+              description: 'Räucherstäbchen, Keramikhalter und Mini-Kerze für ruhige Abende.',
+              price: 'CHF 64.00'
+            },
+            card2: {
+              name: 'Räucherstäbchen "Sumi"',
+              description: 'Hinoki, Kardamom und Rauchholz für tiefe Atemsessions.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Aromaöl "Quiet Garden"',
+              description: 'Bergamotte, Rosenholz und Lavendel für Diffusoren oder Bäder.',
+              price: 'CHF 31.00'
+            }
+          }
+        },
+        car: {
+          label: 'Autoparfum',
+          title: 'Nomadische Duftlösungen',
+          description: 'Magnetische Clips, elegante Refills und Sets für Chauffeur-Services.',
+          cards: {
+            card1: {
+              name: 'Autoparfum "Nomad Drive"',
+              description: 'Zedernholz, Grapefruit und Leder für jede Fahrt.',
+              price: 'CHF 29.50'
+            },
+            card2: {
+              name: 'Clip "Cedar Route"',
+              description: 'Magnetischer Clip mit Noten von Zypresse, Tanne und Leder.',
+              price: 'CHF 34.00'
+            },
+            card3: {
+              name: 'Refill-Set "City Lines"',
+              description: 'Drei Duftkapseln mit Citrus, Amber und Vetiver für die Saison.',
+              price: 'CHF 27.00'
+            }
+          }
+        },
+        devices: {
+          label: 'Aromageräte',
+          title: 'Technik für Duftinstallationen',
+          description: 'Ultraschall- und HVAC-Lösungen für private Apartments bis hin zu Großprojekten.',
+          cards: {
+            card1: {
+              name: 'Aromagerät "Halo Mini"',
+              description: 'Kabelloses Gerät mit zwei Intensitätsstufen für Wohnräume.',
+              price: 'CHF 119.00'
+            },
+            card2: {
+              name: 'Ultraschallgerät "Studio"',
+              description: 'Timer, LED-Licht und Glasdom – ideal für Boutique-Flächen.',
+              price: 'CHF 169.00'
+            },
+            card3: {
+              name: 'HVAC Modul "Pro Flow"',
+              description: 'Direkte Einbindung in Klimaanlagen für bis zu 600 m².',
+              price: 'CHF 480.00'
+            }
+          }
+        }
+      },
       programs: {
         label: 'Programme',
         title: 'Anwendungswelten & Services',
@@ -592,6 +815,229 @@ const translations = {
         button: 'Explorer maintenant'
       },
       grid: { label: 'Segmentation', title: 'Vue d’ensemble des collections' },
+      sections: {
+        diffusers: {
+          label: 'Diffuseurs d\'ambiance',
+          title: 'Sculptures olfactives pour chaque pièce',
+          description:
+            'Des flacons de 100 ml aux formats monumentaux de 2,5 L assurent une diffusion constante.',
+          cards: {
+            card1: {
+              name: 'Diffuseur à tiges "Urban Calm" 200 ml',
+              description: 'Vétiver, bergamote et cacao pour halls et spas privés.',
+              price: 'CHF 59.90'
+            },
+            card2: {
+              name: 'Diffuseur "Atlas Cedar" 500 ml',
+              description: 'Cèdre, encens et cassis pour des suites iconiques.',
+              price: 'CHF 98.00'
+            },
+            card3: {
+              name: 'Diffuseur "Lumen" 1L',
+              description: 'Fleur d\'oranger, néroli et musc blanc pour de vastes showrooms.',
+              price: 'CHF 149.00'
+            }
+          }
+        },
+        candles: {
+          label: 'Bougies parfumées',
+          title: 'Bougies en céramique coulées à la main',
+          description: 'Réservoirs minéraux, mèches multiples et cires crémeuses jusqu’à 80 h de combustion.',
+          cards: {
+            card1: {
+              name: 'Bougie "Sable Nuit"',
+              description: 'Ambre, fève tonka et labdanum créent une ambiance veloutée.',
+              price: 'CHF 69.90'
+            },
+            card2: {
+              name: 'Bougie "Linen Cloud"',
+              description: 'Fleur de coton, cachemire et musc blanc pour chambres et spas.',
+              price: 'CHF 64.00'
+            },
+            card3: {
+              name: 'Bougie "Fig Aura"',
+              description: 'Feuille de figuier, thé vert et fève tonka prisés en concept store.',
+              price: 'CHF 72.00'
+            }
+          }
+        },
+        limited: {
+          label: 'Collection limitée',
+          title: 'Éditions numérotées',
+          description: 'Petites séries saisonnières signées par des artistes, disponibles quelques semaines.',
+          cards: {
+            card1: {
+              name: 'Coffret "Amber Atelier"',
+              description: 'Diffuseur et bougie ambre, safran et poire dans un coffret numéroté.',
+              price: 'CHF 189.00'
+            },
+            card2: {
+              name: 'Bougie "Marble Dust"',
+              description: 'Vase en grès aux notes d’herbes, vétiver et fumée blanche.',
+              price: 'CHF 84.00'
+            },
+            card3: {
+              name: 'Diffuseur "Orchard Sketch"',
+              description: 'Fleur de poirier, magnolia et mousse de chêne, limité à 300 pièces.',
+              price: 'CHF 139.00'
+            }
+          }
+        },
+        room: {
+          label: 'Parfum d\'intérieur',
+          title: 'Brumes parfumées',
+          description: 'Sprays à fine brume de qualité cosmétique pour modifier l\'ambiance instantanément.',
+          cards: {
+            card1: {
+              name: 'Brume "Alpine Mist"',
+              description: 'Eucalyptus, sapin argenté et fleur de coton purifient l’air.',
+              price: 'CHF 39.90'
+            },
+            card2: {
+              name: 'Parfum d\'intérieur "Velvet Hours"',
+              description: 'Pivoine, poire et cachemire pour lounges et suites.',
+              price: 'CHF 42.00'
+            },
+            card3: {
+              name: 'Brume "Citrus Column"',
+              description: 'Pamplemousse, menthe et musc dynamisent immédiatement les boutiques.',
+              price: 'CHF 36.00'
+            }
+          }
+        },
+        textile: {
+          label: 'Brume textile',
+          title: 'Soin pour tissus et accessoires',
+          description: 'Formules douces antistatiques pour rideaux, tapis et linge.',
+          cards: {
+            card1: {
+              name: 'Brume "Velvet Studio"',
+              description: 'Cachemire, osmanthus et thé blanc pour les textiles souples.',
+              price: 'CHF 34.00'
+            },
+            card2: {
+              name: 'Brume "Cashmere Dawn"',
+              description: 'Aldéhydes délicats, iris et bois clairs pour matières lourdes.',
+              price: 'CHF 32.00'
+            },
+            card3: {
+              name: 'Brume "Linen Ritual"',
+              description: 'Lavande, angélique et bois blancs pour linge de lit et voilages.',
+              price: 'CHF 30.00'
+            }
+          }
+        },
+        gift: {
+          label: 'Coffrets cadeaux',
+          title: 'Boîtes parfumées composées',
+          description: 'Combinaisons Mix & Match avec diffuseurs, bougies et sprays, cartes incluses.',
+          cards: {
+            card1: {
+              name: 'Coffret "Cedar Atlas"',
+              description: 'Diffuseur, spray et bougie aux accords boisés.',
+              price: 'CHF 149.00'
+            },
+            card2: {
+              name: 'Boîte "Soft Architecture"',
+              description: 'Bougie, brume textile et carte parfumée pour les passionnés de design.',
+              price: 'CHF 119.00'
+            },
+            card3: {
+              name: 'Set "Nomad Gift"',
+              description: 'Parfum auto, mini-diffuseur et pochette de voyage.',
+              price: 'CHF 89.00'
+            }
+          }
+        },
+        accessories: {
+          label: 'Accessoires',
+          title: 'Outils & présentoirs',
+          description: 'Accessoires assortis pour présenter, recharger et entretenir les collections.',
+          cards: {
+            card1: {
+              name: 'Mesures & entonnoirs',
+              description: 'Outils en acier inox pour recharger les grands diffuseurs.',
+              price: 'CHF 29.00'
+            },
+            card2: {
+              name: 'Éventails parfumés "Studio"',
+              description: 'Éventails en papier coton pour les présentations.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Travel Case "Nomad"',
+              description: 'Mallette matelassée pour quatre flacons de 100 ml.',
+              price: 'CHF 54.00'
+            }
+          }
+        },
+        meditation: {
+          label: 'Méditation',
+          title: 'Rituels pour pauses conscientes',
+          description: 'Ensembles avec encens, supports en céramique et huiles pour soutenir les pratiques.',
+          cards: {
+            card1: {
+              name: 'Kit "Still Moon"',
+              description: 'Encens, support en céramique et mini-bougie pour soirées calmes.',
+              price: 'CHF 64.00'
+            },
+            card2: {
+              name: 'Bâtons "Sumi"',
+              description: 'Hinoki, cardamome et bois fumé pour respirations profondes.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Huile "Quiet Garden"',
+              description: 'Bergamote, bois de rose et lavande pour diffuseurs ou bains.',
+              price: 'CHF 31.00'
+            }
+          }
+        },
+        car: {
+          label: 'Parfum voiture',
+          title: 'Solutions nomades',
+          description: 'Clips magnétiques, recharges élégantes et kits pour chauffeurs.',
+          cards: {
+            card1: {
+              name: 'Clip parfumé "Nomad Drive"',
+              description: 'Cèdre, pamplemousse et cuir pour chaque trajet.',
+              price: 'CHF 29.50'
+            },
+            card2: {
+              name: 'Clip "Cedar Route"',
+              description: 'Clip magnétique aux notes de cyprès, sapin et cuir.',
+              price: 'CHF 34.00'
+            },
+            card3: {
+              name: 'Recharges "City Lines"',
+              description: 'Trois capsules agrumes, ambre et vétiver pour la saison.',
+              price: 'CHF 27.00'
+            }
+          }
+        },
+        devices: {
+          label: 'Appareils aromatiques',
+          title: 'Technologie pour installations parfumées',
+          description: 'Solutions ultrasoniques et HVAC pour appartements privés et grands projets.',
+          cards: {
+            card1: {
+              name: 'Appareil "Halo Mini"',
+              description: 'Appareil sans fil à deux niveaux pour les espaces résidentiels.',
+              price: 'CHF 119.00'
+            },
+            card2: {
+              name: 'Diffuseur "Studio"',
+              description: 'Minuterie, LED et dôme en verre – idéal pour les boutiques.',
+              price: 'CHF 169.00'
+            },
+            card3: {
+              name: 'Module HVAC "Pro Flow"',
+              description: 'Intégration directe aux systèmes CVC jusqu’à 600 m².',
+              price: 'CHF 480.00'
+            }
+          }
+        }
+      },
       programs: {
         label: 'Programmes',
         title: 'Univers d’application & services',
@@ -1002,6 +1448,228 @@ const translations = {
         button: 'Inizia ora'
       },
       grid: { label: 'Segmenti', title: 'Panoramica collezioni' },
+      sections: {
+        diffusers: {
+          label: 'Diffusori d\'ambiente',
+          title: 'Sculture olfattive per ogni spazio',
+          description: 'Dai flaconi da 100 ml fino ai formati monumentali da 2,5 L per una diffusione costante.',
+          cards: {
+            card1: {
+              name: 'Diffusore a bastoncini "Urban Calm" 200 ml',
+              description: 'Vetiver, bergamotto e cacao per lobby e spa private.',
+              price: 'CHF 59.90'
+            },
+            card2: {
+              name: 'Diffusore "Atlas Cedar" 500 ml',
+              description: 'Cedro, incenso e ribes nero per suite iconiche.',
+              price: 'CHF 98.00'
+            },
+            card3: {
+              name: 'Diffusore "Lumen" 1L',
+              description: 'Fiori d’arancio, neroli e muschio bianco per grandi showroom.',
+              price: 'CHF 149.00'
+            }
+          }
+        },
+        candles: {
+          label: 'Candele profumate',
+          title: 'Candele in ceramica colate a mano',
+          description: 'Contenitori minerali, tre stoppini e blend cremosi fino a 80 ore di luce.',
+          cards: {
+            card1: {
+              name: 'Candela "Sable Nuit"',
+              description: 'Ambra, fava tonka e labdano creano un’atmosfera avvolgente.',
+              price: 'CHF 69.90'
+            },
+            card2: {
+              name: 'Candela "Linen Cloud"',
+              description: 'Fiore di cotone, cashmere e muschio bianco per camere e spa.',
+              price: 'CHF 64.00'
+            },
+            card3: {
+              name: 'Candela "Fig Aura"',
+              description: 'Foglia di fico, tè verde e tonka apprezzate nei concept store.',
+              price: 'CHF 72.00'
+            }
+          }
+        },
+        limited: {
+          label: 'Collezione limitata',
+          title: 'Edizioni numerate',
+          description: 'Piccole tirature stagionali con etichette illustrate, disponibili per poche settimane.',
+          cards: {
+            card1: {
+              name: 'Cofanetto "Amber Atelier"',
+              description: 'Diffusore e candela con ambra, zafferano e pera in cofanetto numerato.',
+              price: 'CHF 189.00'
+            },
+            card2: {
+              name: 'Candela "Marble Dust"',
+              description: 'Vaso in grès con erbe, vetiver e fumo bianco.',
+              price: 'CHF 84.00'
+            },
+            card3: {
+              name: 'Diffusore "Orchard Sketch"',
+              description: 'Fiore di pero, magnolia e muschio di quercia in 300 pezzi.',
+              price: 'CHF 139.00'
+            }
+          }
+        },
+        room: {
+          label: 'Profumo per interni',
+          title: 'Room sprays couture',
+          description: 'Spray nebulizzati con qualità cosmetica per cambiare atmosfera all’istante.',
+          cards: {
+            card1: {
+              name: 'Spray "Alpine Mist"',
+              description: 'Eucalipto, abete argentato e fiore di cotone purificano l’aria.',
+              price: 'CHF 39.90'
+            },
+            card2: {
+              name: 'Profumo "Velvet Hours"',
+              description: 'Peonia, pera e cashmere per lounge e suite.',
+              price: 'CHF 42.00'
+            },
+            card3: {
+              name: 'Spray "Citrus Column"',
+              description: 'Pompelmo, menta e muschio riattivano subito gli spazi retail.',
+              price: 'CHF 36.00'
+            }
+          }
+        },
+        textile: {
+          label: 'Spray tessile',
+          title: 'Cura per tessuti e accessori',
+          description: 'Formule delicate antistatiche per tende, tappeti e biancheria.',
+          cards: {
+            card1: {
+              name: 'Spray "Velvet Studio"',
+              description: 'Cashmere, osmanto e tè bianco per tessili morbidi.',
+              price: 'CHF 34.00'
+            },
+            card2: {
+              name: 'Spray "Cashmere Dawn"',
+              description: 'Aldeidi leggere, iris e legni per materiali più pesanti.',
+              price: 'CHF 32.00'
+            },
+            card3: {
+              name: 'Spray "Linen Ritual"',
+              description: 'Lavanda, angelica e legni bianchi per lenzuola e tendaggi.',
+              price: 'CHF 30.00'
+            }
+          }
+        },
+        gift: {
+          label: 'Set regalo',
+          title: 'Box olfattive curate',
+          description: 'Mix & Match di diffusori, candele e spray con biglietti inclusi.',
+          cards: {
+            card1: {
+              name: 'Gift Set "Cedar Atlas"',
+              description: 'Diffusore, spray e candela su accordi legnosi.',
+              price: 'CHF 149.00'
+            },
+            card2: {
+              name: 'Box "Soft Architecture"',
+              description: 'Candela, spray tessile e cartolina profumata per amanti del design.',
+              price: 'CHF 119.00'
+            },
+            card3: {
+              name: 'Set "Nomad Gift"',
+              description: 'Profumo auto, mini diffusore e pouch da viaggio.',
+              price: 'CHF 89.00'
+            }
+          }
+        },
+        accessories: {
+          label: 'Accessori',
+          title: 'Strumenti e display',
+          description: 'Accessori coordinati per presentare, ricaricare e curare le collezioni.',
+          cards: {
+            card1: {
+              name: 'Misurini & imbuti',
+              description: 'Utensili in acciaio per ricaricare in sicurezza i diffusori grandi.',
+              price: 'CHF 29.00'
+            },
+            card2: {
+              name: 'Ventagli "Studio"',
+              description: 'Ventagli in carta di cotone per le presentazioni.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Travel Case "Nomad"',
+              description: 'Valigetta imbottita per quattro flaconi da 100 ml.',
+              price: 'CHF 54.00'
+            }
+          }
+        },
+        meditation: {
+          label: 'Meditazione',
+          title: 'Rituali per pause consapevoli',
+          description: 'Kit con incensi, supporti in ceramica e oli per accompagnare la pratica.',
+          cards: {
+            card1: {
+              name: 'Kit "Still Moon"',
+              description: 'Incensi, supporto e mini candela per serate calme.',
+              price: 'CHF 64.00'
+            },
+            card2: {
+              name: 'Bastoncini "Sumi"',
+              description: 'Hinoki, cardamomo e legno fumé per respirazioni profonde.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Olio "Quiet Garden"',
+              description: 'Bergamotto, legno di rosa e lavanda per diffusori o bagni.',
+              price: 'CHF 31.00'
+            }
+          }
+        },
+        car: {
+          label: 'Profumo auto',
+          title: 'Soluzioni nomadi',
+          description: 'Clip magnetiche, ricariche eleganti e kit per servizi driver.',
+          cards: {
+            card1: {
+              name: 'Clip "Nomad Drive"',
+              description: 'Cedro, pompelmo e pelle per ogni tragitto.',
+              price: 'CHF 29.50'
+            },
+            card2: {
+              name: 'Clip "Cedar Route"',
+              description: 'Clip magnetica con cipresso, abete e pelle.',
+              price: 'CHF 34.00'
+            },
+            card3: {
+              name: 'Refill "City Lines"',
+              description: 'Tre capsule agrumate, ambra e vetiver per la stagione.',
+              price: 'CHF 27.00'
+            }
+          }
+        },
+        devices: {
+          label: 'Diffusori elettrici',
+          title: 'Tecnologia per installazioni profumate',
+          description: 'Soluzioni a ultrasuoni e HVAC per appartamenti e grandi progetti.',
+          cards: {
+            card1: {
+              name: 'Dispositivo "Halo Mini"',
+              description: 'Apparecchio wireless a due intensità per gli ambienti domestici.',
+              price: 'CHF 119.00'
+            },
+            card2: {
+              name: 'Diffusore "Studio"',
+              description: 'Timer, luce LED e cupola in vetro ideali per boutique.',
+              price: 'CHF 169.00'
+            },
+            card3: {
+              name: 'Modulo HVAC "Pro Flow"',
+              description: 'Integrazione diretta nell’impianto fino a 600 m².',
+              price: 'CHF 480.00'
+            }
+          }
+        }
+      },
       programs: {
         label: 'Programmi',
         title: 'Universi applicativi & servizi',
@@ -1412,6 +2080,228 @@ const translations = {
         button: 'Start exploring'
       },
       grid: { label: 'Segments', title: 'Collection overview' },
+      sections: {
+        diffusers: {
+          label: 'Reed diffusers',
+          title: 'Sculptural scent objects for every room',
+          description: 'From 100 ml bottles to statement 2.5 L vessels, each format delivers consistent diffusion.',
+          cards: {
+            card1: {
+              name: 'Reed diffuser "Urban Calm" 200 ml',
+              description: 'Vetiver, bergamot and cocoa suited for lobbies and private spas.',
+              price: 'CHF 59.90'
+            },
+            card2: {
+              name: 'Diffuser "Atlas Cedar" 500 ml',
+              description: 'Cedarwood, frankincense and blackcurrant for signature suites.',
+              price: 'CHF 98.00'
+            },
+            card3: {
+              name: 'Diffuser "Lumen" 1L',
+              description: 'Orange blossom, neroli and white musk for expansive showrooms.',
+              price: 'CHF 149.00'
+            }
+          }
+        },
+        candles: {
+          label: 'Scented candles',
+          title: 'Hand-poured ceramic candles',
+          description: 'Mineral vessels, triple wicks and creamy wax blends lasting up to 80 hours.',
+          cards: {
+            card1: {
+              name: 'Candle "Sable Nuit"',
+              description: 'Amber, tonka and labdanum create a velvet glow.',
+              price: 'CHF 69.90'
+            },
+            card2: {
+              name: 'Candle "Linen Cloud"',
+              description: 'Cotton flower, cashmere and white musk for bedrooms and spas.',
+              price: 'CHF 64.00'
+            },
+            card3: {
+              name: 'Candle "Fig Aura"',
+              description: 'Fig leaf, green tea and tonka loved by concept stores.',
+              price: 'CHF 72.00'
+            }
+          }
+        },
+        limited: {
+          label: 'Limited collection',
+          title: 'Numbered editions',
+          description: 'Seasonal small batches with artist-designed labels available for a short window.',
+          cards: {
+            card1: {
+              name: 'Set "Amber Atelier"',
+              description: 'Diffuser and candle with amber, saffron and pear inside a numbered box.',
+              price: 'CHF 189.00'
+            },
+            card2: {
+              name: 'Candle "Marble Dust"',
+              description: 'Stoneware vessel with grasses, vetiver and pale smoke.',
+              price: 'CHF 84.00'
+            },
+            card3: {
+              name: 'Diffuser "Orchard Sketch"',
+              description: 'Pear blossom, magnolia and oakmoss limited to 300 pieces.',
+              price: 'CHF 139.00'
+            }
+          }
+        },
+        room: {
+          label: 'Interior perfume',
+          title: 'Interior mists',
+          description: 'Fine-mist sprays with cosmetic bases for instant mood shifts in hospitality and home settings.',
+          cards: {
+            card1: {
+              name: 'Room spray "Alpine Mist"',
+              description: 'Eucalyptus, silver fir and cotton blossom clear the air.',
+              price: 'CHF 39.90'
+            },
+            card2: {
+              name: 'Interior perfume "Velvet Hours"',
+              description: 'Peony, pear and cashmere for lounges and suites.',
+              price: 'CHF 42.00'
+            },
+            card3: {
+              name: 'Room spray "Citrus Column"',
+              description: 'Grapefruit, mint and musk energise retail floors instantly.',
+              price: 'CHF 36.00'
+            }
+          }
+        },
+        textile: {
+          label: 'Textile spray',
+          title: 'Care for fabrics & accessories',
+          description: 'Gentle antistatic formulas for curtains, rugs and linens.',
+          cards: {
+            card1: {
+              name: 'Textile spray "Velvet Studio"',
+              description: 'Cashmere, osmanthus and white tea for soft furnishings.',
+              price: 'CHF 34.00'
+            },
+            card2: {
+              name: 'Spray "Cashmere Dawn"',
+              description: 'Sheer aldehydes, iris and woods condition heavier fabrics.',
+              price: 'CHF 32.00'
+            },
+            card3: {
+              name: 'Spray "Linen Ritual"',
+              description: 'Lavender, angelica and pale woods for bedding and drapery.',
+              price: 'CHF 30.00'
+            }
+          }
+        },
+        gift: {
+          label: 'Gift sets',
+          title: 'Curated fragrance boxes',
+          description: 'Mix-and-match combinations of diffusers, candles and sprays with greeting cards.',
+          cards: {
+            card1: {
+              name: 'Gift set "Cedar Atlas"',
+              description: 'Diffuser, spray and candle layered in woody tones.',
+              price: 'CHF 149.00'
+            },
+            card2: {
+              name: 'Box "Soft Architecture"',
+              description: 'Candle, textile spray and scent card for design lovers.',
+              price: 'CHF 119.00'
+            },
+            card3: {
+              name: 'Set "Nomad Gift"',
+              description: 'Car perfume, mini diffuser and travel pouch for life on the move.',
+              price: 'CHF 89.00'
+            }
+          }
+        },
+        accessories: {
+          label: 'Accessories',
+          title: 'Tools & displays',
+          description: 'Purpose-built accessories for presentation, refilling and product care.',
+          cards: {
+            card1: {
+              name: 'Measuring set & funnel',
+              description: 'Stainless-steel tools for refilling large diffusers safely.',
+              price: 'CHF 29.00'
+            },
+            card2: {
+              name: 'Scent fans "Studio"',
+              description: 'Cotton-paper fans for portable sampling.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Travel case "Nomad"',
+              description: 'Padded case that holds four 100 ml bottles.',
+              price: 'CHF 54.00'
+            }
+          }
+        },
+        meditation: {
+          label: 'Meditation',
+          title: 'Rituals for mindful pauses',
+          description: 'Sets with incense, ceramic holders and oils to support slow rituals.',
+          cards: {
+            card1: {
+              name: 'Meditation kit "Still Moon"',
+              description: 'Incense sticks, ceramic holder and mini candle for calm evenings.',
+              price: 'CHF 64.00'
+            },
+            card2: {
+              name: 'Incense "Sumi"',
+              description: 'Hinoki, cardamom and smoked wood for deep breathing.',
+              price: 'CHF 24.00'
+            },
+            card3: {
+              name: 'Aroma oil "Quiet Garden"',
+              description: 'Bergamot, rosewood and lavender for diffusers or baths.',
+              price: 'CHF 31.00'
+            }
+          }
+        },
+        car: {
+          label: 'Car perfume',
+          title: 'Nomadic scent solutions',
+          description: 'Magnetic clips, elegant refills and sets tailored for chauffeur services.',
+          cards: {
+            card1: {
+              name: 'Car clip "Nomad Drive"',
+              description: 'Cedarwood, grapefruit and leather for every ride.',
+              price: 'CHF 29.50'
+            },
+            card2: {
+              name: 'Clip "Cedar Route"',
+              description: 'Magnetic clip scented with cypress, fir and leather.',
+              price: 'CHF 34.00'
+            },
+            card3: {
+              name: 'Refill trio "City Lines"',
+              description: 'Three capsules with citrus, amber and vetiver for the season.',
+              price: 'CHF 27.00'
+            }
+          }
+        },
+        devices: {
+          label: 'Aroma devices',
+          title: 'Tech for scent installations',
+          description: 'Ultrasonic and HVAC-ready solutions for residences through large-scale projects.',
+          cards: {
+            card1: {
+              name: 'Device "Halo Mini"',
+              description: 'Cordless unit with two intensity modes for living spaces.',
+              price: 'CHF 119.00'
+            },
+            card2: {
+              name: 'Ultrasonic "Studio"',
+              description: 'Timer, LED light and glass dome ideal for boutiques.',
+              price: 'CHF 169.00'
+            },
+            card3: {
+              name: 'HVAC module "Pro Flow"',
+              description: 'Direct integration into air systems covering up to 600 m².',
+              price: 'CHF 480.00'
+            }
+          }
+        }
+      },
       programs: {
         label: 'Programs',
         title: 'Application worlds & services',
