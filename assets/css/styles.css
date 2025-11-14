@@ -441,6 +441,26 @@ main {
   background: #fff;
 }
 
+.catalog-section {
+  padding: 4rem clamp(1.5rem, 4vw, 6rem);
+  border-top: 1px solid var(--color-line);
+  background: var(--color-cream);
+}
+
+.catalog-section--tint {
+  background: var(--color-sand);
+}
+
+.catalog-section__header {
+  margin-bottom: 2rem;
+  max-width: 620px;
+}
+
+.catalog-section__description {
+  color: var(--color-muted);
+  margin-top: 0.75rem;
+}
+
 /* Programs grid inspired by Rituals editorial cards */
 .programs {
   background: var(--color-cream);
