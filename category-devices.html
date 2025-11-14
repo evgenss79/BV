@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="meta.contactsTitle">NicheHome.ch – Kontakt</title>
+  <title data-i18n="meta.devicesTitle">NicheHome.ch – Aromageräte</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-page="contacts">
+<body data-page="category-devices">
     <header class="site-header" id="siteHeader">
     <div class="utility-bar">
       <p class="utility-bar__item" data-i18n="common.utilityShipping">Gratis Versand ab CHF 80</p>
@@ -22,7 +22,7 @@
         <span></span>
       </button>
       <a href="index.html" class="site-header__logo" data-i18n="common.brand">NicheHome.ch</a>
-            <nav class="primary-nav" aria-label="Hauptmenü">
+                  <nav class="primary-nav" aria-label="Hauptmenü">
         <ul class="primary-nav__list">
           <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
           <li class="primary-nav__item"><a class="primary-nav__link" href="category-gift.html" data-i18n="nav.gift">Geschenksets</a></li>
@@ -51,73 +51,86 @@
   </header>
 
   <main>
-    <section class="page-hero page-hero--contact">
+    <section class="page-hero page-hero--category">
       <div class="page-hero__text">
-        <p class="page-hero__label" data-i18n="contacts.hero.label">Kontakt</p>
-        <h1 data-i18n="contacts.hero.title">Showroom & Beratung</h1>
-        <p data-i18n="contacts.hero.subtitle">Vereinbaren Sie Termine, fragen Sie Muster an oder koordinieren Sie Corporate-Projekte.</p>
+        <p class="page-hero__label" data-i18n="categoryDevices.hero.label">Aroma Devices</p>
+        <h1 data-i18n="categoryDevices.hero.title">Aromageräte für professionelle Installationen</h1>
+        <p data-i18n="categoryDevices.hero.subtitle">Ultraschall-, Nebel- und HVAC-Systeme für jede Raumgröße.</p>
+        <p data-i18n="categoryDevices.hero.text">Geräte für Wohnungen, Boutiquen und große Flächen inklusive Servicepaket.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="contacts.html" data-i18n="categoryDevices.hero.button">Demo buchen</a>
+          <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryDevices.hero.secondary">Zum Katalog</a>
+        </div>
       </div>
       <div class="page-hero__media">
-        <img src="assets/img/placeholder-1.svg" alt="Kontakt" loading="lazy">
+        <img src="assets/img/placeholder-5.svg" alt="Aromageräte" loading="lazy">
       </div>
     </section>
 
-    <section class="contact-info">
-      <div class="contact-info__card">
-        <h2 data-i18n="contacts.info.title">Kontaktinformationen</h2>
-        <p data-i18n="contacts.info.paragraph">Unser Team antwortet werktags innerhalb von 24 Stunden.</p>
-        <div class="contact-info__details">
-          <p><strong data-i18n="contacts.details.addressLabel">Adresse:</strong> <span data-i18n="footer.address">Showroom, Musterstrasse 12, 8000 Zürich</span></p>
-          <p><strong data-i18n="contacts.details.phoneLabel">Telefon:</strong> <span data-i18n="footer.phone">Tel.: +41 (0)44 000 00 00</span></p>
-          <p><strong data-i18n="contacts.details.emailLabel">E-Mail:</strong> <span data-i18n="footer.email">E-Mail: hello@nichehome.ch</span></p>
-        </div>
-        <div class="contact-info__meta">
-          <div>
-            <p class="contact-info__label" data-i18n="contacts.info.hoursTitle">Öffnungszeiten</p>
-            <p data-i18n="contacts.info.hours">Montag–Freitag 10:00–18:00 Uhr, Samstag nach Vereinbarung.</p>
-          </div>
-          <div>
-            <p class="contact-info__label" data-i18n="contacts.info.channelsTitle">Kanäle</p>
-            <p data-i18n="contacts.info.channels">WhatsApp, Instagram Direct oder klassisch per E-Mail.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-form" id="contact">
+    <section class="highlights">
       <div class="section-heading">
-        <p class="section-heading__label" data-i18n="contacts.form.label">Anfrage</p>
-        <h2 data-i18n="contacts.form.title">Schreiben Sie uns</h2>
+        <p class="section-heading__label" data-i18n="categoryDevices.highlights.label">Technik</p>
+        <h2 data-i18n="categoryDevices.highlights.title">Auf jede Raumgröße abgestimmt</h2>
       </div>
-      <form id="contactForm" class="form">
-        <label>
-          <span data-i18n="contacts.form.name">Name*</span>
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          <span data-i18n="contacts.form.email">E-Mail*</span>
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          <span data-i18n="contacts.form.phone">Telefon</span>
-          <input type="tel" name="phone">
-        </label>
-        <label>
-          <span data-i18n="contacts.form.country">Land</span>
-          <select name="country">
-            <option value="ch" data-i18n="contacts.form.countryOptions.ch">Schweiz</option>
-            <option value="de" data-i18n="contacts.form.countryOptions.de">Deutschland</option>
-            <option value="fr" data-i18n="contacts.form.countryOptions.fr">Frankreich</option>
-            <option value="it" data-i18n="contacts.form.countryOptions.it">Italien</option>
-          </select>
-        </label>
-        <label class="form__full">
-          <span data-i18n="contacts.form.message">Nachricht*</span>
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn btn--gold" type="submit" data-i18n="contacts.form.submit">Nachricht senden</button>
-        <p class="form-success" data-i18n="contacts.form.success">Vielen Dank für Ihre Nachricht. Wir melden uns in Kürze.</p>
-      </form>
+      <div class="highlights__grid">
+        <article>
+          <h3 data-i18n="categoryDevices.highlights.item1.title">Ultraschall</h3>
+          <p data-i18n="categoryDevices.highlights.item1.description">Geräuscharme Module mit Timer, Dimmer und Nachtmodus.</p>
+        </article>
+        <article>
+          <h3 data-i18n="categoryDevices.highlights.item2.title">Smart Control</h3>
+          <p data-i18n="categoryDevices.highlights.item2.description">WLAN- und App-Steuerung für Wochenpläne und Duftwechsel.</p>
+        </article>
+        <article>
+          <h3 data-i18n="categoryDevices.highlights.item3.title">HVAC Integration</h3>
+          <p data-i18n="categoryDevices.highlights.item3.description">Module koppeln sich direkt an Lüftungsanlagen und große Klimasysteme.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products products--listing">
+      <div class="section-heading">
+        <p class="section-heading__label" data-i18n="categoryDevices.products.label">Portfolio</p>
+        <h2 data-i18n="categoryDevices.products.title">Geräte & Module</h2>
+      </div>
+      <div class="products__grid">
+        <article class="product-card">
+          <img src="assets/img/placeholder-6.svg" alt="Produktvisualisierung" loading="lazy">
+          <h3 data-i18n="categoryDevices.products.card1.name">Gerät "Quiet Halo"</h3>
+          <p data-i18n="categoryDevices.products.card1.description">Ultraschall-Diffusor mit Ambient-Light für Suites und Spas.</p>
+          <span class="product-card__price" data-i18n="categoryDevices.products.card1.price">CHF 189.00</span>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-2.svg" alt="Produktvisualisierung" loading="lazy">
+          <h3 data-i18n="categoryDevices.products.card2.name">Portable "Nomad Nebula"</h3>
+          <p data-i18n="categoryDevices.products.card2.description">Akku-Diffusor mit sechs Stunden Laufzeit und USB-C-Ladung.</p>
+          <span class="product-card__price" data-i18n="categoryDevices.products.card2.price">CHF 129.00</span>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-5.svg" alt="Produktvisualisierung" loading="lazy">
+          <h3 data-i18n="categoryDevices.products.card3.name">HVAC Modul "Pro Flow"</h3>
+          <p data-i18n="categoryDevices.products.card3.description">Direkte Einbindung in Klimaanlagen für Flächen bis 600 m².</p>
+          <span class="product-card__price" data-i18n="categoryDevices.products.card3.price">CHF 480.00</span>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/img/placeholder-3.svg" alt="Produktvisualisierung" loading="lazy">
+          <h3 data-i18n="categoryDevices.products.card4.name">Smart Diffusor "Studio Sync"</h3>
+          <p data-i18n="categoryDevices.products.card4.description">App-gesteuert mit Programmen und Wartungs-Alerts.</p>
+          <span class="product-card__price" data-i18n="categoryDevices.products.card4.price">CHF 249.00</span>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-banner cta-banner--light">
+      <div class="cta-banner__content">
+        <h2 data-i18n="categoryDevices.cta.title">Installationsservice</h2>
+        <p data-i18n="categoryDevices.cta.text">Wir planen Platzierung, Wartung und Verbrauchsmaterial für jede Objektgröße.</p>
+      </div>
+      <a class="btn btn--gold" href="contacts.html" data-i18n="categoryDevices.cta.button">Technik anfragen</a>
     </section>
   </main>
 

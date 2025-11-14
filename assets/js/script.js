@@ -7,6 +7,14 @@ const translations = {
       catalogTitle: 'NicheHome.ch – Gesamtkatalog',
       diffusersTitle: 'NicheHome.ch – Aroma-Diffusoren',
       candlesTitle: 'NicheHome.ch – Duftkerzen',
+      limitedTitle: 'NicheHome.ch – Limitierte Kollektion',
+      roomTitle: 'NicheHome.ch – Raumduft',
+      textileTitle: 'NicheHome.ch – Textilsprays',
+      giftTitle: 'NicheHome.ch – Geschenksets',
+      accessoriesTitle: 'NicheHome.ch – Accessoires',
+      meditationTitle: 'NicheHome.ch – Meditation',
+      carTitle: 'NicheHome.ch – Autoparfum',
+      devicesTitle: 'NicheHome.ch – Aromageräte',
       aboutTitle: 'NicheHome.ch – Über die Marke',
       corporateTitle: 'NicheHome.ch – Corporate Services',
       contactsTitle: 'NicheHome.ch – Kontakt',
@@ -514,6 +522,246 @@ const translations = {
         button: 'Kontakt aufnehmen'
       }
     },
+    categoryLimited: {
+      hero: {
+        label: 'Limited Capsule',
+        title: 'Limitierte Kollektionen für Sammler',
+        subtitle: 'Nummerierte Sets erscheinen nur für kurze Zeit und sind sofort reservierbar.',
+        text: 'Gemeinsam mit Künstlern und Manufakturen realisieren wir saisonale Kleinauflagen inklusive Zertifikat.',
+        button: 'Edition reservieren',
+        secondary: 'Zur Übersicht'
+      },
+      highlights: {
+        label: 'Edition',
+        title: 'Handverlesene Details',
+        item1: { title: 'Signierte Etiketten', description: 'Jede Box wird von Hand nummeriert und mit einer Karte der Künstlerin versehen.' },
+        item2: { title: 'Luxuriöse Materialien', description: 'Matte Kartons, Seidenpapier und Einsätze aus recycelter Baumwolle schützen den Inhalt.' },
+        item3: { title: 'Kuratiertes Storytelling', description: 'Beilegende Booklets erklären Inspiration, Duftnoten und Styling-Ideen für Displays.' }
+      },
+      products: {
+        label: 'Kollektion',
+        title: 'Kleine Auflagen, großes Statement',
+        card1: { name: 'Set "Amber Atelier"', description: 'Diffusor und Kerze mit Amber, Safran und Birne in nummerierter Geschenkbox.', price: 'CHF 189.00' },
+        card2: { name: 'Kerze "Marble Dust"', description: 'Steinzeuggefäß mit Vetiver, getrocknetem Gras und einem Deckel aus Holz.', price: 'CHF 84.00' },
+        card3: { name: 'Diffusor "Orchard Sketch"', description: 'Birnenblüte, Magnolie und Eichenmoos, limitiert auf 300 Exemplare.', price: 'CHF 139.00' },
+        card4: { name: 'Trio "Velvet Proof"', description: 'Drei Minis mit Cashmere, Feige und Neroli – ideal für Gifting.', price: 'CHF 120.00' }
+      },
+      cta: {
+        title: 'Previews für Partner',
+        text: 'Retailer erhalten digitale Lookbooks und Sample-Sets, bevor die Kampagne startet.',
+        button: 'Beratung buchen'
+      }
+    },
+    categoryRoom: {
+      hero: {
+        label: 'Interior Parfum',
+        title: 'Raum- & Kissensprays für sofortige Wirkung',
+        subtitle: 'Kosmetische Qualität mit hoher Duftdichte und feinem Nebelbild.',
+        text: 'Feinnebel-Sprays fixieren sich auf Textilien und Oberflächen ohne Rückstände oder Flecken.',
+        button: 'Kollektion bestellen',
+        secondary: 'Weitere Kategorien'
+      },
+      highlights: {
+        label: 'Formulierung',
+        title: 'Warum Interior Sprays',
+        item1: { title: 'Mikro-Zerstäuber', description: 'Der Pumpkopf erzeugt einen gleichmäßigen Duftschleier ohne Tropfen.' },
+        item2: { title: 'Pflegende Basis', description: 'Aloe- und Hamamelis-Wasser beruhigen empfindliche Stoffe und Oberflächen.' },
+        item3: { title: 'Refills', description: '100-ml-Refills mit Schraubverschluss ermöglichen ein nachhaltiges Nachfüllen.' }
+      },
+      products: {
+        label: 'Kollektion',
+        title: 'Signature Sprays',
+        card1: { name: 'Raumspray "Alpine Mist"', description: 'Eukalyptus, Silberfichte und Baumwollblüte klären die Luft.', price: 'CHF 39.90' },
+        card2: { name: 'Interior Parfum "Velvet Hours"', description: 'Pfingstrose, Birne und Cashmere schaffen eine weiche Atmosphäre.', price: 'CHF 42.00' },
+        card3: { name: 'Spray "Citrus Atlas"', description: 'Grapefruit, Zedernholz und Mate beleben Eingangsbereiche.', price: 'CHF 38.00' },
+        card4: { name: 'Raumspray "Night Bloom"', description: 'Jasmin, Amber und schwarzer Tee für Abendsettings.', price: 'CHF 44.00' }
+      },
+      cta: {
+        title: 'Duftstyling für Projekte',
+        text: 'Wir planen Layering mit Diffusoren, Kerzen und Sprays für Retail, Hospitality und Events.',
+        button: 'Termin vereinbaren'
+      }
+    },
+    categoryTextile: {
+      hero: {
+        label: 'Textile Care',
+        title: 'Textilsprays für Stoffe & Polster',
+        subtitle: 'Sanfte Formulierungen neutralisieren Gerüche ohne Flecken zu hinterlassen.',
+        text: 'Ideal für Vorhänge, Teppiche, Bettwäsche und Möbelstoffe in Wohn- und Hospitality-Projekten.',
+        button: 'Musterset anfordern',
+        secondary: 'Zur Übersicht'
+      },
+      highlights: {
+        label: 'Komposition',
+        title: 'Sicher für feine Fasern',
+        item1: { title: 'Pflegende Zusätze', description: 'Panthenol und Baumwollsamenextrakte glätten Fasern und verleihen ihnen Glanz.' },
+        item2: { title: 'Antistatik', description: 'Reduziert Aufladung bei Samt, Wolle und Mischgeweben für ein ruhiges Finish.' },
+        item3: { title: 'Großzügige Formate', description: '500-ml-Flaschen versorgen auch größere Projekte mit ausreichend Duftpflege.' }
+      },
+      products: {
+        label: 'Edition',
+        title: 'Stoffpflege mit Duft',
+        card1: { name: 'Textilspray "Cashmere Air"', description: 'Weißer Moschus, Rose und Cashmere schenken Schlafzimmern Ruhe.', price: 'CHF 36.00' },
+        card2: { name: 'Fabric Mist "Gallery Veil"', description: 'Iris, Sandelholz und Leinennoten begleiten Showrooms und Ateliers.', price: 'CHF 38.00' },
+        card3: { name: 'Spray "Botanical Loom"', description: 'Salbei, Lavendel und Heu neutralisieren Gerüche in Textilien.', price: 'CHF 34.00' },
+        card4: { name: 'Textilspray "Velvet Studio"', description: 'Cashmere, Osmanthus und weißer Tee pflegen Polster und Plaids.', price: 'CHF 34.00' }
+      },
+      cta: {
+        title: 'Service für Interior Designer',
+        text: 'Wir liefern nachfüllbare Flaschen mit Etiketten im Projektbranding.',
+        button: 'Service anfragen'
+      }
+    },
+    categoryGift: {
+      hero: {
+        label: 'Gift Atelier',
+        title: 'Geschenksets für Kunden & Teams',
+        subtitle: 'Kurierte Kombinationen in hochwertigen Boxen für private Anlässe und B2B-Programme.',
+        text: 'Von Boutique-Geschenken bis zu Corporate Kampagnen mit Branding, Karten und satinierter Verpackung.',
+        button: 'Set zusammenstellen',
+        secondary: 'Zum Katalog'
+      },
+      highlights: {
+        label: 'Module',
+        title: 'So funktionieren unsere Sets',
+        item1: { title: 'Abgestimmte Düfte', description: 'Kerze, Diffusor und Spray teilen sich Akkorde für ein harmonisches Erlebnis.' },
+        item2: { title: 'Personalisierung', description: 'Optionale Prägung, Karten, Satinbänder und individuelle Botschaften.' },
+        item3: { title: 'Flexible Mengen', description: 'Ab 12 Boxen verfügbar, kurzfristig skalierbar für Events und Kampagnen.' }
+      },
+      products: {
+        label: 'Auswahl',
+        title: 'Beliebte Geschenksets',
+        card1: { name: 'Gift Set "Cedar Atlas"', description: 'Diffusor, Spray und Kerze in Holznoten mit magnetischem Deckel.', price: 'CHF 149.00' },
+        card2: { name: 'Discovery Box "Scent Lab"', description: 'Sechs Mini-Sprays erleichtern Duftberatung für Teams und Kunden.', price: 'CHF 98.00' },
+        card3: { name: 'Couple Ritual "Amber Duo"', description: 'Zwei Kerzen und Badeöl mit Amber- und Tonka-Akkorden.', price: 'CHF 165.00' },
+        card4: { name: 'Corporate Set "Signature Welcome"', description: 'Personalisierte Kerze mit Grußkarte und hochwertiger Verpackung.', price: 'CHF 85.00' }
+      },
+      cta: {
+        title: 'White-Label Betreuung',
+        text: 'Wir übernehmen Fulfillment inklusive Versandlisten, Branding und Drop-Shipping.',
+        button: 'Projekt anfragen'
+      }
+    },
+    categoryAccessories: {
+      hero: {
+        label: 'Tools & Styling',
+        title: 'Accessoires für perfekte Präsentationen',
+        subtitle: 'Vom Refill-Trichter bis zu Dufttrays – alles für Retail-Flächen und Showrooms.',
+        text: 'Alle Tools wurden für professionelle Anwendungen entwickelt und sind sofort lieferbar.',
+        button: 'Set bestellen',
+        secondary: 'Weitere Kategorien'
+      },
+      highlights: {
+        label: 'Details',
+        title: 'Praktische Ergänzungen',
+        item1: { title: 'Refill-Trichter', description: 'Edelstahl mit Silikonring sorgt für tropffreies Nachfüllen.' },
+        item2: { title: 'Messbecher', description: 'Skalierungen erleichtern das Abfüllen von 50 bis 200 ml.' },
+        item3: { title: 'Display-Trays', description: 'Steinzeugplatten inszenieren Kerzen, Diffusoren und Accessoires stilvoll.' }
+      },
+      products: {
+        label: 'Sortiment',
+        title: 'Accessoires & Tools',
+        card1: { name: 'Trichter "Precision"', description: 'Polierter Stahl mit Silikonring für präzises Nachfüllen.', price: 'CHF 24.00' },
+        card2: { name: 'Messbecher "Studio Measure"', description: 'Glasbecher mit Markierungen für 50–200 ml Refill.', price: 'CHF 29.00' },
+        card3: { name: 'Duftplatte "Marble Rise"', description: 'Carrara-Marmor mit Filzunterseite für Kerzen und Diffusoren.', price: 'CHF 58.00' },
+        card4: { name: 'Dochtschere "Wick Trim"', description: 'Mattschwarzer Stahl hält Kerzen sauber und verhindert Rauch.', price: 'CHF 32.00' }
+      },
+      cta: {
+        title: 'Schulungssets verfügbar',
+        text: 'Wir liefern komplette Tools inklusive Anleitung für Retail-Teams.',
+        button: 'Jetzt anfragen'
+      }
+    },
+    categoryMeditation: {
+      hero: {
+        label: 'Ritual Collection',
+        title: 'Meditations- & Ritualsets mit Duft',
+        subtitle: 'Achtsame Tools für Studios, Retreats und private Practice.',
+        text: 'Räucherwerk, Duftöle und Keramikaccessoires entstehen in kleinen Manufakturen.',
+        button: 'Set reservieren',
+        secondary: 'Zur Übersicht'
+      },
+      highlights: {
+        label: 'Ritual',
+        title: 'Elemente für Ruhe',
+        item1: { title: 'Natürliche Materialien', description: 'Bambus, Ton und Baumwolle ohne synthetische Beschichtungen.' },
+        item2: { title: 'Duftprofile', description: 'Beruhigende Akkorde mit Sandelholz, Lotus, Vetiver und Kräutern.' },
+        item3: { title: 'Guides', description: 'Jedes Set enthält Atemübungen und Ritualbeschreibungen für Fokus.' }
+      },
+      products: {
+        label: 'Kollektion',
+        title: 'Sets für Studio & Zuhause',
+        card1: { name: 'Ritual Kit "Calm Focus"', description: 'Räucherstäbchen, Kerze und Atemkarte für geführte Sessions.', price: 'CHF 79.00' },
+        card2: { name: 'Incense "Lotus Sand"', description: 'Reispapier-Sticks mit Lotus, Myrrhe und einer feinen Rauchspur.', price: 'CHF 34.00' },
+        card3: { name: 'Ölset "Still Forest"', description: 'Drei Öle mit Fichte, Vetiver und Zypresse für Diffusoren.', price: 'CHF 52.00' },
+        card4: { name: 'Meditationskissen-Mist', description: 'Lavendel, Bergamotte und Patchouli begleiten Atemübungen.', price: 'CHF 33.00' }
+      },
+      cta: {
+        title: 'Studio-Partnerschaften',
+        text: 'Wir entwickeln limitierte Retreat-Kits inklusive Branding und Versand.',
+        button: 'Kooperation anfragen'
+      }
+    },
+    categoryCar: {
+      hero: {
+        label: 'On-the-go Scent',
+        title: 'Autoparfums für jede Fahrt',
+        subtitle: 'Clips, Kapseln und Sprays sorgen für konstante Duftbegleitung.',
+        text: 'Luftstrom-optimierte Designs verteilen Duft gleichmäßig ohne Rückstände.',
+        button: 'Kollektion bestellen',
+        secondary: 'Weitere Kategorien'
+      },
+      highlights: {
+        label: 'Engineering',
+        title: 'Design für mobile Räume',
+        item1: { title: 'Magnetische Halter', description: 'Clips sitzen stabil an Lüftungsschlitzen und lassen sich schnell entnehmen.' },
+        item2: { title: 'Austauschbare Kapseln', description: 'Duftpatronen halten bis zu sechs Wochen und sind einzeln verpackt.' },
+        item3: { title: 'Travel Sprays', description: '50-ml-Flakons passen ins Handschuhfach und sind TSA-konform.' }
+      },
+      products: {
+        label: 'Kollektion',
+        title: 'Duftlösungen fürs Auto',
+        card1: { name: 'Car Clip "Nomad Drive"', description: 'Zedernholz, Grapefruit und Leder sorgen für klare Eleganz.', price: 'CHF 29.50' },
+        card2: { name: 'Refill Pack "Amber Ride"', description: 'Drei Kapseln mit Amber, Vanille und Tonkabohne – easy to swap.', price: 'CHF 24.00' },
+        card3: { name: 'Vent Diffuser "Urban Route"', description: 'Mattschwarzer Clip mit Bronzeakzent und regulierbarem Luftstrom.', price: 'CHF 45.00' },
+        card4: { name: 'Travel Spray "Highway Bloom"', description: 'Orangenblüte, Jasmin und Moschus begleiten City-Trips.', price: 'CHF 32.00' }
+      },
+      cta: {
+        title: 'Flottenservice',
+        text: 'Duftbranding für Chauffeur-Services, Testfahrten und Event-Shuttles.',
+        button: 'Angebot anfordern'
+      }
+    },
+    categoryDevices: {
+      hero: {
+        label: 'Aroma Devices',
+        title: 'Aromageräte für professionelle Installationen',
+        subtitle: 'Ultraschall-, Nebel- und HVAC-Systeme für jede Raumgröße.',
+        text: 'Geräte für Wohnungen, Boutiquen und große Flächen inklusive Servicepaket.',
+        button: 'Demo buchen',
+        secondary: 'Zum Katalog'
+      },
+      highlights: {
+        label: 'Technik',
+        title: 'Auf jede Raumgröße abgestimmt',
+        item1: { title: 'Ultraschall', description: 'Geräuscharme Module mit Timer, Dimmer und Nachtmodus.' },
+        item2: { title: 'Smart Control', description: 'WLAN- und App-Steuerung für Wochenpläne und Duftwechsel.' },
+        item3: { title: 'HVAC Integration', description: 'Module koppeln sich direkt an Lüftungsanlagen und große Klimasysteme.' }
+      },
+      products: {
+        label: 'Portfolio',
+        title: 'Geräte & Module',
+        card1: { name: 'Gerät "Quiet Halo"', description: 'Ultraschall-Diffusor mit Ambient-Light für Suites und Spas.', price: 'CHF 189.00' },
+        card2: { name: 'Portable "Nomad Nebula"', description: 'Akku-Diffusor mit sechs Stunden Laufzeit und USB-C-Ladung.', price: 'CHF 129.00' },
+        card3: { name: 'HVAC Modul "Pro Flow"', description: 'Direkte Einbindung in Klimaanlagen für Flächen bis 600 m².', price: 'CHF 480.00' },
+        card4: { name: 'Smart Diffusor "Studio Sync"', description: 'App-gesteuert mit Programmen und Wartungs-Alerts.', price: 'CHF 249.00' }
+      },
+      cta: {
+        title: 'Installationsservice',
+        text: 'Wir planen Platzierung, Wartung und Verbrauchsmaterial für jede Objektgröße.',
+        button: 'Technik anfragen'
+      }
+    },
     about: {
       hero: {
         label: 'Markengeschichte',
@@ -640,6 +888,14 @@ const translations = {
       catalogTitle: 'NicheHome.ch – Catalogue complet',
       diffusersTitle: 'NicheHome.ch – Diffuseurs d’arômes',
       candlesTitle: 'NicheHome.ch – Bougies parfumées',
+      limitedTitle: 'NicheHome.ch – Collection limitée',
+      roomTitle: 'NicheHome.ch – Parfum d’intérieur',
+      textileTitle: 'NicheHome.ch – Spray textile',
+      giftTitle: 'NicheHome.ch – Coffrets cadeaux',
+      accessoriesTitle: 'NicheHome.ch – Accessoires',
+      meditationTitle: 'NicheHome.ch – Méditation',
+      carTitle: 'NicheHome.ch – Parfum voiture',
+      devicesTitle: 'NicheHome.ch – Appareils aroma',
       aboutTitle: 'NicheHome.ch – À propos de la marque',
       corporateTitle: 'NicheHome.ch – Services corporate',
       contactsTitle: 'NicheHome.ch – Contact',
@@ -1273,6 +1529,14 @@ const translations = {
       catalogTitle: 'NicheHome.ch – Catalogo completo',
       diffusersTitle: 'NicheHome.ch – Diffusori d’aroma',
       candlesTitle: 'NicheHome.ch – Candele profumate',
+      limitedTitle: 'NicheHome.ch – Collezione limitata',
+      roomTitle: 'NicheHome.ch – Profumi per interni',
+      textileTitle: 'NicheHome.ch – Spray tessile',
+      giftTitle: 'NicheHome.ch – Set regalo',
+      accessoriesTitle: 'NicheHome.ch – Accessori',
+      meditationTitle: 'NicheHome.ch – Meditazione',
+      carTitle: 'NicheHome.ch – Profumo auto',
+      devicesTitle: 'NicheHome.ch – Diffusori elettronici',
       aboutTitle: 'NicheHome.ch – Informazioni sul brand',
       corporateTitle: 'NicheHome.ch – Servizi corporate',
       contactsTitle: 'NicheHome.ch – Contatti',
@@ -1905,6 +2169,14 @@ const translations = {
       catalogTitle: 'NicheHome.ch – Full catalog',
       diffusersTitle: 'NicheHome.ch – Reed diffusers',
       candlesTitle: 'NicheHome.ch – Scented candles',
+      limitedTitle: 'NicheHome.ch – Limited collection',
+      roomTitle: 'NicheHome.ch – Interior perfume',
+      textileTitle: 'NicheHome.ch – Textile spray',
+      giftTitle: 'NicheHome.ch – Gift sets',
+      accessoriesTitle: 'NicheHome.ch – Accessories',
+      meditationTitle: 'NicheHome.ch – Meditation',
+      carTitle: 'NicheHome.ch – Car perfume',
+      devicesTitle: 'NicheHome.ch – Aroma devices',
       aboutTitle: 'NicheHome.ch – About the brand',
       corporateTitle: 'NicheHome.ch – Corporate services',
       contactsTitle: 'NicheHome.ch – Contact',
@@ -2411,6 +2683,271 @@ const translations = {
         button: 'Get in touch'
       }
     },
+    categoryLimited: {
+      hero: {
+        label: 'Limited capsule',
+        title: 'Limited collections for collectors',
+        subtitle: 'Numbered sets launch for a short time and can be reserved immediately.',
+        text: 'We co-create seasonal small batches with artists and ateliers including certificates.',
+        button: 'Reserve an edition',
+        secondary: 'Back to overview'
+      },
+      highlights: {
+        label: 'Edition',
+        title: 'Hand-picked details',
+        item1: { title: 'Signed labels', description: 'Each box is numbered by hand and includes an artist card.' },
+        item2: { title: 'Luxurious materials', description: 'Matte boxes, silk paper and cotton inserts protect every piece.' },
+        item3: {
+          title: 'Curated storytelling',
+          description: 'Included booklets explain inspiration, notes and styling ideas for displays.'
+        }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Small runs, big statement',
+        card1: {
+          name: 'Set "Amber Atelier"',
+          description: 'Diffuser and candle with amber, saffron and pear inside a numbered gift box.',
+          price: 'CHF 189.00'
+        },
+        card2: {
+          name: 'Candle "Marble Dust"',
+          description: 'Stoneware vessel with vetiver, dried grass and a wooden lid.',
+          price: 'CHF 84.00'
+        },
+        card3: {
+          name: 'Diffuser "Orchard Sketch"',
+          description: 'Pear blossom, magnolia and oakmoss limited to 300 units.',
+          price: 'CHF 139.00'
+        },
+        card4: {
+          name: 'Trio "Velvet Proof"',
+          description: 'Three minis with cashmere, fig and neroli – perfect for gifting.',
+          price: 'CHF 120.00'
+        }
+      },
+      cta: {
+        title: 'Partner previews',
+        text: 'Retail partners receive digital lookbooks and sample kits before campaigns launch.',
+        button: 'Book a consultation'
+      }
+    },
+    categoryRoom: {
+      hero: {
+        label: 'Interior perfume',
+        title: 'Room and pillow sprays with instant effect',
+        subtitle: 'Cosmetic-grade bases with high fragrance concentration and fine misting.',
+        text: 'Featherlight sprays settle on textiles and surfaces without stains or residue.',
+        button: 'Order the collection',
+        secondary: 'More categories'
+      },
+      highlights: {
+        label: 'Formulation',
+        title: 'Why interior sprays',
+        item1: { title: 'Micro atomiser', description: 'The pump creates an even cloud without drops or streaks.' },
+        item2: { title: 'Soothing base', description: 'Aloe and witch hazel water calm delicate fabrics and surfaces.' },
+        item3: { title: 'Refills', description: '100 ml refills with screw caps enable sustainable topping up.' }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Signature sprays',
+        card1: { name: 'Room spray "Alpine Mist"', description: 'Eucalyptus, silver fir and cotton blossom clear the air.', price: 'CHF 39.90' },
+        card2: {
+          name: 'Interior perfume "Velvet Hours"',
+          description: 'Peony, pear and cashmere create a soft atmosphere.',
+          price: 'CHF 42.00'
+        },
+        card3: { name: 'Spray "Citrus Atlas"', description: 'Grapefruit, cedarwood and maté energise entrances.', price: 'CHF 38.00' },
+        card4: { name: 'Room spray "Night Bloom"', description: 'Jasmine, amber and black tea for evening settings.', price: 'CHF 44.00' }
+      },
+      cta: {
+        title: 'Project scent styling',
+        text: 'We plan layering with diffusers, candles and sprays for retail, hospitality and events.',
+        button: 'Schedule a meeting'
+      }
+    },
+    categoryTextile: {
+      hero: {
+        label: 'Textile care',
+        title: 'Textile sprays for fabrics and upholstery',
+        subtitle: 'Gentle formulas neutralise odours without leaving marks.',
+        text: 'Ideal for curtains, rugs, bedding and upholstery across residential and hospitality projects.',
+        button: 'Request samples',
+        secondary: 'Back to catalog'
+      },
+      highlights: {
+        label: 'Composition',
+        title: 'Safe for delicate fibres',
+        item1: { title: 'Nurturing actives', description: 'Panthenol and cottonseed extracts smooth fibres with a soft sheen.' },
+        item2: { title: 'Anti-static effect', description: 'Reduces buildup on velvet, wool and blends for a calm finish.' },
+        item3: {
+          title: 'Generous formats',
+          description: '500 ml bottles cover larger spaces and make staff trainings easier.'
+        }
+      },
+      products: {
+        label: 'Selection',
+        title: 'Textile companions',
+        card1: { name: 'Spray "Velvet Studio"', description: 'Cashmere, osmanthus and white tea refresh soft furnishings.', price: 'CHF 34.00' },
+        card2: { name: 'Care mist "Gallery"', description: 'Iris, cedar and cashmere wood calm curtains and art plinths.', price: 'CHF 37.00' },
+        card3: { name: 'Linen spray "Luminous"', description: 'Orange blossom, amber and musk brighten guest suites.', price: 'CHF 36.00' },
+        card4: { name: 'Mist "Amber Weave"', description: 'Amber, sandalwood and tonka elevate textiles in lounges.', price: 'CHF 39.00' }
+      },
+      cta: {
+        title: 'Showroom appointments',
+        text: 'Private visits include testing fabrics, refill planning and care instructions.',
+        button: 'Book a visit'
+      }
+    },
+    categoryGift: {
+      hero: {
+        label: 'Gift atelier',
+        title: 'Gift sets for clients and teams',
+        subtitle: 'Curated combinations in premium boxes for private moments and B2B programs.',
+        text: 'From boutique presents to branded corporate drops with cards, ribbons and custom packaging.',
+        button: 'Build a set',
+        secondary: 'Back to catalog'
+      },
+      highlights: {
+        label: 'Modules',
+        title: 'How our sets work',
+        item1: { title: 'Matching scents', description: 'Candle, diffuser and spray share accords for a cohesive experience.' },
+        item2: { title: 'Personalisation', description: 'Optional embossing, cards, satin ribbons and bespoke messages.' },
+        item3: { title: 'Flexible volumes', description: 'Available from 12 boxes with fast scaling for events and campaigns.' }
+      },
+      products: {
+        label: 'Selection',
+        title: 'Popular gift sets',
+        card1: { name: 'Gift set "Cedar Atlas"', description: 'Diffuser, spray and candle with woody notes and magnetic lid.', price: 'CHF 149.00' },
+        card2: { name: 'Discovery box "Scent Lab"', description: 'Six mini sprays simplify scent consultations for teams and clients.', price: 'CHF 98.00' },
+        card3: { name: 'Couple ritual "Amber Duo"', description: 'Two candles and bath oil built on amber and tonka.', price: 'CHF 165.00' },
+        card4: { name: 'Corporate set "Signature Welcome"', description: 'Personalised candle with greeting card and premium wrap.', price: 'CHF 85.00' }
+      },
+      cta: {
+        title: 'White-label support',
+        text: 'We handle fulfilment including shipping lists, branding and drop shipping.',
+        button: 'Request a project'
+      }
+    },
+    categoryAccessories: {
+      hero: {
+        label: 'Tools & display',
+        title: 'Accessories for professional presentation',
+        subtitle: 'Precise tools keep refills clean and elevate merchandising corners.',
+        text: 'Mix and match funnels, beakers and scent trays for pop-ups, showrooms and ateliers.',
+        button: 'Shop accessories',
+        secondary: 'Back to overview'
+      },
+      highlights: {
+        label: 'Utility',
+        title: 'Clean handling',
+        item1: { title: 'Stainless funnels', description: 'Different diameters avoid spills when topping up diffusers.' },
+        item2: { title: 'Measuring beakers', description: 'Calibrated glass helps portion refills precisely for teams.' },
+        item3: { title: 'Presentation plates', description: 'Matte ceramic bases showcase candles and sprays elegantly.' }
+      },
+      products: {
+        label: 'Selection',
+        title: 'Accessory staples',
+        card1: { name: 'Funnel duo', description: 'Two stainless funnels with drip tray for refilling stations.', price: 'CHF 22.00' },
+        card2: { name: 'Glass beaker set', description: '100 ml and 250 ml beakers with etched measurements.', price: 'CHF 34.00' },
+        card3: { name: 'Display plate "Halo"', description: 'Matte ceramic plate for candles or sprays.', price: 'CHF 29.00' },
+        card4: { name: 'Travel pouch', description: 'Vegan leather pouch storing funnels, blotters and spoons.', price: 'CHF 48.00' }
+      },
+      cta: {
+        title: 'Need a custom kit?',
+        text: 'We assemble tailored toolkits for retail staff and stylists.',
+        button: 'Talk to us'
+      }
+    },
+    categoryMeditation: {
+      hero: {
+        label: 'Mindful rituals',
+        title: 'Meditation sets & incense moments',
+        subtitle: 'Slow-living kits blending incense, oils and ceramics.',
+        text: 'Create calm rituals for studios, spas or evening routines with curated mixes.',
+        button: 'Explore rituals',
+        secondary: 'All categories'
+      },
+      highlights: {
+        label: 'Practice',
+        title: 'Elements for grounding',
+        item1: { title: 'Layered notes', description: 'Earthy woods meet bright citrus to guide breathwork.' },
+        item2: { title: 'Ceramic holders', description: 'Minimal forms catch ash cleanly and travel easily.' },
+        item3: { title: 'Guided cards', description: 'Short rituals outline breathing or intention prompts.' }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Mindful companions',
+        card1: { name: 'Kit "Still Moon"', description: 'Incense, ceramic holder and mini candle for quiet evenings.', price: 'CHF 64.00' },
+        card2: { name: 'Sticks "Sumi"', description: 'Hinoki, cardamom and smoked woods support deep breathing.', price: 'CHF 24.00' },
+        card3: { name: 'Oil "Quiet Garden"', description: 'Bergamot, rosewood and lavender for diffusers or baths.', price: 'CHF 31.00' }
+      },
+      cta: {
+        title: 'Studio partnerships',
+        text: 'We curate meditation kits for yoga, wellness and hospitality concepts.',
+        button: 'Request details'
+      }
+    },
+    categoryCar: {
+      hero: {
+        label: 'Car perfume',
+        title: 'Magnetic clips & travel scents',
+        subtitle: 'Aromas engineered for drives of any length.',
+        text: 'Clips secure to vents with replaceable capsules and elegant finishes.',
+        button: 'Choose your clip',
+        secondary: 'Back to catalog'
+      },
+      highlights: {
+        label: 'Mobility',
+        title: 'Designed for movement',
+        item1: { title: 'Magnetic fastening', description: 'Clips snap on gently and stay secure even on mountain roads.' },
+        item2: { title: 'Refill capsules', description: 'Swap fragrances without touching the metal body.' },
+        item3: { title: 'Gift-ready', description: 'Comes in travel pouches with spare capsules for gifting.' }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Signature drives',
+        card1: { name: 'Clip "Nomad Drive"', description: 'Cedarwood, grapefruit and leather for daily commutes.', price: 'CHF 29.50' },
+        card2: { name: 'Clip "Cedar Route"', description: 'Cypress, fir and leather housed in brushed metal.', price: 'CHF 34.00' },
+        card3: { name: 'Capsules "Velvet Road"', description: 'Three refills with cashmere and amber accords.', price: 'CHF 24.00' },
+        card4: { name: 'Travel duo', description: 'Clip plus capsule set packed in a vegan leather pouch.', price: 'CHF 54.00' }
+      },
+      cta: {
+        title: 'Corporate fleet gifting',
+        text: 'We personalise clips for chauffeurs, dealerships and hospitality fleets.',
+        button: 'Start a briefing'
+      }
+    },
+    categoryDevices: {
+      hero: {
+        label: 'Aroma devices',
+        title: 'Nebulisers & ultrasonic diffusers',
+        subtitle: 'Technology-forward tools with timers and spacious coverage.',
+        text: 'From portable USB units to large-scale machines for hotels and events.',
+        button: 'Compare devices',
+        secondary: 'All categories'
+      },
+      highlights: {
+        label: 'Technology',
+        title: 'Engineered for flexibility',
+        item1: { title: 'Quiet operation', description: 'Ultrasonic plates emit a silent mist suitable for suites and spas.' },
+        item2: { title: 'Timer presets', description: 'Programs for 30/60/120 minutes keep scent throw consistent.' },
+        item3: { title: 'Service kits', description: 'Filters, pipettes and cleaning cloths ship with every device.' }
+      },
+      products: {
+        label: 'Collection',
+        title: 'Featured devices',
+        card1: { name: 'Ultrasonic "Lumen"', description: 'Matte ceramic body with dimmable light for residences.', price: 'CHF 129.00' },
+        card2: { name: 'Nebuliser "Studio"', description: 'Oil nebuliser with Bluetooth scheduling.', price: 'CHF 189.00' },
+        card3: { name: 'Pro device "Atlas"', description: 'Covers up to 300 m² with HVAC connection kit.', price: 'CHF 540.00' },
+        card4: { name: 'Travel diffuser', description: 'USB-C rechargeable mini diffuser with carrying case.', price: 'CHF 79.00' }
+      },
+      cta: {
+        title: 'Need installation?',
+        text: 'We coordinate site surveys, mounting and maintenance across Switzerland.',
+        button: 'Book support'
+      }
+    },
     about: {
       hero: {
         label: 'Brand story',
@@ -2532,6 +3069,24 @@ const translations = {
     }
   }
 };
+
+const categoryFallbackKeys = [
+  'categoryLimited',
+  'categoryRoom',
+  'categoryTextile',
+  'categoryGift',
+  'categoryAccessories',
+  'categoryMeditation',
+  'categoryCar',
+  'categoryDevices'
+];
+['fr', 'it'].forEach((lang) => {
+  categoryFallbackKeys.forEach((key) => {
+    if (!translations[lang][key] && translations.en[key]) {
+      translations[lang][key] = JSON.parse(JSON.stringify(translations.en[key]));
+    }
+  });
+});
 
 const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
