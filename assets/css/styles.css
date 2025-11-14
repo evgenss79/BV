@@ -220,7 +220,7 @@ main {
   position: relative;
 }
 
-.mega-panel {
+.mega-panel { 
   position: absolute;
   inset: calc(100% + 0.5rem) auto auto 0;
   background: #fff;
@@ -230,6 +230,14 @@ main {
   gap: 2rem;
   border-radius: 14px;
   box-shadow: var(--shadow-soft);
+}
+
+.mega-panel__title {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  margin-bottom: 0.35rem;
 }
 
 .primary-nav__item--mega.is-open .mega-panel {
@@ -361,6 +369,46 @@ main {
   color: var(--color-muted);
 }
 
+.experiences {
+  background: linear-gradient(135deg, #f5efe7, #e9ded3);
+}
+
+.experiences__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+  gap: 1.5rem;
+  padding: 1.8rem;
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.experience-card__media img {
+  border-radius: 14px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-card__tag {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-bottom: 0.4rem;
+}
+
+.experience-card__content h3 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+}
+
 .categories {
   background: #fff;
 }
@@ -391,6 +439,58 @@ main {
   height: 96px;
   border-radius: 12px;
   background: #fff;
+}
+
+/* Programs grid inspired by Rituals editorial cards */
+.programs {
+  background: var(--color-cream);
+}
+
+.programs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-line);
+  padding: 2rem;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(26, 25, 25, 0.15);
+}
+
+.program-card__tag {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.program-card h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.program-card p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.program-card .btn {
+  margin-top: 1.2rem;
+  align-self: flex-start;
 }
 
 .products__grid {
@@ -800,6 +900,12 @@ main {
 
   .site-header__actions {
     margin-left: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .experience-card {
+    grid-template-columns: 1fr;
   }
 }
 

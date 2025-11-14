@@ -46,7 +46,13 @@ const translations = {
       devices: 'Aromageräte',
       about: 'Über uns',
       corporate: 'Corporate',
-      contacts: 'Kontakt'
+      contacts: 'Kontakt',
+      journal: 'Journal'
+    },
+    navGroups: {
+      collections: 'Kollektionen',
+      sprays: 'Sprays & Pflege',
+      lifestyle: 'Accessoires & Geräte'
     },
     footer: {
       catalogTitle: 'Katalog',
@@ -108,6 +114,22 @@ const translations = {
           button: 'Service entdecken'
         }
       },
+      showcase: {
+        label: 'Anwendungen',
+        title: 'Duftprogramme für Zuhause & Projekte',
+        residential: {
+          tag: 'Residence',
+          title: 'Kuratiertes Home Fragrance',
+          text: 'Signature-Kombinationen für Apartments, Villen und Penthouses inklusive Styling-Guides und Nachfüllservice.',
+          link: 'Kollektion entdecken'
+        },
+        corporate: {
+          tag: 'Projects',
+          title: 'Corporate Duftprogramme',
+          text: 'Modulare Sets für Hospitality, Retail und Offices – inklusive Montage, Schulung und White-Label-Option.',
+          link: 'Services ansehen'
+        }
+      },
       categories: {
         label: 'Kollektion entdecken',
         title: 'Kategorien & Duftwelten',
@@ -160,6 +182,28 @@ const translations = {
         button: 'Jetzt stöbern'
       },
       grid: { label: 'Segmentierung', title: 'Kollektionen im Überblick' },
+      programs: {
+        label: 'Programme',
+        title: 'Anwendungswelten & Services',
+        item1: {
+          tag: 'Residence',
+          title: 'Private Duftprogramme',
+          text: 'Kuratierte Sets für Apartments und Häuser inklusive Nachfüllservice und Styling-Guides.',
+          link: 'Home Rituals entdecken'
+        },
+        item2: {
+          tag: 'Hospitality',
+          title: 'Scenting für Hotels & Spas',
+          text: 'Diffusor-Installationen und Duftmenüs für Lobby, Spa und Suiten inklusive Schulung.',
+          link: 'Hospitality Kits ansehen'
+        },
+        item3: {
+          tag: 'Corporate',
+          title: 'Corporate & Events',
+          text: 'Duftbare Give-aways, Geschenksets und mobile Installationen für Markenauftritte.',
+          link: 'Corporate Angebot anfordern'
+        }
+      },
       info: {
         label: 'Service Level',
         title: 'Logistik & Unterstützung',
@@ -412,7 +456,13 @@ const translations = {
       devices: 'Appareils aroma',
       about: 'À propos',
       corporate: 'Corporate',
-      contacts: 'Contact'
+      contacts: 'Contact',
+      journal: 'Journal'
+    },
+    navGroups: {
+      collections: 'Collections',
+      sprays: 'Sprays & soins',
+      lifestyle: 'Accessoires & appareils'
     },
     footer: {
       catalogTitle: 'Catalogue',
@@ -474,6 +524,22 @@ const translations = {
           button: 'Découvrir le service'
         }
       },
+      showcase: {
+        label: 'Expériences',
+        title: 'Programmes parfumés pour maison & projets',
+        residential: {
+          tag: 'Résidentiel',
+          title: 'Fragrances sur mesure pour la maison',
+          text: 'Combinaisons signature pour appartements, villas et penthouses avec guides de mise en scène et service refill.',
+          link: 'Découvrir la collection'
+        },
+        corporate: {
+          tag: 'Projets',
+          title: 'Programmes corporate',
+          text: 'Kits modulaires pour hospitality, retail et bureaux avec installation, formation et option white-label.',
+          link: 'Voir les services'
+        }
+      },
       categories: {
         label: 'Découvrir la collection',
         title: 'Univers olfactifs',
@@ -526,6 +592,28 @@ const translations = {
         button: 'Explorer maintenant'
       },
       grid: { label: 'Segmentation', title: 'Vue d’ensemble des collections' },
+      programs: {
+        label: 'Programmes',
+        title: 'Univers d’application & services',
+        item1: {
+          tag: 'Résidentiel',
+          title: 'Programmes parfumés privés',
+          text: 'Ensembles dédiés aux appartements et maisons avec service de recharge et guides de mise en scène.',
+          link: 'Découvrir les rituels maison'
+        },
+        item2: {
+          tag: 'Hospitality',
+          title: 'Parfums pour hôtels & spas',
+          text: 'Installations de diffuseurs et menus olfactifs pour lobby, spa et suites avec formation.',
+          link: 'Voir les kits hospitality'
+        },
+        item3: {
+          tag: 'Corporate',
+          title: 'Corporate & événements',
+          text: 'Cadeaux parfumés, coffrets et installations mobiles pour les marques.',
+          link: 'Demander l’offre corporate'
+        }
+      },
       info: {
         label: 'Services',
         title: 'Logistique & support',
@@ -778,7 +866,13 @@ const translations = {
       devices: 'Dispositivi aroma',
       about: 'Chi siamo',
       corporate: 'Corporate',
-      contacts: 'Contatti'
+      contacts: 'Contatti',
+      journal: 'Journal'
+    },
+    navGroups: {
+      collections: 'Collezioni',
+      sprays: 'Spray & cura',
+      lifestyle: 'Accessori & device'
     },
     footer: {
       catalogTitle: 'Catalogo',
@@ -840,6 +934,22 @@ const translations = {
           button: 'Scopri il servizio'
         }
       },
+      showcase: {
+        label: 'Applicazioni',
+        title: 'Programmi olfattivi per casa e progetti',
+        residential: {
+          tag: 'Residenziale',
+          title: 'Fragranze curate per la casa',
+          text: 'Combinazioni signature per appartamenti, ville e attici con guide di styling e servizio refill.',
+          link: 'Scopri la collezione'
+        },
+        corporate: {
+          tag: 'Progetti',
+          title: 'Programmi corporate',
+          text: 'Set modulari per hospitality, retail e uffici con installazione, formazione e opzione white label.',
+          link: 'Scopri i servizi'
+        }
+      },
       categories: {
         label: 'Esplora la collezione',
         title: 'Categorie & mondi olfattivi',
@@ -892,6 +1002,28 @@ const translations = {
         button: 'Inizia ora'
       },
       grid: { label: 'Segmenti', title: 'Panoramica collezioni' },
+      programs: {
+        label: 'Programmi',
+        title: 'Universi applicativi & servizi',
+        item1: {
+          tag: 'Residenziale',
+          title: 'Programmi olfattivi privati',
+          text: 'Set curati per appartamenti e ville con servizio di refill e guide di styling.',
+          link: 'Scoprire i rituali casa'
+        },
+        item2: {
+          tag: 'Hospitality',
+          title: 'Profumazione per hotel & spa',
+          text: 'Installazioni di diffusori e menu olfattivi per lobby, spa e suite con formazione.',
+          link: 'Vedere i kit hospitality'
+        },
+        item3: {
+          tag: 'Corporate',
+          title: 'Corporate & eventi',
+          text: 'Gift set profumati e installazioni mobili per attivazioni di brand.',
+          link: 'Richiedere l’offerta corporate'
+        }
+      },
       info: {
         label: 'Servizi',
         title: 'Logistica & supporto',
@@ -1144,7 +1276,13 @@ const translations = {
       devices: 'Aroma devices',
       about: 'About',
       corporate: 'Corporate',
-      contacts: 'Contact'
+      contacts: 'Contact',
+      journal: 'Journal'
+    },
+    navGroups: {
+      collections: 'Collections',
+      sprays: 'Sprays & care',
+      lifestyle: 'Accessories & devices'
     },
     footer: {
       catalogTitle: 'Catalog',
@@ -1206,6 +1344,22 @@ const translations = {
           button: 'Discover service'
         }
       },
+      showcase: {
+        label: 'Applications',
+        title: 'Scent programs for home & projects',
+        residential: {
+          tag: 'Residential',
+          title: 'Curated home fragrance',
+          text: 'Signature pairings for apartments, villas and penthouses complete with styling guides and refill service.',
+          link: 'Explore collection'
+        },
+        corporate: {
+          tag: 'Projects',
+          title: 'Corporate scenting',
+          text: 'Modular sets for hospitality, retail and offices including installation, training and white-label options.',
+          link: 'View services'
+        }
+      },
       categories: {
         label: 'Explore the collection',
         title: 'Categories & scent worlds',
@@ -1258,6 +1412,28 @@ const translations = {
         button: 'Start exploring'
       },
       grid: { label: 'Segments', title: 'Collection overview' },
+      programs: {
+        label: 'Programs',
+        title: 'Application worlds & services',
+        item1: {
+          tag: 'Residence',
+          title: 'Private fragrance programs',
+          text: 'Curated sets for apartments and houses including refill service and styling guides.',
+          link: 'Explore home rituals'
+        },
+        item2: {
+          tag: 'Hospitality',
+          title: 'Scenting for hotels & spas',
+          text: 'Diffuser installations and scent menus for lobby, spa and suites with on-site training.',
+          link: 'View hospitality kits'
+        },
+        item3: {
+          tag: 'Corporate',
+          title: 'Corporate & events',
+          text: 'Fragrant giveaways, gift sets and mobile installations for brand activations.',
+          link: 'Request the corporate offer'
+        }
+      },
       info: {
         label: 'Service level',
         title: 'Logistics & support',
