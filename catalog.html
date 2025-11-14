@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body data-page="catalog">
+
   <header class="site-header" id="siteHeader">
     <div class="utility-bar">
       <p class="utility-bar__item" data-i18n="common.utilityShipping">Gratis Versand ab CHF 80</p>
@@ -24,7 +25,23 @@
       <a href="index.html" class="site-header__logo" data-i18n="common.brand">NicheHome.ch</a>
             <nav class="primary-nav" aria-label="Hauptmenü">
         <ul class="primary-nav__list">
-          <li class="primary-nav__item"><a class="primary-nav__link" href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+          <li class="primary-nav__item primary-nav__item--mega">
+            <a class="primary-nav__link" href="catalog.html" data-i18n="nav.catalog" data-mega-toggle aria-haspopup="true" aria-expanded="false">Katalog</a>
+            <div class="mega-panel mega-panel--catalog">
+              <ul class="mega-panel__list">
+                <li><a href="category-diffusers.html" data-i18n="nav.diffusers">Aroma-Diffusoren</a></li>
+                <li><a href="category-candles.html" data-i18n="nav.candles">Duftkerzen</a></li>
+                <li><a href="category-limited.html" data-i18n="nav.limited">Limitierte Kollektion</a></li>
+                <li><a href="category-room.html" data-i18n="nav.room">Raumduft</a></li>
+                <li><a href="category-textile.html" data-i18n="nav.textile">Textilspray</a></li>
+                <li><a href="category-gift.html" data-i18n="nav.gift">Geschenksets</a></li>
+                <li><a href="category-accessories.html" data-i18n="nav.accessories">Accessoires</a></li>
+                <li><a href="category-meditation.html" data-i18n="nav.meditation">Meditation</a></li>
+                <li><a href="category-car.html" data-i18n="nav.car">Autoparfum</a></li>
+                <li><a href="category-devices.html" data-i18n="nav.devices">Aromageräte</a></li>
+              </ul>
+            </div>
+          </li>
           <li class="primary-nav__item"><a class="primary-nav__link" href="category-gift.html" data-i18n="nav.gift">Geschenksets</a></li>
           <li class="primary-nav__item"><a class="primary-nav__link" href="index.html#news" data-i18n="nav.journal">Journal</a></li>
           <li class="primary-nav__item"><a class="primary-nav__link" href="corporate.html" data-i18n="nav.corporate">Corporate</a></li>
@@ -40,15 +57,22 @@
           <span data-i18n="common.cart">🛒 Warenkorb</span>
           <span>(<span data-cart-count>0</span> <span data-i18n="common.cartItems">Artikel</span>)</span>
         </button>
-        <div class="lang-switcher" role="group" aria-label="Language switcher">
-          <button type="button" data-lang="fr" class="lang-switcher__btn">FR</button>
-          <button type="button" data-lang="de" class="lang-switcher__btn is-active">DE</button>
-          <button type="button" data-lang="it" class="lang-switcher__btn">IT</button>
-          <button type="button" data-lang="en" class="lang-switcher__btn">EN</button>
+        <div class="lang-dropdown" data-lang-dropdown>
+          <button type="button" class="lang-dropdown__toggle" data-lang-toggle aria-haspopup="listbox" aria-expanded="false">
+            <span data-current-lang-label>DE</span>
+            <span class="lang-dropdown__chevron" aria-hidden="true"></span>
+          </button>
+          <ul class="lang-dropdown__list" role="listbox">
+            <li><button type="button" data-lang="fr" class="lang-dropdown__option">FR</button></li>
+            <li><button type="button" data-lang="de" class="lang-dropdown__option is-active">DE</button></li>
+            <li><button type="button" data-lang="it" class="lang-dropdown__option">IT</button></li>
+            <li><button type="button" data-lang="en" class="lang-dropdown__option">EN</button></li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
+
 
   <main>
     <section class="page-hero page-hero--wide">
