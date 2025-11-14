@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe6" />
+      <stop offset="100%" stop-color="#d8cbb2" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#grad)" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Playfair Display', serif" font-size="32" fill="#5c5242" letter-spacing="0.2em">NICHEHOME</text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" fill="#5c5242" letter-spacing="0.3em">COLLECTION</text>
+</svg>
