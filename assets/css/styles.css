@@ -1098,7 +1098,8 @@ main {
   margin-bottom: 0.25rem;
 }
 
-.product-card--diffuser {
+.product-card--diffuser,
+.product-card--candles {
   max-width: 360px;
   margin: 0;
   padding: 0.85rem 1rem;
@@ -1107,11 +1108,13 @@ main {
   box-shadow: none;
 }
 
-.page-hero--diffusers .product-card--diffuser {
+.page-hero--diffusers .product-card--diffuser,
+.page-hero--candles .product-card--candles {
   align-self: flex-start;
 }
 
-.product-card--diffuser .product-card__image {
+.product-card--diffuser .product-card__image,
+.product-card--candles .product-card__image {
   border-radius: 14px;
   margin-bottom: 0.5rem;
   max-height: 220px;
@@ -1121,26 +1124,30 @@ main {
   display: block;
 }
 
-.product-card--diffuser h3 {
+.product-card--diffuser h3,
+.product-card--candles h3 {
   font-size: 1.05rem;
   line-height: 1.3;
 }
 
-.product-card--diffuser .product-card__options {
+.product-card--diffuser .product-card__options,
+.product-card--candles .product-card__options {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin: 0.25rem 0 0.2rem;
 }
 
-.product-card--diffuser .product-card__field {
+.product-card--diffuser .product-card__field,
+.product-card--candles .product-card__field {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   font-size: 0.88rem;
 }
 
-.product-card--diffuser .product-card__field select {
+.product-card--diffuser .product-card__field select,
+.product-card--candles .product-card__field select {
   width: 100%;
   padding: 0.45rem 0.65rem;
   border-radius: 10px;
@@ -1150,14 +1157,16 @@ main {
   font-size: 0.88rem;
 }
 
-.product-card--diffuser .product-card__meta {
+.product-card--diffuser .product-card__meta,
+.product-card--candles .product-card__meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.35rem 0;
 }
 
-.product-card--diffuser .product-card__price {
+.product-card--diffuser .product-card__price,
+.product-card--candles .product-card__price {
   font-weight: 600;
   font-size: 1rem;
 }

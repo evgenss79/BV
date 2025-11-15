@@ -75,58 +75,82 @@
 
 
   <main>
-    <section class="page-hero page-hero--category">
-      <div class="page-hero__text">
-        <p class="page-hero__label" data-i18n="categoryCandles.hero.label">Ceremonial Edition</p>
-        <h1 data-i18n="categoryCandles.hero.title">Duftkerzen mit architektonischen Gefäßen</h1>
-        <p data-i18n="categoryCandles.hero.subtitle">Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.</p>
-        <p data-i18n="categoryCandles.hero.text">Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.</p>
-        <div class="hero__actions">
-          <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCandles.hero.button">Showroom-Besuch buchen</a>
-          <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCandles.hero.secondary">Weitere Kategorien</a>
+    <section class="page-hero page-hero--candles">
+      <div class="page-hero__content">
+        <div class="page-hero__text">
+          <p class="page-hero__label" data-i18n="categoryCandles.hero.label">Ceremonial Edition</p>
+          <h1 data-i18n="categoryCandles.hero.title">Duftkerzen mit architektonischen Gefäßen</h1>
+          <p data-i18n="categoryCandles.hero.subtitle">Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.</p>
+          <p data-i18n="categoryCandles.hero.text">Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCandles.hero.button">Showroom-Besuch buchen</a>
+            <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCandles.hero.secondary">Weitere Kategorien</a>
+          </div>
         </div>
+
+        <article class="product-card product-card--candles" data-candle-card>
+          <img
+            data-candle-image
+            src="https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true"
+            alt="Aroma Candles"
+            loading="lazy"
+            class="product-card__image"
+          >
+          <div>
+            <p class="product-card__eyebrow" data-i18n="categoryCandles.products.label">Edition</p>
+            <h3 data-i18n="candles.product.title">Duftkerzen Signature Line</h3>
+            <p data-i18n="candles.product.description">Zwei Gefäßgrößen und Signature-Düfte, handgegossen in Keramik.</p>
+          </div>
+
+          <div class="product-card__options">
+            <label class="product-card__field">
+              <span data-i18n="candles.options.volumeLabel">Volumen</span>
+              <select data-candle-volume>
+                <option value="160">160 ml</option>
+                <option value="500">500 ml</option>
+              </select>
+            </label>
+
+            <label class="product-card__field">
+              <span data-i18n="candles.options.scentLabel">Duft</span>
+              <select data-candle-scent>
+                <option value="none" data-i18n="candles.scents.none">No fragrance</option>
+                <option value="Africa" data-i18n="candles.scents.africa">Africa</option>
+                <option value="Bamboo" data-i18n="candles.scents.bamboo">Bamboo</option>
+                <option value="Bellini" data-i18n="candles.scents.bellini">Bellini</option>
+                <option value="Blanc" data-i18n="candles.scents.blanc">Blanc</option>
+                <option value="Carolina" data-i18n="candles.scents.carolina">Carolina</option>
+                <option value="Cherry Blossom" data-i18n="candles.scents.cherry_blossom">Cherry Blossom</option>
+                <option value="Christmas Tree" data-i18n="candles.scents.christmas_tree">Christmas Tree</option>
+                <option value="Dubai" data-i18n="candles.scents.dubai">Dubai</option>
+                <option value="Dune" data-i18n="candles.scents.dune">Dune</option>
+                <option value="Eden" data-i18n="candles.scents.eden">Eden</option>
+                <option value="Fleur" data-i18n="candles.scents.fleur">Fleur</option>
+                <option value="Green Mango" data-i18n="candles.scents.green_mango">Green Mango</option>
+                <option value="Lime Basil" data-i18n="candles.scents.lime_basil">Lime Basil</option>
+                <option value="Rosso" data-i18n="candles.scents.rosso">Rosso</option>
+                <option value="Salted Caramel" data-i18n="candles.scents.salted_caramel">Salted Caramel</option>
+                <option value="Salty Water" data-i18n="candles.scents.salty_water">Salty Water</option>
+                <option value="Santal" data-i18n="candles.scents.santal">Santal</option>
+                <option value="Sugar" data-i18n="candles.scents.sugar">Sugar</option>
+                <option value="Tobacco Vanilla" data-i18n="candles.scents.tobacco_vanilla">Tobacco Vanilla</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="product-card__meta">
+            <span class="product-card__price-label" data-i18n="candles.product.priceLabel">Preis</span>
+            <span class="product-card__price" data-candle-price>CHF 19.90</span>
+          </div>
+
+          <button class="btn btn--gold" data-add-to-cart data-i18n="candles.product.cta">In den Warenkorb</button>
+        </article>
       </div>
       <div class="page-hero__media">
-        <img src="assets/img/placeholder-4.svg" alt="Duftkerzen" loading="lazy">
+        <img src="https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true" alt="Aroma Candles" loading="lazy">
       </div>
     </section>
 
-    <section class="products products--listing">
-      <div class="section-heading">
-        <p class="section-heading__label" data-i18n="categoryCandles.products.label">Edition</p>
-        <h2 data-i18n="categoryCandles.products.title">Handgegossene Highlights</h2>
-      </div>
-      <div class="products__grid">
-        <article class="product-card">
-          <img src="assets/img/placeholder-4.svg" alt="Sable Nuit" loading="lazy">
-          <h3 data-i18n="categoryCandles.products.card1.name">Kerze "Sable Nuit"</h3>
-          <p data-i18n="categoryCandles.products.card1.description">Amber, Tonka und Labdanum schaffen ein warmes, samtiges Ambiente.</p>
-          <span class="product-card__price" data-i18n="categoryCandles.products.card1.price">CHF 69.90</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-2.svg" alt="Linen Cloud" loading="lazy">
-          <h3 data-i18n="categoryCandles.products.card2.name">Kerze "Linen Cloud"</h3>
-          <p data-i18n="categoryCandles.products.card2.description">Baumwollblüte, Cashmere und weißer Moschus für Schlafzimmer und Spas.</p>
-          <span class="product-card__price" data-i18n="categoryCandles.products.card2.price">CHF 64.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-3.svg" alt="Fig Aura" loading="lazy">
-          <h3 data-i18n="categoryCandles.products.card3.name">Kerze "Fig Aura"</h3>
-          <p data-i18n="categoryCandles.products.card3.description">Feigenblatt, grüner Tee und Tonkabohne – beliebt in Concept Stores.</p>
-          <span class="product-card__price" data-i18n="categoryCandles.products.card3.price">CHF 72.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-5.svg" alt="Noir Cacao" loading="lazy">
-          <h3 data-i18n="categoryCandles.products.card4.name">Kerze "Noir Cacao"</h3>
-          <p data-i18n="categoryCandles.products.card4.description">Dunkle Schokolade, Zedernholz und Rum. Perfekt für Lounges und Bars.</p>
-          <span class="product-card__price" data-i18n="categoryCandles.products.card4.price">CHF 78.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
