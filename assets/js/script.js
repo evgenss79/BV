@@ -570,6 +570,46 @@ const translations = {
         tobacco_vanilla: 'Tobacco Vanilla'
       }
     },
+    car: {
+      product: {
+        title: 'Autoparfum Capsule System',
+        description: 'Konfigurieren Sie Clip, Refills oder Travel Spray und wählen Sie den passenden Duft.',
+        priceLabel: 'Preis',
+        cta: 'In den Warenkorb'
+      },
+      options: {
+        volumeLabel: 'Format',
+        scentLabel: 'Duft',
+        clip: 'Clip + Magnet',
+        refill: 'Capsule Refill',
+        vent: 'Vent Diffuser',
+        spray: 'Travel Spray'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+      }
+    },
     categoryCandles: {
       hero: {
         label: 'Ceremonial Edition',
@@ -1529,6 +1569,46 @@ const translations = {
         tobacco_vanilla: 'Tobacco Vanilla'
       }
     },
+    car: {
+      product: {
+        title: 'Système Autoparfum Capsule',
+        description: 'Configurez clip, recharges ou spray de voyage et associez votre parfum préféré.',
+        priceLabel: 'Prix',
+        cta: 'Ajouter au panier'
+      },
+      options: {
+        volumeLabel: 'Format',
+        scentLabel: 'Parfum',
+        clip: 'Clip + aimant',
+        refill: 'Recharge capsule',
+        vent: 'Diffuseur d’aération',
+        spray: 'Spray de voyage'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+      }
+    },
     categoryCandles: {
       hero: {
         label: 'Édition cérémonielle',
@@ -2245,6 +2325,46 @@ const translations = {
         santal: 'Santal',
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla'
+      }
+    },
+    car: {
+      product: {
+        title: 'Sistema Autoparfum Capsule',
+        description: 'Configura clip, refill o travel spray e abbinali alla fragranza preferita.',
+        priceLabel: 'Prezzo',
+        cta: 'Aggiungi al carrello'
+      },
+      options: {
+        volumeLabel: 'Formato',
+        scentLabel: 'Fragranza',
+        clip: 'Clip + magnete',
+        refill: 'Capsule refill',
+        vent: 'Diffusore bocchetta',
+        spray: 'Travel spray'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
       }
     },
     categoryCandles: {
@@ -2964,6 +3084,46 @@ const translations = {
         tobacco_vanilla: 'Tobacco Vanilla'
       }
     },
+    car: {
+      product: {
+        title: 'Autoparfum capsule system',
+        description: 'Configure clips, refills or travel spray and pair them with your preferred scent.',
+        priceLabel: 'Price',
+        cta: 'Add to cart'
+      },
+      options: {
+        volumeLabel: 'Format',
+        scentLabel: 'Fragrance',
+        clip: 'Clip + magnet',
+        refill: 'Capsule refill',
+        vent: 'Vent diffuser',
+        spray: 'Travel spray'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+      }
+    },
     categoryCandles: {
       hero: {
         label: 'Ceremonial edition',
@@ -3403,12 +3563,30 @@ const diffuserImageSuffix = '.jpg?raw=true';
 const diffuserDefaultImage = `${diffuserImageBaseUrl}Mikado-category${diffuserImageSuffix}`;
 const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
-const candlesDefaultImage = `${candlesImageBaseUrl}Candles%20category${candlesImageSuffix}`;
+const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
+
+const carPricing = {
+  baseCurrency: 'CHF',
+  volumes: {
+    clip: 29.5,
+    refill: 24.0,
+    vent: 45.0,
+    spray: 32.0
+  }
+};
+
+const carImageBaseUrl = diffuserImageBaseUrl;
+const carImageSuffix = diffuserImageSuffix;
+const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Carolina-2.png?raw=true';
 
 let candleVolumeSelect;
 let candlePriceElement;
 let candleScentSelect;
 let candleImageElement;
+let carVolumeSelect;
+let carPriceElement;
+let carScentSelect;
+let carImageElement;
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -3692,6 +3870,40 @@ const initCandleConfigurator = () => {
   candleScentSelect?.addEventListener('change', updateCandleImage);
 };
 
+const updateCarPrice = () => {
+  if (!carVolumeSelect || !carPriceElement) return;
+  const format = carVolumeSelect.value;
+  const price = carPricing.volumes[format];
+  if (price != null) {
+    carPriceElement.textContent = `${carPricing.baseCurrency} ${price.toFixed(2)}`;
+  }
+};
+
+const updateCarImage = () => {
+  if (!carImageElement || !carScentSelect) return;
+  const scent = carScentSelect.value;
+  if (!scent || scent === 'none') {
+    carImageElement.src = carDefaultImage;
+    return;
+  }
+  const encoded = encodeURIComponent(scent);
+  carImageElement.src = `${carImageBaseUrl}${encoded}${carImageSuffix}`;
+};
+
+const initCarConfigurator = () => {
+  carVolumeSelect = document.querySelector('[data-car-volume]');
+  carPriceElement = document.querySelector('[data-car-price]');
+  carScentSelect = document.querySelector('[data-car-scent]');
+  carImageElement = document.querySelector('[data-car-image]');
+  if (!carVolumeSelect && !carPriceElement && !carScentSelect && !carImageElement) {
+    return;
+  }
+  updateCarPrice();
+  updateCarImage();
+  carVolumeSelect?.addEventListener('change', updateCarPrice);
+  carScentSelect?.addEventListener('change', updateCarImage);
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
   initTitles();
@@ -3700,6 +3912,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initDiffuserConfigurator();
   initCandleConfigurator();
+  initCarConfigurator();
   initCart();
   initContactForm();
 });
