@@ -499,7 +499,19 @@ const translations = {
       }
     },
     diffusers: {
+      product: {
+        title: 'Aroma-Diffusoren Signature Line',
+        description:
+          'Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.',
+        priceLabel: 'Preis',
+        cta: 'In den Warenkorb'
+      },
+      options: {
+        volumeLabel: 'Volumen',
+        scentLabel: 'Duft'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -1411,7 +1423,19 @@ const translations = {
       }
     },
     diffusers: {
+      product: {
+        title: 'Diffuseur Signature',
+        description:
+          'Configurez volume et fragrance parmi 21 compositions maison. Verre soufflé à la main et bâtonnets italiens interchangeables.',
+        priceLabel: 'Prix',
+        cta: 'Ajouter au panier'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragrance'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -2082,7 +2106,19 @@ const translations = {
       }
     },
     diffusers: {
+      product: {
+        title: 'Diffusore Signature',
+        description:
+          'Configura volume e fragranza tra 21 composizioni iconiche. Vetro lavorato a mano e bastoncini intercambiabili.',
+        priceLabel: 'Prezzo',
+        cta: 'Aggiungi al carrello'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragranza'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -2753,7 +2789,18 @@ const translations = {
       }
     },
     diffusers: {
+      product: {
+        title: 'Signature reed diffuser',
+        description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
+        priceLabel: 'Price',
+        cta: 'Add to cart'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragrance'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -3197,11 +3244,15 @@ const translations = {
 const diffuserPricing = {
   baseCurrency: 'CHF',
   volumes: {
-    '125': 59.9,
-    '250': 89.9,
-    '500': 129.0
+    '125': 20.9,
+    '250': 29.9,
+    '500': 50.9
   }
 };
+
+const diffuserImageBaseUrl = 'https://github.com/evgenss79/BV_img/blob/main/';
+const diffuserImageSuffix = '.jpg?raw=true';
+const diffuserDefaultImage = `${diffuserImageBaseUrl}Mikado-category${diffuserImageSuffix}`;
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -3428,11 +3479,27 @@ const updateDiffuserPrice = () => {
   }
 };
 
+const updateDiffuserImage = () => {
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const imageEl = document.querySelector('[data-diffuser-image]');
+  if (!scentSelect || !imageEl) return;
+  const scent = scentSelect.value;
+  if (!scent || scent === 'none') {
+    imageEl.src = diffuserDefaultImage;
+    return;
+  }
+  const encoded = encodeURIComponent(scent);
+  imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
+};
+
 const initDiffuserConfigurator = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
-  if (!volumeSelect) return;
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  if (!volumeSelect || !scentSelect) return;
   volumeSelect.addEventListener('change', updateDiffuserPrice);
+  scentSelect.addEventListener('change', updateDiffuserImage);
   updateDiffuserPrice();
+  updateDiffuserImage();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
