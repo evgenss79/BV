@@ -685,15 +685,20 @@ main {
 }
 
 .page-hero--diffusers {
-  padding: 2.5rem clamp(1.5rem, 4vw, 5rem);
-  gap: 1.5rem;
-  align-items: flex-start;
+  padding: clamp(1.5rem, 3vw, 3.5rem);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.page-hero--diffusers .page-hero__content {
+  display: grid;
+  gap: 1.25rem;
 }
 
 .page-hero--diffusers .page-hero__text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .page-hero--diffusers .hero__actions {
@@ -703,18 +708,24 @@ main {
 }
 
 .page-hero--diffusers .page-hero__media img {
-  max-height: 420px;
+  max-height: 360px;
   object-fit: cover;
   margin-left: auto;
 }
 
 @media (min-width: 900px) {
   .page-hero--diffusers {
-    grid-template-columns: minmax(320px, 420px) minmax(320px, 1fr);
+    grid-template-columns: minmax(420px, 1fr) minmax(280px, 420px);
+    align-items: stretch;
+  }
+
+  .page-hero--diffusers .page-hero__content {
+    grid-template-columns: minmax(300px, 1fr) minmax(280px, 360px);
+    align-items: start;
   }
 
   .page-hero--diffusers .page-hero__media img {
-    max-height: 460px;
+    max-height: 420px;
   }
 }
 
@@ -1090,8 +1101,8 @@ main {
 .product-card--diffuser {
   max-width: 360px;
   margin: 0;
-  padding: 1rem 1.25rem;
-  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  gap: 0.6rem;
   border: 1px solid var(--color-line);
   box-shadow: none;
 }
@@ -1102,16 +1113,21 @@ main {
 
 .product-card--diffuser .product-card__image {
   border-radius: 14px;
-  margin-bottom: 0.75rem;
-  max-height: 220px;
+  margin-bottom: 0.5rem;
+  max-height: 200px;
   object-fit: cover;
+}
+
+.product-card--diffuser h3 {
+  font-size: 1.05rem;
+  line-height: 1.3;
 }
 
 .product-card--diffuser .product-card__options {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin: 0.5rem 0 0.25rem;
+  gap: 0.5rem;
+  margin: 0.25rem 0 0.2rem;
 }
 
 .product-card--diffuser .product-card__field {
@@ -1123,22 +1139,22 @@ main {
 
 .product-card--diffuser .product-card__field select {
   width: 100%;
-  padding: 0.6rem 0.75rem;
+  padding: 0.45rem 0.65rem;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #fff;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .product-card--diffuser .product-card__meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 0.35rem 0;
 }
 
 .product-card--diffuser .product-card__price {
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
