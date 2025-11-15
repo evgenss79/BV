@@ -481,15 +481,46 @@ const translations = {
       products: {
         label: 'Kollektion',
         title: 'Kurze Lieferzeiten, lange Wirkung',
-        card1: { name: 'Reeddiffusor "Urban Calm" 200 ml', description: 'Vetiver, Bergamotte und Kakao. Ideal für Lobbys und Private Spas.', price: 'CHF 59.90' },
-        card2: { name: 'Diffusor "Atlas Cedar" 500 ml', description: 'Zedernholz, Weihrauch und schwarze Johannisbeere für Statement-Suiten.', price: 'CHF 98.00' },
-        card3: { name: 'Diffusor "Lumen" 1L', description: 'Orangenblüte, Neroli und weißer Moschus für großflächige Showrooms.', price: 'CHF 149.00' },
-        card4: { name: 'Diffusor "Monumental" 2.5L', description: 'Patchouli, Amber und Zeder in übergroßen Gefäßen für Hotel-Lobbys.', price: 'CHF 249.00' }
+        configurable: {
+          name: 'Aroma-Diffusor Signature Line',
+          description: 'Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.',
+          volumeLabel: 'Volumen wählen',
+          scentLabel: 'Duft auswählen',
+          priceLabel: 'Preis:',
+          volume125: '125 ml',
+          volume250: '250 ml',
+          volume500: '500 ml'
+        }
       },
       cta: {
         title: 'Installationsservice verfügbar',
         text: 'Wir unterstützen Hotels, Boutiquen und Offices bei der Platzierung und dem Austausch der Diffusoren.',
         button: 'Termin vereinbaren'
+      }
+    },
+    diffusers: {
+      scents: {
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
       }
     },
     categoryCandles: {
@@ -1362,15 +1393,46 @@ const translations = {
       products: {
         label: 'Collection',
         title: 'Livraison rapide, impact durable',
-        card1: { name: 'Diffuseur "Urban Calm" 200 ml', description: 'Vétiver, bergamote et cacao pour spas privés et lobbys.', price: 'CHF 59.90' },
-        card2: { name: 'Diffuseur "Atlas Cedar" 500 ml', description: 'Bois de cèdre, encens et cassis pour suites signature.', price: 'CHF 98.00' },
-        card3: { name: 'Diffuseur "Lumen" 1L', description: 'Fleur d’oranger, néroli et musc blanc pour grands showrooms.', price: 'CHF 149.00' },
-        card4: { name: 'Diffuseur "Monumental" 2.5L', description: 'Patchouli, ambre et cèdre pour halls d’hôtel.', price: 'CHF 249.00' }
+        configurable: {
+          name: 'Diffuseur Signature',
+          description: 'Choisissez volume et fragrance parmi 21 compositions emblématiques. Verre poli à la main et bâtonnets italiens interchangeables.',
+          volumeLabel: 'Choisir le volume',
+          scentLabel: 'Sélectionner la fragrance',
+          priceLabel: 'Prix :',
+          volume125: '125 ml',
+          volume250: '250 ml',
+          volume500: '500 ml'
+        }
       },
       cta: {
         title: 'Service d’installation',
         text: 'Assistance pour la mise en place et l’entretien dans hôtels, boutiques et bureaux.',
         button: 'Planifier une visite'
+      }
+    },
+    diffusers: {
+      scents: {
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
       }
     },
     categoryCandles: {
@@ -2002,15 +2064,46 @@ const translations = {
       products: {
         label: 'Collezione',
         title: 'Consegna rapida, effetto duraturo',
-        card1: { name: 'Diffusore "Urban Calm" 200 ml', description: 'Vetiver, bergamotto e cacao per spa private e lobby.', price: 'CHF 59.90' },
-        card2: { name: 'Diffusore "Atlas Cedar" 500 ml', description: 'Cedro, incenso e ribes nero per suite iconiche.', price: 'CHF 98.00' },
-        card3: { name: 'Diffusore "Lumen" 1L', description: 'Fior d’arancio, neroli e muschio bianco per showroom ampi.', price: 'CHF 149.00' },
-        card4: { name: 'Diffusore "Monumental" 2.5L', description: 'Patchouli, ambra e cedro per hall d’albergo.', price: 'CHF 249.00' }
+        configurable: {
+          name: 'Diffusore Signature',
+          description: 'Configura volume e fragranza tra 21 composizioni iconiche. Vetro levigato a mano e bastoncini italiani intercambiabili.',
+          volumeLabel: 'Scegli il volume',
+          scentLabel: 'Seleziona la fragranza',
+          priceLabel: 'Prezzo:',
+          volume125: '125 ml',
+          volume250: '250 ml',
+          volume500: '500 ml'
+        }
       },
       cta: {
         title: 'Disponibile servizio installazione',
         text: 'Supportiamo hotel, boutique e uffici nel posizionamento e nel cambio dei diffusori.',
         button: 'Prenota un incontro'
+      }
+    },
+    diffusers: {
+      scents: {
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
       }
     },
     categoryCandles: {
@@ -2642,15 +2735,46 @@ const translations = {
       products: {
         label: 'Collection',
         title: 'Quick delivery, lasting impact',
-        card1: { name: 'Diffuser "Urban Calm" 200 ml', description: 'Vetiver, bergamot and cacao for spas and lobbies.', price: 'CHF 59.90' },
-        card2: { name: 'Diffuser "Atlas Cedar" 500 ml', description: 'Cedarwood, frankincense and blackcurrant for signature suites.', price: 'CHF 98.00' },
-        card3: { name: 'Diffuser "Lumen" 1L', description: 'Orange blossom, neroli and white musk for expansive showrooms.', price: 'CHF 149.00' },
-        card4: { name: 'Diffuser "Monumental" 2.5L', description: 'Patchouli, amber and cedar for hotel lobbies.', price: 'CHF 249.00' }
+        configurable: {
+          name: 'Signature reed diffuser',
+          description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
+          volumeLabel: 'Choose volume',
+          scentLabel: 'Select fragrance',
+          priceLabel: 'Price:',
+          volume125: '125 ml',
+          volume250: '250 ml',
+          volume500: '500 ml'
+        }
       },
       cta: {
         title: 'Installation service available',
         text: 'We assist hotels, boutiques and offices with placement and maintenance.',
         button: 'Schedule a visit'
+      }
+    },
+    diffusers: {
+      scents: {
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
       }
     },
     categoryCandles: {
@@ -3070,6 +3194,15 @@ const translations = {
   }
 };
 
+const diffuserPricing = {
+  baseCurrency: 'CHF',
+  volumes: {
+    '125': 59.9,
+    '250': 89.9,
+    '500': 129.0
+  }
+};
+
 const categoryFallbackKeys = [
   'categoryLimited',
   'categoryRoom',
@@ -3284,12 +3417,31 @@ const initTitles = () => {
   }
 };
 
+const updateDiffuserPrice = () => {
+  const volumeSelect = document.querySelector('[data-diffuser-volume]');
+  const priceEl = document.querySelector('[data-diffuser-price]');
+  if (!volumeSelect || !priceEl) return;
+  const selectedVolume = volumeSelect.value;
+  const price = diffuserPricing.volumes[selectedVolume];
+  if (typeof price === 'number') {
+    priceEl.textContent = `${diffuserPricing.baseCurrency} ${price.toFixed(2)}`;
+  }
+};
+
+const initDiffuserConfigurator = () => {
+  const volumeSelect = document.querySelector('[data-diffuser-volume]');
+  if (!volumeSelect) return;
+  volumeSelect.addEventListener('change', updateDiffuserPrice);
+  updateDiffuserPrice();
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
   initTitles();
   initLanguageSwitcher();
   initScrollButtons();
   initHeader();
+  initDiffuserConfigurator();
   initCart();
   initContactForm();
 });

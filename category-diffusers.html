@@ -118,32 +118,50 @@
         <h2 data-i18n="categoryDiffusers.products.title">Kurze Lieferzeiten, lange Wirkung</h2>
       </div>
       <div class="products__grid">
-        <article class="product-card">
-          <img src="assets/img/placeholder-6.svg" alt="Urban Calm" loading="lazy">
-          <h3 data-i18n="categoryDiffusers.products.card1.name">Reeddiffusor "Urban Calm" 200 ml</h3>
-          <p data-i18n="categoryDiffusers.products.card1.description">Vetiver, Bergamotte und Kakao. Ideal für Lobbys und Private Spas.</p>
-          <span class="product-card__price" data-i18n="categoryDiffusers.products.card1.price">CHF 59.90</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-1.svg" alt="Atlas Cedar" loading="lazy">
-          <h3 data-i18n="categoryDiffusers.products.card2.name">Diffusor "Atlas Cedar" 500 ml</h3>
-          <p data-i18n="categoryDiffusers.products.card2.description">Zedernholz, Weihrauch und schwarze Johannisbeere für Statement-Suiten.</p>
-          <span class="product-card__price" data-i18n="categoryDiffusers.products.card2.price">CHF 98.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-2.svg" alt="Lumen" loading="lazy">
-          <h3 data-i18n="categoryDiffusers.products.card3.name">Diffusor "Lumen" 1L</h3>
-          <p data-i18n="categoryDiffusers.products.card3.description">Orangenblüte, Neroli und weißer Moschus für großflächige Showrooms.</p>
-          <span class="product-card__price" data-i18n="categoryDiffusers.products.card3.price">CHF 149.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-3.svg" alt="Monumental" loading="lazy">
-          <h3 data-i18n="categoryDiffusers.products.card4.name">Diffusor "Monumental" 2.5L</h3>
-          <p data-i18n="categoryDiffusers.products.card4.description">Patchouli, Amber und Zeder in übergroßen Gefäßen für Hotel-Lobbys.</p>
-          <span class="product-card__price" data-i18n="categoryDiffusers.products.card4.price">CHF 249.00</span>
+        <article class="product-card product-card--configurable" data-diffuser-card>
+          <img src="https://github.com/evgenss79/BV_img/blob/main/Mikado-category.jpg?raw=true" alt="Aroma-Diffusor Signature Line" loading="lazy">
+          <h3 data-i18n="categoryDiffusers.products.configurable.name">Aroma-Diffusor Signature Line</h3>
+          <p data-i18n="categoryDiffusers.products.configurable.description">Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.</p>
+          <div class="product-card__options">
+            <label class="product-card__label">
+              <span data-i18n="categoryDiffusers.products.configurable.volumeLabel">Volumen wählen</span>
+              <select data-diffuser-volume>
+                <option value="125" data-i18n="categoryDiffusers.products.configurable.volume125">125 ml</option>
+                <option value="250" data-i18n="categoryDiffusers.products.configurable.volume250">250 ml</option>
+                <option value="500" data-i18n="categoryDiffusers.products.configurable.volume500">500 ml</option>
+              </select>
+            </label>
+            <label class="product-card__label">
+              <span data-i18n="categoryDiffusers.products.configurable.scentLabel">Duft auswählen</span>
+              <select data-diffuser-scent>
+                <option value="Africa" data-i18n="diffusers.scents.africa">Africa</option>
+                <option value="Bamboo" data-i18n="diffusers.scents.bamboo">Bamboo</option>
+                <option value="Bellini" data-i18n="diffusers.scents.bellini">Bellini</option>
+                <option value="Blanc" data-i18n="diffusers.scents.blanc">Blanc</option>
+                <option value="Carolina" data-i18n="diffusers.scents.carolina">Carolina</option>
+                <option value="Cherry Blossom" data-i18n="diffusers.scents.cherry_blossom">Cherry Blossom</option>
+                <option value="Christmas Tree" data-i18n="diffusers.scents.christmas_tree">Christmas Tree</option>
+                <option value="Etna" data-i18n="diffusers.scents.etna">Etna</option>
+                <option value="Dubai" data-i18n="diffusers.scents.dubai">Dubai</option>
+                <option value="Dune" data-i18n="diffusers.scents.dune">Dune</option>
+                <option value="Eden" data-i18n="diffusers.scents.eden">Eden</option>
+                <option value="Fleur" data-i18n="diffusers.scents.fleur">Fleur</option>
+                <option value="Green Mango" data-i18n="diffusers.scents.green_mango">Green Mango</option>
+                <option value="Lime Basil" data-i18n="diffusers.scents.lime_basil">Lime Basil</option>
+                <option value="Rosso" data-i18n="diffusers.scents.rosso">Rosso</option>
+                <option value="Salted Caramel" data-i18n="diffusers.scents.salted_caramel">Salted Caramel</option>
+                <option value="Salty Water" data-i18n="diffusers.scents.salty_water">Salty Water</option>
+                <option value="Santal" data-i18n="diffusers.scents.santal">Santal</option>
+                <option value="Sugar" data-i18n="diffusers.scents.sugar">Sugar</option>
+                <option value="Tobacco Vanilla" data-i18n="diffusers.scents.tobacco_vanilla">Tobacco Vanilla</option>
+                <option value="Valencia" data-i18n="diffusers.scents.valencia">Valencia</option>
+              </select>
+            </label>
+          </div>
+          <p class="product-card__price">
+            <span data-i18n="categoryDiffusers.products.configurable.priceLabel">Preis:</span>
+            <span data-diffuser-price>CHF 59.90</span>
+          </p>
           <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
       </div>
