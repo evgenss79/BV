@@ -75,19 +75,75 @@
 
 
   <main>
-    <section class="page-hero page-hero--category">
-      <div class="page-hero__text">
-        <p class="page-hero__label" data-i18n="categoryCar.hero.label">On-the-go Scent</p>
-        <h1 data-i18n="categoryCar.hero.title">Autoparfums für jede Fahrt</h1>
-        <p data-i18n="categoryCar.hero.subtitle">Clips, Kapseln und Sprays sorgen für konstante Duftbegleitung.</p>
-        <p data-i18n="categoryCar.hero.text">Luftstrom-optimierte Designs verteilen Duft gleichmäßig ohne Rückstände.</p>
-        <div class="hero__actions">
-          <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCar.hero.button">Kollektion bestellen</a>
-          <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCar.hero.secondary">Weitere Kategorien</a>
+    <section class="page-hero page-hero--car">
+      <div class="page-hero__layout">
+        <div class="page-hero__text">
+          <p class="page-hero__label" data-i18n="categoryCar.hero.label">On-the-go Scent</p>
+          <h1 data-i18n="categoryCar.hero.title">Autoparfums für jede Fahrt</h1>
+          <p data-i18n="categoryCar.hero.subtitle">Clips, Kapseln und Sprays sorgen für konstante Duftbegleitung.</p>
+          <p data-i18n="categoryCar.hero.text">Luftstrom-optimierte Designs verteilen Duft gleichmäßig ohne Rückstände.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCar.hero.button">Kollektion bestellen</a>
+            <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCar.hero.secondary">Weitere Kategorien</a>
+          </div>
         </div>
+
+        <article class="product-card product-card--car" data-car-card>
+          <img
+            data-car-image
+            src="https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true"
+            alt="Car Fragrance"
+            loading="lazy"
+            class="product-card__image"
+          >
+          <div>
+            <p class="product-card__eyebrow" data-i18n="categoryCar.products.label">Kollektion</p>
+            <h3 data-i18n="car.product.title">Autoparfum Capsule System</h3>
+            <p class="product-card__scent-description" data-car-scent-description></p>
+          </div>
+
+          <div class="product-card__options">
+            <label class="product-card__field">
+              <span data-i18n="car.options.scentLabel">Duft</span>
+              <select data-car-scent>
+                <option value="none" data-i18n="car.scents.none">No fragrance</option>
+                <option value="Africa" data-i18n="car.scents.africa">Africa</option>
+                <option value="Bamboo" data-i18n="car.scents.bamboo">Bamboo</option>
+                <option value="Bellini" data-i18n="car.scents.bellini">Bellini</option>
+                <option value="Blanc" data-i18n="car.scents.blanc">Blanc</option>
+                <option value="Carolina" data-i18n="car.scents.carolina">Carolina</option>
+                <option value="Cherry Blossom" data-i18n="car.scents.cherry_blossom">Cherry Blossom</option>
+                <option value="Christmas Tree" data-i18n="car.scents.christmas_tree">Christmas Tree</option>
+                <option value="Etna" data-i18n="car.scents.etna">Etna</option>
+                <option value="Dubai" data-i18n="car.scents.dubai">Dubai</option>
+                <option value="Dune" data-i18n="car.scents.dune">Dune</option>
+                <option value="Eden" data-i18n="car.scents.eden">Eden</option>
+                <option value="Fleur" data-i18n="car.scents.fleur">Fleur</option>
+                <option value="Green Mango" data-i18n="car.scents.green_mango">Green Mango</option>
+                <option value="Lime Basil" data-i18n="car.scents.lime_basil">Lime Basil</option>
+                <option value="Rosso" data-i18n="car.scents.rosso">Rosso</option>
+                <option value="Salted Caramel" data-i18n="car.scents.salted_caramel">Salted Caramel</option>
+                <option value="Salty Water" data-i18n="car.scents.salty_water">Salty Water</option>
+                <option value="Santal" data-i18n="car.scents.santal">Santal</option>
+                <option value="Sugar" data-i18n="car.scents.sugar">Sugar</option>
+                <option value="Tobacco Vanilla" data-i18n="car.scents.tobacco_vanilla">Tobacco Vanilla</option>
+                <option value="Valencia" data-i18n="car.scents.valencia">Valencia</option>
+              </select>
+            </label>
+          </div>
+
+          <p class="product-card__scent-description" data-car-scent-description></p>
+
+          <div class="product-card__meta">
+            <span class="product-card__price-label" data-i18n="car.product.priceLabel">Preis</span>
+            <span class="product-card__price" data-car-price>CHF 12.90</span>
+          </div>
+
+          <button class="btn btn--gold" data-add-to-cart data-i18n="car.product.cta">In den Warenkorb</button>
+        </article>
       </div>
       <div class="page-hero__media">
-        <img src="assets/img/placeholder-4.svg" alt="Autoparfum" loading="lazy">
+        <img src="https://github.com/evgenss79/BV_img/blob/main/AutoParf.jpg?raw=true" alt="Auto Parfume" loading="lazy">
       </div>
     </section>
 
@@ -108,43 +164,6 @@
         <article>
           <h3 data-i18n="categoryCar.highlights.item3.title">Travel Sprays</h3>
           <p data-i18n="categoryCar.highlights.item3.description">50-ml-Flakons passen ins Handschuhfach und sind TSA-konform.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="products products--listing">
-      <div class="section-heading">
-        <p class="section-heading__label" data-i18n="categoryCar.products.label">Kollektion</p>
-        <h2 data-i18n="categoryCar.products.title">Duftlösungen fürs Auto</h2>
-      </div>
-      <div class="products__grid">
-        <article class="product-card">
-          <img src="assets/img/placeholder-3.svg" alt="Produktvisualisierung" loading="lazy">
-          <h3 data-i18n="categoryCar.products.card1.name">Car Clip "Nomad Drive"</h3>
-          <p data-i18n="categoryCar.products.card1.description">Zedernholz, Grapefruit und Leder sorgen für klare Eleganz.</p>
-          <span class="product-card__price" data-i18n="categoryCar.products.card1.price">CHF 29.50</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-5.svg" alt="Produktvisualisierung" loading="lazy">
-          <h3 data-i18n="categoryCar.products.card2.name">Refill Pack "Amber Ride"</h3>
-          <p data-i18n="categoryCar.products.card2.description">Drei Kapseln mit Amber, Vanille und Tonkabohne – easy to swap.</p>
-          <span class="product-card__price" data-i18n="categoryCar.products.card2.price">CHF 24.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-1.svg" alt="Produktvisualisierung" loading="lazy">
-          <h3 data-i18n="categoryCar.products.card3.name">Vent Diffuser "Urban Route"</h3>
-          <p data-i18n="categoryCar.products.card3.description">Mattschwarzer Clip mit Bronzeakzent und regulierbarem Luftstrom.</p>
-          <span class="product-card__price" data-i18n="categoryCar.products.card3.price">CHF 45.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
-        </article>
-        <article class="product-card">
-          <img src="assets/img/placeholder-6.svg" alt="Produktvisualisierung" loading="lazy">
-          <h3 data-i18n="categoryCar.products.card4.name">Travel Spray "Highway Bloom"</h3>
-          <p data-i18n="categoryCar.products.card4.description">Orangenblüte, Jasmin und Moschus begleiten City-Trips.</p>
-          <span class="product-card__price" data-i18n="categoryCar.products.card4.price">CHF 32.00</span>
-          <button class="btn btn--gold" data-add-to-cart data-i18n="index.products.button">In den Warenkorb</button>
         </article>
       </div>
     </section>

@@ -499,7 +499,22 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Aroma-Diffusoren für charaktervolle Räume'
+      },
+      product: {
+        title: 'Aroma-Diffusoren Signature Line',
+        description:
+          'Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.',
+        priceLabel: 'Preis',
+        cta: 'In den Warenkorb'
+      },
+      options: {
+        volumeLabel: 'Volumen',
+        scentLabel: 'Duft'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -521,9 +536,102 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'Mehr lesen',
+        toggleLess: 'Weniger anzeigen'
       }
     },
-    categoryCandles: {
+    candles: {
+      product: {
+        title: 'Duftkerzen Signature Line',
+        description:
+          'Wählen Sie zwischen 160 ml und 500 ml Gefäßen und kombinieren Sie Signature-Düfte. Handgegossene Wachsblends in Keramik.',
+        priceLabel: 'Preis',
+        cta: 'In den Warenkorb'
+      },
+      options: {
+        volumeLabel: 'Volumen',
+        scentLabel: 'Duft'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla'
+      }
+    },
+    car: {
+      product: {
+        title: 'Autoparfum Capsule System',
+        description: 'Konfigurieren Sie Clip, Refills oder Travel Spray und wählen Sie den passenden Duft.',
+        priceLabel: 'Preis',
+        cta: 'In den Warenkorb'
+      },
+      options: {
+        volumeLabel: 'Format',
+        scentLabel: 'Duft',
+        clip: 'Clip + Magnet',
+        refill: 'Capsule Refill',
+        vent: 'Vent Diffuser',
+        spray: 'Travel Spray'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+    }
+  },
+  categoryCandles: {
       hero: {
         label: 'Ceremonial Edition',
         title: 'Duftkerzen mit architektonischen Gefäßen',
@@ -1411,7 +1519,22 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Diffuseurs pour espaces de caractère'
+      },
+      product: {
+        title: 'Diffuseur Signature',
+        description:
+          'Configurez volume et fragrance parmi 21 compositions maison. Verre soufflé à la main et bâtonnets italiens interchangeables.',
+        priceLabel: 'Prix',
+        cta: 'Ajouter au panier'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragrance'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -1433,9 +1556,102 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'En savoir plus',
+        toggleLess: 'Réduire'
       }
     },
-    categoryCandles: {
+    candles: {
+      product: {
+        title: 'Bougies parfumées Signature Line',
+        description:
+          'Choisissez entre 160 ml et 500 ml et associez-les à nos parfums signature. Cires coulées à la main dans des contenants en céramique.',
+        priceLabel: 'Prix',
+        cta: 'Ajouter au panier'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Parfum'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla'
+      }
+    },
+    car: {
+      product: {
+        title: 'Système Autoparfum Capsule',
+        description: 'Configurez clip, recharges ou spray de voyage et associez votre parfum préféré.',
+        priceLabel: 'Prix',
+        cta: 'Ajouter au panier'
+      },
+      options: {
+        volumeLabel: 'Format',
+        scentLabel: 'Parfum',
+        clip: 'Clip + aimant',
+        refill: 'Recharge capsule',
+        vent: 'Diffuseur d’aération',
+        spray: 'Spray de voyage'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+    }
+  },
+  categoryCandles: {
       hero: {
         label: 'Édition cérémonielle',
         title: 'Bougies aux contenants architecturaux',
@@ -2082,7 +2298,22 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Diffusori per ambienti di carattere'
+      },
+      product: {
+        title: 'Diffusore Signature',
+        description:
+          'Configura volume e fragranza tra 21 composizioni iconiche. Vetro lavorato a mano e bastoncini intercambiabili.',
+        priceLabel: 'Prezzo',
+        cta: 'Aggiungi al carrello'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragranza'
+      },
       scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -2104,9 +2335,102 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'Mostra di più',
+        toggleLess: 'Mostra meno'
       }
     },
-    categoryCandles: {
+    candles: {
+      product: {
+        title: 'Candele profumate Signature Line',
+        description:
+          'Scegli tra formati da 160 ml e 500 ml e abbinali alle fragranze Signature. Cere colate a mano in vasi in ceramica.',
+        priceLabel: 'Prezzo',
+        cta: 'Aggiungi al carrello'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragranza'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla'
+      }
+    },
+    car: {
+      product: {
+        title: 'Sistema Autoparfum Capsule',
+        description: 'Configura clip, refill o travel spray e abbinali alla fragranza preferita.',
+        priceLabel: 'Prezzo',
+        cta: 'Aggiungi al carrello'
+      },
+      options: {
+        volumeLabel: 'Formato',
+        scentLabel: 'Fragranza',
+        clip: 'Clip + magnete',
+        refill: 'Capsule refill',
+        vent: 'Diffusore bocchetta',
+        spray: 'Travel spray'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+    }
+  },
+  categoryCandles: {
       hero: {
         label: 'Edizione cerimoniale',
         title: 'Candele con contenitori architettonici',
@@ -2753,7 +3077,114 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'AROMA DIFFUSERS (REED)'
+      },
+      product: {
+        title: 'Signature reed diffuser',
+        description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
+        priceLabel: 'Price',
+        cta: 'Add to cart'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragrance'
+      },
       scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        etna: 'Etna',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla',
+        valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'Read more',
+        toggleLess: 'Collapse'
+      }
+    },
+    candles: {
+      product: {
+        title: 'Signature aroma candles',
+        description:
+          'Choose 160 ml or 500 ml vessels and pair them with Signature scents. Hand-poured wax blends in ceramic jars.',
+        priceLabel: 'Price',
+        cta: 'Add to cart'
+      },
+      options: {
+        volumeLabel: 'Volume',
+        scentLabel: 'Fragrance'
+      },
+      scents: {
+        none: 'No fragrance',
+        africa: 'Africa',
+        bamboo: 'Bamboo',
+        bellini: 'Bellini',
+        blanc: 'Blanc',
+        carolina: 'Carolina',
+        cherry_blossom: 'Cherry Blossom',
+        christmas_tree: 'Christmas Tree',
+        dubai: 'Dubai',
+        dune: 'Dune',
+        eden: 'Eden',
+        fleur: 'Fleur',
+        green_mango: 'Green Mango',
+        lime_basil: 'Lime Basil',
+        rosso: 'Rosso',
+        salted_caramel: 'Salted Caramel',
+        salty_water: 'Salty Water',
+        santal: 'Santal',
+        sugar: 'Sugar',
+        tobacco_vanilla: 'Tobacco Vanilla'
+      }
+    },
+    car: {
+      product: {
+        title: 'Autoparfum capsule system',
+        description: 'Configure clips, refills or travel spray and pair them with your preferred scent.',
+        priceLabel: 'Price',
+        cta: 'Add to cart'
+      },
+      options: {
+        volumeLabel: 'Format',
+        scentLabel: 'Fragrance',
+        clip: 'Clip + magnet',
+        refill: 'Capsule refill',
+        vent: 'Vent diffuser',
+        spray: 'Travel spray'
+      },
+      scents: {
+        none: 'No fragrance',
         africa: 'Africa',
         bamboo: 'Bamboo',
         bellini: 'Bellini',
@@ -3197,11 +3628,319 @@ const translations = {
 const diffuserPricing = {
   baseCurrency: 'CHF',
   volumes: {
-    '125': 59.9,
-    '250': 89.9,
-    '500': 129.0
+    '125': 20.9,
+    '250': 29.9,
+    '500': 50.9
   }
 };
+
+const candlesPricing = {
+  baseCurrency: 'CHF',
+  volumes: {
+    '160': 19.9,
+    '500': 41.9
+  }
+};
+
+const diffuserImageBaseUrl = 'https://github.com/evgenss79/BV_img/blob/main/';
+const diffuserImageSuffix = '.jpg?raw=true';
+const diffuserDefaultImage = `${diffuserImageBaseUrl}Mikado-category${diffuserImageSuffix}`;
+const diffuserHeroImages = [
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/Aroma%20diffusers_category.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7321.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7348.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7560.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7565.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7600.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7629.jpg?raw=true'
+];
+
+const diffuserScentDescriptions = {
+  none: {
+    de: 'Wählen Sie einen Duft, um die Stimmung Ihres Raums zu gestalten.',
+    fr: 'Choisissez un parfum pour modeler l’ambiance de votre intérieur.',
+    it: 'Scegli una fragranza per definire l’atmosfera dei tuoi ambienti.',
+    en: 'Choose a fragrance to tailor the mood of your room.'
+  },
+  Africa: {
+    de: 'Glühender Amber, Kakaoschalen und Wüstengewürze hüllen den Raum in Sonnenuntergangswärme.',
+    fr: 'Ambre incandescent, coque de cacao et épices du désert enveloppent la pièce d’une chaleur crépusculaire.',
+    it: 'Ambra ardente, guscio di cacao e spezie del deserto avvolgono l’ambiente in un calore da tramonto.',
+    en: 'Glowing amber, cacao husk and desert spices wrap the space in sunset warmth.'
+  },
+  Bamboo: {
+    de: 'Zerstoßene Bambusblätter, wässrige Blüten und mineralischer Moschus halten die Luft klar und ruhig.',
+    fr: 'Feuilles de bambou écrasées, fleurs aquatiques et musc minéral maintiennent l’air clair et serein.',
+    it: 'Foglie di bambù pestate, fiori acquatici e muschio minerale mantengono l’aria limpida e calma.',
+    en: 'Crushed bamboo leaves, watery florals and mineral musk keep the air bright and calm.'
+  },
+  Bellini: {
+    de: 'Spritziger Pfirsichnektar, Jasminblüten und kühler Prosecco fangen die Aperitivo-Stunde ein.',
+    fr: 'Nectar de pêche pétillant, pétales de jasmin et prosecco frais évoquent l’heure de l’apéritif.',
+    it: 'Nettare di pesca frizzante, petali di gelsomino e prosecco ghiacciato raccontano l’ora dell’aperitivo.',
+    en: 'Sparkling peach nectar, jasmine petals and chilled prosecco capture aperitivo hour.'
+  },
+  Blanc: {
+    de: 'Gepresste Baumwolle, weißer Moschus und pudrige Iris lassen Räume frisch eingekleidet wirken.',
+    fr: 'Coton repassé, musc blanc et iris poudré donnent l’impression d’une pièce fraîchement habillée.',
+    it: 'Cotone appena stirato, muschio bianco e iris cipriato fanno sembrare gli ambienti appena vestiti.',
+    en: 'Pressed cotton, white musk and powdery iris make rooms feel freshly dressed.'
+  },
+  Carolina: {
+    de: 'Magnolie, cremige Gardenie und helle Hölzer zeichnen einen eleganten südlichen Charme.',
+    fr: 'Magnolia, gardénia crémeux et bois clairs composent un charme méridional élégant.',
+    it: 'Magnolia, gardenia cremosa e legni chiari ricreano un raffinato fascino del Sud.',
+    en: 'Magnolia bloom, creamy gardenia and blonde woods create a refined Southern charm.'
+  },
+  'Cherry Blossom': {
+    de: 'Rosafarbene Kirschblüten, Mandarinenzesten und luftiger Moschus flüstern wie Frühlingsbalkone.',
+    fr: 'Pétales de cerisier roses, zeste de mandarine et musc aérien murmurent comme des balcons printaniers.',
+    it: 'Petali di ciliegio rosa, scorza di mandarino e muschio arioso sussurrano come balconi di primavera.',
+    en: 'Pink cherry petals, mandarin zest and airy musk whisper like spring balconies.'
+  },
+  'Christmas Tree': {
+    de: 'Blaufichte, Balsamharz und kühler Tannensaft bringen alpine Feiertagsklarheit.',
+    fr: 'Épinette bleue, résine de baume et sève de pin fraîche apportent une clarté alpine de fêtes.',
+    it: 'Abete blu, resina di balsamo e linfa fresca portano un nitore alpino natalizio.',
+    en: 'Blue spruce needles, balsam resin and cool pine sap bring alpine holiday clarity.'
+  },
+  Etna: {
+    de: 'Geräucherte Zitrusschalen, vulkanische Kräuter und dunkle Sande verleihen eine dramatische Mineralität.',
+    fr: 'Écorces d’agrumes fumées, herbes volcaniques et sables sombres livrent une minéralité dramatique.',
+    it: 'Scorze agrumate affumicate, erbe vulcaniche e sabbie scure regalano una mineralità drammatica.',
+    en: 'Smoked citrus peel, volcanic herbs and black sand woods deliver a dramatic mineral trail.'
+  },
+  Dubai: {
+    de: 'Rosenabsolue, Safranfäden und Oudharz inszenieren die Atmosphäre eines glamourösen Majlis.',
+    fr: 'Absolue de rose, filaments de safran et résine d’oud mettent en scène une ambiance de majlis glamour.',
+    it: 'Assoluta di rosa, fili di zafferano e resina di oud creano l’atmosfera di un majlis glamour.',
+    en: 'Rose absolute, saffron threads and oud resin stage a glamorous majlis vibe.'
+  },
+  Dune: {
+    de: 'Sonniger Sand, Nerolibrise und helle Hölzer erschaffen die Ruhe einer Küstendüne.',
+    fr: 'Sable ensoleillé, brise de néroli et bois clairs recréent le calme d’une dune côtière.',
+    it: 'Sabbia assolata, brezza al neroli e legni chiari ricreano la quiete di una duna costiera.',
+    en: 'Sunlit sand, neroli breeze and pale woods recreate a calm coastal dune.'
+  },
+  Eden: {
+    de: 'Üppige Feigenblätter, taufrische Grüns und seidiger Moschus wirken wie ein beschattetes Gewächshaus.',
+    fr: 'Feuilles de figuier luxuriantes, verts perlés de rosée et musc soyeux évoquent une serre ombragée.',
+    it: 'Foglie di fico rigogliose, verdi rugiadosi e muschio setoso evocano una serra ombreggiata.',
+    en: 'Lush fig leaves, dew-soaked greens and silky musk feel like a shaded greenhouse.'
+  },
+  Fleur: {
+    de: 'Weiche Pfingstrosen, Freesien und ambrierter Moschus malen einen modernen Blütenstrauß.',
+    fr: 'Pivoines soyeuses, freesias et musc ambré composent un bouquet floral contemporain.',
+    it: 'Peonie soffici, fresie e muschio ambrato dipingono un bouquet floreale contemporaneo.',
+    en: 'Soft peonies, freesia and ambered musk paint a contemporary floral bouquet.'
+  },
+  'Green Mango': {
+    de: 'Saftige grüne Mango, Kaffirlimette und kühle Minze bringen tropische Frische in Lofts.',
+    fr: 'Mangue verte juteuse, citron kaffir et menthe fraîche insufflent une fraîcheur tropicale.',
+    it: 'Mango verde succosa, lime kaffir e menta ghiacciata donano una brezza tropicale.',
+    en: 'Juicy green mango, kaffir lime and icy mint refresh lofts with tropical breeze.'
+  },
+  'Lime Basil': {
+    de: 'Aufgebrochener Basilikum, persische Limette und Vetiverwurzeln beleben Küchen und Studios.',
+    fr: 'Basilic froissé, lime perse et racines de vétiver dynamisent cuisines et studios.',
+    it: 'Basilico spezzato, lime persiano e radici di vetiver ravvivano cucine e studi.',
+    en: 'Cracked basil, Persian lime and vetiver roots energise kitchens and studios.'
+  },
+  Rosso: {
+    de: 'Rubinrote Beeren, Johannisbeerblatt und Kaschmirholz verleihen eine kühne Galerieausstrahlung.',
+    fr: 'Baies rubis, feuille de cassis et bois de cachemire offrent une aura de galerie audacieuse.',
+    it: 'Bacche rubino, foglie di ribes e legni cashmere donano un’aura da galleria decisa.',
+    en: 'Ruby berries, red currant leaf and cashmere woods add a bold gallery glow.'
+  },
+  'Salted Caramel': {
+    de: 'Goldenes Karamell, Fleur de Sel und geröstete Tonka machen Räume köstlich üppig.',
+    fr: 'Caramel doré, fleur de sel et fève tonka grillée rendent les espaces délicieusement gourmands.',
+    it: 'Caramello dorato, fleur de sel e tonka tostata rendono gli ambienti golosi e avvolgenti.',
+    en: 'Golden caramel ribbons, fleur de sel and toasted tonka make spaces indulgent.'
+  },
+  'Salty Water': {
+    de: 'Meeresgischt, weiße Algen und Treibholznebel schenken Räumen eine ruhige Küstenbrise.',
+    fr: 'Embruns marins, algues blanches et brume de bois flotté offrent une brise côtière apaisante.',
+    it: 'Schizzi marini, alghe bianche e nebbiolina di legni spiaggiati donano una brezza costiera calma.',
+    en: 'Sea spray accords, white algae and driftwood mist perfume rooms with shoreline calm.'
+  },
+  Santal: {
+    de: 'Cremiges Sandelholz, Iris-Suede und Weihrauchrauch verleihen meditative Tiefe.',
+    fr: 'Santal crémeux, daim à l’iris et fumée d’encens apportent une profondeur méditative.',
+    it: 'Sandalo cremoso, suede all’iris e fumo d’incenso aggiungono una profondità meditativa.',
+    en: 'Creamy sandalwood, iris suede and incense smoke add a meditative depth.'
+  },
+  Sugar: {
+    de: 'Kandierte Veilchen, gezogener Zucker und sanfter Moschus versüßen selbst minimalistische Interiors.',
+    fr: 'Violettes confites, sucre filé et musc doux adoucissent même les intérieurs minimalistes.',
+    it: 'Viole candite, zucchero filato e muschio morbido addolciscono anche gli interni minimalisti.',
+    en: 'Candied violet, spun sugar and soft musk sweeten even minimalist interiors.'
+  },
+  'Tobacco Vanilla': {
+    de: 'Pfeifentabak, Bourbon-Vanille und verkohlte Zeder machen Lounges zu samtigen Salons.',
+    fr: 'Tabac de pipe, vanille bourbon et cèdre brûlé transforment les salons en boudoirs veloutés.',
+    it: 'Tabacco da pipa, vaniglia bourbon e cedro bruciato trasformano il salotto in un boudoir vellutato.',
+    en: 'Pipe tobacco, bourbon vanilla and charred cedar turn lounges into plush salons.'
+  },
+  Valencia: {
+    de: 'Sonnengereifte Orangen, Neroliblüte und warme Hölzer erinnern an eine mediterrane Terrasse.',
+    fr: 'Oranges mûries au soleil, fleur de néroli et bois chauds évoquent une terrasse méditerranéenne.',
+    it: 'Arance maturate al sole, fiore di neroli e legni caldi ricordano un patio mediterraneo.',
+    en: 'Sun-ripe oranges, neroli blossom and warm woods feel like a Mediterranean patio.'
+  }
+};
+const candlesImageBaseUrl = diffuserImageBaseUrl;
+const candlesImageSuffix = diffuserImageSuffix;
+const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
+
+const carImageBaseUrl = diffuserImageBaseUrl;
+const carImageSuffix = diffuserImageSuffix;
+const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
+const carParfumPrice = 12.9;
+const carPriceCurrency = 'CHF';
+const carScentDescriptions = {
+  none: {
+    de: 'Wählen Sie einen Duft, um das Cockpit individuell zu aromatisieren.',
+    fr: 'Choisissez un parfum pour personnaliser l’atmosphère de l’habitacle.',
+    it: "Scegli un aroma per personalizzare l’atmosfera dell’abitacolo.",
+    en: 'Choose a fragrance to tailor the cockpit ambiance.'
+  },
+  Africa: {
+    de: 'Sonnengewärmte Gewürze und dunkles Holz verleihen dem Cockpit einen expressiven Charakter.',
+    fr: 'Des épices chauffées par le soleil et des bois sombres apportent une signature expressive à l’habitacle.',
+    it: 'Spezie scaldate dal sole e legni scuri trasformano l’abitacolo in un salotto deciso.',
+    en: 'Sun-warmed spices and dark woods turn the cabin into a bold lounge.'
+  },
+  Bamboo: {
+    de: 'Frisch geschnittenes Bambusgras und zarter Moschus bringen eine klare, luftige Stimmung.',
+    fr: 'Du bambou fraîchement coupé et un musc délicat apportent une sensation claire et aérienne.',
+    it: 'Bambù appena tagliato e muschio soffice creano un’atmosfera limpida e ariosa.',
+    en: 'Fresh-cut bamboo and soft musk lend a clear, airy attitude.'
+  },
+  Bellini: {
+    de: 'Spritzige Pfirsichblüten und feine Perlage erinnern an einen Aperitivo im Licht der Stadt.',
+    fr: 'Des fleurs de pêche pétillantes et une fine effervescence évoquent un apéritif urbain.',
+    it: 'Fiori di pesca frizzanti e una lieve effervescenza ricordano un aperitivo cittadino.',
+    en: 'Sparkling peach blossom and gentle effervescence echo a city aperitivo.'
+  },
+  Blanc: {
+    de: 'Kühl gebügelte Baumwolle und weißer Moschus lassen den Innenraum wie ein Atelier wirken.',
+    fr: 'Du coton fraîchement repassé et un musc blanc donnent une allure d’atelier lumineux.',
+    it: 'Cotone appena stirato e muschio bianco trasformano l’abitacolo in un atelier luminoso.',
+    en: 'Crisp cotton and white musk make the cabin feel like a sunlit atelier.'
+  },
+  Carolina: {
+    de: 'Magnolie, Jasmin und sanfter Amber zeichnen einen eleganten Boulevard-Duft.',
+    fr: 'Magnolia, jasmin et ambre doux dessinent un parfum élégant de boulevard.',
+    it: 'Magnolia, gelsomino e ambra morbida disegnano un profumo elegante da boulevard.',
+    en: 'Magnolia, jasmine and soft amber sketch an elegant boulevard trail.'
+  },
+  'Cherry Blossom': {
+    de: 'Seidige Kirschblüten mit einem Hauch von Mandarine lassen jede Fahrt poetisch wirken.',
+    fr: 'Des fleurs de cerisier soyeuses et une touche de mandarine rendent chaque trajet poétique.',
+    it: 'Fiori di ciliegio setosi e un tocco di mandarino rendono poetico ogni tragitto.',
+    en: 'Silky cherry blossom with a hint of mandarin makes every drive feel poetic.'
+  },
+  'Christmas Tree': {
+    de: 'Harziger Tannenbalsam und kühle Wacholdernadeln erinnern an alpine Feiertage.',
+    fr: 'Un baume de sapin résineux et des aiguilles de genévrier fraîches rappellent les fêtes alpines.',
+    it: 'Balsamo di abete resinoso e aghi di ginepro freschi richiamano feste alpine.',
+    en: 'Resinous fir balsam and cool juniper needles recall alpine holidays.'
+  },
+  Etna: {
+    de: 'Geräucherte Mineralien und pfeffrige Zitrusnoten erzeugen eine vulkanische Spannung.',
+    fr: 'Des minéraux fumés et des agrumes poivrés créent une tension volcanique.',
+    it: 'Minerali affumicati e agrumi pepati sprigionano una tensione vulcanica.',
+    en: 'Smoked minerals and peppered citrus bring volcanic tension.'
+  },
+  Dubai: {
+    de: 'Safran, Oud und warmer Bernstein verleihen dem Innenraum eine goldene Aura.',
+    fr: 'Safran, oud et ambre chaud enveloppent l’habitacle d’une aura dorée.',
+    it: 'Zafferano, oud e ambra calda avvolgono l’abitacolo in un’aura dorata.',
+    en: 'Saffron, oud and warm amber bathe the cabin in a gilded aura.'
+  },
+  Dune: {
+    de: 'Trockener Sand, Kaschmirholz und ein Hauch von Kardamom fluten den Raum mit Wüstenlicht.',
+    fr: 'Sable sec, bois de cachemire et pointe de cardamome baignent l’espace d’une lumière désertique.',
+    it: 'Sabbia secca, legno di cashmere e una punta di cardamomo illuminano con luce desertica.',
+    en: 'Dry sand, cashmere wood and a whisper of cardamom flood the cabin with desert light.'
+  },
+  Eden: {
+    de: 'Taufrische Blätter und cremige Gardenie zeichnen einen geheimen Garten entlang der Route.',
+    fr: 'Feuilles perlées de rosée et gardénia crémeux esquissent un jardin secret le long du trajet.',
+    it: 'Foglie rugiadose e gardenia cremosa delineano un giardino segreto lungo la rotta.',
+    en: 'Dewy leaves and creamy gardenia sketch a secret garden along the route.'
+  },
+  Fleur: {
+    de: 'Ein samtiges Bouquet aus Pfingstrose und pudrigem Moschus sorgt für zurückhaltende Eleganz.',
+    fr: 'Un bouquet velouté de pivoine et de musc poudré offre une élégance discrète.',
+    it: 'Un bouquet vellutato di peonia e muschio cipriato offre un’eleganza discreta.',
+    en: 'A velvety bouquet of peony and powdery musk delivers understated elegance.'
+  },
+  'Green Mango': {
+    de: 'Saftige Mango, Limette und grüne Blätter beleben das Cockpit mit tropischer Energie.',
+    fr: 'Mangue juteuse, citron vert et feuilles vertes insufflent une énergie tropicale à l’habitacle.',
+    it: 'Mango succosa, lime e foglie verdi animano l’abitacolo con energia tropicale.',
+    en: 'Juicy mango, lime and green leaves energise the cabin with tropical lift.'
+  },
+  'Lime Basil': {
+    de: 'Limettenschalen und frisches Basilikum erzeugen einen klaren, kulinarischen Duft.',
+    fr: 'Écorces de citron vert et basilic frais composent un parfum clair et culinaire.',
+    it: 'Scorze di lime e basilico fresco creano un profumo nitido e culinario.',
+    en: 'Lime peel and fresh basil compose a crisp, culinary scent.'
+  },
+  Rosso: {
+    de: 'Reife rote Beeren, Granatapfel und feiner Patchouli wirken wie ein samtiger Schal.',
+    fr: 'Baies rouges mûres, grenade et patchouli délicat agissent comme une écharpe de velours.',
+    it: 'Bacche rosse mature, melograno e patchouli delicato avvolgono come una sciarpa di velluto.',
+    en: 'Ripe red berries, pomegranate and delicate patchouli drape like a velvet scarf.'
+  },
+  'Salted Caramel': {
+    de: 'Butterkaramell mit Fleur de Sel und cremiger Vanille sorgt für gourmandigen Komfort.',
+    fr: 'Caramel au beurre, fleur de sel et vanille crémeuse apportent un confort gourmand.',
+    it: 'Caramello al burro, fleur de sel e vaniglia cremosa regalano un comfort goloso.',
+    en: 'Buttery caramel, fleur de sel and creamy vanilla deliver gourmand comfort.'
+  },
+  'Salty Water': {
+    de: 'Atlantik-Spray, Treibholz und mineralische Moschusnoten wirken wie eine frische Meeresbrise.',
+    fr: 'Brume atlantique, bois flotté et muscs minéraux évoquent une brise marine fraîche.',
+    it: 'Spray atlantico, legno levigato e muschi minerali evocano una fresca brezza marina.',
+    en: 'Atlantic spray, driftwood and mineral musks feel like a fresh sea breeze.'
+  },
+  Santal: {
+    de: 'Cremiges Sandelholz, Iris und Tonkabohne verleihen dem Interieur eine ruhige Textur.',
+    fr: 'Santal crémeux, iris et fève tonka apportent une texture calme à l’intérieur.',
+    it: 'Sandalo cremoso, iris e fava tonka donano all’abitacolo una texture pacata.',
+    en: 'Creamy sandalwood, iris and tonka bean lend the cabin a calm texture.'
+  },
+  Sugar: {
+    de: 'Kristalline Zuckerblüten und weißer Moschus wirken leicht, aber süchtig machend.',
+    fr: 'Fleurs de sucre cristallines et musc blanc sont légers mais addictifs.',
+    it: 'Fiori di zucchero cristallini e muschio bianco risultano leggeri ma avvolgenti.',
+    en: 'Crystalline sugar blossoms and white musk feel weightless yet addictive.'
+  },
+  'Tobacco Vanilla': {
+    de: 'Tabakblätter, Kakao und reichhaltige Vanille schaffen einen luxuriösen Lounge-Akzent.',
+    fr: 'Feuilles de tabac, cacao et vanille riche composent un accent lounge luxueux.',
+    it: 'Foglie di tabacco, cacao e vaniglia ricca creano un accento lounge di lusso.',
+    en: 'Tobacco leaf, cocoa and rich vanilla craft a luxurious lounge accent.'
+  },
+  Valencia: {
+    de: 'Bergamotte, süße Orange und Neroli erinnern an sonnengeküsste Boulevards.',
+    fr: 'Bergamote, orange douce et néroli évoquent des boulevards baignés de soleil.',
+    it: 'Bergamotto, arancia dolce e neroli richiamano boulevard baciati dal sole.',
+    en: 'Bergamot, sweet orange and neroli recall sun-drenched boulevards.'
+  }
+};
+
+let candleVolumeSelect;
+let candlePriceElement;
+let candleScentSelect;
+let candleImageElement;
+let carPriceElement;
+let carScentSelect;
+let carImageElement;
+let carScentDescriptionElement;
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -3223,9 +3962,22 @@ const categoryFallbackKeys = [
 
 const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
+let diffuserDescriptionWrapper;
+let diffuserDescriptionToggle;
 
 const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
+};
+
+const updateDiffuserDescriptionToggleLabel = () => {
+  if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
+  const isCollapsed = diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed');
+  const translationKey = isCollapsed ? 'diffusers.copy.toggleMore' : 'diffusers.copy.toggleLess';
+  const translation = resolveTranslation(currentLang, translationKey);
+  if (translation) {
+    diffuserDescriptionToggle.textContent = translation;
+  }
+  diffuserDescriptionToggle.setAttribute('aria-expanded', (!isCollapsed).toString());
 };
 
 const applyTranslations = () => {
@@ -3243,6 +3995,9 @@ const applyTranslations = () => {
   });
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
+  updateCarScentDescription();
+  updateDiffuserScentDescription();
+  updateDiffuserDescriptionToggleLabel();
 };
 
 const setActiveLangButton = () => {
@@ -3417,6 +4172,39 @@ const initTitles = () => {
   }
 };
 
+const initDiffuserHeroSlider = () => {
+  const heroImg = document.querySelector('[data-diffuser-hero-slider]');
+  if (!heroImg || diffuserHeroImages.length < 2) {
+    return;
+  }
+  let currentIndex = 0;
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % diffuserHeroImages.length;
+    heroImg.src = diffuserHeroImages[currentIndex];
+  }, 1600);
+};
+
+const initDiffusersDescriptionToggle = () => {
+  diffuserDescriptionWrapper = document.querySelector('[data-diffusers-description-wrapper]');
+  diffuserDescriptionToggle = document.querySelector('[data-diffusers-description-toggle]');
+  if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
+
+  if (
+    !diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed') &&
+    !diffuserDescriptionWrapper.classList.contains('diffusers-description--expanded')
+  ) {
+    diffuserDescriptionWrapper.classList.add('diffusers-description--collapsed');
+  }
+
+  diffuserDescriptionToggle.addEventListener('click', () => {
+    diffuserDescriptionWrapper.classList.toggle('diffusers-description--collapsed');
+    diffuserDescriptionWrapper.classList.toggle('diffusers-description--expanded');
+    updateDiffuserDescriptionToggleLabel();
+  });
+
+  updateDiffuserDescriptionToggleLabel();
+};
+
 const updateDiffuserPrice = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const priceEl = document.querySelector('[data-diffuser-price]');
@@ -3428,11 +4216,116 @@ const updateDiffuserPrice = () => {
   }
 };
 
+const updateDiffuserImage = () => {
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const imageEl = document.querySelector('[data-diffuser-image]');
+  if (!scentSelect || !imageEl) return;
+  const scent = scentSelect.value;
+  if (!scent || scent === 'none') {
+    imageEl.src = diffuserDefaultImage;
+    return;
+  }
+  const encoded = encodeURIComponent(scent);
+  imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
+};
+
+const updateDiffuserScentDescription = () => {
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
+  if (!scentSelect || !descriptionEl) return;
+  const scentKey = diffuserScentDescriptions[scentSelect.value] ? scentSelect.value : 'none';
+  const lang = currentLang || 'de';
+  const entry = diffuserScentDescriptions[scentKey] || diffuserScentDescriptions.none;
+  const fallback = diffuserScentDescriptions.none;
+  descriptionEl.textContent = entry?.[lang] || fallback?.[lang] || '';
+};
+
 const initDiffuserConfigurator = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
-  if (!volumeSelect) return;
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  if (!volumeSelect || !scentSelect) return;
   volumeSelect.addEventListener('change', updateDiffuserPrice);
+  scentSelect.addEventListener('change', () => {
+    updateDiffuserImage();
+    updateDiffuserScentDescription();
+  });
   updateDiffuserPrice();
+  updateDiffuserImage();
+  updateDiffuserScentDescription();
+};
+
+const updateCandlePrice = () => {
+  if (!candleVolumeSelect || !candlePriceElement) return;
+  const volume = candleVolumeSelect.value;
+  const price = candlesPricing.volumes[volume];
+  if (price != null) {
+    candlePriceElement.textContent = `${candlesPricing.baseCurrency} ${price.toFixed(2)}`;
+  }
+};
+
+const updateCandleImage = () => {
+  if (!candleImageElement || !candleScentSelect) return;
+  const scent = candleScentSelect.value;
+  if (!scent || scent === 'none') {
+    candleImageElement.src = candlesDefaultImage;
+    return;
+  }
+  const encoded = encodeURIComponent(scent);
+  candleImageElement.src = `${candlesImageBaseUrl}${encoded}${candlesImageSuffix}`;
+};
+
+const initCandleConfigurator = () => {
+  candleVolumeSelect = document.querySelector('[data-candle-volume]');
+  candlePriceElement = document.querySelector('[data-candle-price]');
+  candleScentSelect = document.querySelector('[data-candle-scent]');
+  candleImageElement = document.querySelector('[data-candle-image]');
+  if (!candleVolumeSelect && !candlePriceElement && !candleScentSelect && !candleImageElement) {
+    return;
+  }
+  updateCandlePrice();
+  updateCandleImage();
+  candleVolumeSelect?.addEventListener('change', updateCandlePrice);
+  candleScentSelect?.addEventListener('change', updateCandleImage);
+};
+
+const updateCarScentDescription = () => {
+  if (!carScentDescriptionElement || !carScentSelect) return;
+  const scentKey = carScentDescriptions[carScentSelect.value] ? carScentSelect.value : 'none';
+  const lang = currentLang || 'de';
+  const entry = carScentDescriptions[scentKey] || carScentDescriptions.none;
+  const fallback = carScentDescriptions.none;
+  carScentDescriptionElement.textContent = entry?.[lang] || fallback?.[lang] || '';
+};
+
+const updateCarImage = () => {
+  if (carImageElement && carScentSelect) {
+    const scent = carScentSelect.value;
+    if (!scent || scent === 'none') {
+      carImageElement.src = carDefaultImage;
+    } else {
+      const encoded = encodeURIComponent(scent);
+      carImageElement.src = `${carImageBaseUrl}${encoded}${carImageSuffix}`;
+    }
+  }
+};
+
+const initCarConfigurator = () => {
+  carPriceElement = document.querySelector('[data-car-price]');
+  carScentSelect = document.querySelector('[data-car-scent]');
+  carImageElement = document.querySelector('[data-car-image]');
+  carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
+  if (!carPriceElement && !carScentSelect && !carImageElement) {
+    return;
+  }
+  if (carPriceElement) {
+    carPriceElement.textContent = `${carPriceCurrency} ${carParfumPrice.toFixed(2)}`;
+  }
+  updateCarImage();
+  updateCarScentDescription();
+  carScentSelect?.addEventListener('change', () => {
+    updateCarImage();
+    updateCarScentDescription();
+  });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -3442,6 +4335,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollButtons();
   initHeader();
   initDiffuserConfigurator();
+  initDiffuserHeroSlider();
+  initDiffusersDescriptionToggle();
+  initCandleConfigurator();
+  initCarConfigurator();
   initCart();
   initContactForm();
 });
