@@ -3577,7 +3577,7 @@ const carPricing = {
 
 const carImageBaseUrl = diffuserImageBaseUrl;
 const carImageSuffix = diffuserImageSuffix;
-const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Carolina-2.png?raw=true';
+const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
 
 let candleVolumeSelect;
 let candlePriceElement;
