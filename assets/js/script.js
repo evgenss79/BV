@@ -499,6 +499,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Aroma-Diffusoren für charaktervolle Räume'
+      },
       product: {
         title: 'Aroma-Diffusoren Signature Line',
         description:
@@ -1516,6 +1519,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Diffuseurs pour espaces de caractère'
+      },
       product: {
         title: 'Diffuseur Signature',
         description:
@@ -2292,6 +2298,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Diffusori per ambienti di carattere'
+      },
       product: {
         title: 'Diffusore Signature',
         description:
@@ -3068,6 +3077,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'AROMA DIFFUSERS (REED)'
+      },
       product: {
         title: 'Signature reed diffuser',
         description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
