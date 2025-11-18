@@ -3568,7 +3568,7 @@ const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candl
 const carImageBaseUrl = diffuserImageBaseUrl;
 const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
-const carBasePrice = 29.5;
+const carParfumPrice = 12.9;
 const carPriceCurrency = 'CHF';
 const carScentDescriptions = {
   none: {
@@ -4028,7 +4028,7 @@ const initCarConfigurator = () => {
     return;
   }
   if (carPriceElement) {
-    carPriceElement.textContent = `${carPriceCurrency} ${carBasePrice.toFixed(2)}`;
+    carPriceElement.textContent = `${carPriceCurrency} ${carParfumPrice.toFixed(2)}`;
   }
   updateCarImage();
   carScentSelect?.addEventListener('change', updateCarImage);
