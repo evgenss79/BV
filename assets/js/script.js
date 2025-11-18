@@ -499,6 +499,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Aroma-Diffusoren für charaktervolle Räume'
+      },
       product: {
         title: 'Aroma-Diffusoren Signature Line',
         description:
@@ -1516,6 +1519,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Diffuseurs pour espaces de caractère'
+      },
       product: {
         title: 'Diffuseur Signature',
         description:
@@ -2292,6 +2298,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'Diffusori per ambienti di carattere'
+      },
       product: {
         title: 'Diffusore Signature',
         description:
@@ -3068,6 +3077,9 @@ const translations = {
       }
     },
     diffusers: {
+      hero: {
+        title: 'AROMA DIFFUSERS (REED)'
+      },
       product: {
         title: 'Signature reed diffuser',
         description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
@@ -3642,6 +3654,141 @@ const diffuserHeroImages = [
   'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7600.jpg?raw=true',
   'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7629.jpg?raw=true'
 ];
+
+const diffuserScentDescriptions = {
+  none: {
+    de: 'Wählen Sie einen Duft, um die Stimmung Ihres Raums zu gestalten.',
+    fr: 'Choisissez un parfum pour modeler l’ambiance de votre intérieur.',
+    it: 'Scegli una fragranza per definire l’atmosfera dei tuoi ambienti.',
+    en: 'Choose a fragrance to tailor the mood of your room.'
+  },
+  Africa: {
+    de: 'Glühender Amber, Kakaoschalen und Wüstengewürze hüllen den Raum in Sonnenuntergangswärme.',
+    fr: 'Ambre incandescent, coque de cacao et épices du désert enveloppent la pièce d’une chaleur crépusculaire.',
+    it: 'Ambra ardente, guscio di cacao e spezie del deserto avvolgono l’ambiente in un calore da tramonto.',
+    en: 'Glowing amber, cacao husk and desert spices wrap the space in sunset warmth.'
+  },
+  Bamboo: {
+    de: 'Zerstoßene Bambusblätter, wässrige Blüten und mineralischer Moschus halten die Luft klar und ruhig.',
+    fr: 'Feuilles de bambou écrasées, fleurs aquatiques et musc minéral maintiennent l’air clair et serein.',
+    it: 'Foglie di bambù pestate, fiori acquatici e muschio minerale mantengono l’aria limpida e calma.',
+    en: 'Crushed bamboo leaves, watery florals and mineral musk keep the air bright and calm.'
+  },
+  Bellini: {
+    de: 'Spritziger Pfirsichnektar, Jasminblüten und kühler Prosecco fangen die Aperitivo-Stunde ein.',
+    fr: 'Nectar de pêche pétillant, pétales de jasmin et prosecco frais évoquent l’heure de l’apéritif.',
+    it: 'Nettare di pesca frizzante, petali di gelsomino e prosecco ghiacciato raccontano l’ora dell’aperitivo.',
+    en: 'Sparkling peach nectar, jasmine petals and chilled prosecco capture aperitivo hour.'
+  },
+  Blanc: {
+    de: 'Gepresste Baumwolle, weißer Moschus und pudrige Iris lassen Räume frisch eingekleidet wirken.',
+    fr: 'Coton repassé, musc blanc et iris poudré donnent l’impression d’une pièce fraîchement habillée.',
+    it: 'Cotone appena stirato, muschio bianco e iris cipriato fanno sembrare gli ambienti appena vestiti.',
+    en: 'Pressed cotton, white musk and powdery iris make rooms feel freshly dressed.'
+  },
+  Carolina: {
+    de: 'Magnolie, cremige Gardenie und helle Hölzer zeichnen einen eleganten südlichen Charme.',
+    fr: 'Magnolia, gardénia crémeux et bois clairs composent un charme méridional élégant.',
+    it: 'Magnolia, gardenia cremosa e legni chiari ricreano un raffinato fascino del Sud.',
+    en: 'Magnolia bloom, creamy gardenia and blonde woods create a refined Southern charm.'
+  },
+  'Cherry Blossom': {
+    de: 'Rosafarbene Kirschblüten, Mandarinenzesten und luftiger Moschus flüstern wie Frühlingsbalkone.',
+    fr: 'Pétales de cerisier roses, zeste de mandarine et musc aérien murmurent comme des balcons printaniers.',
+    it: 'Petali di ciliegio rosa, scorza di mandarino e muschio arioso sussurrano come balconi di primavera.',
+    en: 'Pink cherry petals, mandarin zest and airy musk whisper like spring balconies.'
+  },
+  'Christmas Tree': {
+    de: 'Blaufichte, Balsamharz und kühler Tannensaft bringen alpine Feiertagsklarheit.',
+    fr: 'Épinette bleue, résine de baume et sève de pin fraîche apportent une clarté alpine de fêtes.',
+    it: 'Abete blu, resina di balsamo e linfa fresca portano un nitore alpino natalizio.',
+    en: 'Blue spruce needles, balsam resin and cool pine sap bring alpine holiday clarity.'
+  },
+  Etna: {
+    de: 'Geräucherte Zitrusschalen, vulkanische Kräuter und dunkle Sande verleihen eine dramatische Mineralität.',
+    fr: 'Écorces d’agrumes fumées, herbes volcaniques et sables sombres livrent une minéralité dramatique.',
+    it: 'Scorze agrumate affumicate, erbe vulcaniche e sabbie scure regalano una mineralità drammatica.',
+    en: 'Smoked citrus peel, volcanic herbs and black sand woods deliver a dramatic mineral trail.'
+  },
+  Dubai: {
+    de: 'Rosenabsolue, Safranfäden und Oudharz inszenieren die Atmosphäre eines glamourösen Majlis.',
+    fr: 'Absolue de rose, filaments de safran et résine d’oud mettent en scène une ambiance de majlis glamour.',
+    it: 'Assoluta di rosa, fili di zafferano e resina di oud creano l’atmosfera di un majlis glamour.',
+    en: 'Rose absolute, saffron threads and oud resin stage a glamorous majlis vibe.'
+  },
+  Dune: {
+    de: 'Sonniger Sand, Nerolibrise und helle Hölzer erschaffen die Ruhe einer Küstendüne.',
+    fr: 'Sable ensoleillé, brise de néroli et bois clairs recréent le calme d’une dune côtière.',
+    it: 'Sabbia assolata, brezza al neroli e legni chiari ricreano la quiete di una duna costiera.',
+    en: 'Sunlit sand, neroli breeze and pale woods recreate a calm coastal dune.'
+  },
+  Eden: {
+    de: 'Üppige Feigenblätter, taufrische Grüns und seidiger Moschus wirken wie ein beschattetes Gewächshaus.',
+    fr: 'Feuilles de figuier luxuriantes, verts perlés de rosée et musc soyeux évoquent une serre ombragée.',
+    it: 'Foglie di fico rigogliose, verdi rugiadosi e muschio setoso evocano una serra ombreggiata.',
+    en: 'Lush fig leaves, dew-soaked greens and silky musk feel like a shaded greenhouse.'
+  },
+  Fleur: {
+    de: 'Weiche Pfingstrosen, Freesien und ambrierter Moschus malen einen modernen Blütenstrauß.',
+    fr: 'Pivoines soyeuses, freesias et musc ambré composent un bouquet floral contemporain.',
+    it: 'Peonie soffici, fresie e muschio ambrato dipingono un bouquet floreale contemporaneo.',
+    en: 'Soft peonies, freesia and ambered musk paint a contemporary floral bouquet.'
+  },
+  'Green Mango': {
+    de: 'Saftige grüne Mango, Kaffirlimette und kühle Minze bringen tropische Frische in Lofts.',
+    fr: 'Mangue verte juteuse, citron kaffir et menthe fraîche insufflent une fraîcheur tropicale.',
+    it: 'Mango verde succosa, lime kaffir e menta ghiacciata donano una brezza tropicale.',
+    en: 'Juicy green mango, kaffir lime and icy mint refresh lofts with tropical breeze.'
+  },
+  'Lime Basil': {
+    de: 'Aufgebrochener Basilikum, persische Limette und Vetiverwurzeln beleben Küchen und Studios.',
+    fr: 'Basilic froissé, lime perse et racines de vétiver dynamisent cuisines et studios.',
+    it: 'Basilico spezzato, lime persiano e radici di vetiver ravvivano cucine e studi.',
+    en: 'Cracked basil, Persian lime and vetiver roots energise kitchens and studios.'
+  },
+  Rosso: {
+    de: 'Rubinrote Beeren, Johannisbeerblatt und Kaschmirholz verleihen eine kühne Galerieausstrahlung.',
+    fr: 'Baies rubis, feuille de cassis et bois de cachemire offrent une aura de galerie audacieuse.',
+    it: 'Bacche rubino, foglie di ribes e legni cashmere donano un’aura da galleria decisa.',
+    en: 'Ruby berries, red currant leaf and cashmere woods add a bold gallery glow.'
+  },
+  'Salted Caramel': {
+    de: 'Goldenes Karamell, Fleur de Sel und geröstete Tonka machen Räume köstlich üppig.',
+    fr: 'Caramel doré, fleur de sel et fève tonka grillée rendent les espaces délicieusement gourmands.',
+    it: 'Caramello dorato, fleur de sel e tonka tostata rendono gli ambienti golosi e avvolgenti.',
+    en: 'Golden caramel ribbons, fleur de sel and toasted tonka make spaces indulgent.'
+  },
+  'Salty Water': {
+    de: 'Meeresgischt, weiße Algen und Treibholznebel schenken Räumen eine ruhige Küstenbrise.',
+    fr: 'Embruns marins, algues blanches et brume de bois flotté offrent une brise côtière apaisante.',
+    it: 'Schizzi marini, alghe bianche e nebbiolina di legni spiaggiati donano una brezza costiera calma.',
+    en: 'Sea spray accords, white algae and driftwood mist perfume rooms with shoreline calm.'
+  },
+  Santal: {
+    de: 'Cremiges Sandelholz, Iris-Suede und Weihrauchrauch verleihen meditative Tiefe.',
+    fr: 'Santal crémeux, daim à l’iris et fumée d’encens apportent une profondeur méditative.',
+    it: 'Sandalo cremoso, suede all’iris e fumo d’incenso aggiungono una profondità meditativa.',
+    en: 'Creamy sandalwood, iris suede and incense smoke add a meditative depth.'
+  },
+  Sugar: {
+    de: 'Kandierte Veilchen, gezogener Zucker und sanfter Moschus versüßen selbst minimalistische Interiors.',
+    fr: 'Violettes confites, sucre filé et musc doux adoucissent même les intérieurs minimalistes.',
+    it: 'Viole candite, zucchero filato e muschio morbido addolciscono anche gli interni minimalisti.',
+    en: 'Candied violet, spun sugar and soft musk sweeten even minimalist interiors.'
+  },
+  'Tobacco Vanilla': {
+    de: 'Pfeifentabak, Bourbon-Vanille und verkohlte Zeder machen Lounges zu samtigen Salons.',
+    fr: 'Tabac de pipe, vanille bourbon et cèdre brûlé transforment les salons en boudoirs veloutés.',
+    it: 'Tabacco da pipa, vaniglia bourbon e cedro bruciato trasformano il salotto in un boudoir vellutato.',
+    en: 'Pipe tobacco, bourbon vanilla and charred cedar turn lounges into plush salons.'
+  },
+  Valencia: {
+    de: 'Sonnengereifte Orangen, Neroliblüte und warme Hölzer erinnern an eine mediterrane Terrasse.',
+    fr: 'Oranges mûries au soleil, fleur de néroli et bois chauds évoquent une terrasse méditerranéenne.',
+    it: 'Arance maturate al sole, fiore di neroli e legni caldi ricordano un patio mediterraneo.',
+    en: 'Sun-ripe oranges, neroli blossom and warm woods feel like a Mediterranean patio.'
+  }
+};
 const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
@@ -3849,6 +3996,7 @@ const applyTranslations = () => {
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
   updateCarScentDescription();
+  updateDiffuserScentDescription();
   updateDiffuserDescriptionToggleLabel();
 };
 
@@ -4081,14 +4229,29 @@ const updateDiffuserImage = () => {
   imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
 };
 
+const updateDiffuserScentDescription = () => {
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
+  if (!scentSelect || !descriptionEl) return;
+  const scentKey = diffuserScentDescriptions[scentSelect.value] ? scentSelect.value : 'none';
+  const lang = currentLang || 'de';
+  const entry = diffuserScentDescriptions[scentKey] || diffuserScentDescriptions.none;
+  const fallback = diffuserScentDescriptions.none;
+  descriptionEl.textContent = entry?.[lang] || fallback?.[lang] || '';
+};
+
 const initDiffuserConfigurator = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const scentSelect = document.querySelector('[data-diffuser-scent]');
   if (!volumeSelect || !scentSelect) return;
   volumeSelect.addEventListener('change', updateDiffuserPrice);
-  scentSelect.addEventListener('change', updateDiffuserImage);
+  scentSelect.addEventListener('change', () => {
+    updateDiffuserImage();
+    updateDiffuserScentDescription();
+  });
   updateDiffuserPrice();
   updateDiffuserImage();
+  updateDiffuserScentDescription();
 };
 
 const updateCandlePrice = () => {
