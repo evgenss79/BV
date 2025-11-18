@@ -3565,25 +3565,16 @@ const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
 
-const carPricing = {
-  baseCurrency: 'CHF',
-  volumes: {
-    clip: 29.5,
-    refill: 24.0,
-    vent: 45.0,
-    spray: 32.0
-  }
-};
-
 const carImageBaseUrl = diffuserImageBaseUrl;
 const carImageSuffix = diffuserImageSuffix;
-const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Carolina-2.png?raw=true';
+const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
+const carBasePrice = 29.5;
+const carPriceCurrency = 'CHF';
 
 let candleVolumeSelect;
 let candlePriceElement;
 let candleScentSelect;
 let candleImageElement;
-let carVolumeSelect;
 let carPriceElement;
 let carScentSelect;
 let carImageElement;
@@ -3870,15 +3861,6 @@ const initCandleConfigurator = () => {
   candleScentSelect?.addEventListener('change', updateCandleImage);
 };
 
-const updateCarPrice = () => {
-  if (!carVolumeSelect || !carPriceElement) return;
-  const format = carVolumeSelect.value;
-  const price = carPricing.volumes[format];
-  if (price != null) {
-    carPriceElement.textContent = `${carPricing.baseCurrency} ${price.toFixed(2)}`;
-  }
-};
-
 const updateCarImage = () => {
   if (!carImageElement || !carScentSelect) return;
   const scent = carScentSelect.value;
@@ -3891,16 +3873,16 @@ const updateCarImage = () => {
 };
 
 const initCarConfigurator = () => {
-  carVolumeSelect = document.querySelector('[data-car-volume]');
   carPriceElement = document.querySelector('[data-car-price]');
   carScentSelect = document.querySelector('[data-car-scent]');
   carImageElement = document.querySelector('[data-car-image]');
-  if (!carVolumeSelect && !carPriceElement && !carScentSelect && !carImageElement) {
+  if (!carPriceElement && !carScentSelect && !carImageElement) {
     return;
   }
-  updateCarPrice();
+  if (carPriceElement) {
+    carPriceElement.textContent = `${carPriceCurrency} ${carBasePrice.toFixed(2)}`;
+  }
   updateCarImage();
-  carVolumeSelect?.addEventListener('change', updateCarPrice);
   carScentSelect?.addEventListener('change', updateCarImage);
 };
 
