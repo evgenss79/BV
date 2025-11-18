@@ -548,7 +548,9 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'Mehr lesen',
+        toggleLess: 'Weniger anzeigen'
       }
     },
     candles: {
@@ -1563,7 +1565,9 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'En savoir plus',
+        toggleLess: 'Réduire'
       }
     },
     candles: {
@@ -2337,7 +2341,9 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'Mostra di più',
+        toggleLess: 'Mostra meno'
       }
     },
     candles: {
@@ -3110,7 +3116,9 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
+        toggleMore: 'Read more',
+        toggleLess: 'Collapse'
       }
     },
     candles: {
@@ -3807,9 +3815,22 @@ const categoryFallbackKeys = [
 
 const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
+let diffuserDescriptionWrapper;
+let diffuserDescriptionToggle;
 
 const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
+};
+
+const updateDiffuserDescriptionToggleLabel = () => {
+  if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
+  const isCollapsed = diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed');
+  const translationKey = isCollapsed ? 'diffusers.copy.toggleMore' : 'diffusers.copy.toggleLess';
+  const translation = resolveTranslation(currentLang, translationKey);
+  if (translation) {
+    diffuserDescriptionToggle.textContent = translation;
+  }
+  diffuserDescriptionToggle.setAttribute('aria-expanded', (!isCollapsed).toString());
 };
 
 const applyTranslations = () => {
@@ -3828,6 +3849,7 @@ const applyTranslations = () => {
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
   updateCarScentDescription();
+  updateDiffuserDescriptionToggleLabel();
 };
 
 const setActiveLangButton = () => {
@@ -4014,6 +4036,27 @@ const initDiffuserHeroSlider = () => {
   }, 1600);
 };
 
+const initDiffusersDescriptionToggle = () => {
+  diffuserDescriptionWrapper = document.querySelector('[data-diffusers-description-wrapper]');
+  diffuserDescriptionToggle = document.querySelector('[data-diffusers-description-toggle]');
+  if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
+
+  if (
+    !diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed') &&
+    !diffuserDescriptionWrapper.classList.contains('diffusers-description--expanded')
+  ) {
+    diffuserDescriptionWrapper.classList.add('diffusers-description--collapsed');
+  }
+
+  diffuserDescriptionToggle.addEventListener('click', () => {
+    diffuserDescriptionWrapper.classList.toggle('diffusers-description--collapsed');
+    diffuserDescriptionWrapper.classList.toggle('diffusers-description--expanded');
+    updateDiffuserDescriptionToggleLabel();
+  });
+
+  updateDiffuserDescriptionToggleLabel();
+};
+
 const updateDiffuserPrice = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const priceEl = document.querySelector('[data-diffuser-price]');
@@ -4130,6 +4173,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initDiffuserConfigurator();
   initDiffuserHeroSlider();
+  initDiffusersDescriptionToggle();
   initCandleConfigurator();
   initCarConfigurator();
   initCart();
