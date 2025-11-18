@@ -3570,6 +3570,140 @@ const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
 const carBasePrice = 29.5;
 const carPriceCurrency = 'CHF';
+const carScentDescriptions = {
+  none: {
+    de: 'Wählen Sie einen Duft, um das Cockpit individuell zu aromatisieren.',
+    fr: 'Choisissez un parfum pour personnaliser l’atmosphère de l’habitacle.',
+    it: "Scegli un aroma per personalizzare l’atmosfera dell’abitacolo.",
+    en: 'Choose a fragrance to tailor the cockpit ambiance.'
+  },
+  Africa: {
+    de: 'Sonnengewärmte Gewürze und dunkles Holz verleihen dem Cockpit einen expressiven Charakter.',
+    fr: 'Des épices chauffées par le soleil et des bois sombres apportent une signature expressive à l’habitacle.',
+    it: 'Spezie scaldate dal sole e legni scuri trasformano l’abitacolo in un salotto deciso.',
+    en: 'Sun-warmed spices and dark woods turn the cabin into a bold lounge.'
+  },
+  Bamboo: {
+    de: 'Frisch geschnittenes Bambusgras und zarter Moschus bringen eine klare, luftige Stimmung.',
+    fr: 'Du bambou fraîchement coupé et un musc délicat apportent une sensation claire et aérienne.',
+    it: 'Bambù appena tagliato e muschio soffice creano un’atmosfera limpida e ariosa.',
+    en: 'Fresh-cut bamboo and soft musk lend a clear, airy attitude.'
+  },
+  Bellini: {
+    de: 'Spritzige Pfirsichblüten und feine Perlage erinnern an einen Aperitivo im Licht der Stadt.',
+    fr: 'Des fleurs de pêche pétillantes et une fine effervescence évoquent un apéritif urbain.',
+    it: 'Fiori di pesca frizzanti e una lieve effervescenza ricordano un aperitivo cittadino.',
+    en: 'Sparkling peach blossom and gentle effervescence echo a city aperitivo.'
+  },
+  Blanc: {
+    de: 'Kühl gebügelte Baumwolle und weißer Moschus lassen den Innenraum wie ein Atelier wirken.',
+    fr: 'Du coton fraîchement repassé et un musc blanc donnent une allure d’atelier lumineux.',
+    it: 'Cotone appena stirato e muschio bianco trasformano l’abitacolo in un atelier luminoso.',
+    en: 'Crisp cotton and white musk make the cabin feel like a sunlit atelier.'
+  },
+  Carolina: {
+    de: 'Magnolie, Jasmin und sanfter Amber zeichnen einen eleganten Boulevard-Duft.',
+    fr: 'Magnolia, jasmin et ambre doux dessinent un parfum élégant de boulevard.',
+    it: 'Magnolia, gelsomino e ambra morbida disegnano un profumo elegante da boulevard.',
+    en: 'Magnolia, jasmine and soft amber sketch an elegant boulevard trail.'
+  },
+  'Cherry Blossom': {
+    de: 'Seidige Kirschblüten mit einem Hauch von Mandarine lassen jede Fahrt poetisch wirken.',
+    fr: 'Des fleurs de cerisier soyeuses et une touche de mandarine rendent chaque trajet poétique.',
+    it: 'Fiori di ciliegio setosi e un tocco di mandarino rendono poetico ogni tragitto.',
+    en: 'Silky cherry blossom with a hint of mandarin makes every drive feel poetic.'
+  },
+  'Christmas Tree': {
+    de: 'Harziger Tannenbalsam und kühle Wacholdernadeln erinnern an alpine Feiertage.',
+    fr: 'Un baume de sapin résineux et des aiguilles de genévrier fraîches rappellent les fêtes alpines.',
+    it: 'Balsamo di abete resinoso e aghi di ginepro freschi richiamano feste alpine.',
+    en: 'Resinous fir balsam and cool juniper needles recall alpine holidays.'
+  },
+  Etna: {
+    de: 'Geräucherte Mineralien und pfeffrige Zitrusnoten erzeugen eine vulkanische Spannung.',
+    fr: 'Des minéraux fumés et des agrumes poivrés créent une tension volcanique.',
+    it: 'Minerali affumicati e agrumi pepati sprigionano una tensione vulcanica.',
+    en: 'Smoked minerals and peppered citrus bring volcanic tension.'
+  },
+  Dubai: {
+    de: 'Safran, Oud und warmer Bernstein verleihen dem Innenraum eine goldene Aura.',
+    fr: 'Safran, oud et ambre chaud enveloppent l’habitacle d’une aura dorée.',
+    it: 'Zafferano, oud e ambra calda avvolgono l’abitacolo in un’aura dorata.',
+    en: 'Saffron, oud and warm amber bathe the cabin in a gilded aura.'
+  },
+  Dune: {
+    de: 'Trockener Sand, Kaschmirholz und ein Hauch von Kardamom fluten den Raum mit Wüstenlicht.',
+    fr: 'Sable sec, bois de cachemire et pointe de cardamome baignent l’espace d’une lumière désertique.',
+    it: 'Sabbia secca, legno di cashmere e una punta di cardamomo illuminano con luce desertica.',
+    en: 'Dry sand, cashmere wood and a whisper of cardamom flood the cabin with desert light.'
+  },
+  Eden: {
+    de: 'Taufrische Blätter und cremige Gardenie zeichnen einen geheimen Garten entlang der Route.',
+    fr: 'Feuilles perlées de rosée et gardénia crémeux esquissent un jardin secret le long du trajet.',
+    it: 'Foglie rugiadose e gardenia cremosa delineano un giardino segreto lungo la rotta.',
+    en: 'Dewy leaves and creamy gardenia sketch a secret garden along the route.'
+  },
+  Fleur: {
+    de: 'Ein samtiges Bouquet aus Pfingstrose und pudrigem Moschus sorgt für zurückhaltende Eleganz.',
+    fr: 'Un bouquet velouté de pivoine et de musc poudré offre une élégance discrète.',
+    it: 'Un bouquet vellutato di peonia e muschio cipriato offre un’eleganza discreta.',
+    en: 'A velvety bouquet of peony and powdery musk delivers understated elegance.'
+  },
+  'Green Mango': {
+    de: 'Saftige Mango, Limette und grüne Blätter beleben das Cockpit mit tropischer Energie.',
+    fr: 'Mangue juteuse, citron vert et feuilles vertes insufflent une énergie tropicale à l’habitacle.',
+    it: 'Mango succosa, lime e foglie verdi animano l’abitacolo con energia tropicale.',
+    en: 'Juicy mango, lime and green leaves energise the cabin with tropical lift.'
+  },
+  'Lime Basil': {
+    de: 'Limettenschalen und frisches Basilikum erzeugen einen klaren, kulinarischen Duft.',
+    fr: 'Écorces de citron vert et basilic frais composent un parfum clair et culinaire.',
+    it: 'Scorze di lime e basilico fresco creano un profumo nitido e culinario.',
+    en: 'Lime peel and fresh basil compose a crisp, culinary scent.'
+  },
+  Rosso: {
+    de: 'Reife rote Beeren, Granatapfel und feiner Patchouli wirken wie ein samtiger Schal.',
+    fr: 'Baies rouges mûres, grenade et patchouli délicat agissent comme une écharpe de velours.',
+    it: 'Bacche rosse mature, melograno e patchouli delicato avvolgono come una sciarpa di velluto.',
+    en: 'Ripe red berries, pomegranate and delicate patchouli drape like a velvet scarf.'
+  },
+  'Salted Caramel': {
+    de: 'Butterkaramell mit Fleur de Sel und cremiger Vanille sorgt für gourmandigen Komfort.',
+    fr: 'Caramel au beurre, fleur de sel et vanille crémeuse apportent un confort gourmand.',
+    it: 'Caramello al burro, fleur de sel e vaniglia cremosa regalano un comfort goloso.',
+    en: 'Buttery caramel, fleur de sel and creamy vanilla deliver gourmand comfort.'
+  },
+  'Salty Water': {
+    de: 'Atlantik-Spray, Treibholz und mineralische Moschusnoten wirken wie eine frische Meeresbrise.',
+    fr: 'Brume atlantique, bois flotté et muscs minéraux évoquent une brise marine fraîche.',
+    it: 'Spray atlantico, legno levigato e muschi minerali evocano una fresca brezza marina.',
+    en: 'Atlantic spray, driftwood and mineral musks feel like a fresh sea breeze.'
+  },
+  Santal: {
+    de: 'Cremiges Sandelholz, Iris und Tonkabohne verleihen dem Interieur eine ruhige Textur.',
+    fr: 'Santal crémeux, iris et fève tonka apportent une texture calme à l’intérieur.',
+    it: 'Sandalo cremoso, iris e fava tonka donano all’abitacolo una texture pacata.',
+    en: 'Creamy sandalwood, iris and tonka bean lend the cabin a calm texture.'
+  },
+  Sugar: {
+    de: 'Kristalline Zuckerblüten und weißer Moschus wirken leicht, aber süchtig machend.',
+    fr: 'Fleurs de sucre cristallines et musc blanc sont légers mais addictifs.',
+    it: 'Fiori di zucchero cristallini e muschio bianco risultano leggeri ma avvolgenti.',
+    en: 'Crystalline sugar blossoms and white musk feel weightless yet addictive.'
+  },
+  'Tobacco Vanilla': {
+    de: 'Tabakblätter, Kakao und reichhaltige Vanille schaffen einen luxuriösen Lounge-Akzent.',
+    fr: 'Feuilles de tabac, cacao et vanille riche composent un accent lounge luxueux.',
+    it: 'Foglie di tabacco, cacao e vaniglia ricca creano un accento lounge di lusso.',
+    en: 'Tobacco leaf, cocoa and rich vanilla craft a luxurious lounge accent.'
+  },
+  Valencia: {
+    de: 'Bergamotte, süße Orange und Neroli erinnern an sonnengeküsste Boulevards.',
+    fr: 'Bergamote, orange douce et néroli évoquent des boulevards baignés de soleil.',
+    it: 'Bergamotto, arancia dolce e neroli richiamano boulevard baciati dal sole.',
+    en: 'Bergamot, sweet orange and neroli recall sun-drenched boulevards.'
+  }
+};
 
 let candleVolumeSelect;
 let candlePriceElement;
@@ -3578,6 +3712,7 @@ let candleImageElement;
 let carPriceElement;
 let carScentSelect;
 let carImageElement;
+let carScentDescriptionElement;
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -3619,6 +3754,7 @@ const applyTranslations = () => {
   });
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
+  updateCarScentDescription();
 };
 
 const setActiveLangButton = () => {
@@ -3861,21 +3997,33 @@ const initCandleConfigurator = () => {
   candleScentSelect?.addEventListener('change', updateCandleImage);
 };
 
+const updateCarScentDescription = () => {
+  if (!carScentDescriptionElement || !carScentSelect) return;
+  const scentKey = carScentDescriptions[carScentSelect.value] ? carScentSelect.value : 'none';
+  const lang = currentLang || 'de';
+  const entry = carScentDescriptions[scentKey] || carScentDescriptions.none;
+  const fallback = carScentDescriptions.none;
+  carScentDescriptionElement.textContent = entry?.[lang] || fallback?.[lang] || '';
+};
+
 const updateCarImage = () => {
-  if (!carImageElement || !carScentSelect) return;
-  const scent = carScentSelect.value;
-  if (!scent || scent === 'none') {
-    carImageElement.src = carDefaultImage;
-    return;
+  if (carImageElement && carScentSelect) {
+    const scent = carScentSelect.value;
+    if (!scent || scent === 'none') {
+      carImageElement.src = carDefaultImage;
+    } else {
+      const encoded = encodeURIComponent(scent);
+      carImageElement.src = `${carImageBaseUrl}${encoded}${carImageSuffix}`;
+    }
   }
-  const encoded = encodeURIComponent(scent);
-  carImageElement.src = `${carImageBaseUrl}${encoded}${carImageSuffix}`;
+  updateCarScentDescription();
 };
 
 const initCarConfigurator = () => {
   carPriceElement = document.querySelector('[data-car-price]');
   carScentSelect = document.querySelector('[data-car-scent]');
   carImageElement = document.querySelector('[data-car-image]');
+  carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
   if (!carPriceElement && !carScentSelect && !carImageElement) {
     return;
   }
