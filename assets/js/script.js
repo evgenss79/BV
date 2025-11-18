@@ -4016,7 +4016,6 @@ const updateCarImage = () => {
       carImageElement.src = `${carImageBaseUrl}${encoded}${carImageSuffix}`;
     }
   }
-  updateCarScentDescription();
 };
 
 const initCarConfigurator = () => {
@@ -4031,7 +4030,11 @@ const initCarConfigurator = () => {
     carPriceElement.textContent = `${carPriceCurrency} ${carParfumPrice.toFixed(2)}`;
   }
   updateCarImage();
-  carScentSelect?.addEventListener('change', updateCarImage);
+  updateCarScentDescription();
+  carScentSelect?.addEventListener('change', () => {
+    updateCarImage();
+    updateCarScentDescription();
+  });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
