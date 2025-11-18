@@ -533,6 +533,22 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -608,9 +624,9 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
-      }
-    },
-    categoryCandles: {
+    }
+  },
+  categoryCandles: {
       hero: {
         label: 'Ceremonial Edition',
         title: 'Duftkerzen mit architektonischen Gefäßen',
@@ -1532,6 +1548,22 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -1607,9 +1639,9 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
-      }
-    },
-    categoryCandles: {
+    }
+  },
+  categoryCandles: {
       hero: {
         label: 'Édition cérémonielle',
         title: 'Bougies aux contenants architecturaux',
@@ -2290,6 +2322,22 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -2365,9 +2413,9 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
-      }
-    },
-    categoryCandles: {
+    }
+  },
+  categoryCandles: {
       hero: {
         label: 'Edizione cerimoniale',
         title: 'Candele con contenitori architettonici',
@@ -3047,6 +3095,22 @@ const translations = {
         sugar: 'Sugar',
         tobacco_vanilla: 'Tobacco Vanilla',
         valencia: 'Valencia'
+      },
+      copy: {
+        paragraph1:
+          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow: 'How does it work?',
+        paragraph2:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages: 'Advantages of Reed Diffusers',
+        paragraph3:
+          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:
+          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:
+          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -3561,6 +3625,15 @@ const candlesPricing = {
 const diffuserImageBaseUrl = 'https://github.com/evgenss79/BV_img/blob/main/';
 const diffuserImageSuffix = '.jpg?raw=true';
 const diffuserDefaultImage = `${diffuserImageBaseUrl}Mikado-category${diffuserImageSuffix}`;
+const diffuserHeroImages = [
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/Aroma%20diffusers_category.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7321.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7348.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7560.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7565.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7600.jpg?raw=true',
+  'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7629.jpg?raw=true'
+];
 const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
@@ -3929,6 +4002,18 @@ const initTitles = () => {
   }
 };
 
+const initDiffuserHeroSlider = () => {
+  const heroImg = document.querySelector('[data-diffuser-hero-slider]');
+  if (!heroImg || diffuserHeroImages.length < 2) {
+    return;
+  }
+  let currentIndex = 0;
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % diffuserHeroImages.length;
+    heroImg.src = diffuserHeroImages[currentIndex];
+  }, 1600);
+};
+
 const updateDiffuserPrice = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const priceEl = document.querySelector('[data-diffuser-price]');
@@ -4044,6 +4129,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollButtons();
   initHeader();
   initDiffuserConfigurator();
+  initDiffuserHeroSlider();
   initCandleConfigurator();
   initCarConfigurator();
   initCart();
