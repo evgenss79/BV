@@ -42,6 +42,9 @@ const translations = {
       toggle: {
         more: 'Mehr anzeigen',
         less: 'Weniger anzeigen'
+      },
+      cta: {
+        addToCart: 'In den Warenkorb'
       }
     },
     nav: {
@@ -507,12 +510,11 @@ const translations = {
         title: 'Aroma-Diffusoren für charaktervolle Räume'
       },
       product: {
-        title: 'Aroma-Diffusoren Signature Line',
+        titleDefault: 'Aroma-Diffusoren Signature Line',
         description:
           'Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.',
-        scentTitlePrefix: 'AromaDiffuser',
-        priceLabel: 'Preis',
-        cta: 'In den Warenkorb'
+        titlePrefix: 'AromaDiffuser',
+        priceLabel: 'Preis'
       },
       options: {
         volumeLabel: 'Volumen',
@@ -520,44 +522,330 @@ const translations = {
       },
       scents: {
         none: { label: 'No fragrance', description: '' },
-        africa: { label: 'Africa', description: '' },
-        bamboo: { label: 'Bamboo', description: '' },
-        bellini: { label: 'Bellini', description: '' },
-        blanc: { label: 'Blanc', description: '' },
-        carolina: { label: 'Carolina', description: '' },
-        cherry_blossom: { label: 'Cherry Blossom', description: '' },
-        christmas_tree: { label: 'Christmas Tree', description: '' },
-        etna: { label: 'Etna', description: '' },
-        dubai: { label: 'Dubai', description: '' },
-        dune: { label: 'Dune', description: '' },
-        eden: { label: 'Eden', description: '' },
-        fleur: { label: 'Fleur', description: '' },
-        green_mango: { label: 'Green Mango', description: '' },
-        lime_basil: { label: 'Lime Basil', description: '' },
-        rosso: { label: 'Rosso', description: '' },
-        salted_caramel: { label: 'Salted Caramel', description: '' },
-        salty_water: { label: 'Salty Water', description: '' },
-        santal: { label: 'Santal', description: '' },
-        sugar: { label: 'Sugar', description: '' },
-        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
-        valencia: { label: 'Valencia', description: '' },
+        africa: {
+          label: 'Africa',
+          description: `AFRICA 
+Ein warmer, würziger Duft aus Kardamomholz und weichem Leder. Dieser intensiv konzentrierte Duft erfüllt den gesamten Raum. Helle Noten von Bergamotte und Moschus werden durch eine leuchtende Holznuance verstärkt. Reichhaltige Akkorde von Kardamom und Leder verleihen einen kräftigen, akzentuierten Charakter, während eine duftende Spur von würzigem Kreuzkümmel und Safran die Komposition abrundet.
+
+Sie werden sich in AFRIKA verlieben, wenn Sie sich nach frischen, holzigen Aromen sehnen oder sich nach Wüstendünen und Safari-Abenteuern sehnen.
+
+Ideal für geräumige Wohn- und Aufenthaltsräume sowie Innenräume mit natürlichen Elementen. Dieser Premium-Diffusor aus Schilfrohr verleiht jedem Raum Charakter und Eleganz.
+
+Riechpyramide:
+Kopfnoten: Bergamotte, Vetiver, Geranie
+Herznoten: Kardamom, Leder, Moschus
+Basisnoten: Patchouli, Kreuzkümmel, Oud, Safran`
+        },
+        bamboo: {
+          label: 'Bamboo',
+          description: `BAMBOO 
+Ein grüner, frischer Duft nach Frühlingsblumen und Bambusstengeln. Dieser mäßig intensive Duft füllt Ihren Raum sanft, ohne ihn zu übertönen. Kopfnoten aus Bergamotte und Bambus erzeugen einen zarten pflanzlichen Nebel, der sich zu einer blumigen Herznote aus Lilie, Ylang-Ylang und Orangenblüte entwickelt. Eine warme, umhüllende Basis aus Vanille, Sandelholz und Amber rundet die Komposition ab.
+
+Perfekt für helle Innenräume, kleine Räume und Badezimmer, in denen Sie eine sanfte, natürliche Frische wünschen.
+
+Wenn Sie pflanzliche, frische und blumige Aromen lieben, ist BAMBOO eine ideale Ergänzung Ihrer Sammlung. Dieser Premium-Diffusor aus Schilfrohr soll eine harmonische, natürliche Atmosphäre in Ihrem Zuhause schaffen.
+
+Riechpyramide:
+Kopfnoten: Bambus, Bergamotte
+Herznoten: Ylang-Ylang, Lilie, Orangenblüte
+Basisnoten: Vanille, Sandelholz, Amber`
+        },
+        bellini: {
+          label: 'Bellini',
+          description: `BELLINI 
+Ein samtiger Duft nach saftigem Pfirsich und intensivem Rum. Dieser pudrige Duft, reich an aromatischen Verbindungen, füllt Ihren Raum schnell mit verspielten Noten von süßem Pfirsich, Blutorange und Vanille. Die bitter-würzigen Akkorde von Cognac, Rum und Kaschmir sorgen für eine subtile Note und vertiefen den Charakter.
+
+BELLINI ist perfekt, wenn Sie eine festliche, feierliche Atmosphäre bewahren möchten.
+
+Dieser Premium-Diffusor aus Schilfrohr ist eine wunderbare Ergänzung für geräumige Wohnzimmer, Eingangsbereiche und jedes helle Interieur.
+
+Riechpyramide:
+Kopfnoten: Pfirsich, Blutorange, Kardamom, Heliotrop
+Herznoten: Rum, Cognac, Davana, Jasmin
+Basisnoten: Patschuli, Sandelholz, Vanille, Tonkabohne, Kaschmir, Benzoeharz, Storax, Labdanum, Vetiver`
+        },
+        blanc: {
+          label: 'Blanc',
+          description: `BLANC 
+Ein weicher, frischer Duft aus weißer Baumwolle und Reinheit.
+
+Dieser mäßig konzentrierte Duft verbindet leichte Blumenakkorde mit hellen Aldehyden und erinnert an den unverwechselbaren Duft eines frischen weißen Hemdes, frisch gewaschener Bettwäsche und unübertroffener Reinheit.
+
+In geschlossenen Räumen verteilt sich der Duft sanft und fließend und erfüllt den Raum mit einer zarten Frische.
+
+Wenn Sie reine Düfte schätzen und die Atmosphäre eines frisch gereinigten Zimmers in einem Luxushotel nachempfinden möchten, werden Sie sich mit Sicherheit in BLANC verlieben.
+
+Riechpyramide:
+Kopfnoten: Aldehyde, Rose, rosa Pfeffer
+Herznoten: Pfingstrose, Veilchen, Orangenblüte
+Basisnoten: Weißer Moschus, holzige Noten, Sandelholz`
+        },
+        carolina: {
+          label: 'Carolina',
+          description: `CAROLINA 
+Ein zartes, leichtes Aroma von süßem Cappuccino und Frühlingsblüten.
+
+Dieser mäßig konzentrierte Duft entfaltet sich sanft in jedem Raum. Kaffee- und Mandelnoten lösen sich in einem warmen, umhüllenden süß-bitteren Akkord auf. Jasmin, Iris und Bergamotte sorgen für frische, blumige Akzente, während ein Hauch von würzigem Kakao in der Spur nachhallt.
+
+Sie werden sich in CAROLINA verlieben, wenn Sie gemütliche Café-Atmosphäre und süßes Gebäck schätzen oder sich eine warme, subtil geheimnisvolle Atmosphäre wünschen. Dieser Premium-Mikado-Diffusor verwandelt jeden Raum in einen einladenden Rückzugsort für die Sinne.
+
+Riechpyramide:
+Kopfnoten: Mandel, Kaffee, Bergamotte, Zitrone
+Herznoten: Jasmin-Sambac, Tuberose, Iris, bulgarische Rose, Orangenblüte
+Basisnoten: Tonkabohne, Kakao, Sandelholz, Vanille, Praline, Zimt, weiße Zeder, Kaschmirholz, Patschuli, Amber, Moschus`
+        },
+        cherry_blossom: {
+          label: 'Cherry Blossom',
+          description: `CHERRY BLOSSOM 
+Ein süßer und würziger Duft von reichhaltigem Kirschlikör und Frühlingsblumen.
+
+Ein intensiv gesättigter Duft, der die gesamte Atmosphäre des Raumes aufwertet. Die Kopfnoten von Kirsche und Bittermandel entwickeln sich zu einem lebendigen, würzigen Kirschlikörduft. Rosen- und Jasminakkorde verschmelzen zu einer sanften Blumennote, angereichert mit einem süßen Hauch Vanille.
+
+Sie werden sich in CHERRY BLOSSOM verlieben, wenn Sie zarte, süße Düfte und den Duft reifer, saftiger Kirschen genießen.
+
+CHERRY BLOSSOM ist der perfekte Duft für Küchen, geräumige Flure und helle Badezimmer.
+
+Riechpyramide:
+Kopfnoten: Kirsche, Likör, Bittermandel
+Herznoten: Kirsche, türkische Rose, Jasmin-Sambac, Pflaume
+Basisnoten: Perubalsam, Tonkabohne, Sandelholz, Vetiver, weiße Zeder, Benzoe, Zimt, Nelke, Patschuli, Vanille`
+        },
+        christmas_tree: {
+          label: 'Christmas Tree',
+          description: `CHRISTMAS TREE 
+Ein sanfter und festlicher Duft nach Weihnachtskiefer und saftigen Mandarinen.
+
+Dies ist ein Duft mittlerer Intensität, der den Raum sanft mit einem durchscheinenden Schleier füllt. Die helle und süße Mandarinennote entfaltet sich zu einem vertrauten und nostalgischen Aroma, während die abschließende grüne Spur von Pinie Tiefe und Frische verleiht.
+
+CHRISTMAS TREE ist der perfekte Duft für die Weihnachtsfeiertage – oder für alle, die den Zauber der Jahreszeit auch in der Sommerhitze spüren möchten.
+
+Dieser Duft ist ideal für Kinderzimmer, Wohnbereiche oder ein gemütliches kleines Café.
+
+Riechpyramide:
+Kopfnoten: Vanille
+Herznoten: Orange, Zimt
+Basisnote: Kiefer, Mandarine`
+        },
+        etna: {
+          label: 'Etna',
+          description: `ETNA 
+Ein würziger und warmer Duft von Leder, Tabak und Karamell.
+
+Dieser Duft umhüllt den gesamten Raum um Sie herum. Sofort kommen starke Leder- und schwarze Pfeffernoten zum Vorschein, während Nelke, Salbei und Honig zu einer intensiven und eigenständigen Komposition verschmelzen. Der Duft hinterlässt eine tiefe Bernsteinspur, angereichert mit Tabak- und Patschulinoten.
+
+ETNA ist perfekt, wenn Sie ein würziges, feuriges und explosives Aroma mit lebendigen orientalischen Noten suchen.
+
+Dieser Premium-Red-Diffusor passt perfekt in dunkle, geräumige Wohnzimmer oder Lobbys und wertet rustikale Holz- und Steinelemente auf.
+
+Riechpyramide:
+Kopfnoten: Leder, Tolubalsam, Safran, Lorbeerblatt, schwarzer Pfeffer, Erdtinktur, Zitrone, Thymian
+Herznoten: Honig, roter Pfeffer, Nelke, Iris, Salbei, Magnolie, Pfingstrose
+Basisnoten: Tabak, Oud, Karamell, Leder, Benzoe, Kiefer, Patchouli, Kanadabalsam, Kaschmirholz, Labdanum`
+        },
+        dubai: {
+          label: 'Dubai',
+          description: `DUBAI 
+Ein reichhaltiger orientalischer Duft aus Damaszener Rose und Oud-Holz.
+
+Ein intensives und hochkonzentriertes Aroma, das vom ersten Augenblick an spürbar ist. Noten von Geranie und Veilchen umhüllen den Raum sanft mit einem leicht bitteren Blumenduft. Helle Akkorde von Damast und türkischer Rose verschmelzen zu einer süßen und weichen Duftnote mit einem würzigen Hauch von Zimt.
+
+Sie werden DUBAI lieben, wenn Sie ein Fan luxuriöser Hoteldüfte und sternenklarer Sommernächte sind.
+
+DUBAI ist die perfekte Wahl für Wohnzimmer, Lobbys und natürlich Hotels.
+
+Riechpyramide:
+Kopfnoten: Geranie, Veilchen
+Herznoten: Zimt, Damaszener Rose, türkische Rose
+Basisnote: Oud, Vanille`
+        },
+        dune: {
+          label: 'Dune',
+          description: `DUNE 
+Ein kräftiger und würziger Duft nach praller Sonne und scharfer Paprika.
+
+Dieser hochintensive Duft wird Ihren Raum erfüllen. Zitrusnoten von Orange und Grapefruit sorgen für eine angenehm süße Note. Deutliche Pfefferakkorde lösen sich in einem hellen, gewagten und feurigen Aroma auf. Zedern- und Vetivernuancen runden die Komposition mit einem warmen, holzigen Ton ab.
+
+DUNE ist perfekt für diejenigen, die die sengende Sonne und die riesigen Wüstendünen vermissen.
+
+Dieser Premium-Diffusor aus Schilfrohr bringt Sonnenlicht, Wärme und das Gefühl des Sommers in Ihr Zuhause.
+
+Riechpyramide:
+Kopfnoten: Orange, Grapefruit
+Herznoten: Pfeffer, rosa Pfeffer
+Basisnoten: Vetiver, Zeder, Patschuli, Benzoe`
+        },
+        eden: {
+          label: 'Eden',
+          description: `EDEN 
+Ein fruchtiger Duft mit einer sanften Blumennote.
+
+Dieses intensive und lebendige Aroma erfüllt den gesamten Raum. Passionsfrucht- und Himbeernoten entfalten sich zu einem saftig-frischen Duft nach reifen Früchten und Beeren. Die Süße wird durch Lilien- und Vanilleakkorde verstärkt. Der Duft hinterlässt eine würzige Spur von Moschus und Sandelholz.
+
+EDEN wird zu Ihrem Lieblingsduft, wenn Sie es lieben, die warmen Sonnenstrahlen auf Ihrer Haut zu spüren und würzige, aromatische Düfte zu genießen.
+
+Dieser Premium-Diffusor aus Schilfrohr ist die perfekte Ergänzung für Schlafzimmer und Wohnzimmer, sowohl in dunklen als auch in hellen Innenräumen. Es ist auch ideal für Badezimmer.
+
+Riechpyramide:
+Kopfnoten: Passionsfrucht, Pfirsich, Birne, Himbeere, schwarzes Johannisbeerblatt, Sand
+Herznote: Lilie
+Basisnoten: Vanille, Moschus, Sandelholz`
+        },
+        fleur: {
+          label: 'Fleur',
+          description: `FLEUR 
+Ein kühles, saftiges, blumig-fruchtiges Aroma, das den Raum mit einer erfrischenden und raffinierten Atmosphäre erfüllt. Die Komposition beginnt mit hellen Noten von Bergamotte, Litschi und Pfirsich und mündet in eine blumige Herznote aus Orangenblüten, Jasmin und Pfingstrose. Der letzte Akkord hinterlässt eine leichte Spur aus holzigen Noten, Moos und Moschus.
+
+Perfekt für helle Innenräume in Schlafzimmern, Badezimmern und Wohnzimmern – Orte, an denen Sie eine frische, frühlingshafte Morgenatmosphäre schaffen möchten.
+
+Wenn Sie saftige, blumige Aromen und ein erfrischendes Ambiente lieben, wird FLEUR Ihr Favorit sein. Dieser Premium-Diffusor aus Schilfrohr wurde entwickelt, um ein raffiniertes Aromaerlebnis zu bieten und jedem Raum Eleganz zu verleihen.
+
+Riechpyramide:
+Kopfnoten: Bergamotte, Litschi, Pfirsich
+Herznoten: Orangenblüte, Jasmin, Pfingstrose
+Basisnoten: Holzige Noten, Moos, Moschus`
+        },
+        green_mango: {
+          label: 'Green Mango',
+          description: `GREEN MANGO 
+Ein saftiger Duft nach frischer Mango und knackiger Ananas.
+
+Dieser hochkonzentrierte Duft erfüllt den gesamten Raum. Noten von grüner Mango und Melone entfalten sich zu einem hellen und frischen Aroma frisch geschnittener Früchte. Ananas- und Pfirsichakkorde verstärken die Süße, während abschließende Anklänge von Kiefernnadeln für eine lebendige, pflanzliche Note sorgen.
+
+Dieser Premium-Diffusor aus Schilfrohr ist ideal für Eingangsbereiche, helle Wohnzimmer und kleine Schönheitssalons. Wenn Sie fruchtige, aber nicht aufdringliche Düfte lieben, wird GREEN MANGO Ihr Favorit sein.
+
+Riechpyramide:
+Kopfnoten: Mango, Melone
+Herznoten: Pfirsich, Ananas
+Basisnote: Mangoschale, Kiefernnadeln`
+        },
+        lime_basil: {
+          label: 'Lime Basil',
+          description: `LIME BASIL 
+Ein frischer Zitrusduft aus saftiger Limette und aromatischem Basilikum.
+
+Dieser intensiv gesättigte Duft entfaltet sich schnell in der Luft. Noten von Limette und reifer Mandarine sorgen für ein leicht süßliches Aroma, während würzige Basilikum- und Thymianakkorde in angenehme Bitterkeit und Kräuterfrische übergehen. Der Duft hinterlässt eine anregende, duftende Spur.
+
+LIME BASIL wird zu Ihrem Favoriten, wenn Sie frische Kräuteraromen und den belebenden Duft eines Mojitos lieben. Dieser Premium-Diffusor aus Schilfrohr eignet sich perfekt für Badezimmer, geräumige Eingangsbereiche und große Wohnzimmer.
+
+Riechpyramide:
+Kopfnoten: Mandarine, Bergamotte
+Herznoten: Basilikum, Iris, Flieder, Thymian
+Basisnoten: Limette, Patschuli, Vetiver`
+        },
+        rosso: {
+          label: 'Rosso',
+          description: `ROSSO 
+Ein üppiger Duft nach reifen roten Trauben und saftigen Beeren.
+
+Dieser Duft mit einer hohen Konzentration an aromatischen Verbindungen erfüllt den gesamten Raum. Die Hauptnote entfaltet sich mit einem pflanzlichen Duft nach Himbeere und Birkenrinde. Der dominante Akkord saftiger roter Trauben durchdringt den Raum mit dem durchdringenden Aroma trockenen Weins. Ein Hauch von Magnolie färbt den Weg mit sanften Blumennuancen.
+
+ROSSO ist für Liebhaber intensiver weinartiger Düfte und reifer Beeren konzipiert. Dieser Premium-Diffusor aus Schilfrohr ist perfekt, um Ihren Raum mit einem lebendigen, tiefen und fruchtigen Duft zu füllen. Ideal für geräumige Wohnzimmer und dunkle Innenräume mit natürlichen Holzelementen.
+
+Riechpyramide:
+Kopfnoten: Orange, Veilchen, Magnolie
+Herznoten: Pflaume, Erdbeere, Waldbeeren
+Basisnote: Trockenes Holz, Birke`
+        },
+        salted_caramel: {
+          label: 'Salted Caramel',
+          description: `SALTED CARAMEL 
+Eine helle Komposition mit hoher Intensität.
+
+Noten von Weizen und Vanille füllen den Duft mit Süße und einer köstlichen, köstlichen Spur. Karamell und Salz verschmelzen zu einem reichen, umhüllenden und leckeren Duft, den man aus der Kindheit kennt: gesalzenes Karamell. Lebhafte Noten von Backwaren verleihen der Komposition noch mehr Geschmack und erfüllen Ihren Raum mit Wärme und Gemütlichkeit.
+
+Wenn Sie in Ihre Kindheit eintauchen und eine unvergessliche Atmosphäre voller Staunen und Feiern erleben möchten, ist SALTED CARAMEL genau das Richtige für Sie. Dieser hochkonzentrierte Premium-Diffusor aus Schilfrohr verwandelt jeden Raum in eine gemütliche, köstliche Ecke.
+
+Riechpyramide:
+Kopfnote: Meersalz
+Herznoten: Birne, Vanille, pudrige Noten, Weizen
+Basisnote: Toffee, brauner Zucker`
+        },
+        salty_water: {
+          label: 'Salty Water',
+          description: `SALTY WATER 
+Ein frischer Duft nach Salzwasser und uralten Mineralien.
+
+Dies ist ein Duft von leichter Intensität, der zarteste der gesamten Linie. Es entfaltet sich sanft in der Luft und füllt nach und nach den Raum. Meersalz und Amber lösen sich in einem erfrischenden, salzigen Tau-Aroma auf. Ein Hauch von Seetang verleiht der Komposition eine pflanzliche Note, während erfrischender Salbei der Komposition Helligkeit verleiht.
+
+SALTY WATER ist die perfekte Wahl, wenn Sie kein Fan von intensiven, süßen Düften sind und sich vom Geheimnis des Meeres verzaubern lassen. Dieser Premium-Diffusor aus Schilfrohr schafft eine helle, maritime Atmosphäre in jeder Ecke Ihres Zuhauses.
+
+Riechpyramide:
+Kopfnoten: Bernstein, Meersalz
+Herznote: Salbei
+Basisnoten: Grapefruit, Algen`
+        },
+        santal: {
+          label: 'Santal',
+          description: `SANTAL 
+Ein pudriger Duft mit Leder, Kardamom und orientalischem Sandelholz.
+
+Dieser aromatische Duft verbreitet sich langsam und sanft im Raum. Aufkommende Noten von Kardamom und Sandelholz vermischen sich mit starken Akkorden von Iris und Amber und schaffen eine bittere orientalische Symphonie. Der letzte Hauch von Veilchen und Papyrus geht in eine leicht blumige Spur über.
+
+Sie werden sich in SANTAL verlieben, wenn Sie wohltuende pudrige Düfte, Gewürze und den Charme des Orients genießen. Dieser Premium-Diffusor aus Schilfrohr ist perfekt, um Ihrem Zuhause Wärme und exotische Eleganz zu verleihen.
+
+Riechpyramide:
+Kopfnoten: Sandelholz, Papyrus, Leder
+Herznoten: Virginiazeder, Kardamom, Veilchen
+Basisnoten: Iris, Amber`
+        },
+        sugar: {
+          label: 'Sugar',
+          description: `SUGAR 
+Ein süßer und klebriger Duft nach verbranntem Zucker und holzigem Harz.
+
+Ein intensiver und gesättigter Duft, der den gesamten Raum erfüllt. Ausgeprägte Noten von Safran und Jasmin verschmelzen zu einem süßen und würzigen Aroma. Der holzige Amber-Akkord umhüllt die Luft mit der Süße und Tiefe von Harz. Der letzte Hauch von weißer Zeder unterstreicht den holzigen Duft.
+
+SUGAR ist perfekt für alle, die ihrem Raum eine luxuriöse Note verleihen und ihn mit einer reichen, klebrigen Süße füllen möchten. Dieser Premium-Diffusor aus Schilfrohr wurde gefertigt, um ein immersives Sinneserlebnis in warmen, eleganten Innenräumen zu bieten.
+
+Riechpyramide:
+Kopfnoten: Jasmin, Safran
+Herznote: Holziger Amber
+Basisnote: Weiße Zeder, Kiefernharz`
+        },
+        tobacco_vanilla: {
+          label: 'Tobacco Vanilla',
+          description: `TOBACCO VANILLA 
+Ein warmer und sanfter Duft nach Tabakblättern und süßer Vanille.
+
+Dies ist ein Duft mittlerer Sättigung. Noten von Gewürzen und Tabakblättern entfalten sich nach und nach zu einem reichen, zarten Vanille- und Kakaoduft. Die Spur offenbart sich mit leichten Noten von holziger Rinde und getrockneten Früchten.
+
+In einem geschlossenen Raum verbreitet sich TOBACCO VANILLA sanft und erreicht seinen höchsten Duft bereits in den ersten Minuten nach Betreten des Raumes.
+
+Sie werden TOBACCO VANILLA lieben, wenn Sie die Leichtigkeit, Süße und Subtilität eines Duftes schätzen und Ihrer Umgebung Festigkeit und Luxus verleihen möchten.
+
+Suchen Sie nach dem besten Schilfrohr-Diffusor für Ihr Zuhause? TOBACCO VANILLA von BY VELCHEVA vereint Eleganz und Wärme in einem raffinierten Format. Perfekt für alle, die einen Diffusor mit einem intensiven, langanhaltenden Duft kaufen möchten, der jeden Raum in ein sinnliches Erlebnis verwandelt.
+
+Riechpyramide:
+Kopfnoten: Tabakblätter, Gewürze
+Herznoten: Tonkabohne, Vanille, Kakao, Tabakblüte
+Basisnoten: Holzige Noten, Trockenfrüchte`
+        },
+        valencia: {
+          label: 'Valencia',
+          description: `VALENCIA 
+Ein luftiger Duft aus frischen Zitrusfrüchten und zartem Jasmin. Dieses mittelintensive Aroma verteilt sich sanft im Raum. Noten von Zitrone und Bergamotte füllen den Raum mit einem frischen Zitrusduft mit einer leichten Bitterkeit. Die Hauptakkorde von Jasmin und Rose verschmelzen zu einer süßen Blumenkomposition. Abschließende Moschusnoten verstärken die Würze des Duftes.
+
+VALENCIA wird zu Ihrem Lieblingsduft, wenn Sie den zarten Duft von Blumen und Zitrusfrüchten im Raum spüren möchten. Ideal für natürliche, helle Innenräume, Wohn- und Schlafzimmer.
+
+Riechpyramide:
+Kopfnoten: Bergamotte, Zitrone
+Herznoten: Jasmin, weiße Akazie, Rose
+Basisnoten: Holzige Noten, Moschus`
+        },
       },
+
       copy: {
-        paragraph1:
-          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
-        subheadingHow: 'How does it work?',
-        paragraph2:
-          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
-        subheadingAdvantages: 'Advantages of Reed Diffusers',
-        paragraph3:
-          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
-        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
-        benefit2:
-          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
-        benefit3:
-          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph1:          'Ein Diffusor ist eine stilvolle und effektive Möglichkeit, Ihr Zuhause mit angenehmen Düften zu erfüllen. Moderne Garnituren mit Schilfrohr schaffen eine gemütliche Atmosphäre und unterstreichen die Individualität jedes Interieurs. Der Online-Shop bietet eine Vielzahl von Duftstäbchen-Diffusoren für zu Hause und Geschenksets an.',
+        subheadingHow:          'Wie funktioniert es?',
+        paragraph2:          'Ein Schilfrohrdiffusor funktioniert durch Kapillarwirkung auf Bambus- oder synthetischen Schilfrohren. Durch diese Art der Duftverteilung bleibt die Luft lange duftend. Besonders beliebt sind Aromadiffusoren mit ätherischen Ölen: Sie duften nicht nur gut, sondern wirken sich auch positiv auf Emotionen aus.',
+        subheadingAdvantages:          'Vorteile von Schilfrohrdiffusoren',
+        paragraph3:          'Ein Aromadiffusor ist eine tolle Alternative zu herkömmlichen Lufterfrischern. Dieses Produkt arbeitet kontinuierlich: Den ganzen Tag über verbreitet sich ein leichter, angenehmer Duft im Raum. Darüber hinaus besteht die aromatische Zusammensetzung eines solchen Accessoires hauptsächlich aus natürlichen Zutaten. Zu den Vorteilen des Diffusors gehören:',
+        benefit1:          'eine gemütliche Atmosphäre, die entspannt und gute Laune bringt;',
+        benefit2:          'Aromatherapie: Einige Diffusoren sind für die Aromatherapie konzipiert: Sie wirken sich positiv auf das Nervensystem aus und helfen, die Manifestation von Stress zu minimieren.',
+        benefit3:          'Geruchsmaskierung: Ein weiterer Vorteil des Produkts: Es ist in der Lage, unangenehme Noten im Raum zu verbergen und so Tabakrauch und den Geruch, der nach dem Kochen zurückbleibt, zu bekämpfen.',
+        paragraph4:          'Diffusoren haben außerdem ein elegantes Design, das sich problemlos in die Inneneinrichtung des Raumes einfügt.',
       }
+
     },
     candles: {
       product: {
@@ -1065,6 +1353,9 @@ const translations = {
       toggle: {
         more: 'Voir plus',
         less: 'Voir moins'
+      },
+      cta: {
+        addToCart: 'Ajouter au panier'
       }
     },
     nav: {
@@ -1530,12 +1821,11 @@ const translations = {
         title: 'Diffuseurs pour espaces de caractère'
       },
       product: {
-        title: 'Diffuseur Signature',
+        titleDefault: 'Diffuseur Signature',
         description:
           'Configurez volume et fragrance parmi 21 compositions maison. Verre soufflé à la main et bâtonnets italiens interchangeables.',
-        scentTitlePrefix: 'Diffuseur',
-        priceLabel: 'Prix',
-        cta: 'Ajouter au panier'
+        titlePrefix: 'Diffuseur',
+        priceLabel: 'Prix'
       },
       options: {
         volumeLabel: 'Volume',
@@ -1543,44 +1833,330 @@ const translations = {
       },
       scents: {
         none: { label: 'No fragrance', description: '' },
-        africa: { label: 'Africa', description: '' },
-        bamboo: { label: 'Bamboo', description: '' },
-        bellini: { label: 'Bellini', description: '' },
-        blanc: { label: 'Blanc', description: '' },
-        carolina: { label: 'Carolina', description: '' },
-        cherry_blossom: { label: 'Cherry Blossom', description: '' },
-        christmas_tree: { label: 'Christmas Tree', description: '' },
-        etna: { label: 'Etna', description: '' },
-        dubai: { label: 'Dubai', description: '' },
-        dune: { label: 'Dune', description: '' },
-        eden: { label: 'Eden', description: '' },
-        fleur: { label: 'Fleur', description: '' },
-        green_mango: { label: 'Green Mango', description: '' },
-        lime_basil: { label: 'Lime Basil', description: '' },
-        rosso: { label: 'Rosso', description: '' },
-        salted_caramel: { label: 'Salted Caramel', description: '' },
-        salty_water: { label: 'Salty Water', description: '' },
-        santal: { label: 'Santal', description: '' },
-        sugar: { label: 'Sugar', description: '' },
-        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
-        valencia: { label: 'Valencia', description: '' },
+        africa: {
+          label: 'Africa',
+          description: `AFRICA 
+Un parfum chaud et épicé de bois de cardamome et de cuir souple. Ce parfum intensément concentré remplit toute la pièce. Des notes lumineuses de bergamote et de musc sont rehaussées par une nuance boisée lumineuse. De riches accords de cardamome et de cuir confèrent un caractère robuste et accentué, tandis qu'un sillage parfumé de cumin épicé et de safran complète la composition.
+
+Vous tomberez amoureux de l’AFRIQUE si vous avez envie d’arômes frais et boisés ou si vous aspirez aux dunes du désert et aux aventures de safari.
+
+Idéal pour les salons et salons spacieux ainsi que pour les intérieurs comportant des éléments naturels. Ce diffuseur à roseaux haut de gamme apporte du caractère et de la sophistication à n'importe quel espace.
+
+Pyramide Olfactive :
+Notes de tête : Bergamote, Vétiver, Géranium
+Notes de cœur : Cardamome, Cuir, Musc
+Notes de fond : Patchouli, Cumin, Oud, Safran`
+        },
+        bamboo: {
+          label: 'Bamboo',
+          description: `BAMBOO 
+Un parfum vert et frais de fleurs printanières et de tiges de bambou. Ce parfum moyennement intense remplit doucement votre espace sans le dominer. Les notes de tête de bergamote et de bambou créent une délicate brume végétale, évoluant vers un cœur floral de lys, d'ylang-ylang et de fleur d'oranger. Un fond chaleureux et enveloppant de vanille, de bois de santal et d'ambre complète la composition.
+
+Parfait pour les intérieurs lumineux, les petites pièces et les salles de bains où l’on souhaite une fraîcheur douce et naturelle.
+
+Si vous aimez les arômes végétaux, frais et floraux, BAMBOO sera un complément idéal à votre collection. Ce diffuseur à roseaux haut de gamme est conçu pour créer une atmosphère harmonieuse et naturelle dans votre maison.
+
+Pyramide Olfactive :
+Notes de tête : Bambou, Bergamote
+Notes de cœur : Ylang-ylang, Lys, Fleur d'Oranger
+Notes de fond : Vanille, Bois de santal, Ambre`
+        },
+        bellini: {
+          label: 'Bellini',
+          description: `BELLINI 
+Un parfum velouté de pêche juteuse et de rhum intense. Ce parfum poudré, riche en composés aromatiques, remplit rapidement votre espace de notes ludiques de pêche douce, d'orange sanguine et de vanille. Les accords amers-épicés de cognac, de rhum et de cachemire ajoutent une touche subtile et approfondissent son caractère.
+
+BELLINI est parfait si vous souhaitez conserver une ambiance festive et festive.
+
+Ce diffuseur à roseaux haut de gamme est un merveilleux ajout aux salons spacieux, aux entrées et à tout intérieur lumineux.
+
+Pyramide Olfactive :
+Notes de tête : Pêche, Orange sanguine, Cardamome, Héliotrope
+Notes de cœur : Rhum, Cognac, Davana, Jasmin
+Notes de fond : Patchouli, Bois de Santal, Vanille, Fève Tonka, Cachemire, Benjoin, Storax, Labdanum, Vétiver`
+        },
+        blanc: {
+          label: 'Blanc',
+          description: `BLANC 
+Un parfum doux et frais de coton blanc et de pureté.
+
+Ce parfum modérément concentré mélange des accords floraux légers avec des aldéhydes brillants, évoquant l'arôme incomparable d'une chemise blanche impeccable, de draps fraîchement lavés et d'une pureté inégalée.
+
+Dans les espaces clos, le parfum se diffuse de manière douce et fluide, emplissant la pièce d'une fraîcheur délicate.
+
+Vous tomberez sûrement sous le charme de BLANC si vous appréciez les senteurs pures et souhaitez recréer l’atmosphère d’une chambre fraîchement nettoyée dans un hôtel de luxe.
+
+Pyramide Olfactive :
+Notes de tête : Aldéhydes, Rose, Poivre Rose
+Notes de cœur : Pivoine, Violette, Fleur d'Oranger
+Notes de fond : Musc blanc, Notes boisées, Bois de santal`
+        },
+        carolina: {
+          label: 'Carolina',
+          description: `CAROLINA 
+Un arôme délicat et léger de cappuccino sucré et de fleurs printanières.
+
+Ce parfum moyennement concentré se déploie en douceur dans n'importe quel espace. Les notes de café et d'amande se dissolvent dans un accord doux-amer chaleureux et enveloppant. Le jasmin, l'iris et la bergamote créent des reflets floraux frais, tandis qu'un murmure de cacao épicé persiste dans le sillage.
+
+Vous tomberez amoureux de CAROLINA si vous aimez l’ambiance cosy des cafés et les pâtisseries sucrées, ou si vous avez envie d’une atmosphère chaleureuse et subtilement mystérieuse. Ce diffuseur mikado haut de gamme transforme n'importe quelle pièce en une retraite sensorielle accueillante.
+
+Pyramide Olfactive :
+Notes de tête : Amande, Café, Bergamote, Citron
+Notes de cœur : Jasmin Sambac, Tubéreuse, Iris, Rose Bulgare, Fleur d'Oranger
+Notes de fond : Fève Tonka, Cacao, Bois de Santal, Vanille, Praliné, Cannelle, Cèdre Blanc, Bois de Cachemire, Patchouli, Ambre, Musc`
+        },
+        cherry_blossom: {
+          label: 'Cherry Blossom',
+          description: `CHERRY BLOSSOM 
+Un arôme doux et épicé de riche liqueur de cerise et de fleurs printanières.
+
+Un parfum intensément saturé qui rehausse toute l’atmosphère de la pièce. Les notes de tête de cerise et d'amande amère évoluent vers un parfum vibrant et acidulé de liqueur de cerise. Les accords de rose et de jasmin se fondent dans un doux sillage floral, enrichi d'une douce touche de vanille.
+
+Vous tomberez amoureux de CHERRY BLOSSOM si vous appréciez ses parfums délicats et sucrés et le parfum des cerises mûres et juteuses.
+
+CHERRY BLOSSOM est le parfum parfait pour les cuisines, les couloirs spacieux et les salles de bains lumineuses.
+
+Pyramide Olfactive :
+Notes de tête : Cerise, Liqueur, Amande amère
+Notes de cœur : Cerise, Rose de Turquie, Jasmin sambac, Prune
+Notes de fond : Baume du Pérou, Fèves Tonka, Bois de santal, Vétiver, Cèdre blanc, Benjoin, Cannelle, Girofle, Patchouli, Vanille`
+        },
+        christmas_tree: {
+          label: 'Christmas Tree',
+          description: `CHRISTMAS TREE 
+Un parfum doux et festif de pin de Noël et de mandarines juteuses.
+
+Il s'agit d'un parfum d'intensité moyenne qui remplit doucement la pièce d'un voile translucide. La note vive et douce de mandarine se déploie en un arôme familier et nostalgique, tandis que le sillage vert final du pin apporte profondeur et fraîcheur.
+
+CHRISTMAS TREE est le parfum parfait pour les vacances de Noël – ou pour ceux qui veulent ressentir la magie de la saison même dans la chaleur de l'été.
+
+Ce parfum est idéal pour les chambres d'enfants, les espaces de vie ou un petit café chaleureux.
+
+Pyramide Olfactive :
+Notes de tête : Vanille
+Notes de cœur : Orange, Cannelle
+Notes de fond : Pin, Mandarine`
+        },
+        etna: {
+          label: 'Etna',
+          description: `ETNA 
+Un arôme épicé et chaleureux de cuir, de tabac et de caramel.
+
+Ce parfum enveloppe tout l’espace autour de vous. Des notes fortes de cuir et de poivre noir émergent instantanément, tandis que le clou de girofle, la sauge et le miel se fondent dans une composition intense et autosuffisante. Le parfum laisse un sillage ambré profond, enrichi de notes de tabac et de patchouli.
+
+L'ETNA est parfait si vous recherchez un arôme épicé, fougueux et explosif avec des notes orientales vibrantes.
+
+Ce diffuseur à roseaux haut de gamme s'intègre parfaitement dans les salons ou les halls d'entrée sombres et spacieux, mettant en valeur les éléments rustiques en bois et en pierre.
+
+Pyramide Olfactive :
+Notes de tête : Cuir, Baume de Tolu, Safran, Feuille de laurier, Poivre noir, Teinture de terre, Citron, Thym
+Notes de cœur : Miel, Poivron rouge, Girofle, Iris, Sauge, Magnolia, Pivoine
+Notes de fond : Tabac, Oud, Caramel, Cuir, Benjoin, Pin, Patchouli, Baume du Canada, Bois de Cachemire, Labdanum`
+        },
+        dubai: {
+          label: 'Dubai',
+          description: `DUBAI 
+Un riche parfum oriental de rose de Damas et de bois de oud.
+
+Un arôme intense et très concentré qui fait connaître sa présence dès les premiers instants. Des notes de géranium et de violette enveloppent doucement l'espace d'un parfum floral légèrement amer. Des accords lumineux de rose de Damas et de rose turque se fondent dans un sillage doux et doux, avec une touche épicée de cannelle.
+
+Vous adorerez DUBAI si vous êtes fan des parfums luxueux des hôtels et des nuits d’été étoilées.
+
+DUBAI est le choix idéal pour les salons, les halls d’entrée et bien sûr les hôtels.
+
+Pyramide Olfactive :
+Notes de tête : Géranium, Violette
+Notes de cœur : Cannelle, Rose de Damas, Rose de Turquie
+Notes de fond : Oud, Vanille`
+        },
+        dune: {
+          label: 'Dune',
+          description: `DUNE 
+Un parfum audacieux et épicé de soleil de plomb et de piment.
+
+Ce parfum très intense remplira votre espace. Des notes d'agrumes d'orange et de pamplemousse ajoutent un sillage agréablement sucré. Des accords de poivre distincts se dissolvent dans un arôme brillant, audacieux et fougueux. Des nuances de cèdre et de vétiver complètent la composition avec une tonalité chaleureuse et boisée.
+
+DUNE est parfait pour ceux qui manquent du soleil brûlant et des vastes dunes du désert.
+
+Ce diffuseur à roseaux haut de gamme apporte la lumière du soleil, la chaleur et la sensation de l'été dans votre maison.
+
+Pyramide Olfactive :
+Notes de tête : Orange, Pamplemousse
+Notes de cœur : Poivre, Poivre Rose
+Notes de fond : Vétiver, Cèdre, Patchouli, Benjoin`
+        },
+        eden: {
+          label: 'Eden',
+          description: `EDEN 
+Un parfum fruité au doux sillage floral.
+
+Intense et vibrant, cet arôme remplit tout l'espace. Les notes de fruit de la passion et de framboise se déploient dans un parfum juteux et frais de fruits mûrs et de baies. La douceur est rehaussée par des accords de lys et de vanille. Le parfum laisse un sillage épicé de musc et de bois de santal.
+
+EDEN deviendra votre parfum préféré si vous aimez sentir les chauds rayons du soleil sur votre peau et profiter des parfums épicés et aromatiques.
+
+Ce diffuseur à roseaux haut de gamme est le complément parfait aux chambres et aux salons, aussi bien dans les intérieurs sombres que lumineux. Il est également idéal pour les salles de bains.
+
+Pyramide Olfactive :
+Notes de tête : Fruit de la Passion, Pêche, Poire, Framboise, Feuille de Cassis, Sable
+Notes de cœur : Lys
+Notes de fond : Vanille, Musc, Bois de Santal`
+        },
+        fleur: {
+          label: 'Fleur',
+          description: `FLEUR 
+Un arôme frais, juteux et floral-fruité qui remplit l'espace d'une atmosphère rafraîchissante et sophistiquée. La composition s'ouvre sur des notes lumineuses de bergamote, de litchi et de pêche, menant à un cœur floral de fleur d'oranger, de jasmin et de pivoine. L'accord final laisse un léger sillage de notes boisées, de mousse et de musc.
+
+Parfait pour les intérieurs lumineux des chambres, des salles de bains et des salons – des endroits où vous souhaitez créer une atmosphère fraîche et matinale de printemps.
+
+Si vous aimez les arômes juteux et floraux et une ambiance rafraîchissante, FLEUR deviendra votre préféré. Ce diffuseur à roseaux haut de gamme est conçu pour offrir une expérience aromatique raffinée, ajoutant de l'élégance à n'importe quel espace.
+
+Pyramide Olfactive :
+Notes de tête : Bergamote, Litchi, Pêche
+Notes de cœur : Fleur d'oranger, Jasmin, Pivoine
+Notes de fond : Notes boisées, Mousse, Musc`
+        },
+        green_mango: {
+          label: 'Green Mango',
+          description: `GREEN MANGO 
+Un parfum juteux de mangue fraîche et d'ananas croquant.
+
+Ce parfum hautement concentré remplit tout l’espace. Des notes de mangue verte et de melon se déploient dans un arôme vif et frais de fruits fraîchement coupés. Les accords d'ananas et de pêche rehaussent la douceur, tandis que les notes finales d'aiguilles de pin ajoutent un sillage végétal vibrant.
+
+Ce diffuseur à roseaux haut de gamme est idéal pour les entrées, les salons lumineux et les petits salons de beauté. Si vous aimez les parfums fruités mais pas envahissants, GREEN MANGO deviendra votre préféré.
+
+Pyramide Olfactive :
+Notes de tête : Mangue, Melon
+Notes de cœur : Pêche, Ananas
+Notes de fond : zeste de mangue, aiguilles de pin`
+        },
+        lime_basil: {
+          label: 'Lime Basil',
+          description: `LIME BASIL 
+Un parfum frais d'agrumes de citron vert juteux et de basilic aromatique.
+
+Ce parfum intensément saturé se déploie rapidement dans l'air. Les notes de citron vert et de mandarine mûre créent un arôme légèrement sucré, tandis que les accords épicés de basilic et de thym se dissolvent dans une agréable amertume et une fraîcheur herbacée. Le parfum laisse un sillage stimulant et parfumé.
+
+LIME BASILIC deviendra votre préféré si vous aimez les arômes frais et herbacés et le parfum vivifiant d'un mojito. Ce diffuseur à roseaux haut de gamme est parfait pour les salles de bains, les entrées spacieuses et les grands salons.
+
+Pyramide Olfactive :
+Notes de tête : Mandarine, Bergamote
+Notes de cœur : Basilic, Iris, Lilas, Thym
+Notes de fond : Citron Vert, Patchouli, Vétiver`
+        },
+        rosso: {
+          label: 'Rosso',
+          description: `ROSSO 
+Un arôme luxuriant de raisins rouges mûrs et de baies juteuses.
+
+Ce parfum, à forte concentration de composés aromatiques, remplit tout l'espace. La note principale se déploie sur un parfum végétal de framboise et d'écorce de bouleau. L'accord dominant de raisins rouges juteux imprègne la pièce de l'arôme pénétrant du vin sec. Une touche de magnolia colore le sillage de douces nuances florales.
+
+ROSSO est conçu pour les amateurs de parfums intenses de vin et de baies mûres. Ce diffuseur à roseaux haut de gamme est parfait pour remplir votre espace d’un parfum vibrant, profond et fruité. Idéal pour les salons spacieux et les intérieurs sombres avec des éléments en bois naturel.
+
+Pyramide Olfactive :
+Notes de tête : Orange, Violette, Magnolia
+Notes de cœur : Prune, Fraise, Baies sauvages
+Notes de fond : Bois sec, Bouleau`
+        },
+        salted_caramel: {
+          label: 'Salted Caramel',
+          description: `SALTED CARAMEL 
+Une composition lumineuse de haute intensité.
+
+Des notes de blé et de vanille remplissent le parfum de douceur et d'un sillage délicieux et alléchant. Le caramel et le sel se mélangent dans un parfum riche, enveloppant et savoureux, familier depuis l'enfance : le caramel salé. Des notes vibrantes de produits de boulangerie ajoutent encore plus de saveur à la composition, remplissant votre espace de chaleur et de confort.
+
+Si vous souhaitez replonger en enfance et vivre une atmosphère inoubliable d'émerveillement et de fête, CARAMEL SALÉ est fait pour vous. Ce diffuseur à roseaux haut de gamme à haute concentration transforme n'importe quel espace en un coin confortable et délicieux.
+
+Pyramide Olfactive :
+Notes de tête : Sel marin
+Notes de cœur : Poire, Vanille, Notes poudrées, Blé
+Notes de fond : caramel au beurre, cassonade`
+        },
+        salty_water: {
+          label: 'Salty Water',
+          description: `SALTY WATER 
+Un parfum frais d'eau salée et de minéraux anciens.
+
+Il s'agit d'un parfum d'intensité légère, le plus délicat de toute la ligne. Il se déploie doucement dans l’air, remplissant progressivement la pièce. Le sel marin et l’ambre se dissolvent dans un arôme rafraîchissant de rosée salée. Des notes d'algues ajoutent une nuance végétale, tandis que la sauge rafraîchissante apporte de l'éclat à la composition.
+
+L’EAU SALÉE est le choix idéal si vous n’êtes pas amateur de parfums intenses et sucrés et que vous êtes enchanté par le mystère de la mer. Ce diffuseur à roseaux haut de gamme crée une atmosphère légère et marine dans n'importe quel coin de votre maison.
+
+Pyramide Olfactive :
+Notes de tête : Ambre, Sel marin
+Notes de cœur : Sauge
+Notes de fond : Pamplemousse, Algues`
+        },
+        santal: {
+          label: 'Santal',
+          description: `SANTAL 
+Un parfum poudré avec du cuir, de la cardamome et du bois de santal oriental.
+
+Ce parfum aromatique se diffuse lentement et doucement dans tout l'espace. Les notes émergentes de cardamome et de bois de santal se mélangent aux accords forts d'iris et d'ambre, créant une symphonie orientale amère. Les touches finales de violette et de papyrus s'adoucissent dans un sillage légèrement floral.
+
+Vous tomberez amoureux de SANTAL si vous appréciez les parfums poudrés réconfortants, les épices et le charme de l’Orient. Ce diffuseur à roseaux haut de gamme est parfait pour ajouter de la chaleur et une élégance exotique à votre maison.
+
+Pyramide Olfactive :
+Notes de tête : Bois de santal, Papyrus, Cuir
+Notes de cœur : Cèdre de Virginie, Cardamome, Violette
+Notes de fond : Iris, Ambre`
+        },
+        sugar: {
+          label: 'Sugar',
+          description: `SUGAR 
+Un parfum doux et collant de sucre brûlé et de résine boisée.
+
+Un parfum intense et saturé qui remplit toute la pièce. Des notes prononcées de safran et de jasmin se fondent dans un arôme doux et épicé. L'accord principal boisé ambré enveloppe l'air de la douceur et de la profondeur de la résine. Des touches finales de cèdre blanc rehaussent le sillage boisé.
+
+SUGAR est parfait pour ceux qui souhaitent apporter une touche luxueuse à leur espace, en le remplissant d'une douceur riche et collante. Ce diffuseur à roseaux haut de gamme a été conçu pour offrir une expérience sensorielle immersive dans des intérieurs chaleureux et sophistiqués.
+
+Pyramide Olfactive :
+Notes de tête : Jasmin, Safran
+Notes de cœur : Ambré boisé
+Notes de fond : Cèdre blanc, Résine de pin`
+        },
+        tobacco_vanilla: {
+          label: 'Tobacco Vanilla',
+          description: `TOBACCO VANILLA 
+Un parfum chaud et doux de feuilles de tabac et de vanille douce.
+
+Il s'agit d'un parfum de saturation moyenne. Des notes d'épices et de feuilles de tabac se dévoilent progressivement en un parfum riche et délicat de vanille et de cacao. Le sillage se dévoile sur de légères notes d'écorces boisées et de fruits secs.
+
+Dans un espace clos, TABAC VANILLE se diffuse doucement et atteint son apogée parfumée dès les premières minutes suivant son entrée dans la pièce.
+
+Vous allez adorer TABAC VANILLE si vous appréciez la légèreté, la douceur et la subtilité d'un parfum, et si vous souhaitez ajouter de la solidité et du luxe à votre environnement.
+
+Vous recherchez le meilleur diffuseur de roseaux pour votre maison ? TOBACCO VANILLA de BY VELCHEVA allie élégance et chaleur dans un format sophistiqué. Parfait pour ceux qui souhaitent acheter un diffuseur au parfum intense et durable qui transforme n'importe quel espace en une expérience sensorielle.
+
+Pyramide Olfactive :
+Notes de tête : Feuilles de Tabac, Épices
+Notes de cœur : Fève Tonka, Vanille, Cacao, Fleur de Tabac
+Notes de fond : Notes boisées, Fruits secs`
+        },
+        valencia: {
+          label: 'Valencia',
+          description: `VALENCIA 
+Un parfum aérien d'agrumes frais et de jasmin délicat. Cet arôme d'intensité moyenne se propage doucement dans toute la pièce. Des notes de citron et de bergamote remplissent l'espace d'un parfum frais d'agrumes avec une légère amertume. Les accords principaux de jasmin et de rose se fondent dans une douce composition florale. Les notes finales de musc rehaussent le piquant du parfum.
+
+VALENCIA deviendra votre parfum préféré si vous souhaitez ressentir le délicat parfum des fleurs et des agrumes dans la pièce. Idéal pour les intérieurs naturels et lumineux, les salons et les chambres.
+
+Pyramide Olfactive :
+Notes de tête : Bergamote, Citron
+Notes de cœur : Jasmin, Acacia Blanc, Rose
+Notes de fond : Notes boisées, Musc`
+        },
       },
+
       copy: {
-        paragraph1:
-          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
-        subheadingHow: 'How does it work?',
-        paragraph2:
-          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
-        subheadingAdvantages: 'Advantages of Reed Diffusers',
-        paragraph3:
-          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
-        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
-        benefit2:
-          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
-        benefit3:
-          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph1:          'Un diffuseur est un moyen élégant et efficace de remplir votre maison d’arômes agréables. Les ensembles modernes avec des roseaux contribuent à créer une atmosphère chaleureuse et soulignent l\'individualité de tout intérieur. La boutique en ligne propose une variété de diffuseurs à roseaux pour la maison et des coffrets cadeaux.',
+        subheadingHow:          'Comment ça marche ?',
+        paragraph2:          'Un diffuseur à roseaux fonctionne par capillarité sur des roseaux en bambou ou synthétiques. Cette méthode de diffusion du parfum permet à l’air de rester longtemps parfumé. Les diffuseurs d\'arômes aux huiles essentielles sont particulièrement appréciés : non seulement ils sentent bon, mais ils ont également un effet positif sur les émotions.',
+        subheadingAdvantages:          'Avantages des diffuseurs à roseaux',
+        paragraph3:          'Un diffuseur d’arômes est une excellente alternative aux assainisseurs d’air traditionnels. Ce produit fonctionne en continu : un parfum léger et agréable flottera dans la pièce tout au long de la journée. De plus, la composition aromatique d’un tel accessoire est composée majoritairement d’ingrédients naturels. Parmi les avantages du diffuseur :',
+        benefit1:          'une ambiance cosy qui détend et apporte de la bonne humeur ;',
+        benefit2:          'aromathérapie : certains diffuseurs sont conçus pour l\'aromathérapie : ils ont un effet positif sur le système nerveux et contribuent à minimiser la manifestation du stress ;',
+        benefit3:          'masquage des odeurs : autre avantage du produit : il est capable de masquer les notes désagréables dans la pièce, luttant ainsi contre la fumée de tabac et les odeurs laissées après la cuisson.',
+        paragraph4:          'Les diffuseurs ont également un design élégant qui complète facilement l’intérieur de la pièce.',
       }
+
     },
     candles: {
       product: {
@@ -1848,6 +2424,9 @@ const translations = {
       toggle: {
         more: 'Mostra di più',
         less: 'Mostra meno'
+      },
+      cta: {
+        addToCart: 'Aggiungi al carrello'
       }
     },
     nav: {
@@ -2312,12 +2891,11 @@ const translations = {
         title: 'Diffusori per ambienti di carattere'
       },
       product: {
-        title: 'Diffusore Signature',
+        titleDefault: 'Diffusore Signature',
         description:
           'Configura volume e fragranza tra 21 composizioni iconiche. Vetro lavorato a mano e bastoncini intercambiabili.',
-        scentTitlePrefix: 'Diffusore',
-        priceLabel: 'Prezzo',
-        cta: 'Aggiungi al carrello'
+        titlePrefix: 'Diffusore',
+        priceLabel: 'Prezzo'
       },
       options: {
         volumeLabel: 'Volume',
@@ -2325,44 +2903,330 @@ const translations = {
       },
       scents: {
         none: { label: 'No fragrance', description: '' },
-        africa: { label: 'Africa', description: '' },
-        bamboo: { label: 'Bamboo', description: '' },
-        bellini: { label: 'Bellini', description: '' },
-        blanc: { label: 'Blanc', description: '' },
-        carolina: { label: 'Carolina', description: '' },
-        cherry_blossom: { label: 'Cherry Blossom', description: '' },
-        christmas_tree: { label: 'Christmas Tree', description: '' },
-        etna: { label: 'Etna', description: '' },
-        dubai: { label: 'Dubai', description: '' },
-        dune: { label: 'Dune', description: '' },
-        eden: { label: 'Eden', description: '' },
-        fleur: { label: 'Fleur', description: '' },
-        green_mango: { label: 'Green Mango', description: '' },
-        lime_basil: { label: 'Lime Basil', description: '' },
-        rosso: { label: 'Rosso', description: '' },
-        salted_caramel: { label: 'Salted Caramel', description: '' },
-        salty_water: { label: 'Salty Water', description: '' },
-        santal: { label: 'Santal', description: '' },
-        sugar: { label: 'Sugar', description: '' },
-        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
-        valencia: { label: 'Valencia', description: '' },
+        africa: {
+          label: 'Africa',
+          description: `AFRICA 
+Un profumo caldo e speziato di legno di cardamomo e morbida pelle. Questa fragranza intensamente concentrata riempie l'intera stanza. Le note luminose di bergamotto e muschio sono esaltate da una luminosa sfumatura legnosa. Ricchi accordi di cardamomo e cuoio conferiscono un carattere robusto e accentuato, mentre una scia fragrante di cumino speziato e zafferano completa la composizione.
+
+Ti innamorerai dell'AFRICA se brami aromi freschi e legnosi o desideri dune del deserto e avventure safari.
+
+Ideale per soggiorni e lounge spaziosi, nonché per interni caratterizzati da elementi naturali. Questo diffusore a bastoncino di alta qualità conferisce carattere e raffinatezza a qualsiasi spazio.
+
+Piramide Olfattiva:
+Note di testa: bergamotto, vetiver, geranio
+Note di cuore: cardamomo, cuoio, muschio
+Note di fondo: Patchouli, Cumino, Oud, Zafferano`
+        },
+        bamboo: {
+          label: 'Bamboo',
+          description: `BAMBOO 
+Un profumo verde e fresco di fiori primaverili e steli di bambù. Questa fragranza moderatamente intensa riempie delicatamente il tuo spazio senza sopraffarlo. Le note di testa di bergamotto e bambù creano una delicata nebbia vegetale, che si evolve in un cuore floreale di giglio, ylang-ylang e fiori d'arancio. Una base calda e avvolgente di vaniglia, legno di sandalo e ambra completa la composizione.
+
+Perfetto per interni luminosi, stanze piccole e bagni dove si desidera una freschezza morbida e naturale.
+
+Se ami gli aromi vegetali, freschi e floreali, BAMBOO sarà un'aggiunta ideale alla tua collezione. Questo diffusore a bastoncino di alta qualità è progettato per creare un'atmosfera armoniosa e naturale nella tua casa.
+
+Piramide Olfattiva:
+Note di testa: bambù, bergamotto
+Note di cuore: Ylang Ylang, Giglio, Fiori d'Arancio
+Note di fondo: vaniglia, sandalo, ambra`
+        },
+        bellini: {
+          label: 'Bellini',
+          description: `BELLINI 
+Un profumo vellutato di pesca succosa e rum intenso. Questa fragranza cipriata, ricca di composti aromatici, riempie rapidamente il tuo spazio con note giocose di pesca dolce, arancia rossa e vaniglia. Gli accordi amari e speziati di cognac, rum e cashmere aggiungono un tocco sottile e ne approfondiscono il carattere.
+
+BELLINI è perfetto se vuoi mantenere un'atmosfera festosa e celebrativa.
+
+Questo diffusore a bastoncino di alta qualità è una meravigliosa aggiunta a soggiorni spaziosi, ingressi e qualsiasi interno luminoso.
+
+Piramide Olfattiva:
+Note di testa: pesca, arancia rossa, cardamomo, eliotropio
+Note di cuore: Rum, Cognac, Davana, Gelsomino
+Note di fondo: patchouli, legno di sandalo, vaniglia, fava tonka, cashmere, benzoino, storace, labdano, vetiver`
+        },
+        blanc: {
+          label: 'Blanc',
+          description: `BLANC 
+Una fragranza morbida e fresca di cotone bianco e purezza.
+
+Questo profumo moderatamente concentrato fonde accordi floreali leggeri con aldeidi brillanti, evocando l'aroma inconfondibile di una camicia bianca frizzante, lenzuola appena lavate e una purezza senza pari.
+
+Negli spazi chiusi, la fragranza si diffonde dolcemente e fluidamente, riempiendo la stanza con una delicata freschezza.
+
+Ti innamorerai sicuramente di BLANC se apprezzi i profumi puri e desideri ricreare l'atmosfera di una stanza appena pulita in un hotel di lusso.
+
+Piramide Olfattiva:
+Note di testa: aldeidi, rosa, pepe rosa
+Note di cuore: peonia, viola, fiori d'arancio
+Note di fondo: muschio bianco, note legnose, legno di sandalo`
+        },
+        carolina: {
+          label: 'Carolina',
+          description: `CAROLINA 
+Un delicato e leggero aroma di cappuccino dolce e fioriture primaverili.
+
+Questo profumo moderatamente concentrato si diffonde delicatamente in qualsiasi spazio. Le note di caffè e mandorla si dissolvono in un accordo dolce-amaro caldo e avvolgente. Gelsomino, iris e bergamotto creano freschi riflessi floreali, mentre un sussurro di cacao speziato permane nella scia.
+
+Ti innamorerai di CAROLINA se ami l'atmosfera accogliente dei caffè e i dolci, o se desideri un'atmosfera calda e sottilmente misteriosa. Questo diffusore in mikado premium trasforma ogni stanza in un accogliente rifugio sensoriale.
+
+Piramide Olfattiva:
+Note di testa: mandorla, caffè, bergamotto, limone
+Note di cuore: gelsomino sambac, tuberosa, iris, rosa bulgara, fiori d'arancio
+Note di fondo: Fava Tonka, Cacao, Legno di Sandalo, Vaniglia, Pralina, Cannella, Cedro Bianco, Legno di Cashmere, Patchouli, Ambra, Muschio`
+        },
+        cherry_blossom: {
+          label: 'Cherry Blossom',
+          description: `CHERRY BLOSSOM 
+Un aroma dolce e speziato di ricco liquore alla ciliegia e fiori primaverili.
+
+Una fragranza intensamente satura che esalta l'intera atmosfera della stanza. Le note di testa di ciliegia e mandorla amara si evolvono in un profumo vibrante e piccante di liquore alla ciliegia. Accordi di rosa e gelsomino si fondono in una morbida scia floreale, arricchita da un dolce tocco di vaniglia.
+
+Ti innamorerai di CHERRY BLOSSOM se ti piacciono le fragranze delicate e dolci e il profumo delle ciliegie mature e succose.
+
+CHERRY BLOSSOM è la fragranza perfetta per cucine, corridoi spaziosi e bagni luminosi.
+
+Piramide Olfattiva:
+Note di testa: Ciliegia, Liquore, Mandorla amara
+Note di cuore: Ciliegia, Rosa Turca, Gelsomino Sambac, Prugna
+Note di fondo: Balsamo del Perù, Fava Tonka, Legno di Sandalo, Vetiver, Cedro Bianco, Benzoino, Cannella, Chiodi di Garofano, Patchouli, Vaniglia`
+        },
+        christmas_tree: {
+          label: 'Christmas Tree',
+          description: `CHRISTMAS TREE 
+Un profumo morbido e festoso di pino natalizio e succosi mandarini.
+
+È una fragranza di media intensità che riempie delicatamente la stanza con un velo traslucido. La nota brillante e dolce del mandarino si sviluppa in un aroma familiare e nostalgico, mentre la scia verde finale di pino apporta profondità e freschezza.
+
+CHRISTMAS TREE è il profumo perfetto per le vacanze di Natale o per coloro che vogliono sentire la magia della stagione anche nella calura estiva.
+
+Questo profumo è ideale per le camerette dei bambini, le zone giorno o un piccolo bar accogliente.
+
+Piramide Olfattiva:
+Note di testa: vaniglia
+Note di cuore: Arancia, Cannella
+Note di fondo: Pino, Mandarino`
+        },
+        etna: {
+          label: 'Etna',
+          description: `ETNA 
+Un aroma speziato e caldo di cuoio, tabacco e caramello.
+
+Questa fragranza avvolge l'intero spazio intorno a te. Forti note di cuoio e pepe nero emergono all'istante, mentre chiodi di garofano, salvia e miele si fondono in una composizione intensa e autosufficiente. Il profumo lascia una profonda scia ambrata, arricchita da note di tabacco e patchouli.
+
+ETNA è perfetto se cerchi un aroma speziato, focoso ed esplosivo con vibranti note orientali.
+
+Questo diffusore a bastoncino di alta qualità si adatta perfettamente a salotti o ingressi scuri e spaziosi, valorizzando gli elementi rustici in legno e pietra.
+
+Piramide Olfattiva:
+Note di testa: cuoio, balsamo del Tolù, zafferano, alloro, pepe nero, tintura di terra, limone, timo
+Note di cuore: Miele, Peperoncino, Chiodi di garofano, Iris, Salvia, Magnolia, Peonia
+Note di fondo: Tabacco, Oud, Caramello, Cuoio, Benzoino, Pino, Patchouli, Balsamo del Canada, Legno di Cashmere, Labdano`
+        },
+        dubai: {
+          label: 'Dubai',
+          description: `DUBAI 
+Una ricca fragranza orientale di rosa damascena e legno di oud.
+
+Un aroma intenso e altamente concentrato che fa sentire la sua presenza fin dai primi istanti. Note di geranio e viola avvolgono delicatamente lo spazio con un profumo floreale leggermente amaro. Accordi luminosi di damasco e rosa turca si fondono in una scia dolce e morbida, con un tocco speziato di cannella.
+
+Amerai DUBAI se sei un fan dei profumi degli hotel di lusso e delle notti estive stellate.
+
+DUBAI è la scelta perfetta per soggiorni, lobby e, naturalmente, hotel.
+
+Piramide Olfattiva:
+Note di testa: Geranio, Violetta
+Note di cuore: cannella, rosa damascena, rosa turca
+Note di fondo: Oud, Vaniglia`
+        },
+        dune: {
+          label: 'Dune',
+          description: `DUNE 
+Un profumo audace e speziato di sole cocente e peperoncino.
+
+Questa fragranza molto intensa riempirà il tuo spazio. Note agrumate di arancia e pompelmo aggiungono una scia piacevolmente dolce. I distinti accordi di pepe si dissolvono in un aroma luminoso, audace e focoso. Sfumature di cedro e vetiver completano la composizione con un tono caldo e legnoso.
+
+DUNE è perfetto per chi sente la mancanza del sole cocente e delle vaste dune del deserto.
+
+Questo diffusore a bastoncino di alta qualità porta la luce del sole, il calore e la sensazione dell'estate nella tua casa.
+
+Piramide Olfattiva:
+Note di testa: Arancia, Pompelmo
+Note di cuore: Pepe, Pepe Rosa
+Note di fondo: Vetiver, Cedro, Patchouli, Benzoino`
+        },
+        eden: {
+          label: 'Eden',
+          description: `EDEN 
+Una fragranza fruttata con una morbida scia floreale.
+
+Intenso e vibrante, questo aroma riempie l'intero spazio. Le note di frutto della passione e lampone si aprono in un profumo succoso e fresco di frutti maturi e frutti di bosco. La dolcezza è esaltata dagli accordi di giglio e vaniglia. La fragranza lascia una scia speziata di muschio e legno di sandalo.
+
+EDEN diventerà il tuo profumo preferito se ami sentire i caldi raggi del sole sulla pelle e ti piacciono le fragranze speziate e aromatiche.
+
+Questo diffusore a bastoncino di alta qualità è il complemento perfetto per camere da letto e soggiorni, sia in interni scuri che luminosi. È ideale anche per i bagni.
+
+Piramide Olfattiva:
+Note di testa: Frutto della passione, Pesca, Pera, Lampone, Foglia di ribes nero, Sabbia
+Note di cuore: Giglio
+Note di fondo: vaniglia, muschio, sandalo`
+        },
+        fleur: {
+          label: 'Fleur',
+          description: `FLEUR 
+Un aroma fresco, succoso, floreale-fruttato che riempie lo spazio con un'atmosfera rinfrescante e sofisticata. La composizione si apre con note luminose di bergamotto, litchi e pesca, che conducono ad un cuore floreale di fiori d'arancio, gelsomino e peonia. L'accordo finale lascia una scia leggera di note legnose, muschio e muschio.
+
+Perfetto per interni luminosi in camere da letto, bagni e soggiorni, luoghi in cui desideri creare un'atmosfera fresca e primaverile.
+
+Se ami gli aromi floreali e succosi e un'atmosfera rinfrescante, FLEUR diventerà il tuo preferito. Questo diffusore a bastoncino di alta qualità è progettato per offrire un'esperienza aromatica raffinata, aggiungendo eleganza a qualsiasi spazio.
+
+Piramide Olfattiva:
+Note di testa: bergamotto, litchi, pesca
+Note di cuore: Fiori d'Arancio, Gelsomino, Peonia
+Note di fondo: Note legnose, Muschio, Muschio`
+        },
+        green_mango: {
+          label: 'Green Mango',
+          description: `GREEN MANGO 
+Una succosa fragranza di mango fresco e ananas croccante.
+
+Questo profumo altamente concentrato riempie l'intero spazio. Note di mango verde e melone si aprono in un aroma luminoso e fresco di frutta appena tagliata. Gli accordi di ananas e pesca esaltano la dolcezza, mentre i sentori finali di aghi di pino aggiungono una scia vibrante e vegetale.
+
+Questo diffusore a bastoncino di alta qualità è ideale per ingressi, soggiorni luminosi e piccoli saloni di bellezza. Se ami le fragranze fruttate ma non invadenti, GREEN MANGO diventerà il tuo preferito.
+
+Piramide Olfattiva:
+Note di testa: mango, melone
+Note di cuore: Pesca, Ananas
+Note di fondo: scorza di mango, aghi di pino`
+        },
+        lime_basil: {
+          label: 'Lime Basil',
+          description: `LIME BASIL 
+Un fresco profumo di agrumi di lime succoso e basilico aromatico.
+
+Questa fragranza intensamente satura si dispiega rapidamente nell'aria. Note di lime e mandarino maturo creano un aroma leggermente dolce, mentre gli accordi speziati di basilico e timo si dissolvono in una piacevole amarezza e freschezza erbacea. La fragranza lascia una scia stimolante e fragrante.
+
+LIME BASIL diventerà il tuo preferito se ami gli aromi freschi ed erbacei e il profumo tonificante di un mojito. Questo diffusore a bastoncino di alta qualità è perfetto per bagni, ingressi spaziosi e ampi soggiorni.
+
+Piramide Olfattiva:
+Note di testa: mandarino, bergamotto
+Note di cuore: Basilico, Iris, Lillà, Timo
+Note di fondo: Lime, Patchouli, Vetiver`
+        },
+        rosso: {
+          label: 'Rosso',
+          description: `ROSSO 
+Un aroma lussureggiante di uva rossa matura e frutti di bosco succosi.
+
+Questa fragranza, con un'alta concentrazione di composti aromatici, riempie l'intero spazio. La nota principale si apre con un profumo vegetale di lampone e corteccia di betulla. L'accordo dominante di succose uve rosse permea la stanza con l'aroma penetrante del vino secco. Un tocco di magnolia colora la scia di morbide sfumature floreali.
+
+ROSSO è pensato per gli amanti dei profumi intensi di vino e di frutti di bosco maturi. Questo diffusore a bastoncino di alta qualità è perfetto per riempire il tuo spazio con una fragranza vibrante, profonda e fruttata. Ideale per soggiorni spaziosi e interni scuri con elementi in legno naturale.
+
+Piramide Olfattiva:
+Note di testa: Arancia, Violetta, Magnolia
+Note di cuore: Prugna, Fragola, Frutti di bosco
+Note di fondo: legno secco, betulla`
+        },
+        salted_caramel: {
+          label: 'Salted Caramel',
+          description: `SALTED CARAMEL 
+Una composizione luminosa ad alta intensità.
+
+Note di grano e vaniglia riempiono la fragranza di dolcezza e di una scia deliziosa e appetitosa. Caramello e sale si fondono in un profumo ricco, avvolgente e gustoso, familiare fin dall'infanzia: il caramello salato. Le note vibranti dei prodotti da forno aggiungono ancora più sapore alla composizione, riempiendo il tuo spazio di calore e intimità.
+
+Se desideri tuffarti nella tua infanzia e vivere un'indimenticabile atmosfera di meraviglia e festa, CARAMEL SALATO è perfetto per te. Questo diffusore a bastoncini premium ad alta concentrazione trasforma qualsiasi spazio in un angolo accogliente e delizioso.
+
+Piramide Olfattiva:
+Note di testa: sale marino
+Note di cuore: Pera, Vaniglia, Note talcate, Grano
+Note di fondo: caramello mou, zucchero di canna`
+        },
+        salty_water: {
+          label: 'Salty Water',
+          description: `SALTY WATER 
+Un profumo fresco di acqua salata e minerali antichi.
+
+Si tratta di una fragranza dall'intensità leggera, la più delicata dell'intera linea. Si dispiega dolcemente nell'aria, riempiendo gradualmente la stanza. Il sale marino e l'ambra si dissolvono in un rinfrescante aroma di rugiada salata. Sentori di alghe aggiungono una sfumatura vegetale, mentre la salvia rinfrescante dona luminosità alla composizione.
+
+SALTY WATER è la scelta perfetta se non sei un amante dei profumi intensi e dolci e sei incantato dal mistero del mare. Questo diffusore a bastoncini premium crea un'atmosfera leggera e marina in ogni angolo della tua casa.
+
+Piramide Olfattiva:
+Note di testa: ambra, sale marino
+Note di cuore: salvia
+Note di fondo: pompelmo, alghe marine`
+        },
+        santal: {
+          label: 'Santal',
+          description: `SANTAL 
+Una fragranza cipriata con cuoio, cardamomo e legno di sandalo orientale.
+
+Questo profumo aromatico si diffonde lentamente e delicatamente in tutto lo spazio. Note emergenti di cardamomo e legno di sandalo si fondono con forti accordi di iris e ambra, creando un'amara sinfonia orientale. Tocchi finali di viola e papiro si ammorbidiscono in una scia leggermente floreale.
+
+Ti innamorerai di SANTAL se ti piacciono le fragranze cipriate, le spezie e il fascino dell'Oriente. Questo diffusore a bastoncino di alta qualità è perfetto per aggiungere calore ed eleganza esotica alla tua casa.
+
+Piramide Olfattiva:
+Note di testa: legno di sandalo, papiro, cuoio
+Note di cuore: Cedro della Virginia, Cardamomo, Violetta
+Note di fondo: Iris, Ambra`
+        },
+        sugar: {
+          label: 'Sugar',
+          description: `SUGAR 
+Un profumo dolce e appiccicoso di zucchero bruciato e resina legnosa.
+
+Una fragranza intensa e satura che riempie l'intera stanza. Note pronunciate di zafferano e gelsomino si fondono in un aroma dolce e speziato. L'accordo principale, legnoso e ambrato, avvolge l'aria con la dolcezza e la profondità della resina. I tocchi finali di cedro bianco esaltano la scia legnosa.
+
+SUGAR è perfetto per coloro che desiderano dare un tocco lussuoso al proprio spazio, riempiendolo con una dolcezza ricca e appiccicosa. Questo diffusore a bastoncini premium è stato realizzato per offrire un'esperienza sensoriale coinvolgente in interni caldi e sofisticati.
+
+Piramide Olfattiva:
+Note di testa: gelsomino, zafferano
+Note di cuore: ambra legnosa
+Note di fondo: cedro bianco, resina di pino`
+        },
+        tobacco_vanilla: {
+          label: 'Tobacco Vanilla',
+          description: `TOBACCO VANILLA 
+Un profumo caldo e morbido di foglie di tabacco e dolce vaniglia.
+
+Questa è una fragranza di media saturazione. Note di spezie e foglie di tabacco si evolvono gradualmente in un profumo ricco e delicato di vaniglia e cacao. La scia si rivela con leggere note di corteccia legnosa e frutta secca.
+
+In uno spazio chiuso, TABACCO VANILLA si diffonde delicatamente, raggiungendo la sua massima fragranza entro i primi minuti dall'ingresso nella stanza.
+
+Amerai TABACCO VANILLA se apprezzi la leggerezza, la dolcezza e la finezza in una fragranza e se desideri aggiungere solidità e lusso all'ambiente circostante.
+
+Cerchi il miglior diffusore a bastoncino per la tua casa? TOBACCO VANILLA di BY VELCHEVA unisce eleganza e calore in un formato sofisticato. Perfetto per chi desidera acquistare un diffusore dalla profumazione intensa e duratura, che trasforma ogni spazio in un'esperienza sensoriale.
+
+Piramide Olfattiva:
+Note di testa: Foglie di Tabacco, Spezie
+Note di cuore: Fava Tonka, Vaniglia, Cacao, Fiore di Tabacco
+Note di fondo: Note legnose, Frutta secca`
+        },
+        valencia: {
+          label: 'Valencia',
+          description: `VALENCIA 
+Una fragranza ariosa di agrumi freschi e delicato gelsomino. Questo aroma di media intensità si diffonde delicatamente in tutta la stanza. Note di limone e bergamotto riempiono lo spazio con un fresco profumo di agrumi con una leggera amarezza. Gli accordi principali di gelsomino e rosa si fondono in una dolce composizione floreale. Le note finali del muschio esaltano la speziatura della fragranza.
+
+VALENCIA diventerà la tua fragranza preferita se vuoi sentire il delicato profumo di fiori e agrumi nella stanza. Ideale per interni naturali e luminosi, soggiorni e camere da letto.
+
+Piramide Olfattiva:
+Note di testa: Bergamotto, Limone
+Note di cuore: Gelsomino, Acacia Bianca, Rosa
+Note di fondo: Note legnose, Muschio`
+        },
       },
+
       copy: {
-        paragraph1:
-          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
-        subheadingHow: 'How does it work?',
-        paragraph2:
-          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
-        subheadingAdvantages: 'Advantages of Reed Diffusers',
-        paragraph3:
-          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
-        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
-        benefit2:
-          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
-        benefit3:
-          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph1:          'Un diffusore è un modo elegante ed efficace per riempire la tua casa di aromi piacevoli. I set moderni con canne aiutano a creare un\'atmosfera accogliente e sottolineano l\'individualità di ogni interno. Il negozio online offre una varietà di diffusori a bastoncini per la casa e set regalo.',
+        subheadingHow:          'Come funziona?',
+        paragraph2:          'Un diffusore a lamella funziona per azione capillare su canne di bambù o sintetiche. Questo metodo di distribuzione del profumo permette all\'aria di rimanere profumata a lungo. Particolarmente apprezzati sono i diffusori di aromi con oli essenziali: non solo hanno un buon profumo, ma hanno anche un effetto positivo sulle emozioni.',
+        subheadingAdvantages:          'Vantaggi dei diffusori a lamella',
+        paragraph3:          'Un diffusore di aromi è un\'ottima alternativa ai tradizionali deodoranti per ambienti. Questo prodotto funziona ininterrottamente: un profumo leggero e gradevole aleggia nell\'ambiente per tutta la giornata. Inoltre, la composizione aromatica di un tale accessorio è composta principalmente da ingredienti naturali. Tra i vantaggi del diffusore:',
+        benefit1:          'un\'atmosfera accogliente che rilassa e mette il buon umore;',
+        benefit2:          'aromaterapia: alcuni diffusori sono progettati per l\'aromaterapia: hanno un effetto positivo sul sistema nervoso e aiutano a minimizzare la manifestazione dello stress;',
+        benefit3:          'mascheramento degli odori: altro vantaggio del prodotto: è in grado di nascondere le note sgradevoli nell\'ambiente, combattendo il fumo di tabacco e l\'odore lasciato dopo la cottura.',
+        paragraph4:          'I diffusori hanno anche un design elegante che si integra facilmente con l\'interno della stanza.',
       }
+
     },
     candles: {
       product: {
@@ -2630,6 +3494,9 @@ const translations = {
       toggle: {
         more: 'Read more',
         less: 'Collapse'
+      },
+      cta: {
+        addToCart: 'Add to cart'
       }
     },
     nav: {
@@ -3094,11 +3961,10 @@ const translations = {
         title: 'AROMA DIFFUSERS (REED)'
       },
       product: {
-        title: 'Signature reed diffuser',
+        titleDefault: 'Signature reed diffuser',
         description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
-        scentTitlePrefix: 'AromaDiffuser',
-        priceLabel: 'Price',
-        cta: 'Add to cart'
+        titlePrefix: 'AromaDiffuser',
+        priceLabel: 'Price'
       },
       options: {
         volumeLabel: 'Volume',
@@ -3106,44 +3972,330 @@ const translations = {
       },
       scents: {
         none: { label: 'No fragrance', description: '' },
-        africa: { label: 'Africa', description: '' },
-        bamboo: { label: 'Bamboo', description: '' },
-        bellini: { label: 'Bellini', description: '' },
-        blanc: { label: 'Blanc', description: '' },
-        carolina: { label: 'Carolina', description: '' },
-        cherry_blossom: { label: 'Cherry Blossom', description: '' },
-        christmas_tree: { label: 'Christmas Tree', description: '' },
-        etna: { label: 'Etna', description: '' },
-        dubai: { label: 'Dubai', description: '' },
-        dune: { label: 'Dune', description: '' },
-        eden: { label: 'Eden', description: '' },
-        fleur: { label: 'Fleur', description: '' },
-        green_mango: { label: 'Green Mango', description: '' },
-        lime_basil: { label: 'Lime Basil', description: '' },
-        rosso: { label: 'Rosso', description: '' },
-        salted_caramel: { label: 'Salted Caramel', description: '' },
-        salty_water: { label: 'Salty Water', description: '' },
-        santal: { label: 'Santal', description: '' },
-        sugar: { label: 'Sugar', description: '' },
-        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
-        valencia: { label: 'Valencia', description: '' },
+        africa: {
+          label: 'Africa',
+          description: `AFRICA 
+A warm, spicy scent of cardamom wood and soft leather. This intensely concentrated fragrance fills the entire room. Bright notes of bergamot and musk are enhanced by a luminous woody nuance. Rich accords of cardamom and leather lend a robust, accentuated character, while a fragrant trail of spicy cumin and saffron completes the composition.
+
+You’ll fall in love with AFRICA if you crave fresh, woody aromas or long for desert dunes and safari adventures.
+
+Ideal for spacious living rooms and lounges as well as interiors featuring natural elements. This premium reed diffuser brings character and sophistication to any space.
+
+Olfactory Pyramid:
+Top Notes: Bergamot, Vetiver, Geranium
+Heart Notes: Cardamom, Leather, Musk
+Base Notes: Patchouli, Cumin, Oud, Saffron`
+        },
+        bamboo: {
+          label: 'Bamboo',
+          description: `BAMBOO 
+A green, fresh scent of spring flowers and bamboo stalks. This moderately intense fragrance gently fills your space without overpowering it. Top notes of bergamot and bamboo create a delicate vegetal mist, evolving into a floral heart of lily, ylang-ylang and orange blossom. A warm, enveloping base of vanilla, sandalwood and amber completes the composition.
+
+Perfect for bright interiors, small rooms and bathrooms where you want a soft, natural freshness.
+
+If you love vegetal, fresh and floral aromas, BAMBOO will be an ideal addition to your collection. This premium reed diffuser is designed to create a harmonious, natural atmosphere in your home.
+
+Olfactory Pyramid:
+Top Notes: Bamboo, Bergamot
+Heart Notes: Ylang-ylang, Lily, Orange Blossom
+Base Notes: Vanilla, Sandalwood, Amber`
+        },
+        bellini: {
+          label: 'Bellini',
+          description: `BELLINI 
+A velvety scent of juicy peach and intense rum. This powdery fragrance, rich in aromatic compounds, quickly fills your space with playful notes of sweet peach, blood orange and vanilla. The bitter-spicy accords of cognac, rum and cashmere add a subtle edge and deepen its character.
+
+BELLINI is perfect if you want to maintain a festive, celebratory atmosphere.
+
+This premium reed diffuser is a wonderful addition to spacious living rooms, entryways and any bright interior.
+
+Olfactory Pyramid:
+Top Notes: Peach, Blood Orange, Cardamom, Heliotrope
+Heart Notes: Rum, Cognac, Davana, Jasmine
+Base Notes: Patchouli, Sandalwood, Vanilla, Tonka Bean, Cashmere, Benzoin, Storax, Labdanum, Vetiver`
+        },
+        blanc: {
+          label: 'Blanc',
+          description: `BLANC 
+A soft, fresh fragrance of white cotton and purity.
+
+This moderately concentrated scent blends light floral accords with bright aldehydes, evoking the unmistakable aroma of a crisp white shirt, freshly laundered sheets, and unmatched purity.
+
+In enclosed spaces, the fragrance diffuses smoothly and fluidly, filling the room with a delicate freshness.
+
+You’ll surely fall in love with BLANC if you appreciate pure scents and wish to recreate the atmosphere of a freshly cleaned room in a luxury hotel.
+
+Olfactory Pyramid:
+Top Notes: Aldehydes, Rose, Pink Pepper
+Heart Notes: Peony, Violet, Orange Blossom
+Base Notes: White Musk, Woody Notes, Sandalwood`
+        },
+        carolina: {
+          label: 'Carolina',
+          description: `CAROLINA 
+A delicate, light aroma of sweet cappuccino and spring blooms.
+
+This moderately concentrated scent unfolds gently in any space. Coffee and almond notes dissolve into a warm, enveloping sweet-bitter accord. Jasmine, iris and bergamot create fresh floral highlights, while a whisper of spiced cocoa lingers in the trail.
+
+You’ll fall in love with CAROLINA if you cherish cozy café vibes and sweet pastries, or crave a warm, subtly mysterious atmosphere. This premium mikado diffuser transforms any room into a welcoming sensory retreat.
+
+Olfactory Pyramid:
+Top Notes: Almond, Coffee, Bergamot, Lemon
+Heart Notes: Jasmine sambac, Tuberose, Iris, Bulgarian Rose, Orange Blossom
+Base Notes: Tonka Bean, Cocoa, Sandalwood, Vanilla, Praline, Cinnamon, White Cedar, Cashmere Wood, Patchouli, Amber, Musk`
+        },
+        cherry_blossom: {
+          label: 'Cherry Blossom',
+          description: `CHERRY BLOSSOM 
+A sweet and spicy aroma of rich cherry liqueur and spring flowers.
+
+An intensely saturated fragrance that enhances the entire atmosphere of the room. The top notes of cherry and bitter almond evolve into a vibrant, tangy cherry liqueur scent. Rose and jasmine accords blend into a soft floral trail, enriched with a sweet touch of vanilla.
+
+You’ll fall in love with CHERRY BLOSSOM if you enjoy delicate, sweet fragrances and the scent of ripe, juicy cherries.
+
+CHERRY BLOSSOM is the perfect fragrance for kitchens, spacious hallways, and bright bathrooms.
+
+Olfactory Pyramid:
+Top notes: Cherry, Liqueur, Bitter almond
+Heart notes: Cherry, Turkish rose, Jasmine sambac, Plum
+Base notes: Peru balsam, Tonka beans, Sandalwood, Vetiver, White cedar, Benzoin, Cinnamon, Clove, Patchouli, Vanilla`
+        },
+        christmas_tree: {
+          label: 'Christmas Tree',
+          description: `CHRISTMAS TREE 
+A soft and festive scent of Christmas pine and juicy tangerines.
+
+This is a medium-intensity fragrance that gently fills the room with a translucent veil. The bright and sweet tangerine note unfolds into a familiar and nostalgic aroma, while the final green trail of pine brings depth and freshness.
+
+CHRISTMAS TREE is the perfect scent for Christmas holidays — or for those who want to feel the magic of the season even in the heat of summer.
+
+This scent is ideal for children's rooms, living areas, or a cozy little coffee shop.
+
+Olfactory Pyramid:
+Top notes: Vanilla
+Heart notes: Orange, Cinnamon
+Base notes: Pine, Tangerine`
+        },
+        etna: {
+          label: 'Etna',
+          description: `ETNA 
+A spicy and warm aroma of leather, tobacco, and caramel.
+
+This fragrance envelops the entire space around you. Strong leather and black pepper notes emerge instantly, while clove, sage, and honey blend into an intense and self-sufficient composition. The scent leaves a deep amber trail, enriched with tobacco and patchouli notes.
+
+ETNA is perfect if you seek a spicy, fiery, and explosive aroma with vibrant oriental notes.
+
+This premium reed diffuser fits perfectly in dark, spacious living rooms or lobbies, enhancing rustic wooden and stone elements.
+
+Olfactory Pyramid:
+Top notes: Leather, Tolu balsam, Saffron, Bay leaf, Black pepper, Earth tincture, Lemon, Thyme
+Heart notes: Honey, Red pepper, Clove, Iris, Sage, Magnolia, Peony
+Base notes: Tobacco, Oud, Caramel, Leather, Benzoin, Pine, Patchouli, Canada balsam, Cashmere wood, Labdanum`
+        },
+        dubai: {
+          label: 'Dubai',
+          description: `DUBAI 
+A rich oriental fragrance of Damask rose and oud wood.
+
+An intense and highly concentrated aroma that makes its presence known from the very first moments. Notes of geranium and violet gently envelop the space with a slightly bitter floral scent. Bright accords of Damask and Turkish rose blend into a sweet and soft trail, with a spicy touch of cinnamon.
+
+You’ll love DUBAI if you are a fan of luxurious hotel scents and starlit summer nights.
+
+DUBAI is the perfect choice for living rooms, lobbies, and of course, hotels.
+
+Olfactory Pyramid:
+Top notes: Geranium, Violet
+Heart notes: Cinnamon, Damask rose, Turkish rose
+Base notes: Oud, Vanilla`
+        },
+        dune: {
+          label: 'Dune',
+          description: `DUNE 
+A bold and spicy scent of blazing sun and hot pepper.
+
+This highly intense fragrance will fill your space. Citrus notes of orange and grapefruit add a pleasantly sweet trail. Distinct pepper accords dissolve into a bright, daring, and fiery aroma. Cedar and vetiver nuances complete the composition with a warm, woody tone.
+
+DUNE is perfect for those who miss the scorching sun and vast desert dunes.
+
+This premium reed diffuser brings sunlight, warmth, and the feeling of summer into your home.
+
+Olfactory Pyramid:
+Top notes: Orange, Grapefruit
+Heart notes: Pepper, Pink Pepper
+Base notes: Vetiver, Cedar, Patchouli, Benzoin`
+        },
+        eden: {
+          label: 'Eden',
+          description: `EDEN 
+A fruity fragrance with a soft floral trail.
+
+Intense and vibrant, this aroma fills the entire space. Passion fruit and raspberry notes unfold into a juicy, fresh scent of ripe fruits and berries. Sweetness is enhanced by lily and vanilla accords. The fragrance leaves a spicy trail of musk and sandalwood.
+
+EDEN will become your favorite scent if you love feeling the warm sun rays on your skin and enjoy spicy, aromatic fragrances.
+
+This premium reed diffuser is the perfect complement to bedrooms and living rooms, both in dark and bright interiors. It is also ideal for bathrooms.
+
+Olfactory Pyramid:
+Top notes: Passion fruit, Peach, Pear, Raspberry, Blackcurrant leaf, Sand
+Heart notes: Lily
+Base notes: Vanilla, Musk, Sandalwood`
+        },
+        fleur: {
+          label: 'Fleur',
+          description: `FLEUR 
+A cool, juicy, floral-fruity aroma that fills the space with a refreshing and sophisticated atmosphere. The composition opens with bright notes of bergamot, lychee, and peach, leading into a floral heart of orange blossom, jasmine, and peony. The final accord leaves a light trail of woody notes, moss, and musk.
+
+Perfect for bright interiors in bedrooms, bathrooms, and living rooms — places where you want to create a fresh, spring morning atmosphere.
+
+If you love juicy, floral aromas and a refreshing ambiance, FLEUR will become your favorite. This premium reed diffuser is designed to deliver a refined aromatic experience, adding elegance to any space.
+
+Olfactory Pyramid:
+Top notes: Bergamot, Lychee, Peach
+Heart notes: Orange blossom, Jasmine, Peony
+Base notes: Woody notes, Moss, Musk`
+        },
+        green_mango: {
+          label: 'Green Mango',
+          description: `GREEN MANGO 
+A juicy fragrance of fresh mango and crisp pineapple.
+
+This highly concentrated scent fills the entire space. Notes of green mango and melon unfold into a bright and fresh aroma of freshly cut fruits. Pineapple and peach accords enhance the sweetness, while final hints of pine needles add a vibrant, vegetal trail.
+
+This premium reed diffuser is ideal for entryways, bright living rooms, and small beauty salons. If you love fruity yet not overpowering fragrances, GREEN MANGO will become your favorite.
+
+Olfactory Pyramid:
+Top notes: Mango, Melon
+Heart notes: Peach, Pineapple
+Base notes: Mango peel, Pine needles`
+        },
+        lime_basil: {
+          label: 'Lime Basil',
+          description: `LIME BASIL 
+A fresh citrus scent of juicy lime and aromatic basil.
+
+This intensely saturated fragrance quickly unfolds in the air. Notes of lime and ripe mandarin create a slightly sweet aroma, while spicy basil and thyme accords dissolve into pleasant bitterness and herbal freshness. The fragrance leaves a stimulating, fragrant trail.
+
+LIME BASIL will become your favorite if you love fresh, herbal aromas and the invigorating scent of a mojito. This premium reed diffuser is perfect for bathrooms, spacious entryways, and large living rooms.
+
+Olfactory Pyramid:
+Top notes: Mandarin, Bergamot
+Heart notes: Basil, Iris, Lilac, Thyme
+Base notes: Lime, Patchouli, Vetiver`
+        },
+        rosso: {
+          label: 'Rosso',
+          description: `ROSSO 
+A lush aroma of ripe red grapes and juicy berries.
+
+This fragrance, with a high concentration of aromatic compounds, fills the entire space. The main note unfolds with a vegetal scent of raspberry and birch bark. The dominant accord of juicy red grapes permeates the room with the penetrating aroma of dry wine. A touch of magnolia colors the trail with soft floral nuances.
+
+ROSSO is designed for lovers of intense wine-like scents and ripe berries. This premium reed diffuser is perfect for filling your space with a vibrant, deep, and fruity fragrance. Ideal for spacious living rooms and dark interiors with natural wooden elements.
+
+Olfactory Pyramid:
+Top notes: Orange, Violet, Magnolia
+Heart notes: Plum, Strawberry, Wild berries
+Base notes: Dry wood, Birch`
+        },
+        salted_caramel: {
+          label: 'Salted Caramel',
+          description: `SALTED CARAMEL 
+A bright composition with high intensity.
+
+Notes of wheat and vanilla fill the fragrance with sweetness and a delicious, mouthwatering trail. Caramel and salt blend into a rich, enveloping, and tasty scent, familiar from childhood: salted caramel. Vibrant notes of baked goods add even more flavor to the composition, filling your space with warmth and coziness.
+
+If you wish to dive back into your childhood and experience an unforgettable atmosphere of wonder and celebration, SALTED CARAMEL is perfect for you. This high-concentration premium reed diffuser transforms any space into a cozy, delicious corner.
+
+Olfactory Pyramid:
+Top notes: Sea salt
+Heart notes: Pear, Vanilla, Powdery notes, Wheat
+Base notes: Toffee, Brown sugar`
+        },
+        salty_water: {
+          label: 'Salty Water',
+          description: `SALTY WATER 
+A fresh scent of salty water and ancient minerals.
+
+This is a light-intensity fragrance, the most delicate of the entire line. It unfolds softly in the air, gradually filling the room. Marine salt and amber dissolve into a refreshing salty dew aroma. Hints of seaweed add a vegetal nuance, while refreshing sage brings brightness to the composition.
+
+SALTY WATER is the perfect choice if you’re not a fan of intense, sweet scents and are enchanted by the mystery of the sea. This premium reed diffuser creates a light, marine atmosphere in any corner of your home.
+
+Olfactory Pyramid:
+Top notes: Amber, Sea salt
+Heart notes: Sage
+Base notes: Grapefruit, Seaweed`
+        },
+        santal: {
+          label: 'Santal',
+          description: `SANTAL 
+A powdery fragrance with leather, cardamom, and oriental sandalwood.
+
+This aromatic scent diffuses slowly and gently throughout the space. Emerging notes of cardamom and sandalwood blend with strong accords of iris and amber, creating a bitter oriental symphony. Final touches of violet and papyrus soften into a slightly floral trail.
+
+You’ll fall in love with SANTAL if you enjoy comforting powdery fragrances, spices, and the charm of the Orient. This premium reed diffuser is perfect for adding warmth and exotic elegance to your home.
+
+Olfactory Pyramid:
+Top notes: Sandalwood, Papyrus, Leather
+Heart notes: Virginia cedar, Cardamom, Violet
+Base notes: Iris, Amber`
+        },
+        sugar: {
+          label: 'Sugar',
+          description: `SUGAR 
+A sweet and sticky scent of burnt sugar and woody resin.
+
+An intense and saturated fragrance that fills the entire room. Pronounced notes of saffron and jasmine melt into a sweet and spicy aroma. The main woody amber accord envelops the air with the sweetness and depth of resin. Final touches of white cedar enhance the woody trail.
+
+SUGAR is perfect for those who wish to bring a luxurious touch to their space, filling it with a rich, sticky sweetness. This premium reed diffuser has been crafted to deliver an immersive sensory experience in warm, sophisticated interiors.
+
+Olfactory Pyramid:
+Top notes: Jasmine, Saffron
+Heart notes: Woody amber
+Base notes: White cedar, Pine resin`
+        },
+        tobacco_vanilla: {
+          label: 'Tobacco Vanilla',
+          description: `TOBACCO VANILLA 
+A warm and smooth scent of tobacco leaves and sweet vanilla.
+
+This is a medium-saturation fragrance. Notes of spices and tobacco leaves gradually unfold into a rich, delicate vanilla and cocoa scent. The trail is revealed with light woody bark and dried fruit notes.
+
+In a closed space, TOBACCO VANILLA diffuses gently, reaching its peak fragrance within the first few minutes of entering the room.
+
+You will love TOBACCO VANILLA if you appreciate lightness, sweetness, and subtlety in a fragrance, and if you want to add solidity and luxury to your surroundings.
+
+Looking for the best reed diffuser for your home? TOBACCO VANILLA by BY VELCHEVA combines elegance and warmth in a sophisticated format. Perfect for those who want to buy a diffuser with an intense, long-lasting fragrance that transforms any space into a sensory experience.
+
+Olfactory Pyramid:
+Top notes: Tobacco leaves, Spices
+Heart notes: Tonka beans, Vanilla, Cocoa, Tobacco flower
+Base notes: Woody notes, Dried fruits`
+        },
+        valencia: {
+          label: 'Valencia',
+          description: `VALENCIA 
+An airy fragrance of fresh citrus and delicate jasmine. This medium-intensity aroma gently spreads throughout the room. Notes of lemon and bergamot fill the space with a fresh citrus scent with a slight bitterness. The main accords of jasmine and rose melt into a sweet floral composition. Final musk notes enhance the spiciness of the fragrance.
+
+VALENCIA will become your favorite fragrance if you want to feel the delicate scent of flowers and citrus in the room. Ideal for natural, bright interiors, living rooms, and bedrooms.
+
+Olfactory Pyramid:
+Top notes: Bergamot, Lemon
+Heart notes: Jasmine, White Acacia, Rose
+Base notes: Woody notes, Musk`
+        },
       },
+
       copy: {
-        paragraph1:
-          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
-        subheadingHow: 'How does it work?',
-        paragraph2:
-          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
-        subheadingAdvantages: 'Advantages of Reed Diffusers',
-        paragraph3:
-          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
-        benefit1: 'a cozy atmosphere that relaxes and brings a good mood;',
-        benefit2:
-          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
-        benefit3:
-          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
+        paragraph1:          'A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.',
+        subheadingHow:          'How does it work?',
+        paragraph2:          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.',
+        subheadingAdvantages:          'Advantages of Reed Diffusers',
+        paragraph3:          'An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:',
+        benefit1:          'a cozy atmosphere that relaxes and brings a good mood;',
+        benefit2:          'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
+        benefit3:          'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
+        paragraph4:          'Diffusers also have an elegant design that easily complements the interior of the room.',
       }
+
     },
     candles: {
       product: {
@@ -3637,39 +4789,6 @@ const translations = {
   }
 };
 
-const supportedLanguages = Object.keys(translations);
-const fragranceCategories = ['diffusers', 'candles', 'car'];
-
-const loadFragranceDescriptions = async () => {
-  try {
-    const response = await fetch('assets/data/fragrance.txt', { cache: 'no-store' });
-    if (!response.ok) {
-      throw new Error(`Fragrance data request failed: ${response.status}`);
-    }
-    const raw = await response.text();
-    const data = JSON.parse(raw);
-    fragranceCategories.forEach((category) => {
-      supportedLanguages.forEach((lang) => {
-        const categoryEntry = translations[lang]?.[category]?.scents;
-        if (!categoryEntry) return;
-    Object.entries(data).forEach(([scentId, description]) => {
-      const scentEntry = categoryEntry[scentId];
-      if (!scentEntry) return;
-      const shouldOverwrite =
-        lang === 'en' || !scentEntry.description || !scentEntry.description.trim();
-      if (shouldOverwrite) {
-        scentEntry.description = description;
-      }
-    });
-      });
-    });
-  } catch (error) {
-    console.error('Failed to load fragrance descriptions', error);
-  }
-};
-
-const fragranceDataPromise = loadFragranceDescriptions();
-
 const diffuserPricing = {
   baseCurrency: 'CHF',
   volumes: {
@@ -3743,8 +4862,6 @@ const categoryFallbackKeys = [
 
 const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
-let diffuserDescriptionWrapper;
-let diffuserDescriptionToggle;
 let diffuserScentDescriptionWrapperEl;
 let diffuserScentDescriptionToggleEl;
 
@@ -3797,17 +4914,6 @@ const updateDescriptionVisibility = (wrapperEl, toggleEl, hasDescription, hideTo
   }
 };
 
-const updateDiffuserDescriptionToggleLabel = () => {
-  if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
-  const isCollapsed = diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed');
-  const translationKey = isCollapsed ? 'common.toggle.more' : 'common.toggle.less';
-  const translation = resolveTranslation(currentLang, translationKey);
-  if (translation) {
-    diffuserDescriptionToggle.textContent = translation;
-  }
-  diffuserDescriptionToggle.setAttribute('aria-expanded', (!isCollapsed).toString());
-};
-
 const applyTranslations = () => {
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((el) => {
@@ -3826,7 +4932,6 @@ const applyTranslations = () => {
   updateDiffuserTitleAndDescription();
   updateCandleScentDescription();
   updateCarScentDescription();
-  updateDiffuserDescriptionToggleLabel();
 };
 
 const setActiveLangButton = () => {
@@ -4013,27 +5118,6 @@ const initDiffuserHeroSlider = () => {
   }, 1600);
 };
 
-const initDiffusersDescriptionToggle = () => {
-  diffuserDescriptionWrapper = document.querySelector('[data-diffusers-description-wrapper]');
-  diffuserDescriptionToggle = document.querySelector('[data-diffusers-description-toggle]');
-  if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
-
-  if (
-    !diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed') &&
-    !diffuserDescriptionWrapper.classList.contains('diffusers-description--expanded')
-  ) {
-    diffuserDescriptionWrapper.classList.add('diffusers-description--collapsed');
-  }
-
-  diffuserDescriptionToggle.addEventListener('click', () => {
-    diffuserDescriptionWrapper.classList.toggle('diffusers-description--collapsed');
-    diffuserDescriptionWrapper.classList.toggle('diffusers-description--expanded');
-    updateDiffuserDescriptionToggleLabel();
-  });
-
-  updateDiffuserDescriptionToggleLabel();
-};
-
 const updateDiffuserPrice = () => {
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const priceEl = document.querySelector('[data-diffuser-price]');
@@ -4067,8 +5151,8 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   const labelKey = `diffusers.scents.${scentId}.label`;
   const scentLabel =
     resolveTranslation(currentLang, labelKey) || scentSelect.selectedOptions?.[0]?.textContent?.trim() || '';
-  const prefix = resolveTranslation(currentLang, 'diffusers.product.scentTitlePrefix') || '';
-  const defaultTitle = resolveTranslation(currentLang, 'diffusers.product.title') || '';
+  const prefix = resolveTranslation(currentLang, 'diffusers.product.titlePrefix') || '';
+  const defaultTitle = resolveTranslation(currentLang, 'diffusers.product.titleDefault') || '';
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
 
   const descriptionKey = `diffusers.scents.${scentId}.description`;
@@ -4247,21 +5331,16 @@ const initCarConfigurator = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const bootstrap = async () => {
-    await fragranceDataPromise;
-    applyTranslations();
-    initTitles();
-    initLanguageSwitcher();
-    initScrollButtons();
-    initHeader();
-    initDiffuserConfigurator();
-    initDiffuserScentDescriptionToggle();
-    initDiffuserHeroSlider();
-    initDiffusersDescriptionToggle();
-    initCandleConfigurator();
-    initCarConfigurator();
-    initCart();
-    initContactForm();
-  };
-  bootstrap();
+  applyTranslations();
+  initTitles();
+  initLanguageSwitcher();
+  initScrollButtons();
+  initHeader();
+  initDiffuserConfigurator();
+  initDiffuserScentDescriptionToggle();
+  initDiffuserHeroSlider();
+  initCandleConfigurator();
+  initCarConfigurator();
+  initCart();
+  initContactForm();
 });
