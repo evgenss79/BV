@@ -38,7 +38,11 @@ const translations = {
       burger: 'Menü öffnen oder schließen',
       utilityShipping: 'Gratis Versand ab CHF 80',
       utilityDelivery: 'Lieferung innerhalb von 1–3 Werktagen',
-      search: 'Suchen'
+      search: 'Suchen',
+      toggle: {
+        more: 'Mehr anzeigen',
+        less: 'Weniger anzeigen'
+      }
     },
     nav: {
       catalog: 'Katalog',
@@ -506,6 +510,7 @@ const translations = {
         title: 'Aroma-Diffusoren Signature Line',
         description:
           'Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.',
+        scentTitlePrefix: 'AromaDiffuser',
         priceLabel: 'Preis',
         cta: 'In den Warenkorb'
       },
@@ -514,28 +519,28 @@ const translations = {
         scentLabel: 'Duft'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        etna: { label: 'Etna', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
+        valencia: { label: 'Valencia', description: '' },
       },
       copy: {
         paragraph1:
@@ -551,9 +556,7 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
-        toggleMore: 'Mehr lesen',
-        toggleLess: 'Weniger anzeigen'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -569,26 +572,26 @@ const translations = {
         scentLabel: 'Duft'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
       }
     },
     car: {
@@ -607,30 +610,30 @@ const translations = {
         spray: 'Travel Spray'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
-    }
-  },
+        none: { label: 'No fragrance', description: 'Wählen Sie einen Duft, um das Cockpit individuell zu aromatisieren.' },
+        africa: { label: 'Africa', description: 'Sonnengewärmte Gewürze und dunkles Holz verleihen dem Cockpit einen expressiven Charakter.' },
+        bamboo: { label: 'Bamboo', description: 'Frisch geschnittenes Bambusgras und zarter Moschus bringen eine klare, luftige Stimmung.' },
+        bellini: { label: 'Bellini', description: 'Spritzige Pfirsichblüten und feine Perlage erinnern an einen Aperitivo im Licht der Stadt.' },
+        blanc: { label: 'Blanc', description: 'Kühl gebügelte Baumwolle und weißer Moschus lassen den Innenraum wie ein Atelier wirken.' },
+        carolina: { label: 'Carolina', description: 'Magnolie, Jasmin und sanfter Amber zeichnen einen eleganten Boulevard-Duft.' },
+        cherry_blossom: { label: 'Cherry Blossom', description: 'Seidige Kirschblüten mit einem Hauch von Mandarine lassen jede Fahrt poetisch wirken.' },
+        christmas_tree: { label: 'Christmas Tree', description: 'Harziger Tannenbalsam und kühle Wacholdernadeln erinnern an alpine Feiertage.' },
+        etna: { label: 'Etna', description: 'Geräucherte Mineralien und pfeffrige Zitrusnoten erzeugen eine vulkanische Spannung.' },
+        dubai: { label: 'Dubai', description: 'Safran, Oud und warmer Bernstein verleihen dem Innenraum eine goldene Aura.' },
+        dune: { label: 'Dune', description: 'Trockener Sand, Kaschmirholz und ein Hauch von Kardamom fluten den Raum mit Wüstenlicht.' },
+        eden: { label: 'Eden', description: 'Taufrische Blätter und cremige Gardenie zeichnen einen geheimen Garten entlang der Route.' },
+        fleur: { label: 'Fleur', description: 'Ein samtiges Bouquet aus Pfingstrose und pudrigem Moschus sorgt für zurückhaltende Eleganz.' },
+        green_mango: { label: 'Green Mango', description: 'Saftige Mango, Limette und grüne Blätter beleben das Cockpit mit tropischer Energie.' },
+        lime_basil: { label: 'Lime Basil', description: 'Limettenschalen und frisches Basilikum erzeugen einen klaren, kulinarischen Duft.' },
+        rosso: { label: 'Rosso', description: 'Reife rote Beeren, Granatapfel und feiner Patchouli wirken wie ein samtiger Schal.' },
+        salted_caramel: { label: 'Salted Caramel', description: 'Butterkaramell mit Fleur de Sel und cremiger Vanille sorgt für gourmandigen Komfort.' },
+        salty_water: { label: 'Salty Water', description: 'Atlantik-Spray, Treibholz und mineralische Moschusnoten wirken wie eine frische Meeresbrise.' },
+        santal: { label: 'Santal', description: 'Cremiges Sandelholz, Iris und Tonkabohne verleihen dem Interieur eine ruhige Textur.' },
+        sugar: { label: 'Sugar', description: 'Kristalline Zuckerblüten und weißer Moschus wirken leicht, aber süchtig machend.' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: 'Tabakblätter, Kakao und reichhaltige Vanille schaffen einen luxuriösen Lounge-Akzent.' },
+        valencia: { label: 'Valencia', description: 'Bergamotte, süße Orange und Neroli erinnern an sonnengeküsste Boulevards.' },
+      }
+    },
   categoryCandles: {
       hero: {
         label: 'Ceremonial Edition',
@@ -1058,7 +1061,11 @@ const translations = {
       burger: 'Ouvrir ou fermer le menu',
       utilityShipping: 'Livraison offerte dès CHF 80',
       utilityDelivery: 'Expédition en 1–3 jours ouvrables',
-      search: 'Rechercher'
+      search: 'Rechercher',
+      toggle: {
+        more: 'Voir plus',
+        less: 'Voir moins'
+      }
     },
     nav: {
       catalog: 'Catalogue',
@@ -1526,6 +1533,7 @@ const translations = {
         title: 'Diffuseur Signature',
         description:
           'Configurez volume et fragrance parmi 21 compositions maison. Verre soufflé à la main et bâtonnets italiens interchangeables.',
+        scentTitlePrefix: 'Diffuseur',
         priceLabel: 'Prix',
         cta: 'Ajouter au panier'
       },
@@ -1534,28 +1542,28 @@ const translations = {
         scentLabel: 'Fragrance'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        etna: { label: 'Etna', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
+        valencia: { label: 'Valencia', description: '' },
       },
       copy: {
         paragraph1:
@@ -1571,9 +1579,7 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
-        toggleMore: 'En savoir plus',
-        toggleLess: 'Réduire'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -1589,26 +1595,26 @@ const translations = {
         scentLabel: 'Parfum'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
       }
     },
     car: {
@@ -1627,30 +1633,30 @@ const translations = {
         spray: 'Spray de voyage'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
-    }
-  },
+        none: { label: 'No fragrance', description: 'Choisissez un parfum pour personnaliser l’atmosphère de l’habitacle.' },
+        africa: { label: 'Africa', description: 'Des épices chauffées par le soleil et des bois sombres apportent une signature expressive à l’habitacle.' },
+        bamboo: { label: 'Bamboo', description: 'Du bambou fraîchement coupé et un musc délicat apportent une sensation claire et aérienne.' },
+        bellini: { label: 'Bellini', description: 'Des fleurs de pêche pétillantes et une fine effervescence évoquent un apéritif urbain.' },
+        blanc: { label: 'Blanc', description: 'Du coton fraîchement repassé et un musc blanc donnent une allure d’atelier lumineux.' },
+        carolina: { label: 'Carolina', description: 'Magnolia, jasmin et ambre doux dessinent un parfum élégant de boulevard.' },
+        cherry_blossom: { label: 'Cherry Blossom', description: 'Des fleurs de cerisier soyeuses et une touche de mandarine rendent chaque trajet poétique.' },
+        christmas_tree: { label: 'Christmas Tree', description: 'Un baume de sapin résineux et des aiguilles de genévrier fraîches rappellent les fêtes alpines.' },
+        etna: { label: 'Etna', description: 'Des minéraux fumés et des agrumes poivrés créent une tension volcanique.' },
+        dubai: { label: 'Dubai', description: 'Safran, oud et ambre chaud enveloppent l’habitacle d’une aura dorée.' },
+        dune: { label: 'Dune', description: 'Sable sec, bois de cachemire et pointe de cardamome baignent l’espace d’une lumière désertique.' },
+        eden: { label: 'Eden', description: 'Feuilles perlées de rosée et gardénia crémeux esquissent un jardin secret le long du trajet.' },
+        fleur: { label: 'Fleur', description: 'Un bouquet velouté de pivoine et de musc poudré offre une élégance discrète.' },
+        green_mango: { label: 'Green Mango', description: 'Mangue juteuse, citron vert et feuilles vertes insufflent une énergie tropicale à l’habitacle.' },
+        lime_basil: { label: 'Lime Basil', description: 'Écorces de citron vert et basilic frais composent un parfum clair et culinaire.' },
+        rosso: { label: 'Rosso', description: 'Baies rouges mûres, grenade et patchouli délicat agissent comme une écharpe de velours.' },
+        salted_caramel: { label: 'Salted Caramel', description: 'Caramel au beurre, fleur de sel et vanille crémeuse apportent un confort gourmand.' },
+        salty_water: { label: 'Salty Water', description: 'Brume atlantique, bois flotté et muscs minéraux évoquent une brise marine fraîche.' },
+        santal: { label: 'Santal', description: 'Santal crémeux, iris et fève tonka apportent une texture calme à l’intérieur.' },
+        sugar: { label: 'Sugar', description: 'Fleurs de sucre cristallines et musc blanc sont légers mais addictifs.' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: 'Feuilles de tabac, cacao et vanille riche composent un accent lounge luxueux.' },
+        valencia: { label: 'Valencia', description: 'Bergamote, orange douce et néroli évoquent des boulevards baignés de soleil.' },
+      }
+    },
   categoryCandles: {
       hero: {
         label: 'Édition cérémonielle',
@@ -1838,7 +1844,11 @@ const translations = {
       burger: 'Apri o chiudi il menu',
       utilityShipping: 'Spedizione gratuita da CHF 80',
       utilityDelivery: 'Consegna in 1–3 giorni lavorativi',
-      search: 'Cerca'
+      search: 'Cerca',
+      toggle: {
+        more: 'Mostra di più',
+        less: 'Mostra meno'
+      }
     },
     nav: {
       catalog: 'Catalogo',
@@ -2305,6 +2315,7 @@ const translations = {
         title: 'Diffusore Signature',
         description:
           'Configura volume e fragranza tra 21 composizioni iconiche. Vetro lavorato a mano e bastoncini intercambiabili.',
+        scentTitlePrefix: 'Diffusore',
         priceLabel: 'Prezzo',
         cta: 'Aggiungi al carrello'
       },
@@ -2313,28 +2324,28 @@ const translations = {
         scentLabel: 'Fragranza'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        etna: { label: 'Etna', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
+        valencia: { label: 'Valencia', description: '' },
       },
       copy: {
         paragraph1:
@@ -2350,9 +2361,7 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
-        toggleMore: 'Mostra di più',
-        toggleLess: 'Mostra meno'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -2368,26 +2377,26 @@ const translations = {
         scentLabel: 'Fragranza'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
       }
     },
     car: {
@@ -2406,30 +2415,30 @@ const translations = {
         spray: 'Travel spray'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
-    }
-  },
+        none: { label: 'No fragrance', description: 'Scegli un aroma per personalizzare l’atmosfera dell’abitacolo.' },
+        africa: { label: 'Africa', description: 'Spezie scaldate dal sole e legni scuri trasformano l’abitacolo in un salotto deciso.' },
+        bamboo: { label: 'Bamboo', description: 'Bambù appena tagliato e muschio soffice creano un’atmosfera limpida e ariosa.' },
+        bellini: { label: 'Bellini', description: 'Fiori di pesca frizzanti e una lieve effervescenza ricordano un aperitivo cittadino.' },
+        blanc: { label: 'Blanc', description: 'Cotone appena stirato e muschio bianco trasformano l’abitacolo in un atelier luminoso.' },
+        carolina: { label: 'Carolina', description: 'Magnolia, gelsomino e ambra morbida disegnano un profumo elegante da boulevard.' },
+        cherry_blossom: { label: 'Cherry Blossom', description: 'Fiori di ciliegio setosi e un tocco di mandarino rendono poetico ogni tragitto.' },
+        christmas_tree: { label: 'Christmas Tree', description: 'Balsamo di abete resinoso e aghi di ginepro freschi richiamano feste alpine.' },
+        etna: { label: 'Etna', description: 'Minerali affumicati e agrumi pepati sprigionano una tensione vulcanica.' },
+        dubai: { label: 'Dubai', description: 'Zafferano, oud e ambra calda avvolgono l’abitacolo in un’aura dorata.' },
+        dune: { label: 'Dune', description: 'Sabbia secca, legno di cashmere e una punta di cardamomo illuminano con luce desertica.' },
+        eden: { label: 'Eden', description: 'Foglie rugiadose e gardenia cremosa delineano un giardino segreto lungo la rotta.' },
+        fleur: { label: 'Fleur', description: 'Un bouquet vellutato di peonia e muschio cipriato offre un’eleganza discreta.' },
+        green_mango: { label: 'Green Mango', description: 'Mango succosa, lime e foglie verdi animano l’abitacolo con energia tropicale.' },
+        lime_basil: { label: 'Lime Basil', description: 'Scorze di lime e basilico fresco creano un profumo nitido e culinario.' },
+        rosso: { label: 'Rosso', description: 'Bacche rosse mature, melograno e patchouli delicato avvolgono come una sciarpa di velluto.' },
+        salted_caramel: { label: 'Salted Caramel', description: 'Caramello al burro, fleur de sel e vaniglia cremosa regalano un comfort goloso.' },
+        salty_water: { label: 'Salty Water', description: 'Spray atlantico, legno levigato e muschi minerali evocano una fresca brezza marina.' },
+        santal: { label: 'Santal', description: 'Sandalo cremoso, iris e fava tonka donano all’abitacolo una texture pacata.' },
+        sugar: { label: 'Sugar', description: 'Fiori di zucchero cristallini e muschio bianco risultano leggeri ma avvolgenti.' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: 'Foglie di tabacco, cacao e vaniglia ricca creano un accento lounge di lusso.' },
+        valencia: { label: 'Valencia', description: 'Bergamotto, arancia dolce e neroli richiamano boulevard baciati dal sole.' },
+      }
+    },
   categoryCandles: {
       hero: {
         label: 'Edizione cerimoniale',
@@ -2617,7 +2626,11 @@ const translations = {
       burger: 'Toggle main menu',
       utilityShipping: 'Free shipping from CHF 80',
       utilityDelivery: 'Delivery within 1–3 business days',
-      search: 'Search'
+      search: 'Search',
+      toggle: {
+        more: 'Read more',
+        less: 'Collapse'
+      }
     },
     nav: {
       catalog: 'Catalog',
@@ -3083,6 +3096,7 @@ const translations = {
       product: {
         title: 'Signature reed diffuser',
         description: 'Configure volume and fragrance from 21 house blends. Hand-polished glass and Italian reeds for every project.',
+        scentTitlePrefix: 'AromaDiffuser',
         priceLabel: 'Price',
         cta: 'Add to cart'
       },
@@ -3091,28 +3105,28 @@ const translations = {
         scentLabel: 'Fragrance'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        etna: { label: 'Etna', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
+        valencia: { label: 'Valencia', description: '' },
       },
       copy: {
         paragraph1:
@@ -3128,9 +3142,7 @@ const translations = {
           'aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;',
         benefit3:
           'odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.',
-        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.',
-        toggleMore: 'Read more',
-        toggleLess: 'Collapse'
+        paragraph4: 'Diffusers also have an elegant design that easily complements the interior of the room.'
       }
     },
     candles: {
@@ -3146,26 +3158,26 @@ const translations = {
         scentLabel: 'Fragrance'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla'
+        none: { label: 'No fragrance', description: '' },
+        africa: { label: 'Africa', description: '' },
+        bamboo: { label: 'Bamboo', description: '' },
+        bellini: { label: 'Bellini', description: '' },
+        blanc: { label: 'Blanc', description: '' },
+        carolina: { label: 'Carolina', description: '' },
+        cherry_blossom: { label: 'Cherry Blossom', description: '' },
+        christmas_tree: { label: 'Christmas Tree', description: '' },
+        dubai: { label: 'Dubai', description: '' },
+        dune: { label: 'Dune', description: '' },
+        eden: { label: 'Eden', description: '' },
+        fleur: { label: 'Fleur', description: '' },
+        green_mango: { label: 'Green Mango', description: '' },
+        lime_basil: { label: 'Lime Basil', description: '' },
+        rosso: { label: 'Rosso', description: '' },
+        salted_caramel: { label: 'Salted Caramel', description: '' },
+        salty_water: { label: 'Salty Water', description: '' },
+        santal: { label: 'Santal', description: '' },
+        sugar: { label: 'Sugar', description: '' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: '' },
       }
     },
     car: {
@@ -3184,28 +3196,28 @@ const translations = {
         spray: 'Travel spray'
       },
       scents: {
-        none: 'No fragrance',
-        africa: 'Africa',
-        bamboo: 'Bamboo',
-        bellini: 'Bellini',
-        blanc: 'Blanc',
-        carolina: 'Carolina',
-        cherry_blossom: 'Cherry Blossom',
-        christmas_tree: 'Christmas Tree',
-        etna: 'Etna',
-        dubai: 'Dubai',
-        dune: 'Dune',
-        eden: 'Eden',
-        fleur: 'Fleur',
-        green_mango: 'Green Mango',
-        lime_basil: 'Lime Basil',
-        rosso: 'Rosso',
-        salted_caramel: 'Salted Caramel',
-        salty_water: 'Salty Water',
-        santal: 'Santal',
-        sugar: 'Sugar',
-        tobacco_vanilla: 'Tobacco Vanilla',
-        valencia: 'Valencia'
+        none: { label: 'No fragrance', description: 'Choose a fragrance to tailor the cockpit ambiance.' },
+        africa: { label: 'Africa', description: 'Sun-warmed spices and dark woods turn the cabin into a bold lounge.' },
+        bamboo: { label: 'Bamboo', description: 'Fresh-cut bamboo and soft musk lend a clear, airy attitude.' },
+        bellini: { label: 'Bellini', description: 'Sparkling peach blossom and gentle effervescence echo a city aperitivo.' },
+        blanc: { label: 'Blanc', description: 'Crisp cotton and white musk make the cabin feel like a sunlit atelier.' },
+        carolina: { label: 'Carolina', description: 'Magnolia, jasmine and soft amber sketch an elegant boulevard trail.' },
+        cherry_blossom: { label: 'Cherry Blossom', description: 'Silky cherry blossom with a hint of mandarin makes every drive feel poetic.' },
+        christmas_tree: { label: 'Christmas Tree', description: 'Resinous fir balsam and cool juniper needles recall alpine holidays.' },
+        etna: { label: 'Etna', description: 'Smoked minerals and peppered citrus bring volcanic tension.' },
+        dubai: { label: 'Dubai', description: 'Saffron, oud and warm amber bathe the cabin in a gilded aura.' },
+        dune: { label: 'Dune', description: 'Dry sand, cashmere wood and a whisper of cardamom flood the cabin with desert light.' },
+        eden: { label: 'Eden', description: 'Dewy leaves and creamy gardenia sketch a secret garden along the route.' },
+        fleur: { label: 'Fleur', description: 'A velvety bouquet of peony and powdery musk delivers understated elegance.' },
+        green_mango: { label: 'Green Mango', description: 'Juicy mango, lime and green leaves energise the cabin with tropical lift.' },
+        lime_basil: { label: 'Lime Basil', description: 'Lime peel and fresh basil compose a crisp, culinary scent.' },
+        rosso: { label: 'Rosso', description: 'Ripe red berries, pomegranate and delicate patchouli drape like a velvet scarf.' },
+        salted_caramel: { label: 'Salted Caramel', description: 'Buttery caramel, fleur de sel and creamy vanilla deliver gourmand comfort.' },
+        salty_water: { label: 'Salty Water', description: 'Atlantic spray, driftwood and mineral musks feel like a fresh sea breeze.' },
+        santal: { label: 'Santal', description: 'Creamy sandalwood, iris and tonka bean lend the cabin a calm texture.' },
+        sugar: { label: 'Sugar', description: 'Crystalline sugar blossoms and white musk feel weightless yet addictive.' },
+        tobacco_vanilla: { label: 'Tobacco Vanilla', description: 'Tobacco leaf, cocoa and rich vanilla craft a luxurious lounge accent.' },
+        valencia: { label: 'Valencia', description: 'Bergamot, sweet orange and neroli recall sun-drenched boulevards.' },
       }
     },
     categoryCandles: {
@@ -3625,6 +3637,39 @@ const translations = {
   }
 };
 
+const supportedLanguages = Object.keys(translations);
+const fragranceCategories = ['diffusers', 'candles', 'car'];
+
+const loadFragranceDescriptions = async () => {
+  try {
+    const response = await fetch('assets/data/fragrance.txt', { cache: 'no-store' });
+    if (!response.ok) {
+      throw new Error(`Fragrance data request failed: ${response.status}`);
+    }
+    const raw = await response.text();
+    const data = JSON.parse(raw);
+    fragranceCategories.forEach((category) => {
+      supportedLanguages.forEach((lang) => {
+        const categoryEntry = translations[lang]?.[category]?.scents;
+        if (!categoryEntry) return;
+    Object.entries(data).forEach(([scentId, description]) => {
+      const scentEntry = categoryEntry[scentId];
+      if (!scentEntry) return;
+      const shouldOverwrite =
+        lang === 'en' || !scentEntry.description || !scentEntry.description.trim();
+      if (shouldOverwrite) {
+        scentEntry.description = description;
+      }
+    });
+      });
+    });
+  } catch (error) {
+    console.error('Failed to load fragrance descriptions', error);
+  }
+};
+
+const fragranceDataPromise = loadFragranceDescriptions();
+
 const diffuserPricing = {
   baseCurrency: 'CHF',
   volumes: {
@@ -3655,322 +3700,6 @@ const diffuserHeroImages = [
   'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7629.jpg?raw=true'
 ];
 
-const diffuserScentTitles = {
-  none: {
-    de: 'Signature Aroma-Diffusor',
-    fr: 'Diffuseur à bâtonnets Signature',
-    it: 'Diffusore a bastoncini Signature',
-    en: 'Signature reed diffuser'
-  },
-  Africa: { de: 'AromaDiffuser Africa', fr: 'AromaDiffuser Africa', it: 'AromaDiffuser Africa', en: 'AromaDiffuser Africa' },
-  Bamboo: { de: 'AromaDiffuser Bamboo', fr: 'AromaDiffuser Bamboo', it: 'AromaDiffuser Bamboo', en: 'AromaDiffuser Bamboo' },
-  Bellini: { de: 'AromaDiffuser Bellini', fr: 'AromaDiffuser Bellini', it: 'AromaDiffuser Bellini', en: 'AromaDiffuser Bellini' },
-  Blanc: { de: 'AromaDiffuser Blanc', fr: 'AromaDiffuser Blanc', it: 'AromaDiffuser Blanc', en: 'AromaDiffuser Blanc' },
-  Carolina: { de: 'AromaDiffuser Carolina', fr: 'AromaDiffuser Carolina', it: 'AromaDiffuser Carolina', en: 'AromaDiffuser Carolina' },
-  'Cherry Blossom': {
-    de: 'AromaDiffuser Cherry Blossom',
-    fr: 'AromaDiffuser Cherry Blossom',
-    it: 'AromaDiffuser Cherry Blossom',
-    en: 'AromaDiffuser Cherry Blossom'
-  },
-  'Christmas Tree': {
-    de: 'AromaDiffuser Christmas Tree',
-    fr: 'AromaDiffuser Christmas Tree',
-    it: 'AromaDiffuser Christmas Tree',
-    en: 'AromaDiffuser Christmas Tree'
-  },
-  Etna: { de: 'AromaDiffuser Etna', fr: 'AromaDiffuser Etna', it: 'AromaDiffuser Etna', en: 'AromaDiffuser Etna' },
-  Dubai: { de: 'AromaDiffuser Dubai', fr: 'AromaDiffuser Dubai', it: 'AromaDiffuser Dubai', en: 'AromaDiffuser Dubai' },
-  Dune: { de: 'AromaDiffuser Dune', fr: 'AromaDiffuser Dune', it: 'AromaDiffuser Dune', en: 'AromaDiffuser Dune' },
-  Eden: { de: 'AromaDiffuser Eden', fr: 'AromaDiffuser Eden', it: 'AromaDiffuser Eden', en: 'AromaDiffuser Eden' },
-  Fleur: { de: 'AromaDiffuser Fleur', fr: 'AromaDiffuser Fleur', it: 'AromaDiffuser Fleur', en: 'AromaDiffuser Fleur' },
-  'Green Mango': {
-    de: 'AromaDiffuser Green Mango',
-    fr: 'AromaDiffuser Green Mango',
-    it: 'AromaDiffuser Green Mango',
-    en: 'AromaDiffuser Green Mango'
-  },
-  'Lime Basil': {
-    de: 'AromaDiffuser Lime Basil',
-    fr: 'AromaDiffuser Lime Basil',
-    it: 'AromaDiffuser Lime Basil',
-    en: 'AromaDiffuser Lime Basil'
-  },
-  Rosso: { de: 'AromaDiffuser Rosso', fr: 'AromaDiffuser Rosso', it: 'AromaDiffuser Rosso', en: 'AromaDiffuser Rosso' },
-  'Salted Caramel': {
-    de: 'AromaDiffuser Salted Caramel',
-    fr: 'AromaDiffuser Salted Caramel',
-    it: 'AromaDiffuser Salted Caramel',
-    en: 'AromaDiffuser Salted Caramel'
-  },
-  'Salty Water': {
-    de: 'AromaDiffuser Salty Water',
-    fr: 'AromaDiffuser Salty Water',
-    it: 'AromaDiffuser Salty Water',
-    en: 'AromaDiffuser Salty Water'
-  },
-  Santal: { de: 'AromaDiffuser Santal', fr: 'AromaDiffuser Santal', it: 'AromaDiffuser Santal', en: 'AromaDiffuser Santal' },
-  Sugar: { de: 'AromaDiffuser Sugar', fr: 'AromaDiffuser Sugar', it: 'AromaDiffuser Sugar', en: 'AromaDiffuser Sugar' },
-  'Tobacco Vanilla': {
-    de: 'AromaDiffuser Tobacco Vanilla',
-    fr: 'AromaDiffuser Tobacco Vanilla',
-    it: 'AromaDiffuser Tobacco Vanilla',
-    en: 'AromaDiffuser Tobacco Vanilla'
-  },
-  Valencia: { de: 'AromaDiffuser Valencia', fr: 'AromaDiffuser Valencia', it: 'AromaDiffuser Valencia', en: 'AromaDiffuser Valencia' }
-};
-
-const diffuserScentDescriptions = {
-  none: '',
-  'Africa': `AFRICA 
-A warm, spicy scent of cardamom wood and soft leather. This intensely concentrated fragrance fills the entire room. Bright notes of bergamot and musk are enhanced by a luminous woody nuance. Rich accords of cardamom and leather lend a robust, accentuated character, while a fragrant trail of spicy cumin and saffron completes the composition.
-
-You’ll fall in love with AFRICA if you crave fresh, woody aromas or long for desert dunes and safari adventures.
-
-Ideal for spacious living rooms and lounges as well as interiors featuring natural elements. This premium reed diffuser brings character and sophistication to any space.
-
-Olfactory Pyramid:
-Top Notes: Bergamot, Vetiver, Geranium
-Heart Notes: Cardamom, Leather, Musk
-Base Notes: Patchouli, Cumin, Oud, Saffron`,
-  'Bamboo': `BAMBOO 
-A green, fresh scent of spring flowers and bamboo stalks. This moderately intense fragrance gently fills your space without overpowering it. Top notes of bergamot and bamboo create a delicate vegetal mist, evolving into a floral heart of lily, ylang-ylang and orange blossom. A warm, enveloping base of vanilla, sandalwood and amber completes the composition.
-
-Perfect for bright interiors, small rooms and bathrooms where you want a soft, natural freshness.
-
-If you love vegetal, fresh and floral aromas, BAMBOO will be an ideal addition to your collection. This premium reed diffuser is designed to create a harmonious, natural atmosphere in your home.
-
-Olfactory Pyramid:
-Top Notes: Bamboo, Bergamot
-Heart Notes: Ylang-ylang, Lily, Orange Blossom
-Base Notes: Vanilla, Sandalwood, Amber`,
-  'Bellini': `BELLINI 
-A velvety scent of juicy peach and intense rum. This powdery fragrance, rich in aromatic compounds, quickly fills your space with playful notes of sweet peach, blood orange and vanilla. The bitter-spicy accords of cognac, rum and cashmere add a subtle edge and deepen its character.
-
-BELLINI is perfect if you want to maintain a festive, celebratory atmosphere.
-
-This premium reed diffuser is a wonderful addition to spacious living rooms, entryways and any bright interior.
-
-Olfactory Pyramid:
-Top Notes: Peach, Blood Orange, Cardamom, Heliotrope
-Heart Notes: Rum, Cognac, Davana, Jasmine
-Base Notes: Patchouli, Sandalwood, Vanilla, Tonka Bean, Cashmere, Benzoin, Storax, Labdanum, Vetiver`,
-  'Blanc': `BLANC 
-A soft, fresh fragrance of white cotton and purity.
-
-This moderately concentrated scent blends light floral accords with bright aldehydes, evoking the unmistakable aroma of a crisp white shirt, freshly laundered sheets, and unmatched purity.
-
-In enclosed spaces, the fragrance diffuses smoothly and fluidly, filling the room with a delicate freshness.
-
-You’ll surely fall in love with BLANC if you appreciate pure scents and wish to recreate the atmosphere of a freshly cleaned room in a luxury hotel.
-
-Olfactory Pyramid:
-Top Notes: Aldehydes, Rose, Pink Pepper
-Heart Notes: Peony, Violet, Orange Blossom
-Base Notes: White Musk, Woody Notes, Sandalwood`,
-  'Carolina': `CAROLINA 
-A delicate, light aroma of sweet cappuccino and spring blooms.
-
-This moderately concentrated scent unfolds gently in any space. Coffee and almond notes dissolve into a warm, enveloping sweet-bitter accord. Jasmine, iris and bergamot create fresh floral highlights, while a whisper of spiced cocoa lingers in the trail.
-
-You’ll fall in love with CAROLINA if you cherish cozy café vibes and sweet pastries, or crave a warm, subtly mysterious atmosphere. This premium mikado diffuser transforms any room into a welcoming sensory retreat.
-
-Olfactory Pyramid:
-Top Notes: Almond, Coffee, Bergamot, Lemon
-Heart Notes: Jasmine sambac, Tuberose, Iris, Bulgarian Rose, Orange Blossom
-Base Notes: Tonka Bean, Cocoa, Sandalwood, Vanilla, Praline, Cinnamon, White Cedar, Cashmere Wood, Patchouli, Amber, Musk`,
-  'Cherry Blossom': `CHERRY BLOSSOM 
-A sweet and spicy aroma of rich cherry liqueur and spring flowers.
-
-An intensely saturated fragrance that enhances the entire atmosphere of the room. The top notes of cherry and bitter almond evolve into a vibrant, tangy cherry liqueur scent. Rose and jasmine accords blend into a soft floral trail, enriched with a sweet touch of vanilla.
-
-You’ll fall in love with CHERRY BLOSSOM if you enjoy delicate, sweet fragrances and the scent of ripe, juicy cherries.
-
-CHERRY BLOSSOM is the perfect fragrance for kitchens, spacious hallways, and bright bathrooms.
-
-Olfactory Pyramid:
-Top notes: Cherry, Liqueur, Bitter almond
-Heart notes: Cherry, Turkish rose, Jasmine sambac, Plum
-Base notes: Peru balsam, Tonka beans, Sandalwood, Vetiver, White cedar, Benzoin, Cinnamon, Clove, Patchouli, Vanilla`,
-  'Christmas Tree': `CHRISTMAS TREE 
-A soft and festive scent of Christmas pine and juicy tangerines.
-
-This is a medium-intensity fragrance that gently fills the room with a translucent veil. The bright and sweet tangerine note unfolds into a familiar and nostalgic aroma, while the final green trail of pine brings depth and freshness.
-
-CHRISTMAS TREE is the perfect scent for Christmas holidays — or for those who want to feel the magic of the season even in the heat of summer.
-
-This scent is ideal for children's rooms, living areas, or a cozy little coffee shop.
-
-Olfactory Pyramid:
-Top notes: Vanilla
-Heart notes: Orange, Cinnamon
-Base notes: Pine, Tangerine`,
-  'Dubai': `DUBAI 
-A rich oriental fragrance of Damask rose and oud wood.
-
-An intense and highly concentrated aroma that makes its presence known from the very first moments. Notes of geranium and violet gently envelop the space with a slightly bitter floral scent. Bright accords of Damask and Turkish rose blend into a sweet and soft trail, with a spicy touch of cinnamon.
-
-You’ll love DUBAI if you are a fan of luxurious hotel scents and starlit summer nights.
-
-DUBAI is the perfect choice for living rooms, lobbies, and of course, hotels.
-
-Olfactory Pyramid:
-Top notes: Geranium, Violet
-Heart notes: Cinnamon, Damask rose, Turkish rose
-Base notes: Oud, Vanilla`,
-  'Dune': `DUNE 
-A bold and spicy scent of blazing sun and hot pepper.
-
-This highly intense fragrance will fill your space. Citrus notes of orange and grapefruit add a pleasantly sweet trail. Distinct pepper accords dissolve into a bright, daring, and fiery aroma. Cedar and vetiver nuances complete the composition with a warm, woody tone.
-
-DUNE is perfect for those who miss the scorching sun and vast desert dunes.
-
-This premium reed diffuser brings sunlight, warmth, and the feeling of summer into your home.
-
-Olfactory Pyramid:
-Top notes: Orange, Grapefruit
-Heart notes: Pepper, Pink Pepper
-Base notes: Vetiver, Cedar, Patchouli, Benzoin`,
-  'Eden': `EDEN 
-A fruity fragrance with a soft floral trail.
-
-Intense and vibrant, this aroma fills the entire space. Passion fruit and raspberry notes unfold into a juicy, fresh scent of ripe fruits and berries. Sweetness is enhanced by lily and vanilla accords. The fragrance leaves a spicy trail of musk and sandalwood.
-
-EDEN will become your favorite scent if you love feeling the warm sun rays on your skin and enjoy spicy, aromatic fragrances.
-
-This premium reed diffuser is the perfect complement to bedrooms and living rooms, both in dark and bright interiors. It is also ideal for bathrooms.
-
-Olfactory Pyramid:
-Top notes: Passion fruit, Peach, Pear, Raspberry, Blackcurrant leaf, Sand
-Heart notes: Lily
-Base notes: Vanilla, Musk, Sandalwood`,
-  'Etna': `ETNA 
-A spicy and warm aroma of leather, tobacco, and caramel.
-
-This fragrance envelops the entire space around you. Strong leather and black pepper notes emerge instantly, while clove, sage, and honey blend into an intense and self-sufficient composition. The scent leaves a deep amber trail, enriched with tobacco and patchouli notes.
-
-ETNA is perfect if you seek a spicy, fiery, and explosive aroma with vibrant oriental notes.
-
-This premium reed diffuser fits perfectly in dark, spacious living rooms or lobbies, enhancing rustic wooden and stone elements.
-
-Olfactory Pyramid:
-Top notes: Leather, Tolu balsam, Saffron, Bay leaf, Black pepper, Earth tincture, Lemon, Thyme
-Heart notes: Honey, Red pepper, Clove, Iris, Sage, Magnolia, Peony
-Base notes: Tobacco, Oud, Caramel, Leather, Benzoin, Pine, Patchouli, Canada balsam, Cashmere wood, Labdanum`,
-  'Fleur': `FLEUR 
-A cool, juicy, floral-fruity aroma that fills the space with a refreshing and sophisticated atmosphere. The composition opens with bright notes of bergamot, lychee, and peach, leading into a floral heart of orange blossom, jasmine, and peony. The final accord leaves a light trail of woody notes, moss, and musk.
-
-Perfect for bright interiors in bedrooms, bathrooms, and living rooms — places where you want to create a fresh, spring morning atmosphere.
-
-If you love juicy, floral aromas and a refreshing ambiance, FLEUR will become your favorite. This premium reed diffuser is designed to deliver a refined aromatic experience, adding elegance to any space.
-
-Olfactory Pyramid:
-Top notes: Bergamot, Lychee, Peach
-Heart notes: Orange blossom, Jasmine, Peony
-Base notes: Woody notes, Moss, Musk`,
-  'Green Mango': `GREEN MANGO 
-A juicy fragrance of fresh mango and crisp pineapple.
-
-This highly concentrated scent fills the entire space. Notes of green mango and melon unfold into a bright and fresh aroma of freshly cut fruits. Pineapple and peach accords enhance the sweetness, while final hints of pine needles add a vibrant, vegetal trail.
-
-This premium reed diffuser is ideal for entryways, bright living rooms, and small beauty salons. If you love fruity yet not overpowering fragrances, GREEN MANGO will become your favorite.
-
-Olfactory Pyramid:
-Top notes: Mango, Melon
-Heart notes: Peach, Pineapple
-Base notes: Mango peel, Pine needles`,
-  'Lime Basil': `LIME BASIL 
-A fresh citrus scent of juicy lime and aromatic basil.
-
-This intensely saturated fragrance quickly unfolds in the air. Notes of lime and ripe mandarin create a slightly sweet aroma, while spicy basil and thyme accords dissolve into pleasant bitterness and herbal freshness. The fragrance leaves a stimulating, fragrant trail.
-
-LIME BASIL will become your favorite if you love fresh, herbal aromas and the invigorating scent of a mojito. This premium reed diffuser is perfect for bathrooms, spacious entryways, and large living rooms.
-
-Olfactory Pyramid:
-Top notes: Mandarin, Bergamot
-Heart notes: Basil, Iris, Lilac, Thyme
-Base notes: Lime, Patchouli, Vetiver`,
-  'Rosso': `ROSSO 
-A lush aroma of ripe red grapes and juicy berries.
-
-This fragrance, with a high concentration of aromatic compounds, fills the entire space. The main note unfolds with a vegetal scent of raspberry and birch bark. The dominant accord of juicy red grapes permeates the room with the penetrating aroma of dry wine. A touch of magnolia colors the trail with soft floral nuances.
-
-ROSSO is designed for lovers of intense wine-like scents and ripe berries. This premium reed diffuser is perfect for filling your space with a vibrant, deep, and fruity fragrance. Ideal for spacious living rooms and dark interiors with natural wooden elements.
-
-Olfactory Pyramid:
-Top notes: Orange, Violet, Magnolia
-Heart notes: Plum, Strawberry, Wild berries
-Base notes: Dry wood, Birch`,
-  'Salted Caramel': `SALTED CARAMEL 
-A bright composition with high intensity.
-
-Notes of wheat and vanilla fill the fragrance with sweetness and a delicious, mouthwatering trail. Caramel and salt blend into a rich, enveloping, and tasty scent, familiar from childhood: salted caramel. Vibrant notes of baked goods add even more flavor to the composition, filling your space with warmth and coziness.
-
-If you wish to dive back into your childhood and experience an unforgettable atmosphere of wonder and celebration, SALTED CARAMEL is perfect for you. This high-concentration premium reed diffuser transforms any space into a cozy, delicious corner.
-
-Olfactory Pyramid:
-Top notes: Sea salt
-Heart notes: Pear, Vanilla, Powdery notes, Wheat
-Base notes: Toffee, Brown sugar`,
-  'Salty Water': `SALTY WATER 
-A fresh scent of salty water and ancient minerals.
-
-This is a light-intensity fragrance, the most delicate of the entire line. It unfolds softly in the air, gradually filling the room. Marine salt and amber dissolve into a refreshing salty dew aroma. Hints of seaweed add a vegetal nuance, while refreshing sage brings brightness to the composition.
-
-SALTY WATER is the perfect choice if you’re not a fan of intense, sweet scents and are enchanted by the mystery of the sea. This premium reed diffuser creates a light, marine atmosphere in any corner of your home.
-
-Olfactory Pyramid:
-Top notes: Amber, Sea salt
-Heart notes: Sage
-Base notes: Grapefruit, Seaweed`,
-  'Santal': `SANTAL 
-A powdery fragrance with leather, cardamom, and oriental sandalwood.
-
-This aromatic scent diffuses slowly and gently throughout the space. Emerging notes of cardamom and sandalwood blend with strong accords of iris and amber, creating a bitter oriental symphony. Final touches of violet and papyrus soften into a slightly floral trail.
-
-You’ll fall in love with SANTAL if you enjoy comforting powdery fragrances, spices, and the charm of the Orient. This premium reed diffuser is perfect for adding warmth and exotic elegance to your home.
-
-Olfactory Pyramid:
-Top notes: Sandalwood, Papyrus, Leather
-Heart notes: Virginia cedar, Cardamom, Violet
-Base notes: Iris, Amber`,
-  'Sugar': `SUGAR 
-A sweet and sticky scent of burnt sugar and woody resin.
-
-An intense and saturated fragrance that fills the entire room. Pronounced notes of saffron and jasmine melt into a sweet and spicy aroma. The main woody amber accord envelops the air with the sweetness and depth of resin. Final touches of white cedar enhance the woody trail.
-
-SUGAR is perfect for those who wish to bring a luxurious touch to their space, filling it with a rich, sticky sweetness. This premium reed diffuser has been crafted to deliver an immersive sensory experience in warm, sophisticated interiors.
-
-Olfactory Pyramid:
-Top notes: Jasmine, Saffron
-Heart notes: Woody amber
-Base notes: White cedar, Pine resin`,
-  'Tobacco Vanilla': `TOBACCO VANILLA 
-A warm and smooth scent of tobacco leaves and sweet vanilla.
-
-This is a medium-saturation fragrance. Notes of spices and tobacco leaves gradually unfold into a rich, delicate vanilla and cocoa scent. The trail is revealed with light woody bark and dried fruit notes.
-
-In a closed space, TOBACCO VANILLA diffuses gently, reaching its peak fragrance within the first few minutes of entering the room.
-
-You will love TOBACCO VANILLA if you appreciate lightness, sweetness, and subtlety in a fragrance, and if you want to add solidity and luxury to your surroundings.
-
-Looking for the best reed diffuser for your home? TOBACCO VANILLA by BY VELCHEVA combines elegance and warmth in a sophisticated format. Perfect for those who want to buy a diffuser with an intense, long-lasting fragrance that transforms any space into a sensory experience.
-
-Olfactory Pyramid:
-Top notes: Tobacco leaves, Spices
-Heart notes: Tonka beans, Vanilla, Cocoa, Tobacco flower
-Base notes: Woody notes, Dried fruits`,
-  'Valencia': `VALENCIA 
-An airy fragrance of fresh citrus and delicate jasmine. This medium-intensity aroma gently spreads throughout the room. Notes of lemon and bergamot fill the space with a fresh citrus scent with a slight bitterness. The main accords of jasmine and rose melt into a sweet floral composition. Final musk notes enhance the spiciness of the fragrance.
-
-VALENCIA will become your favorite fragrance if you want to feel the delicate scent of flowers and citrus in the room. Ideal for natural, bright interiors, living rooms, and bedrooms.
-
-Olfactory Pyramid:
-Top notes: Bergamot, Lemon
-Heart notes: Jasmine, White Acacia, Rose
-Base notes: Woody notes, Musk`,
-};
-
 const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
@@ -3980,141 +3709,9 @@ const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
 const carParfumPrice = 12.9;
 const carPriceCurrency = 'CHF';
-const carScentDescriptions = {
-  none: {
-    de: 'Wählen Sie einen Duft, um das Cockpit individuell zu aromatisieren.',
-    fr: 'Choisissez un parfum pour personnaliser l’atmosphère de l’habitacle.',
-    it: "Scegli un aroma per personalizzare l’atmosfera dell’abitacolo.",
-    en: 'Choose a fragrance to tailor the cockpit ambiance.'
-  },
-  Africa: {
-    de: 'Sonnengewärmte Gewürze und dunkles Holz verleihen dem Cockpit einen expressiven Charakter.',
-    fr: 'Des épices chauffées par le soleil et des bois sombres apportent une signature expressive à l’habitacle.',
-    it: 'Spezie scaldate dal sole e legni scuri trasformano l’abitacolo in un salotto deciso.',
-    en: 'Sun-warmed spices and dark woods turn the cabin into a bold lounge.'
-  },
-  Bamboo: {
-    de: 'Frisch geschnittenes Bambusgras und zarter Moschus bringen eine klare, luftige Stimmung.',
-    fr: 'Du bambou fraîchement coupé et un musc délicat apportent une sensation claire et aérienne.',
-    it: 'Bambù appena tagliato e muschio soffice creano un’atmosfera limpida e ariosa.',
-    en: 'Fresh-cut bamboo and soft musk lend a clear, airy attitude.'
-  },
-  Bellini: {
-    de: 'Spritzige Pfirsichblüten und feine Perlage erinnern an einen Aperitivo im Licht der Stadt.',
-    fr: 'Des fleurs de pêche pétillantes et une fine effervescence évoquent un apéritif urbain.',
-    it: 'Fiori di pesca frizzanti e una lieve effervescenza ricordano un aperitivo cittadino.',
-    en: 'Sparkling peach blossom and gentle effervescence echo a city aperitivo.'
-  },
-  Blanc: {
-    de: 'Kühl gebügelte Baumwolle und weißer Moschus lassen den Innenraum wie ein Atelier wirken.',
-    fr: 'Du coton fraîchement repassé et un musc blanc donnent une allure d’atelier lumineux.',
-    it: 'Cotone appena stirato e muschio bianco trasformano l’abitacolo in un atelier luminoso.',
-    en: 'Crisp cotton and white musk make the cabin feel like a sunlit atelier.'
-  },
-  Carolina: {
-    de: 'Magnolie, Jasmin und sanfter Amber zeichnen einen eleganten Boulevard-Duft.',
-    fr: 'Magnolia, jasmin et ambre doux dessinent un parfum élégant de boulevard.',
-    it: 'Magnolia, gelsomino e ambra morbida disegnano un profumo elegante da boulevard.',
-    en: 'Magnolia, jasmine and soft amber sketch an elegant boulevard trail.'
-  },
-  'Cherry Blossom': {
-    de: 'Seidige Kirschblüten mit einem Hauch von Mandarine lassen jede Fahrt poetisch wirken.',
-    fr: 'Des fleurs de cerisier soyeuses et une touche de mandarine rendent chaque trajet poétique.',
-    it: 'Fiori di ciliegio setosi e un tocco di mandarino rendono poetico ogni tragitto.',
-    en: 'Silky cherry blossom with a hint of mandarin makes every drive feel poetic.'
-  },
-  'Christmas Tree': {
-    de: 'Harziger Tannenbalsam und kühle Wacholdernadeln erinnern an alpine Feiertage.',
-    fr: 'Un baume de sapin résineux et des aiguilles de genévrier fraîches rappellent les fêtes alpines.',
-    it: 'Balsamo di abete resinoso e aghi di ginepro freschi richiamano feste alpine.',
-    en: 'Resinous fir balsam and cool juniper needles recall alpine holidays.'
-  },
-  Etna: {
-    de: 'Geräucherte Mineralien und pfeffrige Zitrusnoten erzeugen eine vulkanische Spannung.',
-    fr: 'Des minéraux fumés et des agrumes poivrés créent une tension volcanique.',
-    it: 'Minerali affumicati e agrumi pepati sprigionano una tensione vulcanica.',
-    en: 'Smoked minerals and peppered citrus bring volcanic tension.'
-  },
-  Dubai: {
-    de: 'Safran, Oud und warmer Bernstein verleihen dem Innenraum eine goldene Aura.',
-    fr: 'Safran, oud et ambre chaud enveloppent l’habitacle d’une aura dorée.',
-    it: 'Zafferano, oud e ambra calda avvolgono l’abitacolo in un’aura dorata.',
-    en: 'Saffron, oud and warm amber bathe the cabin in a gilded aura.'
-  },
-  Dune: {
-    de: 'Trockener Sand, Kaschmirholz und ein Hauch von Kardamom fluten den Raum mit Wüstenlicht.',
-    fr: 'Sable sec, bois de cachemire et pointe de cardamome baignent l’espace d’une lumière désertique.',
-    it: 'Sabbia secca, legno di cashmere e una punta di cardamomo illuminano con luce desertica.',
-    en: 'Dry sand, cashmere wood and a whisper of cardamom flood the cabin with desert light.'
-  },
-  Eden: {
-    de: 'Taufrische Blätter und cremige Gardenie zeichnen einen geheimen Garten entlang der Route.',
-    fr: 'Feuilles perlées de rosée et gardénia crémeux esquissent un jardin secret le long du trajet.',
-    it: 'Foglie rugiadose e gardenia cremosa delineano un giardino segreto lungo la rotta.',
-    en: 'Dewy leaves and creamy gardenia sketch a secret garden along the route.'
-  },
-  Fleur: {
-    de: 'Ein samtiges Bouquet aus Pfingstrose und pudrigem Moschus sorgt für zurückhaltende Eleganz.',
-    fr: 'Un bouquet velouté de pivoine et de musc poudré offre une élégance discrète.',
-    it: 'Un bouquet vellutato di peonia e muschio cipriato offre un’eleganza discreta.',
-    en: 'A velvety bouquet of peony and powdery musk delivers understated elegance.'
-  },
-  'Green Mango': {
-    de: 'Saftige Mango, Limette und grüne Blätter beleben das Cockpit mit tropischer Energie.',
-    fr: 'Mangue juteuse, citron vert et feuilles vertes insufflent une énergie tropicale à l’habitacle.',
-    it: 'Mango succosa, lime e foglie verdi animano l’abitacolo con energia tropicale.',
-    en: 'Juicy mango, lime and green leaves energise the cabin with tropical lift.'
-  },
-  'Lime Basil': {
-    de: 'Limettenschalen und frisches Basilikum erzeugen einen klaren, kulinarischen Duft.',
-    fr: 'Écorces de citron vert et basilic frais composent un parfum clair et culinaire.',
-    it: 'Scorze di lime e basilico fresco creano un profumo nitido e culinario.',
-    en: 'Lime peel and fresh basil compose a crisp, culinary scent.'
-  },
-  Rosso: {
-    de: 'Reife rote Beeren, Granatapfel und feiner Patchouli wirken wie ein samtiger Schal.',
-    fr: 'Baies rouges mûres, grenade et patchouli délicat agissent comme une écharpe de velours.',
-    it: 'Bacche rosse mature, melograno e patchouli delicato avvolgono come una sciarpa di velluto.',
-    en: 'Ripe red berries, pomegranate and delicate patchouli drape like a velvet scarf.'
-  },
-  'Salted Caramel': {
-    de: 'Butterkaramell mit Fleur de Sel und cremiger Vanille sorgt für gourmandigen Komfort.',
-    fr: 'Caramel au beurre, fleur de sel et vanille crémeuse apportent un confort gourmand.',
-    it: 'Caramello al burro, fleur de sel e vaniglia cremosa regalano un comfort goloso.',
-    en: 'Buttery caramel, fleur de sel and creamy vanilla deliver gourmand comfort.'
-  },
-  'Salty Water': {
-    de: 'Atlantik-Spray, Treibholz und mineralische Moschusnoten wirken wie eine frische Meeresbrise.',
-    fr: 'Brume atlantique, bois flotté et muscs minéraux évoquent une brise marine fraîche.',
-    it: 'Spray atlantico, legno levigato e muschi minerali evocano una fresca brezza marina.',
-    en: 'Atlantic spray, driftwood and mineral musks feel like a fresh sea breeze.'
-  },
-  Santal: {
-    de: 'Cremiges Sandelholz, Iris und Tonkabohne verleihen dem Interieur eine ruhige Textur.',
-    fr: 'Santal crémeux, iris et fève tonka apportent une texture calme à l’intérieur.',
-    it: 'Sandalo cremoso, iris e fava tonka donano all’abitacolo una texture pacata.',
-    en: 'Creamy sandalwood, iris and tonka bean lend the cabin a calm texture.'
-  },
-  Sugar: {
-    de: 'Kristalline Zuckerblüten und weißer Moschus wirken leicht, aber süchtig machend.',
-    fr: 'Fleurs de sucre cristallines et musc blanc sont légers mais addictifs.',
-    it: 'Fiori di zucchero cristallini e muschio bianco risultano leggeri ma avvolgenti.',
-    en: 'Crystalline sugar blossoms and white musk feel weightless yet addictive.'
-  },
-  'Tobacco Vanilla': {
-    de: 'Tabakblätter, Kakao und reichhaltige Vanille schaffen einen luxuriösen Lounge-Akzent.',
-    fr: 'Feuilles de tabac, cacao et vanille riche composent un accent lounge luxueux.',
-    it: 'Foglie di tabacco, cacao e vaniglia ricca creano un accento lounge di lusso.',
-    en: 'Tobacco leaf, cocoa and rich vanilla craft a luxurious lounge accent.'
-  },
-  Valencia: {
-    de: 'Bergamotte, süße Orange und Neroli erinnern an sonnengeküsste Boulevards.',
-    fr: 'Bergamote, orange douce et néroli évoquent des boulevards baignés de soleil.',
-    it: 'Bergamotto, arancia dolce e neroli richiamano boulevard baciati dal sole.',
-    en: 'Bergamot, sweet orange and neroli recall sun-drenched boulevards.'
-  }
-};
-
+let candleScentDescriptionElement;
+let candleScentDescriptionWrapper;
+let candleScentDescriptionToggle;
 let candleVolumeSelect;
 let candlePriceElement;
 let candleScentSelect;
@@ -4123,6 +3720,8 @@ let carPriceElement;
 let carScentSelect;
 let carImageElement;
 let carScentDescriptionElement;
+let carScentDescriptionWrapper;
+let carScentDescriptionToggle;
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -4153,10 +3752,55 @@ const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
 };
 
+const getScentIdFromSelect = (selectEl) => selectEl?.selectedOptions?.[0]?.dataset.scentId || 'none';
+
+const setToggleLabelForState = (toggleEl, isExpanded) => {
+  if (!toggleEl) return;
+  const key = isExpanded ? 'common.toggle.less' : 'common.toggle.more';
+  const label = resolveTranslation(currentLang, key) || '';
+  toggleEl.textContent = label;
+  toggleEl.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+};
+
+const collapseDescriptionSection = (wrapperEl, toggleEl) => {
+  if (!wrapperEl || !toggleEl) return;
+  wrapperEl.classList.add('is-collapsed');
+  wrapperEl.classList.remove('is-expanded');
+  setToggleLabelForState(toggleEl, false);
+};
+
+const toggleDescriptionSection = (wrapperEl, toggleEl) => {
+  if (!wrapperEl || !toggleEl || toggleEl.hidden) return;
+  const willExpand = wrapperEl.classList.contains('is-collapsed');
+  if (willExpand) {
+    wrapperEl.classList.remove('is-collapsed');
+    wrapperEl.classList.add('is-expanded');
+  } else {
+    wrapperEl.classList.add('is-collapsed');
+    wrapperEl.classList.remove('is-expanded');
+  }
+  setToggleLabelForState(toggleEl, willExpand);
+};
+
+const refreshToggleLabel = (wrapperEl, toggleEl) => {
+  if (!wrapperEl || !toggleEl || toggleEl.hidden) return;
+  const isExpanded = wrapperEl.classList.contains('is-expanded');
+  setToggleLabelForState(toggleEl, isExpanded);
+};
+
+const updateDescriptionVisibility = (wrapperEl, toggleEl, hasDescription, hideToggleOnly = false) => {
+  if (wrapperEl) {
+    wrapperEl.hidden = !hasDescription;
+  }
+  if (toggleEl) {
+    toggleEl.hidden = !hasDescription || hideToggleOnly;
+  }
+};
+
 const updateDiffuserDescriptionToggleLabel = () => {
   if (!diffuserDescriptionWrapper || !diffuserDescriptionToggle) return;
   const isCollapsed = diffuserDescriptionWrapper.classList.contains('diffusers-description--collapsed');
-  const translationKey = isCollapsed ? 'diffusers.copy.toggleMore' : 'diffusers.copy.toggleLess';
+  const translationKey = isCollapsed ? 'common.toggle.more' : 'common.toggle.less';
   const translation = resolveTranslation(currentLang, translationKey);
   if (translation) {
     diffuserDescriptionToggle.textContent = translation;
@@ -4179,8 +3823,9 @@ const applyTranslations = () => {
   });
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
-  updateCarScentDescription();
   updateDiffuserTitleAndDescription();
+  updateCandleScentDescription();
+  updateCarScentDescription();
   updateDiffuserDescriptionToggleLabel();
 };
 
@@ -4413,28 +4058,31 @@ const updateDiffuserImage = () => {
   imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
 };
 
-const updateDiffuserTitleAndDescription = () => {
+const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   const scentSelect = document.querySelector('[data-diffuser-scent]');
   const titleEl = document.querySelector('[data-diffuser-title]');
   const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
   if (!scentSelect || !titleEl || !descriptionEl) return;
-  const scentKey = diffuserScentDescriptions[scentSelect.value] ? scentSelect.value : 'none';
-  const lang = currentLang || 'de';
+  const scentId = getScentIdFromSelect(scentSelect);
+  const labelKey = `diffusers.scents.${scentId}.label`;
+  const scentLabel =
+    resolveTranslation(currentLang, labelKey) || scentSelect.selectedOptions?.[0]?.textContent?.trim() || '';
+  const prefix = resolveTranslation(currentLang, 'diffusers.product.scentTitlePrefix') || '';
+  const defaultTitle = resolveTranslation(currentLang, 'diffusers.product.title') || '';
+  titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
 
-  const titleEntry = diffuserScentTitles[scentKey] || diffuserScentTitles.none;
-  const titleFallback = diffuserScentTitles.none;
-  titleEl.textContent = titleEntry?.[lang] || titleFallback?.[lang] || '';
-
-  const descriptionText = diffuserScentDescriptions[scentKey] || '';
+  const descriptionKey = `diffusers.scents.${scentId}.description`;
+  const descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
   descriptionEl.textContent = descriptionText;
 
   ensureDiffuserScentDescriptionElements();
-  const hasDescription = Boolean(descriptionText);
-  if (diffuserScentDescriptionWrapperEl) {
-    diffuserScentDescriptionWrapperEl.hidden = !hasDescription;
-  }
-  if (diffuserScentDescriptionToggleEl) {
-    diffuserScentDescriptionToggleEl.hidden = !hasDescription;
+  const hasDescription = Boolean(descriptionText.trim());
+  const hideToggle = scentId === 'none';
+  updateDescriptionVisibility(diffuserScentDescriptionWrapperEl, diffuserScentDescriptionToggleEl, hasDescription, hideToggle);
+  if (resetToggle) {
+    collapseDescriptionSection(diffuserScentDescriptionWrapperEl, diffuserScentDescriptionToggleEl);
+  } else {
+    refreshToggleLabel(diffuserScentDescriptionWrapperEl, diffuserScentDescriptionToggleEl);
   }
 };
 
@@ -4450,27 +4098,12 @@ const ensureDiffuserScentDescriptionElements = () => {
 const resetDiffuserScentDescriptionState = () => {
   ensureDiffuserScentDescriptionElements();
   if (!diffuserScentDescriptionWrapperEl || !diffuserScentDescriptionToggleEl) return;
-  diffuserScentDescriptionWrapperEl.classList.add('is-collapsed');
-  diffuserScentDescriptionWrapperEl.classList.remove('is-expanded');
-  diffuserScentDescriptionToggleEl.textContent = 'Развернуть';
-  diffuserScentDescriptionToggleEl.setAttribute('aria-expanded', 'false');
+  collapseDescriptionSection(diffuserScentDescriptionWrapperEl, diffuserScentDescriptionToggleEl);
 };
 
 const toggleDiffuserScentDescription = () => {
   ensureDiffuserScentDescriptionElements();
-  if (!diffuserScentDescriptionWrapperEl || !diffuserScentDescriptionToggleEl) return;
-  const isCollapsed = diffuserScentDescriptionWrapperEl.classList.contains('is-collapsed');
-  if (isCollapsed) {
-    diffuserScentDescriptionWrapperEl.classList.remove('is-collapsed');
-    diffuserScentDescriptionWrapperEl.classList.add('is-expanded');
-    diffuserScentDescriptionToggleEl.textContent = 'Свернуть';
-    diffuserScentDescriptionToggleEl.setAttribute('aria-expanded', 'true');
-  } else {
-    diffuserScentDescriptionWrapperEl.classList.add('is-collapsed');
-    diffuserScentDescriptionWrapperEl.classList.remove('is-expanded');
-    diffuserScentDescriptionToggleEl.textContent = 'Развернуть';
-    diffuserScentDescriptionToggleEl.setAttribute('aria-expanded', 'false');
-  }
+  toggleDescriptionSection(diffuserScentDescriptionWrapperEl, diffuserScentDescriptionToggleEl);
 };
 
 const initDiffuserScentDescriptionToggle = () => {
@@ -4487,12 +4120,11 @@ const initDiffuserConfigurator = () => {
   volumeSelect.addEventListener('change', updateDiffuserPrice);
   scentSelect.addEventListener('change', () => {
     updateDiffuserImage();
-    updateDiffuserTitleAndDescription();
-    resetDiffuserScentDescriptionState();
+    updateDiffuserTitleAndDescription(true);
   });
   updateDiffuserPrice();
   updateDiffuserImage();
-  updateDiffuserTitleAndDescription();
+  updateDiffuserTitleAndDescription(true);
 };
 
 const updateCandlePrice = () => {
@@ -4515,27 +4147,67 @@ const updateCandleImage = () => {
   candleImageElement.src = `${candlesImageBaseUrl}${encoded}${candlesImageSuffix}`;
 };
 
+const updateCandleScentDescription = (resetToggle = false) => {
+  if (!candleScentSelect || !candleScentDescriptionElement) return;
+  const scentId = getScentIdFromSelect(candleScentSelect);
+  const descriptionKey = `candles.scents.${scentId}.description`;
+  const descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  candleScentDescriptionElement.textContent = descriptionText;
+  const hasDescription = Boolean(descriptionText.trim());
+  const hideToggle = scentId === 'none';
+  updateDescriptionVisibility(candleScentDescriptionWrapper, candleScentDescriptionToggle, hasDescription, hideToggle);
+  if (resetToggle) {
+    collapseDescriptionSection(candleScentDescriptionWrapper, candleScentDescriptionToggle);
+  } else {
+    refreshToggleLabel(candleScentDescriptionWrapper, candleScentDescriptionToggle);
+  }
+};
+
 const initCandleConfigurator = () => {
   candleVolumeSelect = document.querySelector('[data-candle-volume]');
   candlePriceElement = document.querySelector('[data-candle-price]');
   candleScentSelect = document.querySelector('[data-candle-scent]');
   candleImageElement = document.querySelector('[data-candle-image]');
-  if (!candleVolumeSelect && !candlePriceElement && !candleScentSelect && !candleImageElement) {
+  candleScentDescriptionElement = document.querySelector('[data-candle-scent-description]');
+  candleScentDescriptionWrapper = document.querySelector('[data-candle-scent-description-wrapper]');
+  candleScentDescriptionToggle = document.querySelector('[data-candle-scent-toggle]');
+  if (
+    !candleVolumeSelect &&
+    !candlePriceElement &&
+    !candleScentSelect &&
+    !candleImageElement &&
+    !candleScentDescriptionElement
+  ) {
     return;
   }
   updateCandlePrice();
   updateCandleImage();
+  updateCandleScentDescription(true);
   candleVolumeSelect?.addEventListener('change', updateCandlePrice);
-  candleScentSelect?.addEventListener('change', updateCandleImage);
+  candleScentSelect?.addEventListener('change', () => {
+    updateCandleImage();
+    updateCandleScentDescription(true);
+  });
+  candleScentDescriptionToggle?.addEventListener('click', () => {
+    toggleDescriptionSection(candleScentDescriptionWrapper, candleScentDescriptionToggle);
+  });
 };
 
-const updateCarScentDescription = () => {
+const updateCarScentDescription = (resetToggle = false) => {
   if (!carScentDescriptionElement || !carScentSelect) return;
-  const scentKey = carScentDescriptions[carScentSelect.value] ? carScentSelect.value : 'none';
-  const lang = currentLang || 'de';
-  const entry = carScentDescriptions[scentKey] || carScentDescriptions.none;
-  const fallback = carScentDescriptions.none;
-  carScentDescriptionElement.textContent = entry?.[lang] || fallback?.[lang] || '';
+  const scentId = getScentIdFromSelect(carScentSelect);
+  const descriptionKey = `car.scents.${scentId}.description`;
+  const fallbackKey = 'car.scents.none.description';
+  const descriptionText = resolveTranslation(currentLang, descriptionKey) || resolveTranslation(currentLang, fallbackKey) || '';
+  carScentDescriptionElement.textContent = descriptionText;
+  const hasDescription = Boolean(descriptionText.trim());
+  const hideToggle = scentId === 'none';
+  updateDescriptionVisibility(carScentDescriptionWrapper, carScentDescriptionToggle, hasDescription, hideToggle);
+  if (resetToggle) {
+    collapseDescriptionSection(carScentDescriptionWrapper, carScentDescriptionToggle);
+  } else {
+    refreshToggleLabel(carScentDescriptionWrapper, carScentDescriptionToggle);
+  }
 };
 
 const updateCarImage = () => {
@@ -4555,32 +4227,41 @@ const initCarConfigurator = () => {
   carScentSelect = document.querySelector('[data-car-scent]');
   carImageElement = document.querySelector('[data-car-image]');
   carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
-  if (!carPriceElement && !carScentSelect && !carImageElement) {
+  carScentDescriptionWrapper = document.querySelector('[data-car-scent-description-wrapper]');
+  carScentDescriptionToggle = document.querySelector('[data-car-scent-toggle]');
+  if (!carPriceElement && !carScentSelect && !carImageElement && !carScentDescriptionElement) {
     return;
   }
   if (carPriceElement) {
     carPriceElement.textContent = `${carPriceCurrency} ${carParfumPrice.toFixed(2)}`;
   }
   updateCarImage();
-  updateCarScentDescription();
+  updateCarScentDescription(true);
   carScentSelect?.addEventListener('change', () => {
     updateCarImage();
-    updateCarScentDescription();
+    updateCarScentDescription(true);
+  });
+  carScentDescriptionToggle?.addEventListener('click', () => {
+    toggleDescriptionSection(carScentDescriptionWrapper, carScentDescriptionToggle);
   });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  applyTranslations();
-  initTitles();
-  initLanguageSwitcher();
-  initScrollButtons();
-  initHeader();
-  initDiffuserConfigurator();
-  initDiffuserScentDescriptionToggle();
-  initDiffuserHeroSlider();
-  initDiffusersDescriptionToggle();
-  initCandleConfigurator();
-  initCarConfigurator();
-  initCart();
-  initContactForm();
+  const bootstrap = async () => {
+    await fragranceDataPromise;
+    applyTranslations();
+    initTitles();
+    initLanguageSwitcher();
+    initScrollButtons();
+    initHeader();
+    initDiffuserConfigurator();
+    initDiffuserScentDescriptionToggle();
+    initDiffuserHeroSlider();
+    initDiffusersDescriptionToggle();
+    initCandleConfigurator();
+    initCarConfigurator();
+    initCart();
+    initContactForm();
+  };
+  bootstrap();
 });

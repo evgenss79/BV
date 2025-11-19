@@ -100,6 +100,21 @@
             <p class="product-card__eyebrow" data-i18n="categoryCandles.products.label">Edition</p>
             <h3 data-i18n="candles.product.title">Duftkerzen Signature Line</h3>
             <p data-i18n="candles.product.description">Zwei Gefäßgrößen und Signature-Düfte, handgegossen in Keramik.</p>
+            <div
+              class="product-card__scent-description-wrapper is-collapsed"
+              data-candle-scent-description-wrapper
+            >
+              <p class="product-card__scent-description" data-candle-scent-description></p>
+              <button
+                type="button"
+                class="product-card__scent-toggle"
+                data-candle-scent-toggle
+                aria-expanded="false"
+                data-i18n="common.toggle.more"
+              >
+                Read more
+              </button>
+            </div>
           </div>
 
           <div class="product-card__options">
@@ -114,26 +129,26 @@
             <label class="product-card__field">
               <span data-i18n="candles.options.scentLabel">Duft</span>
               <select data-candle-scent>
-                <option value="none" data-i18n="candles.scents.none">No fragrance</option>
-                <option value="Africa" data-i18n="candles.scents.africa">Africa</option>
-                <option value="Bamboo" data-i18n="candles.scents.bamboo">Bamboo</option>
-                <option value="Bellini" data-i18n="candles.scents.bellini">Bellini</option>
-                <option value="Blanc" data-i18n="candles.scents.blanc">Blanc</option>
-                <option value="Carolina" data-i18n="candles.scents.carolina">Carolina</option>
-                <option value="Cherry Blossom" data-i18n="candles.scents.cherry_blossom">Cherry Blossom</option>
-                <option value="Christmas Tree" data-i18n="candles.scents.christmas_tree">Christmas Tree</option>
-                <option value="Dubai" data-i18n="candles.scents.dubai">Dubai</option>
-                <option value="Dune" data-i18n="candles.scents.dune">Dune</option>
-                <option value="Eden" data-i18n="candles.scents.eden">Eden</option>
-                <option value="Fleur" data-i18n="candles.scents.fleur">Fleur</option>
-                <option value="Green Mango" data-i18n="candles.scents.green_mango">Green Mango</option>
-                <option value="Lime Basil" data-i18n="candles.scents.lime_basil">Lime Basil</option>
-                <option value="Rosso" data-i18n="candles.scents.rosso">Rosso</option>
-                <option value="Salted Caramel" data-i18n="candles.scents.salted_caramel">Salted Caramel</option>
-                <option value="Salty Water" data-i18n="candles.scents.salty_water">Salty Water</option>
-                <option value="Santal" data-i18n="candles.scents.santal">Santal</option>
-                <option value="Sugar" data-i18n="candles.scents.sugar">Sugar</option>
-                <option value="Tobacco Vanilla" data-i18n="candles.scents.tobacco_vanilla">Tobacco Vanilla</option>
+                <option value="none" data-scent-id="none" data-i18n="candles.scents.none.label">No fragrance</option>
+                <option value="Africa" data-scent-id="africa" data-i18n="candles.scents.africa.label">Africa</option>
+                <option value="Bamboo" data-scent-id="bamboo" data-i18n="candles.scents.bamboo.label">Bamboo</option>
+                <option value="Bellini" data-scent-id="bellini" data-i18n="candles.scents.bellini.label">Bellini</option>
+                <option value="Blanc" data-scent-id="blanc" data-i18n="candles.scents.blanc.label">Blanc</option>
+                <option value="Carolina" data-scent-id="carolina" data-i18n="candles.scents.carolina.label">Carolina</option>
+                <option value="Cherry Blossom" data-scent-id="cherry_blossom" data-i18n="candles.scents.cherry_blossom.label">Cherry Blossom</option>
+                <option value="Christmas Tree" data-scent-id="christmas_tree" data-i18n="candles.scents.christmas_tree.label">Christmas Tree</option>
+                <option value="Dubai" data-scent-id="dubai" data-i18n="candles.scents.dubai.label">Dubai</option>
+                <option value="Dune" data-scent-id="dune" data-i18n="candles.scents.dune.label">Dune</option>
+                <option value="Eden" data-scent-id="eden" data-i18n="candles.scents.eden.label">Eden</option>
+                <option value="Fleur" data-scent-id="fleur" data-i18n="candles.scents.fleur.label">Fleur</option>
+                <option value="Green Mango" data-scent-id="green_mango" data-i18n="candles.scents.green_mango.label">Green Mango</option>
+                <option value="Lime Basil" data-scent-id="lime_basil" data-i18n="candles.scents.lime_basil.label">Lime Basil</option>
+                <option value="Rosso" data-scent-id="rosso" data-i18n="candles.scents.rosso.label">Rosso</option>
+                <option value="Salted Caramel" data-scent-id="salted_caramel" data-i18n="candles.scents.salted_caramel.label">Salted Caramel</option>
+                <option value="Salty Water" data-scent-id="salty_water" data-i18n="candles.scents.salty_water.label">Salty Water</option>
+                <option value="Santal" data-scent-id="santal" data-i18n="candles.scents.santal.label">Santal</option>
+                <option value="Sugar" data-scent-id="sugar" data-i18n="candles.scents.sugar.label">Sugar</option>
+                <option value="Tobacco Vanilla" data-scent-id="tobacco_vanilla" data-i18n="candles.scents.tobacco_vanilla.label">Tobacco Vanilla</option>
               </select>
             </label>
           </div>
