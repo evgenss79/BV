@@ -75,18 +75,30 @@
 
 
   <main>
-    <section class="page-hero page-hero--candles">
+    <section class="page-hero page-hero--category">
       <div class="page-hero__layout">
-        <div class="page-hero__text">
-          <p class="page-hero__label" data-i18n="categoryCandles.hero.label">Ceremonial Edition</p>
-          <h1 data-i18n="categoryCandles.hero.title">Duftkerzen mit architektonischen Gefäßen</h1>
-          <p data-i18n="categoryCandles.hero.subtitle">Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.</p>
-          <p data-i18n="categoryCandles.hero.text">Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.</p>
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCandles.hero.button">Showroom-Besuch buchen</a>
-            <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCandles.hero.secondary">Weitere Kategorien</a>
+        <section class="nh-category-hero">
+          <div class="nh-category-hero__left">
+            <p class="page-hero__label" data-i18n="categoryCandles.hero.label">Ceremonial Edition</p>
+            <h1 class="nh-category-hero__title" data-i18n="categoryCandles.hero.title">Duftkerzen mit architektonischen Gefäßen</h1>
+            <div class="nh-category-hero__description is-collapsed" data-category-description>
+              <div class="nh-category-hero__description-content" data-category-description-content>
+                <p data-i18n="categoryCandles.hero.subtitle">Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.</p>
+                <p data-i18n="categoryCandles.hero.text">Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.</p>
+              </div>
+              <a href="#" class="nh-category-hero__readmore" data-category-readmore>Read more</a>
+            </div>
+            <div class="hero__actions">
+              <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCandles.hero.button">Showroom-Besuch buchen</a>
+              <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCandles.hero.secondary">Weitere Kategorien</a>
+            </div>
           </div>
-        </div>
+          <div class="nh-category-hero__right">
+            <div class="nh-category-hero__slider">
+              <img src="https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true" alt="Aroma Candles" loading="lazy">
+            </div>
+          </div>
+        </section>
 
         <article class="product-card product-card--candles" data-candle-card>
           <img
@@ -160,9 +172,6 @@
 
           <button class="btn btn--gold" data-add-to-cart data-i18n="candles.product.cta">In den Warenkorb</button>
         </article>
-      </div>
-      <div class="page-hero__media">
-        <img src="https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true" alt="Aroma Candles" loading="lazy">
       </div>
     </section>
 
