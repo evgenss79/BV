@@ -847,14 +847,47 @@ main {
   margin: 0 !important;
 }
 
-/* Ограничение высоты для картинок/слайдера в блоке категории */
+/* Контейнер категории — уменьшить высоту секции */
+.nh-category-hero {
+  align-items: flex-start;
+  padding: 40px 0 60px;
+}
+
+/* Изображения в слайдере категории: уменьшать, но не обрезать */
 .nh-category-hero__slider img,
-.nh-category-hero__slider .feature-box img,
-.nh-category-hero__slider .image-wrapper img {
+.nh-category-hero__slider .image-wrapper img,
+.nh-category-hero__slider picture img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
-  max-height: 520px;
-  object-fit: cover;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+/* Поддержка возможных родительских контейнеров */
+.nh-category-hero__slider .feature-box,
+.nh-category-hero__slider .feature-box img,
+.nh-category-hero__slider .hero-banner,
+.nh-category-hero__slider .hero-banner img,
+.nh-category-hero__slider .collection-image,
+.nh-category-hero__slider .collection-image img,
+.nh-category-hero__slider .home-banner-img,
+.nh-category-hero__slider .home-banner-img img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+/* Контейнер слайдера подстраивается под высоту изображения */
+.nh-category-hero__slider {
+  max-height: none;
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
@@ -878,9 +911,18 @@ main {
   }
 
   .nh-category-hero__slider img,
+  .nh-category-hero__slider .feature-box,
   .nh-category-hero__slider .feature-box img,
-  .nh-category-hero__slider .image-wrapper img {
-    max-height: 380px;
+  .nh-category-hero__slider .image-wrapper,
+  .nh-category-hero__slider .image-wrapper img,
+  .nh-category-hero__slider picture img,
+  .nh-category-hero__slider .hero-banner,
+  .nh-category-hero__slider .hero-banner img,
+  .nh-category-hero__slider .collection-image,
+  .nh-category-hero__slider .collection-image img,
+  .nh-category-hero__slider .home-banner-img,
+  .nh-category-hero__slider .home-banner-img img {
+    max-height: 340px;
   }
 }
 
