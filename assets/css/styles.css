@@ -1425,3 +1425,67 @@ main {
   font-weight: 600;
   font-size: 1rem;
 }
+
+/* ===== СЕТКА КАТЕГОРИЙ НА ГЛАВНОЙ КАТАЛОГА ===== */
+
+.catalog-categories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+  gap: 24px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  /* Вся сетка из 2 рядов помещается на один экран */
+  height: calc(100vh - 200px); /* хедер + отступы */
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+/* Карточка категории */
+.catalog-category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  overflow: hidden;
+
+  /* Чтобы 2 ряда × 5 карточек поместились на экран */
+  aspect-ratio: 3 / 4; /* корректная высота для насыщенной сетки */
+}
+
+.catalog-category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Подпись */
+.catalog-category-title {
+  padding: 12px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Адаптив: планшеты */
+@media (max-width: 1199px) {
+  .catalog-categories {
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+  }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+  .catalog-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-category-card {
+    aspect-ratio: 3 / 4;
+  }
+}
