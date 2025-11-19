@@ -77,46 +77,38 @@
   <main>
     <section class="page-hero page-hero--diffusers">
       <div class="page-hero__layout">
-        <div class="diffusers-header">
-          <div class="diffusers-header__content">
-            <div class="page-hero__text">
-              <h1 class="page-hero__title" data-i18n="diffusers.hero.title">AROMA DIFFUSERS (REED)</h1>
+        <section class="category-hero">
+          <div class="category-hero__text">
+            <h1 class="page-hero__title" data-i18n="diffusers.hero.title"></h1>
 
-              <div class="diffusers-description diffusers-description--collapsed" data-diffusers-description-wrapper>
-                <div class="diffusers-description__text category-copy category-copy--diffusers" data-diffusers-description>
-                  <p data-i18n="diffusers.copy.paragraph1">
-                    A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.
-                  </p>
-                  <h3 data-i18n="diffusers.copy.subheadingHow">How does it work?</h3>
-                  <p data-i18n="diffusers.copy.paragraph2">
-                    A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.
-                  </p>
-                  <h3 data-i18n="diffusers.copy.subheadingAdvantages">Advantages of Reed Diffusers</h3>
-                  <p data-i18n="diffusers.copy.paragraph3">
-                    An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:
-                  </p>
-                  <ul>
-                    <li data-i18n="diffusers.copy.benefit1">a cozy atmosphere that relaxes and brings a good mood;</li>
-                    <li data-i18n="diffusers.copy.benefit2">aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;</li>
-                    <li data-i18n="diffusers.copy.benefit3">odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.</li>
-                  </ul>
-                  <p data-i18n="diffusers.copy.paragraph4">
-                    Diffusers also have an elegant design that easily complements the interior of the room.
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  class="diffusers-description__toggle"
-                  data-diffusers-description-toggle
-                  data-i18n="diffusers.copy.toggleMore"
-                  aria-expanded="false"
-                >
-                  Read more
-                </button>
+            <section
+              class="category-copy category-copy--diffusers is-collapsed"
+              data-diffusers-description-wrapper
+            >
+              <div class="category-copy__inner" data-diffusers-description>
+                <p data-i18n="diffusers.copy.paragraph1"></p>
+                <h3 data-i18n="diffusers.copy.subheadingHow"></h3>
+                <p data-i18n="diffusers.copy.paragraph2"></p>
+                <h3 data-i18n="diffusers.copy.subheadingAdvantages"></h3>
+                <p data-i18n="diffusers.copy.paragraph3"></p>
+                <ul>
+                  <li data-i18n="diffusers.copy.benefit1"></li>
+                  <li data-i18n="diffusers.copy.benefit2"></li>
+                  <li data-i18n="diffusers.copy.benefit3"></li>
+                </ul>
+                <p data-i18n="diffusers.copy.paragraph4"></p>
               </div>
-            </div>
+
+              <button
+                type="button"
+                class="category-copy__toggle"
+                data-diffusers-description-toggle
+                data-i18n="common.toggle.more"
+              ></button>
+            </section>
           </div>
-          <div class="page-hero__media page-hero__media--diffusers diffusers-header__media diffusers-slider">
+
+          <div class="category-hero__slider diffusers-slider">
             <div class="diffusers-slider__frame">
               <img
                 src="https://github.com/evgenss79/BV_img/blob/main/Diff/Aroma%20diffusers_category.jpg?raw=true"
@@ -127,7 +119,7 @@
               >
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
@@ -144,8 +136,20 @@
         </div>
         <div class="product-card__body">
           <p class="product-card__eyebrow" data-i18n="categoryDiffusers.products.label">Kollektion</p>
-          <h3 data-i18n="diffusers.product.title">Aroma-Diffusoren Signature Line</h3>
-          <p data-i18n="diffusers.product.description">Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.</p>
+          <h3 class="product-card__title" data-diffuser-title></h3>
+          <div
+            class="product-card__scent-description-wrapper is-collapsed"
+            data-diffuser-scent-description-wrapper
+          >
+            <p class="product-card__scent-description" data-diffuser-scent-description></p>
+            <button
+              type="button"
+              class="product-card__scent-toggle"
+              data-diffuser-scent-toggle
+              aria-expanded="false"
+              data-i18n="common.toggle.more"
+            ></button>
+          </div>
 
           <div class="product-card__options">
             <label class="product-card__field">
@@ -160,64 +164,40 @@
             <label class="product-card__field">
               <span data-i18n="diffusers.options.scentLabel">Duft</span>
               <select data-diffuser-scent>
-                <option value="none" data-i18n="diffusers.scents.none">No fragrance</option>
-                <option value="Africa" data-i18n="diffusers.scents.africa">Africa</option>
-                <option value="Bamboo" data-i18n="diffusers.scents.bamboo">Bamboo</option>
-                <option value="Bellini" data-i18n="diffusers.scents.bellini">Bellini</option>
-                <option value="Blanc" data-i18n="diffusers.scents.blanc">Blanc</option>
-                <option value="Carolina" data-i18n="diffusers.scents.carolina">Carolina</option>
-                <option value="Cherry Blossom" data-i18n="diffusers.scents.cherry_blossom">Cherry Blossom</option>
-                <option value="Christmas Tree" data-i18n="diffusers.scents.christmas_tree">Christmas Tree</option>
-                <option value="Etna" data-i18n="diffusers.scents.etna">Etna</option>
-                <option value="Dubai" data-i18n="diffusers.scents.dubai">Dubai</option>
-                <option value="Dune" data-i18n="diffusers.scents.dune">Dune</option>
-                <option value="Eden" data-i18n="diffusers.scents.eden">Eden</option>
-                <option value="Fleur" data-i18n="diffusers.scents.fleur">Fleur</option>
-                <option value="Green Mango" data-i18n="diffusers.scents.green_mango">Green Mango</option>
-                <option value="Lime Basil" data-i18n="diffusers.scents.lime_basil">Lime Basil</option>
-                <option value="Rosso" data-i18n="diffusers.scents.rosso">Rosso</option>
-                <option value="Salted Caramel" data-i18n="diffusers.scents.salted_caramel">Salted Caramel</option>
-                <option value="Salty Water" data-i18n="diffusers.scents.salty_water">Salty Water</option>
-                <option value="Santal" data-i18n="diffusers.scents.santal">Santal</option>
-                <option value="Sugar" data-i18n="diffusers.scents.sugar">Sugar</option>
-                <option value="Tobacco Vanilla" data-i18n="diffusers.scents.tobacco_vanilla">Tobacco Vanilla</option>
-                <option value="Valencia" data-i18n="diffusers.scents.valencia">Valencia</option>
+                <option value="none" data-scent-id="none" data-i18n="diffusers.scents.none.label">No fragrance</option>
+                <option value="Africa" data-scent-id="africa" data-i18n="diffusers.scents.africa.label">Africa</option>
+                <option value="Bamboo" data-scent-id="bamboo" data-i18n="diffusers.scents.bamboo.label">Bamboo</option>
+                <option value="Bellini" data-scent-id="bellini" data-i18n="diffusers.scents.bellini.label">Bellini</option>
+                <option value="Blanc" data-scent-id="blanc" data-i18n="diffusers.scents.blanc.label">Blanc</option>
+                <option value="Carolina" data-scent-id="carolina" data-i18n="diffusers.scents.carolina.label">Carolina</option>
+                <option value="Cherry Blossom" data-scent-id="cherry_blossom" data-i18n="diffusers.scents.cherry_blossom.label">Cherry Blossom</option>
+                <option value="Christmas Tree" data-scent-id="christmas_tree" data-i18n="diffusers.scents.christmas_tree.label">Christmas Tree</option>
+                <option value="Etna" data-scent-id="etna" data-i18n="diffusers.scents.etna.label">Etna</option>
+                <option value="Dubai" data-scent-id="dubai" data-i18n="diffusers.scents.dubai.label">Dubai</option>
+                <option value="Dune" data-scent-id="dune" data-i18n="diffusers.scents.dune.label">Dune</option>
+                <option value="Eden" data-scent-id="eden" data-i18n="diffusers.scents.eden.label">Eden</option>
+                <option value="Fleur" data-scent-id="fleur" data-i18n="diffusers.scents.fleur.label">Fleur</option>
+                <option value="Green Mango" data-scent-id="green_mango" data-i18n="diffusers.scents.green_mango.label">Green Mango</option>
+                <option value="Lime Basil" data-scent-id="lime_basil" data-i18n="diffusers.scents.lime_basil.label">Lime Basil</option>
+                <option value="Rosso" data-scent-id="rosso" data-i18n="diffusers.scents.rosso.label">Rosso</option>
+                <option value="Salted Caramel" data-scent-id="salted_caramel" data-i18n="diffusers.scents.salted_caramel.label">Salted Caramel</option>
+                <option value="Salty Water" data-scent-id="salty_water" data-i18n="diffusers.scents.salty_water.label">Salty Water</option>
+                <option value="Santal" data-scent-id="santal" data-i18n="diffusers.scents.santal.label">Santal</option>
+                <option value="Sugar" data-scent-id="sugar" data-i18n="diffusers.scents.sugar.label">Sugar</option>
+                <option value="Tobacco Vanilla" data-scent-id="tobacco_vanilla" data-i18n="diffusers.scents.tobacco_vanilla.label">Tobacco Vanilla</option>
+                <option value="Valencia" data-scent-id="valencia" data-i18n="diffusers.scents.valencia.label">Valencia</option>
               </select>
             </label>
           </div>
-
-          <p class="product-card__scent-description" data-diffuser-scent-description></p>
 
           <div class="product-card__meta">
             <span class="product-card__price-label" data-i18n="diffusers.product.priceLabel">Preis</span>
             <span class="product-card__price" data-diffuser-price>CHF 20.90</span>
           </div>
 
-          <button class="btn btn--gold" data-add-to-cart data-i18n="diffusers.product.cta">In den Warenkorb</button>
+          <button class="btn btn--gold" data-add-to-cart data-i18n="common.cta.addToCart"></button>
         </div>
       </article>
-    </section>
-
-    <section class="category-copy category-copy--diffusers">
-      <p data-i18n="diffusers.copy.paragraph1">
-        A diffuser is a stylish and effective way to fill your home with pleasant aromas. Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior. The online store offers a variety of reed diffusers for the home and gift sets.
-      </p>
-      <h3 data-i18n="diffusers.copy.subheadingHow">How does it work?</h3>
-      <p data-i18n="diffusers.copy.paragraph2">
-        A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.
-      </p>
-      <h3 data-i18n="diffusers.copy.subheadingAdvantages">Advantages of Reed Diffusers</h3>
-      <p data-i18n="diffusers.copy.paragraph3">
-        An aroma diffuser is a great alternative to traditional air fresheners. This product operates continuously: a light, pleasant scent will float in the room throughout the day. Moreover, the aromatic composition of such an accessory is made primarily from natural ingredients. Among the advantages of the diffuser:
-      </p>
-      <ul>
-        <li data-i18n="diffusers.copy.benefit1">a cozy atmosphere that relaxes and brings a good mood;</li>
-        <li data-i18n="diffusers.copy.benefit2">aromatherapy: some diffusers are designed for aromatherapy: they have a positive effect on the nervous system and help minimize the manifestation of stress;</li>
-        <li data-i18n="diffusers.copy.benefit3">odor masking: another advantage of the product: it is able to hide unpleasant notes in the room, combating tobacco smoke and the smell left behind after cooking.</li>
-      </ul>
-      <p data-i18n="diffusers.copy.paragraph4">
-        Diffusers also have an elegant design that easily complements the interior of the room.
-      </p>
     </section>
 
   </main>

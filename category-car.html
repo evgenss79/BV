@@ -99,40 +99,52 @@
           <div>
             <p class="product-card__eyebrow" data-i18n="categoryCar.products.label">Kollektion</p>
             <h3 data-i18n="car.product.title">Autoparfum Capsule System</h3>
-            <p class="product-card__scent-description" data-car-scent-description></p>
+            <div
+              class="product-card__scent-description-wrapper is-collapsed"
+              data-car-scent-description-wrapper
+            >
+              <p class="product-card__scent-description" data-car-scent-description></p>
+              <button
+                type="button"
+                class="product-card__scent-toggle"
+                data-car-scent-toggle
+                aria-expanded="false"
+                data-i18n="common.toggle.more"
+              >
+                Read more
+              </button>
+            </div>
           </div>
 
           <div class="product-card__options">
             <label class="product-card__field">
               <span data-i18n="car.options.scentLabel">Duft</span>
               <select data-car-scent>
-                <option value="none" data-i18n="car.scents.none">No fragrance</option>
-                <option value="Africa" data-i18n="car.scents.africa">Africa</option>
-                <option value="Bamboo" data-i18n="car.scents.bamboo">Bamboo</option>
-                <option value="Bellini" data-i18n="car.scents.bellini">Bellini</option>
-                <option value="Blanc" data-i18n="car.scents.blanc">Blanc</option>
-                <option value="Carolina" data-i18n="car.scents.carolina">Carolina</option>
-                <option value="Cherry Blossom" data-i18n="car.scents.cherry_blossom">Cherry Blossom</option>
-                <option value="Christmas Tree" data-i18n="car.scents.christmas_tree">Christmas Tree</option>
-                <option value="Etna" data-i18n="car.scents.etna">Etna</option>
-                <option value="Dubai" data-i18n="car.scents.dubai">Dubai</option>
-                <option value="Dune" data-i18n="car.scents.dune">Dune</option>
-                <option value="Eden" data-i18n="car.scents.eden">Eden</option>
-                <option value="Fleur" data-i18n="car.scents.fleur">Fleur</option>
-                <option value="Green Mango" data-i18n="car.scents.green_mango">Green Mango</option>
-                <option value="Lime Basil" data-i18n="car.scents.lime_basil">Lime Basil</option>
-                <option value="Rosso" data-i18n="car.scents.rosso">Rosso</option>
-                <option value="Salted Caramel" data-i18n="car.scents.salted_caramel">Salted Caramel</option>
-                <option value="Salty Water" data-i18n="car.scents.salty_water">Salty Water</option>
-                <option value="Santal" data-i18n="car.scents.santal">Santal</option>
-                <option value="Sugar" data-i18n="car.scents.sugar">Sugar</option>
-                <option value="Tobacco Vanilla" data-i18n="car.scents.tobacco_vanilla">Tobacco Vanilla</option>
-                <option value="Valencia" data-i18n="car.scents.valencia">Valencia</option>
+                <option value="none" data-scent-id="none" data-i18n="car.scents.none.label">No fragrance</option>
+                <option value="Africa" data-scent-id="africa" data-i18n="car.scents.africa.label">Africa</option>
+                <option value="Bamboo" data-scent-id="bamboo" data-i18n="car.scents.bamboo.label">Bamboo</option>
+                <option value="Bellini" data-scent-id="bellini" data-i18n="car.scents.bellini.label">Bellini</option>
+                <option value="Blanc" data-scent-id="blanc" data-i18n="car.scents.blanc.label">Blanc</option>
+                <option value="Carolina" data-scent-id="carolina" data-i18n="car.scents.carolina.label">Carolina</option>
+                <option value="Cherry Blossom" data-scent-id="cherry_blossom" data-i18n="car.scents.cherry_blossom.label">Cherry Blossom</option>
+                <option value="Christmas Tree" data-scent-id="christmas_tree" data-i18n="car.scents.christmas_tree.label">Christmas Tree</option>
+                <option value="Etna" data-scent-id="etna" data-i18n="car.scents.etna.label">Etna</option>
+                <option value="Dubai" data-scent-id="dubai" data-i18n="car.scents.dubai.label">Dubai</option>
+                <option value="Dune" data-scent-id="dune" data-i18n="car.scents.dune.label">Dune</option>
+                <option value="Eden" data-scent-id="eden" data-i18n="car.scents.eden.label">Eden</option>
+                <option value="Fleur" data-scent-id="fleur" data-i18n="car.scents.fleur.label">Fleur</option>
+                <option value="Green Mango" data-scent-id="green_mango" data-i18n="car.scents.green_mango.label">Green Mango</option>
+                <option value="Lime Basil" data-scent-id="lime_basil" data-i18n="car.scents.lime_basil.label">Lime Basil</option>
+                <option value="Rosso" data-scent-id="rosso" data-i18n="car.scents.rosso.label">Rosso</option>
+                <option value="Salted Caramel" data-scent-id="salted_caramel" data-i18n="car.scents.salted_caramel.label">Salted Caramel</option>
+                <option value="Salty Water" data-scent-id="salty_water" data-i18n="car.scents.salty_water.label">Salty Water</option>
+                <option value="Santal" data-scent-id="santal" data-i18n="car.scents.santal.label">Santal</option>
+                <option value="Sugar" data-scent-id="sugar" data-i18n="car.scents.sugar.label">Sugar</option>
+                <option value="Tobacco Vanilla" data-scent-id="tobacco_vanilla" data-i18n="car.scents.tobacco_vanilla.label">Tobacco Vanilla</option>
+                <option value="Valencia" data-scent-id="valencia" data-i18n="car.scents.valencia.label">Valencia</option>
               </select>
             </label>
           </div>
-
-          <p class="product-card__scent-description" data-car-scent-description></p>
 
           <div class="product-card__meta">
             <span class="product-card__price-label" data-i18n="car.product.priceLabel">Preis</span>
