@@ -77,16 +77,28 @@
   <main>
     <section class="page-hero page-hero--car">
       <div class="page-hero__layout">
-        <div class="page-hero__text">
-          <p class="page-hero__label" data-i18n="categoryCar.hero.label">On-the-go Scent</p>
-          <h1 data-i18n="categoryCar.hero.title">Autoparfums für jede Fahrt</h1>
-          <p data-i18n="categoryCar.hero.subtitle">Clips, Kapseln und Sprays sorgen für konstante Duftbegleitung.</p>
-          <p data-i18n="categoryCar.hero.text">Luftstrom-optimierte Designs verteilen Duft gleichmäßig ohne Rückstände.</p>
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCar.hero.button">Kollektion bestellen</a>
-            <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCar.hero.secondary">Weitere Kategorien</a>
+        <section class="nh-category-hero">
+          <div class="nh-category-hero__left">
+            <p class="page-hero__label" data-i18n="categoryCar.hero.label">On-the-go Scent</p>
+            <h1 class="nh-category-hero__title" data-i18n="categoryCar.hero.title">Autoparfums für jede Fahrt</h1>
+            <div class="nh-category-hero__description is-collapsed" data-category-description>
+              <div class="nh-category-hero__description-content" data-category-description-content>
+                <p data-i18n="categoryCar.hero.subtitle">Clips, Kapseln und Sprays sorgen für konstante Duftbegleitung.</p>
+                <p data-i18n="categoryCar.hero.text">Luftstrom-optimierte Designs verteilen Duft gleichmäßig ohne Rückstände.</p>
+              </div>
+              <a href="#" class="nh-category-hero__readmore" data-category-readmore>Read more</a>
+            </div>
+            <div class="hero__actions">
+              <a class="btn btn--gold" href="contacts.html" data-i18n="categoryCar.hero.button">Kollektion bestellen</a>
+              <a class="btn btn--ghost" href="catalog.html" data-i18n="categoryCar.hero.secondary">Weitere Kategorien</a>
+            </div>
           </div>
-        </div>
+          <div class="nh-category-hero__right">
+            <div class="nh-category-hero__slider">
+              <img src="https://github.com/evgenss79/BV_img/blob/main/AutoParf.jpg?raw=true" alt="Auto Parfume" loading="lazy">
+            </div>
+          </div>
+        </section>
 
         <article class="product-card product-card--car" data-car-card>
           <img
@@ -153,9 +165,6 @@
 
           <button class="btn btn--gold" data-add-to-cart data-i18n="car.product.cta">In den Warenkorb</button>
         </article>
-      </div>
-      <div class="page-hero__media">
-        <img src="https://github.com/evgenss79/BV_img/blob/main/AutoParf.jpg?raw=true" alt="Auto Parfume" loading="lazy">
       </div>
     </section>
 

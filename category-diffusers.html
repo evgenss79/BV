@@ -77,15 +77,12 @@
   <main>
     <section class="page-hero page-hero--diffusers">
       <div class="page-hero__layout">
-        <section class="category-hero">
-          <div class="category-hero__text">
-            <h1 class="page-hero__title" data-i18n="diffusers.hero.title"></h1>
+        <section class="nh-category-hero">
+          <div class="nh-category-hero__left">
+            <h1 class="nh-category-hero__title page-hero__title" data-i18n="diffusers.hero.title"></h1>
 
-            <section
-              class="category-copy category-copy--diffusers is-collapsed"
-              data-diffusers-description-wrapper
-            >
-              <div class="category-copy__inner" data-diffusers-description>
+            <div class="nh-category-hero__description is-collapsed" data-category-description>
+              <div class="nh-category-hero__description-content" data-category-description-content>
                 <p data-i18n="diffusers.copy.paragraph1"></p>
                 <h3 data-i18n="diffusers.copy.subheadingHow"></h3>
                 <p data-i18n="diffusers.copy.paragraph2"></p>
@@ -98,25 +95,21 @@
                 </ul>
                 <p data-i18n="diffusers.copy.paragraph4"></p>
               </div>
-
-              <button
-                type="button"
-                class="category-copy__toggle"
-                data-diffusers-description-toggle
-                data-i18n="common.toggle.more"
-              ></button>
-            </section>
+              <a href="#" class="nh-category-hero__readmore" data-category-readmore>Read more</a>
+            </div>
           </div>
 
-          <div class="category-hero__slider diffusers-slider">
-            <div class="diffusers-slider__frame">
-              <img
-                src="https://github.com/evgenss79/BV_img/blob/main/Diff/Aroma%20diffusers_category.jpg?raw=true"
-                alt="Aroma-Diffusoren auf Holztablett"
-                loading="lazy"
-                data-diffuser-hero-slider
-                class="diffusers-slider__image"
-              >
+          <div class="nh-category-hero__right">
+            <div class="nh-category-hero__slider">
+              <div class="diffusers-slider__frame">
+                <img
+                  src="https://github.com/evgenss79/BV_img/blob/main/Diff/Aroma%20diffusers_category.jpg?raw=true"
+                  alt="Aroma-Diffusoren auf Holztablett"
+                  loading="lazy"
+                  data-diffuser-hero-slider
+                  class="diffusers-slider__image"
+                >
+              </div>
             </div>
           </div>
         </section>
