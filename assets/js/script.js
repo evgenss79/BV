@@ -3655,140 +3655,322 @@ const diffuserHeroImages = [
   'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7629.jpg?raw=true'
 ];
 
-const diffuserScentDescriptions = {
+const diffuserScentTitles = {
   none: {
-    de: 'Wählen Sie einen Duft, um die Stimmung Ihres Raums zu gestalten.',
-    fr: 'Choisissez un parfum pour modeler l’ambiance de votre intérieur.',
-    it: 'Scegli una fragranza per definire l’atmosfera dei tuoi ambienti.',
-    en: 'Choose a fragrance to tailor the mood of your room.'
+    de: 'Signature Aroma-Diffusor',
+    fr: 'Diffuseur à bâtonnets Signature',
+    it: 'Diffusore a bastoncini Signature',
+    en: 'Signature reed diffuser'
   },
-  Africa: {
-    de: 'Glühender Amber, Kakaoschalen und Wüstengewürze hüllen den Raum in Sonnenuntergangswärme.',
-    fr: 'Ambre incandescent, coque de cacao et épices du désert enveloppent la pièce d’une chaleur crépusculaire.',
-    it: 'Ambra ardente, guscio di cacao e spezie del deserto avvolgono l’ambiente in un calore da tramonto.',
-    en: 'Glowing amber, cacao husk and desert spices wrap the space in sunset warmth.'
-  },
-  Bamboo: {
-    de: 'Zerstoßene Bambusblätter, wässrige Blüten und mineralischer Moschus halten die Luft klar und ruhig.',
-    fr: 'Feuilles de bambou écrasées, fleurs aquatiques et musc minéral maintiennent l’air clair et serein.',
-    it: 'Foglie di bambù pestate, fiori acquatici e muschio minerale mantengono l’aria limpida e calma.',
-    en: 'Crushed bamboo leaves, watery florals and mineral musk keep the air bright and calm.'
-  },
-  Bellini: {
-    de: 'Spritziger Pfirsichnektar, Jasminblüten und kühler Prosecco fangen die Aperitivo-Stunde ein.',
-    fr: 'Nectar de pêche pétillant, pétales de jasmin et prosecco frais évoquent l’heure de l’apéritif.',
-    it: 'Nettare di pesca frizzante, petali di gelsomino e prosecco ghiacciato raccontano l’ora dell’aperitivo.',
-    en: 'Sparkling peach nectar, jasmine petals and chilled prosecco capture aperitivo hour.'
-  },
-  Blanc: {
-    de: 'Gepresste Baumwolle, weißer Moschus und pudrige Iris lassen Räume frisch eingekleidet wirken.',
-    fr: 'Coton repassé, musc blanc et iris poudré donnent l’impression d’une pièce fraîchement habillée.',
-    it: 'Cotone appena stirato, muschio bianco e iris cipriato fanno sembrare gli ambienti appena vestiti.',
-    en: 'Pressed cotton, white musk and powdery iris make rooms feel freshly dressed.'
-  },
-  Carolina: {
-    de: 'Magnolie, cremige Gardenie und helle Hölzer zeichnen einen eleganten südlichen Charme.',
-    fr: 'Magnolia, gardénia crémeux et bois clairs composent un charme méridional élégant.',
-    it: 'Magnolia, gardenia cremosa e legni chiari ricreano un raffinato fascino del Sud.',
-    en: 'Magnolia bloom, creamy gardenia and blonde woods create a refined Southern charm.'
-  },
+  Africa: { de: 'AromaDiffuser Africa', fr: 'AromaDiffuser Africa', it: 'AromaDiffuser Africa', en: 'AromaDiffuser Africa' },
+  Bamboo: { de: 'AromaDiffuser Bamboo', fr: 'AromaDiffuser Bamboo', it: 'AromaDiffuser Bamboo', en: 'AromaDiffuser Bamboo' },
+  Bellini: { de: 'AromaDiffuser Bellini', fr: 'AromaDiffuser Bellini', it: 'AromaDiffuser Bellini', en: 'AromaDiffuser Bellini' },
+  Blanc: { de: 'AromaDiffuser Blanc', fr: 'AromaDiffuser Blanc', it: 'AromaDiffuser Blanc', en: 'AromaDiffuser Blanc' },
+  Carolina: { de: 'AromaDiffuser Carolina', fr: 'AromaDiffuser Carolina', it: 'AromaDiffuser Carolina', en: 'AromaDiffuser Carolina' },
   'Cherry Blossom': {
-    de: 'Rosafarbene Kirschblüten, Mandarinenzesten und luftiger Moschus flüstern wie Frühlingsbalkone.',
-    fr: 'Pétales de cerisier roses, zeste de mandarine et musc aérien murmurent comme des balcons printaniers.',
-    it: 'Petali di ciliegio rosa, scorza di mandarino e muschio arioso sussurrano come balconi di primavera.',
-    en: 'Pink cherry petals, mandarin zest and airy musk whisper like spring balconies.'
+    de: 'AromaDiffuser Cherry Blossom',
+    fr: 'AromaDiffuser Cherry Blossom',
+    it: 'AromaDiffuser Cherry Blossom',
+    en: 'AromaDiffuser Cherry Blossom'
   },
   'Christmas Tree': {
-    de: 'Blaufichte, Balsamharz und kühler Tannensaft bringen alpine Feiertagsklarheit.',
-    fr: 'Épinette bleue, résine de baume et sève de pin fraîche apportent une clarté alpine de fêtes.',
-    it: 'Abete blu, resina di balsamo e linfa fresca portano un nitore alpino natalizio.',
-    en: 'Blue spruce needles, balsam resin and cool pine sap bring alpine holiday clarity.'
+    de: 'AromaDiffuser Christmas Tree',
+    fr: 'AromaDiffuser Christmas Tree',
+    it: 'AromaDiffuser Christmas Tree',
+    en: 'AromaDiffuser Christmas Tree'
   },
-  Etna: {
-    de: 'Geräucherte Zitrusschalen, vulkanische Kräuter und dunkle Sande verleihen eine dramatische Mineralität.',
-    fr: 'Écorces d’agrumes fumées, herbes volcaniques et sables sombres livrent une minéralité dramatique.',
-    it: 'Scorze agrumate affumicate, erbe vulcaniche e sabbie scure regalano una mineralità drammatica.',
-    en: 'Smoked citrus peel, volcanic herbs and black sand woods deliver a dramatic mineral trail.'
-  },
-  Dubai: {
-    de: 'Rosenabsolue, Safranfäden und Oudharz inszenieren die Atmosphäre eines glamourösen Majlis.',
-    fr: 'Absolue de rose, filaments de safran et résine d’oud mettent en scène une ambiance de majlis glamour.',
-    it: 'Assoluta di rosa, fili di zafferano e resina di oud creano l’atmosfera di un majlis glamour.',
-    en: 'Rose absolute, saffron threads and oud resin stage a glamorous majlis vibe.'
-  },
-  Dune: {
-    de: 'Sonniger Sand, Nerolibrise und helle Hölzer erschaffen die Ruhe einer Küstendüne.',
-    fr: 'Sable ensoleillé, brise de néroli et bois clairs recréent le calme d’une dune côtière.',
-    it: 'Sabbia assolata, brezza al neroli e legni chiari ricreano la quiete di una duna costiera.',
-    en: 'Sunlit sand, neroli breeze and pale woods recreate a calm coastal dune.'
-  },
-  Eden: {
-    de: 'Üppige Feigenblätter, taufrische Grüns und seidiger Moschus wirken wie ein beschattetes Gewächshaus.',
-    fr: 'Feuilles de figuier luxuriantes, verts perlés de rosée et musc soyeux évoquent une serre ombragée.',
-    it: 'Foglie di fico rigogliose, verdi rugiadosi e muschio setoso evocano una serra ombreggiata.',
-    en: 'Lush fig leaves, dew-soaked greens and silky musk feel like a shaded greenhouse.'
-  },
-  Fleur: {
-    de: 'Weiche Pfingstrosen, Freesien und ambrierter Moschus malen einen modernen Blütenstrauß.',
-    fr: 'Pivoines soyeuses, freesias et musc ambré composent un bouquet floral contemporain.',
-    it: 'Peonie soffici, fresie e muschio ambrato dipingono un bouquet floreale contemporaneo.',
-    en: 'Soft peonies, freesia and ambered musk paint a contemporary floral bouquet.'
-  },
+  Etna: { de: 'AromaDiffuser Etna', fr: 'AromaDiffuser Etna', it: 'AromaDiffuser Etna', en: 'AromaDiffuser Etna' },
+  Dubai: { de: 'AromaDiffuser Dubai', fr: 'AromaDiffuser Dubai', it: 'AromaDiffuser Dubai', en: 'AromaDiffuser Dubai' },
+  Dune: { de: 'AromaDiffuser Dune', fr: 'AromaDiffuser Dune', it: 'AromaDiffuser Dune', en: 'AromaDiffuser Dune' },
+  Eden: { de: 'AromaDiffuser Eden', fr: 'AromaDiffuser Eden', it: 'AromaDiffuser Eden', en: 'AromaDiffuser Eden' },
+  Fleur: { de: 'AromaDiffuser Fleur', fr: 'AromaDiffuser Fleur', it: 'AromaDiffuser Fleur', en: 'AromaDiffuser Fleur' },
   'Green Mango': {
-    de: 'Saftige grüne Mango, Kaffirlimette und kühle Minze bringen tropische Frische in Lofts.',
-    fr: 'Mangue verte juteuse, citron kaffir et menthe fraîche insufflent une fraîcheur tropicale.',
-    it: 'Mango verde succosa, lime kaffir e menta ghiacciata donano una brezza tropicale.',
-    en: 'Juicy green mango, kaffir lime and icy mint refresh lofts with tropical breeze.'
+    de: 'AromaDiffuser Green Mango',
+    fr: 'AromaDiffuser Green Mango',
+    it: 'AromaDiffuser Green Mango',
+    en: 'AromaDiffuser Green Mango'
   },
   'Lime Basil': {
-    de: 'Aufgebrochener Basilikum, persische Limette und Vetiverwurzeln beleben Küchen und Studios.',
-    fr: 'Basilic froissé, lime perse et racines de vétiver dynamisent cuisines et studios.',
-    it: 'Basilico spezzato, lime persiano e radici di vetiver ravvivano cucine e studi.',
-    en: 'Cracked basil, Persian lime and vetiver roots energise kitchens and studios.'
+    de: 'AromaDiffuser Lime Basil',
+    fr: 'AromaDiffuser Lime Basil',
+    it: 'AromaDiffuser Lime Basil',
+    en: 'AromaDiffuser Lime Basil'
   },
-  Rosso: {
-    de: 'Rubinrote Beeren, Johannisbeerblatt und Kaschmirholz verleihen eine kühne Galerieausstrahlung.',
-    fr: 'Baies rubis, feuille de cassis et bois de cachemire offrent une aura de galerie audacieuse.',
-    it: 'Bacche rubino, foglie di ribes e legni cashmere donano un’aura da galleria decisa.',
-    en: 'Ruby berries, red currant leaf and cashmere woods add a bold gallery glow.'
-  },
+  Rosso: { de: 'AromaDiffuser Rosso', fr: 'AromaDiffuser Rosso', it: 'AromaDiffuser Rosso', en: 'AromaDiffuser Rosso' },
   'Salted Caramel': {
-    de: 'Goldenes Karamell, Fleur de Sel und geröstete Tonka machen Räume köstlich üppig.',
-    fr: 'Caramel doré, fleur de sel et fève tonka grillée rendent les espaces délicieusement gourmands.',
-    it: 'Caramello dorato, fleur de sel e tonka tostata rendono gli ambienti golosi e avvolgenti.',
-    en: 'Golden caramel ribbons, fleur de sel and toasted tonka make spaces indulgent.'
+    de: 'AromaDiffuser Salted Caramel',
+    fr: 'AromaDiffuser Salted Caramel',
+    it: 'AromaDiffuser Salted Caramel',
+    en: 'AromaDiffuser Salted Caramel'
   },
   'Salty Water': {
-    de: 'Meeresgischt, weiße Algen und Treibholznebel schenken Räumen eine ruhige Küstenbrise.',
-    fr: 'Embruns marins, algues blanches et brume de bois flotté offrent une brise côtière apaisante.',
-    it: 'Schizzi marini, alghe bianche e nebbiolina di legni spiaggiati donano una brezza costiera calma.',
-    en: 'Sea spray accords, white algae and driftwood mist perfume rooms with shoreline calm.'
+    de: 'AromaDiffuser Salty Water',
+    fr: 'AromaDiffuser Salty Water',
+    it: 'AromaDiffuser Salty Water',
+    en: 'AromaDiffuser Salty Water'
   },
-  Santal: {
-    de: 'Cremiges Sandelholz, Iris-Suede und Weihrauchrauch verleihen meditative Tiefe.',
-    fr: 'Santal crémeux, daim à l’iris et fumée d’encens apportent une profondeur méditative.',
-    it: 'Sandalo cremoso, suede all’iris e fumo d’incenso aggiungono una profondità meditativa.',
-    en: 'Creamy sandalwood, iris suede and incense smoke add a meditative depth.'
-  },
-  Sugar: {
-    de: 'Kandierte Veilchen, gezogener Zucker und sanfter Moschus versüßen selbst minimalistische Interiors.',
-    fr: 'Violettes confites, sucre filé et musc doux adoucissent même les intérieurs minimalistes.',
-    it: 'Viole candite, zucchero filato e muschio morbido addolciscono anche gli interni minimalisti.',
-    en: 'Candied violet, spun sugar and soft musk sweeten even minimalist interiors.'
-  },
+  Santal: { de: 'AromaDiffuser Santal', fr: 'AromaDiffuser Santal', it: 'AromaDiffuser Santal', en: 'AromaDiffuser Santal' },
+  Sugar: { de: 'AromaDiffuser Sugar', fr: 'AromaDiffuser Sugar', it: 'AromaDiffuser Sugar', en: 'AromaDiffuser Sugar' },
   'Tobacco Vanilla': {
-    de: 'Pfeifentabak, Bourbon-Vanille und verkohlte Zeder machen Lounges zu samtigen Salons.',
-    fr: 'Tabac de pipe, vanille bourbon et cèdre brûlé transforment les salons en boudoirs veloutés.',
-    it: 'Tabacco da pipa, vaniglia bourbon e cedro bruciato trasformano il salotto in un boudoir vellutato.',
-    en: 'Pipe tobacco, bourbon vanilla and charred cedar turn lounges into plush salons.'
+    de: 'AromaDiffuser Tobacco Vanilla',
+    fr: 'AromaDiffuser Tobacco Vanilla',
+    it: 'AromaDiffuser Tobacco Vanilla',
+    en: 'AromaDiffuser Tobacco Vanilla'
   },
-  Valencia: {
-    de: 'Sonnengereifte Orangen, Neroliblüte und warme Hölzer erinnern an eine mediterrane Terrasse.',
-    fr: 'Oranges mûries au soleil, fleur de néroli et bois chauds évoquent une terrasse méditerranéenne.',
-    it: 'Arance maturate al sole, fiore di neroli e legni caldi ricordano un patio mediterraneo.',
-    en: 'Sun-ripe oranges, neroli blossom and warm woods feel like a Mediterranean patio.'
-  }
+  Valencia: { de: 'AromaDiffuser Valencia', fr: 'AromaDiffuser Valencia', it: 'AromaDiffuser Valencia', en: 'AromaDiffuser Valencia' }
 };
+
+const diffuserScentDescriptions = {
+  none: '',
+  'Africa': `AFRICA 
+A warm, spicy scent of cardamom wood and soft leather. This intensely concentrated fragrance fills the entire room. Bright notes of bergamot and musk are enhanced by a luminous woody nuance. Rich accords of cardamom and leather lend a robust, accentuated character, while a fragrant trail of spicy cumin and saffron completes the composition.
+
+You’ll fall in love with AFRICA if you crave fresh, woody aromas or long for desert dunes and safari adventures.
+
+Ideal for spacious living rooms and lounges as well as interiors featuring natural elements. This premium reed diffuser brings character and sophistication to any space.
+
+Olfactory Pyramid:
+Top Notes: Bergamot, Vetiver, Geranium
+Heart Notes: Cardamom, Leather, Musk
+Base Notes: Patchouli, Cumin, Oud, Saffron`,
+  'Bamboo': `BAMBOO 
+A green, fresh scent of spring flowers and bamboo stalks. This moderately intense fragrance gently fills your space without overpowering it. Top notes of bergamot and bamboo create a delicate vegetal mist, evolving into a floral heart of lily, ylang-ylang and orange blossom. A warm, enveloping base of vanilla, sandalwood and amber completes the composition.
+
+Perfect for bright interiors, small rooms and bathrooms where you want a soft, natural freshness.
+
+If you love vegetal, fresh and floral aromas, BAMBOO will be an ideal addition to your collection. This premium reed diffuser is designed to create a harmonious, natural atmosphere in your home.
+
+Olfactory Pyramid:
+Top Notes: Bamboo, Bergamot
+Heart Notes: Ylang-ylang, Lily, Orange Blossom
+Base Notes: Vanilla, Sandalwood, Amber`,
+  'Bellini': `BELLINI 
+A velvety scent of juicy peach and intense rum. This powdery fragrance, rich in aromatic compounds, quickly fills your space with playful notes of sweet peach, blood orange and vanilla. The bitter-spicy accords of cognac, rum and cashmere add a subtle edge and deepen its character.
+
+BELLINI is perfect if you want to maintain a festive, celebratory atmosphere.
+
+This premium reed diffuser is a wonderful addition to spacious living rooms, entryways and any bright interior.
+
+Olfactory Pyramid:
+Top Notes: Peach, Blood Orange, Cardamom, Heliotrope
+Heart Notes: Rum, Cognac, Davana, Jasmine
+Base Notes: Patchouli, Sandalwood, Vanilla, Tonka Bean, Cashmere, Benzoin, Storax, Labdanum, Vetiver`,
+  'Blanc': `BLANC 
+A soft, fresh fragrance of white cotton and purity.
+
+This moderately concentrated scent blends light floral accords with bright aldehydes, evoking the unmistakable aroma of a crisp white shirt, freshly laundered sheets, and unmatched purity.
+
+In enclosed spaces, the fragrance diffuses smoothly and fluidly, filling the room with a delicate freshness.
+
+You’ll surely fall in love with BLANC if you appreciate pure scents and wish to recreate the atmosphere of a freshly cleaned room in a luxury hotel.
+
+Olfactory Pyramid:
+Top Notes: Aldehydes, Rose, Pink Pepper
+Heart Notes: Peony, Violet, Orange Blossom
+Base Notes: White Musk, Woody Notes, Sandalwood`,
+  'Carolina': `CAROLINA 
+A delicate, light aroma of sweet cappuccino and spring blooms.
+
+This moderately concentrated scent unfolds gently in any space. Coffee and almond notes dissolve into a warm, enveloping sweet-bitter accord. Jasmine, iris and bergamot create fresh floral highlights, while a whisper of spiced cocoa lingers in the trail.
+
+You’ll fall in love with CAROLINA if you cherish cozy café vibes and sweet pastries, or crave a warm, subtly mysterious atmosphere. This premium mikado diffuser transforms any room into a welcoming sensory retreat.
+
+Olfactory Pyramid:
+Top Notes: Almond, Coffee, Bergamot, Lemon
+Heart Notes: Jasmine sambac, Tuberose, Iris, Bulgarian Rose, Orange Blossom
+Base Notes: Tonka Bean, Cocoa, Sandalwood, Vanilla, Praline, Cinnamon, White Cedar, Cashmere Wood, Patchouli, Amber, Musk`,
+  'Cherry Blossom': `CHERRY BLOSSOM 
+A sweet and spicy aroma of rich cherry liqueur and spring flowers.
+
+An intensely saturated fragrance that enhances the entire atmosphere of the room. The top notes of cherry and bitter almond evolve into a vibrant, tangy cherry liqueur scent. Rose and jasmine accords blend into a soft floral trail, enriched with a sweet touch of vanilla.
+
+You’ll fall in love with CHERRY BLOSSOM if you enjoy delicate, sweet fragrances and the scent of ripe, juicy cherries.
+
+CHERRY BLOSSOM is the perfect fragrance for kitchens, spacious hallways, and bright bathrooms.
+
+Olfactory Pyramid:
+Top notes: Cherry, Liqueur, Bitter almond
+Heart notes: Cherry, Turkish rose, Jasmine sambac, Plum
+Base notes: Peru balsam, Tonka beans, Sandalwood, Vetiver, White cedar, Benzoin, Cinnamon, Clove, Patchouli, Vanilla`,
+  'Christmas Tree': `CHRISTMAS TREE 
+A soft and festive scent of Christmas pine and juicy tangerines.
+
+This is a medium-intensity fragrance that gently fills the room with a translucent veil. The bright and sweet tangerine note unfolds into a familiar and nostalgic aroma, while the final green trail of pine brings depth and freshness.
+
+CHRISTMAS TREE is the perfect scent for Christmas holidays — or for those who want to feel the magic of the season even in the heat of summer.
+
+This scent is ideal for children's rooms, living areas, or a cozy little coffee shop.
+
+Olfactory Pyramid:
+Top notes: Vanilla
+Heart notes: Orange, Cinnamon
+Base notes: Pine, Tangerine`,
+  'Dubai': `DUBAI 
+A rich oriental fragrance of Damask rose and oud wood.
+
+An intense and highly concentrated aroma that makes its presence known from the very first moments. Notes of geranium and violet gently envelop the space with a slightly bitter floral scent. Bright accords of Damask and Turkish rose blend into a sweet and soft trail, with a spicy touch of cinnamon.
+
+You’ll love DUBAI if you are a fan of luxurious hotel scents and starlit summer nights.
+
+DUBAI is the perfect choice for living rooms, lobbies, and of course, hotels.
+
+Olfactory Pyramid:
+Top notes: Geranium, Violet
+Heart notes: Cinnamon, Damask rose, Turkish rose
+Base notes: Oud, Vanilla`,
+  'Dune': `DUNE 
+A bold and spicy scent of blazing sun and hot pepper.
+
+This highly intense fragrance will fill your space. Citrus notes of orange and grapefruit add a pleasantly sweet trail. Distinct pepper accords dissolve into a bright, daring, and fiery aroma. Cedar and vetiver nuances complete the composition with a warm, woody tone.
+
+DUNE is perfect for those who miss the scorching sun and vast desert dunes.
+
+This premium reed diffuser brings sunlight, warmth, and the feeling of summer into your home.
+
+Olfactory Pyramid:
+Top notes: Orange, Grapefruit
+Heart notes: Pepper, Pink Pepper
+Base notes: Vetiver, Cedar, Patchouli, Benzoin`,
+  'Eden': `EDEN 
+A fruity fragrance with a soft floral trail.
+
+Intense and vibrant, this aroma fills the entire space. Passion fruit and raspberry notes unfold into a juicy, fresh scent of ripe fruits and berries. Sweetness is enhanced by lily and vanilla accords. The fragrance leaves a spicy trail of musk and sandalwood.
+
+EDEN will become your favorite scent if you love feeling the warm sun rays on your skin and enjoy spicy, aromatic fragrances.
+
+This premium reed diffuser is the perfect complement to bedrooms and living rooms, both in dark and bright interiors. It is also ideal for bathrooms.
+
+Olfactory Pyramid:
+Top notes: Passion fruit, Peach, Pear, Raspberry, Blackcurrant leaf, Sand
+Heart notes: Lily
+Base notes: Vanilla, Musk, Sandalwood`,
+  'Etna': `ETNA 
+A spicy and warm aroma of leather, tobacco, and caramel.
+
+This fragrance envelops the entire space around you. Strong leather and black pepper notes emerge instantly, while clove, sage, and honey blend into an intense and self-sufficient composition. The scent leaves a deep amber trail, enriched with tobacco and patchouli notes.
+
+ETNA is perfect if you seek a spicy, fiery, and explosive aroma with vibrant oriental notes.
+
+This premium reed diffuser fits perfectly in dark, spacious living rooms or lobbies, enhancing rustic wooden and stone elements.
+
+Olfactory Pyramid:
+Top notes: Leather, Tolu balsam, Saffron, Bay leaf, Black pepper, Earth tincture, Lemon, Thyme
+Heart notes: Honey, Red pepper, Clove, Iris, Sage, Magnolia, Peony
+Base notes: Tobacco, Oud, Caramel, Leather, Benzoin, Pine, Patchouli, Canada balsam, Cashmere wood, Labdanum`,
+  'Fleur': `FLEUR 
+A cool, juicy, floral-fruity aroma that fills the space with a refreshing and sophisticated atmosphere. The composition opens with bright notes of bergamot, lychee, and peach, leading into a floral heart of orange blossom, jasmine, and peony. The final accord leaves a light trail of woody notes, moss, and musk.
+
+Perfect for bright interiors in bedrooms, bathrooms, and living rooms — places where you want to create a fresh, spring morning atmosphere.
+
+If you love juicy, floral aromas and a refreshing ambiance, FLEUR will become your favorite. This premium reed diffuser is designed to deliver a refined aromatic experience, adding elegance to any space.
+
+Olfactory Pyramid:
+Top notes: Bergamot, Lychee, Peach
+Heart notes: Orange blossom, Jasmine, Peony
+Base notes: Woody notes, Moss, Musk`,
+  'Green Mango': `GREEN MANGO 
+A juicy fragrance of fresh mango and crisp pineapple.
+
+This highly concentrated scent fills the entire space. Notes of green mango and melon unfold into a bright and fresh aroma of freshly cut fruits. Pineapple and peach accords enhance the sweetness, while final hints of pine needles add a vibrant, vegetal trail.
+
+This premium reed diffuser is ideal for entryways, bright living rooms, and small beauty salons. If you love fruity yet not overpowering fragrances, GREEN MANGO will become your favorite.
+
+Olfactory Pyramid:
+Top notes: Mango, Melon
+Heart notes: Peach, Pineapple
+Base notes: Mango peel, Pine needles`,
+  'Lime Basil': `LIME BASIL 
+A fresh citrus scent of juicy lime and aromatic basil.
+
+This intensely saturated fragrance quickly unfolds in the air. Notes of lime and ripe mandarin create a slightly sweet aroma, while spicy basil and thyme accords dissolve into pleasant bitterness and herbal freshness. The fragrance leaves a stimulating, fragrant trail.
+
+LIME BASIL will become your favorite if you love fresh, herbal aromas and the invigorating scent of a mojito. This premium reed diffuser is perfect for bathrooms, spacious entryways, and large living rooms.
+
+Olfactory Pyramid:
+Top notes: Mandarin, Bergamot
+Heart notes: Basil, Iris, Lilac, Thyme
+Base notes: Lime, Patchouli, Vetiver`,
+  'Rosso': `ROSSO 
+A lush aroma of ripe red grapes and juicy berries.
+
+This fragrance, with a high concentration of aromatic compounds, fills the entire space. The main note unfolds with a vegetal scent of raspberry and birch bark. The dominant accord of juicy red grapes permeates the room with the penetrating aroma of dry wine. A touch of magnolia colors the trail with soft floral nuances.
+
+ROSSO is designed for lovers of intense wine-like scents and ripe berries. This premium reed diffuser is perfect for filling your space with a vibrant, deep, and fruity fragrance. Ideal for spacious living rooms and dark interiors with natural wooden elements.
+
+Olfactory Pyramid:
+Top notes: Orange, Violet, Magnolia
+Heart notes: Plum, Strawberry, Wild berries
+Base notes: Dry wood, Birch`,
+  'Salted Caramel': `SALTED CARAMEL 
+A bright composition with high intensity.
+
+Notes of wheat and vanilla fill the fragrance with sweetness and a delicious, mouthwatering trail. Caramel and salt blend into a rich, enveloping, and tasty scent, familiar from childhood: salted caramel. Vibrant notes of baked goods add even more flavor to the composition, filling your space with warmth and coziness.
+
+If you wish to dive back into your childhood and experience an unforgettable atmosphere of wonder and celebration, SALTED CARAMEL is perfect for you. This high-concentration premium reed diffuser transforms any space into a cozy, delicious corner.
+
+Olfactory Pyramid:
+Top notes: Sea salt
+Heart notes: Pear, Vanilla, Powdery notes, Wheat
+Base notes: Toffee, Brown sugar`,
+  'Salty Water': `SALTY WATER 
+A fresh scent of salty water and ancient minerals.
+
+This is a light-intensity fragrance, the most delicate of the entire line. It unfolds softly in the air, gradually filling the room. Marine salt and amber dissolve into a refreshing salty dew aroma. Hints of seaweed add a vegetal nuance, while refreshing sage brings brightness to the composition.
+
+SALTY WATER is the perfect choice if you’re not a fan of intense, sweet scents and are enchanted by the mystery of the sea. This premium reed diffuser creates a light, marine atmosphere in any corner of your home.
+
+Olfactory Pyramid:
+Top notes: Amber, Sea salt
+Heart notes: Sage
+Base notes: Grapefruit, Seaweed`,
+  'Santal': `SANTAL 
+A powdery fragrance with leather, cardamom, and oriental sandalwood.
+
+This aromatic scent diffuses slowly and gently throughout the space. Emerging notes of cardamom and sandalwood blend with strong accords of iris and amber, creating a bitter oriental symphony. Final touches of violet and papyrus soften into a slightly floral trail.
+
+You’ll fall in love with SANTAL if you enjoy comforting powdery fragrances, spices, and the charm of the Orient. This premium reed diffuser is perfect for adding warmth and exotic elegance to your home.
+
+Olfactory Pyramid:
+Top notes: Sandalwood, Papyrus, Leather
+Heart notes: Virginia cedar, Cardamom, Violet
+Base notes: Iris, Amber`,
+  'Sugar': `SUGAR 
+A sweet and sticky scent of burnt sugar and woody resin.
+
+An intense and saturated fragrance that fills the entire room. Pronounced notes of saffron and jasmine melt into a sweet and spicy aroma. The main woody amber accord envelops the air with the sweetness and depth of resin. Final touches of white cedar enhance the woody trail.
+
+SUGAR is perfect for those who wish to bring a luxurious touch to their space, filling it with a rich, sticky sweetness. This premium reed diffuser has been crafted to deliver an immersive sensory experience in warm, sophisticated interiors.
+
+Olfactory Pyramid:
+Top notes: Jasmine, Saffron
+Heart notes: Woody amber
+Base notes: White cedar, Pine resin`,
+  'Tobacco Vanilla': `TOBACCO VANILLA 
+A warm and smooth scent of tobacco leaves and sweet vanilla.
+
+This is a medium-saturation fragrance. Notes of spices and tobacco leaves gradually unfold into a rich, delicate vanilla and cocoa scent. The trail is revealed with light woody bark and dried fruit notes.
+
+In a closed space, TOBACCO VANILLA diffuses gently, reaching its peak fragrance within the first few minutes of entering the room.
+
+You will love TOBACCO VANILLA if you appreciate lightness, sweetness, and subtlety in a fragrance, and if you want to add solidity and luxury to your surroundings.
+
+Looking for the best reed diffuser for your home? TOBACCO VANILLA by BY VELCHEVA combines elegance and warmth in a sophisticated format. Perfect for those who want to buy a diffuser with an intense, long-lasting fragrance that transforms any space into a sensory experience.
+
+Olfactory Pyramid:
+Top notes: Tobacco leaves, Spices
+Heart notes: Tonka beans, Vanilla, Cocoa, Tobacco flower
+Base notes: Woody notes, Dried fruits`,
+  'Valencia': `VALENCIA 
+An airy fragrance of fresh citrus and delicate jasmine. This medium-intensity aroma gently spreads throughout the room. Notes of lemon and bergamot fill the space with a fresh citrus scent with a slight bitterness. The main accords of jasmine and rose melt into a sweet floral composition. Final musk notes enhance the spiciness of the fragrance.
+
+VALENCIA will become your favorite fragrance if you want to feel the delicate scent of flowers and citrus in the room. Ideal for natural, bright interiors, living rooms, and bedrooms.
+
+Olfactory Pyramid:
+Top notes: Bergamot, Lemon
+Heart notes: Jasmine, White Acacia, Rose
+Base notes: Woody notes, Musk`,
+};
+
 const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
@@ -3964,6 +4146,8 @@ const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
 let diffuserDescriptionWrapper;
 let diffuserDescriptionToggle;
+let diffuserScentDescriptionWrapperEl;
+let diffuserScentDescriptionToggleEl;
 
 const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
@@ -3996,7 +4180,7 @@ const applyTranslations = () => {
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
   updateCarScentDescription();
-  updateDiffuserScentDescription();
+  updateDiffuserTitleAndDescription();
   updateDiffuserDescriptionToggleLabel();
 };
 
@@ -4229,15 +4413,71 @@ const updateDiffuserImage = () => {
   imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
 };
 
-const updateDiffuserScentDescription = () => {
+const updateDiffuserTitleAndDescription = () => {
   const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const titleEl = document.querySelector('[data-diffuser-title]');
   const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
-  if (!scentSelect || !descriptionEl) return;
+  if (!scentSelect || !titleEl || !descriptionEl) return;
   const scentKey = diffuserScentDescriptions[scentSelect.value] ? scentSelect.value : 'none';
   const lang = currentLang || 'de';
-  const entry = diffuserScentDescriptions[scentKey] || diffuserScentDescriptions.none;
-  const fallback = diffuserScentDescriptions.none;
-  descriptionEl.textContent = entry?.[lang] || fallback?.[lang] || '';
+
+  const titleEntry = diffuserScentTitles[scentKey] || diffuserScentTitles.none;
+  const titleFallback = diffuserScentTitles.none;
+  titleEl.textContent = titleEntry?.[lang] || titleFallback?.[lang] || '';
+
+  const descriptionText = diffuserScentDescriptions[scentKey] || '';
+  descriptionEl.textContent = descriptionText;
+
+  ensureDiffuserScentDescriptionElements();
+  const hasDescription = Boolean(descriptionText);
+  if (diffuserScentDescriptionWrapperEl) {
+    diffuserScentDescriptionWrapperEl.hidden = !hasDescription;
+  }
+  if (diffuserScentDescriptionToggleEl) {
+    diffuserScentDescriptionToggleEl.hidden = !hasDescription;
+  }
+};
+
+const ensureDiffuserScentDescriptionElements = () => {
+  if (!diffuserScentDescriptionWrapperEl) {
+    diffuserScentDescriptionWrapperEl = document.querySelector('[data-diffuser-scent-description-wrapper]');
+  }
+  if (!diffuserScentDescriptionToggleEl) {
+    diffuserScentDescriptionToggleEl = document.querySelector('[data-diffuser-scent-toggle]');
+  }
+};
+
+const resetDiffuserScentDescriptionState = () => {
+  ensureDiffuserScentDescriptionElements();
+  if (!diffuserScentDescriptionWrapperEl || !diffuserScentDescriptionToggleEl) return;
+  diffuserScentDescriptionWrapperEl.classList.add('is-collapsed');
+  diffuserScentDescriptionWrapperEl.classList.remove('is-expanded');
+  diffuserScentDescriptionToggleEl.textContent = 'Развернуть';
+  diffuserScentDescriptionToggleEl.setAttribute('aria-expanded', 'false');
+};
+
+const toggleDiffuserScentDescription = () => {
+  ensureDiffuserScentDescriptionElements();
+  if (!diffuserScentDescriptionWrapperEl || !diffuserScentDescriptionToggleEl) return;
+  const isCollapsed = diffuserScentDescriptionWrapperEl.classList.contains('is-collapsed');
+  if (isCollapsed) {
+    diffuserScentDescriptionWrapperEl.classList.remove('is-collapsed');
+    diffuserScentDescriptionWrapperEl.classList.add('is-expanded');
+    diffuserScentDescriptionToggleEl.textContent = 'Свернуть';
+    diffuserScentDescriptionToggleEl.setAttribute('aria-expanded', 'true');
+  } else {
+    diffuserScentDescriptionWrapperEl.classList.add('is-collapsed');
+    diffuserScentDescriptionWrapperEl.classList.remove('is-expanded');
+    diffuserScentDescriptionToggleEl.textContent = 'Развернуть';
+    diffuserScentDescriptionToggleEl.setAttribute('aria-expanded', 'false');
+  }
+};
+
+const initDiffuserScentDescriptionToggle = () => {
+  ensureDiffuserScentDescriptionElements();
+  if (!diffuserScentDescriptionWrapperEl || !diffuserScentDescriptionToggleEl) return;
+  diffuserScentDescriptionToggleEl.addEventListener('click', toggleDiffuserScentDescription);
+  resetDiffuserScentDescriptionState();
 };
 
 const initDiffuserConfigurator = () => {
@@ -4247,11 +4487,12 @@ const initDiffuserConfigurator = () => {
   volumeSelect.addEventListener('change', updateDiffuserPrice);
   scentSelect.addEventListener('change', () => {
     updateDiffuserImage();
-    updateDiffuserScentDescription();
+    updateDiffuserTitleAndDescription();
+    resetDiffuserScentDescriptionState();
   });
   updateDiffuserPrice();
   updateDiffuserImage();
-  updateDiffuserScentDescription();
+  updateDiffuserTitleAndDescription();
 };
 
 const updateCandlePrice = () => {
@@ -4335,6 +4576,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollButtons();
   initHeader();
   initDiffuserConfigurator();
+  initDiffuserScentDescriptionToggle();
   initDiffuserHeroSlider();
   initDiffusersDescriptionToggle();
   initCandleConfigurator();
