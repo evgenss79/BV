@@ -725,86 +725,19 @@ main {
   background: linear-gradient(135deg, var(--color-cream), #fff);
 }
 
-.page-hero--diffusers,
-.page-hero--candles,
-.page-hero--car {
-  padding: clamp(2.25rem, 4vw, 4rem);
-  grid-template-columns: minmax(0, 3fr) minmax(220px, 1fr);
-  gap: clamp(1.5rem, 3vw, 3rem);
-  align-items: flex-start;
-}
-
-.page-hero--diffusers .page-hero__layout,
-.page-hero--candles .page-hero__layout,
-.page-hero--car .page-hero__layout {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(1rem, 2vw, 2rem);
-  align-items: flex-start;
-}
-
-.page-hero--diffusers .page-hero__layout {
+.page-hero--category {
   display: block;
+  padding: clamp(2.25rem, 4vw, 4rem);
 }
 
-.page-hero--diffusers .page-hero__text,
-.page-hero--candles .page-hero__text,
-.page-hero--car .page-hero__text {
-  flex: 1 1 320px;
-  max-width: 520px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.page-hero--diffusers .hero__actions,
-.page-hero--candles .hero__actions,
-.page-hero--car .hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.page-hero--diffusers .product-card--diffuser,
-.page-hero--candles .product-card--candles,
-.page-hero--car .product-card--car {
-  flex: 0 0 320px;
-}
-
-.page-hero--diffusers .page-hero__media img,
-.page-hero--candles .page-hero__media img,
-.page-hero--car .page-hero__media img {
-  max-height: 460px;
-  object-fit: contain;
-  margin-left: auto;
-}
-
-@media (max-width: 1023px) {
-  .page-hero--diffusers,
-  .page-hero--candles,
-  .page-hero--car {
-    grid-template-columns: 1fr;
-  }
-
-  .page-hero--diffusers .page-hero__layout,
-  .page-hero--candles .page-hero__layout,
-  .page-hero--car .page-hero__layout {
-    flex-direction: column;
-  }
+.page-hero--category .page-hero__layout {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page-hero__media img {
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-soft);
-}
-
-.page-hero__media--diffusers img {
-  width: 100%;
-  height: 100%;
-  max-height: none;
-  object-fit: contain;
-  transition: opacity 0.4s ease;
-  border-radius: 24px;
 }
 
 
@@ -813,7 +746,6 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 80px 0;
-  gap: clamp(2rem, 4vw, 5rem);
 }
 
 .nh-category-hero__left,
@@ -834,17 +766,17 @@ main {
 }
 
 .nh-category-hero__description {
+  max-width: 480px;
   margin-bottom: 32px;
 }
 
 .nh-category-hero__description-content {
   font-size: 0.95rem;
   line-height: 1.6;
-  max-width: 420px;
 }
 
 .nh-category-hero__description p {
-  max-width: 420px;
+  max-width: 100%;
 }
 
 .nh-category-hero__description h3 {
@@ -895,19 +827,29 @@ main {
 
 .nh-category-hero__slider {
   width: 100%;
-  max-width: 480px;
+  max-width: 100%;
+  display: block;
+}
+
+.nh-category-hero__slider > * {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 .nh-category-hero__slider img,
+.nh-category-hero__slider .feature-box,
+.nh-category-hero__slider .image-wrapper,
 .nh-category-hero__slider .slick-slide,
 .nh-category-hero__slider .swiper-slide {
-  margin: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
 }
 
 @media (max-width: 768px) {
   .nh-category-hero {
     flex-direction: column;
-    padding: 48px 0;
   }
 
   .nh-category-hero__left,
@@ -924,15 +866,11 @@ main {
   .nh-category-hero__right {
     justify-content: center;
   }
-
-  .nh-category-hero__slider {
-    max-width: 100%;
-  }
 }
 
 .diffusers-slider__frame {
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   aspect-ratio: 4 / 5;
   background: #f7f4f0;
   border-radius: 24px;
@@ -944,11 +882,9 @@ main {
 }
 
 .diffusers-slider__image[data-diffuser-hero-slider] {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -1428,12 +1364,6 @@ main {
   gap: 0.6rem;
   border: 1px solid var(--color-line);
   box-shadow: none;
-}
-
-.page-hero--diffusers .product-card--diffuser,
-.page-hero--candles .product-card--candles,
-.page-hero--car .product-card--car {
-  align-self: flex-start;
 }
 
 .product-card--diffuser .product-card__image,
