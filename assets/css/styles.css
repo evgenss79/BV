@@ -741,19 +741,22 @@ main {
 }
 
 
+/* Вся секция категории */
 .nh-category-hero {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  padding: 48px 0 72px;
+  align-items: flex-start;
+  padding: 56px 0 72px;
 }
 
+/* Левая и правая колонка по 50% */
 .nh-category-hero__left,
 .nh-category-hero__right {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
+/* Левая колонка с текстом */
 .nh-category-hero__left {
   padding-right: 40px;
 }
@@ -761,13 +764,11 @@ main {
 .nh-category-hero__title {
   font-size: 38px;
   line-height: 1.2;
-  margin-bottom: 32px;
-  font-family: 'Playfair Display', serif;
+  margin-bottom: 28px;
 }
 
 .nh-category-hero__description {
   max-width: 480px;
-  margin-bottom: 32px;
 }
 
 .nh-category-hero__description-content {
@@ -819,80 +820,48 @@ main {
   font-size: 0.8rem;
 }
 
+/* Правая колонка слайдера */
 .nh-category-hero__right {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
+/* Контейнер слайдера занимает всю правую половину */
 .nh-category-hero__slider {
   width: 100%;
   max-width: 100%;
-  display: block;
-}
-
-.nh-category-hero__slider > * {
-  width: 100%;
-  max-width: 100%;
+  padding: 0;
   margin: 0;
+  border: 0;
 }
 
-.nh-category-hero__slider img,
-.nh-category-hero__slider .feature-box,
-.nh-category-hero__slider .image-wrapper,
-.nh-category-hero__slider .slick-slide,
-.nh-category-hero__slider .swiper-slide {
+/* Сброс для любых внутренних контейнеров с картинкой в слайдере */
+.nh-category-hero__slider > * {
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  height: auto !important;
+  box-sizing: border-box;
 }
 
-/* Контейнер категории — уменьшить высоту секции */
-.nh-category-hero {
-  align-items: flex-start;
-  padding: 40px 0 60px;
-}
-
-/* Изображения в слайдере категории: уменьшать, но не обрезать */
-.nh-category-hero__slider img,
-.nh-category-hero__slider .image-wrapper img,
-.nh-category-hero__slider picture img {
+/* Картинки в слайдере: вписать целиком, без обрезки */
+.nh-category-hero__slider img {
   display: block;
-  width: 100%;
   max-width: 100%;
+  width: 100%;
   height: auto;
   max-height: 460px;
   object-fit: contain;
   object-position: center center;
-}
-
-/* Поддержка возможных родительских контейнеров */
-.nh-category-hero__slider .feature-box,
-.nh-category-hero__slider .feature-box img,
-.nh-category-hero__slider .hero-banner,
-.nh-category-hero__slider .hero-banner img,
-.nh-category-hero__slider .collection-image,
-.nh-category-hero__slider .collection-image img,
-.nh-category-hero__slider .home-banner-img,
-.nh-category-hero__slider .home-banner-img img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 460px;
-  object-fit: contain;
-  object-position: center center;
-}
-
-/* Контейнер слайдера подстраивается под высоту изображения */
-.nh-category-hero__slider {
-  max-height: none;
-  overflow: visible;
 }
 
 @media (max-width: 768px) {
   .nh-category-hero {
     flex-direction: column;
+    padding: 40px 0 56px;
   }
 
   .nh-category-hero__left,
@@ -906,23 +875,7 @@ main {
     margin-bottom: 32px;
   }
 
-  .nh-category-hero__right {
-    justify-content: center;
-  }
-
-  .nh-category-hero__slider,
-  .nh-category-hero__slider img,
-  .nh-category-hero__slider .feature-box,
-  .nh-category-hero__slider .feature-box img,
-  .nh-category-hero__slider .image-wrapper,
-  .nh-category-hero__slider .image-wrapper img,
-  .nh-category-hero__slider picture img,
-  .nh-category-hero__slider .hero-banner,
-  .nh-category-hero__slider .hero-banner img,
-  .nh-category-hero__slider .collection-image,
-  .nh-category-hero__slider .collection-image img,
-  .nh-category-hero__slider .home-banner-img,
-  .nh-category-hero__slider .home-banner-img img {
+  .nh-category-hero__slider img {
     max-height: 340px;
   }
 }
