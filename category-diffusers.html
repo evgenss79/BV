@@ -77,12 +77,15 @@
   <main>
     <section class="page-hero page-hero--diffusers">
       <div class="page-hero__layout">
-        <div class="diffusers-header">
+        <section class="diffusers-header">
           <div class="diffusers-header__content">
-            <div class="page-hero__text">
-              <h1 class="page-hero__title" data-i18n="diffusers.hero.title"></h1>
+            <h1 class="page-hero__title" data-i18n="diffusers.hero.title"></h1>
 
-              <section class="category-copy category-copy--diffusers">
+            <section
+              class="category-copy category-copy--diffusers is-collapsed"
+              data-diffusers-description-wrapper
+            >
+              <div class="category-copy__inner" data-diffusers-description>
                 <p data-i18n="diffusers.copy.paragraph1"></p>
                 <h3 data-i18n="diffusers.copy.subheadingHow"></h3>
                 <p data-i18n="diffusers.copy.paragraph2"></p>
@@ -94,10 +97,18 @@
                   <li data-i18n="diffusers.copy.benefit3"></li>
                 </ul>
                 <p data-i18n="diffusers.copy.paragraph4"></p>
-              </section>
-            </div>
+              </div>
+
+              <button
+                type="button"
+                class="category-copy__toggle"
+                data-diffusers-description-toggle
+                data-i18n="common.toggle.more"
+              ></button>
+            </section>
           </div>
-          <div class="page-hero__media page-hero__media--diffusers diffusers-header__media diffusers-slider">
+
+          <div class="diffusers-header__media diffusers-slider">
             <div class="diffusers-slider__frame">
               <img
                 src="https://github.com/evgenss79/BV_img/blob/main/Diff/Aroma%20diffusers_category.jpg?raw=true"
@@ -108,7 +119,7 @@
               >
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 

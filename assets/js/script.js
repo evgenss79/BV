@@ -4828,6 +4828,8 @@ const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
 const carParfumPrice = 12.9;
 const carPriceCurrency = 'CHF';
+const diffusersDescriptionWrapper = document.querySelector('[data-diffusers-description-wrapper]');
+const diffusersDescriptionToggle = document.querySelector('[data-diffusers-description-toggle]');
 let candleScentDescriptionElement;
 let candleScentDescriptionWrapper;
 let candleScentDescriptionToggle;
@@ -4914,7 +4916,34 @@ const updateDescriptionVisibility = (wrapperEl, toggleEl, hasDescription, hideTo
   }
 };
 
+const syncDiffusersDescriptionToggleLabel = () => {
+  if (!diffusersDescriptionWrapper || !diffusersDescriptionToggle) return;
+  const collapsed = diffusersDescriptionWrapper.classList.contains('is-collapsed');
+  diffusersDescriptionToggle.setAttribute('data-i18n', collapsed ? 'common.toggle.more' : 'common.toggle.less');
+};
+
+const toggleDiffusersDescription = () => {
+  if (!diffusersDescriptionWrapper || !diffusersDescriptionToggle) return;
+  const collapsed = diffusersDescriptionWrapper.classList.contains('is-collapsed');
+  if (collapsed) {
+    diffusersDescriptionWrapper.classList.remove('is-collapsed');
+    diffusersDescriptionWrapper.classList.add('is-expanded');
+    diffusersDescriptionToggle.setAttribute('data-i18n', 'common.toggle.less');
+  } else {
+    diffusersDescriptionWrapper.classList.add('is-collapsed');
+    diffusersDescriptionWrapper.classList.remove('is-expanded');
+    diffusersDescriptionToggle.setAttribute('data-i18n', 'common.toggle.more');
+  }
+
+  applyTranslations();
+};
+
+if (diffusersDescriptionToggle) {
+  diffusersDescriptionToggle.addEventListener('click', toggleDiffusersDescription);
+}
+
 const applyTranslations = () => {
+  syncDiffusersDescriptionToggleLabel();
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((el) => {
     const key = el.getAttribute('data-i18n');
