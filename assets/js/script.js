@@ -3655,6 +3655,71 @@ const diffuserHeroImages = [
   'https://github.com/evgenss79/BV_img/blob/main/Diff/IMG_7629.jpg?raw=true'
 ];
 
+const diffuserScentTitles = {
+  none: {
+    de: 'Signature Aroma-Diffusor',
+    fr: 'Diffuseur à bâtonnets Signature',
+    it: 'Diffusore a bastoncini Signature',
+    en: 'Signature reed diffuser'
+  },
+  Africa: { de: 'AromaDiffuser Africa', fr: 'AromaDiffuser Africa', it: 'AromaDiffuser Africa', en: 'AromaDiffuser Africa' },
+  Bamboo: { de: 'AromaDiffuser Bamboo', fr: 'AromaDiffuser Bamboo', it: 'AromaDiffuser Bamboo', en: 'AromaDiffuser Bamboo' },
+  Bellini: { de: 'AromaDiffuser Bellini', fr: 'AromaDiffuser Bellini', it: 'AromaDiffuser Bellini', en: 'AromaDiffuser Bellini' },
+  Blanc: { de: 'AromaDiffuser Blanc', fr: 'AromaDiffuser Blanc', it: 'AromaDiffuser Blanc', en: 'AromaDiffuser Blanc' },
+  Carolina: { de: 'AromaDiffuser Carolina', fr: 'AromaDiffuser Carolina', it: 'AromaDiffuser Carolina', en: 'AromaDiffuser Carolina' },
+  'Cherry Blossom': {
+    de: 'AromaDiffuser Cherry Blossom',
+    fr: 'AromaDiffuser Cherry Blossom',
+    it: 'AromaDiffuser Cherry Blossom',
+    en: 'AromaDiffuser Cherry Blossom'
+  },
+  'Christmas Tree': {
+    de: 'AromaDiffuser Christmas Tree',
+    fr: 'AromaDiffuser Christmas Tree',
+    it: 'AromaDiffuser Christmas Tree',
+    en: 'AromaDiffuser Christmas Tree'
+  },
+  Etna: { de: 'AromaDiffuser Etna', fr: 'AromaDiffuser Etna', it: 'AromaDiffuser Etna', en: 'AromaDiffuser Etna' },
+  Dubai: { de: 'AromaDiffuser Dubai', fr: 'AromaDiffuser Dubai', it: 'AromaDiffuser Dubai', en: 'AromaDiffuser Dubai' },
+  Dune: { de: 'AromaDiffuser Dune', fr: 'AromaDiffuser Dune', it: 'AromaDiffuser Dune', en: 'AromaDiffuser Dune' },
+  Eden: { de: 'AromaDiffuser Eden', fr: 'AromaDiffuser Eden', it: 'AromaDiffuser Eden', en: 'AromaDiffuser Eden' },
+  Fleur: { de: 'AromaDiffuser Fleur', fr: 'AromaDiffuser Fleur', it: 'AromaDiffuser Fleur', en: 'AromaDiffuser Fleur' },
+  'Green Mango': {
+    de: 'AromaDiffuser Green Mango',
+    fr: 'AromaDiffuser Green Mango',
+    it: 'AromaDiffuser Green Mango',
+    en: 'AromaDiffuser Green Mango'
+  },
+  'Lime Basil': {
+    de: 'AromaDiffuser Lime Basil',
+    fr: 'AromaDiffuser Lime Basil',
+    it: 'AromaDiffuser Lime Basil',
+    en: 'AromaDiffuser Lime Basil'
+  },
+  Rosso: { de: 'AromaDiffuser Rosso', fr: 'AromaDiffuser Rosso', it: 'AromaDiffuser Rosso', en: 'AromaDiffuser Rosso' },
+  'Salted Caramel': {
+    de: 'AromaDiffuser Salted Caramel',
+    fr: 'AromaDiffuser Salted Caramel',
+    it: 'AromaDiffuser Salted Caramel',
+    en: 'AromaDiffuser Salted Caramel'
+  },
+  'Salty Water': {
+    de: 'AromaDiffuser Salty Water',
+    fr: 'AromaDiffuser Salty Water',
+    it: 'AromaDiffuser Salty Water',
+    en: 'AromaDiffuser Salty Water'
+  },
+  Santal: { de: 'AromaDiffuser Santal', fr: 'AromaDiffuser Santal', it: 'AromaDiffuser Santal', en: 'AromaDiffuser Santal' },
+  Sugar: { de: 'AromaDiffuser Sugar', fr: 'AromaDiffuser Sugar', it: 'AromaDiffuser Sugar', en: 'AromaDiffuser Sugar' },
+  'Tobacco Vanilla': {
+    de: 'AromaDiffuser Tobacco Vanilla',
+    fr: 'AromaDiffuser Tobacco Vanilla',
+    it: 'AromaDiffuser Tobacco Vanilla',
+    en: 'AromaDiffuser Tobacco Vanilla'
+  },
+  Valencia: { de: 'AromaDiffuser Valencia', fr: 'AromaDiffuser Valencia', it: 'AromaDiffuser Valencia', en: 'AromaDiffuser Valencia' }
+};
+
 const diffuserScentDescriptions = {
   none: {
     de: 'Wählen Sie einen Duft, um die Stimmung Ihres Raums zu gestalten.',
@@ -3996,7 +4061,7 @@ const applyTranslations = () => {
   htmlElement.lang = currentLang;
   localStorage.setItem('nichehome-lang', currentLang);
   updateCarScentDescription();
-  updateDiffuserScentDescription();
+  updateDiffuserTitleAndDescription();
   updateDiffuserDescriptionToggleLabel();
 };
 
@@ -4229,15 +4294,21 @@ const updateDiffuserImage = () => {
   imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
 };
 
-const updateDiffuserScentDescription = () => {
+const updateDiffuserTitleAndDescription = () => {
   const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const titleEl = document.querySelector('[data-diffuser-title]');
   const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
-  if (!scentSelect || !descriptionEl) return;
+  if (!scentSelect || !titleEl || !descriptionEl) return;
   const scentKey = diffuserScentDescriptions[scentSelect.value] ? scentSelect.value : 'none';
   const lang = currentLang || 'de';
-  const entry = diffuserScentDescriptions[scentKey] || diffuserScentDescriptions.none;
-  const fallback = diffuserScentDescriptions.none;
-  descriptionEl.textContent = entry?.[lang] || fallback?.[lang] || '';
+
+  const titleEntry = diffuserScentTitles[scentKey] || diffuserScentTitles.none;
+  const titleFallback = diffuserScentTitles.none;
+  titleEl.textContent = titleEntry?.[lang] || titleFallback?.[lang] || '';
+
+  const descriptionEntry = diffuserScentDescriptions[scentKey] || diffuserScentDescriptions.none;
+  const descriptionFallback = diffuserScentDescriptions.none;
+  descriptionEl.textContent = descriptionEntry?.[lang] || descriptionFallback?.[lang] || '';
 };
 
 const initDiffuserConfigurator = () => {
@@ -4247,11 +4318,11 @@ const initDiffuserConfigurator = () => {
   volumeSelect.addEventListener('change', updateDiffuserPrice);
   scentSelect.addEventListener('change', () => {
     updateDiffuserImage();
-    updateDiffuserScentDescription();
+    updateDiffuserTitleAndDescription();
   });
   updateDiffuserPrice();
   updateDiffuserImage();
-  updateDiffuserScentDescription();
+  updateDiffuserTitleAndDescription();
 };
 
 const updateCandlePrice = () => {
