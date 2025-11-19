@@ -750,6 +750,7 @@ main {
   padding: 56px 0 72px;
 }
 
+/* Левая и правая колонка по 50% */
 .nh-category-hero__left,
 .nh-category-hero__right {
   flex: 0 0 50%;
@@ -757,6 +758,7 @@ main {
   box-sizing: border-box;
 }
 
+/* Левая колонка с текстом */
 .nh-category-hero__left {
   padding-right: 40px;
 }
@@ -820,10 +822,11 @@ main {
   font-size: 0.8rem;
 }
 
+/* Правая колонка слайдера */
 .nh-category-hero__right {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nh-category-hero__card {
