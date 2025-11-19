@@ -853,15 +853,17 @@ main {
   padding: 40px 0 60px;
 }
 
-/* Ограничить высоту правого изображения, чтобы оно не ломало раскладку */
+/* Изображения в слайдере категории: уменьшать, но не обрезать */
 .nh-category-hero__slider img,
 .nh-category-hero__slider .image-wrapper img,
 .nh-category-hero__slider picture img {
-  width: 100%;
-  height: auto;
-  max-height: 450px;
-  object-fit: cover;
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center center;
 }
 
 /* Поддержка возможных родительских контейнеров */
@@ -873,14 +875,19 @@ main {
 .nh-category-hero__slider .collection-image img,
 .nh-category-hero__slider .home-banner-img,
 .nh-category-hero__slider .home-banner-img img {
-  max-height: 450px;
-  object-fit: cover;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center center;
 }
 
-/* Чтобы контейнер слайдера не увеличивал высоту секции */
+/* Контейнер слайдера подстраивается под высоту изображения */
 .nh-category-hero__slider {
-  max-height: 450px;
-  overflow: hidden;
+  max-height: none;
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
@@ -916,7 +923,7 @@ main {
   .nh-category-hero__slider .collection-image img,
   .nh-category-hero__slider .home-banner-img,
   .nh-category-hero__slider .home-banner-img img {
-    max-height: 320px;
+    max-height: 340px;
   }
 }
 
