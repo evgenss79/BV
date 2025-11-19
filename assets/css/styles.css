@@ -1430,62 +1430,57 @@ main {
 
 .catalog-categories {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 24px;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-
-  /* Вся сетка из 2 рядов помещается на один экран */
-  height: calc(100vh - 200px); /* хедер + отступы */
   padding: 40px 0;
   box-sizing: border-box;
 }
 
-/* Карточка категории */
 .catalog-category-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  background: #f9f3ec;
+  border-radius: 24px;
   overflow: hidden;
-
-  /* Чтобы 2 ряда × 5 карточек поместились на экран */
-  aspect-ratio: 3 / 4; /* корректная высота для насыщенной сетки */
-}
-
-.catalog-category-card img {
-  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: inherit;
   height: 100%;
+}
+
+.catalog-category-card__image {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog-category-card__image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: cover;
+  display: block;
 }
 
-/* Подпись */
-.catalog-category-title {
-  padding: 12px;
+.catalog-category-card__title {
+  padding: 16px 18px 20px;
   font-size: 16px;
-  color: #000;
+  text-align: center;
 }
 
-/* Адаптив: планшеты */
 @media (max-width: 1199px) {
   .catalog-categories {
-    grid-template-columns: repeat(3, 1fr);
-    height: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-/* Мобильные */
 @media (max-width: 768px) {
   .catalog-categories {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .catalog-category-card {
-    aspect-ratio: 3 / 4;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
