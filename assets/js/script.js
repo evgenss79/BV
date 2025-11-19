@@ -4828,8 +4828,7 @@ const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
 const carParfumPrice = 12.9;
 const carPriceCurrency = 'CHF';
-const diffusersDescriptionWrapper = document.querySelector('[data-diffusers-description-wrapper]');
-const diffusersDescriptionToggle = document.querySelector('[data-diffusers-description-toggle]');
+const categoryHeroDescriptionSections = [];
 let candleScentDescriptionElement;
 let candleScentDescriptionWrapper;
 let candleScentDescriptionToggle;
@@ -4916,34 +4915,53 @@ const updateDescriptionVisibility = (wrapperEl, toggleEl, hasDescription, hideTo
   }
 };
 
-const syncDiffusersDescriptionToggleLabel = () => {
-  if (!diffusersDescriptionWrapper || !diffusersDescriptionToggle) return;
-  const collapsed = diffusersDescriptionWrapper.classList.contains('is-collapsed');
-  diffusersDescriptionToggle.setAttribute('data-i18n', collapsed ? 'common.toggle.more' : 'common.toggle.less');
+const initCategoryHeroDescriptions = () => {
+  const descriptionBlocks = document.querySelectorAll('[data-category-description]');
+  descriptionBlocks.forEach((wrapper) => {
+    const content = wrapper.querySelector('[data-category-description-content]');
+    const toggle = wrapper.querySelector('[data-category-readmore]');
+    if (!content || !toggle) return;
+
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      toggleDescriptionSection(wrapper, toggle);
+    });
+
+    categoryHeroDescriptionSections.push({ wrapper, toggle, content });
+  });
+  refreshCategoryHeroDescriptions();
 };
 
-const toggleDiffusersDescription = () => {
-  if (!diffusersDescriptionWrapper || !diffusersDescriptionToggle) return;
-  const collapsed = diffusersDescriptionWrapper.classList.contains('is-collapsed');
-  if (collapsed) {
-    diffusersDescriptionWrapper.classList.remove('is-collapsed');
-    diffusersDescriptionWrapper.classList.add('is-expanded');
-    diffusersDescriptionToggle.setAttribute('data-i18n', 'common.toggle.less');
-  } else {
-    diffusersDescriptionWrapper.classList.add('is-collapsed');
-    diffusersDescriptionWrapper.classList.remove('is-expanded');
-    diffusersDescriptionToggle.setAttribute('data-i18n', 'common.toggle.more');
-  }
+const refreshCategoryHeroDescriptions = () => {
+  categoryHeroDescriptionSections.forEach(({ wrapper, toggle, content }) => {
+    if (!wrapper || !toggle || !content) return;
+    const hasDescription = Boolean(content.textContent.trim()) || content.children.length > 0;
+    updateDescriptionVisibility(wrapper, toggle, hasDescription);
+    if (!hasDescription) {
+      wrapper.classList.remove('is-collapsed', 'is-expanded');
+      return;
+    }
 
-  applyTranslations();
+    const collapseHeight = Number(wrapper.dataset.collapseHeight) || 220;
+    const shouldCollapse = content.scrollHeight > collapseHeight;
+    updateDescriptionVisibility(wrapper, toggle, true, !shouldCollapse);
+
+    if (!shouldCollapse) {
+      wrapper.classList.add('is-expanded');
+      wrapper.classList.remove('is-collapsed');
+      return;
+    }
+
+    if (!wrapper.classList.contains('is-expanded') && !wrapper.classList.contains('is-collapsed')) {
+      collapseDescriptionSection(wrapper, toggle);
+      return;
+    }
+
+    refreshToggleLabel(wrapper, toggle);
+  });
 };
-
-if (diffusersDescriptionToggle) {
-  diffusersDescriptionToggle.addEventListener('click', toggleDiffusersDescription);
-}
 
 const applyTranslations = () => {
-  syncDiffusersDescriptionToggleLabel();
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach((el) => {
     const key = el.getAttribute('data-i18n');
@@ -4961,6 +4979,7 @@ const applyTranslations = () => {
   updateDiffuserTitleAndDescription();
   updateCandleScentDescription();
   updateCarScentDescription();
+  refreshCategoryHeroDescriptions();
 };
 
 const setActiveLangButton = () => {
@@ -5361,6 +5380,7 @@ const initCarConfigurator = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
+  initCategoryHeroDescriptions();
   initTitles();
   initLanguageSwitcher();
   initScrollButtons();
