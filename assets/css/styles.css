@@ -743,9 +743,9 @@ main {
 
 .nh-category-hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 80px 0;
+  padding: 48px 0 72px;
 }
 
 .nh-category-hero__left,
@@ -847,6 +847,16 @@ main {
   margin: 0 !important;
 }
 
+/* Ограничение высоты для картинок/слайдера в блоке категории */
+.nh-category-hero__slider img,
+.nh-category-hero__slider .feature-box img,
+.nh-category-hero__slider .image-wrapper img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .nh-category-hero {
     flex-direction: column;
@@ -865,6 +875,12 @@ main {
 
   .nh-category-hero__right {
     justify-content: center;
+  }
+
+  .nh-category-hero__slider img,
+  .nh-category-hero__slider .feature-box img,
+  .nh-category-hero__slider .image-wrapper img {
+    max-height: 380px;
   }
 }
 
