@@ -622,7 +622,12 @@ main {
 }
 
 .product-card__scent-description-wrapper {
-  margin: 0.25rem 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.35rem 0 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-line);
 }
 
 .product-card__scent-description-wrapper.is-collapsed .product-card__scent-description {
@@ -635,7 +640,6 @@ main {
 }
 
 .product-card__scent-toggle {
-  margin-top: 0.4rem;
   border: none;
   background: none;
   padding: 0;
@@ -643,7 +647,7 @@ main {
   font-weight: 500;
   text-decoration: underline;
   font-family: inherit;
-  color: var(--color-text);
+  color: var(--color-gold-dark);
 }
 
 .product-card__price {
@@ -827,79 +831,40 @@ main {
 
 .diffusers-header {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-  gap: clamp(1.5rem, 3vw, 2.5rem);
-  align-items: flex-start;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
   padding-top: 0.5rem;
+  margin-bottom: 48px;
 }
 
-.diffusers-header__media {
+.diffusers-header__media.diffusers-slider {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .diffusers-slider__frame {
-  width: min(100%, 420px);
+  width: 100%;
+  max-width: 520px;
   aspect-ratio: 4 / 5;
   background: #f7f4f0;
   border-radius: 24px;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 .diffusers-slider__image[data-diffuser-hero-slider] {
-  width: 100%;
-  height: 100%;
   max-width: 100%;
   max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
   display: block;
-}
-
-.diffusers-description {
-  margin-top: clamp(1.25rem, 2vw, 2rem);
-}
-
-.diffusers-description__text {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--color-charcoal);
-  position: relative;
-}
-
-.diffusers-description__text > *:first-child {
-  margin-top: 0;
-}
-
-.diffusers-description--collapsed .diffusers-description__text {
-  max-height: 7.25rem;
-  overflow: hidden;
-}
-
-.diffusers-description--collapsed .diffusers-description__text::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 90%);
-}
-
-.diffusers-description__toggle {
-  margin-top: 0.5rem;
-  border: none;
-  background: none;
-  font-size: 0.9rem;
-  color: var(--color-charcoal);
-  text-decoration: underline;
-  cursor: pointer;
-  padding: 0;
 }
 
 .diffusers-product {
