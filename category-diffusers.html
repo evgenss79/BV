@@ -145,8 +145,20 @@
         <div class="product-card__body">
           <p class="product-card__eyebrow" data-i18n="categoryDiffusers.products.label">Kollektion</p>
           <h3 class="product-card__title" data-diffuser-title>Aroma-Diffusoren Signature Line</h3>
-          <p class="product-card__scent-description" data-diffuser-scent-description></p>
-          <p data-i18n="diffusers.product.description">Konfigurieren Sie Volumen und Duft aus 21 Signature-Kompositionen. Mundgeblasenes Glas, italienische Rezepturen und austauschbare Sticks.</p>
+          <div
+            class="product-card__scent-description-wrapper is-collapsed"
+            data-diffuser-scent-description-wrapper
+          >
+            <p class="product-card__scent-description" data-diffuser-scent-description></p>
+            <button
+              type="button"
+              class="product-card__scent-toggle"
+              data-diffuser-scent-toggle
+              aria-expanded="false"
+            >
+              Развернуть
+            </button>
+          </div>
 
           <div class="product-card__options">
             <label class="product-card__field">
