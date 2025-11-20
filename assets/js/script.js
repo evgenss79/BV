@@ -4871,6 +4871,9 @@ const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
 
+const interiorPerfumeDefaultImage = `${diffuserImageBaseUrl}Travel-5${diffuserImageSuffix}`;
+const textileDefaultImage = 'https://raw.githubusercontent.com/evgenss79/BV_img/main/Textil-spray.jpg?raw=true';
+
 const carImageBaseUrl = diffuserImageBaseUrl;
 const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
@@ -4890,6 +4893,127 @@ let carImageElement;
 let carScentDescriptionElement;
 let carScentDescriptionWrapper;
 let carScentDescriptionToggle;
+
+const limitedEditionDescriptions = {
+  new_york: `New York Scented Candle
+
+A vibrant party, sharp cocktails, and the spicy freshness of the city of lights, skyscrapers, and unexpected encounters…
+Your night will be remembered by the scent of dark wood, smoky amber, and bold citrus notes.
+
+Designed in an elegant minimalist style, this candle suits both modern and classic interiors. It brings the atmosphere of a big city evening and serves as a chic decorative accent for your home.
+
+Crafted using only high-quality vegetable waxes — coconut and soy — it offers excellent scent diffusion. Within minutes of lighting, your space is filled with a deep, rich, and long-lasting fragrance trail.
+
+This limited edition BY VELCHEVA candle is both a stylish home décor piece and a wonderful gift for friends, loved ones, or colleagues.
+
+Features:
+Volume: 270 ml
+Burn time: approx. 40 hours
+Premium vegetable waxes: coconut and soy
+Fragrance: woody-amber with citrus notes
+Design: elegant and minimalist`,
+  abu_dhabi: `Abu Dhabi Scented Candle
+
+Embracing warm nights under a starlit sky and soft sand beneath your feet…
+Rich spicy notes blend with gentle lavender and a lush bouquet of florals — this is the scent of your unforgettable weekend in Abu Dhabi.
+
+Crafted in an elegant, minimalist design, this candle will complement any interior — from modern to classic. More than just a source of fragrance, it’s a refined decorative accent for your home.
+
+We use only high-quality plant-based waxes — coconut and soy — known for their excellent ability to retain and release fragrance. Within minutes of lighting, your space is filled with a rich, long-lasting, and sophisticated perfumed trail.
+
+A scented candle from the BY VELCHEVA limited collection is a stylish decor element for your home and also a perfect gift for friends, loved ones, or colleagues.
+
+Details:
+Volume: 270 ml
+Burn time: approx. 40 hours
+Premium plant-based waxes: coconut and soy
+Fragrance: oriental-floral with notes of lavender and spices
+Design: elegant and minimalist`,
+  palermo: `Palermo Scented Candle
+
+Gentle rays of sunshine, a refreshing coastal breeze, and an abundance of citrus fruits you can pick by hand…
+Radiant notes of mandarin and bitter orange blend with the soft scent of peonies and vibrant basil — this is how you’ll remember a walk through Palermo.
+
+The candle is designed in a refined minimalist style and will beautifully complement both modern and classic interiors. Its fragrance fills the space with lightness, joy, and a sunny mood.
+
+We use only high-quality vegetable waxes — coconut and soy. They ensure even burning and excellent fragrance diffusion, which begins to unfold within the first minutes of lighting.
+
+The limited-edition BY VELCHEVA scented candle is a stylish piece of home décor and a perfect gift for friends, loved ones, or colleagues.
+
+Specifications:
+Volume: 270 ml
+Burn time: approximately 40 hours
+Premium vegetable waxes: coconut and soy
+Fragrance: citrus-floral with notes of peony and basil
+Design: elegant and minimalist`
+};
+
+const productConfigs = {
+  'category-diffusers': {
+    pricing: diffuserPricing,
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: diffuserDefaultImage,
+    scentTranslationBase: 'diffusers.scents',
+    titlePrefix: () => resolveTranslation(currentLang, 'diffusers.product.titlePrefix') || '',
+    defaultTitle: () => resolveTranslation(currentLang, 'diffusers.product.titleDefault') || '',
+    includeNone: true
+  },
+  'category-room': {
+    pricing: {
+      volumes: {
+        '10': 8.9,
+        '50': 16.9
+      },
+      baseCurrency: 'CHF'
+    },
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: interiorPerfumeDefaultImage,
+    defaultImageByVolume: {
+      '10': interiorPerfumeDefaultImage,
+      '50': interiorPerfumeDefaultImage
+    },
+    scentTranslationBase: 'diffusers.scents',
+    titlePrefix: 'Interior Perfume',
+    defaultTitle: 'Interior Perfume',
+    generateScents: true,
+    includeNone: true
+  },
+  'category-textile': {
+    pricing: {
+      fixed: 20.9,
+      baseCurrency: 'CHF'
+    },
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: textileDefaultImage,
+    scentTranslationBase: 'diffusers.scents',
+    titlePrefix: 'Textile spray (500ml)',
+    defaultTitle: 'Textile spray (500ml)',
+    generateScents: true,
+    excludeScentIds: ['cherry_blossom', 'christmas_tree', 'dubai', 'rosso', 'salted_caramel', 'salty_water'],
+    includeNone: true
+  },
+  'category-limited': {
+    pricing: {
+      fixed: 45.9,
+      baseCurrency: 'CHF'
+    },
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: 'https://raw.githubusercontent.com/evgenss79/BV_img/main/3%20velas.jpg?raw=true',
+    titlePrefix: 'Limited Edition',
+    defaultTitle: 'Limited Edition',
+    scents: [
+      { id: 'new_york', value: 'New York', label: 'New York' },
+      { id: 'abu_dhabi', value: 'Abu Dhabi', label: 'Abu Dhabi' },
+      { id: 'palermo', value: 'Palermo', label: 'Palermo' }
+    ],
+    scentDescriptions: limitedEditionDescriptions,
+    includeNone: false
+  }
+};
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -4913,6 +5037,63 @@ const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
 let diffuserScentDescriptionWrapperEl;
 let diffuserScentDescriptionToggleEl;
+let currentProductConfig = null;
+
+const getActiveProductConfig = () => {
+  const page = document.body?.dataset?.page;
+  return productConfigs[page] || productConfigs['category-diffusers'];
+};
+
+const getDiffuserScentOptions = (excluded = [], includeNone = true) => {
+  const options = [];
+  const scentData = translations.en?.diffusers?.scents || {};
+  const excludedSet = new Set(excluded || []);
+  if (includeNone && !excludedSet.has('none')) {
+    const noneLabel = resolveTranslation(currentLang, 'diffusers.scents.none.label') || 'No fragrance';
+    options.push({ id: 'none', value: 'none', label: noneLabel });
+  }
+  Object.keys(scentData).forEach((scentId) => {
+    if (scentId === 'none' || excludedSet.has(scentId)) return;
+    const baseLabel = resolveTranslation('en', `diffusers.scents.${scentId}.label`) || scentId;
+    const localized = resolveTranslation(currentLang, `diffusers.scents.${scentId}.label`) || baseLabel;
+    options.push({ id: scentId, value: baseLabel, label: localized });
+  });
+  return options;
+};
+
+const populateScentSelect = (config) => {
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  if (!scentSelect || !config) return;
+  const shouldGenerate = config.generateScents || config.scents;
+  if (!shouldGenerate) return;
+  const options = config.scents || getDiffuserScentOptions(config.excludeScentIds, config.includeNone);
+  scentSelect.innerHTML = '';
+  options.forEach((option) => {
+    const optEl = document.createElement('option');
+    optEl.value = option.value;
+    optEl.dataset.scentId = option.id;
+    optEl.textContent = option.label;
+    scentSelect.appendChild(optEl);
+  });
+};
+
+const getConfigTitlePrefix = (config) => {
+  if (!config) return '';
+  return typeof config.titlePrefix === 'function' ? config.titlePrefix() : config.titlePrefix || '';
+};
+
+const getConfigDefaultTitle = (config) => {
+  if (!config) return '';
+  return typeof config.defaultTitle === 'function' ? config.defaultTitle() : config.defaultTitle || '';
+};
+
+const getDefaultImageForConfig = (config, volumeValue = null) => {
+  if (!config) return diffuserDefaultImage;
+  if (config.defaultImageByVolume && volumeValue && config.defaultImageByVolume[volumeValue]) {
+    return config.defaultImageByVolume[volumeValue];
+  }
+  return config.defaultImage || diffuserDefaultImage;
+};
 
 const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
@@ -5215,44 +5396,64 @@ const initDiffuserHeroSlider = () => {
 };
 
 const updateDiffuserPrice = () => {
+  const config = currentProductConfig || getActiveProductConfig();
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const priceEl = document.querySelector('[data-diffuser-price]');
-  if (!volumeSelect || !priceEl) return;
-  const selectedVolume = volumeSelect.value;
-  const price = diffuserPricing.volumes[selectedVolume];
+  if (!priceEl || !config?.pricing) return;
+  let price = null;
+  if (config.pricing.volumes && volumeSelect) {
+    price = config.pricing.volumes[volumeSelect.value];
+  } else if (config.pricing.fixed != null) {
+    price = config.pricing.fixed;
+  }
   if (typeof price === 'number') {
-    priceEl.textContent = `${diffuserPricing.baseCurrency} ${price.toFixed(2)}`;
+    const currency = config.pricing.baseCurrency || diffuserPricing.baseCurrency;
+    priceEl.textContent = `${currency} ${price.toFixed(2)}`;
   }
 };
 
 const updateDiffuserImage = () => {
+  const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
   const imageEl = document.querySelector('[data-diffuser-image]');
-  if (!scentSelect || !imageEl) return;
-  const scent = scentSelect.value;
+  const volumeSelect = document.querySelector('[data-diffuser-volume]');
+  if (!imageEl) return;
+  const scent = scentSelect?.value;
   if (!scent || scent === 'none') {
-    imageEl.src = diffuserDefaultImage;
+    imageEl.src = getDefaultImageForConfig(config, volumeSelect?.value);
     return;
   }
   const encoded = encodeURIComponent(scent);
-  imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
+  const baseUrl = config?.imageBaseUrl || diffuserImageBaseUrl;
+  const suffix = config?.imageSuffix || diffuserImageSuffix;
+  imageEl.src = `${baseUrl}${encoded}${suffix}`;
 };
 
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
+  const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
   const titleEl = document.querySelector('[data-diffuser-title]');
   const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
-  if (!scentSelect || !titleEl || !descriptionEl) return;
+  if (!titleEl || !descriptionEl) return;
   const scentId = getScentIdFromSelect(scentSelect);
-  const labelKey = `diffusers.scents.${scentId}.label`;
-  const scentLabel =
-    resolveTranslation(currentLang, labelKey) || scentSelect.selectedOptions?.[0]?.textContent?.trim() || '';
-  const prefix = resolveTranslation(currentLang, 'diffusers.product.titlePrefix') || '';
-  const defaultTitle = resolveTranslation(currentLang, 'diffusers.product.titleDefault') || '';
-  titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
+  const prefix = getConfigTitlePrefix(config);
+  const defaultTitle = getConfigDefaultTitle(config);
 
-  const descriptionKey = `diffusers.scents.${scentId}.description`;
-  const descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  let scentLabel = scentSelect?.selectedOptions?.[0]?.textContent?.trim() || '';
+  if (config?.scentTranslationBase) {
+    const labelKey = `${config.scentTranslationBase}.${scentId}.label`;
+    scentLabel = resolveTranslation(currentLang, labelKey) || scentLabel;
+  }
+
+  let descriptionText = '';
+  if (config?.scentDescriptions && scentId !== 'none') {
+    descriptionText = config.scentDescriptions[scentId] || '';
+  } else if (config?.scentTranslationBase) {
+    const descriptionKey = `${config.scentTranslationBase}.${scentId}.description`;
+    descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  }
+
+  titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
   descriptionEl.textContent = descriptionText;
 
   ensureDiffuserScentDescriptionElements();
@@ -5294,11 +5495,16 @@ const initDiffuserScentDescriptionToggle = () => {
 };
 
 const initDiffuserConfigurator = () => {
+  currentProductConfig = getActiveProductConfig();
+  populateScentSelect(currentProductConfig);
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const scentSelect = document.querySelector('[data-diffuser-scent]');
-  if (!volumeSelect || !scentSelect) return;
-  volumeSelect.addEventListener('change', updateDiffuserPrice);
-  scentSelect.addEventListener('change', () => {
+  if (!volumeSelect && !scentSelect && !document.querySelector('[data-diffuser-price]')) return;
+  volumeSelect?.addEventListener('change', () => {
+    updateDiffuserPrice();
+    updateDiffuserImage();
+  });
+  scentSelect?.addEventListener('change', () => {
     updateDiffuserImage();
     updateDiffuserTitleAndDescription(true);
   });
