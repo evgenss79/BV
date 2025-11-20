@@ -82,7 +82,11 @@
             <h1 class="nh-category-hero__title">Textile Spray</h1>
 
             <div class="nh-category-hero__description is-collapsed" data-category-description>
-              <div class="nh-category-hero__description-content" data-category-description-content>
+              <div
+                class="nh-category-hero__description-content"
+                data-category-description-content
+                data-i18n="category.textile_spray.description"
+              >
                 <p>Long-term storage of fabric products in a closet or dresser does not bring them freshness: on the contrary, unpleasant musty and moldy odors appear. This is especially true when dealing with an unfavorable microclimate inside the premises (high humidity, dust, suspended particles, etc.).</p>
 
                 <p>The good news is that there is an effective means to achieve a comprehensive effect on the material and eliminate the negative consequences of long-term storage: a scented fabric spray.</p>
@@ -130,6 +134,7 @@
         <div class="product-card__media">
           <img
             class="product-card__image"
+            data-diffuser-image
             src="https://raw.githubusercontent.com/evgenss79/BV_img/main/Textil-spray.jpg?raw=true"
             alt="Textile Spray bottle"
             loading="lazy"
@@ -137,12 +142,12 @@
         </div>
         <div class="product-card__body">
           <p class="product-card__eyebrow">Collection</p>
-          <h3 class="product-card__title">Textile Spray Care</h3>
+          <h3 class="product-card__title" data-diffuser-title>Textile spray (500ml)</h3>
           <div
             class="product-card__scent-description-wrapper is-collapsed"
             data-diffuser-scent-description-wrapper
           >
-            <p class="product-card__scent-description">A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.</p>
+            <p class="product-card__scent-description" data-diffuser-scent-description>A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.</p>
             <button
               type="button"
               class="product-card__scent-toggle"
@@ -154,29 +159,14 @@
 
           <div class="product-card__options">
             <label class="product-card__field">
-              <span>Volume</span>
-              <select>
-                <option value="50">50 ml</option>
-                <option value="75">75 ml</option>
-                <option value="100">100 ml</option>
-              </select>
-            </label>
-
-            <label class="product-card__field">
-              <span>Scent</span>
-              <select>
-                <option value="jasmine">Jasmine</option>
-                <option value="mandarin">Mandarin</option>
-                <option value="rose">Rose</option>
-                <option value="pine-needles">Pine needles</option>
-                <option value="musk">Musk</option>
-              </select>
+              <span>Fragrance</span>
+              <select data-diffuser-scent></select>
             </label>
           </div>
 
           <div class="product-card__meta">
             <span class="product-card__price-label">Price</span>
-            <span class="product-card__price">CHF 36.00</span>
+            <span class="product-card__price" data-diffuser-price>CHF 20.90</span>
           </div>
 
           <button class="btn btn--gold" data-add-to-cart data-i18n="common.cta.addToCart"></button>

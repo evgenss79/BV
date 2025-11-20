@@ -1,5 +1,119 @@
 // CHANGE YOUR REAL TEXTS HERE. The official brand representative will paste their own content.
 // Duplicate this translations object structure to add more languages. Keys correspond to data-i18n attributes across the HTML files.
+const sharedCategoryDescriptions = {
+  limitedEdition: `A collection of three exclusive scented candles – a limited edition inspired by the fragrances of the world’s most luxurious locations.
+
+The city of a million lights – New York, the mysterious and opulent Abu Dhabi, the sunny and gentle Palermo – choose the direction of your journey.
+
+Each candle in the collection is crafted in a minimalist and elegant style, blending seamlessly into your interior.
+
+We use premium coconut and soy waxes, which provide the best fragrance diffusion – a rich perfumed trail will fill your room shortly after lighting the candle.`,
+  textileSpray: `Long-term storage of fabric products in a closet or dresser does not bring them freshness: on the contrary, unpleasant musty and moldy odors appear. This is especially true when dealing with an unfavorable microclimate inside the premises (high humidity, dust, suspended particles, etc.).
+
+The good news is that there is an effective means to achieve a comprehensive effect on the material and eliminate the negative consequences of long-term storage: a scented fabric spray.
+
+To choose, order, and purchase this fragrant textile accessory for your home, you should definitely contact our online store.
+
+For the information of potential buyers: all products included in our current online catalog have undergone multi-stage manufacturing quality control and are certified as meeting the requirements of current standards. This fact guarantees their ecological safety for the skin, exquisite and rich aroma, quick and effective elimination of the unpleasant musty smell on the fabric, and long-lasting care for your belongings.
+
+Composition of Textile Spray
+Textile spray is a complex product made up of numerous concentrated components. The main ingredients in the composition are essential oils, which are dissolved in an aqueous medium with the help of solubilizers.
+Important: When using essential oils in their pure form, there is a high probability of greasy stains appearing on the material. Solubilizers, by dissolving the oil in water, reduce its concentration and allow the solution to be used on any type of textile product without causing damage to these accessories and the skin.
+To obtain a ready-to-use textile spray, the following substances and components are also used:
+– special preservatives. Their main purpose is to protect the spray from pathogenic bacteria and microbes, ensuring long-term storage and use;
+– distilled water (occupies almost 90% of the total volume);
+– vitamin E.
+For your information: a bottle of ready-made fabric spray contains 50 ml and more. The choice of one volume or another is the individual prerogative of each individual consumer.
+
+Main Advantages of Textile Spray
+The long-lasting scent is the main and undeniable advantage that most buyers prefer.
+For your information: Use is limited to spraying the solution from the bottle at a distance of 20–25 cm from the fabric. Increasing the intensity of application increases the duration of action and the durability of the scent on the fabric, even after washing.
+Scented spray is a necessary product for the textile industry and also has the following advantages:
+– It can be used on any type of textile product, including blankets, bedspreads, bed linen, casual wear, curtains, sheers, bath towels, etc.
+– Environmental safety. The product does not contain hazardous substances or reagents, and the product itself has hypoallergenic properties.
+– It has a slight softening and antistatic effect. After use, the material becomes pleasant to the touch and soft.
+– A variety of scents and aromas. You can choose a product based on your personal preferences: jasmine / mandarin / rose / pine needles / musk.`,
+  autoPerfume: 'Clips, capsules and sprays provide consistent fragrance diffusion without residue.',
+  interiorPerfume: `Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that\'s a pleasure to be in.
+
+Benefits of Using Home Fragrances
+Perfumes are often used in homes to fill the space with pleasant aromas, creating a comfortable living and working environment. They help solve the following problems:
+– Creating a favorable environment. Fragrances help make a space more welcoming and comfortable, evoking associations with freshness, warmth, and cleanliness.
+– Improves mood. Natural essential oils can relieve stress, improve mood, and help with depression.
+– Air freshening and purification. Some home fragrances have antiseptic properties. They can be used to cleanse the air of unpleasant odors.
+– Increased concentration and performance. Aromas with citrus and menthol notes help you focus and improve brain activity, which is especially important for working in offices or commercial spaces.
+– Relaxation and improved sleep. Home fragrances such as lavender, vanilla, and sandalwood help you calm, relax, and prepare for a deep sleep.
+
+If you use perfume to deodorize your home, you can not only ensure a pleasant aroma is diffused in the room but also fill yourself with positive emotions throughout the day.
+
+Ways to Use Fragrances in the Room
+There are many types of fragrances that vary in how they are used and the intensity of their effect. You can select a product based on your preferences or the characteristics of the room. The most common home fragrances include:
+– Scented candles. Scented candles are one of the most popular ways to scent your home. They create soft lighting and fill the space with a pleasant aroma. Decorative scented candles will allow you to decorate your festive table and celebrate a special event. It is recommended to choose candles made with natural soy and beeswax with the addition of essential oils.
+– Aerosols. These are convenient for instantly refreshing the environment. The spray can be applied to curtains, bedding, or other interior items. You can take these accessories with you while traveling and use them in hotel rooms. The spray is perfect for quickly eliminating unpleasant odors.
+– Aroma diffusers. The reed aroma diffuser provides a long-lasting scent throughout the home. It is ideal for meditation, relaxation after work, or strenuous workouts. The aroma intensity can be adjusted with reeds. The aroma diffuser can be ultrasonic. It affects water and essential oils using ultrasonic waves. The ultrasonic aroma diffuser is easy to use and has a long lifespan.
+
+Using scented candles, diffusers, sprays, and incense stick sets can help fill your home with warmth, improve your mood, and make the space more inviting.`,
+};
+
+const sharedProductDescriptions = {
+  limitedEdition: {
+    new_york: `New York Scented Candle
+
+A vibrant party, sharp cocktails, and the spicy freshness of the city of lights, skyscrapers, and unexpected encounters…
+Your night will be remembered by the scent of dark wood, smoky amber, and bold citrus notes.
+
+Designed in an elegant minimalist style, this candle suits both modern and classic interiors. It brings the atmosphere of a big city evening and serves as a chic decorative accent for your home.
+
+Crafted using only high-quality vegetable waxes — coconut and soy — it offers excellent scent diffusion. Within minutes of lighting, your space is filled with a deep, rich, and long-lasting fragrance trail.
+
+This limited edition BY VELCHEVA candle is both a stylish home décor piece and a wonderful gift for friends, loved ones, or colleagues.
+
+Features:
+Volume: 270 ml
+Burn time: approx. 40 hours
+Premium vegetable waxes: coconut and soy
+Fragrance: woody-amber with citrus notes
+Design: elegant and minimalist`,
+    abu_dhabi: `Abu Dhabi Scented Candle
+
+Embracing warm nights under a starlit sky and soft sand beneath your feet…
+Rich spicy notes blend with gentle lavender and a lush bouquet of florals — this is the scent of your unforgettable weekend in Abu Dhabi.
+
+Crafted in an elegant, minimalist design, this candle will complement any interior — from modern to classic. More than just a source of fragrance, it’s a refined decorative accent for your home.
+
+We use only high-quality plant-based waxes — coconut and soy — known for their excellent ability to retain and release fragrance. Within minutes of lighting, your space is filled with a rich, long-lasting, and sophisticated perfumed trail.
+
+A scented candle from the BY VELCHEVA limited collection is a stylish decor element for your home and also a perfect gift for friends, loved ones, or colleagues.
+
+Details:
+Volume: 270 ml
+Burn time: approx. 40 hours
+Premium plant-based waxes: coconut and soy
+Fragrance: oriental-floral with notes of lavender and spices
+Design: elegant and minimalist`,
+    palermo: `Palermo Scented Candle
+
+Gentle rays of sunshine, a refreshing coastal breeze, and an abundance of citrus fruits you can pick by hand…
+Radiant notes of mandarin and bitter orange blend with the soft scent of peonies and vibrant basil — this is how you’ll remember a walk through Palermo.
+
+The candle is designed in a refined minimalist style and will beautifully complement both modern and classic interiors. Its fragrance fills the space with lightness, joy, and a sunny mood.
+
+We use only high-quality vegetable waxes — coconut and soy. They ensure even burning and excellent fragrance diffusion, which begins to unfold within the first minutes of lighting.
+
+The limited-edition BY VELCHEVA scented candle is a stylish piece of home décor and a perfect gift for friends, loved ones, or colleagues.
+
+Specifications:
+Volume: 270 ml
+Burn time: approximately 40 hours
+Premium vegetable waxes: coconut and soy
+Fragrance: citrus-floral with notes of peony and basil
+Design: elegant and minimalist`,
+  },
+  textileSpray: {
+    none: 'A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.'
+  }
+};
+
 const translations = {
   de: {
     meta: {
@@ -194,6 +308,7 @@ const translations = {
         candles: 'Duftkerzen',
         limited_edition: 'Limitierte Kollektion',
         home_perfume: 'Raumduft',
+        interior_perfume: 'Raumduft',
         textile_spray: 'Textilspray',
         gift_sets: 'Geschenksets',
         accessories: 'Accessoires',
@@ -1321,7 +1436,29 @@ Basisnoten: Holzige Noten, Moschus`
       section2: { title: '2. Preise & Zahlung', paragraph: 'Alle Preise sind in CHF inklusive Mehrwertsteuer angegeben. Zahlungen erfolgen via Kreditkarte, TWINT oder Banküberweisung innerhalb von 10 Tagen.' },
       section3: { title: '3. Lieferung & Gefahrübergang', paragraph: 'Lieferungen erfolgen per Post oder Kurier innerhalb der Schweiz. Die Gefahr geht mit Übergabe an den Transportdienstleister auf den Kunden über.' },
       section4: { title: '4. Rückgabe & Reklamation', paragraph: 'Ungeöffnete Produkte können innerhalb von 14 Tagen retourniert werden. Beschädigte Artikel sind innerhalb von 48 Stunden nach Erhalt zu melden.' },
-      section5: { title: '5. Haftung & Gerichtsstand', paragraph: 'Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.' }
+    section5: { title: '5. Haftung & Gerichtsstand', paragraph: 'Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.' }
+    },
+    category: {
+      limited_edition: {
+        description: sharedCategoryDescriptions.limitedEdition
+      },
+      textile_spray: {
+        description: sharedCategoryDescriptions.textileSpray
+      },
+      auto_perfume: {
+        description: sharedCategoryDescriptions.autoPerfume
+      },
+      interior_perfume: {
+        description: sharedCategoryDescriptions.interiorPerfume
+      }
+    },
+    product: {
+      limited_edition: {
+        description: sharedProductDescriptions.limitedEdition
+      },
+      textile_spray: {
+        description: sharedProductDescriptions.textileSpray
+      }
     }
   },
   fr: {
@@ -1517,6 +1654,7 @@ Basisnoten: Holzige Noten, Moschus`
         candles: 'Bougies parfumées',
         limited_edition: 'Collection limitée',
         home_perfume: 'Parfum d’intérieur',
+        interior_perfume: 'Parfum d’intérieur',
         textile_spray: 'Spray textile',
         gift_sets: 'Coffrets cadeaux',
         accessories: 'Accessoires',
@@ -2405,6 +2543,16 @@ Notes de fond : Notes boisées, Musc`
       section3: { title: '3. Livraison & transfert des risques', paragraph: 'Livraison par poste ou coursier en Suisse. Les risques sont transférés au transporteur lors de la remise.' },
       section4: { title: '4. Retour & réclamation', paragraph: 'Produits non ouverts retournables sous 14 jours. Dommages à signaler dans les 48 h.' },
       section5: { title: '5. Responsabilité & for', paragraph: 'Responsabilité limitée aux fautes graves. Droit suisse, for juridique Zurich.' }
+    },
+    category: {
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume }
+    },
+    product: {
+      limited_edition: { description: sharedProductDescriptions.limitedEdition },
+      textile_spray: { description: sharedProductDescriptions.textileSpray }
     }
   },
   it: {
@@ -2600,6 +2748,7 @@ Notes de fond : Notes boisées, Musc`
         candles: 'Candele profumate',
         limited_edition: 'Collezione limitata',
         home_perfume: 'Profumi ambiente',
+        interior_perfume: 'Profumi ambiente',
         textile_spray: 'Spray tessile',
         gift_sets: 'Cofanetti regalo',
         accessories: 'Accessori',
@@ -3487,6 +3636,16 @@ Note di fondo: Note legnose, Muschio`
       section3: { title: '3. Consegna & rischio', paragraph: 'Spedizione con posta o corriere in Svizzera. Il rischio passa al cliente al momento della consegna al vettore.' },
       section4: { title: '4. Resi & reclami', paragraph: 'Prodotti sigillati restituiti entro 14 giorni. Danni da segnalare entro 48 ore.' },
       section5: { title: '5. Responsabilità & foro', paragraph: 'Responsabilità limitata a dolo o colpa grave. Foro competente Zurigo, diritto svizzero.' }
+    },
+    category: {
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume }
+    },
+    product: {
+      limited_edition: { description: sharedProductDescriptions.limitedEdition },
+      textile_spray: { description: sharedProductDescriptions.textileSpray }
     }
   },
   en: {
@@ -3682,6 +3841,7 @@ Note di fondo: Note legnose, Muschio`
         candles: 'Scented candles',
         limited_edition: 'Limited edition',
         home_perfume: 'Interior Perfume',
+        interior_perfume: 'Interior Perfume',
         textile_spray: 'Textile spray',
         gift_sets: 'Gift sets',
         accessories: 'Accessories',
@@ -4833,6 +4993,16 @@ Base notes: Woody notes, Musk`
       section3: { title: '3. Delivery & risk', paragraph: 'Deliveries ship via post or courier within Switzerland. Risk transfers to the client when handed to the carrier.' },
       section4: { title: '4. Returns & claims', paragraph: 'Unopened products may be returned within 14 days. Damages must be reported within 48 hours of receipt.' },
       section5: { title: '5. Liability & jurisdiction', paragraph: 'Liability is limited to gross negligence. Swiss law applies, venue Zurich.' }
+    },
+    category: {
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume }
+    },
+    product: {
+      limited_edition: { description: sharedProductDescriptions.limitedEdition },
+      textile_spray: { description: sharedProductDescriptions.textileSpray }
     }
   }
 };
@@ -4871,6 +5041,10 @@ const candlesImageBaseUrl = diffuserImageBaseUrl;
 const candlesImageSuffix = diffuserImageSuffix;
 const candlesDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true';
 
+const interiorPerfumeCategoryImage = 'https://raw.githubusercontent.com/evgenss79/BV_img/main/home%20perfume.jpg?raw=true';
+const interiorPerfumeDefaultImage = `${diffuserImageBaseUrl}Travel-5${diffuserImageSuffix}`;
+const textileDefaultImage = 'https://raw.githubusercontent.com/evgenss79/BV_img/main/Textil-spray.jpg?raw=true';
+
 const carImageBaseUrl = diffuserImageBaseUrl;
 const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
@@ -4890,6 +5064,79 @@ let carImageElement;
 let carScentDescriptionElement;
 let carScentDescriptionWrapper;
 let carScentDescriptionToggle;
+
+const productConfigs = {
+  'category-diffusers': {
+    pricing: diffuserPricing,
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: diffuserDefaultImage,
+    scentTranslationBase: 'diffusers.scents',
+    titlePrefix: () => resolveTranslation(currentLang, 'diffusers.product.titlePrefix') || '',
+    defaultTitle: () => resolveTranslation(currentLang, 'diffusers.product.titleDefault') || '',
+    includeNone: true
+  },
+  'category-room': {
+    pricing: {
+      volumes: {
+        '10': 8.9,
+        '50': 16.9
+      },
+      baseCurrency: 'CHF'
+    },
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: interiorPerfumeDefaultImage,
+    defaultImageByVolume: {
+      '10': interiorPerfumeDefaultImage,
+      '50': interiorPerfumeCategoryImage
+    },
+    scentTranslationBase: 'diffusers.scents',
+    titlePrefix: 'Interior Perfume',
+    defaultTitle: 'Interior Perfume',
+    generateScents: true,
+    includeNone: true
+  },
+  'category-textile': {
+    pricing: {
+      fixed: 20.9,
+      baseCurrency: 'CHF'
+    },
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: textileDefaultImage,
+    scentTranslationBase: 'diffusers.scents',
+    titlePrefix: 'Textile spray (500ml)',
+    defaultTitle: 'Textile spray (500ml)',
+    generateScents: true,
+    excludeScentIds: ['cherry_blossom', 'christmas_tree', 'dubai', 'rosso', 'salted_caramel', 'salty_water'],
+    includeNone: true,
+    scentDescriptionTranslationBase: 'product.textile_spray.description'
+  },
+  'category-limited': {
+    pricing: {
+      fixed: 45.9,
+      baseCurrency: 'CHF'
+    },
+    imageBaseUrl: diffuserImageBaseUrl,
+    imageSuffix: diffuserImageSuffix,
+    defaultImage: 'https://raw.githubusercontent.com/evgenss79/BV_img/main/3%20velas.jpg?raw=true',
+    titlePrefix: 'Limited Edition',
+    defaultTitle: 'Limited Edition',
+    scents: [
+      { id: 'new_york', value: 'New York', label: 'New York' },
+      { id: 'abu_dhabi', value: 'Abu Dhabi', label: 'Abu Dhabi' },
+      { id: 'palermo', value: 'Palermo', label: 'Palermo' }
+    ],
+    scentImageMap: {
+      new_york: 'New-York',
+      abu_dhabi: 'abu-dhabi',
+      palermo: 'Palermo'
+    },
+    scentDescriptionTranslationBase: 'product.limited_edition.description',
+    includeNone: false
+  }
+};
 
 const categoryFallbackKeys = [
   'categoryLimited',
@@ -4913,6 +5160,63 @@ const htmlElement = document.documentElement;
 let currentLang = localStorage.getItem('nichehome-lang') || 'de';
 let diffuserScentDescriptionWrapperEl;
 let diffuserScentDescriptionToggleEl;
+let currentProductConfig = null;
+
+const getActiveProductConfig = () => {
+  const page = document.body?.dataset?.page;
+  return productConfigs[page] || productConfigs['category-diffusers'];
+};
+
+const getDiffuserScentOptions = (excluded = [], includeNone = true) => {
+  const options = [];
+  const scentData = translations.en?.diffusers?.scents || {};
+  const excludedSet = new Set(excluded || []);
+  if (includeNone && !excludedSet.has('none')) {
+    const noneLabel = resolveTranslation(currentLang, 'diffusers.scents.none.label') || 'No fragrance';
+    options.push({ id: 'none', value: 'none', label: noneLabel });
+  }
+  Object.keys(scentData).forEach((scentId) => {
+    if (scentId === 'none' || excludedSet.has(scentId)) return;
+    const baseLabel = resolveTranslation('en', `diffusers.scents.${scentId}.label`) || scentId;
+    const localized = resolveTranslation(currentLang, `diffusers.scents.${scentId}.label`) || baseLabel;
+    options.push({ id: scentId, value: baseLabel, label: localized });
+  });
+  return options;
+};
+
+const populateScentSelect = (config) => {
+  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  if (!scentSelect || !config) return;
+  const shouldGenerate = config.generateScents || config.scents;
+  if (!shouldGenerate) return;
+  const options = config.scents || getDiffuserScentOptions(config.excludeScentIds, config.includeNone);
+  scentSelect.innerHTML = '';
+  options.forEach((option) => {
+    const optEl = document.createElement('option');
+    optEl.value = option.value;
+    optEl.dataset.scentId = option.id;
+    optEl.textContent = option.label;
+    scentSelect.appendChild(optEl);
+  });
+};
+
+const getConfigTitlePrefix = (config) => {
+  if (!config) return '';
+  return typeof config.titlePrefix === 'function' ? config.titlePrefix() : config.titlePrefix || '';
+};
+
+const getConfigDefaultTitle = (config) => {
+  if (!config) return '';
+  return typeof config.defaultTitle === 'function' ? config.defaultTitle() : config.defaultTitle || '';
+};
+
+const getDefaultImageForConfig = (config, volumeValue = null) => {
+  if (!config) return diffuserDefaultImage;
+  if (config.defaultImageByVolume && volumeValue && config.defaultImageByVolume[volumeValue]) {
+    return config.defaultImageByVolume[volumeValue];
+  }
+  return config.defaultImage || diffuserDefaultImage;
+};
 
 const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
@@ -5215,44 +5519,73 @@ const initDiffuserHeroSlider = () => {
 };
 
 const updateDiffuserPrice = () => {
+  const config = currentProductConfig || getActiveProductConfig();
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const priceEl = document.querySelector('[data-diffuser-price]');
-  if (!volumeSelect || !priceEl) return;
-  const selectedVolume = volumeSelect.value;
-  const price = diffuserPricing.volumes[selectedVolume];
+  if (!priceEl || !config?.pricing) return;
+  let price = null;
+  if (config.pricing.volumes && volumeSelect) {
+    price = config.pricing.volumes[volumeSelect.value];
+  } else if (config.pricing.fixed != null) {
+    price = config.pricing.fixed;
+  }
   if (typeof price === 'number') {
-    priceEl.textContent = `${diffuserPricing.baseCurrency} ${price.toFixed(2)}`;
+    const currency = config.pricing.baseCurrency || diffuserPricing.baseCurrency;
+    priceEl.textContent = `${currency} ${price.toFixed(2)}`;
   }
 };
 
 const updateDiffuserImage = () => {
+  const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
   const imageEl = document.querySelector('[data-diffuser-image]');
-  if (!scentSelect || !imageEl) return;
-  const scent = scentSelect.value;
-  if (!scent || scent === 'none') {
-    imageEl.src = diffuserDefaultImage;
+  const volumeSelect = document.querySelector('[data-diffuser-volume]');
+  if (!imageEl) return;
+  const scentId = getScentIdFromSelect(scentSelect);
+  const scentValue = scentSelect?.value;
+  if (!scentValue || scentValue === 'none' || scentId === 'none') {
+    imageEl.src = getDefaultImageForConfig(config, volumeSelect?.value);
     return;
   }
-  const encoded = encodeURIComponent(scent);
-  imageEl.src = `${diffuserImageBaseUrl}${encoded}${diffuserImageSuffix}`;
+  const imageName = config?.scentImageMap?.[scentId] || scentValue;
+  const encoded = encodeURIComponent(imageName);
+  const baseUrl = config?.imageBaseUrl || diffuserImageBaseUrl;
+  const suffix = config?.imageSuffix || diffuserImageSuffix;
+  imageEl.src = `${baseUrl}${encoded}${suffix}`;
 };
 
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
+  const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
   const titleEl = document.querySelector('[data-diffuser-title]');
   const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
-  if (!scentSelect || !titleEl || !descriptionEl) return;
+  if (!titleEl || !descriptionEl) return;
   const scentId = getScentIdFromSelect(scentSelect);
-  const labelKey = `diffusers.scents.${scentId}.label`;
-  const scentLabel =
-    resolveTranslation(currentLang, labelKey) || scentSelect.selectedOptions?.[0]?.textContent?.trim() || '';
-  const prefix = resolveTranslation(currentLang, 'diffusers.product.titlePrefix') || '';
-  const defaultTitle = resolveTranslation(currentLang, 'diffusers.product.titleDefault') || '';
-  titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
+  const prefix = getConfigTitlePrefix(config);
+  const defaultTitle = getConfigDefaultTitle(config);
 
-  const descriptionKey = `diffusers.scents.${scentId}.description`;
-  const descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  let scentLabel = scentSelect?.selectedOptions?.[0]?.textContent?.trim() || '';
+  if (config?.scentTranslationBase) {
+    const labelKey = `${config.scentTranslationBase}.${scentId}.label`;
+    scentLabel = resolveTranslation(currentLang, labelKey) || scentLabel;
+  }
+
+  let descriptionText = '';
+  if (config?.scentDescriptions && scentId !== 'none') {
+    descriptionText = config.scentDescriptions[scentId] || '';
+  } else if (config?.scentDescriptionTranslationBase) {
+    const baseKey = config.scentDescriptionTranslationBase;
+    const descriptionKey = `${baseKey}.${scentId === 'none' ? 'none' : scentId}`;
+    descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+    if (!descriptionText && scentId !== 'none') {
+      descriptionText = resolveTranslation(currentLang, `${baseKey}.none`) || '';
+    }
+  } else if (config?.scentTranslationBase) {
+    const descriptionKey = `${config.scentTranslationBase}.${scentId}.description`;
+    descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  }
+
+  titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
   descriptionEl.textContent = descriptionText;
 
   ensureDiffuserScentDescriptionElements();
@@ -5294,11 +5627,16 @@ const initDiffuserScentDescriptionToggle = () => {
 };
 
 const initDiffuserConfigurator = () => {
+  currentProductConfig = getActiveProductConfig();
+  populateScentSelect(currentProductConfig);
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   const scentSelect = document.querySelector('[data-diffuser-scent]');
-  if (!volumeSelect || !scentSelect) return;
-  volumeSelect.addEventListener('change', updateDiffuserPrice);
-  scentSelect.addEventListener('change', () => {
+  if (!volumeSelect && !scentSelect && !document.querySelector('[data-diffuser-price]')) return;
+  volumeSelect?.addEventListener('change', () => {
+    updateDiffuserPrice();
+    updateDiffuserImage();
+  });
+  scentSelect?.addEventListener('change', () => {
     updateDiffuserImage();
     updateDiffuserTitleAndDescription(true);
   });

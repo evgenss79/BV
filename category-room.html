@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
 </head>
 <body data-page="category-room">
 
@@ -81,7 +84,11 @@
           <div class="nh-category-hero__left">
             <h1 class="nh-category-hero__title">Interior Perfume</h1>
             <div class="nh-category-hero__description is-collapsed" data-category-description>
-              <div class="nh-category-hero__description-content" data-category-description-content>
+              <div
+                class="nh-category-hero__description-content"
+                data-category-description-content
+                data-i18n="category.interior_perfume.description"
+              >
                 <p>Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that's a pleasure to be in.</p>
 
                 <h3>Benefits of Using Home Fragrances</h3>
@@ -123,19 +130,20 @@
         <div class="product-card__media">
           <img
             class="product-card__image"
-            src="https://raw.githubusercontent.com/evgenss79/BV_img/main/home%20perfume.jpg?raw=true"
+            data-diffuser-image
+            src="https://github.com/evgenss79/BV_img/blob/main/Travel-5.jpg?raw=true"
             alt="Interior Perfume bottle"
             loading="lazy"
           >
         </div>
         <div class="product-card__body">
           <p class="product-card__eyebrow">Collection</p>
-          <h3 class="product-card__title">Interior Perfume Spray</h3>
+          <h3 class="product-card__title" data-diffuser-title>Interior Perfume</h3>
           <div
             class="product-card__scent-description-wrapper is-collapsed"
             data-diffuser-scent-description-wrapper
           >
-            <p class="product-card__scent-description">A versatile interior perfume created to lift the mood, purify the air, and set the tone for focused work or restorative rest.</p>
+            <p class="product-card__scent-description" data-diffuser-scent-description>A versatile interior perfume created to lift the mood, purify the air, and set the tone for focused work or restorative rest.</p>
             <button
               type="button"
               class="product-card__scent-toggle"
@@ -147,27 +155,22 @@
 
           <div class="product-card__options">
             <label class="product-card__field">
-              <span>Format</span>
-              <select>
-                <option value="room-spray">Room spray</option>
-                <option value="candle">Scented candle</option>
-                <option value="diffuser">Aroma diffuser</option>
+              <span>Volume</span>
+              <select data-diffuser-volume>
+                <option value="10">10 ml</option>
+                <option value="50">50 ml</option>
               </select>
             </label>
 
             <label class="product-card__field">
-              <span>Accord</span>
-              <select>
-                <option value="citrus">Citrus &amp; menthol</option>
-                <option value="floral">Lavender &amp; vanilla</option>
-                <option value="woody">Sandalwood &amp; amber</option>
-              </select>
+              <span>Fragrance</span>
+              <select data-diffuser-scent></select>
             </label>
           </div>
 
           <div class="product-card__meta">
-            <span class="product-card__price-label">Price</span>
-            <span class="product-card__price">CHF 42.00</span>
+            <span class="product-card__price-label" data-i18n="diffusers.product.priceLabel">Preis</span>
+            <span class="product-card__price" data-diffuser-price>CHF 8.90</span>
           </div>
 
           <button class="btn btn--gold" data-add-to-cart data-i18n="common.cta.addToCart"></button>
