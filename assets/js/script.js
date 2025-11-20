@@ -1,14 +1,38 @@
 // CHANGE YOUR REAL TEXTS HERE. The official brand representative will paste their own content.
 // Duplicate this translations object structure to add more languages. Keys correspond to data-i18n attributes across the HTML files.
 const sharedCategoryDescriptions = {
-  limitedEdition: `A collection of three exclusive scented candles – a limited edition inspired by the fragrances of the world’s most luxurious locations.
+  limitedEdition: {
+    en: `A collection of three exclusive scented candles – a limited edition inspired by the fragrances of the world’s most luxurious locations.
 
 The city of a million lights – New York, the mysterious and opulent Abu Dhabi, the sunny and gentle Palermo – choose the direction of your journey.
 
 Each candle in the collection is crafted in a minimalist and elegant style, blending seamlessly into your interior.
 
 We use premium coconut and soy waxes, which provide the best fragrance diffusion – a rich perfumed trail will fill your room shortly after lighting the candle.`,
-  textileSpray: `Long-term storage of fabric products in a closet or dresser does not bring them freshness: on the contrary, unpleasant musty and moldy odors appear. This is especially true when dealing with an unfavorable microclimate inside the premises (high humidity, dust, suspended particles, etc.).
+    de: `Eine Kollektion aus drei exklusiven Duftkerzen – eine limitierte Edition, inspiriert von den Düften der luxuriösesten Orte der Welt.
+
+Die Stadt der Millionen Lichter – New York, das geheimnisvolle, opulente Abu Dhabi, das sonnige und sanfte Palermo – wähle die Richtung deiner Reise.
+
+Jede Kerze ist minimalistisch und elegant gestaltet und fügt sich mühelos in jedes Interieur ein.
+
+Wir verwenden hochwertiges Kokos- und Sojawachs für optimale Duftabgabe – schon wenige Minuten nach dem Anzünden füllt ein reichhaltiger Duft den Raum.`,
+    fr: `Une collection de trois bougies parfumées exclusives – une édition limitée inspirée des fragrances des lieux les plus luxueux du monde.
+
+New York et ses millions de lumières, l’Abu Dhabi mystérieux et opulent, le Palerme ensoleillé et doux : choisissez la destination de votre voyage olfactif.
+
+Chaque bougie de la collection est conçue dans un style minimaliste et élégant pour s’intégrer naturellement à votre intérieur.
+
+Nous utilisons des cires de coco et de soja premium pour une diffusion optimale : un sillage généreux emplit la pièce quelques minutes après l’allumage.`,
+    it: `Una collezione di tre candele profumate esclusive – un’edizione limitata ispirata alle fragranze delle località più lussuose del mondo.
+
+New York, la città delle mille luci, l’opulenta e misteriosa Abu Dhabi, la soleggiata e delicata Palermo: scegli la direzione del tuo viaggio.
+
+Ogni candela è realizzata in uno stile minimalista ed elegante che si adatta a qualsiasi interno.
+
+Utilizziamo cere di cocco e soia di alta qualità per una diffusione ottimale: un ricco sillage riempie la stanza pochi minuti dopo l’accensione.`
+  },
+  textileSpray: {
+    en: `Long-term storage of fabric products in a closet or dresser does not bring them freshness: on the contrary, unpleasant musty and moldy odors appear. This is especially true when dealing with an unfavorable microclimate inside the premises (high humidity, dust, suspended particles, etc.).
 
 The good news is that there is an effective means to achieve a comprehensive effect on the material and eliminate the negative consequences of long-term storage: a scented fabric spray.
 
@@ -33,8 +57,36 @@ Scented spray is a necessary product for the textile industry and also has the f
 – Environmental safety. The product does not contain hazardous substances or reagents, and the product itself has hypoallergenic properties.
 – It has a slight softening and antistatic effect. After use, the material becomes pleasant to the touch and soft.
 – A variety of scents and aromas. You can choose a product based on your personal preferences: jasmine / mandarin / rose / pine needles / musk.`,
-  autoPerfume: 'Clips, capsules and sprays provide consistent fragrance diffusion without residue.',
-  interiorPerfume: `Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that\'s a pleasure to be in.
+    de: `Die langfristige Lagerung von Textilien in Schränken bringt selten Frische – stattdessen entstehen oft muffige Gerüche, besonders bei ungünstigem Raumklima (hohe Luftfeuchtigkeit, Staub, Partikel). Ein parfümierter Textilspray wirkt dem entgegen und pflegt die Fasern.
+
+Unser Onlineshop bietet ausgewählte Textilsprays, die strenge Qualitätskontrollen durchlaufen haben. Sie sind hautverträglich, riechen edel und entfernen hartnäckige Gerüche, ohne den Stoff zu beschädigen.
+
+Zusammensetzung: ätherische Öle, gelöst mit Solubilisatoren, dazu Konservierungsstoffe, destilliertes Wasser und Vitamin E. So entsteht ein Spray, das auf allen Stoffarten angewendet werden kann, ohne Flecken zu hinterlassen.
+
+Vorteile: lang anhaltender Duft, geeignet für jede Textilart, hypoallergen und leicht antistatisch. Je nach Intensität der Anwendung hält der Duft auch nach dem Waschen an.`,
+    fr: `Un stockage prolongé des textiles dans une armoire ne les rend pas plus frais : des odeurs de renfermé peuvent apparaître, surtout en cas d’humidité ou de poussière. Un spray textile parfumé permet d’agir efficacement sur la fibre et d’éliminer ces odeurs.
+
+Tous nos sprays proposés en ligne ont passé des contrôles qualité rigoureux. Ils sont sûrs pour la peau, diffusent un parfum élégant et éliminent rapidement les odeurs sans abîmer les tissus.
+
+Composition : huiles essentielles diluées grâce à des solubilisants, conservateurs spécialisés, eau distillée et vitamine E. Cette formule peut être utilisée sur tous les textiles sans laisser de traces.
+
+Atouts : sillage longue durée, utilisation sur tout type de tissu, formule hypoallergénique et léger effet adoucissant/antistatique. Une application à 20–25 cm prolonge la tenue du parfum, même après lavage.`,
+    it: `La conservazione prolungata dei tessuti in armadi o cassetti può generare odori di chiuso, soprattutto con umidità o polvere. Uno spray tessile profumato agisce in profondità e neutralizza questi effetti.
+
+Tutti i nostri spray online sono stati sottoposti a controlli di qualità. Sono sicuri per la pelle, diffondono un aroma raffinato e rimuovono rapidamente gli odori senza macchiare i tessuti.
+
+Composizione: oli essenziali solubilizzati in acqua con conservanti selezionati, acqua distillata e vitamina E. La formula è adatta a ogni tipo di tessuto.
+
+Vantaggi: profumazione duratura, compatibilità con tutti i materiali, proprietà ipoallergeniche e leggero effetto ammorbidente/antistatico. Applicato da 20–25 cm, il profumo resta percepibile anche dopo il lavaggio.`
+  },
+  autoPerfume: {
+    en: 'Clips, capsules and sprays provide consistent fragrance diffusion without residue.',
+    de: 'Clips, Kapseln und Sprays verteilen den Duft gleichmäßig und ohne Rückstände.',
+    fr: 'Clips, capsules et sprays diffusent le parfum de façon homogène, sans résidus.',
+    it: 'Clip, capsule e spray diffondono la fragranza in modo uniforme, senza residui.'
+  },
+  interiorPerfume: {
+    en: `Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that's a pleasure to be in.
 
 Benefits of Using Home Fragrances
 Perfumes are often used in homes to fill the space with pleasant aromas, creating a comfortable living and working environment. They help solve the following problems:
@@ -53,64 +105,64 @@ There are many types of fragrances that vary in how they are used and the intens
 – Aroma diffusers. The reed aroma diffuser provides a long-lasting scent throughout the home. It is ideal for meditation, relaxation after work, or strenuous workouts. The aroma intensity can be adjusted with reeds. The aroma diffuser can be ultrasonic. It affects water and essential oils using ultrasonic waves. The ultrasonic aroma diffuser is easy to use and has a long lifespan.
 
 Using scented candles, diffusers, sprays, and incense stick sets can help fill your home with warmth, improve your mood, and make the space more inviting.`,
+    de: `Düfte beeinflussen Stimmung, Leistungsfähigkeit und Wohlbefinden. Raumparfums schaffen schnell eine einladende Atmosphäre und besondere Akzente im Zuhause oder Büro. Die passende Komposition hilft beim Entspannen nach einem langen Tag, mindert Unruhe und fördert erholsamen Schlaf.
+
+Vorteile von Raumdüften: Sie machen Räume einladender, heben die Stimmung, können die Luft erfrischen und reinigen und unterstützen Konzentration oder Entspannung – je nach Duftprofil.
+
+Anwendungsmöglichkeiten: Kerzen für sanftes Licht, Sprays für einen sofortigen Effekt, Diffusoren für kontinuierliche Beduftung. Mit den richtigen Noten entsteht ein harmonischer Ort, den man gerne betritt.`,
+    fr: `Les parfums influencent l’humeur, l’énergie et le bien-être. Un parfum d’intérieur crée en quelques secondes une ambiance accueillante à la maison ou au bureau. Le bon accord olfactif aide à se détendre après une journée intense, réduit l’anxiété et favorise un sommeil réparateur.
+
+Atouts des parfums d’intérieur : ils rendent un espace plus chaleureux, améliorent l’humeur, assainissent l’air et peuvent stimuler la concentration ou la relaxation selon les notes choisies.
+
+Modes d’utilisation : bougies pour une lumière douce, sprays pour un effet immédiat, diffuseurs pour une diffusion continue. Les bonnes essences transforment la pièce en un lieu harmonieux où il fait bon vivre.`,
+    it: `I profumi influenzano l’umore, le prestazioni e il benessere. Un profumo per ambienti crea rapidamente un’atmosfera accogliente in casa o in ufficio. La fragranza giusta aiuta a rilassarsi dopo la giornata, riduce l’ansia e favorisce un sonno profondo.
+
+Punti di forza dei profumi per ambienti: rendono lo spazio più ospitale, migliorano l’umore, rinfrescano l’aria e possono aumentare la concentrazione o la distensione a seconda delle note scelte.
+
+Modalità d’uso: candele per una luce morbida, spray per un effetto immediato, diffusori per una profumazione costante. Le essenze giuste creano un ambiente armonioso e piacevole da vivere.`
+  }
 };
 
 const sharedProductDescriptions = {
   limitedEdition: {
-    new_york: `New York Scented Candle
-
-A vibrant party, sharp cocktails, and the spicy freshness of the city of lights, skyscrapers, and unexpected encounters…
-Your night will be remembered by the scent of dark wood, smoky amber, and bold citrus notes.
-
-Designed in an elegant minimalist style, this candle suits both modern and classic interiors. It brings the atmosphere of a big city evening and serves as a chic decorative accent for your home.
-
-Crafted using only high-quality vegetable waxes — coconut and soy — it offers excellent scent diffusion. Within minutes of lighting, your space is filled with a deep, rich, and long-lasting fragrance trail.
-
-This limited edition BY VELCHEVA candle is both a stylish home décor piece and a wonderful gift for friends, loved ones, or colleagues.
-
-Features:
-Volume: 270 ml
-Burn time: approx. 40 hours
-Premium vegetable waxes: coconut and soy
-Fragrance: woody-amber with citrus notes
-Design: elegant and minimalist`,
-    abu_dhabi: `Abu Dhabi Scented Candle
-
-Embracing warm nights under a starlit sky and soft sand beneath your feet…
-Rich spicy notes blend with gentle lavender and a lush bouquet of florals — this is the scent of your unforgettable weekend in Abu Dhabi.
-
-Crafted in an elegant, minimalist design, this candle will complement any interior — from modern to classic. More than just a source of fragrance, it’s a refined decorative accent for your home.
-
-We use only high-quality plant-based waxes — coconut and soy — known for their excellent ability to retain and release fragrance. Within minutes of lighting, your space is filled with a rich, long-lasting, and sophisticated perfumed trail.
-
-A scented candle from the BY VELCHEVA limited collection is a stylish decor element for your home and also a perfect gift for friends, loved ones, or colleagues.
-
-Details:
-Volume: 270 ml
-Burn time: approx. 40 hours
-Premium plant-based waxes: coconut and soy
-Fragrance: oriental-floral with notes of lavender and spices
-Design: elegant and minimalist`,
-    palermo: `Palermo Scented Candle
-
-Gentle rays of sunshine, a refreshing coastal breeze, and an abundance of citrus fruits you can pick by hand…
-Radiant notes of mandarin and bitter orange blend with the soft scent of peonies and vibrant basil — this is how you’ll remember a walk through Palermo.
-
-The candle is designed in a refined minimalist style and will beautifully complement both modern and classic interiors. Its fragrance fills the space with lightness, joy, and a sunny mood.
-
-We use only high-quality vegetable waxes — coconut and soy. They ensure even burning and excellent fragrance diffusion, which begins to unfold within the first minutes of lighting.
-
-The limited-edition BY VELCHEVA scented candle is a stylish piece of home décor and a perfect gift for friends, loved ones, or colleagues.
-
-Specifications:
-Volume: 270 ml
-Burn time: approximately 40 hours
-Premium vegetable waxes: coconut and soy
-Fragrance: citrus-floral with notes of peony and basil
-Design: elegant and minimalist`,
+    en: {
+      new_york: 'New York Scented Candle — dark woods, smoky amber and bold citrus capture the city’s nightlife.',
+      abu_dhabi: 'Abu Dhabi Scented Candle — warm spices, lavender and florals evoke desert evenings under the stars.',
+      palermo: 'Palermo Scented Candle — mandarin, bitter orange, peony and basil recall a sunny coastal walk.'
+    },
+    de: {
+      new_york: 'Duftkerze New York – dunkle Hölzer, rauchiger Amber und Zitrus erinnern an die Nacht der Metropole.',
+      abu_dhabi: 'Duftkerze Abu Dhabi – warme Gewürze, Lavendel und Blüten für Abende unter dem Wüstenhimmel.',
+      palermo: 'Duftkerze Palermo – Mandarine, Bitterorange, Pfingstrose und Basilikum wie ein sonniger Küstenspaziergang.'
+    },
+    fr: {
+      new_york: 'Bougie parfumée New York — bois sombres, ambre fumé et agrumes vifs rappellent les nuits de la ville.',
+      abu_dhabi: 'Bougie parfumée Abu Dhabi — épices chaudes, lavande et fleurs pour des soirées dans le désert étoilé.',
+      palermo: 'Bougie parfumée Palerme — mandarine, orange amère, pivoine et basilic comme une promenade en bord de mer.'
+    },
+    it: {
+      new_york: 'Candela profumata New York — legni scuri, ambra fumé e agrumi per l’energia notturna della città.',
+      abu_dhabi: 'Candela profumata Abu Dhabi — spezie calde, lavanda e fiori per serate nel deserto stellato.',
+      palermo: 'Candela profumata Palermo — mandarino, arancia amara, peonia e basilico come una passeggiata sul mare.'
+    }
   },
   textileSpray: {
-    none: 'A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.'
+    en: { none: 'A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.' },
+    de: { none: 'Ein feiner Nebel, der Textilien auffrischt, ohne zu flecken, mit ätherischen Ölen und Solubilisatoren für sichere Anwendung.' },
+    fr: { none: 'Une brume fine qui ravive les textiles sans tacher, enrichie en huiles essentielles et solubilisants pour un usage sûr.' },
+    it: { none: 'Una nebbiolina che rinfresca i tessuti senza macchiare, con oli essenziali e solubilizzanti per un uso sicuro.' }
+  },
+  interiorPerfume: {
+    en: { default: 'A versatile interior perfume created to lift the mood, purify the air, and set the tone for focused work or restorative rest.' },
+    de: { default: 'Ein vielseitiges Raumparfum, das die Stimmung hebt, die Luft klärt und den Rahmen für Konzentration oder Erholung setzt.' },
+    fr: { default: 'Un parfum d’intérieur polyvalent pour améliorer l’humeur, purifier l’air et créer une ambiance propice au travail ou au repos.' },
+    it: { default: 'Un profumo per ambienti versatile che migliora l’umore, purifica l’aria e prepara il clima per concentrazione o relax.' }
+  },
+  autoPerfume: {
+    en: { capsule: 'Magnetic clip with interchangeable capsules for weeks of balanced fragrance without residue.' },
+    de: { capsule: 'Magnetclip mit austauschbaren Kapseln für wochenlange, ausgewogene Beduftung ohne Rückstände.' },
+    fr: { capsule: 'Clip magnétique avec capsules interchangeables pour des semaines de parfum équilibré sans résidus.' },
+    it: { capsule: 'Clip magnetica con capsule intercambiabili per settimane di profumazione equilibrata senza residui.' }
   }
 };
 
@@ -1439,25 +1491,36 @@ Basisnoten: Holzige Noten, Moschus`
     section5: { title: '5. Haftung & Gerichtsstand', paragraph: 'Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.' }
     },
     category: {
-      limited_edition: {
-        description: sharedCategoryDescriptions.limitedEdition
-      },
-      textile_spray: {
-        description: sharedCategoryDescriptions.textileSpray
-      },
-      auto_perfume: {
-        description: sharedCategoryDescriptions.autoPerfume
-      },
-      interior_perfume: {
-        description: sharedCategoryDescriptions.interiorPerfume
-      }
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.de },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray.de },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.de },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.de }
     },
     product: {
+      badge: { collection: 'Kollektion' },
       limited_edition: {
-        description: sharedProductDescriptions.limitedEdition
+        title: 'Limitierte Kollektion',
+        new_york: { title: 'Limited Edition New York', short_description: 'Duftkerze New York' },
+        abu_dhabi: { title: 'Limited Edition Abu Dhabi', short_description: 'Duftkerze Abu Dhabi' },
+        palermo: { title: 'Limited Edition Palermo', short_description: 'Duftkerze Palermo' },
+        description: sharedProductDescriptions.limitedEdition.de
       },
       textile_spray: {
-        description: sharedProductDescriptions.textileSpray
+        title: 'Textilspray (500 ml)',
+        short_description: sharedProductDescriptions.textileSpray.de.none,
+        description: sharedProductDescriptions.textileSpray.de
+      },
+      interior_perfume: {
+        default: {
+          title: 'Interior Perfume',
+          short_description: sharedProductDescriptions.interiorPerfume.de.default
+        }
+      },
+      auto_perfume: {
+        capsule: {
+          title: 'Autoparfum-Kapselsystem',
+          short_description: sharedProductDescriptions.autoPerfume.de.capsule
+        }
       }
     }
   },
@@ -2545,14 +2608,37 @@ Notes de fond : Notes boisées, Musc`
       section5: { title: '5. Responsabilité & for', paragraph: 'Responsabilité limitée aux fautes graves. Droit suisse, for juridique Zurich.' }
     },
     category: {
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume }
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.fr },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray.fr },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.fr },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.fr }
     },
     product: {
-      limited_edition: { description: sharedProductDescriptions.limitedEdition },
-      textile_spray: { description: sharedProductDescriptions.textileSpray }
+      badge: { collection: 'Collection' },
+      limited_edition: {
+        title: 'Collection limitée',
+        new_york: { title: 'Limited Edition New York', short_description: 'Bougie parfumée New York' },
+        abu_dhabi: { title: 'Limited Edition Abu Dhabi', short_description: 'Bougie parfumée Abu Dhabi' },
+        palermo: { title: 'Limited Edition Palerme', short_description: 'Bougie parfumée Palerme' },
+        description: sharedProductDescriptions.limitedEdition.fr
+      },
+      textile_spray: {
+        title: 'Spray textile (500 ml)',
+        short_description: sharedProductDescriptions.textileSpray.fr.none,
+        description: sharedProductDescriptions.textileSpray.fr
+      },
+      interior_perfume: {
+        default: {
+          title: 'Parfum d’intérieur',
+          short_description: sharedProductDescriptions.interiorPerfume.fr.default
+        }
+      },
+      auto_perfume: {
+        capsule: {
+          title: 'Système Autoparfum Capsule',
+          short_description: sharedProductDescriptions.autoPerfume.fr.capsule
+        }
+      }
     }
   },
   it: {
@@ -3638,14 +3724,37 @@ Note di fondo: Note legnose, Muschio`
       section5: { title: '5. Responsabilità & foro', paragraph: 'Responsabilità limitata a dolo o colpa grave. Foro competente Zurigo, diritto svizzero.' }
     },
     category: {
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume }
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.it },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray.it },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.it },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.it }
     },
     product: {
-      limited_edition: { description: sharedProductDescriptions.limitedEdition },
-      textile_spray: { description: sharedProductDescriptions.textileSpray }
+      badge: { collection: 'Collezione' },
+      limited_edition: {
+        title: 'Edizione limitata',
+        new_york: { title: 'Edizione limitata New York', short_description: 'Candela profumata New York' },
+        abu_dhabi: { title: 'Edizione limitata Abu Dhabi', short_description: 'Candela profumata Abu Dhabi' },
+        palermo: { title: 'Edizione limitata Palermo', short_description: 'Candela profumata Palermo' },
+        description: sharedProductDescriptions.limitedEdition.it
+      },
+      textile_spray: {
+        title: 'Spray tessile (500 ml)',
+        short_description: sharedProductDescriptions.textileSpray.it.none,
+        description: sharedProductDescriptions.textileSpray.it
+      },
+      interior_perfume: {
+        default: {
+          title: 'Profumo per interni',
+          short_description: sharedProductDescriptions.interiorPerfume.it.default
+        }
+      },
+      auto_perfume: {
+        capsule: {
+          title: 'Sistema Autoparfum Capsule',
+          short_description: sharedProductDescriptions.autoPerfume.it.capsule
+        }
+      }
     }
   },
   en: {
@@ -4995,14 +5104,37 @@ Base notes: Woody notes, Musk`
       section5: { title: '5. Liability & jurisdiction', paragraph: 'Liability is limited to gross negligence. Swiss law applies, venue Zurich.' }
     },
     category: {
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume }
+      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.en },
+      textile_spray: { description: sharedCategoryDescriptions.textileSpray.en },
+      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.en },
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.en }
     },
     product: {
-      limited_edition: { description: sharedProductDescriptions.limitedEdition },
-      textile_spray: { description: sharedProductDescriptions.textileSpray }
+      badge: { collection: 'Collection' },
+      limited_edition: {
+        title: 'Limited Edition',
+        new_york: { title: 'Limited Edition New York', short_description: 'New York Scented Candle' },
+        abu_dhabi: { title: 'Limited Edition Abu Dhabi', short_description: 'Abu Dhabi Scented Candle' },
+        palermo: { title: 'Limited Edition Palermo', short_description: 'Palermo Scented Candle' },
+        description: sharedProductDescriptions.limitedEdition.en
+      },
+      textile_spray: {
+        title: 'Textile spray (500ml)',
+        short_description: sharedProductDescriptions.textileSpray.en.none,
+        description: sharedProductDescriptions.textileSpray.en
+      },
+      interior_perfume: {
+        default: {
+          title: 'Interior Perfume',
+          short_description: sharedProductDescriptions.interiorPerfume.en.default
+        }
+      },
+      auto_perfume: {
+        capsule: {
+          title: 'Auto Perfume Capsule System',
+          short_description: sharedProductDescriptions.autoPerfume.en.capsule
+        }
+      }
     }
   }
 };
@@ -5092,8 +5224,8 @@ const productConfigs = {
       '50': interiorPerfumeCategoryImage
     },
     scentTranslationBase: 'diffusers.scents',
-    titlePrefix: 'Interior Perfume',
-    defaultTitle: 'Interior Perfume',
+    titlePrefix: () => resolveTranslation(currentLang, 'product.interior_perfume.default.title') || 'Interior Perfume',
+    defaultTitle: () => resolveTranslation(currentLang, 'product.interior_perfume.default.title') || 'Interior Perfume',
     generateScents: true,
     includeNone: true
   },
@@ -5106,8 +5238,8 @@ const productConfigs = {
     imageSuffix: diffuserImageSuffix,
     defaultImage: textileDefaultImage,
     scentTranslationBase: 'diffusers.scents',
-    titlePrefix: 'Textile spray (500ml)',
-    defaultTitle: 'Textile spray (500ml)',
+    titlePrefix: () => resolveTranslation(currentLang, 'product.textile_spray.title') || 'Textile spray (500ml)',
+    defaultTitle: () => resolveTranslation(currentLang, 'product.textile_spray.title') || 'Textile spray (500ml)',
     generateScents: true,
     excludeScentIds: ['cherry_blossom', 'christmas_tree', 'dubai', 'rosso', 'salted_caramel', 'salty_water'],
     includeNone: true,
@@ -5121,8 +5253,8 @@ const productConfigs = {
     imageBaseUrl: diffuserImageBaseUrl,
     imageSuffix: diffuserImageSuffix,
     defaultImage: 'https://raw.githubusercontent.com/evgenss79/BV_img/main/3%20velas.jpg?raw=true',
-    titlePrefix: 'Limited Edition',
-    defaultTitle: 'Limited Edition',
+    titlePrefix: () => resolveTranslation(currentLang, 'product.limited_edition.title') || 'Limited Edition',
+    defaultTitle: () => resolveTranslation(currentLang, 'product.limited_edition.title') || 'Limited Edition',
     scents: [
       { id: 'new_york', value: 'New York', label: 'New York' },
       { id: 'abu_dhabi', value: 'Abu Dhabi', label: 'Abu Dhabi' },
