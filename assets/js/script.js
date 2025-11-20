@@ -189,6 +189,18 @@ const translations = {
       }
     },
     catalog: {
+      category: {
+        aroma_diffusers: 'Aroma-Diffusoren',
+        candles: 'Duftkerzen',
+        limited_edition: 'Limitierte Kollektion',
+        home_perfume: 'Raumduft',
+        textile_spray: 'Textilspray',
+        gift_sets: 'Geschenksets',
+        accessories: 'Accessoires',
+        meditation: 'Meditation',
+        car_perfume: 'Autoparfum',
+        aroma_devices: 'Aromageräte'
+      },
       hero: {
         label: 'Kuratiertes Sortiment',
         title: 'Der vollständige NicheHome.ch Katalog',
@@ -1500,6 +1512,18 @@ Basisnoten: Holzige Noten, Moschus`
       }
     },
     catalog: {
+      category: {
+        aroma_diffusers: 'Diffuseurs d’arômes',
+        candles: 'Bougies parfumées',
+        limited_edition: 'Collection limitée',
+        home_perfume: 'Parfum d’intérieur',
+        textile_spray: 'Spray textile',
+        gift_sets: 'Coffrets cadeaux',
+        accessories: 'Accessoires',
+        meditation: 'Méditation',
+        car_perfume: 'Parfum voiture',
+        aroma_devices: 'Appareils aroma'
+      },
       hero: {
         label: 'Sélection',
         title: 'Le catalogue complet NicheHome.ch',
@@ -2571,6 +2595,18 @@ Notes de fond : Notes boisées, Musc`
       }
     },
     catalog: {
+      category: {
+        aroma_diffusers: 'Diffusori d’aroma',
+        candles: 'Candele profumate',
+        limited_edition: 'Collezione limitata',
+        home_perfume: 'Profumi ambiente',
+        textile_spray: 'Spray tessile',
+        gift_sets: 'Cofanetti regalo',
+        accessories: 'Accessori',
+        meditation: 'Meditazione',
+        car_perfume: 'Profumo auto',
+        aroma_devices: 'Dispositivi aroma'
+      },
       hero: {
         label: 'Selezione curata',
         title: 'Catalogo completo NicheHome.ch',
@@ -3641,6 +3677,18 @@ Note di fondo: Note legnose, Muschio`
       }
     },
     catalog: {
+      category: {
+        aroma_diffusers: 'Aroma diffusers',
+        candles: 'Scented candles',
+        limited_edition: 'Limited edition',
+        home_perfume: 'Home perfume',
+        textile_spray: 'Textile spray',
+        gift_sets: 'Gift sets',
+        accessories: 'Accessories',
+        meditation: 'Meditation',
+        car_perfume: 'Car perfume',
+        aroma_devices: 'Aroma devices'
+      },
       hero: {
         label: 'Curated selection',
         title: 'The complete NicheHome.ch catalog',
