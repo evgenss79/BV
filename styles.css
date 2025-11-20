@@ -45,15 +45,16 @@ body {
 }
 
 .logo {
-  max-width: 220px;
-  width: 60%;
+  max-width: 200px;
+  width: clamp(140px, 28vw, 200px);
   height: auto;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.08));
 }
 
 .preview {
-  width: min(90vw, 680px);
+  width: min(88vw, 640px);
   max-width: 100%;
+  max-height: clamp(260px, 45vh, 520px);
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(31, 41, 51, 0.12);
