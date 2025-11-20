@@ -110,6 +110,7 @@
         <div class="product-card__media">
           <img
             class="product-card__image"
+            data-diffuser-image
             src="https://raw.githubusercontent.com/evgenss79/BV_img/main/3%20velas.jpg?raw=true"
             alt="Limited Edition candles"
             loading="lazy"
@@ -117,12 +118,12 @@
         </div>
         <div class="product-card__body">
           <p class="product-card__eyebrow">Collection</p>
-          <h3 class="product-card__title">Limited Edition Candle Trio</h3>
+          <h3 class="product-card__title" data-diffuser-title>Limited Edition</h3>
           <div
             class="product-card__scent-description-wrapper is-collapsed"
             data-diffuser-scent-description-wrapper
           >
-            <p class="product-card__scent-description">Discover the atmospheres of New York, Abu Dhabi, and Palermo in a numbered set poured with coconut and soy waxes for dense, elegant diffusion.</p>
+            <p class="product-card__scent-description" data-diffuser-scent-description>Discover the atmospheres of New York, Abu Dhabi, and Palermo in a numbered set poured with coconut and soy waxes for dense, elegant diffusion.</p>
             <button
               type="button"
               class="product-card__scent-toggle"
@@ -134,27 +135,14 @@
 
           <div class="product-card__options">
             <label class="product-card__field">
-              <span>Destination</span>
-              <select>
-                <option value="new-york">New York</option>
-                <option value="abu-dhabi">Abu Dhabi</option>
-                <option value="palermo">Palermo</option>
-              </select>
-            </label>
-
-            <label class="product-card__field">
-              <span>Wax blend</span>
-              <select>
-                <option value="coconut-soy">Coconut &amp; soy</option>
-                <option value="soy">Soy</option>
-                <option value="coconut">Coconut</option>
-              </select>
+              <span>Fragrance</span>
+              <select data-diffuser-scent></select>
             </label>
           </div>
 
           <div class="product-card__meta">
             <span class="product-card__price-label">Price</span>
-            <span class="product-card__price">CHF 189.00</span>
+            <span class="product-card__price" data-diffuser-price>CHF 45.90</span>
           </div>
 
           <button class="btn btn--gold" data-add-to-cart data-i18n="common.cta.addToCart"></button>
