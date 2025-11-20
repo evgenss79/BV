@@ -3681,7 +3681,7 @@ Note di fondo: Note legnose, Muschio`
         aroma_diffusers: 'Aroma diffusers',
         candles: 'Scented candles',
         limited_edition: 'Limited edition',
-        home_perfume: 'Home perfume',
+        home_perfume: 'Interior Perfume',
         textile_spray: 'Textile spray',
         gift_sets: 'Gift sets',
         accessories: 'Accessories',
