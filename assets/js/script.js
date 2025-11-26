@@ -5308,6 +5308,10 @@ const injectFragranceData = (catalog) => {
   languages.forEach((lang) => {
     translations[lang] = translations[lang] || {};
     translations[lang].fragrance = translations[lang].fragrance || {};
+    translations[lang].candles = translations[lang].candles || {};
+    translations[lang].candles.scents = translations[lang].candles.scents || {};
+    translations[lang].car = translations[lang].car || {};
+    translations[lang].car.scents = translations[lang].car.scents || {};
     translations[lang].textile = translations[lang].textile || {};
     translations[lang].textile.scents = translations[lang].textile.scents || {};
     const scentBuckets = [
@@ -6099,7 +6103,14 @@ const updateDiffuserImage = () => {
 };
 
 const getFragranceCatalogDescription = (lang, scentId) => {
-  return normalizeDescriptionText(translations?.[lang]?.fragrance?.[scentId]) || '';
+  const candidates = [
+    translations?.[lang]?.fragrance?.[scentId],
+    translations?.[lang]?.candles?.scents?.[scentId],
+    translations?.[lang]?.car?.scents?.[scentId],
+    translations?.[lang]?.textile?.scents?.[scentId]
+  ];
+  const match = candidates.find((value) => normalizeDescriptionText(value));
+  return normalizeDescriptionText(match) || '';
 };
 
 const getFragranceDescription = (categoryOrScentId, fallbackKey = null) => {
@@ -6121,14 +6132,23 @@ const getFragranceDescription = (categoryOrScentId, fallbackKey = null) => {
 
 const resolveFragranceDescription = (scentId, fallbackKey = null, defaultDescription = '') => {
   if (!scentId || scentId === 'none') return defaultDescription;
-  const description = getFragranceDescription(scentId, fallbackKey);
+
+  const catalogFallback =
+    getFragranceCatalogDescription(currentLang, scentId) || getFragranceCatalogDescription('en', scentId) || '';
+  const description = getFragranceDescription(scentId, fallbackKey) || catalogFallback;
   if (description) return description;
+
   if (fallbackKey) {
     return normalizeDescriptionText(
-      resolveTranslation(currentLang, fallbackKey) || resolveTranslation('en', fallbackKey) || defaultDescription || ''
+      resolveTranslation(currentLang, fallbackKey) ||
+        resolveTranslation('en', fallbackKey) ||
+        catalogFallback ||
+        defaultDescription ||
+        ''
     );
   }
-  return defaultDescription || '';
+
+  return catalogFallback || defaultDescription || '';
 };
 
 const productFragranceDescriptionConfig = {
@@ -6520,11 +6540,11 @@ const initProductCardFragrances = () => {
         []
     );
 
-    if (!descriptionEls.length) return;
-
     const applyDescription = () => {
       const scentId = getScentIdFromSelect(select) || select.value;
-      const descriptionText = updateProductFragranceDescription(descriptionEls, category, scentId);
+      const descriptionText = descriptionEls.length
+        ? updateProductFragranceDescription(descriptionEls, category, scentId)
+        : '';
       const scentLabel = select?.selectedOptions?.[0]?.textContent?.trim() || scentId;
       const imageEl = card?.querySelector('[data-fragrance-image]');
 
