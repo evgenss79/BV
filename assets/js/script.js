@@ -5255,21 +5255,45 @@ const sanitizeGermanTranslations = (node) => {
 
 sanitizeGermanTranslations(translations.de);
 
+const getExistingFragranceDescription = (lang, slug) => {
+  const candidateBuckets = [
+    translations[lang]?.fragrance?.[slug]?.description,
+    translations[lang]?.diffusers?.scents?.[slug]?.description,
+    translations[lang]?.candles?.scents?.[slug]?.description,
+    translations[lang]?.car?.scents?.[slug]?.description
+  ];
+  return candidateBuckets.find((value) => typeof value === 'string' && value.trim().length > 0);
+};
+
+const translateFragranceDescription = (description, lang, slug) => {
+  if (lang === 'en') return description;
+  const existing = getExistingFragranceDescription(lang, slug);
+  if (existing) return existing;
+  return description;
+};
+
 const injectFragranceData = (catalog) => {
   if (!catalog) return;
   const languages = ['en', 'de', 'fr', 'it'];
   languages.forEach((lang) => {
     translations[lang] = translations[lang] || {};
     translations[lang].fragrance = translations[lang].fragrance || {};
-    Object.entries(catalog).forEach(([slug, description]) => {
-      const normalized = lang === 'de' ? normalizeGermanText(description) : description;
-      const existingFragrance = translations[lang].fragrance[slug]?.description;
-      translations[lang].fragrance[slug] = { description: existingFragrance || normalized };
+    const scentBuckets = [
+      translations[lang].diffusers?.scents,
+      translations[lang].candles?.scents,
+      translations[lang].car?.scents
+    ];
 
-      const scentBucket = translations[lang].diffusers?.scents || {};
-      if (scentBucket[slug]) {
-        scentBucket[slug].description = lang === 'en' ? normalized : scentBucket[slug].description || normalized;
-      }
+    Object.entries(catalog).forEach(([slug, description]) => {
+      const translated = translateFragranceDescription(description, lang, slug);
+      const normalized = lang === 'de' ? normalizeGermanText(translated) : translated;
+      translations[lang].fragrance[slug] = { description: normalized };
+
+      scentBuckets.forEach((bucket) => {
+        if (bucket?.[slug]) {
+          bucket[slug].description = normalized;
+        }
+      });
     });
   });
 };
@@ -5975,17 +5999,17 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
     scentLabel = resolveTranslation(currentLang, labelKey) || scentLabel;
   }
 
-  let descriptionText = '';
-  if (config?.scentDescriptions && scentId !== 'none') {
+  let descriptionText = getFragranceDescription(scentId);
+  if (!descriptionText && config?.scentDescriptions && scentId !== 'none') {
     descriptionText = config.scentDescriptions[scentId] || '';
-  } else if (config?.scentDescriptionTranslationBase) {
+  } else if (!descriptionText && config?.scentDescriptionTranslationBase) {
     const baseKey = config.scentDescriptionTranslationBase;
     const descriptionKey = `${baseKey}.${scentId === 'none' ? 'none' : scentId}`;
     descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
     if (!descriptionText && scentId !== 'none') {
       descriptionText = resolveTranslation(currentLang, `${baseKey}.none`) || '';
     }
-  } else if (config?.scentTranslationBase) {
+  } else if (!descriptionText && config?.scentTranslationBase) {
     const descriptionKey = `${config.scentTranslationBase}.${scentId}.description`;
     descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
   }
@@ -6078,8 +6102,7 @@ const updateCandleScentDescription = (resetToggle = false) => {
   if (!candleScentSelect || !candleScentDescriptionElement) return;
   const scentId = getScentIdFromSelect(candleScentSelect);
   const descriptionKey = `candles.scents.${scentId}.description`;
-  const descriptionText =
-    resolveTranslation(currentLang, descriptionKey) || getFragranceDescription(scentId) || '';
+  const descriptionText = getFragranceDescription(scentId) || resolveTranslation(currentLang, descriptionKey) || '';
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
@@ -6127,8 +6150,8 @@ const updateCarScentDescription = (resetToggle = false) => {
   const descriptionKey = `car.scents.${scentId}.description`;
   const fallbackKey = 'car.scents.none.description';
   const descriptionText =
-    resolveTranslation(currentLang, descriptionKey) ||
     getFragranceDescription(scentId) ||
+    resolveTranslation(currentLang, descriptionKey) ||
     resolveTranslation(currentLang, fallbackKey) ||
     '';
   carScentDescriptionElement.textContent = descriptionText;
