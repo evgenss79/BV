@@ -6059,6 +6059,10 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
     descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
   }
 
+  if (!descriptionText && scentId !== 'none') {
+    descriptionText = getFragranceDescription(scentId);
+  }
+
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
   descriptionEl.textContent = descriptionText;
 
