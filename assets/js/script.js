@@ -5239,6 +5239,39 @@ Base notes: Woody notes, Musk`
   }
 };
 
+const normalizeGermanText = (text = '') => text.replace(/ß/g, 'ss');
+
+const injectFragranceData = (catalog) => {
+  if (!catalog) return;
+  const languages = ['en', 'de', 'fr', 'it'];
+  languages.forEach((lang) => {
+    translations[lang] = translations[lang] || {};
+    translations[lang].fragrance = translations[lang].fragrance || {};
+    Object.entries(catalog).forEach(([slug, description]) => {
+      const normalized = lang === 'de' ? normalizeGermanText(description) : description;
+      const existingFragrance = translations[lang].fragrance[slug]?.description;
+      translations[lang].fragrance[slug] = { description: existingFragrance || normalized };
+
+      const scentBucket = translations[lang].diffusers?.scents || {};
+      if (scentBucket[slug]) {
+        scentBucket[slug].description = lang === 'en' ? normalized : scentBucket[slug].description || normalized;
+      }
+    });
+  });
+};
+
+const loadFragranceCatalog = async () => {
+  try {
+    const response = await fetch('assets/data/fragrance.txt');
+    if (!response.ok) return;
+    const text = await response.text();
+    const catalog = JSON.parse(text);
+    injectFragranceData(catalog);
+  } catch (error) {
+    console.error('Failed to load fragrance catalog', error);
+  }
+};
+
 const readMoreTranslations = {
   de: 'MEHR ERFAHREN',
   fr: 'VOIR PLUS',
@@ -5906,6 +5939,12 @@ const updateDiffuserImage = () => {
   imageEl.src = `${baseUrl}${encoded}${suffix}`;
 };
 
+const getFragranceDescription = (scentId) => {
+  if (!scentId || scentId === 'none') return '';
+  const key = `fragrance.${scentId}.description`;
+  return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || '';
+};
+
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
@@ -5935,6 +5974,10 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   } else if (config?.scentTranslationBase) {
     const descriptionKey = `${config.scentTranslationBase}.${scentId}.description`;
     descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  }
+
+  if (!descriptionText && scentId !== 'none') {
+    descriptionText = getFragranceDescription(scentId);
   }
 
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
@@ -6021,7 +6064,8 @@ const updateCandleScentDescription = (resetToggle = false) => {
   if (!candleScentSelect || !candleScentDescriptionElement) return;
   const scentId = getScentIdFromSelect(candleScentSelect);
   const descriptionKey = `candles.scents.${scentId}.description`;
-  const descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  const descriptionText =
+    resolveTranslation(currentLang, descriptionKey) || getFragranceDescription(scentId) || '';
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
@@ -6068,7 +6112,11 @@ const updateCarScentDescription = (resetToggle = false) => {
   const scentId = getScentIdFromSelect(carScentSelect);
   const descriptionKey = `car.scents.${scentId}.description`;
   const fallbackKey = 'car.scents.none.description';
-  const descriptionText = resolveTranslation(currentLang, descriptionKey) || resolveTranslation(currentLang, fallbackKey) || '';
+  const descriptionText =
+    resolveTranslation(currentLang, descriptionKey) ||
+    getFragranceDescription(scentId) ||
+    resolveTranslation(currentLang, fallbackKey) ||
+    '';
   carScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
@@ -6116,7 +6164,8 @@ const initCarConfigurator = () => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadFragranceCatalog();
   applyTranslations();
   initCategoryHeroDescriptions();
   initTitles();
