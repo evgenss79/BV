@@ -6017,6 +6017,18 @@ const getFragranceDescription = (scentId, fallbackKey = null) => {
   return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || fallbackDescription;
 };
 
+const resolveFragranceDescription = (scentId, fallbackKey = null, defaultDescription = '') => {
+  if (!scentId || scentId === 'none') return defaultDescription;
+  const description = getFragranceDescription(scentId, fallbackKey);
+  if (description) return description;
+  if (fallbackKey) {
+    return (
+      resolveTranslation(currentLang, fallbackKey) || resolveTranslation('en', fallbackKey) || defaultDescription || ''
+    );
+  }
+  return defaultDescription || '';
+};
+
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
@@ -6033,18 +6045,20 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
     scentLabel = resolveTranslation(currentLang, labelKey) || scentLabel;
   }
 
-  let descriptionText = '';
+  let defaultDescription = '';
 
   if (scentId === 'none' && config?.defaultScentDescriptionKey) {
-    descriptionText =
+    defaultDescription =
       resolveTranslation(currentLang, config.defaultScentDescriptionKey) ||
       resolveTranslation('en', config.defaultScentDescriptionKey) ||
       '';
   }
 
-  if (!descriptionText) {
-    descriptionText = getFragranceDescription(scentId);
-  }
+  const translationDescriptionKey = config?.scentDescriptionTranslationBase
+    ? `${config.scentDescriptionTranslationBase}.${scentId === 'none' ? 'none' : scentId}`
+    : null;
+
+  let descriptionText = resolveFragranceDescription(scentId, translationDescriptionKey, defaultDescription);
   if (!descriptionText && config?.scentDescriptions && scentId !== 'none') {
     descriptionText = config.scentDescriptions[scentId] || '';
   } else if (!descriptionText && config?.scentDescriptionTranslationBase) {
@@ -6147,18 +6161,12 @@ const updateCandleScentDescription = (resetToggle = false) => {
   if (!candleScentSelect || !candleScentDescriptionElement) return;
   const scentId = getScentIdFromSelect(candleScentSelect);
   const descriptionKey = `candles.scents.${scentId}.description`;
-  let descriptionText = '';
-
-  if (scentId === 'none') {
-    descriptionText =
-      resolveTranslation(currentLang, 'product.scented_candles.default_description') ||
-      resolveTranslation('en', 'product.scented_candles.default_description') ||
-      '';
-  }
-
-  if (!descriptionText) {
-    descriptionText = getFragranceDescription(scentId, descriptionKey) || resolveTranslation(currentLang, descriptionKey) || '';
-  }
+  const defaultDescription =
+    resolveTranslation(currentLang, 'product.scented_candles.default_description') ||
+    resolveTranslation('en', 'product.scented_candles.default_description') ||
+    candleScentDescriptionElement.textContent ||
+    '';
+  const descriptionText = resolveFragranceDescription(scentId, descriptionKey, defaultDescription);
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
@@ -6204,12 +6212,13 @@ const updateCarScentDescription = (resetToggle = false) => {
   if (!carScentDescriptionElement || !carScentSelect) return;
   const scentId = getScentIdFromSelect(carScentSelect);
   const descriptionKey = `car.scents.${scentId}.description`;
-  const fallbackKey = 'car.scents.none.description';
-  const descriptionText =
-    getFragranceDescription(scentId, descriptionKey) ||
-    resolveTranslation(currentLang, descriptionKey) ||
-    resolveTranslation(currentLang, fallbackKey) ||
+  const defaultKey = 'product.auto_perfume.capsule.short_description';
+  const defaultDescription =
+    resolveTranslation(currentLang, defaultKey) ||
+    resolveTranslation('en', defaultKey) ||
+    carScentDescriptionElement.textContent ||
     '';
+  const descriptionText = resolveFragranceDescription(scentId, descriptionKey, defaultDescription);
   carScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
