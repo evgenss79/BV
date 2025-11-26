@@ -5286,11 +5286,10 @@ sanitizeGermanTranslations(translations.de);
 
 let fragranceCatalog = {};
 
-const getFullDescriptionForScent = (scentKey) => {
+const getFullDescription = (scentKey) => {
   if (!scentKey || scentKey === 'none') return '';
   const catalog = window.fragranceCatalog || fragranceCatalog || {};
-  const entry = catalog[scentKey];
-  if (!entry) return '';
+  const entry = (catalog || {})[scentKey] || {};
   if (typeof entry === 'string') return entry;
   return entry.long || entry.short || entry.description || '';
 };
@@ -5472,6 +5471,8 @@ const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfb
 const carParfumPrice = 12.9;
 const carPriceCurrency = 'CHF';
 
+const limitedEditionDefaultImage = 'https://raw.githubusercontent.com/evgenss79/BV_img/main/3%20velas.jpg?raw=true';
+
 const fragranceImageBaseUrl = diffuserImageBaseUrl;
 const fragranceImageSuffix = diffuserImageSuffix;
 const fragranceImageFallbacks = {
@@ -5480,7 +5481,8 @@ const fragranceImageFallbacks = {
   interior_perfume: interiorPerfumeDefaultImage,
   candles: candlesDefaultImage,
   car: carDefaultImage,
-  textile: textileDefaultImage
+  textile: textileDefaultImage,
+  limited_edition: limitedEditionDefaultImage
 };
 
 const fragranceImageSlugs = [
@@ -5504,7 +5506,10 @@ const fragranceImageSlugs = [
   'santal',
   'sugar',
   'tobacco_vanilla',
-  'valencia'
+  'valencia',
+  'new_york',
+  'abu_dhabi',
+  'palermo'
 ];
 
 const fragranceImages = Object.fromEntries(
@@ -6062,9 +6067,20 @@ const updateDiffuserImage = () => {
 };
 
 const updateProductFragranceDescription = (descriptionEl, category, scentKey) => {
-  const descriptionElements = Array.isArray(descriptionEl) ? descriptionEl.filter(Boolean) : [descriptionEl].filter(Boolean);
+  const roots = Array.isArray(descriptionEl) ? descriptionEl.filter(Boolean) : [descriptionEl].filter(Boolean);
+  const descriptionElements = roots.flatMap((root) => {
+    if (!root || typeof root.querySelectorAll !== 'function') {
+      return root?.dataset?.fragranceDescription ? [root] : [];
+    }
+
+    const elements = Array.from(root.querySelectorAll('[data-fragrance-description]'));
+    if (root.dataset?.fragranceDescription) {
+      elements.push(root);
+    }
+    return elements;
+  });
+
   if (!descriptionElements.length || !category) return '';
-  const baseDefault = descriptionElements[0]?.dataset?.initialDescription || descriptionElements[0]?.textContent || '';
 
   descriptionElements.forEach((el) => {
     if (!el.dataset.initialDescription) {
@@ -6072,15 +6088,18 @@ const updateProductFragranceDescription = (descriptionEl, category, scentKey) =>
     }
   });
 
-  const defaultDescription = descriptionElements[0]?.dataset?.initialDescription || baseDefault;
-  const longDescription = scentKey && scentKey !== 'none'
-    ? getFullDescriptionForScent(scentKey) || defaultDescription
-    : defaultDescription;
+  const defaultDescription =
+    descriptionElements.find((el) => el.dataset.initialDescription)?.dataset.initialDescription ||
+    descriptionElements[0]?.textContent ||
+    '';
+  const descriptionText = scentKey && scentKey !== 'none' ? getFullDescription(scentKey) : '';
+  const resolvedDescription = descriptionText || defaultDescription;
 
   descriptionElements.forEach((el) => {
-    el.textContent = longDescription;
+    el.textContent = resolvedDescription;
   });
-  return longDescription;
+
+  return resolvedDescription;
 };
 
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
@@ -6114,7 +6133,7 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   );
 
   const descriptionText =
-    getFullDescriptionForScent(scentId) || defaultDescription || descriptionEls[0]?.textContent || descriptionEl.textContent;
+    getFullDescription(scentId) || defaultDescription || descriptionEls[0]?.textContent || descriptionEl.textContent;
 
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
   const normalizedDescription = normalizeDescriptionText(descriptionText, defaultDescription);
@@ -6229,7 +6248,7 @@ const updateCandleScentDescription = (resetToggle = false) => {
   const descriptionEls = Array.from(
     document.querySelectorAll('[data-product-fragrance-description="candles"]') || []
   );
-  const descriptionText = getFullDescriptionForScent(scentId) || defaultDescription;
+  const descriptionText = getFullDescription(scentId) || defaultDescription;
 
   if (descriptionEls.length) {
     updateProductFragranceDescription(descriptionEls, 'candles', scentId);
@@ -6305,7 +6324,7 @@ const updateCarScentDescription = (resetToggle = false) => {
     carScentDescriptionElement.textContent ||
     '';
   const descriptionEls = Array.from(document.querySelectorAll('[data-product-fragrance-description="car"]') || []);
-  const descriptionText = getFullDescriptionForScent(scentId) || defaultDescription;
+  const descriptionText = getFullDescription(scentId) || defaultDescription;
   if (descriptionEls.length) {
     updateProductFragranceDescription(descriptionEls, 'car', scentId);
   }
@@ -6391,6 +6410,19 @@ const initProductCardFragrances = () => {
 
     select.dataset.scentSelect = select.dataset.scentSelect || 'true';
     select.dataset.category = select.dataset.category || inferredCategory;
+
+    if (select.dataset.category === 'limited_edition' && !select.options.length) {
+      [
+        { value: 'new_york', label: 'New York' },
+        { value: 'abu_dhabi', label: 'Abu Dhabi' },
+        { value: 'palermo', label: 'Palermo' }
+      ].forEach(({ value, label }) => {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = label;
+        select.appendChild(option);
+      });
+    }
 
     let selectionAdjusted = false;
 
