@@ -123,18 +123,34 @@
             data-candle-scent-description-wrapper
           >
             <p
-              class="product-card__scent-description product-fragrance-description"
+              class="product-card__scent-description product-fragrance-description product-fragrance-description-short"
               data-candle-scent-description
               data-product-fragrance-description="candles"
+              data-fragrance-description="short"
               data-i18n="product.scented_candles.default_description"
             >Aromatic veils are not only pleasant to the eye, but they can also significantly change the atmosphere, filling the space with pleasant aromas.</p>
-            <button
-              type="button"
+            <div class="collapse" id="fragranceDescription-candles">
+              <p
+                class="product-card__scent-description product-fragrance-description-long"
+                data-product-fragrance-description="candles"
+                data-fragrance-description="long"
+                data-i18n="product.scented_candles.default_description"
+              >
+                Aromatic veils are not only pleasant to the eye, but they can also significantly change the atmosphere, filling the space with pleasant aromas.
+              </p>
+            </div>
+            <a
               class="product-card__scent-toggle"
+              href="#fragranceDescription-candles"
+              data-bs-toggle="collapse"
               data-candle-scent-toggle
               aria-expanded="false"
+              data-collapse-label-more="Read more"
+              data-collapse-label-less="Collapse"
               data-i18n="common.toggle.more"
-            ></button>
+            >
+              Read more
+            </a>
           </div>
 
           <div class="product-card__options">
