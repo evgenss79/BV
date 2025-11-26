@@ -6157,7 +6157,23 @@ const updateCandleImage = () => {
   candleImageElement.src = `${candlesImageBaseUrl}${encoded}${candlesImageSuffix}`;
 };
 
+const ensureCandleScentDescriptionElements = () => {
+  if (!candleScentDescriptionElement) {
+    candleScentDescriptionElement = document.querySelector('[data-candle-scent-description]');
+  }
+  if (!candleScentDescriptionElement) {
+    candleScentDescriptionElement = document.querySelector('[data-candle-card] .product-fragrance-description');
+  }
+  if (!candleScentDescriptionWrapper) {
+    candleScentDescriptionWrapper = document.querySelector('[data-candle-scent-description-wrapper]');
+  }
+  if (!candleScentDescriptionToggle) {
+    candleScentDescriptionToggle = document.querySelector('[data-candle-scent-toggle]');
+  }
+};
+
 const updateCandleScentDescription = (resetToggle = false) => {
+  ensureCandleScentDescriptionElements();
   if (!candleScentSelect || !candleScentDescriptionElement) return;
   const scentId = getScentIdFromSelect(candleScentSelect);
   const descriptionKey = `candles.scents.${scentId}.description`;
@@ -6184,6 +6200,9 @@ const initCandleConfigurator = () => {
   candleScentSelect = document.querySelector('[data-candle-scent]');
   candleImageElement = document.querySelector('[data-candle-image]');
   candleScentDescriptionElement = document.querySelector('[data-candle-scent-description]');
+  if (!candleScentDescriptionElement) {
+    candleScentDescriptionElement = document.querySelector('[data-candle-card] .product-fragrance-description');
+  }
   candleScentDescriptionWrapper = document.querySelector('[data-candle-scent-description-wrapper]');
   candleScentDescriptionToggle = document.querySelector('[data-candle-scent-toggle]');
   if (
@@ -6208,7 +6227,23 @@ const initCandleConfigurator = () => {
   });
 };
 
+const ensureCarScentDescriptionElements = () => {
+  if (!carScentDescriptionElement) {
+    carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
+  }
+  if (!carScentDescriptionElement) {
+    carScentDescriptionElement = document.querySelector('[data-car-card] .product-fragrance-description');
+  }
+  if (!carScentDescriptionWrapper) {
+    carScentDescriptionWrapper = document.querySelector('[data-car-scent-description-wrapper]');
+  }
+  if (!carScentDescriptionToggle) {
+    carScentDescriptionToggle = document.querySelector('[data-car-scent-toggle]');
+  }
+};
+
 const updateCarScentDescription = (resetToggle = false) => {
+  ensureCarScentDescriptionElements();
   if (!carScentDescriptionElement || !carScentSelect) return;
   const scentId = getScentIdFromSelect(carScentSelect);
   const descriptionKey = `car.scents.${scentId}.description`;
@@ -6247,6 +6282,9 @@ const initCarConfigurator = () => {
   carScentSelect = document.querySelector('[data-car-scent]');
   carImageElement = document.querySelector('[data-car-image]');
   carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
+  if (!carScentDescriptionElement) {
+    carScentDescriptionElement = document.querySelector('[data-car-card] .product-fragrance-description');
+  }
   carScentDescriptionWrapper = document.querySelector('[data-car-scent-description-wrapper]');
   carScentDescriptionToggle = document.querySelector('[data-car-scent-toggle]');
   if (!carPriceElement && !carScentSelect && !carImageElement && !carScentDescriptionElement) {
