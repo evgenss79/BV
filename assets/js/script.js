@@ -5558,23 +5558,34 @@ const setFragranceImage = (imgEl, scentId, category, label = '', options = {}) =
   imgEl.alt = `${altLabel} fragrance`;
 };
 
-function updateFragranceDescription(card, key) {
+function updateFragranceDescription(card, key, category) {
   const data = getFragranceData(key);
-  const shortEl = card?.querySelector?.('[data-fragrance-description="short"]');
-  const longEl = card?.querySelector?.('[data-fragrance-description="long"]');
-  if (shortEl) shortEl.textContent = data.long || data.short;
-  if (longEl) longEl.textContent = data.long || data.short;
+  const descriptionText = data.long || data.short || '';
+
+  const scopedTargets = card ? Array.from(card.querySelectorAll('[data-fragrance-description]')) : [];
+  const categoryTargets = category
+    ? Array.from(document.querySelectorAll(`[data-product-fragrance-description="${category}"]`))
+    : [];
+
+  [...new Set([...scopedTargets, ...categoryTargets])].forEach((node) => {
+    if (!(node instanceof HTMLElement)) return;
+    node.textContent = descriptionText;
+  });
 }
 
 function updateFragranceImage(card, key, category) {
   const data = getFragranceData(key);
-  const img = card?.querySelector?.('[data-fragrance-image]');
-  if (img && data.image) {
-    const fallbackCategory = category || card?.dataset?.category;
+  const fallbackCategory = category || card?.dataset?.category;
+  const targets = card ? Array.from(card.querySelectorAll('[data-fragrance-image]')) : [];
+
+  targets.forEach((img) => {
+    if (!(img instanceof HTMLImageElement)) return;
     const src = data.image || fragranceImageFallbacks[fallbackCategory] || fragranceImageFallbacks.default;
-    img.src = src;
-    img.alt = `${key} fragrance`;
-  }
+    if (src) {
+      img.src = src;
+      img.alt = `${key} fragrance`;
+    }
+  });
 }
 
 const normalizeDescriptionText = (value, fallback = '') => {
@@ -6145,7 +6156,7 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
   const normalizedDescription = normalizeDescriptionText(descriptionText, defaultDescription);
   if (card) {
-    updateFragranceDescription(card, scentId);
+    updateFragranceDescription(card, scentId, config?.category || 'diffusers');
   }
   descriptionEl.textContent = normalizedDescription;
 
@@ -6257,7 +6268,7 @@ const updateCandleScentDescription = (resetToggle = false) => {
 
   const card = candleScentSelect.closest('.product-card');
   if (card) {
-    updateFragranceDescription(card, scentId);
+    updateFragranceDescription(card, scentId, 'candles');
   }
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
@@ -6333,7 +6344,7 @@ const updateCarScentDescription = (resetToggle = false) => {
   const descriptionText = fragranceData.long || fragranceData.short || defaultDescription;
   const card = carScentSelect.closest('.product-card');
   if (card) {
-    updateFragranceDescription(card, scentId);
+    updateFragranceDescription(card, scentId, 'car');
   }
   carScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
@@ -6433,7 +6444,7 @@ const initProductCardFragrances = () => {
 
     const applySelection = () => {
       const scentId = getScentIdFromSelect(select);
-      updateFragranceDescription(card, scentId);
+      updateFragranceDescription(card, scentId, category);
       updateFragranceImage(card, scentId, category);
     };
 
