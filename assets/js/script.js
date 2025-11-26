@@ -18,7 +18,7 @@ const autoPerfumeDescriptionEn = `<p>
 
 const autoPerfumeDescriptionDe = `<p>
   Autoparfum sorgt für einen lebendigen, konstanten Duft im Fahrzeuginnenraum.
-  Bei regelmäßiger und richtiger Anwendung hält eine Flasche Autoparfum 3–6 Monate.
+  Bei regelmässiger und richtiger Anwendung hält eine Flasche Autoparfum 3–6 Monate.
 </p>
 
 <p>
@@ -65,21 +65,32 @@ const autoPerfumeDescriptionIt = `<p>
 </p>`;
 
 const sharedCategoryDescriptions = {
+  diffusers: {
+    en: `A diffuser is a stylish and effective way to fill your home with pleasant aromas.
+Modern sets with reeds help create a cozy atmosphere and emphasize the individuality of any interior.
+The online store offers a variety of reed diffusers for the home and gift sets.`,
+    de: `Ein Diffusor ist eine stilvolle und wirkungsvolle Möglichkeit, Ihr Zuhause mit angenehmen Düften zu erfüllen.
+Moderne Sets mit Stäbchen schaffen eine gemütliche Atmosphäre und unterstreichen die Individualität jedes Interieurs.
+Der Onlineshop bietet eine Vielzahl an Stäbchen-Diffusoren für Zuhause sowie Geschenksets.`,
+    fr: `Un diffuseur est une manière élégante et efficace de parfumer votre intérieur.
+Les modèles modernes à tiges créent une atmosphère chaleureuse et soulignent le caractère de chaque décor.
+Notre boutique en ligne propose une variété de diffuseurs à bâtonnets pour la maison et des coffrets cadeaux.`,
+    it: `Un diffusore è un modo elegante ed efficace per riempire la casa di aromi gradevoli.
+I set moderni con bastoncini aiutano a creare un’atmosfera accogliente e a sottolineare l’individualità di ogni ambiente.
+Il nostro shop online offre una varietà di diffusori a bastoncini per la casa e di set regalo.`
+  },
   limitedEdition: {
     en: `A collection of three exclusive scented candles – a limited edition inspired by the fragrances of the world’s most luxurious locations.
-
 The city of a million lights – New York, the mysterious and opulent Abu Dhabi, the sunny and gentle Palermo – choose the direction of your journey.
-
 Each candle in the collection is crafted in a minimalist and elegant style, blending seamlessly into your interior.
-
 We use premium coconut and soy waxes, which provide the best fragrance diffusion – a rich perfumed trail will fill your room shortly after lighting the candle.`,
-    de: `Eine Kollektion aus drei exklusiven Duftkerzen – eine limitierte Edition, inspiriert von den Düften der luxuriösesten Orte der Welt.
+    de: `Eine Kollektion aus drei exklusiven Duftkerzen – eine limitierte Edition, inspiriert von den Düften der luxurioesesten Orte der Welt.
 
-Die Stadt der Millionen Lichter – New York, das geheimnisvolle, opulente Abu Dhabi, das sonnige und sanfte Palermo – wähle die Richtung deiner Reise.
+Die Stadt der Millionen Lichter – New York, das geheimnisvolle, opulente Abu Dhabi, das sonnige und sanfte Palermo – waehl die Richtung deiner Reise.
 
-Jede Kerze ist minimalistisch und elegant gestaltet und fügt sich mühelos in jedes Interieur ein.
+Jede Kerze ist minimalistisch und elegant gestaltet und fuegt sich muehelos in jedes Interieur ein.
 
-Wir verwenden hochwertiges Kokos- und Sojawachs für optimale Duftabgabe – schon wenige Minuten nach dem Anzünden füllt ein reichhaltiger Duft den Raum.`,
+Wir verwenden hochwertiges Kokos- und Sojawachs fuer optimale Duftabgabe – schon wenige Minuten nach dem Anzuenden fuellt ein reichhaltiger Duft den Raum.`,
     fr: `Une collection de trois bougies parfumées exclusives – une édition limitée inspirée des fragrances des lieux les plus luxueux du monde.
 
 New York et ses millions de lumières, l’Abu Dhabi mystérieux et opulent, le Palerme ensoleillé et doux : choisissez la destination de votre voyage olfactif.
@@ -105,29 +116,36 @@ To choose, order, and purchase this fragrant textile accessory for your home, yo
 For the information of potential buyers: all products included in our current online catalog have undergone multi-stage manufacturing quality control and are certified as meeting the requirements of current standards. This fact guarantees their ecological safety for the skin, exquisite and rich aroma, quick and effective elimination of the unpleasant musty smell on the fabric, and long-lasting care for your belongings.
 
 Composition of Textile Spray
+
 Textile spray is a complex product made up of numerous concentrated components. The main ingredients in the composition are essential oils, which are dissolved in an aqueous medium with the help of solubilizers.
+
 Important: When using essential oils in their pure form, there is a high probability of greasy stains appearing on the material. Solubilizers, by dissolving the oil in water, reduce its concentration and allow the solution to be used on any type of textile product without causing damage to these accessories and the skin.
+
 To obtain a ready-to-use textile spray, the following substances and components are also used:
-– special preservatives. Their main purpose is to protect the spray from pathogenic bacteria and microbes, ensuring long-term storage and use;
-– distilled water (occupies almost 90% of the total volume);
-– vitamin E.
+special preservatives. Their main purpose is to protect the spray from pathogenic bacteria and microbes, ensuring long-term storage and use;
+distilled water (occupies almost 90% of the total volume);
+vitamin E.
+
 For your information: a bottle of ready-made fabric spray contains 50 ml and more. The choice of one volume or another is the individual prerogative of each individual consumer.
 
 Main Advantages of Textile Spray
+
 The long-lasting scent is the main and undeniable advantage that most buyers prefer.
+
 For your information: Use is limited to spraying the solution from the bottle at a distance of 20–25 cm from the fabric. Increasing the intensity of application increases the duration of action and the durability of the scent on the fabric, even after washing.
+
 Scented spray is a necessary product for the textile industry and also has the following advantages:
-– It can be used on any type of textile product, including blankets, bedspreads, bed linen, casual wear, curtains, sheers, bath towels, etc.
-– Environmental safety. The product does not contain hazardous substances or reagents, and the product itself has hypoallergenic properties.
-– It has a slight softening and antistatic effect. After use, the material becomes pleasant to the touch and soft.
-– A variety of scents and aromas. You can choose a product based on your personal preferences: jasmine / mandarin / rose / pine needles / musk.`,
-    de: `Die langfristige Lagerung von Textilien in Schränken bringt selten Frische – stattdessen entstehen oft muffige Gerüche, besonders bei ungünstigem Raumklima (hohe Luftfeuchtigkeit, Staub, Partikel). Ein parfümierter Textilspray wirkt dem entgegen und pflegt die Fasern.
+It can be used on any type of textile product, including blankets, bedspreads, bed linen, casual wear, curtains, sheers, bath towels, etc.
+Environmental safety. The product does not contain hazardous substances or reagents, and the product itself has hypoallergenic properties.
+It has a slight softening and antistatic effect. After use, the material becomes pleasant to the touch and soft.
+A variety of scents and aromas. You can choose a product based on your personal preferences: jasmine / mandarin / rose / pine needles / musk.`,
+    de: `Die langfristige Lagerung von Textilien in Schränken bringt selten Frische – stattdessen entstehen oft muffige Gerueche, besonders bei unguenstigem Raumklima (hohe Luftfeuchtigkeit, Staub, Partikel). Ein parfuemierter Textilspray wirkt dem entgegen und pflegt die Fasern.
 
-Unser Onlineshop bietet ausgewählte Textilsprays, die strenge Qualitätskontrollen durchlaufen haben. Sie sind hautverträglich, riechen edel und entfernen hartnäckige Gerüche, ohne den Stoff zu beschädigen.
+Unser Onlineshop bietet ausgewaehlte Textilsprays, die strenge Qualitaetskontrollen durchlaufen haben. Sie sind hautvertraeglich, riechen edel und entfernen hartnaeckige Gerueche, ohne den Stoff zu beschaedigen.
 
-Zusammensetzung: ätherische Öle, gelöst mit Solubilisatoren, dazu Konservierungsstoffe, destilliertes Wasser und Vitamin E. So entsteht ein Spray, das auf allen Stoffarten angewendet werden kann, ohne Flecken zu hinterlassen.
+Zusammensetzung: aetherische Oele, geloest mit Solubilisatoren, dazu Konservierungsstoffe, destilliertes Wasser und Vitamin E. So entsteht ein Spray, das auf allen Stoffarten angewendet werden kann, ohne Flecken zu hinterlassen.
 
-Vorteile: lang anhaltender Duft, geeignet für jede Textilart, hypoallergen und leicht antistatisch. Je nach Intensität der Anwendung hält der Duft auch nach dem Waschen an.`,
+Vorteile: lang anhaltender Duft, geeignet für jede Textilart, hypoallergen und leicht antistatisch. Je nach Intensitaet der Anwendung haelt der Duft auch nach dem Waschen an.`,
     fr: `Un stockage prolongé des textiles dans une armoire ne les rend pas plus frais : des odeurs de renfermé peuvent apparaître, surtout en cas d’humidité ou de poussière. Un spray textile parfumé permet d’agir efficacement sur la fibre et d’éliminer ces odeurs.
 
 Tous nos sprays proposés en ligne ont passé des contrôles qualité rigoureux. Ils sont sûrs pour la peau, diffusent un parfum élégant et éliminent rapidement les odeurs sans abîmer les tissus.
@@ -154,19 +172,19 @@ Vantaggi: profumazione duratura, compatibilità con tutti i materiali, propriet�
 
 Benefits of Using Home Fragrances
 Perfumes are often used in homes to fill the space with pleasant aromas, creating a comfortable living and working environment. They help solve the following problems:
-– Creating a favorable environment. Fragrances help make a space more welcoming and comfortable, evoking associations with freshness, warmth, and cleanliness.
-– Improves mood. Natural essential oils can relieve stress, improve mood, and help with depression.
-– Air freshening and purification. Some home fragrances have antiseptic properties. They can be used to cleanse the air of unpleasant odors.
-– Increased concentration and performance. Aromas with citrus and menthol notes help you focus and improve brain activity, which is especially important for working in offices or commercial spaces.
-– Relaxation and improved sleep. Home fragrances such as lavender, vanilla, and sandalwood help you calm, relax, and prepare for a deep sleep.
+Creating a favorable environment. Fragrances help make a space more welcoming and comfortable, evoking associations with freshness, warmth, and cleanliness.
+Improves mood. Natural essential oils can relieve stress, improve mood, and help with depression.
+Air freshening and purification. Some home fragrances have antiseptic properties. They can be used to cleanse the air of unpleasant odors.
+Increased concentration and performance. Aromas with citrus and menthol notes help you focus and improve brain activity, which is especially important for working in offices or commercial spaces.
+Relaxation and improved sleep. Home fragrances such as lavender, vanilla, and sandalwood help you calm, relax, and prepare for a deep sleep.
 
 If you use perfume to deodorize your home, you can not only ensure a pleasant aroma is diffused in the room but also fill yourself with positive emotions throughout the day.
 
 Ways to Use Fragrances in the Room
 There are many types of fragrances that vary in how they are used and the intensity of their effect. You can select a product based on your preferences or the characteristics of the room. The most common home fragrances include:
-– Scented candles. Scented candles are one of the most popular ways to scent your home. They create soft lighting and fill the space with a pleasant aroma. Decorative scented candles will allow you to decorate your festive table and celebrate a special event. It is recommended to choose candles made with natural soy and beeswax with the addition of essential oils.
-– Aerosols. These are convenient for instantly refreshing the environment. The spray can be applied to curtains, bedding, or other interior items. You can take these accessories with you while traveling and use them in hotel rooms. The spray is perfect for quickly eliminating unpleasant odors.
-– Aroma diffusers. The reed aroma diffuser provides a long-lasting scent throughout the home. It is ideal for meditation, relaxation after work, or strenuous workouts. The aroma intensity can be adjusted with reeds. The aroma diffuser can be ultrasonic. It affects water and essential oils using ultrasonic waves. The ultrasonic aroma diffuser is easy to use and has a long lifespan.
+Scented candles. Scented candles are one of the most popular ways to scent your home. They create soft lighting and fill the space with a pleasant aroma. Decorative scented candles will allow you to decorate your festive table and celebrate a special event. It is recommended to choose candles made with natural soy and beeswax with the addition of essential oils.
+Aerosols. These are convenient for instantly refreshing the environment. The spray can be applied to curtains, bedding, or other interior items. You can take these accessories with you while traveling and use them in hotel rooms. The spray is perfect for quickly eliminating unpleasant odors.
+Aroma diffusers. The reed aroma diffuser provides a long-lasting scent throughout the home. It is ideal for meditation, relaxation after work, or strenuous workouts. The aroma intensity can be adjusted with reeds. The aroma diffuser can be ultrasonic. It affects water and essential oils using ultrasonic waves. The ultrasonic aroma diffuser is easy to use and has a long lifespan.
 
 Using scented candles, diffusers, sprays, and incense stick sets can help fill your home with warmth, improve your mood, and make the space more inviting.`,
     de: `Düfte beeinflussen Stimmung, Leistungsfähigkeit und Wohlbefinden. Raumparfums schaffen schnell eine einladende Atmosphäre und besondere Akzente im Zuhause oder Büro. Die passende Komposition hilft beim Entspannen nach einem langen Tag, mindert Unruhe und fördert erholsamen Schlaf.
@@ -277,7 +295,7 @@ const translations = {
       account: '👤 Konto',
       cart: '🛒 Warenkorb',
       cartItems: 'Artikel',
-      burger: 'Menü öffnen oder schließen',
+      burger: 'Menü öffnen oder schliessen',
       utilityShipping: 'Gratis Versand ab CHF 80',
       utilityDelivery: 'Lieferung innerhalb von 1–3 Werktagen',
       search: 'Suchen',
@@ -343,8 +361,8 @@ const translations = {
       },
       story: {
         title: 'Über NicheHome.ch',
-        paragraph1: 'NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für außergewöhnliche Akkorde und langlebige Performance.',
-        paragraph2: 'Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, maßgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.',
+        paragraph1: 'NicheHome.ch präsentiert eine sorgfältig kuratierte Auswahl an Raumdüften, die für anspruchsvolle Wohn- und Hospitality-Konzepte entwickelt wurden. Jede Kreation entsteht aus der Leidenschaft für aussergewöhnliche Akkorde und langlebige Performance.',
+        paragraph2: 'Unsere Boutique beliefert Interior Designer, Boutiquen und Privatkunden in der gesamten Schweiz mit flexiblen Konditionen, massgeschneiderter Beratung und sofort einsatzbereiten Kollektionen.',
         link: 'Mehr über die Philosophie'
       },
       promos: {
@@ -359,7 +377,7 @@ const translations = {
         tile2: {
           eyebrow: 'Highlight',
           title: 'Ceremonial Candles',
-          text: 'Steinzeuggefäße mit dreifachen Dochten – entwickelt für Boutique-Hotels.',
+          text: 'Steinzeuggefässe mit dreifachen Dochten – entwickelt für Boutique-Hotels.',
           button: 'Kollektion ansehen'
         },
         tile3: {
@@ -390,7 +408,7 @@ const translations = {
         title: 'Kategorien & Duftwelten',
         button: 'Produkte ansehen',
         card1: { title: 'Aroma-Diffusoren', description: 'Satinierte Glasflakons mit Naturfasern, die Räume bis zu 60 m² konstant beduften.' },
-        card2: { title: 'Duftkerzen', description: 'Handgegossene Wachsblends mit drei Dochten und eleganten Keramikgefäßen.' },
+        card2: { title: 'Duftkerzen', description: 'Handgegossene Wachsblends mit drei Dochten und eleganten Keramikgefässen.' },
         card3: { title: 'Limitierte Kollektion', description: 'Saisonale Editionen mit kunstvollen Labels, nummeriert und nur auf Anfrage.' },
         card4: { title: 'Raumduft', description: 'Fein zerstäubte Raum- und Kissensprays mit sofortiger Wirkung.' },
         card5: { title: 'Textilspray', description: 'Pflegende Kompositionen für Vorhänge, Teppiche und Bettwäsche.' },
@@ -398,7 +416,7 @@ const translations = {
         card7: { title: 'Accessoires', description: 'Trichter, Messbecher und Duftplatten für professionelle Präsentationen.' },
         card8: { title: 'Meditation', description: 'Ritualkits mit Räucherstäbchen, Duftölen und Keramikhaltern.' },
         card9: { title: 'Autoparfum', description: 'Magnetische Clips mit austauschbaren Duftkapseln für jede Fahrt.' },
-        card10: { title: 'Aromageräte', description: 'Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Größen.' }
+        card10: { title: 'Aromageräte', description: 'Ultraschall-Diffusoren mit Timerfunktionen für Projekte aller Grössen.' }
       },
       products: {
         label: 'Aktuelle Favoriten',
@@ -408,7 +426,7 @@ const translations = {
         card2: { name: 'Raumspray "Alpine Mist"', description: 'Eukalyptus, Silberfichte und Baumwollblüte für klare, frische Interieurs.', price: 'CHF 39.90' },
         card3: { name: 'Duftkerze "Sable Nuit"', description: 'Sandelholz, Amber und Tonkabohne in mattem Steinzeug.', price: 'CHF 69.90' },
         card4: { name: 'Gift Set "Cedar Atlas"', description: 'Diffusor, Spray und Kerze in abgestimmten Holznoten.', price: 'CHF 149.00' },
-        card5: { name: 'Textilspray "Velvet Studio"', description: 'Cashmere, Osmanthus und weiße Teeblätter für Soft-Furnishings.', price: 'CHF 34.00' },
+        card5: { name: 'Textilspray "Velvet Studio"', description: 'Cashmere, Osmanthus und weisse Teeblätter für Soft-Furnishings.', price: 'CHF 34.00' },
         card6: { name: 'Autoparfum "Nomad Drive"', description: 'Zedernholz, Grapefruit und Leder für jede Fahrt.', price: 'CHF 29.50' }
       },
       benefits: {
@@ -417,7 +435,7 @@ const translations = {
         item1: { title: 'Sichere Verpackung', description: 'Spezielle Schaumstoff- und Kartoninlays schützen empfindliche Glasware auf jedem Transportweg.' },
         item2: { title: 'Kostenloser Versand', description: 'Lieferungen ab CHF 80 sind innerhalb der Schweiz inklusive Versicherung kostenfrei.' },
         item3: { title: 'Kuratiert & getestet', description: 'Jede Komposition wird im Showroom getestet, bevor sie in das Sortiment aufgenommen wird.' },
-        item4: { title: 'Geschenkverpackung', description: 'Auf Wunsch erhalten Sie satinierte Bänder, Karten und maßgefertigte Boxen.' }
+        item4: { title: 'Geschenkverpackung', description: 'Auf Wunsch erhalten Sie satinierte Bänder, Karten und massgefertigte Boxen.' }
       }
     },
     catalog: {
@@ -445,9 +463,9 @@ const translations = {
       sections: {
         diffusers: {
           label: 'Aroma-Diffusoren',
-          title: 'Duftskulpturen für jede Raumgröße',
+          title: 'Duftskulpturen für jede Raumgrösse',
           description:
-            'Von kompakten 100-ml-Flakons bis zu monumentalen 2,5-Liter-Gefäßen – jede Variante sorgt für konstante Duftabgabe.',
+            'Von kompakten 100-ml-Flakons bis zu monumentalen 2,5-Liter-Gefässen – jede Variante sorgt für konstante Duftabgabe.',
           cards: {
             card1: {
               name: 'Reeddiffusor "Urban Calm" 200 ml',
@@ -461,7 +479,7 @@ const translations = {
             },
             card3: {
               name: 'Diffusor "Lumen" 1L',
-              description: 'Orangenblüte, Neroli und weißer Moschus für großflächige Showrooms.',
+              description: 'Orangenblüte, Neroli und weisser Moschus für grossflächige Showrooms.',
               price: 'CHF 149.00'
             }
           }
@@ -469,7 +487,7 @@ const translations = {
         candles: {
           label: 'Duftkerzen',
           title: 'Handgegossene Keramikkerzen',
-          description: 'Mineralische Gefäße, dreifache Dochte und cremige Wachsblends für bis zu 80 Stunden Brenndauer.',
+          description: 'Mineralische Gefässe, dreifache Dochte und cremige Wachsblends für bis zu 80 Stunden Brenndauer.',
           cards: {
             card1: {
               name: 'Kerze "Sable Nuit"',
@@ -478,7 +496,7 @@ const translations = {
             },
             card2: {
               name: 'Kerze "Linen Cloud"',
-              description: 'Baumwollblüte, Cashmere und weißer Moschus für Schlafräume und Spas.',
+              description: 'Baumwollblüte, Cashmere und weisser Moschus für Schlafräume und Spas.',
               price: 'CHF 64.00'
             },
             card3: {
@@ -500,7 +518,7 @@ const translations = {
             },
             card2: {
               name: 'Kerze "Marble Dust"',
-              description: 'Steinzeuggefäß mit Gräsern, Vetiver und weißem Rauch.',
+              description: 'Steinzeuggefäss mit Gräsern, Vetiver und weissem Rauch.',
               price: 'CHF 84.00'
             },
             card3: {
@@ -539,7 +557,7 @@ const translations = {
           cards: {
             card1: {
               name: 'Textilspray "Velvet Studio"',
-              description: 'Cashmere, Osmanthus und weiße Teeblätter für Soft-Furnishings.',
+              description: 'Cashmere, Osmanthus und weisse Teeblätter für Soft-Furnishings.',
               price: 'CHF 34.00'
             },
             card2: {
@@ -549,7 +567,7 @@ const translations = {
             },
             card3: {
               name: 'Spray "Linen Ritual"',
-              description: 'Lavendel, Angelika und weiße Hölzer für Bettwäsche und Gardinen.',
+              description: 'Lavendel, Angelika und weisse Hölzer für Bettwäsche und Gardinen.',
               price: 'CHF 30.00'
             }
           }
@@ -557,7 +575,7 @@ const translations = {
         gift: {
           label: 'Geschenksets',
           title: 'Kurierte Duftboxen',
-          description: 'Mix & Match-Kombinationen mit Diffusoren, Kerzen und Sprays inklusive Grußkarten.',
+          description: 'Mix & Match-Kombinationen mit Diffusoren, Kerzen und Sprays inklusive Grusskarten.',
           cards: {
             card1: {
               name: 'Gift Set "Cedar Atlas"',
@@ -583,7 +601,7 @@ const translations = {
           cards: {
             card1: {
               name: 'Messbecher & Trichter',
-              description: 'Edelstahl-Tools zum sicheren Nachfüllen großer Diffusoren.',
+              description: 'Edelstahl-Tools zum sicheren Nachfüllen grosser Diffusoren.',
               price: 'CHF 29.00'
             },
             card2: {
@@ -645,7 +663,7 @@ const translations = {
         devices: {
           label: 'Aromageräte',
           title: 'Technik für Duftinstallationen',
-          description: 'Ultraschall- und HVAC-Lösungen für private Apartments bis hin zu Großprojekten.',
+          description: 'Ultraschall- und HVAC-Lösungen für private Apartments bis hin zu Grossprojekten.',
           cards: {
             card1: {
               name: 'Aromagerät "Halo Mini"',
@@ -697,16 +715,16 @@ const translations = {
       faq: {
         label: 'FAQ',
         title: 'Häufig gestellte Fragen',
-        item1: { question: 'Wie lange dauert die Produktion?', answer: 'Lagerartikel sind sofort lieferbar, Sondergrößen benötigen zwischen 10 und 15 Arbeitstagen.' },
+        item1: { question: 'Wie lange dauert die Produktion?', answer: 'Lagerartikel sind sofort lieferbar, Sondergrössen benötigen zwischen 10 und 15 Arbeitstagen.' },
         item2: { question: 'Bieten Sie private Labels an?', answer: 'Ja, ab 100 Einheiten pro Duft erstellen wir neutrale Labels oder co-branded Editionen.' },
-        item3: { question: 'Gibt es Duftberatung?', answer: 'Unser Team unterstützt per Video-Call oder vor Ort bei der Auswahl nach Raumgröße und Markenwelt.' }
+        item3: { question: 'Gibt es Duftberatung?', answer: 'Unser Team unterstützt per Video-Call oder vor Ort bei der Auswahl nach Raumgrösse und Markenwelt.' }
       },
       news: {
         label: 'Aktuelles',
         title: 'Kollektions-Updates',
         card1: { tag: 'Launch', title: 'Neue "Atelier" Linie', excerpt: 'Vier Reeddiffusoren mit mineralischen Noten und Keramikkappen in Naturfarben.' },
         card2: { tag: 'Partnerschaft', title: 'Pop-up im Tessin', excerpt: 'Temporärer Dufttisch mit limitierter Kollektion und Live-Blending.' },
-        card3: { tag: 'Service', title: 'Recyclingprogramm', excerpt: 'Leere Gefäße können zurückgegeben werden und werden in Showroom-Installationen genutzt.' }
+        card3: { tag: 'Service', title: 'Recyclingprogramm', excerpt: 'Leere Gefässe können zurückgegeben werden und werden in Showroom-Installationen genutzt.' }
       },
       cta: {
         title: 'Limitierte Editionen reservieren',
@@ -718,8 +736,8 @@ const translations = {
       hero: {
         label: 'Signature Linie',
         title: 'Aroma-Diffusoren für charaktervolle Räume',
-        subtitle: 'Von kompakten 100-ml-Größen bis zu monumentalen Hotelgefäßen – jede Variante liefert konstante Duftabgabe.',
-        text: 'Alle Flakons werden in Italien gefertigt und mit Pflanzenfasern kombiniert, die die Duftöle gleichmäßig aufnehmen.',
+        subtitle: 'Von kompakten 100-ml-Grössen bis zu monumentalen Hotelgefässen – jede Variante liefert konstante Duftabgabe.',
+        text: 'Alle Flakons werden in Italien gefertigt und mit Pflanzenfasern kombiniert, die die Duftöle gleichmässig aufnehmen.',
         button: 'Projekt anfragen',
         secondary: 'Zur Übersicht'
       },
@@ -727,7 +745,7 @@ const translations = {
         label: 'Materialien',
         title: 'Details, die den Unterschied machen',
         item1: { title: 'Handpoliertes Glas', description: 'Jede Vase erhält eine satinierte Oberfläche, die sich in jede Interior-Palette einfügt.' },
-        item2: { title: 'Naturfasern', description: 'Rattan- und Baumwollstäbchen werden vor dem Versand kalibriert, um einen gleichmäßigen Duftfluss zu garantieren.' },
+        item2: { title: 'Naturfasern', description: 'Rattan- und Baumwollstäbchen werden vor dem Versand kalibriert, um einen gleichmässigen Duftfluss zu garantieren.' },
         item3: { title: 'Nachfüllsystem', description: 'Refills werden in Aluminiumflaschen geliefert und lassen sich mit beiliegenden Trichtern bequem nachfüllen.' }
       },
       products: {
@@ -784,7 +802,7 @@ Basisnoten: Patchouli, Kreuzkümmel, Oud, Safran`
         bamboo: {
           label: 'Bamboo',
           description: `BAMBOO 
-Ein grüner, frischer Duft nach Frühlingsblumen und Bambusstengeln. Dieser mäßig intensive Duft füllt Ihren Raum sanft, ohne ihn zu übertönen. Kopfnoten aus Bergamotte und Bambus erzeugen einen zarten pflanzlichen Nebel, der sich zu einer blumigen Herznote aus Lilie, Ylang-Ylang und Orangenblüte entwickelt. Eine warme, umhüllende Basis aus Vanille, Sandelholz und Amber rundet die Komposition ab.
+Ein grüner, frischer Duft nach Frühlingsblumen und Bambusstengeln. Dieser mässig intensive Duft füllt Ihren Raum sanft, ohne ihn zu übertönen. Kopfnoten aus Bergamotte und Bambus erzeugen einen zarten pflanzlichen Nebel, der sich zu einer blumigen Herznote aus Lilie, Ylang-Ylang und Orangenblüte entwickelt. Eine warme, umhüllende Basis aus Vanille, Sandelholz und Amber rundet die Komposition ab.
 
 Perfekt für helle Innenräume, kleine Räume und Badezimmer, in denen Sie eine sanfte, natürliche Frische wünschen.
 
@@ -798,7 +816,7 @@ Basisnoten: Vanille, Sandelholz, Amber`
         bellini: {
           label: 'Bellini',
           description: `BELLINI 
-Ein samtiger Duft nach saftigem Pfirsich und intensivem Rum. Dieser pudrige Duft, reich an aromatischen Verbindungen, füllt Ihren Raum schnell mit verspielten Noten von süßem Pfirsich, Blutorange und Vanille. Die bitter-würzigen Akkorde von Cognac, Rum und Kaschmir sorgen für eine subtile Note und vertiefen den Charakter.
+Ein samtiger Duft nach saftigem Pfirsich und intensivem Rum. Dieser pudrige Duft, reich an aromatischen Verbindungen, füllt Ihren Raum schnell mit verspielten Noten von süssem Pfirsich, Blutorange und Vanille. Die bitter-würzigen Akkorde von Cognac, Rum und Kaschmir sorgen für eine subtile Note und vertiefen den Charakter.
 
 BELLINI ist perfekt, wenn Sie eine festliche, feierliche Atmosphäre bewahren möchten.
 
@@ -812,55 +830,55 @@ Basisnoten: Patschuli, Sandelholz, Vanille, Tonkabohne, Kaschmir, Benzoeharz, St
         blanc: {
           label: 'Blanc',
           description: `BLANC 
-Ein weicher, frischer Duft aus weißer Baumwolle und Reinheit.
+Ein weicher, frischer Duft aus weisser Baumwolle und Reinheit.
 
-Dieser mäßig konzentrierte Duft verbindet leichte Blumenakkorde mit hellen Aldehyden und erinnert an den unverwechselbaren Duft eines frischen weißen Hemdes, frisch gewaschener Bettwäsche und unübertroffener Reinheit.
+Dieser mässig konzentrierte Duft verbindet leichte Blumenakkorde mit hellen Aldehyden und erinnert an den unverwechselbaren Duft eines frischen weissen Hemdes, frisch gewaschener Bettwäsche und unübertroffener Reinheit.
 
-In geschlossenen Räumen verteilt sich der Duft sanft und fließend und erfüllt den Raum mit einer zarten Frische.
+In geschlossenen Räumen verteilt sich der Duft sanft und fliessend und erfüllt den Raum mit einer zarten Frische.
 
 Wenn Sie reine Düfte schätzen und die Atmosphäre eines frisch gereinigten Zimmers in einem Luxushotel nachempfinden möchten, werden Sie sich mit Sicherheit in BLANC verlieben.
 
 Riechpyramide:
 Kopfnoten: Aldehyde, Rose, rosa Pfeffer
 Herznoten: Pfingstrose, Veilchen, Orangenblüte
-Basisnoten: Weißer Moschus, holzige Noten, Sandelholz`
+Basisnoten: Weisser Moschus, holzige Noten, Sandelholz`
         },
         carolina: {
           label: 'Carolina',
           description: `CAROLINA 
-Ein zartes, leichtes Aroma von süßem Cappuccino und Frühlingsblüten.
+Ein zartes, leichtes Aroma von süssem Cappuccino und Frühlingsblüten.
 
-Dieser mäßig konzentrierte Duft entfaltet sich sanft in jedem Raum. Kaffee- und Mandelnoten lösen sich in einem warmen, umhüllenden süß-bitteren Akkord auf. Jasmin, Iris und Bergamotte sorgen für frische, blumige Akzente, während ein Hauch von würzigem Kakao in der Spur nachhallt.
+Dieser mässig konzentrierte Duft entfaltet sich sanft in jedem Raum. Kaffee- und Mandelnoten lösen sich in einem warmen, umhüllenden süss-bitteren Akkord auf. Jasmin, Iris und Bergamotte sorgen für frische, blumige Akzente, während ein Hauch von würzigem Kakao in der Spur nachhallt.
 
-Sie werden sich in CAROLINA verlieben, wenn Sie gemütliche Café-Atmosphäre und süßes Gebäck schätzen oder sich eine warme, subtil geheimnisvolle Atmosphäre wünschen. Dieser Premium-Mikado-Diffusor verwandelt jeden Raum in einen einladenden Rückzugsort für die Sinne.
+Sie werden sich in CAROLINA verlieben, wenn Sie gemütliche Café-Atmosphäre und süsses Gebäck schätzen oder sich eine warme, subtil geheimnisvolle Atmosphäre wünschen. Dieser Premium-Mikado-Diffusor verwandelt jeden Raum in einen einladenden Rückzugsort für die Sinne.
 
 Riechpyramide:
 Kopfnoten: Mandel, Kaffee, Bergamotte, Zitrone
 Herznoten: Jasmin-Sambac, Tuberose, Iris, bulgarische Rose, Orangenblüte
-Basisnoten: Tonkabohne, Kakao, Sandelholz, Vanille, Praline, Zimt, weiße Zeder, Kaschmirholz, Patschuli, Amber, Moschus`
+Basisnoten: Tonkabohne, Kakao, Sandelholz, Vanille, Praline, Zimt, weisse Zeder, Kaschmirholz, Patschuli, Amber, Moschus`
         },
         cherry_blossom: {
           label: 'Cherry Blossom',
           description: `CHERRY BLOSSOM 
-Ein süßer und würziger Duft von reichhaltigem Kirschlikör und Frühlingsblumen.
+Ein süsser und würziger Duft von reichhaltigem Kirschlikör und Frühlingsblumen.
 
-Ein intensiv gesättigter Duft, der die gesamte Atmosphäre des Raumes aufwertet. Die Kopfnoten von Kirsche und Bittermandel entwickeln sich zu einem lebendigen, würzigen Kirschlikörduft. Rosen- und Jasminakkorde verschmelzen zu einer sanften Blumennote, angereichert mit einem süßen Hauch Vanille.
+Ein intensiv gesättigter Duft, der die gesamte Atmosphäre des Raumes aufwertet. Die Kopfnoten von Kirsche und Bittermandel entwickeln sich zu einem lebendigen, würzigen Kirschlikörduft. Rosen- und Jasminakkorde verschmelzen zu einer sanften Blumennote, angereichert mit einem süssen Hauch Vanille.
 
-Sie werden sich in CHERRY BLOSSOM verlieben, wenn Sie zarte, süße Düfte und den Duft reifer, saftiger Kirschen genießen.
+Sie werden sich in CHERRY BLOSSOM verlieben, wenn Sie zarte, süsse Düfte und den Duft reifer, saftiger Kirschen geniessen.
 
 CHERRY BLOSSOM ist der perfekte Duft für Küchen, geräumige Flure und helle Badezimmer.
 
 Riechpyramide:
 Kopfnoten: Kirsche, Likör, Bittermandel
 Herznoten: Kirsche, türkische Rose, Jasmin-Sambac, Pflaume
-Basisnoten: Perubalsam, Tonkabohne, Sandelholz, Vetiver, weiße Zeder, Benzoe, Zimt, Nelke, Patschuli, Vanille`
+Basisnoten: Perubalsam, Tonkabohne, Sandelholz, Vetiver, weisse Zeder, Benzoe, Zimt, Nelke, Patschuli, Vanille`
         },
         christmas_tree: {
           label: 'Christmas Tree',
           description: `CHRISTMAS TREE 
 Ein sanfter und festlicher Duft nach Weihnachtskiefer und saftigen Mandarinen.
 
-Dies ist ein Duft mittlerer Intensität, der den Raum sanft mit einem durchscheinenden Schleier füllt. Die helle und süße Mandarinennote entfaltet sich zu einem vertrauten und nostalgischen Aroma, während die abschließende grüne Spur von Pinie Tiefe und Frische verleiht.
+Dies ist ein Duft mittlerer Intensität, der den Raum sanft mit einem durchscheinenden Schleier füllt. Die helle und süsse Mandarinennote entfaltet sich zu einem vertrauten und nostalgischen Aroma, während die abschliessende grüne Spur von Pinie Tiefe und Frische verleiht.
 
 CHRISTMAS TREE ist der perfekte Duft für die Weihnachtsfeiertage – oder für alle, die den Zauber der Jahreszeit auch in der Sommerhitze spüren möchten.
 
@@ -892,7 +910,7 @@ Basisnoten: Tabak, Oud, Karamell, Leder, Benzoe, Kiefer, Patchouli, Kanadabalsam
           description: `DUBAI 
 Ein reichhaltiger orientalischer Duft aus Damaszener Rose und Oud-Holz.
 
-Ein intensives und hochkonzentriertes Aroma, das vom ersten Augenblick an spürbar ist. Noten von Geranie und Veilchen umhüllen den Raum sanft mit einem leicht bitteren Blumenduft. Helle Akkorde von Damast und türkischer Rose verschmelzen zu einer süßen und weichen Duftnote mit einem würzigen Hauch von Zimt.
+Ein intensives und hochkonzentriertes Aroma, das vom ersten Augenblick an spürbar ist. Noten von Geranie und Veilchen umhüllen den Raum sanft mit einem leicht bitteren Blumenduft. Helle Akkorde von Damast und türkischer Rose verschmelzen zu einer süssen und weichen Duftnote mit einem würzigen Hauch von Zimt.
 
 Sie werden DUBAI lieben, wenn Sie ein Fan luxuriöser Hoteldüfte und sternenklarer Sommernächte sind.
 
@@ -908,7 +926,7 @@ Basisnote: Oud, Vanille`
           description: `DUNE 
 Ein kräftiger und würziger Duft nach praller Sonne und scharfer Paprika.
 
-Dieser hochintensive Duft wird Ihren Raum erfüllen. Zitrusnoten von Orange und Grapefruit sorgen für eine angenehm süße Note. Deutliche Pfefferakkorde lösen sich in einem hellen, gewagten und feurigen Aroma auf. Zedern- und Vetivernuancen runden die Komposition mit einem warmen, holzigen Ton ab.
+Dieser hochintensive Duft wird Ihren Raum erfüllen. Zitrusnoten von Orange und Grapefruit sorgen für eine angenehm süsse Note. Deutliche Pfefferakkorde lösen sich in einem hellen, gewagten und feurigen Aroma auf. Zedern- und Vetivernuancen runden die Komposition mit einem warmen, holzigen Ton ab.
 
 DUNE ist perfekt für diejenigen, die die sengende Sonne und die riesigen Wüstendünen vermissen.
 
@@ -924,9 +942,9 @@ Basisnoten: Vetiver, Zeder, Patschuli, Benzoe`
           description: `EDEN 
 Ein fruchtiger Duft mit einer sanften Blumennote.
 
-Dieses intensive und lebendige Aroma erfüllt den gesamten Raum. Passionsfrucht- und Himbeernoten entfalten sich zu einem saftig-frischen Duft nach reifen Früchten und Beeren. Die Süße wird durch Lilien- und Vanilleakkorde verstärkt. Der Duft hinterlässt eine würzige Spur von Moschus und Sandelholz.
+Dieses intensive und lebendige Aroma erfüllt den gesamten Raum. Passionsfrucht- und Himbeernoten entfalten sich zu einem saftig-frischen Duft nach reifen Früchten und Beeren. Die Süsse wird durch Lilien- und Vanilleakkorde verstärkt. Der Duft hinterlässt eine würzige Spur von Moschus und Sandelholz.
 
-EDEN wird zu Ihrem Lieblingsduft, wenn Sie es lieben, die warmen Sonnenstrahlen auf Ihrer Haut zu spüren und würzige, aromatische Düfte zu genießen.
+EDEN wird zu Ihrem Lieblingsduft, wenn Sie es lieben, die warmen Sonnenstrahlen auf Ihrer Haut zu spüren und würzige, aromatische Düfte zu geniessen.
 
 Dieser Premium-Diffusor aus Schilfrohr ist die perfekte Ergänzung für Schlafzimmer und Wohnzimmer, sowohl in dunklen als auch in hellen Innenräumen. Es ist auch ideal für Badezimmer.
 
@@ -954,7 +972,7 @@ Basisnoten: Holzige Noten, Moos, Moschus`
           description: `GREEN MANGO 
 Ein saftiger Duft nach frischer Mango und knackiger Ananas.
 
-Dieser hochkonzentrierte Duft erfüllt den gesamten Raum. Noten von grüner Mango und Melone entfalten sich zu einem hellen und frischen Aroma frisch geschnittener Früchte. Ananas- und Pfirsichakkorde verstärken die Süße, während abschließende Anklänge von Kiefernnadeln für eine lebendige, pflanzliche Note sorgen.
+Dieser hochkonzentrierte Duft erfüllt den gesamten Raum. Noten von grüner Mango und Melone entfalten sich zu einem hellen und frischen Aroma frisch geschnittener Früchte. Ananas- und Pfirsichakkorde verstärken die Süsse, während abschliessende Anklänge von Kiefernnadeln für eine lebendige, pflanzliche Note sorgen.
 
 Dieser Premium-Diffusor aus Schilfrohr ist ideal für Eingangsbereiche, helle Wohnzimmer und kleine Schönheitssalons. Wenn Sie fruchtige, aber nicht aufdringliche Düfte lieben, wird GREEN MANGO Ihr Favorit sein.
 
@@ -968,9 +986,9 @@ Basisnote: Mangoschale, Kiefernnadeln`
           description: `LIME BASIL 
 Ein frischer Zitrusduft aus saftiger Limette und aromatischem Basilikum.
 
-Dieser intensiv gesättigte Duft entfaltet sich schnell in der Luft. Noten von Limette und reifer Mandarine sorgen für ein leicht süßliches Aroma, während würzige Basilikum- und Thymianakkorde in angenehme Bitterkeit und Kräuterfrische übergehen. Der Duft hinterlässt eine anregende, duftende Spur.
+Dieser intensiv gesättigte Duft entfaltet sich schnell in der Luft. Noten von Limette und reifer Mandarine sorgen für ein leicht süssliches Aroma, während würzige Basilikum- und Thymianakkorde in angenehme Bitterkeit und Kräuterfrische übergehen. Der Duft hinterlässt eine anregende, duftende Spur.
 
-LIME BASIL wird zu Ihrem Favoriten, wenn Sie frische Kräuteraromen und den belebenden Duft eines Mojitos lieben. Dieser Premium-Diffusor aus Schilfrohr eignet sich perfekt für Badezimmer, geräumige Eingangsbereiche und große Wohnzimmer.
+LIME BASIL wird zu Ihrem Favoriten, wenn Sie frische Kräuteraromen und den belebenden Duft eines Mojitos lieben. Dieser Premium-Diffusor aus Schilfrohr eignet sich perfekt für Badezimmer, geräumige Eingangsbereiche und grosse Wohnzimmer.
 
 Riechpyramide:
 Kopfnoten: Mandarine, Bergamotte
@@ -996,7 +1014,7 @@ Basisnote: Trockenes Holz, Birke`
           description: `SALTED CARAMEL 
 Eine helle Komposition mit hoher Intensität.
 
-Noten von Weizen und Vanille füllen den Duft mit Süße und einer köstlichen, köstlichen Spur. Karamell und Salz verschmelzen zu einem reichen, umhüllenden und leckeren Duft, den man aus der Kindheit kennt: gesalzenes Karamell. Lebhafte Noten von Backwaren verleihen der Komposition noch mehr Geschmack und erfüllen Ihren Raum mit Wärme und Gemütlichkeit.
+Noten von Weizen und Vanille füllen den Duft mit Süsse und einer köstlichen, köstlichen Spur. Karamell und Salz verschmelzen zu einem reichen, umhüllenden und leckeren Duft, den man aus der Kindheit kennt: gesalzenes Karamell. Lebhafte Noten von Backwaren verleihen der Komposition noch mehr Geschmack und erfüllen Ihren Raum mit Wärme und Gemütlichkeit.
 
 Wenn Sie in Ihre Kindheit eintauchen und eine unvergessliche Atmosphäre voller Staunen und Feiern erleben möchten, ist SALTED CARAMEL genau das Richtige für Sie. Dieser hochkonzentrierte Premium-Diffusor aus Schilfrohr verwandelt jeden Raum in eine gemütliche, köstliche Ecke.
 
@@ -1012,7 +1030,7 @@ Ein frischer Duft nach Salzwasser und uralten Mineralien.
 
 Dies ist ein Duft von leichter Intensität, der zarteste der gesamten Linie. Es entfaltet sich sanft in der Luft und füllt nach und nach den Raum. Meersalz und Amber lösen sich in einem erfrischenden, salzigen Tau-Aroma auf. Ein Hauch von Seetang verleiht der Komposition eine pflanzliche Note, während erfrischender Salbei der Komposition Helligkeit verleiht.
 
-SALTY WATER ist die perfekte Wahl, wenn Sie kein Fan von intensiven, süßen Düften sind und sich vom Geheimnis des Meeres verzaubern lassen. Dieser Premium-Diffusor aus Schilfrohr schafft eine helle, maritime Atmosphäre in jeder Ecke Ihres Zuhauses.
+SALTY WATER ist die perfekte Wahl, wenn Sie kein Fan von intensiven, süssen Düften sind und sich vom Geheimnis des Meeres verzaubern lassen. Dieser Premium-Diffusor aus Schilfrohr schafft eine helle, maritime Atmosphäre in jeder Ecke Ihres Zuhauses.
 
 Riechpyramide:
 Kopfnoten: Bernstein, Meersalz
@@ -1026,7 +1044,7 @@ Ein pudriger Duft mit Leder, Kardamom und orientalischem Sandelholz.
 
 Dieser aromatische Duft verbreitet sich langsam und sanft im Raum. Aufkommende Noten von Kardamom und Sandelholz vermischen sich mit starken Akkorden von Iris und Amber und schaffen eine bittere orientalische Symphonie. Der letzte Hauch von Veilchen und Papyrus geht in eine leicht blumige Spur über.
 
-Sie werden sich in SANTAL verlieben, wenn Sie wohltuende pudrige Düfte, Gewürze und den Charme des Orients genießen. Dieser Premium-Diffusor aus Schilfrohr ist perfekt, um Ihrem Zuhause Wärme und exotische Eleganz zu verleihen.
+Sie werden sich in SANTAL verlieben, wenn Sie wohltuende pudrige Düfte, Gewürze und den Charme des Orients geniessen. Dieser Premium-Diffusor aus Schilfrohr ist perfekt, um Ihrem Zuhause Wärme und exotische Eleganz zu verleihen.
 
 Riechpyramide:
 Kopfnoten: Sandelholz, Papyrus, Leder
@@ -1036,27 +1054,27 @@ Basisnoten: Iris, Amber`
         sugar: {
           label: 'Sugar',
           description: `SUGAR 
-Ein süßer und klebriger Duft nach verbranntem Zucker und holzigem Harz.
+Ein süsser und klebriger Duft nach verbranntem Zucker und holzigem Harz.
 
-Ein intensiver und gesättigter Duft, der den gesamten Raum erfüllt. Ausgeprägte Noten von Safran und Jasmin verschmelzen zu einem süßen und würzigen Aroma. Der holzige Amber-Akkord umhüllt die Luft mit der Süße und Tiefe von Harz. Der letzte Hauch von weißer Zeder unterstreicht den holzigen Duft.
+Ein intensiver und gesättigter Duft, der den gesamten Raum erfüllt. Ausgeprägte Noten von Safran und Jasmin verschmelzen zu einem süssen und würzigen Aroma. Der holzige Amber-Akkord umhüllt die Luft mit der Süsse und Tiefe von Harz. Der letzte Hauch von weisser Zeder unterstreicht den holzigen Duft.
 
-SUGAR ist perfekt für alle, die ihrem Raum eine luxuriöse Note verleihen und ihn mit einer reichen, klebrigen Süße füllen möchten. Dieser Premium-Diffusor aus Schilfrohr wurde gefertigt, um ein immersives Sinneserlebnis in warmen, eleganten Innenräumen zu bieten.
+SUGAR ist perfekt für alle, die ihrem Raum eine luxuriöse Note verleihen und ihn mit einer reichen, klebrigen Süsse füllen möchten. Dieser Premium-Diffusor aus Schilfrohr wurde gefertigt, um ein immersives Sinneserlebnis in warmen, eleganten Innenräumen zu bieten.
 
 Riechpyramide:
 Kopfnoten: Jasmin, Safran
 Herznote: Holziger Amber
-Basisnote: Weiße Zeder, Kiefernharz`
+Basisnote: Weisse Zeder, Kiefernharz`
         },
         tobacco_vanilla: {
           label: 'Tobacco Vanilla',
           description: `TOBACCO VANILLA 
-Ein warmer und sanfter Duft nach Tabakblättern und süßer Vanille.
+Ein warmer und sanfter Duft nach Tabakblättern und süsser Vanille.
 
 Dies ist ein Duft mittlerer Sättigung. Noten von Gewürzen und Tabakblättern entfalten sich nach und nach zu einem reichen, zarten Vanille- und Kakaoduft. Die Spur offenbart sich mit leichten Noten von holziger Rinde und getrockneten Früchten.
 
 In einem geschlossenen Raum verbreitet sich TOBACCO VANILLA sanft und erreicht seinen höchsten Duft bereits in den ersten Minuten nach Betreten des Raumes.
 
-Sie werden TOBACCO VANILLA lieben, wenn Sie die Leichtigkeit, Süße und Subtilität eines Duftes schätzen und Ihrer Umgebung Festigkeit und Luxus verleihen möchten.
+Sie werden TOBACCO VANILLA lieben, wenn Sie die Leichtigkeit, Süsse und Subtilität eines Duftes schätzen und Ihrer Umgebung Festigkeit und Luxus verleihen möchten.
 
 Suchen Sie nach dem besten Schilfrohr-Diffusor für Ihr Zuhause? TOBACCO VANILLA von BY VELCHEVA vereint Eleganz und Wärme in einem raffinierten Format. Perfekt für alle, die einen Diffusor mit einem intensiven, langanhaltenden Duft kaufen möchten, der jeden Raum in ein sinnliches Erlebnis verwandelt.
 
@@ -1068,13 +1086,13 @@ Basisnoten: Holzige Noten, Trockenfrüchte`
         valencia: {
           label: 'Valencia',
           description: `VALENCIA 
-Ein luftiger Duft aus frischen Zitrusfrüchten und zartem Jasmin. Dieses mittelintensive Aroma verteilt sich sanft im Raum. Noten von Zitrone und Bergamotte füllen den Raum mit einem frischen Zitrusduft mit einer leichten Bitterkeit. Die Hauptakkorde von Jasmin und Rose verschmelzen zu einer süßen Blumenkomposition. Abschließende Moschusnoten verstärken die Würze des Duftes.
+Ein luftiger Duft aus frischen Zitrusfrüchten und zartem Jasmin. Dieses mittelintensive Aroma verteilt sich sanft im Raum. Noten von Zitrone und Bergamotte füllen den Raum mit einem frischen Zitrusduft mit einer leichten Bitterkeit. Die Hauptakkorde von Jasmin und Rose verschmelzen zu einer süssen Blumenkomposition. Abschliessende Moschusnoten verstärken die Würze des Duftes.
 
 VALENCIA wird zu Ihrem Lieblingsduft, wenn Sie den zarten Duft von Blumen und Zitrusfrüchten im Raum spüren möchten. Ideal für natürliche, helle Innenräume, Wohn- und Schlafzimmer.
 
 Riechpyramide:
 Kopfnoten: Bergamotte, Zitrone
-Herznoten: Jasmin, weiße Akazie, Rose
+Herznoten: Jasmin, weisse Akazie, Rose
 Basisnoten: Holzige Noten, Moschus`
         },
       },
@@ -1088,7 +1106,7 @@ Basisnoten: Holzige Noten, Moschus`
         benefit1:          'eine gemütliche Atmosphäre, die entspannt und gute Laune bringt;',
         benefit2:          'Aromatherapie: Einige Diffusoren sind für die Aromatherapie konzipiert: Sie wirken sich positiv auf das Nervensystem aus und helfen, die Manifestation von Stress zu minimieren.',
         benefit3:          'Geruchsmaskierung: Ein weiterer Vorteil des Produkts: Es ist in der Lage, unangenehme Noten im Raum zu verbergen und so Tabakrauch und den Geruch, der nach dem Kochen zurückbleibt, zu bekämpfen.',
-        paragraph4:          'Diffusoren haben außerdem ein elegantes Design, das sich problemlos in die Inneneinrichtung des Raumes einfügt.',
+        paragraph4:          'Diffusoren haben ausserdem ein elegantes Design, das sich problemlos in die Inneneinrichtung des Raumes einfügt.',
       }
 
     },
@@ -1096,7 +1114,7 @@ Basisnoten: Holzige Noten, Moschus`
       product: {
         title: 'Duftkerzen Signature Line',
         description:
-          'Wählen Sie zwischen 160 ml und 500 ml Gefäßen und kombinieren Sie Signature-Düfte. Handgegossene Wachsblends in Keramik.',
+          'Wählen Sie zwischen 160 ml und 500 ml Gefässen und kombinieren Sie Signature-Düfte. Handgegossene Wachsblends in Keramik.',
         priceLabel: 'Preis',
         cta: 'In den Warenkorb'
       },
@@ -1147,7 +1165,7 @@ Basisnoten: Holzige Noten, Moschus`
         africa: { label: 'Africa', description: 'Sonnengewärmte Gewürze und dunkles Holz verleihen dem Cockpit einen expressiven Charakter.' },
         bamboo: { label: 'Bamboo', description: 'Frisch geschnittenes Bambusgras und zarter Moschus bringen eine klare, luftige Stimmung.' },
         bellini: { label: 'Bellini', description: 'Spritzige Pfirsichblüten und feine Perlage erinnern an einen Aperitivo im Licht der Stadt.' },
-        blanc: { label: 'Blanc', description: 'Kühl gebügelte Baumwolle und weißer Moschus lassen den Innenraum wie ein Atelier wirken.' },
+        blanc: { label: 'Blanc', description: 'Kühl gebügelte Baumwolle und weisser Moschus lassen den Innenraum wie ein Atelier wirken.' },
         carolina: { label: 'Carolina', description: 'Magnolie, Jasmin und sanfter Amber zeichnen einen eleganten Boulevard-Duft.' },
         cherry_blossom: { label: 'Cherry Blossom', description: 'Seidige Kirschblüten mit einem Hauch von Mandarine lassen jede Fahrt poetisch wirken.' },
         christmas_tree: { label: 'Christmas Tree', description: 'Harziger Tannenbalsam und kühle Wacholdernadeln erinnern an alpine Feiertage.' },
@@ -1162,17 +1180,17 @@ Basisnoten: Holzige Noten, Moschus`
         salted_caramel: { label: 'Salted Caramel', description: 'Butterkaramell mit Fleur de Sel und cremiger Vanille sorgt für gourmandigen Komfort.' },
         salty_water: { label: 'Salty Water', description: 'Atlantik-Spray, Treibholz und mineralische Moschusnoten wirken wie eine frische Meeresbrise.' },
         santal: { label: 'Santal', description: 'Cremiges Sandelholz, Iris und Tonkabohne verleihen dem Interieur eine ruhige Textur.' },
-        sugar: { label: 'Sugar', description: 'Kristalline Zuckerblüten und weißer Moschus wirken leicht, aber süchtig machend.' },
+        sugar: { label: 'Sugar', description: 'Kristalline Zuckerblüten und weisser Moschus wirken leicht, aber süchtig machend.' },
         tobacco_vanilla: { label: 'Tobacco Vanilla', description: 'Tabakblätter, Kakao und reichhaltige Vanille schaffen einen luxuriösen Lounge-Akzent.' },
-        valencia: { label: 'Valencia', description: 'Bergamotte, süße Orange und Neroli erinnern an sonnengeküsste Boulevards.' },
+        valencia: { label: 'Valencia', description: 'Bergamotte, süsse Orange und Neroli erinnern an sonnengeküsste Boulevards.' },
       }
     },
   categoryCandles: {
       hero: {
         label: 'Ceremonial Edition',
-        title: 'Duftkerzen mit architektonischen Gefäßen',
-        subtitle: 'Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefäße bleiben als dekoratives Objekt bestehen.',
-        text: 'Dreifache Baumwoll- oder Holzdochte sorgen für gleichmäßige Pools und eine Brenndauer von bis zu 80 Stunden.',
+        title: 'Duftkerzen mit architektonischen Gefässen',
+        subtitle: 'Jede Kerze wird in Handarbeit gegossen, poliert und nummeriert. Die Gefässe bleiben als dekoratives Objekt bestehen.',
+        text: 'Dreifache Baumwoll- oder Holzdochte sorgen für gleichmässige Pools und eine Brenndauer von bis zu 80 Stunden.',
         button: 'Showroom-Besuch buchen',
         secondary: 'Weitere Kategorien'
       },
@@ -1180,7 +1198,7 @@ Basisnoten: Holzige Noten, Moschus`
         label: 'Komposition',
         title: 'Sensorische und visuelle Harmonie',
         item1: { title: 'Europäische Wachse', description: 'Raps, Soja und Kokosnuss werden für ein cremiges Finish kombiniert und garantieren sauberes Brennen.' },
-        item2: { title: 'Keramikgefäße', description: 'Gefertigt in Valencia mit naturbelassenen Pigmenten, die zu hellen und dunklen Interieurs passen.' },
+        item2: { title: 'Keramikgefässe', description: 'Gefertigt in Valencia mit naturbelassenen Pigmenten, die zu hellen und dunklen Interieurs passen.' },
         item3: { title: 'Signature Deckel', description: 'Der massive Deckel dient als Untersetzer und schützt Kerzen vor Staub.' }
       },
       products: {
@@ -1193,7 +1211,7 @@ Basisnoten: Holzige Noten, Moschus`
       },
       cta: {
         title: 'Refill & Gravur-Service',
-        text: 'Kerzengefäße können neu befüllt oder personalisiert werden. Ideal für Corporate Gifts.',
+        text: 'Kerzengefässe können neu befüllt oder personalisiert werden. Ideal für Corporate Gifts.',
         button: 'Kontakt aufnehmen'
       }
     },
@@ -1215,9 +1233,9 @@ Basisnoten: Holzige Noten, Moschus`
       },
       products: {
         label: 'Kollektion',
-        title: 'Kleine Auflagen, großes Statement',
+        title: 'Kleine Auflagen, grosses Statement',
         card1: { name: 'Set "Amber Atelier"', description: 'Diffusor und Kerze mit Amber, Safran und Birne in nummerierter Geschenkbox.', price: 'CHF 189.00' },
-        card2: { name: 'Kerze "Marble Dust"', description: 'Steinzeuggefäß mit Vetiver, getrocknetem Gras und einem Deckel aus Holz.', price: 'CHF 84.00' },
+        card2: { name: 'Kerze "Marble Dust"', description: 'Steinzeuggefäss mit Vetiver, getrocknetem Gras und einem Deckel aus Holz.', price: 'CHF 84.00' },
         card3: { name: 'Diffusor "Orchard Sketch"', description: 'Birnenblüte, Magnolie und Eichenmoos, limitiert auf 300 Exemplare.', price: 'CHF 139.00' },
         card4: { name: 'Trio "Velvet Proof"', description: 'Drei Minis mit Cashmere, Feige und Neroli – ideal für Gifting.', price: 'CHF 120.00' }
       },
@@ -1239,7 +1257,7 @@ Basisnoten: Holzige Noten, Moschus`
       highlights: {
         label: 'Formulierung',
         title: 'Warum Interior Sprays',
-        item1: { title: 'Mikro-Zerstäuber', description: 'Der Pumpkopf erzeugt einen gleichmäßigen Duftschleier ohne Tropfen.' },
+        item1: { title: 'Mikro-Zerstäuber', description: 'Der Pumpkopf erzeugt einen gleichmässigen Duftschleier ohne Tropfen.' },
         item2: { title: 'Pflegende Basis', description: 'Aloe- und Hamamelis-Wasser beruhigen empfindliche Stoffe und Oberflächen.' },
         item3: { title: 'Refills', description: '100-ml-Refills mit Schraubverschluss ermöglichen ein nachhaltiges Nachfüllen.' }
       },
@@ -1271,15 +1289,15 @@ Basisnoten: Holzige Noten, Moschus`
         title: 'Sicher für feine Fasern',
         item1: { title: 'Pflegende Zusätze', description: 'Panthenol und Baumwollsamenextrakte glätten Fasern und verleihen ihnen Glanz.' },
         item2: { title: 'Antistatik', description: 'Reduziert Aufladung bei Samt, Wolle und Mischgeweben für ein ruhiges Finish.' },
-        item3: { title: 'Großzügige Formate', description: '500-ml-Flaschen versorgen auch größere Projekte mit ausreichend Duftpflege.' }
+        item3: { title: 'Grosszügige Formate', description: '500-ml-Flaschen versorgen auch grössere Projekte mit ausreichend Duftpflege.' }
       },
       products: {
         label: 'Edition',
         title: 'Stoffpflege mit Duft',
-        card1: { name: 'Textilspray "Cashmere Air"', description: 'Weißer Moschus, Rose und Cashmere schenken Schlafzimmern Ruhe.', price: 'CHF 36.00' },
+        card1: { name: 'Textilspray "Cashmere Air"', description: 'Weisser Moschus, Rose und Cashmere schenken Schlafzimmern Ruhe.', price: 'CHF 36.00' },
         card2: { name: 'Fabric Mist "Gallery Veil"', description: 'Iris, Sandelholz und Leinennoten begleiten Showrooms und Ateliers.', price: 'CHF 38.00' },
         card3: { name: 'Spray "Botanical Loom"', description: 'Salbei, Lavendel und Heu neutralisieren Gerüche in Textilien.', price: 'CHF 34.00' },
-        card4: { name: 'Textilspray "Velvet Studio"', description: 'Cashmere, Osmanthus und weißer Tee pflegen Polster und Plaids.', price: 'CHF 34.00' }
+        card4: { name: 'Textilspray "Velvet Studio"', description: 'Cashmere, Osmanthus und weisser Tee pflegen Polster und Plaids.', price: 'CHF 34.00' }
       },
       cta: {
         title: 'Service für Interior Designer',
@@ -1309,7 +1327,7 @@ Basisnoten: Holzige Noten, Moschus`
         card1: { name: 'Gift Set "Cedar Atlas"', description: 'Diffusor, Spray und Kerze in Holznoten mit magnetischem Deckel.', price: 'CHF 149.00' },
         card2: { name: 'Discovery Box "Scent Lab"', description: 'Sechs Mini-Sprays erleichtern Duftberatung für Teams und Kunden.', price: 'CHF 98.00' },
         card3: { name: 'Couple Ritual "Amber Duo"', description: 'Zwei Kerzen und Badeöl mit Amber- und Tonka-Akkorden.', price: 'CHF 165.00' },
-        card4: { name: 'Corporate Set "Signature Welcome"', description: 'Personalisierte Kerze mit Grußkarte und hochwertiger Verpackung.', price: 'CHF 85.00' }
+        card4: { name: 'Corporate Set "Signature Welcome"', description: 'Personalisierte Kerze mit Grusskarte und hochwertiger Verpackung.', price: 'CHF 85.00' }
       },
       cta: {
         title: 'White-Label Betreuung',
@@ -1382,7 +1400,7 @@ Basisnoten: Holzige Noten, Moschus`
         label: 'On-the-go Scent',
         title: 'Autoparfums für jede Fahrt',
         subtitle: 'Clips, Kapseln und Sprays sorgen für konstante Duftbegleitung.',
-        text: 'Luftstrom-optimierte Designs verteilen Duft gleichmäßig ohne Rückstände.',
+        text: 'Luftstrom-optimierte Designs verteilen Duft gleichmässig ohne Rückstände.',
         button: 'Kollektion bestellen',
         secondary: 'Weitere Kategorien'
       },
@@ -1411,17 +1429,17 @@ Basisnoten: Holzige Noten, Moschus`
       hero: {
         label: 'Aroma Devices',
         title: 'Aromageräte für professionelle Installationen',
-        subtitle: 'Ultraschall-, Nebel- und HVAC-Systeme für jede Raumgröße.',
-        text: 'Geräte für Wohnungen, Boutiquen und große Flächen inklusive Servicepaket.',
+        subtitle: 'Ultraschall-, Nebel- und HVAC-Systeme für jede Raumgrösse.',
+        text: 'Geräte für Wohnungen, Boutiquen und grosse Flächen inklusive Servicepaket.',
         button: 'Demo buchen',
         secondary: 'Zum Katalog'
       },
       highlights: {
         label: 'Technik',
-        title: 'Auf jede Raumgröße abgestimmt',
+        title: 'Auf jede Raumgrösse abgestimmt',
         item1: { title: 'Ultraschall', description: 'Geräuscharme Module mit Timer, Dimmer und Nachtmodus.' },
         item2: { title: 'Smart Control', description: 'WLAN- und App-Steuerung für Wochenpläne und Duftwechsel.' },
-        item3: { title: 'HVAC Integration', description: 'Module koppeln sich direkt an Lüftungsanlagen und große Klimasysteme.' }
+        item3: { title: 'HVAC Integration', description: 'Module koppeln sich direkt an Lüftungsanlagen und grosse Klimasysteme.' }
       },
       products: {
         label: 'Portfolio',
@@ -1433,7 +1451,7 @@ Basisnoten: Holzige Noten, Moschus`
       },
       cta: {
         title: 'Installationsservice',
-        text: 'Wir planen Platzierung, Wartung und Verbrauchsmaterial für jede Objektgröße.',
+        text: 'Wir planen Platzierung, Wartung und Verbrauchsmaterial für jede Objektgrösse.',
         button: 'Technik anfragen'
       }
     },
@@ -1441,7 +1459,7 @@ Basisnoten: Holzige Noten, Moschus`
       hero: {
         label: 'Markengeschichte',
         title: 'Scent Curation aus Zürich für die Schweiz',
-        subtitle: 'NicheHome.ch repräsentiert By Velcheva mit maßgeschneiderten Services für Privatkunden und Projekte.'
+        subtitle: 'NicheHome.ch repräsentiert By Velcheva mit massgeschneiderten Services für Privatkunden und Projekte.'
       },
       story: {
         title: 'Duftkompetenz mit Boutique-Charakter',
@@ -1465,7 +1483,7 @@ Basisnoten: Holzige Noten, Moschus`
       },
       cta: {
         title: 'Besuchen Sie den Showroom',
-        text: 'Individuelle Termine ermöglichen Dufttests, Nachfüllservices und die Planung maßgeschneiderter Projekte.',
+        text: 'Individuelle Termine ermöglichen Dufttests, Nachfüllservices und die Planung massgeschneiderter Projekte.',
         button: 'Termin buchen'
       }
     },
@@ -1473,7 +1491,7 @@ Basisnoten: Holzige Noten, Moschus`
       hero: {
         label: 'B2B Services',
         title: 'Signature-Duftprogramme für Marken & Hospitality',
-        subtitle: 'Von maßgeschneiderten Kollektionen bis zu White-Label-Produkten inklusive Verpackung und POS-Materialien.',
+        subtitle: 'Von massgeschneiderten Kollektionen bis zu White-Label-Produkten inklusive Verpackung und POS-Materialien.',
         button: 'Projekt starten'
       },
       benefits: {
@@ -1486,7 +1504,7 @@ Basisnoten: Holzige Noten, Moschus`
       steps: {
         label: 'Ablauf',
         title: 'So arbeiten wir zusammen',
-        item1: { title: 'Briefing & Moodboard', description: 'Wir analysieren Brand Values, Zielgruppen und Raumgrößen.' },
+        item1: { title: 'Briefing & Moodboard', description: 'Wir analysieren Brand Values, Zielgruppen und Raumgrössen.' },
         item2: { title: 'Sampling & Freigabe', description: 'Innerhalb von zwei Wochen erhalten Sie Muster inklusive Kostenübersicht.' },
         item3: { title: 'Produktion & Roll-out', description: 'Produktion, Qualitätskontrolle und Logistik werden von Zürich aus koordiniert.' }
       },
@@ -1497,7 +1515,7 @@ Basisnoten: Holzige Noten, Moschus`
       },
       cta: {
         title: 'Corporate Kit anfordern',
-        text: 'Wir senden Duftkarten, Gefäßmuster und ein detailliertes Angebot innerhalb von 48 Stunden.',
+        text: 'Wir senden Duftkarten, Gefässmuster und ein detailliertes Angebot innerhalb von 48 Stunden.',
         button: 'Kontakt aufnehmen'
       }
     },
@@ -1540,8 +1558,8 @@ Basisnoten: Holzige Noten, Moschus`
         subtitle: 'Dieses Dokument beschreibt, wie NicheHome.ch personenbezogene Informationen erfasst, nutzt und schützt.'
       },
       section1: { title: '1. Verantwortliche Stelle & Hosting', paragraph: 'Die NicheHome GmbH, Musterstrasse 12, 8000 Zürich, ist verantwortlich für die Verarbeitung. Unsere Website wird auf Servern in der EU betrieben, die ISO-zertifizierte Sicherheitsstandards einhalten.' },
-      section2: { title: '2. Erhobene Daten', paragraph: 'Wir speichern Kontaktangaben aus Formularen, Bestellinformationen, anonymisierte Analytics-Daten sowie Korrespondenz. Cookies dienen ausschließlich funktionalen und statistischen Zwecken.' },
-      section3: { title: '3. Nutzung & Weitergabe', paragraph: 'Daten werden nur zur Erfüllung von Bestellungen, zur Kundenbetreuung und zur Optimierung unserer Services verwendet. Eine Weitergabe an Dritte erfolgt ausschließlich an Logistik- oder Zahlungsdienstleister mit Sitz in der Schweiz oder EU.' },
+      section2: { title: '2. Erhobene Daten', paragraph: 'Wir speichern Kontaktangaben aus Formularen, Bestellinformationen, anonymisierte Analytics-Daten sowie Korrespondenz. Cookies dienen ausschliesslich funktionalen und statistischen Zwecken.' },
+      section3: { title: '3. Nutzung & Weitergabe', paragraph: 'Daten werden nur zur Erfüllung von Bestellungen, zur Kundenbetreuung und zur Optimierung unserer Services verwendet. Eine Weitergabe an Dritte erfolgt ausschliesslich an Logistik- oder Zahlungsdienstleister mit Sitz in der Schweiz oder EU.' },
       section4: { title: '4. Rechte & Kontakt', paragraph: 'Sie können jederzeit Auskunft, Berichtigung oder Löschung beantragen. Kontaktieren Sie uns per E-Mail an hello@nichehome.ch. Wir beantworten Anfragen innerhalb von 30 Tagen.' }
     },
     terms: {
@@ -1557,18 +1575,23 @@ Basisnoten: Holzige Noten, Moschus`
     section5: { title: '5. Haftung & Gerichtsstand', paragraph: 'Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.' }
     },
     category: {
-      read_more: 'MEHR ERFAHREN',
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.de },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray.de },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.de },
+      read_more: 'MEHR LESEN',
+      diffusers: {
+        title: 'Aroma-Diffusoren für charaktervolle Räume',
+        description: sharedCategoryDescriptions.diffusers.de
+      },
+      limited_edition: {
+        title: 'Limitierte Kollektion',
+        description: sharedCategoryDescriptions.limitedEdition.de
+      },
+      textile_spray: { title: 'Textilspray', description: sharedCategoryDescriptions.textileSpray.de },
+      interior_perfume: { title: 'Interior Perfume', description: sharedCategoryDescriptions.interiorPerfume.de },
       candles: { },
-      aroma_diffusers: { },
       gift: { },
       accessories: { },
       meditation: { },
       devices: { },
-      car_perfume: { title: 'Autoparfums für jede Fahrt', description: sharedCategoryDescriptions.autoPerfume.de },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.de }
+      car_perfume: { title: 'Autoparfums für jede Fahrt', description: sharedCategoryDescriptions.autoPerfume.de }
     },
     product: {
       badge: { collection: 'Kollektion' },
@@ -2673,17 +2696,22 @@ Notes de fond : Notes boisées, Musc`
     },
     category: {
       read_more: 'VOIR PLUS',
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.fr },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray.fr },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.fr },
+      diffusers: {
+        title: 'Diffuseurs pour espaces de caractère',
+        description: sharedCategoryDescriptions.diffusers.fr
+      },
+      limited_edition: {
+        title: 'Collection limitée',
+        description: sharedCategoryDescriptions.limitedEdition.fr
+      },
+      textile_spray: { title: 'Spray textile', description: sharedCategoryDescriptions.textileSpray.fr },
+      interior_perfume: { title: 'Parfum d’intérieur', description: sharedCategoryDescriptions.interiorPerfume.fr },
       candles: { },
-      aroma_diffusers: { },
       gift: { },
       accessories: { },
       meditation: { },
       devices: { },
-      car_perfume: { title: 'Parfum de voiture', description: sharedCategoryDescriptions.autoPerfume.fr },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.fr }
+      car_perfume: { title: 'Parfum de voiture', description: sharedCategoryDescriptions.autoPerfume.fr }
     },
     product: {
       badge: { collection: 'Collection' },
@@ -3787,17 +3815,19 @@ Note di fondo: Note legnose, Muschio`
     },
     category: {
       read_more: 'SCOPRI DI PIÙ',
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.it },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray.it },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.it },
+      diffusers: {
+        title: 'Diffusori per ambienti caratteristici',
+        description: sharedCategoryDescriptions.diffusers.it
+      },
+      limited_edition: { title: 'Edizione limitata', description: sharedCategoryDescriptions.limitedEdition.it },
+      textile_spray: { title: 'Spray tessile', description: sharedCategoryDescriptions.textileSpray.it },
+      interior_perfume: { title: 'Profumo per interni', description: sharedCategoryDescriptions.interiorPerfume.it },
       candles: { },
-      aroma_diffusers: { },
       gift: { },
       accessories: { },
       meditation: { },
       devices: { },
-      car_perfume: { title: 'Profumo per Auto', description: sharedCategoryDescriptions.autoPerfume.it },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.it }
+      car_perfume: { title: 'Profumo per Auto', description: sharedCategoryDescriptions.autoPerfume.it }
     },
     product: {
       badge: { collection: 'Collezione' },
@@ -5165,17 +5195,19 @@ Base notes: Woody notes, Musk`
     },
     category: {
       read_more: 'READ MORE',
-      limited_edition: { description: sharedCategoryDescriptions.limitedEdition.en },
-      textile_spray: { description: sharedCategoryDescriptions.textileSpray.en },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.en },
+      diffusers: {
+        title: 'Aroma diffusers for characterful spaces',
+        description: sharedCategoryDescriptions.diffusers.en
+      },
+      limited_edition: { title: 'Limited Edition', description: sharedCategoryDescriptions.limitedEdition.en },
+      textile_spray: { title: 'Textile Spray', description: sharedCategoryDescriptions.textileSpray.en },
+      interior_perfume: { title: 'Interior Perfume', description: sharedCategoryDescriptions.interiorPerfume.en },
       candles: { },
-      aroma_diffusers: { },
       gift: { },
       accessories: { },
       meditation: { },
       devices: { },
-      car_perfume: { title: 'Car Parfum', description: sharedCategoryDescriptions.autoPerfume.en },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.en }
+      car_perfume: { title: 'Car Perfume', description: sharedCategoryDescriptions.autoPerfume.en }
     },
     product: {
       badge: { collection: 'Collection' },
@@ -5207,6 +5239,39 @@ Base notes: Woody notes, Musk`
   }
 };
 
+const normalizeGermanText = (text = '') => text.replace(/ß/g, 'ss');
+
+const injectFragranceData = (catalog) => {
+  if (!catalog) return;
+  const languages = ['en', 'de', 'fr', 'it'];
+  languages.forEach((lang) => {
+    translations[lang] = translations[lang] || {};
+    translations[lang].fragrance = translations[lang].fragrance || {};
+    Object.entries(catalog).forEach(([slug, description]) => {
+      const normalized = lang === 'de' ? normalizeGermanText(description) : description;
+      const existingFragrance = translations[lang].fragrance[slug]?.description;
+      translations[lang].fragrance[slug] = { description: existingFragrance || normalized };
+
+      const scentBucket = translations[lang].diffusers?.scents || {};
+      if (scentBucket[slug]) {
+        scentBucket[slug].description = lang === 'en' ? normalized : scentBucket[slug].description || normalized;
+      }
+    });
+  });
+};
+
+const loadFragranceCatalog = async () => {
+  try {
+    const response = await fetch('assets/data/fragrance.txt');
+    if (!response.ok) return;
+    const text = await response.text();
+    const catalog = JSON.parse(text);
+    injectFragranceData(catalog);
+  } catch (error) {
+    console.error('Failed to load fragrance catalog', error);
+  }
+};
+
 const readMoreTranslations = {
   de: 'MEHR ERFAHREN',
   fr: 'VOIR PLUS',
@@ -5232,7 +5297,7 @@ const categoryProductMappings = {
 const signatureLineTranslations = {
   de: {
     title: 'Duftkerzen Signature Line',
-    description: 'Zwei Gefäßgrößen und Signature-Düfte, handgegossen in Keramik.'
+    description: 'Zwei Gefässgrössen und Signature-Düfte, handgegossen in Keramik.'
   },
   fr: {
     title: 'Bougies Signature Line',
@@ -5874,6 +5939,12 @@ const updateDiffuserImage = () => {
   imageEl.src = `${baseUrl}${encoded}${suffix}`;
 };
 
+const getFragranceDescription = (scentId) => {
+  if (!scentId || scentId === 'none') return '';
+  const key = `fragrance.${scentId}.description`;
+  return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || '';
+};
+
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   const config = currentProductConfig || getActiveProductConfig();
   const scentSelect = document.querySelector('[data-diffuser-scent]');
@@ -5903,6 +5974,10 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   } else if (config?.scentTranslationBase) {
     const descriptionKey = `${config.scentTranslationBase}.${scentId}.description`;
     descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  }
+
+  if (!descriptionText && scentId !== 'none') {
+    descriptionText = getFragranceDescription(scentId);
   }
 
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
@@ -5989,7 +6064,8 @@ const updateCandleScentDescription = (resetToggle = false) => {
   if (!candleScentSelect || !candleScentDescriptionElement) return;
   const scentId = getScentIdFromSelect(candleScentSelect);
   const descriptionKey = `candles.scents.${scentId}.description`;
-  const descriptionText = resolveTranslation(currentLang, descriptionKey) || '';
+  const descriptionText =
+    resolveTranslation(currentLang, descriptionKey) || getFragranceDescription(scentId) || '';
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
@@ -6036,7 +6112,11 @@ const updateCarScentDescription = (resetToggle = false) => {
   const scentId = getScentIdFromSelect(carScentSelect);
   const descriptionKey = `car.scents.${scentId}.description`;
   const fallbackKey = 'car.scents.none.description';
-  const descriptionText = resolveTranslation(currentLang, descriptionKey) || resolveTranslation(currentLang, fallbackKey) || '';
+  const descriptionText =
+    resolveTranslation(currentLang, descriptionKey) ||
+    getFragranceDescription(scentId) ||
+    resolveTranslation(currentLang, fallbackKey) ||
+    '';
   carScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
@@ -6084,7 +6164,8 @@ const initCarConfigurator = () => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadFragranceCatalog();
   applyTranslations();
   initCategoryHeroDescriptions();
   initTitles();
