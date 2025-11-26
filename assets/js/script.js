@@ -5286,21 +5286,43 @@ sanitizeGermanTranslations(translations.de);
 
 let fragranceCatalog = {};
 
-const getFullDescription = (scentKey) => {
-  if (!scentKey || scentKey === 'none') return '';
-  const catalog = window.fragranceCatalog || fragranceCatalog || {};
-  const entry = (catalog || {})[scentKey] || {};
-  if (typeof entry === 'string') return entry;
-  return entry.long || entry.short || entry.description || '';
-};
+function getFragranceData(key) {
+  if (!key || key === 'none') {
+    return { short: '', long: '', image: fragranceImageFallbacks.default || '' };
+  }
+  const entry = (window.fragranceCatalog || fragranceCatalog || {})[key] || {};
+  return {
+    short: entry.short || '',
+    long: entry.long || (typeof entry === 'string' ? entry : ''),
+    image: entry.image || fragranceImages?.[key] || fragranceImageFallbacks.default || ''
+  };
+}
 
 const loadFragranceCatalog = async () => {
   try {
     const response = await fetch('assets/data/fragrance.txt');
     if (!response.ok) return;
     const text = await response.text();
-    const catalog = JSON.parse(text);
-    fragranceCatalog = catalog || {};
+    const catalog = JSON.parse(text) || {};
+    const normalized = {};
+
+    Object.entries(catalog).forEach(([slug, value]) => {
+      if (value && typeof value === 'object' && !Array.isArray(value)) {
+        normalized[slug] = {
+          short: value.short || '',
+          long: value.long || value.description || '',
+          image: value.image || fragranceImages?.[slug] || fragranceImageFallbacks.default || ''
+        };
+      } else {
+        normalized[slug] = {
+          short: '',
+          long: typeof value === 'string' ? value : '',
+          image: fragranceImages?.[slug] || fragranceImageFallbacks.default || ''
+        };
+      }
+    });
+
+    fragranceCatalog = normalized;
     window.fragranceCatalog = fragranceCatalog;
   } catch (error) {
     console.error('Failed to load fragrance catalog', error);
@@ -5536,6 +5558,36 @@ const setFragranceImage = (imgEl, scentId, category, label = '', options = {}) =
   imgEl.alt = `${altLabel} fragrance`;
 };
 
+function updateFragranceDescription(card, key, category) {
+  const data = getFragranceData(key);
+  const descriptionText = data.long || data.short || '';
+
+  const scopedTargets = card ? Array.from(card.querySelectorAll('[data-fragrance-description]')) : [];
+  const categoryTargets = category
+    ? Array.from(document.querySelectorAll(`[data-product-fragrance-description="${category}"]`))
+    : [];
+
+  [...new Set([...scopedTargets, ...categoryTargets])].forEach((node) => {
+    if (!(node instanceof HTMLElement)) return;
+    node.textContent = descriptionText;
+  });
+}
+
+function updateFragranceImage(card, key, category) {
+  const data = getFragranceData(key);
+  const fallbackCategory = category || card?.dataset?.category;
+  const targets = card ? Array.from(card.querySelectorAll('[data-fragrance-image]')) : [];
+
+  targets.forEach((img) => {
+    if (!(img instanceof HTMLImageElement)) return;
+    const src = data.image || fragranceImageFallbacks[fallbackCategory] || fragranceImageFallbacks.default;
+    if (src) {
+      img.src = src;
+      img.alt = `${key} fragrance`;
+    }
+  });
+}
+
 const normalizeDescriptionText = (value, fallback = '') => {
   if (typeof value === 'string') return value;
   if (value && typeof value === 'object') {
@@ -5683,7 +5735,7 @@ const getDiffuserScentOptions = (excluded = [], includeNone = true) => {
 };
 
 const populateScentSelect = (config) => {
-  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const scentSelect = getScentSelectByCategory(config?.category || 'diffusers');
   if (!scentSelect || !config) return;
   const shouldGenerate = config.generateScents || config.scents;
   if (!shouldGenerate) return;
@@ -5691,7 +5743,7 @@ const populateScentSelect = (config) => {
   scentSelect.innerHTML = '';
   options.forEach((option) => {
     const optEl = document.createElement('option');
-    optEl.value = option.value;
+    optEl.value = option.id;
     optEl.dataset.scentId = option.id;
     optEl.textContent = option.label;
     scentSelect.appendChild(optEl);
@@ -5716,11 +5768,17 @@ const getDefaultImageForConfig = (config, volumeValue = null) => {
   return config.defaultImage || diffuserDefaultImage;
 };
 
+const getScentSelectByCategory = (category) =>
+  document.querySelector(`[data-scent-select][data-category="${category}"]`);
+
 const resolveTranslation = (lang, key) => {
   return key.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), translations[lang]);
 };
 
-const getScentIdFromSelect = (selectEl) => selectEl?.selectedOptions?.[0]?.dataset.scentId || 'none';
+const getScentIdFromSelect = (selectEl) => {
+  if (!selectEl) return 'none';
+  return selectEl.value || selectEl?.selectedOptions?.[0]?.dataset.scentId || 'none';
+};
 
 const setToggleLabelForState = (toggleEl, isExpanded) => {
   if (!toggleEl) return;
@@ -6044,13 +6102,13 @@ const updateDiffuserPrice = () => {
 
 const updateDiffuserImage = () => {
   const config = currentProductConfig || getActiveProductConfig();
-  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const category = config?.category || 'diffusers';
+  const scentSelect = getScentSelectByCategory(category);
   const imageEl = document.querySelector('[data-diffuser-image]');
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
   if (!imageEl) return;
   const scentId = getScentIdFromSelect(scentSelect);
   const scentValue = scentSelect?.value;
-  const category = config?.category || 'diffusers';
   const scentLabel = scentSelect?.selectedOptions?.[0]?.textContent?.trim() || scentValue;
   if (!scentValue || scentValue === 'none' || scentId === 'none') {
     setFragranceImage(imageEl, 'none', category, scentLabel, {
@@ -6066,45 +6124,9 @@ const updateDiffuserImage = () => {
   setFragranceImage(imageEl, scentId, category, scentLabel, { baseUrl, suffix, imageName });
 };
 
-const updateProductFragranceDescription = (descriptionEl, category, scentKey) => {
-  const roots = Array.isArray(descriptionEl) ? descriptionEl.filter(Boolean) : [descriptionEl].filter(Boolean);
-  const descriptionElements = roots.flatMap((root) => {
-    if (!root || typeof root.querySelectorAll !== 'function') {
-      return root?.dataset?.fragranceDescription ? [root] : [];
-    }
-
-    const elements = Array.from(root.querySelectorAll('[data-fragrance-description]'));
-    if (root.dataset?.fragranceDescription) {
-      elements.push(root);
-    }
-    return elements;
-  });
-
-  if (!descriptionElements.length || !category) return '';
-
-  descriptionElements.forEach((el) => {
-    if (!el.dataset.initialDescription) {
-      el.dataset.initialDescription = el.textContent || '';
-    }
-  });
-
-  const defaultDescription =
-    descriptionElements.find((el) => el.dataset.initialDescription)?.dataset.initialDescription ||
-    descriptionElements[0]?.textContent ||
-    '';
-  const descriptionText = scentKey && scentKey !== 'none' ? getFullDescription(scentKey) : '';
-  const resolvedDescription = descriptionText || defaultDescription;
-
-  descriptionElements.forEach((el) => {
-    el.textContent = resolvedDescription;
-  });
-
-  return resolvedDescription;
-};
-
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   const config = currentProductConfig || getActiveProductConfig();
-  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const scentSelect = getScentSelectByCategory(config?.category || 'diffusers');
   const titleEl = document.querySelector('[data-diffuser-title]');
   const descriptionEl = document.querySelector('[data-diffuser-scent-description]');
   if (!titleEl || !descriptionEl) return;
@@ -6128,17 +6150,13 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   }
 
   const card = document.querySelector('[data-diffuser-card]');
-  const descriptionEls = Array.from(
-    card?.querySelectorAll(`[data-product-fragrance-description="${config?.category || 'diffusers'}"]`) || []
-  );
-
-  const descriptionText =
-    getFullDescription(scentId) || defaultDescription || descriptionEls[0]?.textContent || descriptionEl.textContent;
+  const fragranceData = scentId && scentId !== 'none' ? getFragranceData(scentId) : {};
+  const descriptionText = fragranceData.long || fragranceData.short || defaultDescription || descriptionEl.textContent;
 
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
   const normalizedDescription = normalizeDescriptionText(descriptionText, defaultDescription);
-  if (descriptionEls.length) {
-    updateProductFragranceDescription(descriptionEls, config?.category || 'diffusers', scentId);
+  if (card) {
+    updateFragranceDescription(card, scentId, config?.category || 'diffusers');
   }
   descriptionEl.textContent = normalizedDescription;
 
@@ -6187,7 +6205,7 @@ const initDiffuserConfigurator = () => {
   currentProductConfig = getActiveProductConfig();
   populateScentSelect(currentProductConfig);
   const volumeSelect = document.querySelector('[data-diffuser-volume]');
-  const scentSelect = document.querySelector('[data-diffuser-scent]');
+  const scentSelect = getScentSelectByCategory(currentProductConfig?.category || 'diffusers');
   if (!volumeSelect && !scentSelect && !document.querySelector('[data-diffuser-price]')) return;
   volumeSelect?.addEventListener('change', () => {
     updateDiffuserPrice();
@@ -6245,13 +6263,12 @@ const updateCandleScentDescription = (resetToggle = false) => {
     resolveTranslation('en', 'product.scented_candles.default_description') ||
     candleScentDescriptionElement.textContent ||
     '';
-  const descriptionEls = Array.from(
-    document.querySelectorAll('[data-product-fragrance-description="candles"]') || []
-  );
-  const descriptionText = getFullDescription(scentId) || defaultDescription;
+  const fragranceData = scentId && scentId !== 'none' ? getFragranceData(scentId) : {};
+  const descriptionText = fragranceData.long || fragranceData.short || defaultDescription;
 
-  if (descriptionEls.length) {
-    updateProductFragranceDescription(descriptionEls, 'candles', scentId);
+  const card = candleScentSelect.closest('.product-card');
+  if (card) {
+    updateFragranceDescription(card, scentId, 'candles');
   }
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
@@ -6267,7 +6284,7 @@ const updateCandleScentDescription = (resetToggle = false) => {
 const initCandleConfigurator = () => {
   candleVolumeSelect = document.querySelector('[data-candle-volume]');
   candlePriceElement = document.querySelector('[data-candle-price]');
-  candleScentSelect = document.querySelector('[data-candle-scent]');
+  candleScentSelect = getScentSelectByCategory('candles');
   candleImageElement = document.querySelector('[data-candle-image]');
   candleScentDescriptionElement = document.querySelector('[data-candle-scent-description]');
   if (!candleScentDescriptionElement) {
@@ -6323,10 +6340,11 @@ const updateCarScentDescription = (resetToggle = false) => {
     resolveTranslation('en', defaultKey) ||
     carScentDescriptionElement.textContent ||
     '';
-  const descriptionEls = Array.from(document.querySelectorAll('[data-product-fragrance-description="car"]') || []);
-  const descriptionText = getFullDescription(scentId) || defaultDescription;
-  if (descriptionEls.length) {
-    updateProductFragranceDescription(descriptionEls, 'car', scentId);
+  const fragranceData = scentId && scentId !== 'none' ? getFragranceData(scentId) : {};
+  const descriptionText = fragranceData.long || fragranceData.short || defaultDescription;
+  const card = carScentSelect.closest('.product-card');
+  if (card) {
+    updateFragranceDescription(card, scentId, 'car');
   }
   carScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
@@ -6352,7 +6370,7 @@ const updateCarImage = () => {
 
 const initCarConfigurator = () => {
   carPriceElement = document.querySelector('[data-car-price]');
-  carScentSelect = document.querySelector('[data-car-scent]');
+  carScentSelect = getScentSelectByCategory('car');
   carImageElement = document.querySelector('[data-car-image]');
   carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
   if (!carScentDescriptionElement) {
@@ -6380,7 +6398,6 @@ const initCarConfigurator = () => {
 
 const initProductCardFragrances = () => {
   const page = document.body?.dataset?.page;
-  const selectSet = new Set();
   const defaultCategoryByPage = {
     'category-candles': 'candles',
     'category-textile': 'textile',
@@ -6390,28 +6407,16 @@ const initProductCardFragrances = () => {
     'category-limited': 'limited_edition'
   };
 
-  ['[data-scent-select]', '[data-diffuser-scent]', '[data-car-scent]', '[data-candle-scent]', 'select[name="fragrance"]'].forEach(
-    (selector) => {
-      document.querySelectorAll(selector).forEach((select) => selectSet.add(select));
-    }
-  );
-
-  const selects = Array.from(selectSet);
+  const selects = Array.from(document.querySelectorAll('[data-scent-select]'));
   if (!selects.length) return;
 
   selects.forEach((select) => {
-    const inferredCategory =
-      select.dataset.category ||
-      (select.matches('[data-diffuser-scent]') && 'diffusers') ||
-      (select.matches('[data-candle-scent]') && 'candles') ||
-      (select.matches('[data-car-scent]') && 'car') ||
-      defaultCategoryByPage[page];
-    if (!inferredCategory) return;
-
+    const card = select.closest('.product-card');
+    const category = select.dataset.category || defaultCategoryByPage[page] || card?.dataset?.category || 'diffusers';
+    select.dataset.category = category;
     select.dataset.scentSelect = select.dataset.scentSelect || 'true';
-    select.dataset.category = select.dataset.category || inferredCategory;
 
-    if (select.dataset.category === 'limited_edition' && !select.options.length) {
+    if (category === 'limited_edition' && !select.options.length) {
       [
         { value: 'new_york', label: 'New York' },
         { value: 'abu_dhabi', label: 'Abu Dhabi' },
@@ -6424,8 +6429,6 @@ const initProductCardFragrances = () => {
       });
     }
 
-    let selectionAdjusted = false;
-
     Array.from(select.options).forEach((option) => {
       if (option.dataset.scentId) {
         option.value = option.dataset.scentId;
@@ -6436,48 +6439,17 @@ const initProductCardFragrances = () => {
       const firstFragrance = Array.from(select.options).find((option) => option.value && option.value !== 'none');
       if (firstFragrance) {
         select.value = firstFragrance.value;
-        selectionAdjusted = true;
       }
     }
 
-    const category = select.dataset.category || inferredCategory;
-    const card = select.closest('.product-card');
-    const descriptionEls = Array.from(
-      card?.querySelectorAll(
-        `[data-product-fragrance-description="${category}"], [data-product-fragrance-description]:not([data-product-fragrance-description=""])`
-      ) ||
-        []
-    );
-
-    const applyDescription = () => {
-      const scentId = getScentIdFromSelect(select) || select.value;
-      const descriptionText = descriptionEls.length
-        ? updateProductFragranceDescription(descriptionEls, category, scentId)
-        : '';
-      const scentLabel = select?.selectedOptions?.[0]?.textContent?.trim() || scentId;
-      const imageEl = card?.querySelector('[data-fragrance-image]');
-
-      if (imageEl) {
-        setFragranceImage(imageEl, scentId, category, scentLabel);
-      }
-
-      if (category === 'candles') {
-        updateCandleImage();
-      } else if (category === 'car') {
-        updateCarImage();
-      } else if (category === 'diffusers' || category === 'interior_perfume') {
-        updateDiffuserImage();
-      } else if (descriptionText && !descriptionText.trim() && imageEl) {
-        setFragranceImage(imageEl, 'none', category, scentLabel);
-      }
+    const applySelection = () => {
+      const scentId = getScentIdFromSelect(select);
+      updateFragranceDescription(card, scentId, category);
+      updateFragranceImage(card, scentId, category);
     };
 
-    select.addEventListener('change', applyDescription);
-    applyDescription();
-
-    if (selectionAdjusted) {
-      select.dispatchEvent(new Event('change'));
-    }
+    select.addEventListener('change', applySelection);
+    applySelection();
   });
 };
 
