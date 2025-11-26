@@ -5502,6 +5502,73 @@ const carImageSuffix = diffuserImageSuffix;
 const carDefaultImage = 'https://github.com/evgenss79/BV_img/blob/main/autoparfboxamazon.jpg?raw=true';
 const carParfumPrice = 12.9;
 const carPriceCurrency = 'CHF';
+
+const fragranceImageBaseUrl = diffuserImageBaseUrl;
+const fragranceImageSuffix = diffuserImageSuffix;
+const fragranceImageFallbacks = {
+  default: diffuserDefaultImage,
+  diffusers: diffuserDefaultImage,
+  interior_perfume: interiorPerfumeDefaultImage,
+  candles: candlesDefaultImage,
+  car: carDefaultImage,
+  textile: textileDefaultImage
+};
+
+const fragranceImageSlugs = [
+  'africa',
+  'bamboo',
+  'bellini',
+  'blanc',
+  'carolina',
+  'cherry_blossom',
+  'christmas_tree',
+  'dubai',
+  'dune',
+  'eden',
+  'etna',
+  'fleur',
+  'green_mango',
+  'lime_basil',
+  'rosso',
+  'salted_caramel',
+  'salty_water',
+  'santal',
+  'sugar',
+  'tobacco_vanilla',
+  'valencia'
+];
+
+const fragranceImages = Object.fromEntries(
+  fragranceImageSlugs.map((slug) => [slug, `${fragranceImageBaseUrl}${slug}${fragranceImageSuffix}`])
+);
+
+const getFragranceImageSrc = (scentId, category, { baseUrl, suffix, imageName } = {}) => {
+  const fallback = fragranceImageFallbacks[category] || fragranceImageFallbacks.default;
+  const providedImage = typeof imageName === 'string' && imageName.trim().length ? imageName : null;
+  if (!scentId || scentId === 'none') return providedImage || fallback;
+  if (fragranceImages[scentId]) return fragranceImages[scentId];
+  if (providedImage && /^https?:\/\//.test(providedImage)) return providedImage;
+  const normalizedBase = baseUrl || fragranceImageBaseUrl;
+  const normalizedSuffix = suffix || fragranceImageSuffix;
+  const normalizedName = providedImage || scentId;
+  return `${normalizedBase}${encodeURIComponent(normalizedName)}${normalizedSuffix}`;
+};
+
+const setFragranceImage = (imgEl, scentId, category, label = '', options = {}) => {
+  if (!imgEl) return;
+  const src = getFragranceImageSrc(scentId, category, options);
+  imgEl.src = String(src || fragranceImageFallbacks[category] || fragranceImageFallbacks.default);
+  const altLabel = scentId && scentId !== 'none' ? label || scentId : 'default';
+  imgEl.alt = `${altLabel} fragrance`;
+};
+
+const normalizeDescriptionText = (value, fallback = '') => {
+  if (typeof value === 'string') return value;
+  if (value && typeof value === 'object') {
+    return value.description || value.long || value.short || fallback;
+  }
+  return fallback;
+};
 const categoryHeroDescriptionSections = [];
 let candleScentDescriptionElement;
 let candleScentDescriptionWrapper;
@@ -5519,6 +5586,7 @@ let carScentDescriptionToggle;
 
 const productConfigs = {
   'category-diffusers': {
+    category: 'diffusers',
     pricing: diffuserPricing,
     imageBaseUrl: diffuserImageBaseUrl,
     imageSuffix: diffuserImageSuffix,
@@ -5530,6 +5598,7 @@ const productConfigs = {
     defaultScentDescriptionKey: 'product.diffusers.default_description'
   },
   'category-room': {
+    category: 'interior_perfume',
     pricing: {
       volumes: {
         '10': 8.9,
@@ -5998,15 +6067,20 @@ const updateDiffuserImage = () => {
   if (!imageEl) return;
   const scentId = getScentIdFromSelect(scentSelect);
   const scentValue = scentSelect?.value;
+  const category = config?.category || 'diffusers';
+  const scentLabel = scentSelect?.selectedOptions?.[0]?.textContent?.trim() || scentValue;
   if (!scentValue || scentValue === 'none' || scentId === 'none') {
-    imageEl.src = getDefaultImageForConfig(config, volumeSelect?.value);
+    setFragranceImage(imageEl, 'none', category, scentLabel, {
+      baseUrl: config?.imageBaseUrl,
+      suffix: config?.imageSuffix,
+      imageName: getDefaultImageForConfig(config, volumeSelect?.value)
+    });
     return;
   }
   const imageName = config?.scentImageMap?.[scentId] || scentValue;
-  const encoded = encodeURIComponent(imageName);
   const baseUrl = config?.imageBaseUrl || diffuserImageBaseUrl;
   const suffix = config?.imageSuffix || diffuserImageSuffix;
-  imageEl.src = `${baseUrl}${encoded}${suffix}`;
+  setFragranceImage(imageEl, scentId, category, scentLabel, { baseUrl, suffix, imageName });
 };
 
 const getFragranceDescription = (categoryOrScentId, fallbackKey = null) => {
@@ -6060,8 +6134,10 @@ const updateProductFragranceDescription = (descriptionEl, category, scentKey) =>
 
   const fallbackKey = config.translationBase ? `${config.translationBase}.${scentKey}` : null;
   const fullText = resolveFragranceDescription(scentKey, fallbackKey, defaultDescription);
+  const normalizedText = normalizeDescriptionText(fullText, defaultDescription);
 
-  descriptionEl.textContent = fullText;
+  descriptionEl.textContent = normalizedText;
+  return normalizedText;
 };
 
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
@@ -6113,10 +6189,11 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
   }
 
   titleEl.textContent = scentId === 'none' ? defaultTitle : `${prefix} ${scentLabel}`.trim();
-  descriptionEl.textContent = descriptionText;
+  const normalizedDescription = normalizeDescriptionText(descriptionText, defaultDescription);
+  descriptionEl.textContent = normalizedDescription;
 
   ensureDiffuserScentDescriptionElements();
-  const hasDescription = Boolean(descriptionText.trim());
+  const hasDescription = Boolean(normalizedDescription.trim());
   const hideToggle = scentId === 'none';
   updateDescriptionVisibility(diffuserScentDescriptionWrapperEl, diffuserScentDescriptionToggleEl, hasDescription, hideToggle);
   if (resetToggle) {
@@ -6184,12 +6261,11 @@ const updateCandlePrice = () => {
 const updateCandleImage = () => {
   if (!candleImageElement || !candleScentSelect) return;
   const scent = candleScentSelect.value;
-  if (!scent || scent === 'none') {
-    candleImageElement.src = candlesDefaultImage;
-    return;
-  }
-  const encoded = encodeURIComponent(scent);
-  candleImageElement.src = `${candlesImageBaseUrl}${encoded}${candlesImageSuffix}`;
+  const label = candleScentSelect?.selectedOptions?.[0]?.textContent?.trim() || scent;
+  setFragranceImage(candleImageElement, scent, 'candles', label, {
+    baseUrl: candlesImageBaseUrl,
+    suffix: candlesImageSuffix
+  });
 };
 
 const ensureCandleScentDescriptionElements = () => {
@@ -6218,8 +6294,9 @@ const updateCandleScentDescription = (resetToggle = false) => {
     candleScentDescriptionElement.textContent ||
     '';
   const descriptionText = resolveFragranceDescription(scentId, descriptionKey, defaultDescription);
-  candleScentDescriptionElement.textContent = descriptionText;
-  const hasDescription = Boolean(descriptionText.trim());
+  const normalizedDescription = normalizeDescriptionText(descriptionText, defaultDescription);
+  candleScentDescriptionElement.textContent = normalizedDescription;
+  const hasDescription = Boolean(normalizedDescription.trim());
   const hideToggle = scentId === 'none';
   updateDescriptionVisibility(candleScentDescriptionWrapper, candleScentDescriptionToggle, hasDescription, hideToggle);
   if (resetToggle) {
@@ -6289,8 +6366,9 @@ const updateCarScentDescription = (resetToggle = false) => {
     carScentDescriptionElement.textContent ||
     '';
   const descriptionText = resolveFragranceDescription(scentId, descriptionKey, defaultDescription);
-  carScentDescriptionElement.textContent = descriptionText;
-  const hasDescription = Boolean(descriptionText.trim());
+  const normalizedDescription = normalizeDescriptionText(descriptionText, defaultDescription);
+  carScentDescriptionElement.textContent = normalizedDescription;
+  const hasDescription = Boolean(normalizedDescription.trim());
   const hideToggle = scentId === 'none';
   updateDescriptionVisibility(carScentDescriptionWrapper, carScentDescriptionToggle, hasDescription, hideToggle);
   if (resetToggle) {
@@ -6303,12 +6381,11 @@ const updateCarScentDescription = (resetToggle = false) => {
 const updateCarImage = () => {
   if (carImageElement && carScentSelect) {
     const scent = carScentSelect.value;
-    if (!scent || scent === 'none') {
-      carImageElement.src = carDefaultImage;
-    } else {
-      const encoded = encodeURIComponent(scent);
-      carImageElement.src = `${carImageBaseUrl}${encoded}${carImageSuffix}`;
-    }
+    const label = carScentSelect?.selectedOptions?.[0]?.textContent?.trim() || scent;
+    setFragranceImage(carImageElement, scent, 'car', label, {
+      baseUrl: carImageBaseUrl,
+      suffix: carImageSuffix
+    });
   }
 };
 
@@ -6399,7 +6476,24 @@ const initProductCardFragrances = () => {
 
     const applyDescription = () => {
       const scentId = getScentIdFromSelect(select) || select.value;
-      updateProductFragranceDescription(descriptionEl, category, scentId);
+      const descriptionText = updateProductFragranceDescription(descriptionEl, category, scentId);
+      const scentLabel = select?.selectedOptions?.[0]?.textContent?.trim() || scentId;
+      const card = select.closest('.product-card');
+      const imageEl = card?.querySelector('[data-fragrance-image]');
+
+      if (imageEl) {
+        setFragranceImage(imageEl, scentId, category, scentLabel);
+      }
+
+      if (category === 'candles') {
+        updateCandleImage();
+      } else if (category === 'car') {
+        updateCarImage();
+      } else if (category === 'diffusers' || category === 'interior_perfume') {
+        updateDiffuserImage();
+      } else if (descriptionText && !descriptionText.trim() && imageEl) {
+        setFragranceImage(imageEl, 'none', category, scentLabel);
+      }
     };
 
     select.addEventListener('change', applyDescription);
