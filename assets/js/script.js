@@ -303,8 +303,7 @@ const translations = {
       devices: 'Aromageräte',
       about: 'Über uns',
       corporate: 'Corporate',
-      contacts: 'Kontakt',
-      journal: 'Journal'
+      contacts: 'Kontakt'
     },
     navGroups: {
       collections: 'Kollektionen',
@@ -322,7 +321,6 @@ const translations = {
       newsletterButton: 'Anmelden',
       socialLabel: 'Folgen Sie uns',
       about: 'Über die Marke',
-      journal: 'Journal',
       corporate: 'Corporate Services',
       shipping: 'Versand & Rückgabe',
       faq: 'FAQ',
@@ -420,14 +418,6 @@ const translations = {
         item2: { title: 'Kostenloser Versand', description: 'Lieferungen ab CHF 80 sind innerhalb der Schweiz inklusive Versicherung kostenfrei.' },
         item3: { title: 'Kuratiert & getestet', description: 'Jede Komposition wird im Showroom getestet, bevor sie in das Sortiment aufgenommen wird.' },
         item4: { title: 'Geschenkverpackung', description: 'Auf Wunsch erhalten Sie satinierte Bänder, Karten und maßgefertigte Boxen.' }
-      },
-      news: {
-        label: 'Journal',
-        title: 'Neuigkeiten & Duftwissen',
-        readMore: 'Mehr lesen',
-        card1: { tag: 'Dufttipps', title: 'Layering-Ideen für Boutique-Hotels', excerpt: 'Wie mehrere Duftquellen zusammenspielen, um Lounges und Suiten differenziert wirken zu lassen.' },
-        card2: { tag: 'Insights', title: 'Nachfüllservices für Retail-Partner', excerpt: 'Flexible Mengen, neutrale Verpackung und private Label-Optionen für Shop-in-Shop-Konzepte.' },
-        card3: { tag: 'Events', title: 'Scent Styling für Sommerterrassen', excerpt: 'Mit mobilen Diffusoren und Textilsprays schaffen wir frische Kulissen für Pop-up-Formate.' }
       }
     },
     catalog: {
@@ -1668,8 +1658,7 @@ Basisnoten: Holzige Noten, Moschus`
       devices: 'Appareils aroma',
       about: 'À propos',
       corporate: 'Corporate',
-      contacts: 'Contact',
-      journal: 'Journal'
+      contacts: 'Contact'
     },
     navGroups: {
       collections: 'Collections',
@@ -1687,7 +1676,6 @@ Basisnoten: Holzige Noten, Moschus`
       newsletterButton: 'S’inscrire',
       socialLabel: 'Suivez-nous',
       about: 'À propos de la marque',
-      journal: 'Journal',
       corporate: 'Services corporate',
       shipping: 'Livraison & retours',
       faq: 'FAQ',
@@ -1785,14 +1773,6 @@ Basisnoten: Holzige Noten, Moschus`
         item2: { title: 'Livraison offerte', description: 'Envoi gratuit dès CHF 80 en Suisse, assurance incluse.' },
         item3: { title: 'Sélection testée', description: 'Chaque parfum est testé au showroom avant intégration.' },
         item4: { title: 'Emballage cadeau', description: 'Rubans satinés, cartes et boîtes sur demande.' }
-      },
-      news: {
-        label: 'Journal',
-        title: 'Actualités & expertise',
-        readMore: 'En savoir plus',
-        card1: { tag: 'Conseils', title: 'Layering pour boutique-hôtels', excerpt: 'Composer plusieurs sources olfactives pour différencier lounges et suites.' },
-        card2: { tag: 'Insights', title: 'Services de recharge retail', excerpt: 'Volumes flexibles, packaging neutre et options marque blanche.' },
-        card3: { tag: 'Événements', title: 'Scénographie olfactive estivale', excerpt: 'Diffuseurs mobiles et sprays textiles pour terrasses pop-up.' }
       }
     },
     catalog: {
@@ -2702,7 +2682,7 @@ Notes de fond : Notes boisées, Musc`
       accessories: { },
       meditation: { },
       devices: { },
-      car_perfume: { title: 'Parfum de Voiture', description: sharedCategoryDescriptions.autoPerfume.fr },
+      car_perfume: { title: 'Parfum de voiture', description: sharedCategoryDescriptions.autoPerfume.fr },
       auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.fr }
     },
     product: {
@@ -2793,8 +2773,7 @@ Notes de fond : Notes boisées, Musc`
       devices: 'Dispositivi aroma',
       about: 'Chi siamo',
       corporate: 'Corporate',
-      contacts: 'Contatti',
-      journal: 'Journal'
+      contacts: 'Contatti'
     },
     navGroups: {
       collections: 'Collezioni',
@@ -2812,7 +2791,6 @@ Notes de fond : Notes boisées, Musc`
       newsletterButton: 'Iscriviti',
       socialLabel: 'Seguici',
       about: 'Il brand',
-      journal: 'Journal',
       corporate: 'Servizi corporate',
       shipping: 'Spedizione & resi',
       faq: 'FAQ',
@@ -2910,14 +2888,6 @@ Notes de fond : Notes boisées, Musc`
         item2: { title: 'Spedizione gratuita', description: 'Consegne in Svizzera gratuite da CHF 80 con assicurazione.' },
         item3: { title: 'Selezione testata', description: 'Ogni composizione è testata in showroom prima dell’inserimento.' },
         item4: { title: 'Confezione regalo', description: 'Nastri satinati, cartoline e box su richiesta.' }
-      },
-      news: {
-        label: 'Journal',
-        title: 'Novità & know-how',
-        readMore: 'Leggi tutto',
-        card1: { tag: 'Consigli', title: 'Layering per boutique hotel', excerpt: 'Come combinare più fonti olfattive per lounge e suite distintive.' },
-        card2: { tag: 'Insights', title: 'Servizi refill per retail', excerpt: 'Quantità flessibili, packaging neutro e opzioni private label.' },
-        card3: { tag: 'Eventi', title: 'Scent styling estivo', excerpt: 'Diffusori mobili e spray tessili per terrazze pop-up.' }
       }
     },
     catalog: {
@@ -3917,8 +3887,7 @@ Note di fondo: Note legnose, Muschio`
       devices: 'Aroma devices',
       about: 'About',
       corporate: 'Corporate',
-      contacts: 'Contact',
-      journal: 'Journal'
+      contacts: 'Contact'
     },
     navGroups: {
       collections: 'Collections',
@@ -3936,7 +3905,6 @@ Note di fondo: Note legnose, Muschio`
       newsletterButton: 'Subscribe',
       socialLabel: 'Follow us',
       about: 'About the brand',
-      journal: 'Journal',
       corporate: 'Corporate services',
       shipping: 'Shipping & returns',
       faq: 'FAQ',
@@ -4034,14 +4002,6 @@ Note di fondo: Note legnose, Muschio`
         item2: { title: 'Free shipping', description: 'Swiss deliveries above CHF 80 are insured and free of charge.' },
         item3: { title: 'Curated & tested', description: 'Every composition is tested in the showroom before joining the range.' },
         item4: { title: 'Gift wrapping', description: 'Satin ribbons, cards and custom boxes available on request.' }
-      },
-      news: {
-        label: 'Journal',
-        title: 'News & scent knowledge',
-        readMore: 'Read more',
-        card1: { tag: 'Tips', title: 'Layering ideas for boutique hotels', excerpt: 'How multiple scent sources interact to differentiate lounges and suites.' },
-        card2: { tag: 'Insights', title: 'Refill services for retail partners', excerpt: 'Flexible volumes, neutral packaging and white-label options.' },
-        card3: { tag: 'Events', title: 'Scent styling for summer terraces', excerpt: 'Mobile diffusers and textile sprays for fresh pop-up atmospheres.' }
       }
     },
     catalog: {
