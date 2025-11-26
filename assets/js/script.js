@@ -159,10 +159,38 @@ const sharedProductDescriptions = {
     it: { default: 'Un profumo per ambienti versatile che migliora l’umore, purifica l’aria e prepara il clima per concentrazione o relax.' }
   },
   autoPerfume: {
-    en: { capsule: 'Magnetic clip with interchangeable capsules for weeks of balanced fragrance without residue.' },
-    de: { capsule: 'Magnetclip mit austauschbaren Kapseln für wochenlange, ausgewogene Beduftung ohne Rückstände.' },
-    fr: { capsule: 'Clip magnétique avec capsules interchangeables pour des semaines de parfum équilibré sans résidus.' },
-    it: { capsule: 'Clip magnetica con capsule intercambiabili per settimane di profumazione equilibrata senza residui.' }
+    en: {
+      capsule: 'Magnetic clip with interchangeable capsules for weeks of balanced fragrance without residue.',
+      description: `<p>Car perfume provides a vibrant and constant fragrance for your car’s interior. With regular and proper use, one bottle of car perfume lasts for 3–6 months.</p>
+
+<p>The car perfume consists of a dark brown glass bottle, a wooden cap, leather straps for tying with branded steel fittings and a length regulator. Inside the bottle, there is also a protective plastic stopper.</p>
+
+<p><em>To ensure the car perfume lasts long and provides daily enjoyment, it’s important to follow the included instructions carefully.</em></p>`
+    },
+    de: {
+      capsule: 'Magnetclip mit austauschbaren Kapseln für wochenlange, ausgewogene Beduftung ohne Rückstände.',
+      description: `<p>Autoparfum sorgt für einen lebendigen, konstanten Duft im Fahrzeuginnenraum. Bei regelmäßiger und richtiger Anwendung hält eine Flasche Autoparfum 3–6 Monate.</p>
+
+<p>Das Autoparfum besteht aus einer dunkelbraunen Glasflasche, einem Holzverschluss, Lederbändern zum Befestigen mit Marken-Stahlbeschlägen und einem Längenregler. In der Flasche befindet sich zudem ein schützender Kunststoffstopfen.</p>
+
+<p><em>Damit das Autoparfum lange hält und täglich Freude bereitet, ist es wichtig, die beiliegenden Anweisungen sorgfältig zu befolgen.</em></p>`
+    },
+    fr: {
+      capsule: 'Clip magnétique avec capsules interchangeables pour des semaines de parfum équilibré sans résidus.',
+      description: `<p>Le parfum pour voiture diffuse un parfum vif et constant dans l’habitacle. Avec une utilisation régulière et appropriée, un flacon d’autoparfum dure 3 à 6 mois.</p>
+
+<p>Le parfum se compose d’un flacon en verre brun foncé, d’un bouchon en bois, de lanières en cuir avec boucles en acier de marque et d’un régulateur de longueur. Un bouchon plastique de protection est également placé dans le flacon.</p>
+
+<p><em>Pour que l’autoparfum dure longtemps et reste agréable au quotidien, il est essentiel de suivre attentivement les instructions fournies.</em></p>`
+    },
+    it: {
+      capsule: 'Clip magnetica con capsule intercambiabili per settimane di profumazione equilibrata senza residui.',
+      description: `<p>Il profumo per auto offre una fragranza vivace e costante per l’abitacolo. Con un uso corretto e regolare, un flacone di profumo per auto dura 3–6 mesi.</p>
+
+<p>Il profumo è composto da una bottiglia di vetro marrone scuro, un tappo in legno, lacci in pelle per il fissaggio con finiture in acciaio brandizzate e un regolatore di lunghezza. All’interno del flacone è presente anche un tappo di plastica protettivo.</p>
+
+<p><em>Per far durare a lungo il profumo e goderne ogni giorno, è importante seguire attentamente le istruzioni incluse.</em></p>`
+    }
   }
 };
 
@@ -5138,6 +5166,121 @@ Base notes: Woody notes, Musk`
     }
   }
 };
+
+const readMoreTranslations = {
+  de: 'MEHR ERFAHREN',
+  fr: 'VOIR PLUS',
+  it: 'SCOPRI DI PIÙ',
+  en: 'READ MORE'
+};
+
+const buildDescriptionFromHero = (hero) => {
+  if (!hero) return '';
+  return [hero.subtitle, hero.text].filter(Boolean).map((paragraph) => `<p>${paragraph}</p>`).join('');
+};
+
+const categoryProductMappings = {
+  candles: { categoryKey: 'categoryCandles', variants: { sable_nuit: 'card1', linen_cloud: 'card2', fig_aura: 'card3', noir_cacao: 'card4' } },
+  gift_atelier: { categoryKey: 'categoryGift', variants: { cedar_atlas: 'card1', scent_lab: 'card2', amber_duo: 'card3', signature_welcome: 'card4' } },
+  accessories: { categoryKey: 'categoryAccessories', variants: { precision_funnel: 'card1', studio_measure: 'card2', marble_rise: 'card3', wick_trim: 'card4' } },
+  meditation: { categoryKey: 'categoryMeditation', variants: { calm_focus: 'card1', lotus_sand: 'card2', still_forest: 'card3', cushion_mist: 'card4' } },
+  auto_perfume: { categoryKey: 'categoryCar', variants: { nomad_drive: 'card1', cedar_route: 'card2', velvet_road: 'card3', travel_duo: 'card4' } },
+  devices: { categoryKey: 'categoryDevices', variants: { quiet_halo: 'card1', nomad_nebula: 'card2', pro_flow: 'card3', studio_sync: 'card4' } },
+  limited_edition: { categoryKey: 'categoryLimited', variants: { amber_atelier: 'card1', marble_dust: 'card2', orchard_sketch: 'card3', velvet_proof: 'card4' } }
+};
+
+const signatureLineTranslations = {
+  de: {
+    title: 'Duftkerzen Signature Line',
+    description: 'Zwei Gefäßgrößen und Signature-Düfte, handgegossen in Keramik.'
+  },
+  fr: {
+    title: 'Bougies Signature Line',
+    description: 'Deux tailles de contenant et des fragrances signature, coulées à la main en céramique.'
+  },
+  it: {
+    title: 'Candele Signature Line',
+    description: 'Due dimensioni di contenitore e profumi signature, colati a mano in ceramica.'
+  },
+  en: {
+    title: 'Signature Line Scented Candles',
+    description: 'Two vessel sizes and signature fragrances, hand-poured in ceramic.'
+  }
+};
+
+const augmentCategoryAndProductTranslations = () => {
+  const languages = ['de', 'fr', 'it', 'en'];
+
+  languages.forEach((lang) => {
+    const data = translations[lang];
+    if (!data) return;
+
+    data.category = data.category || {};
+    data.category.read_more = readMoreTranslations[lang] || readMoreTranslations.en;
+
+    const addCategory = (slug, heroKey, descriptionOverride = null) => {
+      const hero = data?.[heroKey]?.hero;
+      const current = data.category[slug] || {};
+      const description = descriptionOverride !== null ? descriptionOverride : current.description || buildDescriptionFromHero(hero);
+
+      data.category[slug] = {
+        ...current,
+        title: hero?.title || current.title || '',
+        description
+      };
+    };
+
+    addCategory('candles', 'categoryCandles');
+    addCategory('limited_edition', 'categoryLimited', data.category?.limited_edition?.description);
+    addCategory('gift_atelier', 'categoryGift');
+    addCategory('accessories', 'categoryAccessories');
+    addCategory('meditation', 'categoryMeditation');
+    addCategory('auto_perfume', 'categoryCar', sharedCategoryDescriptions.autoPerfume[lang]?.description || data.category?.auto_perfume?.description);
+    addCategory('devices', 'categoryDevices');
+  });
+
+  const addProductFromCards = (langData, slug, mapping) => {
+    const categoryProducts = langData?.[mapping.categoryKey]?.products;
+    if (!categoryProducts) return;
+
+    langData.product = langData.product || {};
+    const productGroup = langData.product[slug] || {};
+
+    Object.entries(mapping.variants).forEach(([variantSlug, cardKey]) => {
+      const card = categoryProducts[cardKey];
+      if (!card) return;
+      productGroup[variantSlug] = {
+        title: card.name || '',
+        description: card.description || ''
+      };
+    });
+
+    langData.product[slug] = productGroup;
+  };
+
+  languages.forEach((lang) => {
+    const langData = translations[lang];
+    if (!langData) return;
+
+    Object.entries(categoryProductMappings).forEach(([slug, mapping]) => {
+      addProductFromCards(langData, slug, mapping);
+    });
+
+    const signatureLine = signatureLineTranslations[lang];
+    if (signatureLine) {
+      langData.product = langData.product || {};
+      langData.product.candles = {
+        ...(langData.product.candles || {}),
+        signature_line: {
+          title: signatureLine.title,
+          description: signatureLine.description
+        }
+      };
+    }
+  });
+};
+
+augmentCategoryAndProductTranslations();
 
 const diffuserPricing = {
   baseCurrency: 'CHF',
