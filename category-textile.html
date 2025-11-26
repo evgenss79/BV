@@ -128,18 +128,34 @@ The good news is that there is an effective means to achieve a comprehensive eff
             data-diffuser-scent-description-wrapper
           >
             <p
-              class="product-card__scent-description product-fragrance-description"
+              class="product-card__scent-description product-fragrance-description product-fragrance-description-short"
               data-diffuser-scent-description
               data-product-fragrance-description="textile"
+              data-fragrance-description="short"
               data-i18n="product.textile_spray.short_description"
             >A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.</p>
-            <button
-              type="button"
+            <div class="collapse" id="fragranceDescription-textile">
+              <p
+                class="product-card__scent-description product-fragrance-description-long"
+                data-product-fragrance-description="textile"
+                data-fragrance-description="long"
+                data-i18n="product.textile_spray.short_description"
+              >
+                A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.
+              </p>
+            </div>
+            <a
               class="product-card__scent-toggle"
+              href="#fragranceDescription-textile"
+              data-bs-toggle="collapse"
               data-diffuser-scent-toggle
               aria-expanded="false"
+              data-collapse-label-more="Read more"
+              data-collapse-label-less="Collapse"
               data-i18n="common.toggle.more"
-            ></button>
+            >
+              Read more
+            </a>
           </div>
 
           <div class="product-card__options">
