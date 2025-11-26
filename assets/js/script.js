@@ -6184,6 +6184,9 @@ const initCandleConfigurator = () => {
   candleScentSelect = document.querySelector('[data-candle-scent]');
   candleImageElement = document.querySelector('[data-candle-image]');
   candleScentDescriptionElement = document.querySelector('[data-candle-scent-description]');
+  if (!candleScentDescriptionElement) {
+    candleScentDescriptionElement = document.querySelector('[data-candle-card] .product-fragrance-description');
+  }
   candleScentDescriptionWrapper = document.querySelector('[data-candle-scent-description-wrapper]');
   candleScentDescriptionToggle = document.querySelector('[data-candle-scent-toggle]');
   if (
@@ -6247,6 +6250,9 @@ const initCarConfigurator = () => {
   carScentSelect = document.querySelector('[data-car-scent]');
   carImageElement = document.querySelector('[data-car-image]');
   carScentDescriptionElement = document.querySelector('[data-car-scent-description]');
+  if (!carScentDescriptionElement) {
+    carScentDescriptionElement = document.querySelector('[data-car-card] .product-fragrance-description');
+  }
   carScentDescriptionWrapper = document.querySelector('[data-car-scent-description-wrapper]');
   carScentDescriptionToggle = document.querySelector('[data-car-scent-toggle]');
   if (!carPriceElement && !carScentSelect && !carImageElement && !carScentDescriptionElement) {
