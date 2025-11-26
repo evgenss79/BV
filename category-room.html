@@ -136,14 +136,35 @@ If you use perfume to deodorize your home, you can not only ensure a pleasant ar
             class="product-card__scent-description-wrapper is-collapsed"
             data-diffuser-scent-description-wrapper
           >
-            <p class="product-card__scent-description" data-diffuser-scent-description data-i18n="product.interior_perfume.default.short_description">A versatile interior perfume created to lift the mood, purify the air, and set the tone for focused work or restorative rest.</p>
-            <button
-              type="button"
+            <p
+              class="product-card__scent-description product-fragrance-description product-fragrance-description-short"
+              data-diffuser-scent-description
+              data-product-fragrance-description="interior_perfume"
+              data-fragrance-description="short"
+              data-i18n="product.interior_perfume.default.short_description"
+            >A versatile interior perfume created to lift the mood, purify the air, and set the tone for focused work or restorative rest.</p>
+            <div class="collapse" id="fragranceDescription-interior">
+              <p
+                class="product-card__scent-description product-fragrance-description-long"
+                data-product-fragrance-description="interior_perfume"
+                data-fragrance-description="long"
+                data-i18n="product.interior_perfume.default.short_description"
+              >
+                A versatile interior perfume created to lift the mood, purify the air, and set the tone for focused work or restorative rest.
+              </p>
+            </div>
+            <a
               class="product-card__scent-toggle"
+              href="#fragranceDescription-interior"
+              data-bs-toggle="collapse"
               data-diffuser-scent-toggle
               aria-expanded="false"
+              data-collapse-label-more="Read more"
+              data-collapse-label-less="Collapse"
               data-i18n="common.toggle.more"
-            ></button>
+            >
+              Read more
+            </a>
           </div>
 
           <div class="product-card__options">
