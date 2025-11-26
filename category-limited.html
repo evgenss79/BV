@@ -118,6 +118,7 @@
         <div class="product-card__image">
           <img
             data-diffuser-image
+            data-fragrance-image
             src="https://raw.githubusercontent.com/evgenss79/BV_img/main/3%20velas.jpg?raw=true"
             alt="Limited Edition candles"
             loading="lazy"
@@ -130,14 +131,35 @@
             class="product-card__scent-description-wrapper is-collapsed"
             data-diffuser-scent-description-wrapper
           >
-            <p class="product-card__scent-description" data-diffuser-scent-description data-i18n="product.limited_edition.new_york.short_description">Discover the atmospheres of New York, Abu Dhabi, and Palermo in a numbered set poured with coconut and soy waxes for dense, elegant diffusion.</p>
-            <button
-              type="button"
+            <p
+              class="product-card__scent-description product-fragrance-description product-fragrance-description-short"
+              data-diffuser-scent-description
+              data-product-fragrance-description="limited_edition"
+              data-fragrance-description="short"
+              data-i18n="product.limited_edition.new_york.short_description"
+            >Discover the atmospheres of New York, Abu Dhabi, and Palermo in a numbered set poured with coconut and soy waxes for dense, elegant diffusion.</p>
+            <div class="collapse" id="fragranceDescription-limited">
+              <p
+                class="product-card__scent-description product-fragrance-description-long"
+                data-product-fragrance-description="limited_edition"
+                data-fragrance-description="long"
+                data-i18n="product.limited_edition.new_york.short_description"
+              >
+                Discover the atmospheres of New York, Abu Dhabi, and Palermo in a numbered set poured with coconut and soy waxes for dense, elegant diffusion.
+              </p>
+            </div>
+            <a
               class="product-card__scent-toggle"
+              href="#fragranceDescription-limited"
+              data-bs-toggle="collapse"
               data-diffuser-scent-toggle
               aria-expanded="false"
+              data-collapse-label-more="Read more"
+              data-collapse-label-less="Collapse"
               data-i18n="common.toggle.more"
-            ></button>
+            >
+              Read more
+            </a>
           </div>
 
           <div class="product-card__options">
