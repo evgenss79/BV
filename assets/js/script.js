@@ -6009,11 +6009,16 @@ const updateDiffuserImage = () => {
   imageEl.src = `${baseUrl}${encoded}${suffix}`;
 };
 
-const getFragranceDescription = (scentId, fallbackKey = null) => {
+const getFragranceDescription = (categoryOrScentId, fallbackKey = null) => {
+  const productCategories = new Set(['candles', 'textile', 'car']);
+  const scentId = productCategories.has(categoryOrScentId) ? fallbackKey : categoryOrScentId;
+  const translationFallbackKey = productCategories.has(categoryOrScentId) ? null : fallbackKey;
   if (!scentId || scentId === 'none') return '';
   const key = `fragrance.${scentId}.description`;
   const fallbackDescription =
-    (fallbackKey && (resolveTranslation(currentLang, fallbackKey) || resolveTranslation('en', fallbackKey))) || '';
+    (translationFallbackKey &&
+      (resolveTranslation(currentLang, translationFallbackKey) || resolveTranslation('en', translationFallbackKey))) ||
+    '';
   return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || fallbackDescription;
 };
 
@@ -6027,6 +6032,36 @@ const resolveFragranceDescription = (scentId, fallbackKey = null, defaultDescrip
     );
   }
   return defaultDescription || '';
+};
+
+const productFragranceDescriptionConfig = {
+  candles: {
+    translationBase: 'candles.scents',
+    defaultKey: 'product.scented_candles.default_description'
+  },
+  textile: {
+    translationBase: 'product.textile_spray.description',
+    defaultKey: 'product.textile_spray.description.none'
+  },
+  car: {
+    translationBase: 'car.scents',
+    defaultKey: 'product.auto_perfume.capsule.short_description'
+  }
+};
+
+const updateProductFragranceDescription = (descriptionEl, category, scentKey) => {
+  if (!descriptionEl || !category || !scentKey) return;
+  const config = productFragranceDescriptionConfig[category] || {};
+  const defaultDescription =
+    (config.defaultKey &&
+      (resolveTranslation(currentLang, config.defaultKey) || resolveTranslation('en', config.defaultKey))) ||
+    descriptionEl.textContent ||
+    '';
+
+  const fallbackKey = config.translationBase ? `${config.translationBase}.${scentKey}` : null;
+  const fullText = resolveFragranceDescription(scentKey, fallbackKey, defaultDescription);
+
+  descriptionEl.textContent = fullText;
 };
 
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
@@ -6304,6 +6339,78 @@ const initCarConfigurator = () => {
   });
 };
 
+const initProductCardFragrances = () => {
+  const page = document.body?.dataset?.page;
+  const selectSet = new Set();
+  const defaultCategoryByPage = {
+    'category-candles': 'candles',
+    'category-textile': 'textile',
+    'category-car': 'car',
+    'category-diffusers': 'diffusers',
+    'category-room': 'interior_perfume',
+    'category-limited': 'limited_edition'
+  };
+
+  ['[data-scent-select]', '[data-diffuser-scent]', '[data-car-scent]', '[data-candle-scent]', 'select[name="fragrance"]'].forEach(
+    (selector) => {
+      document.querySelectorAll(selector).forEach((select) => selectSet.add(select));
+    }
+  );
+
+  const selects = Array.from(selectSet);
+  if (!selects.length) return;
+
+  selects.forEach((select) => {
+    const inferredCategory =
+      select.dataset.category ||
+      (select.matches('[data-diffuser-scent]') && 'diffusers') ||
+      (select.matches('[data-candle-scent]') && 'candles') ||
+      (select.matches('[data-car-scent]') && 'car') ||
+      defaultCategoryByPage[page];
+    if (!inferredCategory) return;
+
+    select.dataset.scentSelect = select.dataset.scentSelect || 'true';
+    select.dataset.category = select.dataset.category || inferredCategory;
+
+    let selectionAdjusted = false;
+
+    Array.from(select.options).forEach((option) => {
+      if (option.dataset.scentId) {
+        option.value = option.dataset.scentId;
+      }
+    });
+
+    if (select.value === 'none') {
+      const firstFragrance = Array.from(select.options).find((option) => option.value && option.value !== 'none');
+      if (firstFragrance) {
+        select.value = firstFragrance.value;
+        selectionAdjusted = true;
+      }
+    }
+
+    const category = select.dataset.category || inferredCategory;
+    const descriptionEl =
+      select
+        .closest('.product-card')
+        ?.querySelector(`[data-product-fragrance-description="${category}"]`) ||
+      select.closest('.product-card')?.querySelector('[data-product-fragrance-description]');
+
+    if (!descriptionEl) return;
+
+    const applyDescription = () => {
+      const scentId = getScentIdFromSelect(select) || select.value;
+      updateProductFragranceDescription(descriptionEl, category, scentId);
+    };
+
+    select.addEventListener('change', applyDescription);
+    applyDescription();
+
+    if (selectionAdjusted) {
+      select.dispatchEvent(new Event('change'));
+    }
+  });
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
   await loadFragranceCatalog();
   applyTranslations();
@@ -6317,6 +6424,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   initDiffuserHeroSlider();
   initCandleConfigurator();
   initCarConfigurator();
+  initProductCardFragrances();
   initCart();
   initContactForm();
 });
