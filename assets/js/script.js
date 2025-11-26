@@ -5241,6 +5241,20 @@ Base notes: Woody notes, Musk`
 
 const normalizeGermanText = (text = '') => text.replace(/ß/g, 'ss');
 
+const sanitizeGermanTranslations = (node) => {
+  if (!node) return node;
+  if (Array.isArray(node)) return node.map(sanitizeGermanTranslations);
+  if (typeof node === 'object') {
+    Object.entries(node).forEach(([key, value]) => {
+      node[key] = sanitizeGermanTranslations(value);
+    });
+    return node;
+  }
+  return typeof node === 'string' ? normalizeGermanText(node) : node;
+};
+
+sanitizeGermanTranslations(translations.de);
+
 const injectFragranceData = (catalog) => {
   if (!catalog) return;
   const languages = ['en', 'de', 'fr', 'it'];
