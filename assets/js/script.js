@@ -440,17 +440,17 @@ const translations = {
     },
     catalog: {
       category: {
-        aroma_diffusers: 'Aroma-Diffusoren',
-        candles: 'Duftkerzen',
-        limited_edition: 'Limitierte Kollektion',
-        home_perfume: 'Raumduft',
-        interior_perfume: 'Raumduft',
-        textile_spray: 'Textilspray',
-        gift_sets: 'Geschenksets',
-        accessories: 'Accessoires',
-        meditation: 'Meditation',
-        car_perfume: 'Autoparfum',
-        aroma_devices: 'Aromageräte'
+        aroma_diffusers: { title: 'Aroma-Diffusoren', alt: 'Aroma-Diffusoren' },
+        candles: { title: 'Duftkerzen', alt: 'Duftkerzen' },
+        limited_edition: { title: 'Limitierte Kollektion', alt: 'Limitierte Kollektion' },
+        home_perfume: { title: 'Raumduft', alt: 'Raumduft' },
+        interior_perfume: { title: 'Raumduft', alt: 'Raumduft' },
+        textile_spray: { title: 'Textilspray', alt: 'Textilspray' },
+        gift_sets: { title: 'Geschenksets', alt: 'Geschenksets' },
+        accessories: { title: 'Accessoires', alt: 'Accessoires' },
+        meditation: { title: 'Meditation', alt: 'Meditation' },
+        car_perfume: { title: 'Autoparfum', alt: 'Autoparfum' },
+        aroma_devices: { title: 'Aromageräte', alt: 'Aromageräte' }
       },
       hero: {
         label: 'Kuratiertes Sortiment',
@@ -1800,17 +1800,17 @@ Basisnoten: Holzige Noten, Moschus`
     },
     catalog: {
       category: {
-        aroma_diffusers: 'Diffuseurs d’arômes',
-        candles: 'Bougies parfumées',
-        limited_edition: 'Collection limitée',
-        home_perfume: 'Parfum d’intérieur',
-        interior_perfume: 'Parfum d’intérieur',
-        textile_spray: 'Spray textile',
-        gift_sets: 'Coffrets cadeaux',
-        accessories: 'Accessoires',
-        meditation: 'Méditation',
-        car_perfume: 'Parfum voiture',
-        aroma_devices: 'Appareils aroma'
+        aroma_diffusers: { title: 'Diffuseurs d’arômes', alt: 'Diffuseurs d’arômes' },
+        candles: { title: 'Bougies parfumées', alt: 'Bougies parfumées' },
+        limited_edition: { title: 'Collection limitée', alt: 'Collection limitée' },
+        home_perfume: { title: 'Parfum d’intérieur', alt: 'Parfum d’intérieur' },
+        interior_perfume: { title: 'Parfum d’intérieur', alt: 'Parfum d’intérieur' },
+        textile_spray: { title: 'Spray textile', alt: 'Spray textile' },
+        gift_sets: { title: 'Coffrets cadeaux', alt: 'Coffrets cadeaux' },
+        accessories: { title: 'Accessoires', alt: 'Accessoires' },
+        meditation: { title: 'Méditation', alt: 'Méditation' },
+        car_perfume: { title: 'Parfum voiture', alt: 'Parfum voiture' },
+        aroma_devices: { title: 'Appareils aroma', alt: 'Appareils aroma' }
       },
       hero: {
         label: 'Sélection',
@@ -2920,17 +2920,17 @@ Notes de fond : Notes boisées, Musc`
     },
     catalog: {
       category: {
-        aroma_diffusers: 'Diffusori d’aroma',
-        candles: 'Candele profumate',
-        limited_edition: 'Collezione limitata',
-        home_perfume: 'Profumi ambiente',
-        interior_perfume: 'Profumi ambiente',
-        textile_spray: 'Spray tessile',
-        gift_sets: 'Cofanetti regalo',
-        accessories: 'Accessori',
-        meditation: 'Meditazione',
-        car_perfume: 'Profumo auto',
-        aroma_devices: 'Dispositivi aroma'
+        aroma_diffusers: { title: 'Diffusori d’aroma', alt: 'Diffusori d’aroma' },
+        candles: { title: 'Candele profumate', alt: 'Candele profumate' },
+        limited_edition: { title: 'Collezione limitata', alt: 'Collezione limitata' },
+        home_perfume: { title: 'Profumi ambiente', alt: 'Profumi ambiente' },
+        interior_perfume: { title: 'Profumi ambiente', alt: 'Profumi ambiente' },
+        textile_spray: { title: 'Spray tessile', alt: 'Spray tessile' },
+        gift_sets: { title: 'Cofanetti regalo', alt: 'Cofanetti regalo' },
+        accessories: { title: 'Accessori', alt: 'Accessori' },
+        meditation: { title: 'Meditazione', alt: 'Meditazione' },
+        car_perfume: { title: 'Profumo auto', alt: 'Profumo auto' },
+        aroma_devices: { title: 'Dispositivi aroma', alt: 'Dispositivi aroma' }
       },
       hero: {
         label: 'Selezione curata',
@@ -4036,17 +4036,17 @@ Note di fondo: Note legnose, Muschio`
     },
     catalog: {
       category: {
-        aroma_diffusers: 'Aroma diffusers',
-        candles: 'Scented candles',
-        limited_edition: 'Limited edition',
-        home_perfume: 'Interior Perfume',
-        interior_perfume: 'Interior Perfume',
-        textile_spray: 'Textile spray',
-        gift_sets: 'Gift sets',
-        accessories: 'Accessories',
-        meditation: 'Meditation',
-        car_perfume: 'Car perfume',
-        aroma_devices: 'Aroma devices'
+        aroma_diffusers: { title: 'Aroma diffusers', alt: 'Aroma diffusers' },
+        candles: { title: 'Scented candles', alt: 'Scented candles' },
+        limited_edition: { title: 'Limited edition', alt: 'Limited edition' },
+        home_perfume: { title: 'Interior Perfume', alt: 'Interior Perfume' },
+        interior_perfume: { title: 'Interior Perfume', alt: 'Interior Perfume' },
+        textile_spray: { title: 'Textile spray', alt: 'Textile spray' },
+        gift_sets: { title: 'Gift sets', alt: 'Gift sets' },
+        accessories: { title: 'Accessories', alt: 'Accessories' },
+        meditation: { title: 'Meditation', alt: 'Meditation' },
+        car_perfume: { title: 'Car perfume', alt: 'Car perfume' },
+        aroma_devices: { title: 'Aroma devices', alt: 'Aroma devices' }
       },
       hero: {
         label: 'Curated selection',
