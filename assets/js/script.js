@@ -1,5 +1,21 @@
 // CHANGE YOUR REAL TEXTS HERE. The official brand representative will paste their own content.
 // Duplicate this translations object structure to add more languages. Keys correspond to data-i18n attributes across the HTML files.
+const autoPerfumeDescription = `<p>
+  Car perfume provides a vibrant and constant fragrance for your car’s interior.
+  With regular and proper use, one bottle of car perfume lasts for 3–6 months.
+</p>
+
+<p>
+  The car perfume consists of a dark brown glass bottle, a wooden cap, leather straps
+  for tying with branded steel fittings and a length regulator. Inside the bottle, there
+  is also a protective plastic stopper.
+</p>
+
+<p>
+  <em>To ensure the car perfume lasts long and provides daily enjoyment, it’s important to
+  follow the included instructions carefully.</em>
+</p>`;
+
 const sharedCategoryDescriptions = {
   limitedEdition: {
     en: `A collection of three exclusive scented candles – a limited edition inspired by the fragrances of the world’s most luxurious locations.
@@ -79,12 +95,7 @@ Composizione: oli essenziali solubilizzati in acqua con conservanti selezionati,
 
 Vantaggi: profumazione duratura, compatibilità con tutti i materiali, proprietà ipoallergeniche e leggero effetto ammorbidente/antistatico. Applicato da 20–25 cm, il profumo resta percepibile anche dopo il lavaggio.`
   },
-  autoPerfume: {
-    en: 'Clips, capsules and sprays provide consistent fragrance diffusion without residue.',
-    de: 'Clips, Kapseln und Sprays verteilen den Duft gleichmäßig und ohne Rückstände.',
-    fr: 'Clips, capsules et sprays diffusent le parfum de façon homogène, sans résidus.',
-    it: 'Clip, capsule e spray diffondono la fragranza in modo uniforme, senza residui.'
-  },
+  autoPerfume: { en: autoPerfumeDescription, de: autoPerfumeDescription, fr: autoPerfumeDescription, it: autoPerfumeDescription },
   interiorPerfume: {
     en: `Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that's a pleasure to be in.
 
@@ -1521,7 +1532,7 @@ Basisnoten: Holzige Noten, Moschus`
     category: {
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.de },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.de },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.de },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.de },
       interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.de }
     },
     product: {
@@ -2638,7 +2649,7 @@ Notes de fond : Notes boisées, Musc`
     category: {
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.fr },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.fr },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.fr },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.fr },
       interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.fr }
     },
     product: {
@@ -3754,7 +3765,7 @@ Note di fondo: Note legnose, Muschio`
     category: {
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.it },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.it },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.it },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.it },
       interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.it }
     },
     product: {
@@ -5134,7 +5145,7 @@ Base notes: Woody notes, Musk`
     category: {
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.en },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.en },
-      auto_perfume: { description: sharedCategoryDescriptions.autoPerfume.en },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.en },
       interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.en }
     },
     product: {
