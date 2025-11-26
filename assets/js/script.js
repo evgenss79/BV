@@ -1,6 +1,6 @@
 // CHANGE YOUR REAL TEXTS HERE. The official brand representative will paste their own content.
 // Duplicate this translations object structure to add more languages. Keys correspond to data-i18n attributes across the HTML files.
-const autoPerfumeDescription = `<p>
+const autoPerfumeDescriptionEn = `<p>
   Car perfume provides a vibrant and constant fragrance for your car’s interior.
   With regular and proper use, one bottle of car perfume lasts for 3–6 months.
 </p>
@@ -14,6 +14,54 @@ const autoPerfumeDescription = `<p>
 <p>
   <em>To ensure the car perfume lasts long and provides daily enjoyment, it’s important to
   follow the included instructions carefully.</em>
+</p>`;
+
+const autoPerfumeDescriptionDe = `<p>
+  Autoparfum sorgt für einen lebendigen, konstanten Duft im Fahrzeuginnenraum.
+  Bei regelmäßiger und richtiger Anwendung hält eine Flasche Autoparfum 3–6 Monate.
+</p>
+
+<p>
+  Das Autoparfum besteht aus einer dunkelbraunen Glasflasche, einem Holzverschluss,
+  Lederbändern zum Befestigen mit Marken-Stahlbeschlägen und einem Längenregler.
+  In der Flasche befindet sich zudem ein schützender Kunststoffstopfen.
+</p>
+
+<p>
+  <em>Damit das Autoparfum lange hält und täglich Freude bereitet, ist es wichtig,
+  die beiliegenden Anweisungen sorgfältig zu befolgen.</em>
+</p>`;
+
+const autoPerfumeDescriptionFr = `<p>
+  Le parfum pour voiture diffuse un parfum vif et constant dans l’habitacle.
+  Avec une utilisation régulière et appropriée, un flacon de parfum voiture dure 3 à 6 mois.
+</p>
+
+<p>
+  Le parfum se compose d’un flacon en verre brun foncé, d’un bouchon en bois,
+  de lanières en cuir avec boucles en acier de marque et d’un régulateur de longueur.
+  Un bouchon plastique de protection est également placé dans le flacon.
+</p>
+
+<p>
+  <em>Pour que le parfum voiture dure longtemps et reste agréable au quotidien,
+  il est essentiel de suivre attentivement les instructions fournies.</em>
+</p>`;
+
+const autoPerfumeDescriptionIt = `<p>
+  Il profumo per auto offre una fragranza intensa e costante all’interno dell’abitacolo.
+  Con un uso corretto e regolare, una boccetta di profumo per auto dura da 3 a 6 mesi.
+</p>
+
+<p>
+  Il profumo è composto da una bottiglia in vetro ambrato scuro, un tappo in legno,
+  lacci in pelle con accessori in acciaio firmati e un regolatore di lunghezza.
+  All’interno della bottiglia è presente inoltre un tappo protettivo in plastica.
+</p>
+
+<p>
+  <em>Per garantire una lunga durata e un piacere quotidiano,
+  è importante seguire attentamente le istruzioni incluse.</em>
 </p>`;
 
 const sharedCategoryDescriptions = {
@@ -95,7 +143,12 @@ Composizione: oli essenziali solubilizzati in acqua con conservanti selezionati,
 
 Vantaggi: profumazione duratura, compatibilità con tutti i materiali, proprietà ipoallergeniche e leggero effetto ammorbidente/antistatico. Applicato da 20–25 cm, il profumo resta percepibile anche dopo il lavaggio.`
   },
-  autoPerfume: { en: autoPerfumeDescription, de: autoPerfumeDescription, fr: autoPerfumeDescription, it: autoPerfumeDescription },
+  autoPerfume: {
+    en: autoPerfumeDescriptionEn,
+    de: autoPerfumeDescriptionDe,
+    fr: autoPerfumeDescriptionFr,
+    it: autoPerfumeDescriptionIt
+  },
   interiorPerfume: {
     en: `Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that's a pleasure to be in.
 
@@ -172,35 +225,19 @@ const sharedProductDescriptions = {
   autoPerfume: {
     en: {
       capsule: 'Magnetic clip with interchangeable capsules for weeks of balanced fragrance without residue.',
-      description: `<p>Car perfume provides a vibrant and constant fragrance for your car’s interior. With regular and proper use, one bottle of car perfume lasts for 3–6 months.</p>
-
-<p>The car perfume consists of a dark brown glass bottle, a wooden cap, leather straps for tying with branded steel fittings and a length regulator. Inside the bottle, there is also a protective plastic stopper.</p>
-
-<p><em>To ensure the car perfume lasts long and provides daily enjoyment, it’s important to follow the included instructions carefully.</em></p>`
+      description: autoPerfumeDescriptionEn
     },
     de: {
       capsule: 'Magnetclip mit austauschbaren Kapseln für wochenlange, ausgewogene Beduftung ohne Rückstände.',
-      description: `<p>Autoparfum sorgt für einen lebendigen, konstanten Duft im Fahrzeuginnenraum. Bei regelmäßiger und richtiger Anwendung hält eine Flasche Autoparfum 3–6 Monate.</p>
-
-<p>Das Autoparfum besteht aus einer dunkelbraunen Glasflasche, einem Holzverschluss, Lederbändern zum Befestigen mit Marken-Stahlbeschlägen und einem Längenregler. In der Flasche befindet sich zudem ein schützender Kunststoffstopfen.</p>
-
-<p><em>Damit das Autoparfum lange hält und täglich Freude bereitet, ist es wichtig, die beiliegenden Anweisungen sorgfältig zu befolgen.</em></p>`
+      description: autoPerfumeDescriptionDe
     },
     fr: {
       capsule: 'Clip magnétique avec capsules interchangeables pour des semaines de parfum équilibré sans résidus.',
-      description: `<p>Le parfum pour voiture diffuse un parfum vif et constant dans l’habitacle. Avec une utilisation régulière et appropriée, un flacon d’autoparfum dure 3 à 6 mois.</p>
-
-<p>Le parfum se compose d’un flacon en verre brun foncé, d’un bouchon en bois, de lanières en cuir avec boucles en acier de marque et d’un régulateur de longueur. Un bouchon plastique de protection est également placé dans le flacon.</p>
-
-<p><em>Pour que l’autoparfum dure longtemps et reste agréable au quotidien, il est essentiel de suivre attentivement les instructions fournies.</em></p>`
+      description: autoPerfumeDescriptionFr
     },
     it: {
       capsule: 'Clip magnetica con capsule intercambiabili per settimane di profumazione equilibrata senza residui.',
-      description: `<p>Il profumo per auto offre una fragranza vivace e costante per l’abitacolo. Con un uso corretto e regolare, un flacone di profumo per auto dura 3–6 mesi.</p>
-
-<p>Il profumo è composto da una bottiglia di vetro marrone scuro, un tappo in legno, lacci in pelle per il fissaggio con finiture in acciaio brandizzate e un regolatore di lunghezza. All’interno del flacone è presente anche un tappo di plastica protettivo.</p>
-
-<p><em>Per far durare a lungo il profumo e goderne ogni giorno, è importante seguire attentamente le istruzioni incluse.</em></p>`
+      description: autoPerfumeDescriptionIt
     }
   }
 };
@@ -1530,10 +1567,18 @@ Basisnoten: Holzige Noten, Moschus`
     section5: { title: '5. Haftung & Gerichtsstand', paragraph: 'Unsere Haftung ist auf grobe Fahrlässigkeit beschränkt. Es gilt Schweizer Recht, Gerichtsstand ist Zürich.' }
     },
     category: {
+      read_more: 'MEHR ERFAHREN',
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.de },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.de },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.de },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.de }
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.de },
+      candles: { },
+      aroma_diffusers: { },
+      gift: { },
+      accessories: { },
+      meditation: { },
+      devices: { },
+      car_perfume: { title: 'Autoparfums für jede Fahrt', description: sharedCategoryDescriptions.autoPerfume.de },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.de }
     },
     product: {
       badge: { collection: 'Kollektion' },
@@ -2647,10 +2692,18 @@ Notes de fond : Notes boisées, Musc`
       section5: { title: '5. Responsabilité & for', paragraph: 'Responsabilité limitée aux fautes graves. Droit suisse, for juridique Zurich.' }
     },
     category: {
+      read_more: 'VOIR PLUS',
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.fr },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.fr },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.fr },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.fr }
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.fr },
+      candles: { },
+      aroma_diffusers: { },
+      gift: { },
+      accessories: { },
+      meditation: { },
+      devices: { },
+      car_perfume: { title: 'Parfum de Voiture', description: sharedCategoryDescriptions.autoPerfume.fr },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.fr }
     },
     product: {
       badge: { collection: 'Collection' },
@@ -3763,10 +3816,18 @@ Note di fondo: Note legnose, Muschio`
       section5: { title: '5. Responsabilità & foro', paragraph: 'Responsabilità limitata a dolo o colpa grave. Foro competente Zurigo, diritto svizzero.' }
     },
     category: {
+      read_more: 'SCOPRI DI PIÙ',
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.it },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.it },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.it },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.it }
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.it },
+      candles: { },
+      aroma_diffusers: { },
+      gift: { },
+      accessories: { },
+      meditation: { },
+      devices: { },
+      car_perfume: { title: 'Profumo per Auto', description: sharedCategoryDescriptions.autoPerfume.it },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.it }
     },
     product: {
       badge: { collection: 'Collezione' },
@@ -4966,7 +5027,7 @@ Base notes: Woody notes, Musk`
     categoryCar: {
       hero: {
         label: 'Car perfume',
-        title: 'Magnetic clips & travel scents',
+        title: 'Car Parfum',
         subtitle: 'Aromas engineered for drives of any length.',
         text: 'Clips secure to vents with replaceable capsules and elegant finishes.',
         button: 'Choose your clip',
@@ -5143,10 +5204,18 @@ Base notes: Woody notes, Musk`
       section5: { title: '5. Liability & jurisdiction', paragraph: 'Liability is limited to gross negligence. Swiss law applies, venue Zurich.' }
     },
     category: {
+      read_more: 'READ MORE',
       limited_edition: { description: sharedCategoryDescriptions.limitedEdition.en },
       textile_spray: { description: sharedCategoryDescriptions.textileSpray.en },
-      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.en },
-      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.en }
+      interior_perfume: { description: sharedCategoryDescriptions.interiorPerfume.en },
+      candles: { },
+      aroma_diffusers: { },
+      gift: { },
+      accessories: { },
+      meditation: { },
+      devices: { },
+      car_perfume: { title: 'Car Parfum', description: sharedCategoryDescriptions.autoPerfume.en },
+      auto_perfume: { title: 'Auto Perfume', description: sharedCategoryDescriptions.autoPerfume.en }
     },
     product: {
       badge: { collection: 'Collection' },
@@ -5236,16 +5305,21 @@ const augmentCategoryAndProductTranslations = () => {
 
       data.category[slug] = {
         ...current,
-        title: hero?.title || current.title || '',
+        title: current.title || hero?.title || '',
         description
       };
     };
 
+    addCategory('aroma_diffusers', 'categoryDiffusers');
     addCategory('candles', 'categoryCandles');
     addCategory('limited_edition', 'categoryLimited', data.category?.limited_edition?.description);
+    addCategory('gift', 'categoryGift');
     addCategory('gift_atelier', 'categoryGift');
     addCategory('accessories', 'categoryAccessories');
     addCategory('meditation', 'categoryMeditation');
+    addCategory('interior_perfume', 'categoryRoom', data.category?.interior_perfume?.description);
+    addCategory('textile_spray', 'categoryTextile', data.category?.textile_spray?.description);
+    addCategory('car_perfume', 'categoryCar', sharedCategoryDescriptions.autoPerfume[lang]?.description || data.category?.car_perfume?.description);
     addCategory('auto_perfume', 'categoryCar', sharedCategoryDescriptions.autoPerfume[lang]?.description || data.category?.auto_perfume?.description);
     addCategory('devices', 'categoryDevices');
   });
