@@ -6009,10 +6009,12 @@ const updateDiffuserImage = () => {
   imageEl.src = `${baseUrl}${encoded}${suffix}`;
 };
 
-const getFragranceDescription = (scentId) => {
+const getFragranceDescription = (scentId, fallbackKey = null) => {
   if (!scentId || scentId === 'none') return '';
   const key = `fragrance.${scentId}.description`;
-  return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || '';
+  const fallbackDescription =
+    (fallbackKey && (resolveTranslation(currentLang, fallbackKey) || resolveTranslation('en', fallbackKey))) || '';
+  return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || fallbackDescription;
 };
 
 const updateDiffuserTitleAndDescription = (resetToggle = false) => {
@@ -6155,7 +6157,7 @@ const updateCandleScentDescription = (resetToggle = false) => {
   }
 
   if (!descriptionText) {
-    descriptionText = getFragranceDescription(scentId) || resolveTranslation(currentLang, descriptionKey) || '';
+    descriptionText = getFragranceDescription(scentId, descriptionKey) || resolveTranslation(currentLang, descriptionKey) || '';
   }
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
@@ -6204,7 +6206,7 @@ const updateCarScentDescription = (resetToggle = false) => {
   const descriptionKey = `car.scents.${scentId}.description`;
   const fallbackKey = 'car.scents.none.description';
   const descriptionText =
-    getFragranceDescription(scentId) ||
+    getFragranceDescription(scentId, descriptionKey) ||
     resolveTranslation(currentLang, descriptionKey) ||
     resolveTranslation(currentLang, fallbackKey) ||
     '';
