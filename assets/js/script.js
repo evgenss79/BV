@@ -6034,10 +6034,33 @@ const resolveFragranceDescription = (scentId, fallbackKey = null, defaultDescrip
   return defaultDescription || '';
 };
 
+const productFragranceDescriptionConfig = {
+  candles: {
+    translationBase: 'candles.scents',
+    defaultKey: 'product.scented_candles.default_description'
+  },
+  textile: {
+    translationBase: 'product.textile_spray.description',
+    defaultKey: 'product.textile_spray.description.none'
+  },
+  car: {
+    translationBase: 'car.scents',
+    defaultKey: 'product.auto_perfume.capsule.short_description'
+  }
+};
+
 const updateProductFragranceDescription = (descriptionEl, category, scentKey) => {
-  if (!descriptionEl) return;
-  const fullText = getFragranceDescription(category, scentKey);
-  if (!fullText) return;
+  if (!descriptionEl || !category || !scentKey) return;
+  const config = productFragranceDescriptionConfig[category] || {};
+  const defaultDescription =
+    (config.defaultKey &&
+      (resolveTranslation(currentLang, config.defaultKey) || resolveTranslation('en', config.defaultKey))) ||
+    descriptionEl.textContent ||
+    '';
+
+  const fallbackKey = config.translationBase ? `${config.translationBase}.${scentKey}` : null;
+  const fullText = resolveFragranceDescription(scentKey, fallbackKey, defaultDescription);
+
   descriptionEl.textContent = fullText;
 };
 
@@ -6318,13 +6341,36 @@ const initCarConfigurator = () => {
 
 const initProductCardFragrances = () => {
   const page = document.body?.dataset?.page;
-  if (!['category-candles', 'category-textile', 'category-car'].includes(page)) return;
+  const selectSet = new Set();
+  const defaultCategoryByPage = {
+    'category-candles': 'candles',
+    'category-textile': 'textile',
+    'category-car': 'car',
+    'category-diffusers': 'diffusers',
+    'category-room': 'interior_perfume',
+    'category-limited': 'limited_edition'
+  };
 
-  const selects = document.querySelectorAll('[data-scent-select]');
+  ['[data-scent-select]', '[data-diffuser-scent]', '[data-car-scent]', '[data-candle-scent]', 'select[name="fragrance"]'].forEach(
+    (selector) => {
+      document.querySelectorAll(selector).forEach((select) => selectSet.add(select));
+    }
+  );
+
+  const selects = Array.from(selectSet);
+  if (!selects.length) return;
 
   selects.forEach((select) => {
-    const category = select.dataset.category;
-    if (!category) return;
+    const inferredCategory =
+      select.dataset.category ||
+      (select.matches('[data-diffuser-scent]') && 'diffusers') ||
+      (select.matches('[data-candle-scent]') && 'candles') ||
+      (select.matches('[data-car-scent]') && 'car') ||
+      defaultCategoryByPage[page];
+    if (!inferredCategory) return;
+
+    select.dataset.scentSelect = select.dataset.scentSelect || 'true';
+    select.dataset.category = select.dataset.category || inferredCategory;
 
     let selectionAdjusted = false;
 
@@ -6342,13 +6388,19 @@ const initProductCardFragrances = () => {
       }
     }
 
-    const descriptionEl = select
-      .closest('.product-card')
-      ?.querySelector(`[data-product-fragrance-description="${category}"]`);
+    const category = select.dataset.category || inferredCategory;
+    const descriptionEl =
+      select
+        .closest('.product-card')
+        ?.querySelector(`[data-product-fragrance-description="${category}"]`) ||
+      select.closest('.product-card')?.querySelector('[data-product-fragrance-description]');
 
     if (!descriptionEl) return;
 
-    const applyDescription = () => updateProductFragranceDescription(descriptionEl, category, select.value);
+    const applyDescription = () => {
+      const scentId = getScentIdFromSelect(select) || select.value;
+      updateProductFragranceDescription(descriptionEl, category, scentId);
+    };
 
     select.addEventListener('change', applyDescription);
     applyDescription();
