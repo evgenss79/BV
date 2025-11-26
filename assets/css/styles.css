@@ -1459,6 +1459,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* Картинка — вписывается, не растягивается и не выходит за рамки */
