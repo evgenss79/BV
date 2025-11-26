@@ -109,57 +109,16 @@ Utilizziamo cere di cocco e soia di alta qualità per una diffusione ottimale: u
   textileSpray: {
     en: `Long-term storage of fabric products in a closet or dresser does not bring them freshness: on the contrary, unpleasant musty and moldy odors appear. This is especially true when dealing with an unfavorable microclimate inside the premises (high humidity, dust, suspended particles, etc.).
 
-The good news is that there is an effective means to achieve a comprehensive effect on the material and eliminate the negative consequences of long-term storage: a scented fabric spray.
+The good news is that there is an effective means to achieve a comprehensive effect on the material and eliminate the negative consequences of long-term storage: a scented fabric spray.`,
+    de: `Die langfristige Lagerung von Textilien in Schränken oder Kommoden sorgt nicht für Frische – im Gegenteil, es entstehen muffige und modrige Gerueche, besonders bei unguenstigem Raumklima mit hoher Luftfeuchtigkeit oder Staub.
 
-To choose, order, and purchase this fragrant textile accessory for your home, you should definitely contact our online store.
+Die gute Nachricht: Es gibt ein wirksames Mittel, das das Material umfassend pflegt und die negativen Folgen langer Lagerung beseitigt – ein parfuemierter Textilspray.`,
+    fr: `Un stockage prolongé des textiles dans une armoire ou une commode ne leur apporte pas de fraîcheur : au contraire, des odeurs de renfermé ou de moisi apparaissent, surtout en cas d’humidité élevée, de poussière ou de particules en suspension.
 
-For the information of potential buyers: all products included in our current online catalog have undergone multi-stage manufacturing quality control and are certified as meeting the requirements of current standards. This fact guarantees their ecological safety for the skin, exquisite and rich aroma, quick and effective elimination of the unpleasant musty smell on the fabric, and long-lasting care for your belongings.
+La bonne nouvelle : il existe un moyen efficace d’agir en profondeur sur la fibre et d’éliminer ces effets d’une longue conservation – un spray textile parfumé.`,
+    it: `La conservazione prolungata dei tessuti in un armadio o in un cassetto non li rende più freschi: al contrario, compaiono sgradevoli odori di muffa o ristagno, soprattutto in caso di microclima sfavorevole con umidità o polvere elevata.
 
-Composition of Textile Spray
-
-Textile spray is a complex product made up of numerous concentrated components. The main ingredients in the composition are essential oils, which are dissolved in an aqueous medium with the help of solubilizers.
-
-Important: When using essential oils in their pure form, there is a high probability of greasy stains appearing on the material. Solubilizers, by dissolving the oil in water, reduce its concentration and allow the solution to be used on any type of textile product without causing damage to these accessories and the skin.
-
-To obtain a ready-to-use textile spray, the following substances and components are also used:
-special preservatives. Their main purpose is to protect the spray from pathogenic bacteria and microbes, ensuring long-term storage and use;
-distilled water (occupies almost 90% of the total volume);
-vitamin E.
-
-For your information: a bottle of ready-made fabric spray contains 50 ml and more. The choice of one volume or another is the individual prerogative of each individual consumer.
-
-Main Advantages of Textile Spray
-
-The long-lasting scent is the main and undeniable advantage that most buyers prefer.
-
-For your information: Use is limited to spraying the solution from the bottle at a distance of 20–25 cm from the fabric. Increasing the intensity of application increases the duration of action and the durability of the scent on the fabric, even after washing.
-
-Scented spray is a necessary product for the textile industry and also has the following advantages:
-It can be used on any type of textile product, including blankets, bedspreads, bed linen, casual wear, curtains, sheers, bath towels, etc.
-Environmental safety. The product does not contain hazardous substances or reagents, and the product itself has hypoallergenic properties.
-It has a slight softening and antistatic effect. After use, the material becomes pleasant to the touch and soft.
-A variety of scents and aromas. You can choose a product based on your personal preferences: jasmine / mandarin / rose / pine needles / musk.`,
-    de: `Die langfristige Lagerung von Textilien in Schränken bringt selten Frische – stattdessen entstehen oft muffige Gerueche, besonders bei unguenstigem Raumklima (hohe Luftfeuchtigkeit, Staub, Partikel). Ein parfuemierter Textilspray wirkt dem entgegen und pflegt die Fasern.
-
-Unser Onlineshop bietet ausgewaehlte Textilsprays, die strenge Qualitaetskontrollen durchlaufen haben. Sie sind hautvertraeglich, riechen edel und entfernen hartnaeckige Gerueche, ohne den Stoff zu beschaedigen.
-
-Zusammensetzung: aetherische Oele, geloest mit Solubilisatoren, dazu Konservierungsstoffe, destilliertes Wasser und Vitamin E. So entsteht ein Spray, das auf allen Stoffarten angewendet werden kann, ohne Flecken zu hinterlassen.
-
-Vorteile: lang anhaltender Duft, geeignet für jede Textilart, hypoallergen und leicht antistatisch. Je nach Intensitaet der Anwendung haelt der Duft auch nach dem Waschen an.`,
-    fr: `Un stockage prolongé des textiles dans une armoire ne les rend pas plus frais : des odeurs de renfermé peuvent apparaître, surtout en cas d’humidité ou de poussière. Un spray textile parfumé permet d’agir efficacement sur la fibre et d’éliminer ces odeurs.
-
-Tous nos sprays proposés en ligne ont passé des contrôles qualité rigoureux. Ils sont sûrs pour la peau, diffusent un parfum élégant et éliminent rapidement les odeurs sans abîmer les tissus.
-
-Composition : huiles essentielles diluées grâce à des solubilisants, conservateurs spécialisés, eau distillée et vitamine E. Cette formule peut être utilisée sur tous les textiles sans laisser de traces.
-
-Atouts : sillage longue durée, utilisation sur tout type de tissu, formule hypoallergénique et léger effet adoucissant/antistatique. Une application à 20–25 cm prolonge la tenue du parfum, même après lavage.`,
-    it: `La conservazione prolungata dei tessuti in armadi o cassetti può generare odori di chiuso, soprattutto con umidità o polvere. Uno spray tessile profumato agisce in profondità e neutralizza questi effetti.
-
-Tutti i nostri spray online sono stati sottoposti a controlli di qualità. Sono sicuri per la pelle, diffondono un aroma raffinato e rimuovono rapidamente gli odori senza macchiare i tessuti.
-
-Composizione: oli essenziali solubilizzati in acqua con conservanti selezionati, acqua distillata e vitamina E. La formula è adatta a ogni tipo di tessuto.
-
-Vantaggi: profumazione duratura, compatibilità con tutti i materiali, proprietà ipoallergeniche e leggero effetto ammorbidente/antistatico. Applicato da 20–25 cm, il profumo resta percepibile anche dopo il lavaggio.`
+La buona notizia è che esiste un rimedio efficace per agire sul materiale ed eliminare le conseguenze di una lunga conservazione: uno spray tessile profumato.`
   },
   autoPerfume: {
     en: autoPerfumeDescriptionEn,
@@ -169,39 +128,41 @@ Vantaggi: profumazione duratura, compatibilità con tutti i materiali, propriet�
   },
   interiorPerfume: {
     en: `Smells can affect mood, performance, and overall well-being. Home fragrances are a simple and effective way to create a welcoming environment and fill your home and office with unusual aromas. Choosing the right home fragrance will help you relax after a tiring day, get rid of anxiety and insomnia, and create a harmonious space that's a pleasure to be in.
-
-Benefits of Using Home Fragrances
 Perfumes are often used in homes to fill the space with pleasant aromas, creating a comfortable living and working environment. They help solve the following problems:
+
 Creating a favorable environment. Fragrances help make a space more welcoming and comfortable, evoking associations with freshness, warmth, and cleanliness.
 Improves mood. Natural essential oils can relieve stress, improve mood, and help with depression.
 Air freshening and purification. Some home fragrances have antiseptic properties. They can be used to cleanse the air of unpleasant odors.
 Increased concentration and performance. Aromas with citrus and menthol notes help you focus and improve brain activity, which is especially important for working in offices or commercial spaces.
 Relaxation and improved sleep. Home fragrances such as lavender, vanilla, and sandalwood help you calm, relax, and prepare for a deep sleep.
+If you use perfume to deodorize your home, you can not only ensure a pleasant aroma is diffused in the room but also fill yourself with positive emotions throughout the day.`,
+    de: `Duftnoten beeinflussen Stimmung, Leistungsfaehigkeit und Wohlbefinden. Raumparfums schaffen auf einfache Weise eine einladende Umgebung und fuellen Zuhause oder Buero mit ungewoehnlichen Aromen. Die passende Komposition hilft, nach einem langen Tag zu entspannen, Unruhe und Schlaflosigkeit abzubauen und einen harmonischen Raum zu gestalten, in dem man sich gern aufhaelt.
+Parfums werden zu Hause genutzt, um den Raum mit angenehmen Aromen zu fuellen und eine komfortable Wohn- und Arbeitsatmosphaere zu schaffen. Sie unterstuetzen bei folgenden Punkten:
 
-If you use perfume to deodorize your home, you can not only ensure a pleasant aroma is diffused in the room but also fill yourself with positive emotions throughout the day.
+Einladende Umgebung. Duftnoten machen den Raum wohnlicher und wecken Assoziationen von Frische, Waerme und Reinheit.
+Stimmungsaufhellung. Natuerliche aetherische Oele lindern Stress, heben die Stimmung und koennen bei Niedergeschlagenheit helfen.
+Luftauffrischung und -reinigung. Einige Raumduefte besitzen antiseptische Eigenschaften und neutralisieren unangenehme Gerueche.
+Mehr Fokus und Leistung. Zitrus- und Mentholnoten helfen, sich zu konzentrieren und die geistige Aktivitaet zu steigern – besonders wichtig im Buero oder Verkaufsraum.
+Entspannung und besserer Schlaf. Duefte wie Lavendel, Vanille und Sandelholz beruhigen, foerdern Entspannung und bereiten auf einen erholsamen Schlaf vor.
+Wer Parfum zur Raumbeduftung nutzt, sorgt nicht nur fuer einen angenehmen Duft, sondern fuellt den Tag mit positiven Emotionen.`,
+    fr: `Les parfums influencent l’humeur, la performance et le bien-être. Un parfum d’intérieur est un moyen simple et efficace de créer une ambiance accueillante et de parfumer votre maison ou votre bureau. Le bon parfum vous aide à vous détendre après une journée fatigante, à réduire l’anxiété et l’insomnie et à instaurer un espace harmonieux dans lequel il fait bon vivre.
+Les parfums sont souvent utilisés pour diffuser une odeur agréable et créer un cadre de vie ou de travail confortable. Ils aident à résoudre les points suivants :
 
-Ways to Use Fragrances in the Room
-There are many types of fragrances that vary in how they are used and the intensity of their effect. You can select a product based on your preferences or the characteristics of the room. The most common home fragrances include:
-Scented candles. Scented candles are one of the most popular ways to scent your home. They create soft lighting and fill the space with a pleasant aroma. Decorative scented candles will allow you to decorate your festive table and celebrate a special event. It is recommended to choose candles made with natural soy and beeswax with the addition of essential oils.
-Aerosols. These are convenient for instantly refreshing the environment. The spray can be applied to curtains, bedding, or other interior items. You can take these accessories with you while traveling and use them in hotel rooms. The spray is perfect for quickly eliminating unpleasant odors.
-Aroma diffusers. The reed aroma diffuser provides a long-lasting scent throughout the home. It is ideal for meditation, relaxation after work, or strenuous workouts. The aroma intensity can be adjusted with reeds. The aroma diffuser can be ultrasonic. It affects water and essential oils using ultrasonic waves. The ultrasonic aroma diffuser is easy to use and has a long lifespan.
+Créer une atmosphère favorable. Les senteurs rendent le lieu plus chaleureux et évoquent la fraîcheur, la chaleur et la propreté.
+Améliorer l’humeur. Les huiles essentielles naturelles soulagent le stress, redonnent le moral et peuvent aider en cas de baisse de régime.
+Rafraîchir et purifier l’air. Certains parfums d’intérieur ont des propriétés antiseptiques et neutralisent les mauvaises odeurs.
+Accroître concentration et rendement. Les notes d’agrumes et de menthe aident à se concentrer et à stimuler l’activité cérébrale, particulièrement utile au bureau ou dans les espaces commerciaux.
+Favoriser la détente et le sommeil. Des parfums comme la lavande, la vanille ou le santal apaisent, détendent et préparent à un sommeil profond.
+En parfumant votre intérieur, vous profitez non seulement d’un arôme agréable mais aussi d’émotions positives tout au long de la journée.`,
+    it: `I profumi influenzano l’umore, le prestazioni e il benessere. Un profumo per ambienti è un modo semplice ed efficace per creare un’atmosfera accogliente e riempire casa o ufficio di aromi particolari. La fragranza giusta aiuta a rilassarsi dopo una giornata intensa, a ridurre ansia e insonnia e a creare uno spazio armonioso dove è piacevole stare.
+I profumi si usano spesso in casa per diffondere un aroma gradevole e creare un ambiente confortevole per vivere e lavorare. Offrono questi vantaggi:
 
-Using scented candles, diffusers, sprays, and incense stick sets can help fill your home with warmth, improve your mood, and make the space more inviting.`,
-    de: `Düfte beeinflussen Stimmung, Leistungsfähigkeit und Wohlbefinden. Raumparfums schaffen schnell eine einladende Atmosphäre und besondere Akzente im Zuhause oder Büro. Die passende Komposition hilft beim Entspannen nach einem langen Tag, mindert Unruhe und fördert erholsamen Schlaf.
-
-Vorteile von Raumdüften: Sie machen Räume einladender, heben die Stimmung, können die Luft erfrischen und reinigen und unterstützen Konzentration oder Entspannung – je nach Duftprofil.
-
-Anwendungsmöglichkeiten: Kerzen für sanftes Licht, Sprays für einen sofortigen Effekt, Diffusoren für kontinuierliche Beduftung. Mit den richtigen Noten entsteht ein harmonischer Ort, den man gerne betritt.`,
-    fr: `Les parfums influencent l’humeur, l’énergie et le bien-être. Un parfum d’intérieur crée en quelques secondes une ambiance accueillante à la maison ou au bureau. Le bon accord olfactif aide à se détendre après une journée intense, réduit l’anxiété et favorise un sommeil réparateur.
-
-Atouts des parfums d’intérieur : ils rendent un espace plus chaleureux, améliorent l’humeur, assainissent l’air et peuvent stimuler la concentration ou la relaxation selon les notes choisies.
-
-Modes d’utilisation : bougies pour une lumière douce, sprays pour un effet immédiat, diffuseurs pour une diffusion continue. Les bonnes essences transforment la pièce en un lieu harmonieux où il fait bon vivre.`,
-    it: `I profumi influenzano l’umore, le prestazioni e il benessere. Un profumo per ambienti crea rapidamente un’atmosfera accogliente in casa o in ufficio. La fragranza giusta aiuta a rilassarsi dopo la giornata, riduce l’ansia e favorisce un sonno profondo.
-
-Punti di forza dei profumi per ambienti: rendono lo spazio più ospitale, migliorano l’umore, rinfrescano l’aria e possono aumentare la concentrazione o la distensione a seconda delle note scelte.
-
-Modalità d’uso: candele per una luce morbida, spray per un effetto immediato, diffusori per una profumazione costante. Le essenze giuste creano un ambiente armonioso e piacevole da vivere.`
+Ambiente accogliente. Le note olfattive rendono lo spazio più caloroso e ricordano freschezza, calore e pulizia.
+Miglioramento dell’umore. Gli oli essenziali naturali alleviano lo stress, migliorano l’umore e possono aiutare in caso di malinconia.
+Aria più fresca e pulita. Alcuni profumi per interni hanno proprietà antisettiche e neutralizzano gli odori sgradevoli.
+Maggiore concentrazione e produttività. Le note di agrumi e mentolo aiutano a concentrarsi e a stimolare l’attività mentale, soprattutto in ufficio o in negozio.
+Rilassamento e sonno migliore. Fragranze come lavanda, vaniglia e sandalo calmano, favoriscono il relax e preparano a un sonno profondo.
+Profumando l’ambiente, non solo diffondi un aroma piacevole ma ti riempi anche di emozioni positive per tutta la giornata.`
   }
 };
 
@@ -1580,13 +1541,22 @@ Basisnoten: Holzige Noten, Moschus`
         title: 'Aroma-Diffusoren für charaktervolle Räume',
         description: sharedCategoryDescriptions.diffusers.de
       },
-      limited_edition: {
-        title: 'Limitierte Kollektion',
-        description: sharedCategoryDescriptions.limitedEdition.de
-      },
-      textile_spray: { title: 'Textilspray', description: sharedCategoryDescriptions.textileSpray.de },
-      interior_perfume: { title: 'Interior Perfume', description: sharedCategoryDescriptions.interiorPerfume.de },
-      candles: { },
+        limited_edition: {
+          title: 'Limitierte Kollektion',
+          description: sharedCategoryDescriptions.limitedEdition.de
+        },
+        textile_spray: { title: 'Textilspray', description: sharedCategoryDescriptions.textileSpray.de },
+        interior_perfume: { title: 'Interior Perfume', description: sharedCategoryDescriptions.interiorPerfume.de },
+        candles: {
+          title: 'DUFTKERZEN',
+          description:
+            'Die aromatischen Schleier schaffen eine einzigartige Atmosphaere, werden zu einem eleganten Akzent im Interieur und fuellen den Raum mit einem bezaubernden Aroma. Es sind nicht einfach Wohnaccessoires: Es sind kleine Quellen von Harmonie und tiefer Entspannung, die Ihrem Zuhause Waerme, Ruhe und Inspiration schenken. Das sanfte Flackern des Feuers, umhuellt von betoerenden Noten von Lavendel, Vanille oder Sandelholz, versetzt Sie in eine friedliche Stimmung, in der Sie alle Sorgen vergessen und jeden Moment geniessen.'
+        },
+        scented_candles: {
+          title: 'DUFTKERZEN',
+          description:
+            'Die aromatischen Schleier schaffen eine einzigartige Atmosphaere, werden zu einem eleganten Akzent im Interieur und fuellen den Raum mit einem bezaubernden Aroma. Es sind nicht einfach Wohnaccessoires: Es sind kleine Quellen von Harmonie und tiefer Entspannung, die Ihrem Zuhause Waerme, Ruhe und Inspiration schenken. Das sanfte Flackern des Feuers, umhuellt von betoerenden Noten von Lavendel, Vanille oder Sandelholz, versetzt Sie in eine friedliche Stimmung, in der Sie alle Sorgen vergessen und jeden Moment geniessen.'
+        },
       gift: { },
       accessories: { },
       meditation: { },
@@ -1607,17 +1577,25 @@ Basisnoten: Holzige Noten, Moschus`
         short_description: sharedProductDescriptions.textileSpray.de.none,
         description: sharedProductDescriptions.textileSpray.de
       },
-      interior_perfume: {
-        default: {
-          title: 'Interior Perfume',
-          short_description: sharedProductDescriptions.interiorPerfume.de.default
-        }
-      },
-      auto_perfume: {
-        capsule: {
-          title: 'Autoparfum-Kapselsystem',
-          short_description: sharedProductDescriptions.autoPerfume.de.capsule
-        }
+        interior_perfume: {
+          default: {
+            title: 'Interior Perfume',
+            short_description: sharedProductDescriptions.interiorPerfume.de.default
+          }
+        },
+        diffusers: {
+          default_description:
+            'Ein Staebchendiffusor funktioniert ueber Kapillarwirkung an Bambus- oder Kunststoffstaebchen. Diese Art der Duftverbreitung haelt die Luft lange angenehm. Besonders beliebt sind Aroma-Diffusoren mit aetherischen Oelen: Sie duften nicht nur, sondern wirken auch positiv auf die Stimmung.'
+        },
+        scented_candles: {
+          default_description:
+            'Aromatische Schleier sind nicht nur eine Freude fuer das Auge, sondern koennen die Atmosphaere deutlich veraendern und den Raum mit angenehmen Dueften fuellen.'
+        },
+        auto_perfume: {
+          capsule: {
+            title: 'Autoparfum-Kapselsystem',
+            short_description: sharedProductDescriptions.autoPerfume.de.capsule
+          }
       }
     }
   },
@@ -2706,7 +2684,16 @@ Notes de fond : Notes boisées, Musc`
       },
       textile_spray: { title: 'Spray textile', description: sharedCategoryDescriptions.textileSpray.fr },
       interior_perfume: { title: 'Parfum d’intérieur', description: sharedCategoryDescriptions.interiorPerfume.fr },
-      candles: { },
+      candles: {
+        title: 'BOUGIES PARFUMÉES',
+        description:
+          'Les voiles aromatiques créent une atmosphère unique, deviennent un accent élégant dans l’intérieur et emplissent l’espace d’un parfum envoûtant. Ce ne sont pas de simples accessoires : ce sont de petites sources d’harmonie et de profonde relaxation, capables de transformer votre maison en lui apportant chaleur, tranquillité et inspiration. L’éclat doux de la flamme, enveloppé de notes de lavande, de vanille ou de santal, plonge dans une ambiance paisible où vous oubliez vos soucis et savourez chaque instant.'
+      },
+      scented_candles: {
+        title: 'BOUGIES PARFUMÉES',
+        description:
+          'Les voiles aromatiques créent une atmosphère unique, deviennent un accent élégant dans l’intérieur et emplissent l’espace d’un parfum envoûtant. Ce ne sont pas de simples accessoires : ce sont de petites sources d’harmonie et de profonde relaxation, capables de transformer votre maison en lui apportant chaleur, tranquillité et inspiration. L’éclat doux de la flamme, enveloppé de notes de lavande, de vanille ou de santal, plonge dans une ambiance paisible où vous oubliez vos soucis et savourez chaque instant.'
+      },
       gift: { },
       accessories: { },
       meditation: { },
@@ -2732,6 +2719,14 @@ Notes de fond : Notes boisées, Musc`
           title: 'Parfum d’intérieur',
           short_description: sharedProductDescriptions.interiorPerfume.fr.default
         }
+      },
+      diffusers: {
+        default_description:
+          'Un diffuseur à bâtonnets fonctionne par capillarité sur des tiges en bambou ou synthétiques. Cette diffusion garde l’air parfumé longtemps. Les diffuseurs aux huiles essentielles sont particulièrement appréciés : ils sentent bon et agissent positivement sur les émotions.'
+      },
+      scented_candles: {
+        default_description:
+          'Les voiles aromatiques ne sont pas seulement agréables à regarder : ils peuvent transformer l’atmosphère et emplir l’espace de senteurs délicates.'
       },
       auto_perfume: {
         capsule: {
@@ -3819,15 +3814,24 @@ Note di fondo: Note legnose, Muschio`
         title: 'Diffusori per ambienti caratteristici',
         description: sharedCategoryDescriptions.diffusers.it
       },
-      limited_edition: { title: 'Edizione limitata', description: sharedCategoryDescriptions.limitedEdition.it },
-      textile_spray: { title: 'Spray tessile', description: sharedCategoryDescriptions.textileSpray.it },
-      interior_perfume: { title: 'Profumo per interni', description: sharedCategoryDescriptions.interiorPerfume.it },
-      candles: { },
-      gift: { },
-      accessories: { },
-      meditation: { },
-      devices: { },
-      car_perfume: { title: 'Profumo per Auto', description: sharedCategoryDescriptions.autoPerfume.it }
+        limited_edition: { title: 'Edizione limitata', description: sharedCategoryDescriptions.limitedEdition.it },
+        textile_spray: { title: 'Spray tessile', description: sharedCategoryDescriptions.textileSpray.it },
+        interior_perfume: { title: 'Profumo per interni', description: sharedCategoryDescriptions.interiorPerfume.it },
+        candles: {
+          title: 'CANDELE PROFUMATE',
+          description:
+            'I veli aromatici creano un’atmosfera unica, diventano un elegante accento nell’arredo e riempiono lo spazio di un aroma incantevole. Non sono semplici accessori per la casa: sono piccole fonti di armonia e profondo relax; possono trasformare la tua casa donando calore, tranquillità e ispirazione. Il dolce scintillio della fiamma, avvolto da note di lavanda, vaniglia o sandalo, ti immerge in un’atmosfera di pace dove dimentichi le preoccupazioni e ti godi ogni momento.'
+        },
+        scented_candles: {
+          title: 'CANDELE PROFUMATE',
+          description:
+            'I veli aromatici creano un’atmosfera unica, diventano un elegante accento nell’arredo e riempiono lo spazio di un aroma incantevole. Non sono semplici accessori per la casa: sono piccole fonti di armonia e profondo relax; possono trasformare la tua casa donando calore, tranquillità e ispirazione. Il dolce scintillio della fiamma, avvolto da note di lavanda, vaniglia o sandalo, ti immerge in un’atmosfera di pace dove dimentichi le preoccupazioni e ti godi ogni momento.'
+        },
+        gift: { },
+        accessories: { },
+        meditation: { },
+        devices: { },
+        car_perfume: { title: 'Profumo per Auto', description: sharedCategoryDescriptions.autoPerfume.it }
     },
     product: {
       badge: { collection: 'Collezione' },
@@ -3848,6 +3852,14 @@ Note di fondo: Note legnose, Muschio`
           title: 'Profumo per interni',
           short_description: sharedProductDescriptions.interiorPerfume.it.default
         }
+      },
+      diffusers: {
+        default_description:
+          'Un diffusore a bastoncini funziona per capillarità su stick di bambù o sintetici. Questo metodo di diffusione mantiene l’aria profumata a lungo. I diffusori con oli essenziali sono molto apprezzati: oltre a profumare, hanno un effetto positivo sulle emozioni.'
+      },
+      scented_candles: {
+        default_description:
+          'I veli aromatici non sono solo piacevoli da vedere: possono trasformare l’atmosfera riempiendo lo spazio di profumi gradevoli.'
       },
       auto_perfume: {
         capsule: {
@@ -5202,7 +5214,16 @@ Base notes: Woody notes, Musk`
       limited_edition: { title: 'Limited Edition', description: sharedCategoryDescriptions.limitedEdition.en },
       textile_spray: { title: 'Textile Spray', description: sharedCategoryDescriptions.textileSpray.en },
       interior_perfume: { title: 'Interior Perfume', description: sharedCategoryDescriptions.interiorPerfume.en },
-      candles: { },
+      candles: {
+        title: 'SCENTED CANDELS',
+        description:
+          'The aromatic veils create a unique atmosphere, are convierten in an elegant accent in the interior and fill the space with an enchanting aroma. They are not simple home accessories: they are small sources of harmony and deep relaxation: they can transform your home, giving you warmth, tranquility and inspiration. The sweet sparkle of fire, wrapped in exciting notes of lavender, vanilla or sandalwood, immerses you in an atmosphere of peace, where you will forget all your worries and enjoy every moment.'
+      },
+      scented_candles: {
+        title: 'SCENTED CANDELS',
+        description:
+          'The aromatic veils create a unique atmosphere, are convierten in an elegant accent in the interior and fill the space with an enchanting aroma. They are not simple home accessories: they are small sources of harmony and deep relaxation: they can transform your home, giving you warmth, tranquility and inspiration. The sweet sparkle of fire, wrapped in exciting notes of lavender, vanilla or sandalwood, immerses you in an atmosphere of peace, where you will forget all your worries and enjoy every moment.'
+      },
       gift: { },
       accessories: { },
       meditation: { },
@@ -5228,6 +5249,14 @@ Base notes: Woody notes, Musk`
           title: 'Interior Perfume',
           short_description: sharedProductDescriptions.interiorPerfume.en.default
         }
+      },
+      diffusers: {
+        default_description:
+          'A reed diffuser works by capillary action on bamboo or synthetic reeds. This method of distributing the scent allows the air to remain fragrant for a long time. Aroma diffusers with essential oils are especially popular: they not only smell good but also have a positive effect on emotions.'
+      },
+      scented_candles: {
+        default_description:
+          'Aromatic veils are not only pleasant to the eye, but they can also significantly change the atmosphere, filling the space with pleasant aromas.'
       },
       auto_perfume: {
         capsule: {
@@ -5497,7 +5526,8 @@ const productConfigs = {
     scentTranslationBase: 'diffusers.scents',
     titlePrefix: () => resolveTranslation(currentLang, 'diffusers.product.titlePrefix') || '',
     defaultTitle: () => resolveTranslation(currentLang, 'diffusers.product.titleDefault') || '',
-    includeNone: true
+    includeNone: true,
+    defaultScentDescriptionKey: 'product.diffusers.default_description'
   },
   'category-room': {
     pricing: {
@@ -5518,7 +5548,8 @@ const productConfigs = {
     titlePrefix: () => resolveTranslation(currentLang, 'product.interior_perfume.default.title') || 'Interior Perfume',
     defaultTitle: () => resolveTranslation(currentLang, 'product.interior_perfume.default.title') || 'Interior Perfume',
     generateScents: true,
-    includeNone: true
+    includeNone: true,
+    defaultScentDescriptionKey: 'product.interior_perfume.default.short_description'
   },
   'category-textile': {
     pricing: {
@@ -5534,7 +5565,8 @@ const productConfigs = {
     generateScents: true,
     excludeScentIds: ['cherry_blossom', 'christmas_tree', 'dubai', 'rosso', 'salted_caramel', 'salty_water'],
     includeNone: true,
-    scentDescriptionTranslationBase: 'product.textile_spray.description'
+    scentDescriptionTranslationBase: 'product.textile_spray.description',
+    defaultScentDescriptionKey: 'product.textile_spray.description.none'
   },
   'category-limited': {
     pricing: {
@@ -5999,7 +6031,18 @@ const updateDiffuserTitleAndDescription = (resetToggle = false) => {
     scentLabel = resolveTranslation(currentLang, labelKey) || scentLabel;
   }
 
-  let descriptionText = getFragranceDescription(scentId);
+  let descriptionText = '';
+
+  if (scentId === 'none' && config?.defaultScentDescriptionKey) {
+    descriptionText =
+      resolveTranslation(currentLang, config.defaultScentDescriptionKey) ||
+      resolveTranslation('en', config.defaultScentDescriptionKey) ||
+      '';
+  }
+
+  if (!descriptionText) {
+    descriptionText = getFragranceDescription(scentId);
+  }
   if (!descriptionText && config?.scentDescriptions && scentId !== 'none') {
     descriptionText = config.scentDescriptions[scentId] || '';
   } else if (!descriptionText && config?.scentDescriptionTranslationBase) {
@@ -6102,7 +6145,18 @@ const updateCandleScentDescription = (resetToggle = false) => {
   if (!candleScentSelect || !candleScentDescriptionElement) return;
   const scentId = getScentIdFromSelect(candleScentSelect);
   const descriptionKey = `candles.scents.${scentId}.description`;
-  const descriptionText = getFragranceDescription(scentId) || resolveTranslation(currentLang, descriptionKey) || '';
+  let descriptionText = '';
+
+  if (scentId === 'none') {
+    descriptionText =
+      resolveTranslation(currentLang, 'product.scented_candles.default_description') ||
+      resolveTranslation('en', 'product.scented_candles.default_description') ||
+      '';
+  }
+
+  if (!descriptionText) {
+    descriptionText = getFragranceDescription(scentId) || resolveTranslation(currentLang, descriptionKey) || '';
+  }
   candleScentDescriptionElement.textContent = descriptionText;
   const hasDescription = Boolean(descriptionText.trim());
   const hideToggle = scentId === 'none';
