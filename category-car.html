@@ -138,18 +138,34 @@
             data-car-scent-description-wrapper
           >
             <p
-              class="product-card__scent-description product-fragrance-description"
+              class="product-card__scent-description product-fragrance-description product-fragrance-description-short"
               data-car-scent-description
               data-product-fragrance-description="car"
+              data-fragrance-description="short"
               data-i18n="product.auto_perfume.capsule.short_description"
             >Magnetic clip with interchangeable capsules for weeks of balanced fragrance without residue.</p>
-            <button
-              type="button"
+            <div class="collapse" id="fragranceDescription-car">
+              <p
+                class="product-card__scent-description product-fragrance-description-long"
+                data-product-fragrance-description="car"
+                data-fragrance-description="long"
+                data-i18n="product.auto_perfume.capsule.short_description"
+              >
+                Magnetic clip with interchangeable capsules for weeks of balanced fragrance without residue.
+              </p>
+            </div>
+            <a
               class="product-card__scent-toggle"
+              href="#fragranceDescription-car"
+              data-bs-toggle="collapse"
               data-car-scent-toggle
               aria-expanded="false"
+              data-collapse-label-more="Read more"
+              data-collapse-label-less="Collapse"
               data-i18n="common.toggle.more"
-            ></button>
+            >
+              Read more
+            </a>
           </div>
 
           <div class="product-card__options">

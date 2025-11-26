@@ -128,24 +128,62 @@ The good news is that there is an effective means to achieve a comprehensive eff
             data-diffuser-scent-description-wrapper
           >
             <p
-              class="product-card__scent-description product-fragrance-description"
+              class="product-card__scent-description product-fragrance-description product-fragrance-description-short"
               data-diffuser-scent-description
               data-product-fragrance-description="textile"
+              data-fragrance-description="short"
               data-i18n="product.textile_spray.short_description"
             >A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.</p>
-            <button
-              type="button"
+            <div class="collapse" id="fragranceDescription-textile">
+              <p
+                class="product-card__scent-description product-fragrance-description-long"
+                data-product-fragrance-description="textile"
+                data-fragrance-description="long"
+                data-i18n="product.textile_spray.short_description"
+              >
+                A fine mist designed to refresh fabrics without staining, enriched with essential oils and solubilizers for safe use on any textile.
+              </p>
+            </div>
+            <a
               class="product-card__scent-toggle"
+              href="#fragranceDescription-textile"
+              data-bs-toggle="collapse"
               data-diffuser-scent-toggle
               aria-expanded="false"
+              data-collapse-label-more="Read more"
+              data-collapse-label-less="Collapse"
               data-i18n="common.toggle.more"
-            ></button>
+            >
+              Read more
+            </a>
           </div>
 
           <div class="product-card__options">
             <label class="product-card__field">
               <span>Fragrance</span>
-              <select data-diffuser-scent data-scent-select data-category="textile"></select>
+              <select data-diffuser-scent data-scent-select data-category="textile">
+                <option value="africa" data-scent-id="africa" data-i18n="textile.scents.africa.label">Africa</option>
+                <option value="bamboo" data-scent-id="bamboo" data-i18n="textile.scents.bamboo.label">Bamboo</option>
+                <option value="bellini" data-scent-id="bellini" data-i18n="textile.scents.bellini.label">Bellini</option>
+                <option value="blanc" data-scent-id="blanc" data-i18n="textile.scents.blanc.label">Blanc</option>
+                <option value="carolina" data-scent-id="carolina" data-i18n="textile.scents.carolina.label">Carolina</option>
+                <option value="cherry_blossom" data-scent-id="cherry_blossom" data-i18n="textile.scents.cherry_blossom.label">Cherry Blossom</option>
+                <option value="christmas_tree" data-scent-id="christmas_tree" data-i18n="textile.scents.christmas_tree.label">Christmas Tree</option>
+                <option value="dubai" data-scent-id="dubai" data-i18n="textile.scents.dubai.label">Dubai</option>
+                <option value="dune" data-scent-id="dune" data-i18n="textile.scents.dune.label">Dune</option>
+                <option value="eden" data-scent-id="eden" data-i18n="textile.scents.eden.label">Eden</option>
+                <option value="etna" data-scent-id="etna" data-i18n="textile.scents.etna.label">Etna</option>
+                <option value="fleur" data-scent-id="fleur" data-i18n="textile.scents.fleur.label">Fleur</option>
+                <option value="green_mango" data-scent-id="green_mango" data-i18n="textile.scents.green_mango.label">Green Mango</option>
+                <option value="lime_basil" data-scent-id="lime_basil" data-i18n="textile.scents.lime_basil.label">Lime Basil</option>
+                <option value="rosso" data-scent-id="rosso" data-i18n="textile.scents.rosso.label">Rosso</option>
+                <option value="salted_caramel" data-scent-id="salted_caramel" data-i18n="textile.scents.salted_caramel.label">Salted Caramel</option>
+                <option value="salty_water" data-scent-id="salty_water" data-i18n="textile.scents.salty_water.label">Salty Water</option>
+                <option value="santal" data-scent-id="santal" data-i18n="textile.scents.santal.label">Santal</option>
+                <option value="sugar" data-scent-id="sugar" data-i18n="textile.scents.sugar.label">Sugar</option>
+                <option value="tobacco_vanilla" data-scent-id="tobacco_vanilla" data-i18n="textile.scents.tobacco_vanilla.label">Tobacco Vanilla</option>
+                <option value="valencia" data-scent-id="valencia" data-i18n="textile.scents.valencia.label">Valencia</option>
+              </select>
             </label>
           </div>
 

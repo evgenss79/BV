@@ -5289,7 +5289,8 @@ const getExistingFragranceDescription = (lang, slug) => {
     translations[lang]?.fragrance?.[slug]?.description,
     translations[lang]?.diffusers?.scents?.[slug]?.description,
     translations[lang]?.candles?.scents?.[slug]?.description,
-    translations[lang]?.car?.scents?.[slug]?.description
+    translations[lang]?.car?.scents?.[slug]?.description,
+    translations[lang]?.textile?.scents?.[slug]?.description
   ];
   return candidateBuckets.find((value) => typeof value === 'string' && value.trim().length > 0);
 };
@@ -5307,20 +5308,29 @@ const injectFragranceData = (catalog) => {
   languages.forEach((lang) => {
     translations[lang] = translations[lang] || {};
     translations[lang].fragrance = translations[lang].fragrance || {};
+    translations[lang].candles = translations[lang].candles || {};
+    translations[lang].candles.scents = translations[lang].candles.scents || {};
+    translations[lang].car = translations[lang].car || {};
+    translations[lang].car.scents = translations[lang].car.scents || {};
+    translations[lang].textile = translations[lang].textile || {};
+    translations[lang].textile.scents = translations[lang].textile.scents || {};
     const scentBuckets = [
       translations[lang].diffusers?.scents,
       translations[lang].candles?.scents,
-      translations[lang].car?.scents
+      translations[lang].car?.scents,
+      translations[lang].textile?.scents
     ];
 
     Object.entries(catalog).forEach(([slug, description]) => {
       const translated = translateFragranceDescription(description, lang, slug);
       const normalized = lang === 'de' ? normalizeGermanText(translated) : translated;
-      translations[lang].fragrance[slug] = { description: normalized };
+      translations[lang].fragrance[slug] = { description: normalized, long: normalized };
 
       scentBuckets.forEach((bucket) => {
-        if (bucket?.[slug]) {
+        if (bucket) {
+          bucket[slug] = bucket[slug] || {};
           bucket[slug].description = normalized;
+          bucket[slug].long = normalized;
         }
       });
     });
@@ -5750,8 +5760,9 @@ const getScentIdFromSelect = (selectEl) => selectEl?.selectedOptions?.[0]?.datas
 
 const setToggleLabelForState = (toggleEl, isExpanded) => {
   if (!toggleEl) return;
-  const key = isExpanded ? 'common.toggle.less' : 'common.toggle.more';
-  const label = resolveTranslation(currentLang, key) || '';
+  const labelKey = isExpanded ? 'common.toggle.less' : 'common.toggle.more';
+  const customLabel = isExpanded ? toggleEl.dataset.collapseLabelLess : toggleEl.dataset.collapseLabelMore;
+  const label = customLabel || resolveTranslation(currentLang, labelKey) || '';
   toggleEl.textContent = label;
   toggleEl.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
 };
@@ -5760,6 +5771,10 @@ const collapseDescriptionSection = (wrapperEl, toggleEl) => {
   if (!wrapperEl || !toggleEl) return;
   wrapperEl.classList.add('is-collapsed');
   wrapperEl.classList.remove('is-expanded');
+  const collapseEl = wrapperEl.querySelector('.collapse');
+  if (collapseEl) {
+    collapseEl.classList.remove('show');
+  }
   setToggleLabelForState(toggleEl, false);
 };
 
@@ -5772,6 +5787,10 @@ const toggleDescriptionSection = (wrapperEl, toggleEl) => {
   } else {
     wrapperEl.classList.add('is-collapsed');
     wrapperEl.classList.remove('is-expanded');
+  }
+  const collapseEl = wrapperEl.querySelector('.collapse');
+  if (collapseEl) {
+    collapseEl.classList.toggle('show', willExpand);
   }
   setToggleLabelForState(toggleEl, willExpand);
 };
@@ -6083,6 +6102,17 @@ const updateDiffuserImage = () => {
   setFragranceImage(imageEl, scentId, category, scentLabel, { baseUrl, suffix, imageName });
 };
 
+const getFragranceCatalogDescription = (lang, scentId) => {
+  const candidates = [
+    translations?.[lang]?.fragrance?.[scentId],
+    translations?.[lang]?.candles?.scents?.[scentId],
+    translations?.[lang]?.car?.scents?.[scentId],
+    translations?.[lang]?.textile?.scents?.[scentId]
+  ];
+  const match = candidates.find((value) => normalizeDescriptionText(value));
+  return normalizeDescriptionText(match) || '';
+};
+
 const getFragranceDescription = (categoryOrScentId, fallbackKey = null) => {
   const productCategories = new Set(['candles', 'textile', 'car']);
   const scentId = productCategories.has(categoryOrScentId) ? fallbackKey : categoryOrScentId;
@@ -6093,19 +6123,32 @@ const getFragranceDescription = (categoryOrScentId, fallbackKey = null) => {
     (translationFallbackKey &&
       (resolveTranslation(currentLang, translationFallbackKey) || resolveTranslation('en', translationFallbackKey))) ||
     '';
-  return resolveTranslation(currentLang, key) || resolveTranslation('en', key) || fallbackDescription;
+  const catalogDescription =
+    getFragranceCatalogDescription(currentLang, scentId) || getFragranceCatalogDescription('en', scentId) || '';
+  const description =
+    resolveTranslation(currentLang, key) || resolveTranslation('en', key) || fallbackDescription || catalogDescription;
+  return normalizeDescriptionText(description, catalogDescription || fallbackDescription);
 };
 
 const resolveFragranceDescription = (scentId, fallbackKey = null, defaultDescription = '') => {
   if (!scentId || scentId === 'none') return defaultDescription;
-  const description = getFragranceDescription(scentId, fallbackKey);
+
+  const catalogFallback =
+    getFragranceCatalogDescription(currentLang, scentId) || getFragranceCatalogDescription('en', scentId) || '';
+  const description = getFragranceDescription(scentId, fallbackKey) || catalogFallback;
   if (description) return description;
+
   if (fallbackKey) {
-    return (
-      resolveTranslation(currentLang, fallbackKey) || resolveTranslation('en', fallbackKey) || defaultDescription || ''
+    return normalizeDescriptionText(
+      resolveTranslation(currentLang, fallbackKey) ||
+        resolveTranslation('en', fallbackKey) ||
+        catalogFallback ||
+        defaultDescription ||
+        ''
     );
   }
-  return defaultDescription || '';
+
+  return catalogFallback || defaultDescription || '';
 };
 
 const productFragranceDescriptionConfig = {
@@ -6114,8 +6157,8 @@ const productFragranceDescriptionConfig = {
     defaultKey: 'product.scented_candles.default_description'
   },
   textile: {
-    translationBase: 'product.textile_spray.description',
-    defaultKey: 'product.textile_spray.description.none'
+    translationBase: 'textile.scents',
+    defaultKey: 'product.textile_spray.short_description'
   },
   car: {
     translationBase: 'car.scents',
@@ -6123,20 +6166,38 @@ const productFragranceDescriptionConfig = {
   }
 };
 
+const getShortFragranceDescription = (text) => {
+  if (!text) return '';
+  const paragraphs = text
+    .split(/\n+/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  if (!paragraphs.length) return text;
+  const [firstParagraph] = paragraphs;
+  const sentenceMatch = firstParagraph.match(/^(.*?[.!?])\s/);
+  return sentenceMatch ? sentenceMatch[1] : firstParagraph;
+};
+
 const updateProductFragranceDescription = (descriptionEl, category, scentKey) => {
-  if (!descriptionEl || !category || !scentKey) return;
+  const descriptionElements = Array.isArray(descriptionEl) ? descriptionEl.filter(Boolean) : [descriptionEl].filter(Boolean);
+  if (!descriptionElements.length || !category || !scentKey) return;
   const config = productFragranceDescriptionConfig[category] || {};
   const defaultDescription =
     (config.defaultKey &&
       (resolveTranslation(currentLang, config.defaultKey) || resolveTranslation('en', config.defaultKey))) ||
-    descriptionEl.textContent ||
+    descriptionElements[0]?.textContent ||
     '';
 
   const fallbackKey = config.translationBase ? `${config.translationBase}.${scentKey}` : null;
   const fullText = resolveFragranceDescription(scentKey, fallbackKey, defaultDescription);
   const normalizedText = normalizeDescriptionText(fullText, defaultDescription);
 
-  descriptionEl.textContent = normalizedText;
+  const shortDescription = getShortFragranceDescription(normalizedText);
+
+  descriptionElements.forEach((el) => {
+    const isShort = el.dataset.fragranceDescription === 'short';
+    el.textContent = isShort ? shortDescription : normalizedText;
+  });
   return normalizedText;
 };
 
@@ -6226,7 +6287,10 @@ const toggleDiffuserScentDescription = () => {
 const initDiffuserScentDescriptionToggle = () => {
   ensureDiffuserScentDescriptionElements();
   if (!diffuserScentDescriptionWrapperEl || !diffuserScentDescriptionToggleEl) return;
-  diffuserScentDescriptionToggleEl.addEventListener('click', toggleDiffuserScentDescription);
+  diffuserScentDescriptionToggleEl.addEventListener('click', (event) => {
+    event.preventDefault();
+    toggleDiffuserScentDescription();
+  });
   resetDiffuserScentDescriptionState();
 };
 
@@ -6334,7 +6398,8 @@ const initCandleConfigurator = () => {
     updateCandleImage();
     updateCandleScentDescription(true);
   });
-  candleScentDescriptionToggle?.addEventListener('click', () => {
+  candleScentDescriptionToggle?.addEventListener('click', (event) => {
+    event.preventDefault();
     toggleDescriptionSection(candleScentDescriptionWrapper, candleScentDescriptionToggle);
   });
 };
@@ -6411,7 +6476,8 @@ const initCarConfigurator = () => {
     updateCarImage();
     updateCarScentDescription(true);
   });
-  carScentDescriptionToggle?.addEventListener('click', () => {
+  carScentDescriptionToggle?.addEventListener('click', (event) => {
+    event.preventDefault();
     toggleDescriptionSection(carScentDescriptionWrapper, carScentDescriptionToggle);
   });
 };
@@ -6466,19 +6532,20 @@ const initProductCardFragrances = () => {
     }
 
     const category = select.dataset.category || inferredCategory;
-    const descriptionEl =
-      select
-        .closest('.product-card')
-        ?.querySelector(`[data-product-fragrance-description="${category}"]`) ||
-      select.closest('.product-card')?.querySelector('[data-product-fragrance-description]');
-
-    if (!descriptionEl) return;
+    const card = select.closest('.product-card');
+    const descriptionEls = Array.from(
+      card?.querySelectorAll(
+        `[data-product-fragrance-description="${category}"], [data-product-fragrance-description]:not([data-product-fragrance-description=""])`
+      ) ||
+        []
+    );
 
     const applyDescription = () => {
       const scentId = getScentIdFromSelect(select) || select.value;
-      const descriptionText = updateProductFragranceDescription(descriptionEl, category, scentId);
+      const descriptionText = descriptionEls.length
+        ? updateProductFragranceDescription(descriptionEls, category, scentId)
+        : '';
       const scentLabel = select?.selectedOptions?.[0]?.textContent?.trim() || scentId;
-      const card = select.closest('.product-card');
       const imageEl = card?.querySelector('[data-fragrance-image]');
 
       if (imageEl) {
