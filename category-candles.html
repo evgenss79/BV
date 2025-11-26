@@ -101,7 +101,12 @@
           </div>
         </section>
 
-        <article class="product-card product-card--candles" data-candle-card>
+      </div>
+    </section>
+
+    <section class="diffusers-product">
+      <article class="product-card product-card--diffuser-horizontal" data-candle-card>
+        <div class="product-card__media">
           <img
             data-candle-image
             src="https://github.com/evgenss79/BV_img/blob/main/Candles%20category.jpg?raw=true"
@@ -109,25 +114,24 @@
             loading="lazy"
             class="product-card__image"
           >
-          <div>
-            <p class="product-card__eyebrow" data-i18n="categoryCandles.products.label">Edition</p>
-            <h3 data-i18n="product.candles.signature_line.title">Duftkerzen Signature Line</h3>
-            <p data-i18n="product.candles.signature_line.description">Zwei Gefäßgrößen und Signature-Düfte, handgegossen in Keramik.</p>
-            <div
-              class="product-card__scent-description-wrapper is-collapsed"
-              data-candle-scent-description-wrapper
-            >
-              <p class="product-card__scent-description" data-candle-scent-description></p>
-              <button
-                type="button"
-                class="product-card__scent-toggle"
-                data-candle-scent-toggle
-                aria-expanded="false"
-                data-i18n="common.toggle.more"
-              >
-                Read more
-              </button>
-            </div>
+        </div>
+
+        <div class="product-card__body">
+          <p class="product-card__eyebrow" data-i18n="categoryCandles.products.label">Edition</p>
+          <h3 class="product-card__title" data-i18n="product.candles.signature_line.title">Duftkerzen Signature Line</h3>
+          <p class="product-card__scent-description" data-i18n="product.candles.signature_line.description">Zwei Gefäßgrößen und Signature-Düfte, handgegossen in Keramik.</p>
+          <div
+            class="product-card__scent-description-wrapper is-collapsed"
+            data-candle-scent-description-wrapper
+          >
+            <p class="product-card__scent-description" data-candle-scent-description></p>
+            <button
+              type="button"
+              class="product-card__scent-toggle"
+              data-candle-scent-toggle
+              aria-expanded="false"
+              data-i18n="common.toggle.more"
+            ></button>
           </div>
 
           <div class="product-card__options">
@@ -172,8 +176,8 @@
           </div>
 
           <button class="btn btn--gold" data-add-to-cart data-i18n="candles.product.cta">In den Warenkorb</button>
-        </article>
-      </div>
+        </div>
+      </article>
     </section>
 
   </main>
